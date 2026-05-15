@@ -1,0 +1,12 @@
+{
+  "attack_flow_summary": "",
+  "exploit_mechanism": "",
+  "tx_role_map": {},
+  "contract_role_map": {},
+  "timeline_steps": [],
+  "funds_flow_path": [],
+  "open_questions": [],
+  "confidence_notes": [
+    "Victim contract 0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c is confirmed as UniswapV2Pair with verified source. Call graph shows swap interaction exploited pool pricing. Flash loan indicators: Balancer vault transfer + mint/burn pattern on 0x351d38733de3f1e73468d24401c59f63677000c9. Multiple unknown contracts (0x19c5538df65075d53d6299904636bae68b6df441, 0x62f250cf7021e1cf76c765dec8ec623fe173a1b5, 0x6b7e633fbdaf237bcfb8176be04b0dd72dda3b3a) lack inventory classification but appear central to attack flow. Exact flash loan amount and token amounts require decoded trace data."
+  ]
+}

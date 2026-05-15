@@ -1,0 +1,31 @@
+{
+  "incident_id": "unknown-bsc-2024-10-05",
+  "job_id": "unknown-bsc-2024-10-05-batch",
+  "trigger_type": "batch",
+  "seed_type": "tx_hash",
+  "chain": "BSC",
+  "protocol_name": "Unknown",
+  "incident_name": "Unknown 2024-10-05 price-manipulation incident",
+  "attack_tx_hashes": [
+    "0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d"
+  ],
+  "attacker_addresses": [
+    "0x8408497c18882bfb61be9204cfff530f4ee18320"
+  ],
+  "victim_addresses": [
+    "0xbe779d420b7d573c08eee226b9958737b6218888"
+  ],
+  "seed_urls": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/AIZPTToken_exp.sol"
+  ],
+  "summary_candidates": [
+    "An estimated loss of 34"
+  ],
+  "tags": [
+    "price_manipulation",
+    "bsc",
+    "defi"
+  ],
+  "created_at": "2026-04-27T12:49:41+00:00"
+}

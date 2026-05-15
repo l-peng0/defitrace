@@ -1,0 +1,161 @@
+{
+  "incident_id": "lavalending-2024-10-02-price-manipulation-incident-arbitrum",
+  "events": [
+    {
+      "event_id": "evt-001",
+      "timestamp": "2026-04-27T12:46:36+00:00",
+      "stage": "seed_loader",
+      "agent": "seed_loader",
+      "status": "completed",
+      "note": "Loaded incident seed.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/incident_seed.json"
+      ],
+      "metrics": {},
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-002",
+      "timestamp": "2026-04-27T12:46:36+00:00",
+      "stage": "source_finder",
+      "agent": "Discovery supervisor",
+      "status": "completed",
+      "note": "Ranked direct source candidates.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/source_index.json"
+      ],
+      "metrics": {
+        "source_count": 4
+      },
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-003",
+      "timestamp": "2026-04-27T12:46:57+00:00",
+      "stage": "source_expander",
+      "agent": "Source expansion agent",
+      "status": "completed",
+      "note": "Fetched source pages and extracted discovered links.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/source_index.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/source_documents.json"
+      ],
+      "metrics": {
+        "source_count": 45,
+        "fetched_documents": 45
+      },
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-004",
+      "timestamp": "2026-04-27T12:47:23+00:00",
+      "stage": "evidence_normalizer",
+      "agent": "Evidence normalization agent",
+      "status": "completed",
+      "note": "Normalized source text into evidence items and citation edges.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/raw_evidence.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/citation_graph.json"
+      ],
+      "metrics": {
+        "evidence_count": 334,
+        "claim_count": 334
+      },
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-005",
+      "timestamp": "2026-04-27T12:48:57+00:00",
+      "stage": "technical_validation",
+      "agent": "technical_validation",
+      "status": "completed",
+      "note": "Deterministic and semantic checks passed.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/technical_analysis.json"
+      ],
+      "metrics": {
+        "technical_status": "completed",
+        "checked_transactions": 1
+      },
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-006",
+      "timestamp": "2026-04-27T12:49:30+00:00",
+      "stage": "llm_timeline_synthesizer",
+      "agent": "llm_timeline_synthesizer",
+      "status": "completed",
+      "note": "LLM synthesized attack timeline.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/timeline.json"
+      ],
+      "metrics": {
+        "timeline_steps": 4
+      },
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-007",
+      "timestamp": "2026-04-27T12:49:30+00:00",
+      "stage": "llm_narrative_writer",
+      "agent": "llm_narrative_writer",
+      "status": "completed",
+      "note": "LLM wrote incident narrative.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/narrative.json"
+      ],
+      "metrics": {},
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-008",
+      "timestamp": "2026-04-27T12:52:08+00:00",
+      "stage": "dossier_assembler",
+      "agent": "Dossier composer agent",
+      "status": "completed",
+      "note": "Assembled final dossier outputs and library projection.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/quality_report.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/technical_analysis.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/augmented_incident.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/dashboard_view.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/report_inputs.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/incident_library_entry.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/analyst_report.json"
+      ],
+      "metrics": {
+        "completeness_score": 0.05
+      },
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-009",
+      "timestamp": "2026-04-27T12:52:08+00:00",
+      "stage": "quality_judge",
+      "agent": "QA judge agent",
+      "status": "completed",
+      "note": "The dossier establishes that a price-manipulation attack against LavaLending occurred on Arbitrum with approximately $130K in losses, supported by a primary transaction hash and attacker address. However, the technical depth is insufficient: the specific oracle exploited, the token whose price was manipulated, flashloan mechanics, and transaction traces are absent or inferred. The evidence corpus is polluted with irrelevant testnet data, and critical fields including contract URLs, social sources, and post-exploit fund tracking are missing. The timeline is logically structured but rests on weak evidentiary foundations for the manipulation mechanics.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/quality_report.json"
+      ],
+      "metrics": {
+        "missing_field_count": 10
+      },
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-010",
+      "timestamp": "2026-04-27T12:52:08+00:00",
+      "stage": "dashboard_projection",
+      "agent": "Projection agent",
+      "status": "completed",
+      "note": "Projected outputs for backend and frontend consumers.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/incident_library_entry.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/dashboard_view.json"
+      ],
+      "metrics": {},
+      "error_message": ""
+    }
+  ]
+}

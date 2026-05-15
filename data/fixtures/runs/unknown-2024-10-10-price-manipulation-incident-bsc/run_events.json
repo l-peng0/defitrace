@@ -1,0 +1,161 @@
+{
+  "incident_id": "unknown-2024-10-10-price-manipulation-incident-bsc",
+  "events": [
+    {
+      "event_id": "evt-001",
+      "timestamp": "2026-04-27T12:55:54+00:00",
+      "stage": "seed_loader",
+      "agent": "seed_loader",
+      "status": "completed",
+      "note": "Loaded incident seed.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/incident_seed.json"
+      ],
+      "metrics": {},
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-002",
+      "timestamp": "2026-04-27T12:55:54+00:00",
+      "stage": "source_finder",
+      "agent": "Discovery supervisor",
+      "status": "completed",
+      "note": "Ranked direct source candidates.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/source_index.json"
+      ],
+      "metrics": {
+        "source_count": 6
+      },
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-003",
+      "timestamp": "2026-04-27T12:57:07+00:00",
+      "stage": "source_expander",
+      "agent": "Source expansion agent",
+      "status": "completed",
+      "note": "Fetched source pages and extracted discovered links.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/source_index.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/source_documents.json"
+      ],
+      "metrics": {
+        "source_count": 63,
+        "fetched_documents": 63
+      },
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-004",
+      "timestamp": "2026-04-27T12:57:11+00:00",
+      "stage": "evidence_normalizer",
+      "agent": "Evidence normalization agent",
+      "status": "completed",
+      "note": "Normalized source text into evidence items and citation edges.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/raw_evidence.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/citation_graph.json"
+      ],
+      "metrics": {
+        "evidence_count": 497,
+        "claim_count": 497
+      },
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-005",
+      "timestamp": "2026-04-27T13:00:34+00:00",
+      "stage": "technical_validation",
+      "agent": "technical_validation",
+      "status": "completed",
+      "note": "Deterministic and semantic checks passed.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis.json"
+      ],
+      "metrics": {
+        "technical_status": "completed",
+        "checked_transactions": 1
+      },
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-006",
+      "timestamp": "2026-04-27T13:01:12+00:00",
+      "stage": "llm_timeline_synthesizer",
+      "agent": "llm_timeline_synthesizer",
+      "status": "completed",
+      "note": "LLM synthesized attack timeline.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/timeline.json"
+      ],
+      "metrics": {
+        "timeline_steps": 3
+      },
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-007",
+      "timestamp": "2026-04-27T13:01:12+00:00",
+      "stage": "llm_narrative_writer",
+      "agent": "llm_narrative_writer",
+      "status": "completed",
+      "note": "LLM wrote incident narrative.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/narrative.json"
+      ],
+      "metrics": {},
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-008",
+      "timestamp": "2026-04-27T13:07:31+00:00",
+      "stage": "dossier_assembler",
+      "agent": "Dossier composer agent",
+      "status": "completed",
+      "note": "Assembled final dossier outputs and library projection.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/quality_report.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/augmented_incident.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/dashboard_view.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/report_inputs.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/incident_library_entry.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/analyst_report.json"
+      ],
+      "metrics": {
+        "completeness_score": 0.52
+      },
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-009",
+      "timestamp": "2026-04-27T13:07:31+00:00",
+      "stage": "quality_judge",
+      "agent": "QA judge agent",
+      "status": "completed",
+      "note": "This dossier documents a low-impact price manipulation attack on BSC (October 10, 2024) with approximately $5 loss, suggesting either a failed exploit, test run, or attack on a depleted contract. While core evidence exists including verified attack transaction (0xa9df1bd9...), attacker address (0x8f921e27...), and a POC from DeFiHackLabs (HYDT_exp.sol), critical gaps remain. The protocol identity is only inferred from the POC filename without independent confirmation. The dossier lacks root cause analysis explaining the price manipulation mechanism, fund flow tracing, and context for the minimal financial impact. Missing contract URLs and absence of vulnerability technical details significantly reduce forensic completeness. Suitable for basic incident awareness but insufficient for comprehensive security analysis or legal proceedings.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/quality_report.json"
+      ],
+      "metrics": {
+        "missing_field_count": 8
+      },
+      "error_message": ""
+    },
+    {
+      "event_id": "evt-010",
+      "timestamp": "2026-04-27T13:07:31+00:00",
+      "stage": "dashboard_projection",
+      "agent": "Projection agent",
+      "status": "completed",
+      "note": "Projected outputs for backend and frontend consumers.",
+      "artifact_paths": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/incident_library_entry.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/dashboard_view.json"
+      ],
+      "metrics": {},
+      "error_message": ""
+    }
+  ]
+}

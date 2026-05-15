@@ -1,0 +1,45 @@
+{
+  "incident_id": "lavalending-2024-10-02-price-manipulation-incident-arbitrum",
+  "title": "Lavalending 2024-10-02 price-manipulation incident",
+  "protocol_name": "Lavalending",
+  "chain": "Arbitrum",
+  "incident_date": "",
+  "summary": "An estimated loss of about $130K was caused by a price-manipulation attack against LavaLending on Arbitrum",
+  "status": "demo_live_dossier",
+  "completeness_score": 0.05,
+  "source_count": 45,
+  "direct_source_count": 4,
+  "secondary_source_count": 41,
+  "social_count": 0,
+  "poc_count": 1,
+  "explorer_count": 43,
+  "report_count": 1,
+  "missing_fields": [
+    "attack_contract_urls",
+    "victim_contract_urls",
+    "social_sources",
+    "exact_attack_timestamp",
+    "manipulated_token_address",
+    "oracle_contract_address",
+    "flashloan_source_and_amount",
+    "fund_destination_after_exploit",
+    "transaction_trace_analysis",
+    "protocol_response_statement"
+  ],
+  "last_updated": "2026-04-27T12:52:08+00:00",
+  "pattern_label": "price_manipulation",
+  "attack_tx_hashes": [
+    "0xb5cfa4ae4d6e459ba285fec7f31caf8885e2285a0b4ff62f66b43e280c947216",
+    "0xc65677aee9a8266ae6acc862610daea1fd0c263ae520f0f4e20c442afa5dc639",
+    "0x36806bfcade834f72ab36ab666620fd372c73fa9c80592f2b872d2ff88209d98",
+    "0xa8e7957870b5d1b3be8a284470d330d8275d3490fbc9e2bab6d355aa9372db33"
+  ],
+  "source_preview": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/LavaLending_exp.sol",
+    "https://arbiscan.io/tx/0xb5cfa4ae4d6e459ba285fec7f31caf8885e2285a0b4ff62f66b43e280c947216",
+    "https://arbiscan.io/address/0x69fa61eb4dc4e07263d401b01ed1cfceb599dab8",
+    "https://arbiscan.io/chart/price",
+    "https://sepolia.arbiscan.io"
+  ]
+}

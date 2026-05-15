@@ -1,0 +1,258 @@
+{
+  "incident_id": "paribus-2025-01-18-price-manipulation-incident-arbitrum",
+  "chain": "Arbitrum",
+  "generated_at": "2026-04-27T13:19:05+00:00",
+  "tx_hashes": [
+    "0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2"
+  ],
+  "roles": {
+    "attacker_eoa": [
+      "0x5af00b07007cc1349794df5b2c15528237648035"
+    ],
+    "attacker_contracts": [
+      "0xa8906930e951cc657843bd8616baf2555336fdd2"
+    ],
+    "victim": [
+      "0x25874cc60cbf7495b7cd1fa724178d251cfad5a8"
+    ],
+    "routers": [],
+    "pairs": [],
+    "oracles": [],
+    "flash_loan_providers": [
+      "0xe592427a0aece92de3edee1f18e0157c05861564",
+      "0x794a61358d6845594f94dc1db02a252b5b4814ad",
+      "0x7a7ef57479123f26db6a0e3efbf8a3562edd65be",
+      "0xbd4786f93ceef3dd73600ebe0b0bdccca2f7d37c"
+    ],
+    "tokens": [
+      "0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15",
+      "0x912ce59144191c1204e64559fe8253a0e49e6548",
+      "0xbad58ed9b5f26a002ea250d7a60dc6729a4a2403",
+      "0xa26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+      "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"
+    ],
+    "unknown": [
+      "0xc1303bbbaf172c55848d3cb91606d8e27ff38428",
+      "0x429f16dba3b9e1900087cbaa7b50d38bc60fb73f",
+      "0x1a3c9b1d2f0529d97f2afc5136cc23e58f1fd35b",
+      "0xfb1dcfc67cc496eb0cc592050af7fdf3bf3b5c13",
+      "0xb20bd22d3d2e5a628523d37b3ded569598eb649b",
+      "0xfb00ac187a8eb5afae4eace434f493eb62672df7",
+      "0x724e4c7a72bc285e0d602222f7e220e5eaf347e5",
+      "0x8b194beae1d3e0788a1a35173978001acdfba668",
+      "0x3f3f5df88dc9f13eac63df89ec16ef6e7e25dde7",
+      "0x46de66f10343b59bacc37df9b3f67cd0ccc121a3",
+      "0x4180a3294abb7efa1cbaab551807a671e45d8fe4",
+      "0x0000000000000000000000000000000000000000",
+      "0x48288207b349cb1aa9fdfcada0cbbbd1b946fcbf",
+      "0x2465c30ffa62eca77cbdd8c356314b1b98fb8b2d",
+      "0xaffd437801434643b734d0b2853654876f66f7d7",
+      "0x5e76e98e0963ecdc6a065d1435f84065b7523f39",
+      "0x15d08a476a5e5c5881e91e15bcb73a37191e5e49",
+      "0x3f770ac673856f105b586bb393d122721265ad46",
+      "0x58095979b412a366687ca05cbe85ff56241be21f",
+      "0xa72636cbcaa8f5ff95b2cc47f3cdee83f3294a0b",
+      "0xdc799ce667171cdaa1382dbf349aead225bcc530",
+      "0x3607e46698d218b3a5cae44bf381475c0a5e2ca7",
+      "0x1f721e2e82f6676fce4ea07a5958cf098d339e18",
+      "0x5969efdde3cf5c0d9a88ae51e47d721096a97203",
+      "0xcb35fe6e53e71b30301ec4a3948da4ad3c65ace4",
+      "0xe72ba9418b5f2ce0a6a40501fe77c6839aa37333",
+      "0xce7c7ddfb748a1cfc34fb1ca97871f7086f2e09a",
+      "0xc4ed0a9ea70d5bcc69f748547650d32cc219d882",
+      "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "0xfc2737a742a741d13fe6326011a78cd881de3eb9",
+      "0x4e4301df3cdb81e58535aed22218fc74bc0c928a",
+      "0x1c762e00f1d9317a4214d22b2576995c427f61c9",
+      "0xb280a2d0460ebff527d311381f9446c19d48a5e6",
+      "0xd1035fef2eff629606579ed5ef8c39804ddf9442",
+      "0xb2a824043730fe05f3da2efafa1cbbe83fa548d6",
+      "0xd0c7101eacbb49f3decccc166d238410d6d46d57",
+      "0x6ab707aca953edaefbc4fd23ba73294241490620",
+      "0xf31e1ae27e7cd057c1d6795a5a083e0453d39b50",
+      "0x1be1798b70aee431c2986f7ff48d9d1fa350786a",
+      "0x6bd1f8f67631a52f1e53e5ca4fd5b17108bed969",
+      "0x7e4efaa9fdc6317e7b86859844d65df8c6cdad79",
+      "0x03ae45a78fb44cda83746faa0314741c88a63306",
+      "0xb32381fefff45ee9f47fd2f2cf83c832637d6ef0",
+      "0xa82c5a70f7ebec779ae307017e7cd39b46ac4e99",
+      "0xfdb631f5ee196f0ed6faa767959853a9f217697d",
+      "0x738b6098bf382b810f2d915f44e940bef62a3659",
+      "0xb8d6b7e2b1e6c84aeddd56909636107ea122d589",
+      "0x712e2b12d75fe092838a3d2ad14b6ff73d3fdbc9",
+      "0x1983e765eff3de9073debe91ff7bdfcb14918662",
+      "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
+      "0xa185a8c0929d473f2d0d2a132c4464fc01380bce",
+      "0x639fe6ab55c921f74e7fac1ee960c0b6293ba612",
+      "0xc8be723395f6b1f51886947ccae731a36df615ba",
+      "0xc358225a14fe6a683e92214adb76ccfe3a1736c4"
+    ]
+  },
+  "newly_deployed": [
+    {
+      "address": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+      "deployed_by": "0xbd4786f93ceef3dd73600ebe0b0bdccca2f7d37c",
+      "create_type": "CREATE2",
+      "trace_path": "0.0.0.2.2.0",
+      "depth": 5,
+      "tx_hash": "0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2"
+    }
+  ],
+  "priority_contracts": [
+    {
+      "address": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+      "role": "attacker_contract",
+      "why": "deployed in-tx via CREATE/CREATE2",
+      "priority": "high"
+    },
+    {
+      "address": "0x25874cc60cbf7495b7cd1fa724178d251cfad5a8",
+      "role": "victim",
+      "why": "largest net-negative token balance change",
+      "priority": "high"
+    },
+    {
+      "address": "0xe592427a0aece92de3edee1f18e0157c05861564",
+      "role": "flash_loan_provider",
+      "why": "called with flashLoan* selector",
+      "priority": "medium"
+    },
+    {
+      "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
+      "role": "flash_loan_provider",
+      "why": "called with flashLoan* selector",
+      "priority": "medium"
+    },
+    {
+      "address": "0x7a7ef57479123f26db6a0e3efbf8a3562edd65be",
+      "role": "flash_loan_provider",
+      "why": "called with flashLoan* selector",
+      "priority": "medium"
+    },
+    {
+      "address": "0xbd4786f93ceef3dd73600ebe0b0bdccca2f7d37c",
+      "role": "flash_loan_provider",
+      "why": "called with flashLoan* selector",
+      "priority": "medium"
+    }
+  ],
+  "investigation_notes": [],
+  "call_graph": [
+    {
+      "from": "0xbd4786f93ceef3dd73600ebe0b0bdccca2f7d37c",
+      "to": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
+      "category": "flashloan"
+    },
+    {
+      "from": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
+      "to": "0x7a7ef57479123f26db6a0e3efbf8a3562edd65be",
+      "category": "flashloan"
+    },
+    {
+      "from": "0x6ab707aca953edaefbc4fd23ba73294241490620",
+      "to": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+      "category": "transfer"
+    },
+    {
+      "from": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+      "to": "0xf31e1ae27e7cd057c1d6795a5a083e0453d39b50",
+      "category": "transfer"
+    },
+    {
+      "from": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
+      "to": "0xbd4786f93ceef3dd73600ebe0b0bdccca2f7d37c",
+      "category": "flashloan"
+    },
+    {
+      "from": "0xbd4786f93ceef3dd73600ebe0b0bdccca2f7d37c",
+      "to": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+      "category": "transfer"
+    },
+    {
+      "from": "0x25874cc60cbf7495b7cd1fa724178d251cfad5a8",
+      "to": "0xbad58ed9b5f26a002ea250d7a60dc6729a4a2403",
+      "category": "transfer"
+    },
+    {
+      "from": "0xbad58ed9b5f26a002ea250d7a60dc6729a4a2403",
+      "to": "0x3f770ac673856f105b586bb393d122721265ad46",
+      "category": "transfer"
+    },
+    {
+      "from": "0x1f721e2e82f6676fce4ea07a5958cf098d339e18",
+      "to": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+      "category": "transfer"
+    },
+    {
+      "from": "0x25874cc60cbf7495b7cd1fa724178d251cfad5a8",
+      "to": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+      "category": "transfer"
+    },
+    {
+      "from": "0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15",
+      "to": "0xbad58ed9b5f26a002ea250d7a60dc6729a4a2403",
+      "category": "transfer"
+    },
+    {
+      "from": "0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15",
+      "to": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+      "category": "transfer"
+    },
+    {
+      "from": "0xfc2737a742a741d13fe6326011a78cd881de3eb9",
+      "to": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+      "category": "transfer"
+    },
+    {
+      "from": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+      "to": "0xc4ed0a9ea70d5bcc69f748547650d32cc219d882",
+      "category": "transfer"
+    },
+    {
+      "from": "0x1c762e00f1d9317a4214d22b2576995c427f61c9",
+      "to": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "category": "transfer"
+    },
+    {
+      "from": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "to": "0x3f770ac673856f105b586bb393d122721265ad46",
+      "category": "transfer"
+    },
+    {
+      "from": "0xfb1dcfc67cc496eb0cc592050af7fdf3bf3b5c13",
+      "to": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+      "category": "transfer"
+    },
+    {
+      "from": "0x1f721e2e82f6676fce4ea07a5958cf098d339e18",
+      "to": "0xbad58ed9b5f26a002ea250d7a60dc6729a4a2403",
+      "category": "transfer"
+    },
+    {
+      "from": "0x5969efdde3cf5c0d9a88ae51e47d721096a97203",
+      "to": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+      "category": "transfer"
+    },
+    {
+      "from": "0x5969efdde3cf5c0d9a88ae51e47d721096a97203",
+      "to": "0xe592427a0aece92de3edee1f18e0157c05861564",
+      "category": "flashloan"
+    },
+    {
+      "from": "0xe592427a0aece92de3edee1f18e0157c05861564",
+      "to": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "category": "transfer"
+    },
+    {
+      "from": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+      "to": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+      "category": "transfer"
+    },
+    {
+      "from": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
+      "to": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+      "category": "transfer"
+    }
+  ]
+}

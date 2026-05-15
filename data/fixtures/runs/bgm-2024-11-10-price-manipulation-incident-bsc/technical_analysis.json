@@ -1,0 +1,496 @@
+{
+  "incident_id": "bgm-2024-11-10-price-manipulation-incident-bsc",
+  "chain": "BSC",
+  "generated_at": "2026-04-27T13:08:00+00:00",
+  "primary_tx_hash": "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+  "tx_hashes": [
+    "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1"
+  ],
+  "transactions": [
+    {
+      "tx_hash": "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+      "status": "completed",
+      "tx_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1/tx.json",
+      "receipt_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1/receipt.json",
+      "trace_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1/trace_callTracer.json",
+      "decoded_calls_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1/decoded_calls.json",
+      "funds_flow_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1/funds_flow.json",
+      "manifest_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1/manifest.json",
+      "summary": {
+        "contracts_touched": [
+          "0x000000000000000000636f6e736f6c652e6c6f67",
+          "0x00c0f54d8afc60f3acd06e476cf504a6f7f06180",
+          "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+          "0x36696169c63e42cd08ce11f5deebbcebae652050",
+          "0x42646478b25317160e0dc8db413991277e4bb3c2",
+          "0x4f31fa980a675570939b737ebdde0471a4be40eb",
+          "0x52a71bf6687800d2d2d1846b074c3616aae921de",
+          "0x55d398326f99059ff775485246999027b3197955",
+          "0x851a17b8cb9b7f19cb50e6f72f000a4e83eaadd0",
+          "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+          "0xadc4eca2a3038b478b591bac1a87e428625d6e0a",
+          "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
+          "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+          "0xd178a2bde88503eee9f5c201fdf497aadd733459",
+          "0xefa4bce444c09a52941beef5fe8264d70534049f",
+          "0xff82e1e36341ee6b63a67b92a9aeedced288f388"
+        ],
+        "addresses_seen": [
+          "0x000000000000000000636f6e736f6c652e6c6f67",
+          "0x00c0f54d8afc60f3acd06e476cf504a6f7f06180",
+          "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+          "0x36696169c63e42cd08ce11f5deebbcebae652050",
+          "0x42646478b25317160e0dc8db413991277e4bb3c2",
+          "0x4f31fa980a675570939b737ebdde0471a4be40eb",
+          "0x52a71bf6687800d2d2d1846b074c3616aae921de",
+          "0x55d398326f99059ff775485246999027b3197955",
+          "0x7824322b220cdb4d51f73782fbce95e2e2b0595f",
+          "0x851a17b8cb9b7f19cb50e6f72f000a4e83eaadd0",
+          "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+          "0xadc4eca2a3038b478b591bac1a87e428625d6e0a",
+          "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
+          "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+          "0xd178a2bde88503eee9f5c201fdf497aadd733459",
+          "0xefa4bce444c09a52941beef5fe8264d70534049f",
+          "0xff82e1e36341ee6b63a67b92a9aeedced288f388"
+        ],
+        "native_value_transfers": 0,
+        "token_transfers": 26
+      },
+      "issues": []
+    }
+  ],
+  "analysis_plan": {
+    "incident_id": "bgm-2024-11-10-price-manipulation-incident-bsc",
+    "chain": "BSC",
+    "generated_at": "2026-04-27T13:08:01+00:00",
+    "tx_hashes": [
+      "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1"
+    ],
+    "roles": {
+      "attacker_eoa": [
+        "0x7824322b220cdb4d51f73782fbce95e2e2b0595f"
+      ],
+      "attacker_contracts": [],
+      "victim": [
+        "0xadc4eca2a3038b478b591bac1a87e428625d6e0a"
+      ],
+      "routers": [],
+      "pairs": [
+        "0xadc4eca2a3038b478b591bac1a87e428625d6e0a"
+      ],
+      "oracles": [],
+      "flash_loan_providers": [
+        "0x36696169c63e42cd08ce11f5deebbcebae652050",
+        "0x4f31fa980a675570939b737ebdde0471a4be40eb"
+      ],
+      "tokens": [
+        "0x55d398326f99059ff775485246999027b3197955",
+        "0x42646478b25317160e0dc8db413991277e4bb3c2"
+      ],
+      "unknown": [
+        "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
+        "0xd178a2bde88503eee9f5c201fdf497aadd733459",
+        "0x00c0f54d8afc60f3acd06e476cf504a6f7f06180",
+        "0xefa4bce444c09a52941beef5fe8264d70534049f",
+        "0x52a71bf6687800d2d2d1846b074c3616aae921de",
+        "0x851a17b8cb9b7f19cb50e6f72f000a4e83eaadd0",
+        "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+        "0x000000000000000000636f6e736f6c652e6c6f67",
+        "0x13224355855a197e9472aa95dee84417622553c7",
+        "0x000000000000000000000000000000000000dead",
+        "0xff82e1e36341ee6b63a67b92a9aeedced288f388",
+        "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"
+      ]
+    },
+    "newly_deployed": [],
+    "priority_contracts": [
+      {
+        "address": "0xadc4eca2a3038b478b591bac1a87e428625d6e0a",
+        "role": "victim",
+        "why": "largest net-negative token balance change",
+        "priority": "high"
+      },
+      {
+        "address": "0xadc4eca2a3038b478b591bac1a87e428625d6e0a",
+        "role": "pair",
+        "why": "target of direct swap()",
+        "priority": "medium"
+      },
+      {
+        "address": "0x36696169c63e42cd08ce11f5deebbcebae652050",
+        "role": "flash_loan_provider",
+        "why": "called with flashLoan* selector",
+        "priority": "medium"
+      },
+      {
+        "address": "0x4f31fa980a675570939b737ebdde0471a4be40eb",
+        "role": "flash_loan_provider",
+        "why": "called with flashLoan* selector",
+        "priority": "medium"
+      }
+    ],
+    "investigation_notes": [
+      "Tx 0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1 contains 3 swap selector(s); inspect router/pair pricing."
+    ],
+    "call_graph": [
+      {
+        "from": "0x00c0f54d8afc60f3acd06e476cf504a6f7f06180",
+        "to": "0x42646478b25317160e0dc8db413991277e4bb3c2",
+        "category": "transfer"
+      },
+      {
+        "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "to": "0x42646478b25317160e0dc8db413991277e4bb3c2",
+        "category": "transfer"
+      },
+      {
+        "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "to": "0xadc4eca2a3038b478b591bac1a87e428625d6e0a",
+        "category": "swap"
+      },
+      {
+        "from": "0xadc4eca2a3038b478b591bac1a87e428625d6e0a",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x00c0f54d8afc60f3acd06e476cf504a6f7f06180",
+        "to": "0x36696169c63e42cd08ce11f5deebbcebae652050",
+        "category": "flashloan"
+      },
+      {
+        "from": "0x36696169c63e42cd08ce11f5deebbcebae652050",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x00c0f54d8afc60f3acd06e476cf504a6f7f06180",
+        "to": "0x4f31fa980a675570939b737ebdde0471a4be40eb",
+        "category": "flashloan"
+      },
+      {
+        "from": "0x4f31fa980a675570939b737ebdde0471a4be40eb",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0xadc4eca2a3038b478b591bac1a87e428625d6e0a",
+        "to": "0x42646478b25317160e0dc8db413991277e4bb3c2",
+        "category": "transfer"
+      },
+      {
+        "from": "0x00c0f54d8afc60f3acd06e476cf504a6f7f06180",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      }
+    ]
+  },
+  "contract_inventory": {
+    "incident_id": "bgm-2024-11-10-price-manipulation-incident-bsc",
+    "chain": "BSC",
+    "generated_at": "2026-04-27T13:08:03+00:00",
+    "contracts": {
+      "0xadc4eca2a3038b478b591bac1a87e428625d6e0a": {
+        "address": "0xadc4eca2a3038b478b591bac1a87e428625d6e0a",
+        "role": "victim",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "PancakePair",
+        "compiler_version": "v0.5.16+commit.9c3226ce",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/contracts/0xadc4eca2a3038b478b591bac1a87e428625d6e0a/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/contracts/0xadc4eca2a3038b478b591bac1a87e428625d6e0a/abi.json",
+        "fetched_at": "2026-04-27T13:08:02+00:00",
+        "fetch_errors": []
+      },
+      "0x36696169c63e42cd08ce11f5deebbcebae652050": {
+        "address": "0x36696169c63e42cd08ce11f5deebbcebae652050",
+        "role": "flash_loan_provider",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "PancakeV3Pool",
+        "compiler_version": "v0.7.6+commit.7338295f",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x36696169c63e42cd08ce11f5deebbcebae652050/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x36696169c63e42cd08ce11f5deebbcebae652050/abi.json",
+        "fetched_at": "2026-04-27T13:08:02+00:00",
+        "fetch_errors": []
+      },
+      "0x4f31fa980a675570939b737ebdde0471a4be40eb": {
+        "address": "0x4f31fa980a675570939b737ebdde0471a4be40eb",
+        "role": "flash_loan_provider",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "PancakeV3Pool",
+        "compiler_version": "v0.7.6+commit.7338295f",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x4f31fa980a675570939b737ebdde0471a4be40eb/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x4f31fa980a675570939b737ebdde0471a4be40eb/abi.json",
+        "fetched_at": "2026-04-27T13:08:03+00:00",
+        "fetch_errors": []
+      }
+    }
+  },
+  "revision_round": 0,
+  "reasoning": {
+    "attack_flow_summary": "",
+    "exploit_mechanism": "",
+    "tx_role_map": {},
+    "contract_role_map": {},
+    "timeline_steps": [],
+    "funds_flow_path": [],
+    "open_questions": [],
+    "confidence_notes": [
+      "Attacker contract (0x00c0f54d...) listed in unknown addresses but call graph shows it initiated flash loans, confirming its role. Two flash loans from separate PancakeV3Pool instances were taken simultaneously. Victim classified as PancakePair per contract inventory verification. Attack pattern consistent with price manipulation via flash-loan-funded swap operations against an AMM pair with manipulatable price oracle dependencies."
+    ]
+  },
+  "validation": {
+    "verdict": "Deterministic and semantic checks passed.",
+    "severity": "pass",
+    "unresolved_gaps": [],
+    "semantic_checks": {
+      "tx_role_consistency": {
+        "status": "pass",
+        "mismatches": []
+      },
+      "funds_flow_consistency": {
+        "status": "pass",
+        "mismatches": []
+      },
+      "mechanism_source_consistency": {
+        "status": "pass",
+        "mismatches": []
+      }
+    },
+    "needs_revision": false,
+    "revision_request": "",
+    "checked_transactions": 1
+  },
+  "merge_back": {
+    "summary": "",
+    "timeline_steps": [],
+    "funds_flow_path": [],
+    "key_addresses": [
+      "0x000000000000000000636f6e736f6c652e6c6f67",
+      "0x00c0f54d8afc60f3acd06e476cf504a6f7f06180",
+      "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "0x42646478b25317160e0dc8db413991277e4bb3c2",
+      "0x4f31fa980a675570939b737ebdde0471a4be40eb",
+      "0x52a71bf6687800d2d2d1846b074c3616aae921de",
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x7824322b220cdb4d51f73782fbce95e2e2b0595f",
+      "0x851a17b8cb9b7f19cb50e6f72f000a4e83eaadd0",
+      "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+      "0xadc4eca2a3038b478b591bac1a87e428625d6e0a",
+      "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0xd178a2bde88503eee9f5c201fdf497aadd733459",
+      "0xefa4bce444c09a52941beef5fe8264d70534049f",
+      "0xff82e1e36341ee6b63a67b92a9aeedced288f388"
+    ],
+    "key_contracts": [
+      "0x000000000000000000636f6e736f6c652e6c6f67",
+      "0x00c0f54d8afc60f3acd06e476cf504a6f7f06180",
+      "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "0x42646478b25317160e0dc8db413991277e4bb3c2",
+      "0x4f31fa980a675570939b737ebdde0471a4be40eb",
+      "0x52a71bf6687800d2d2d1846b074c3616aae921de",
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x851a17b8cb9b7f19cb50e6f72f000a4e83eaadd0",
+      "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+      "0xadc4eca2a3038b478b591bac1a87e428625d6e0a",
+      "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0xd178a2bde88503eee9f5c201fdf497aadd733459",
+      "0xefa4bce444c09a52941beef5fe8264d70534049f",
+      "0xff82e1e36341ee6b63a67b92a9aeedced288f388"
+    ],
+    "key_transactions": [
+      "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1"
+    ],
+    "open_questions": []
+  },
+  "status": "completed",
+  "pipeline_trace": {
+    "revision_triggered": false,
+    "revision_critique": null,
+    "qa_retry_triggered": true,
+    "qa_retry_critique": "First-pass completeness score: 72.00 (threshold: 0.7). Missing/weak dimensions: attack_contract_urls, victim_contract_urls, poc_links, block_number, timestamp, fund_flow_analysis, attacker_funding_source, detailed_transaction_trace. Quality assessor notes: The BGM price manipulation incident dossier captures core elements including the attack transaction hash, attacker EOA, attack contract address, victim contract address, and estimated $450K loss. The narrative provides a clear technical explanation of the batch transaction price manipulation vector. However, the dossier has notable gaps: missing direct explorer URLs for the attack and victim contracts, absent block-level metadata, no fund flow tracing, and the timeline contains only 3 high-level steps without granular attack execution details. The $450K loss figure appears inferred from report title rather than calculated from on-chain data. Evidence chain is adequate but relies heavily on a single external report source with limited independent verification. Identified gaps: No direct BSCScan URLs for attack contract (0x7824322B220CDB4d51F73782FbcE95E2E2B0595F) and victim contract (0x42646478B25317160E0Dc8DB413991277e4bb3C2); Missing block number and precise timestamp for attack transaction; No fund flow analysis showing destination of $450K stolen funds; Timeline lacks granular attack steps (preparation, flash loan acquisition, exploitation phases, fund routing); No proof-of-concept code or exploit reproduction; No analysis of attacker funding source or initial capital; Missing post-incident protocol response documentation; Reliance on single primary report source (Quadriga Initiative) for attack narrative. Recommendations: Add direct BSCScan URLs for attack contract 0x7824322B220CDB4d51F73782FbcE95E2E2B0595F and victim contract 0x42646478B25317160E0Dc8DB413991277e4bb3C2; Extract and include block number and timestamp from the attack transaction for precise temporal anchoring; Perform fund flow analysis to trace the $450K from extraction through any routing/laundering addresses; Expand timeline with detailed attack phases: flash loan acquisition, price manipulation steps, token swaps, and fund exit; Cross-reference loss amount with on-chain token transfers for verification; Search for additional independent sources (security reports, social media analysis) to corroborate attack details; Identify attacker funding source (did they use flash loans or pre-funded capital); Document any protocol response or post-incident mitigation measures.",
+    "records": [
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:07:33.573Z",
+        "duration_ms": 26779,
+        "input_summary": "60 source docs; 476 heuristic items",
+        "output_summary": "476 total items (+0 LLM-extracted)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "collector",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:08:00.364Z",
+        "duration_ms": 1158,
+        "input_summary": "1 tx(s): 0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+        "output_summary": "1 artifact bundle(s) collected; statuses: completed",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "planner",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:08:01.522Z",
+        "duration_ms": 3,
+        "input_summary": "1 transactions on BSC",
+        "output_summary": "9 role categories; 4 priority contracts",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "contract_intelligence",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:08:01.526Z",
+        "duration_ms": 2341,
+        "input_summary": "4 priority contracts",
+        "output_summary": "3 contracts in inventory",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "technical_reasoner",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:08:03.867Z",
+        "duration_ms": 30023,
+        "input_summary": "1 txs, 3 contracts",
+        "output_summary": "0 timeline steps; mechanism: ",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "semantic_validator",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:08:33.891Z",
+        "duration_ms": 1,
+        "input_summary": "revision_round=0",
+        "output_summary": "severity=pass; needs_revision=False; verdict: Deterministic and semantic checks passed.",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:08:33.895Z",
+        "duration_ms": 26584,
+        "input_summary": "476 evidence items",
+        "output_summary": "executive_summary len=442",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:08:33.895Z",
+        "duration_ms": 26584,
+        "input_summary": "476 evidence items",
+        "output_summary": "3 timeline steps",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:09:00.487Z",
+        "duration_ms": 31459,
+        "input_summary": "3 timeline steps; 4 narrative keys",
+        "output_summary": "completeness_score=72; judge_summary: The BGM price manipulation incident dossier captures core elements including the",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:09:31.946Z",
+        "duration_ms": 67814,
+        "input_summary": "RETRY: 60 docs; critique injected",
+        "output_summary": "494 items after retry extraction",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:10:39.762Z",
+        "duration_ms": 87258,
+        "input_summary": "RETRY: 494 evidence items",
+        "output_summary": "executive_summary len=298 (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:10:39.762Z",
+        "duration_ms": 87258,
+        "input_summary": "RETRY: 494 evidence items",
+        "output_summary": "5 timeline steps (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:12:07.023Z",
+        "duration_ms": 42997,
+        "input_summary": "RETRY: 5 steps; 4 narrative keys",
+        "output_summary": "v2 completeness_score=62",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      }
+    ]
+  }
+}

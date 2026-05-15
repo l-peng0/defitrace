@@ -1,0 +1,45 @@
+{
+  "job_id": "paribus-arbitrum-2025-01-18-batch",
+  "incident_id": "paribus-2025-01-18-price-manipulation-incident-arbitrum",
+  "trigger_type": "batch",
+  "current_stage": "dashboard_projection",
+  "node_status": {
+    "seed_loader": "completed",
+    "source_finder": "completed",
+    "source_expander": "completed",
+    "llm_evidence_extractor": "completed",
+    "evidence_normalizer": "completed",
+    "technical_deterministic_collection": "completed",
+    "technical_reasoning": "completed",
+    "technical_validation": "completed",
+    "llm_timeline_synthesizer": "completed",
+    "llm_narrative_writer": "completed",
+    "llm_quality_assessor": "completed",
+    "dossier_assembler": "completed",
+    "quality_judge": "completed",
+    "dashboard_projection": "completed"
+  },
+  "retry_counts": {},
+  "started_at": "2026-04-27T13:17:54+00:00",
+  "updated_at": "2026-04-27T13:24:16+00:00",
+  "completed_at": "2026-04-27T13:24:16+00:00",
+  "run_notes": [
+    "Loaded and normalized incident seed.",
+    "Built direct source candidates from seed facts.",
+    "Fetched direct sources and discovered second-hop links.",
+    "LLM extracted 0 extra items.",
+    "Turned fetched sources into citation-backed evidence.",
+    "Assembled dossier, quality report, and library entry.",
+    "The Paribus price-manipulation incident dossier provides solid foundational evidence including verified transaction hashes, attacker address, and a published PoC from DeFiHackLabs. The timeline is logically structured and aligns with the price-manipulation attack pattern. However, data integrity issues exist: timeline step 2 references non-existent evidence ev-033, and the evidence list contains only 30 items despite a claimed source count of 50. The Bitfinding article's mention of 'interception' creates an ambiguity about the actual outcome that remains unresolved. The dossier is sufficient for demonstration purposes but requires cleanup of broken evidence references and clarification of the attack's final outcome.",
+    "Projected live incident library and dossier views."
+  ],
+  "artifacts": {
+    "incident_seed": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/paribus-2025-01-18-price-manipulation-incident-arbitrum/incident_seed.json",
+    "source_index": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/paribus-2025-01-18-price-manipulation-incident-arbitrum/source_index.json",
+    "source_documents": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/paribus-2025-01-18-price-manipulation-incident-arbitrum/source_documents.json",
+    "raw_evidence": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/paribus-2025-01-18-price-manipulation-incident-arbitrum/raw_evidence.json",
+    "augmented_incident": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/paribus-2025-01-18-price-manipulation-incident-arbitrum/augmented_incident.json",
+    "quality_report": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/paribus-2025-01-18-price-manipulation-incident-arbitrum/quality_report.json",
+    "incident_library_entry": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/paribus-2025-01-18-price-manipulation-incident-arbitrum/incident_library_entry.json"
+  }
+}

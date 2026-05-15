@@ -1,0 +1,432 @@
+{
+  "incident_id": "lavalending-2024-10-02-price-manipulation-incident-arbitrum",
+  "title": "Lavalending 2024-10-02 price-manipulation incident",
+  "incident_date": "",
+  "chain": "Arbitrum",
+  "protocol_name": "Lavalending",
+  "status": "demo_live_dossier",
+  "summary": "An estimated loss of about $130K was caused by a price-manipulation attack against LavaLending on Arbitrum",
+  "seed_overview": {
+    "seed_type": "tx_hash",
+    "trigger_type": "batch",
+    "source_names": [],
+    "attack_type_raws": []
+  },
+  "key_addresses": [
+    "0x69fa61eb4dc4e07263d401b01ed1cfceb599dab8",
+    "0xb5cfa4ae4d6e459ba285fec7f31caf8885e2285a",
+    "0x8a0Dfb61CAd29168E1067F6b23553035d83FcFB2",
+    "0x69FA61eB4dC4E07263D401b01ed1CfCeb599dAb8",
+    "0x1209ea2953310fceb37f7e2c32fe9153bd2445c6"
+  ],
+  "key_contracts": [],
+  "key_transactions": [
+    "0xb5cfa4ae4d6e459ba285fec7f31caf8885e2285a0b4ff62f66b43e280c947216",
+    "0xc65677aee9a8266ae6acc862610daea1fd0c263ae520f0f4e20c442afa5dc639",
+    "0x36806bfcade834f72ab36ab666620fd372c73fa9c80592f2b872d2ff88209d98",
+    "0xa8e7957870b5d1b3be8a284470d330d8275d3490fbc9e2bab6d355aa9372db33"
+  ],
+  "timeline": [
+    {
+      "step_number": 1,
+      "description": "Attacker address 0x69fa61eb4dc4e07263d401b01ed1cfceb599dab8 prepares funds to execute a price manipulation attack against LavaLending on Arbitrum.",
+      "evidence_refs": [
+        "ev-004",
+        "ev-002"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 2,
+      "description": "Attacker manipulates the price oracle of a targeted asset utilized by the LavaLending protocol, interacting with associated contracts such as 0x8a0Dfb61CAd29168E1067F6b23553035d83FcFB2.",
+      "evidence_refs": [
+        "ev-005",
+        "ev-010"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 3,
+      "description": "Attacker executes the exploit transaction 0xb5cfa4ae4d6e459ba285fec7f31caf8885e2285a0b4ff62f66b43e280c947216, leveraging the manipulated price to drain approximately $130K from the protocol.",
+      "evidence_refs": [
+        "ev-003",
+        "ev-005",
+        "ev-012"
+      ],
+      "summary": ""
+    }
+  ],
+  "attacker_profile": {
+    "incident_id": "lavalending-2024-10-02-price-manipulation-incident-arbitrum",
+    "profile_id": "profile-lavalending-2024-10-02-price-manipulation-incident-arbitrum",
+    "primary_addresses": [
+      "0x04b0f0e19cd662efd156655e2a11daca594d0c0f",
+      "0x04e7e4f6d932fa84759804cf6e5ec5e21e4a05ab",
+      "0x090287f882669268aea53be5b3fb284facf7bae6",
+      "0x0a182668dd9d809785b54491ec2bc5fe592d8d96",
+      "0x0c2c95b24529664fe55d4437d7a31175cfe6c4f7",
+      "0x0c84331e39d6658cd6e6b9ba04736cc4c4734351",
+      "0x1188b42250d50b770e964b800b8677fa55c59996",
+      "0x11a8598c4430c7663fda224c877f231895c8ca69",
+      "0x1209ea2953310fceb37f7e2c32fe9153bd2445c6",
+      "0x142247f71b11da7c6f3fcf01af9908db814c6eb9",
+      "0x1752f15b2fd27ee46f7881fee9bc52dabf6ce7a3",
+      "0x1a3c9b1d2f0529d97f2afc5136cc23e58f1fd35b",
+      "0x1be1798b70aee431c2986f7ff48d9d1fa350786a",
+      "0x1e515301f24abbf92dfb3d071e062739a8827b4d",
+      "0x1efb3f88bc88f03fd1804a5c53b7141bbef5ded8",
+      "0x20da436ed34fcdcfdcab9434555fbe6e87bc9b87",
+      "0x2254898d99e3bbb1d10f784e2678d59d88f70f1e",
+      "0x2946220288dbbf77df0030fcecc2a8348cbbe32c",
+      "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "0x307ffe186f84a3bc2613d1ea417a5737d69a7007",
+      "0x34ab67e2748f36e183e764360f9549d6b08c6c2b",
+      "0x3607e46698d218b3a5cae44bf381475c0a5e2ca7",
+      "0x36285ad3e275439d43585230d1a843e161135c15",
+      "0x3d9907f9a368ad0a51be60f7da3b97cf940982d8",
+      "0x3f770ac673856f105b586bb393d122721265ad46",
+      "0x3ff516b89ea72585af520b64285eca5e4a0a8986",
+      "0x4c7dc4995ec757c88c2e7409536870834a3f7f62",
+      "0x50834f3163758fcc1df9973b6e91f0f0f0434ad3",
+      "0x50f1e85fc9a36481f29e0be56cbdee3419205ad8",
+      "0x56ea05c0c3b665f67538909343fb3becb4fe5714",
+      "0x590a456092981a29991291443c872fcf87b32d64",
+      "0x5e166a3a9ebcafe9cf62cc2bd2cf41a109de18af",
+      "0x5e76e98e0963ecdc6a065d1435f84065b7523f39",
+      "0x625e7708f30ca75bfd92586e17077590c60eb4cd",
+      "0x639fe6ab55c921f74e7fac1ee960c0b6293ba612",
+      "0x6700b021a8bcfae25a2493d16d7078c928c13151",
+      "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+      "0x69fa61eb4dc4e07263d401b01ed1cfceb599dab8",
+      "0x6c6c6857e2f32fccbdb2791597350aa034a3ce47",
+      "0x6da8d7ef0625e965dafc393793c048096392d4a5",
+      "0x724dc807b04555b71ed48a6896b6f41593b8c637",
+      "0x794a61358d6845594f94dc1db02a252b5b4814ad",
+      "0x7ae1ed1b5a882b9b12d93b5db5f51ef70f6b2471",
+      "0x7cb47f4f634fa0f8165de2fe3528471bd127533a",
+      "0x80248152de24370265746e19ac08ce8bd6e93abc",
+      "0x8077941a09aee460bfd28aff671363a547eda68d",
+      "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "0x86e721b43d4ecfa71119dd38c0f938a75fdb57b3",
+      "0x870a200215c1e2a341f11a82340b2aa92cd53f5a",
+      "0x8a0dfb61cad29168e1067f6b23553035d83fcfb2",
+      "0x8b194beae1d3e0788a1a35173978001acdfba668",
+      "0x8cc8093218bcac8b1896a1eed4d925f6f6ab289f",
+      "0x9b1af4e33726f76966ae5c53543deddae47f5ec0",
+      "0x9dd329f5411466d9e0c488ff72519ca9fef0cb40",
+      "0xa1267c3106e88736f33bb264700ec45ee7c2635c",
+      "0xa72636cbcaa8f5ff95b2cc47f3cdee83f3294a0b",
+      "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
+      "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "0xb20bd22d3d2e5a628523d37b3ded569598eb649b",
+      "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "0xc2c6df6a8b6cc79a6f927a1ffae602c701c374ea",
+      "0xc31e54c7a869b9fcbecc14363cf510d1c41fa443",
+      "0xc412dae04ee97d0cdd338f0be231db6762c3554c",
+      "0xc6962004f452be9203591991d15f6b388e09e8d0",
+      "0xc7d47cd166f2a2359321611d94aa89022751494e",
+      "0xc86eb7b85807020b4548ee05b54bfc956eebbfcd",
+      "0xcb263f830355d83b6234cfecdaa0b6f86736c6cc",
+      "0xcb7113d3d572613bbfcecf80d1341cffe2a92c00",
+      "0xce762cc8138f4fa55427403a33e95a3d492c0166",
+      "0xce88686553686da562ce7cea497ce749da109f9f",
+      "0xcf8dec561cf2a3adfb1f9cfeaeaf1f5d87ba57a6",
+      "0xd0c7101eacbb49f3decccc166d238410d6d46d57",
+      "0xd13a2f836b60847d72d5e6ede6dbd0d604d27c0c",
+      "0xd429e95c5de0e57203db510ae9f1c0eac2da4c05",
+      "0xd8ad37849950903571df17049516a5cd4cbe55f6",
+      "0xdc1fad70953bb3918592b6fcc374fe05f5811b6a",
+      "0xdfc10baeac95ec27585571812b6502a65b7195dc",
+      "0xe50fa9b3c56ffb159cb0fca61f5c9d750e8128c8",
+      "0xe72ba9418b5f2ce0a6a40501fe77c6839aa37333",
+      "0xe879a4b54396aebb3416bc72a1ab1d360c2caff6",
+      "0xed482b45a00fdd79390034a8ce8c6a7fc8904902",
+      "0xf0bef480bb28732f3c3087938f2dc807dd4af8ec",
+      "0xf3846c0acc241721f0d132df86a8b73594bda052",
+      "0xf611aeb5013fd2c0511c9cd55c7dc5c1140741a6",
+      "0xf7a6355b1cd58cf3a38fc12e330baa3b84275a5f",
+      "0xfccf3cabbe80101232d343252614b6a3ee81c989",
+      "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
+    ],
+    "related_addresses": [
+      "0xb5cfa4ae4d6e459ba285fec7f31caf8885e2285a",
+      "0x8a0Dfb61CAd29168E1067F6b23553035d83FcFB2",
+      "0x69FA61eB4dC4E07263D401b01ed1CfCeb599dAb8",
+      "0x1209ea2953310fceb37f7e2c32fe9153bd2445c6",
+      "0xc65677aee9a8266ae6acc862610daea1fd0c263a",
+      "0x36806bfcade834f72ab36ab666620fd372c73fa9",
+      "0xa8e7957870b5d1b3be8a284470d330d8275d3490",
+      "0x121a8273b66bf699bf1fea1d426a358c95037d05",
+      "0x25a075e29ad44eb3427087cb524c7bb997bfe3ec",
+      "0xfd00eb8b60f7297b6bc3a4ac27e8446a9ad816b7"
+    ],
+    "recent_activity_summary": "The dossier has 1 direct attacker address candidate(s) and 157 additional address mentions from fetched sources.",
+    "counterparties": [],
+    "repeated_behaviors": [
+      "Leans on addresses confirmed by direct seed fields first.",
+      "Uses source-text mentions as weaker supporting clues rather than direct proof."
+    ],
+    "open_questions": [
+      "Which address funded the exploit wallet before the attack?",
+      "Which transfers right after the exploit are still missing from the dossier?"
+    ]
+  },
+  "pattern_hypotheses": [
+    {
+      "hypothesis_id": "hyp-001",
+      "label": "price_manipulation",
+      "summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+      "why_suspected": [
+        "Attack-type tags mention price manipulation.",
+        "The supporting sources resemble prior price-manipulation writeups."
+      ],
+      "confidence": 0.76,
+      "open_questions": [
+        "Which specific pricing path was abused?",
+        "Is there a direct explorer or postmortem source that confirms the same mechanism?"
+      ]
+    }
+  ],
+  "source_summary": {
+    "source_count": 45,
+    "source_types": {
+      "report": 1,
+      "poc": 1,
+      "explorer": 43
+    },
+    "direct_source_count": 4,
+    "secondary_source_count": 41,
+    "fetched_source_count": 43
+  },
+  "quality_report": {
+    "incident_id": "lavalending-2024-10-02-price-manipulation-incident-arbitrum",
+    "completeness_score": 0.05,
+    "direct_source_count": 4,
+    "secondary_source_count": 41,
+    "fetched_source_count": 43,
+    "citation_coverage_count": 334,
+    "missing_fields": [
+      "attack_contract_urls",
+      "victim_contract_urls",
+      "social_sources",
+      "exact_attack_timestamp",
+      "manipulated_token_address",
+      "oracle_contract_address",
+      "flashloan_source_and_amount",
+      "fund_destination_after_exploit",
+      "transaction_trace_analysis",
+      "protocol_response_statement"
+    ],
+    "judge_summary": "The dossier establishes that a price-manipulation attack against LavaLending occurred on Arbitrum with approximately $130K in losses, supported by a primary transaction hash and attacker address. However, the technical depth is insufficient: the specific oracle exploited, the token whose price was manipulated, flashloan mechanics, and transaction traces are absent or inferred. The evidence corpus is polluted with irrelevant testnet data, and critical fields including contract URLs, social sources, and post-exploit fund tracking are missing. The timeline is logically structured but rests on weak evidentiary foundations for the manipulation mechanics.",
+    "evidence_supports_timeline": "partially",
+    "confidence_assessment": {
+      "attack_occurrence": "high",
+      "attacker_address": "medium-high",
+      "loss_amount": "medium-low",
+      "attack_mechanics": "low",
+      "timeline_sequence": "low"
+    },
+    "gaps": [
+      "No transaction trace analysis provided to substantiate price manipulation mechanics",
+      "Specific oracle and manipulated token not identified despite being critical to understanding the exploit",
+      "Fund flow analysis absent - no tracking of stolen assets post-exploit",
+      "Evidence set contains significant noise with 15+ irrelevant sepolia testnet items unrelated to the mainnet attack",
+      "No on-chain contract verification or code analysis of the exploited vulnerability",
+      "No social media or official protocol acknowledgment sources cited",
+      "Preparation phase (Step 1) lacks substantive evidence beyond attacker address identification"
+    ],
+    "demo_ready": false,
+    "recommendations": [
+      "Obtain and include full transaction trace from Arbiscan or Tenderly to document the exact manipulation path",
+      "Identify and document the specific oracle contract and token pair that was manipulated",
+      "Add contract verification URLs for all referenced addresses (attacker, protocol contracts, oracle)",
+      "Remove or filter sepolia testnet evidence items that dilute relevance",
+      "Trace fund flows post-exploit to document attacker's profit extraction method",
+      "Source official protocol statements or social media acknowledgments of the incident",
+      "Add timestamp and block number for the exploit transaction",
+      "Document whether flashloans were used and from which lending source"
+    ]
+  },
+  "generated_at": "2026-04-27T12:52:08+00:00",
+  "technical_analysis": {
+    "status": "completed",
+    "primary_tx_hash": "0xb5cfa4ae4d6e459ba285fec7f31caf8885e2285a0b4ff62f66b43e280c947216",
+    "tx_hashes": [
+      "0xb5cfa4ae4d6e459ba285fec7f31caf8885e2285a0b4ff62f66b43e280c947216"
+    ],
+    "exploit_mechanism": "",
+    "validation_verdict": "Deterministic and semantic checks passed."
+  },
+  "narrative": {
+    "executive_summary": "On October 2, 2024, LavaLending, a lending protocol on Arbitrum, suffered a price-manipulation attack resulting in an estimated loss of approximately $130,000. The attacker exploited vulnerabilities in the protocol's price oracle mechanism to manipulate asset valuations and extract funds from the lending pools.",
+    "attack_narrative": "The attack was executed through a single malicious transaction (0xb5cfa4ae4d6e459ba285fec7f31caf8885e2285a0b4ff62f66b43e280c947216) by an attacker-controlled address (0x69fa61eb4dc4e07263d401b01ed1cfceb599dab8) on the Arbitrum network. The attacker leveraged price manipulation techniques to exploit LavaLending's oracle dependency. By artificially distorting the price feeds of one or more assets used within the protocol, the attacker was able to manipulate collateral valuations. This allowed them to either over-borrow against undercollateralized positions or liquidate positions at artificially favorable rates, ultimately draining approximately $130K in value from the protocol. The attack pattern is consistent with classic oracle manipulation exploits seen across DeFi lending platforms.",
+    "attacker_motive": "The attacker's primary motive was financial gain, extracting an estimated $130,000 in assets from the protocol through the price manipulation exploit. The attack demonstrates a profit-driven approach, targeting a specific vulnerability in the oracle implementation rather than exploiting a general smart contract bug.",
+    "key_takeaway": "This incident reinforces the critical importance of robust oracle security in DeFi lending protocols. Price manipulation attacks remain a prevalent threat vector, particularly for protocols that rely on spot prices or insufficiently protected price feeds. Mitigation strategies include implementing Time-Weighted Average Prices (TWAP), using multiple independent oracle sources with price deviation checks, establishing circuit breakers for rapid price changes, and conducting thorough oracle security audits before deployment."
+  },
+  "qa_retry_triggered": true,
+  "qa_retry_critique": "First-pass completeness score: 5.50 (threshold: 0.7). Missing/weak dimensions: attack_contract_urls, victim_contract_urls, social_sources, exact_timestamp, block_number, specific_asset_targeted, manipulation_mechanism_details, fund_destination_addresses, protocol_response_statement. Quality assessor notes: The LavaLending incident dossier provides the essential skeleton of a price manipulation attack with a confirmed attacker address (0x69fa61eb4dc4e07263d401b01ed1cfceb599dab8) and attack transaction (0xb5cfa4ae4d6e459ba285fec7f31caf8885e2285a0b4ff62f66b43e280c947216). However, the dossier suffers from sparse technical evidence - the manipulation mechanism remains vague, no vulnerable contract addresses are identified, and the $130K loss claim lacks on-chain substantiation. The evidence collection includes significant noise from testnet data (Sepolia) which dilutes evidentiary quality. The narrative is coherent but largely inferential rather than evidence-driven. For demo purposes, the dossier lacks the contract-level detail and technical depth required for a complete presentation. Identified gaps: Technical details of the price manipulation mechanism are unspecified - no indication whether flash loans, direct oracle spoofing, or liquidity pool manipulation was used; No vulnerable contract addresses identified (lending pools, oracle contracts, or collateral contracts); Evidence includes significant noise from Sepolia testnet transactions (ev-015 through ev-027) which are irrelevant to the mainnet incident; Loss amount of $130K is stated but not substantiated with on-chain fund flow analysis; No pre-attack preparation transactions (funding, reconnaissance) or post-attack fund movement tracing; Missing corroboration from social media, official protocol statements, or security researcher analyses; No specific asset or market pair targeted by the manipulation is identified. Recommendations: Trace and analyze the attack transaction (0xb5cfa4ae...) to identify all internal calls, token transfers, and manipulated price feeds; Identify and document the specific vulnerable contracts: lending pool, oracle, and collateral token contracts involved; Remove or clearly mark testnet evidence (ev-015 through ev-027) as irrelevant to avoid confusion; Obtain block number and precise timestamp for the attack transaction; Trace post-exploit fund movements to identify destination addresses and any mixer/bridge usage; Search for and include social media reports, official LavaLending statements, and third-party security analyses; Determine the specific asset pair or oracle that was manipulated and document the manipulation technique (flash loan size, price deviation percentage, etc.); Add pre-attack funding transactions to establish attacker preparation timeline.",
+  "pipeline_trace": {
+    "revision_triggered": false,
+    "revision_critique": null,
+    "qa_retry_triggered": true,
+    "qa_retry_critique": "First-pass completeness score: 5.50 (threshold: 0.7). Missing/weak dimensions: attack_contract_urls, victim_contract_urls, social_sources, exact_timestamp, block_number, specific_asset_targeted, manipulation_mechanism_details, fund_destination_addresses, protocol_response_statement. Quality assessor notes: The LavaLending incident dossier provides the essential skeleton of a price manipulation attack with a confirmed attacker address (0x69fa61eb4dc4e07263d401b01ed1cfceb599dab8) and attack transaction (0xb5cfa4ae4d6e459ba285fec7f31caf8885e2285a0b4ff62f66b43e280c947216). However, the dossier suffers from sparse technical evidence - the manipulation mechanism remains vague, no vulnerable contract addresses are identified, and the $130K loss claim lacks on-chain substantiation. The evidence collection includes significant noise from testnet data (Sepolia) which dilutes evidentiary quality. The narrative is coherent but largely inferential rather than evidence-driven. For demo purposes, the dossier lacks the contract-level detail and technical depth required for a complete presentation. Identified gaps: Technical details of the price manipulation mechanism are unspecified - no indication whether flash loans, direct oracle spoofing, or liquidity pool manipulation was used; No vulnerable contract addresses identified (lending pools, oracle contracts, or collateral contracts); Evidence includes significant noise from Sepolia testnet transactions (ev-015 through ev-027) which are irrelevant to the mainnet incident; Loss amount of $130K is stated but not substantiated with on-chain fund flow analysis; No pre-attack preparation transactions (funding, reconnaissance) or post-attack fund movement tracing; Missing corroboration from social media, official protocol statements, or security researcher analyses; No specific asset or market pair targeted by the manipulation is identified. Recommendations: Trace and analyze the attack transaction (0xb5cfa4ae...) to identify all internal calls, token transfers, and manipulated price feeds; Identify and document the specific vulnerable contracts: lending pool, oracle, and collateral token contracts involved; Remove or clearly mark testnet evidence (ev-015 through ev-027) as irrelevant to avoid confusion; Obtain block number and precise timestamp for the attack transaction; Trace post-exploit fund movements to identify destination addresses and any mixer/bridge usage; Search for and include social media reports, official LavaLending statements, and third-party security analyses; Determine the specific asset pair or oracle that was manipulated and document the manipulation technique (flash loan size, price deviation percentage, etc.); Add pre-attack funding transactions to establish attacker preparation timeline.",
+    "records": [
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:46:57.863Z",
+        "duration_ms": 25635,
+        "input_summary": "45 source docs; 334 heuristic items",
+        "output_summary": "334 total items (+0 LLM-extracted)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "collector",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:47:23.506Z",
+        "duration_ms": 1118,
+        "input_summary": "1 tx(s): 0xb5cfa4ae4d6e459ba285fec7f31caf8885e2285a0b4ff62f66b43e280c947216",
+        "output_summary": "1 artifact bundle(s) collected; statuses: completed",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "planner",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:47:24.625Z",
+        "duration_ms": 8,
+        "input_summary": "1 transactions on Arbitrum",
+        "output_summary": "9 role categories; 12 priority contracts",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "contract_intelligence",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:47:24.632Z",
+        "duration_ms": 8346,
+        "input_summary": "12 priority contracts",
+        "output_summary": "12 contracts in inventory",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "technical_reasoner",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:47:32.978Z",
+        "duration_ms": 84943,
+        "input_summary": "1 txs, 12 contracts",
+        "output_summary": "0 timeline steps; mechanism: ",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "semantic_validator",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:48:57.920Z",
+        "duration_ms": 1,
+        "input_summary": "revision_round=0",
+        "output_summary": "severity=pass; needs_revision=False; verdict: Deterministic and semantic checks passed.",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:48:57.925Z",
+        "duration_ms": 33057,
+        "input_summary": "334 evidence items",
+        "output_summary": "executive_summary len=397",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:48:57.925Z",
+        "duration_ms": 33057,
+        "input_summary": "334 evidence items",
+        "output_summary": "4 timeline steps",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:49:30.988Z",
+        "duration_ms": 32873,
+        "input_summary": "4 timeline steps; 4 narrative keys",
+        "output_summary": "completeness_score=5.5; judge_summary: The LavaLending incident dossier provides the essential skeleton of a price mani",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:50:03.860Z",
+        "duration_ms": 46996,
+        "input_summary": "RETRY: 45 docs; critique injected",
+        "output_summary": "341 items after retry extraction",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:50:50.855Z",
+        "duration_ms": 34904,
+        "input_summary": "RETRY: 341 evidence items",
+        "output_summary": "executive_summary len=312 (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:50:50.855Z",
+        "duration_ms": 34904,
+        "input_summary": "RETRY: 341 evidence items",
+        "output_summary": "3 timeline steps (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:51:25.759Z",
+        "duration_ms": 42986,
+        "input_summary": "RETRY: 3 steps; 4 narrative keys",
+        "output_summary": "v2 completeness_score=5.2",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      }
+    ]
+  }
+}

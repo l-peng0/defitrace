@@ -1,0 +1,184 @@
+{
+  "incident_id": "unknown-2024-10-10-price-manipulation-incident-bsc",
+  "chain": "BSC",
+  "generated_at": "2026-04-27T12:57:12+00:00",
+  "tx_hashes": [
+    "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3"
+  ],
+  "roles": {
+    "attacker_eoa": [
+      "0x4645863205b47a0a3344684489e8c446a437d66c"
+    ],
+    "attacker_contracts": [],
+    "victim": [
+      "0x0000000000000000000000000000000000000000"
+    ],
+    "routers": [
+      "0x10ed43c718714eb63d5aa57b78b54704e256024e"
+    ],
+    "pairs": [
+      "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a",
+      "0x03fed6ecf872a827c07eab63106e8f04aef79f0d"
+    ],
+    "oracles": [],
+    "flash_loan_providers": [
+      "0x92b7807bf19b7dddf89b706143896d05228f3121"
+    ],
+    "tokens": [
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0x9810512be701801954449408966c630595d0cd51"
+    ],
+    "unknown": [
+      "0x1b81d678ffb9c0263b24a97847620c99d213eb14",
+      "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
+      "0xc5161ae3437c08036b98bdb58cfe6bbff876c177",
+      "0xd5f07fed6ddca96c6e93f06498dfecf7e1346d7e",
+      "0xa2268fcc2fe7a2bb755fbe5a7b3ac346ddfedb9b",
+      "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
+      "0x4848489f0b2bedd788c696e2d79b6b69d7484848",
+      "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"
+    ]
+  },
+  "newly_deployed": [],
+  "priority_contracts": [
+    {
+      "address": "0x0000000000000000000000000000000000000000",
+      "role": "victim",
+      "why": "largest net-negative token balance change",
+      "priority": "high"
+    },
+    {
+      "address": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "role": "pair",
+      "why": "target of direct swap()",
+      "priority": "medium"
+    },
+    {
+      "address": "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a",
+      "role": "pair",
+      "why": "target of direct swap()",
+      "priority": "medium"
+    },
+    {
+      "address": "0x03fed6ecf872a827c07eab63106e8f04aef79f0d",
+      "role": "pair",
+      "why": "target of direct swap()",
+      "priority": "medium"
+    },
+    {
+      "address": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "role": "router",
+      "why": "called with swap* selector",
+      "priority": "medium"
+    },
+    {
+      "address": "0x92b7807bf19b7dddf89b706143896d05228f3121",
+      "role": "flash_loan_provider",
+      "why": "called with flashLoan* selector",
+      "priority": "medium"
+    }
+  ],
+  "investigation_notes": [
+    "Tx 0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3 contains 10 swap selector(s); inspect router/pair pricing."
+  ],
+  "call_graph": [
+    {
+      "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "to": "0x92b7807bf19b7dddf89b706143896d05228f3121",
+      "category": "flashloan"
+    },
+    {
+      "from": "0x92b7807bf19b7dddf89b706143896d05228f3121",
+      "to": "0x55d398326f99059ff775485246999027b3197955",
+      "category": "transfer"
+    },
+    {
+      "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "to": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "category": "swap"
+    },
+    {
+      "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "to": "0x55d398326f99059ff775485246999027b3197955",
+      "category": "transfer"
+    },
+    {
+      "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "to": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "category": "swap"
+    },
+    {
+      "from": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "category": "transfer"
+    },
+    {
+      "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "category": "burn"
+    },
+    {
+      "from": "0xa2268fcc2fe7a2bb755fbe5a7b3ac346ddfedb9b",
+      "to": "0x9810512be701801954449408966c630595d0cd51",
+      "category": "mint"
+    },
+    {
+      "from": "0xd5f07fed6ddca96c6e93f06498dfecf7e1346d7e",
+      "to": "0x55d398326f99059ff775485246999027b3197955",
+      "category": "transfer"
+    },
+    {
+      "from": "0x1b81d678ffb9c0263b24a97847620c99d213eb14",
+      "to": "0x9810512be701801954449408966c630595d0cd51",
+      "category": "transfer"
+    },
+    {
+      "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "to": "0x9810512be701801954449408966c630595d0cd51",
+      "category": "transfer"
+    },
+    {
+      "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "to": "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a",
+      "category": "swap"
+    },
+    {
+      "from": "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a",
+      "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "category": "transfer"
+    },
+    {
+      "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "to": "0x03fed6ecf872a827c07eab63106e8f04aef79f0d",
+      "category": "swap"
+    },
+    {
+      "from": "0x03fed6ecf872a827c07eab63106e8f04aef79f0d",
+      "to": "0x55d398326f99059ff775485246999027b3197955",
+      "category": "transfer"
+    },
+    {
+      "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "category": "transfer"
+    },
+    {
+      "from": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "to": "0x55d398326f99059ff775485246999027b3197955",
+      "category": "transfer"
+    },
+    {
+      "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "to": "0x55d398326f99059ff775485246999027b3197955",
+      "category": "transfer"
+    },
+    {
+      "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "category": "transfer"
+    }
+  ]
+}

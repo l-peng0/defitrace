@@ -1,0 +1,848 @@
+{
+  "incident_id": "veth-2024-11-14-price-manipulation-incident-ethereum",
+  "headline": "Veth 2024-11-14 price-manipulation incident",
+  "executive_summary": "An estimated loss of about $447K was caused by a price-manipulation attack involving the vETH/BIF market on Ethereum",
+  "timeline_summary": "The current dossier has 1 direct attack transaction candidate(s). An estimated loss of about $447K was caused by a price-manipulation attack involving the vETH/BIF market on Ethereum The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+  "attacker_behavior_summary": "The dossier has 1 direct attacker address candidate(s) and 260 additional address mentions from fetched sources.",
+  "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+  "source_refs": [
+    {
+      "source_id": "src-001",
+      "url": "https://x.com/SlowMist_Team/status/1856987988632457708",
+      "source_type": "social",
+      "depth": 0
+    },
+    {
+      "source_id": "src-002",
+      "url": "https://x.com/ExternalExplorer_xyz/status/1857002671124730233",
+      "source_type": "social",
+      "depth": 0
+    },
+    {
+      "source_id": "src-003",
+      "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/vETH_exp.sol",
+      "source_type": "poc",
+      "depth": 0
+    },
+    {
+      "source_id": "src-004",
+      "url": "https://blog.verichains.io/p/veth-incident-with-unknown-mechanism",
+      "source_type": "report",
+      "depth": 0
+    },
+    {
+      "source_id": "src-005",
+      "url": "https://x.com/TenArmorAlert/status/1856984299905716645",
+      "source_type": "social",
+      "depth": 0
+    },
+    {
+      "source_id": "src-006",
+      "url": "https://www.quillaudits.com/blog/hack-analysis/veth-token-450k-exploit-analysis",
+      "source_type": "report",
+      "depth": 0
+    },
+    {
+      "source_id": "src-007",
+      "url": "https://etherscan.io/tx/0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b",
+      "source_type": "explorer",
+      "depth": 0
+    },
+    {
+      "source_id": "src-008",
+      "url": "https://etherscan.io/address/0x351d38733de3f1e73468d24401c59f63677000c9",
+      "source_type": "explorer",
+      "depth": 0
+    },
+    {
+      "source_id": "src-009",
+      "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-11/vETH_exp.sol",
+      "source_type": "poc",
+      "depth": 1
+    },
+    {
+      "source_id": "src-010",
+      "url": "https://etherscan.io/address/0x713d2b652e5f2a86233c57af5341db42a5559dd1",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-011",
+      "url": "https://etherscan.io/address/0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-012",
+      "url": "https://etherscan.io/tx/0x90db330d9e46609c9d3712b60e64e32e3a4a2f31075674a58dd81181122352f8",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-013",
+      "url": "https://etherscan.io/tx/0x1ae40f26819da4f10bc7c894a2cc507cdb31c29635d31fa90c8f3f240f0327c0",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-014",
+      "url": "https://www.quillaudits.com/blog/hack-analysis",
+      "source_type": "report",
+      "depth": 1
+    },
+    {
+      "source_id": "src-015",
+      "url": "https://www.quillaudits.com/leaderboard",
+      "source_type": "report",
+      "depth": 1
+    },
+    {
+      "source_id": "src-016",
+      "url": "https://www.quillaudits.com/case-studies",
+      "source_type": "report",
+      "depth": 1
+    },
+    {
+      "source_id": "src-017",
+      "url": "https://www.quillaudits.com/free-smart-contract-audit-consultation",
+      "source_type": "report",
+      "depth": 1
+    },
+    {
+      "source_id": "src-018",
+      "url": "https://etherscan.io/address/0x713d2b652e5f2a86233C57Af5341Db42a5559Dd1",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-019",
+      "url": "https://app.external_explorer.com/explorer/tx/eth/0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-020",
+      "url": "https://www.quillaudits.com/smart-contract-audit",
+      "source_type": "report",
+      "depth": 1
+    },
+    {
+      "source_id": "src-021",
+      "url": "https://x.com/quillaudits_ai",
+      "source_type": "social",
+      "depth": 1
+    },
+    {
+      "source_id": "src-022",
+      "url": "https://www.linkedin.com/company/quillaudits/",
+      "source_type": "report",
+      "depth": 1
+    },
+    {
+      "source_id": "src-023",
+      "url": "https://t.me/QuillAudits_official",
+      "source_type": "report",
+      "depth": 1
+    },
+    {
+      "source_id": "src-024",
+      "url": "https://x.com/intent/follow?screen_name=QuillAudits_AI",
+      "source_type": "social",
+      "depth": 1
+    },
+    {
+      "source_id": "src-025",
+      "url": "https://t.me/quillaudits",
+      "source_type": "report",
+      "depth": 1
+    },
+    {
+      "source_id": "src-026",
+      "url": "https://www.reddit.com/r/QuillAudits/",
+      "source_type": "report",
+      "depth": 1
+    },
+    {
+      "source_id": "src-027",
+      "url": "https://quillaudits.medium.com/",
+      "source_type": "report",
+      "depth": 1
+    },
+    {
+      "source_id": "src-028",
+      "url": "https://github.com/quillaudits",
+      "source_type": "poc",
+      "depth": 1
+    },
+    {
+      "source_id": "src-029",
+      "url": "https://etherscan.io/chart/etherprice",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-030",
+      "url": "https://sepolia.etherscan.io",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-031",
+      "url": "https://hoodi.etherscan.io",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-032",
+      "url": "https://etherscan.io/txs",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-033",
+      "url": "https://etherscan.io/txsPending",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-034",
+      "url": "https://etherscan.io/txsInternal",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-035",
+      "url": "https://etherscan.io/txCrossChain",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-036",
+      "url": "https://etherscan.io/txsBeaconDeposit",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-037",
+      "url": "https://etherscan.io/txsBeaconWithdrawal",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-038",
+      "url": "https://etherscan.io/txsBlobs",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-039",
+      "url": "https://etherscan.io/txsAA",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-040",
+      "url": "https://etherscan.io/txnAuthList",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-041",
+      "url": "https://etherscan.io/blocks",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-042",
+      "url": "https://etherscan.io/blocks_forked",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-043",
+      "url": "https://etherscan.io/uncles",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-044",
+      "url": "https://etherscan.io/accounts",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-045",
+      "url": "https://etherscan.io/contractsVerified",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-046",
+      "url": "https://etherscan.io/tokens",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-047",
+      "url": "https://etherscan.io/tokentxns",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-048",
+      "url": "https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-049",
+      "url": "https://www.quillaudits.com/blog/hack-analysis/the-bybit-hack",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-050",
+      "url": "https://www.quillaudits.com/blog/smart-contract/top-smart-contract-audit-firms",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-051",
+      "url": "https://www.quillaudits.com/blog/hack-analysis/loopscale-lost-5.8m-in-price-manipulation-attack",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-052",
+      "url": "https://www.quillaudits.com/blog/web3-security/socialfi-solana-rise-top-projects",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-053",
+      "url": "https://www.quillaudits.com/blog/web3-security/defi-attack-vectors-security-risks",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-054",
+      "url": "https://www.quillaudits.com/web3-hacks-database",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-055",
+      "url": "https://www.quillaudits.com/blog/hack-analysis/rhea-finance-hack",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-056",
+      "url": "https://www.quillaudits.com/blog/hack-analysis/kelp-dao-hack",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-057",
+      "url": "https://www.quillaudits.com/blog/hack-analysis/drift-protocol-multisig-exploit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-058",
+      "url": "https://www.quillaudits.com/blog/hack-analysis/resolv-labs-exploit-explained",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-059",
+      "url": "https://www.quillaudits.com/blog/hack-analysis/venus-5m-exploit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-060",
+      "url": "https://www.quillaudits.com/blog/hack-analysis/solv-protocol-exploit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-061",
+      "url": "https://www.quillaudits.com/blog/hack-analysis/foomcash-exploit-explained",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-062",
+      "url": "https://www.quillaudits.com/blog/hack-analysis/yeildblox-10m-hack-explained",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-063",
+      "url": "https://www.quillaudits.com/blog/hack-analysis/cross-curve-exploit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-064",
+      "url": "https://www.quillaudits.com/blog/hack-analysis/makina-4m-hack-explained",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-065",
+      "url": "https://www.quillaudits.com/blog/hack-analysis/truebit-26m-hack-explained",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-066",
+      "url": "https://www.quillaudits.com/services/layer1-chain-audit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-067",
+      "url": "https://www.quillaudits.com/services/blockchain-penetration-testing",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-068",
+      "url": "https://www.quillaudits.com/vciso",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-069",
+      "url": "https://www.quillaudits.com/services/incident-response-services",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-070",
+      "url": "https://www.quillaudits.com/services/wallet-security-audit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-071",
+      "url": "https://www.quillaudits.com/services/quillaudits-vigilant-squad",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-072",
+      "url": "https://www.quillaudits.com/services/on-chain-monitoring-service",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-073",
+      "url": "https://www.quillaudits.com/services/rwa-security-audit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-074",
+      "url": "https://www.quillaudits.com/services/defi-diligence",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-075",
+      "url": "https://www.quillaudits.com/services/defai-security-audit-services",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-076",
+      "url": "https://www.quillaudits.com/services/binance-smart-chain-auditing",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-077",
+      "url": "https://x.com/QuillAudits_AI",
+      "source_type": "social",
+      "depth": 2
+    },
+    {
+      "source_id": "src-078",
+      "url": "https://www.quillaudits.com/services/ethereum-smart-contracts-auditing",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-079",
+      "url": "https://www.quillaudits.com/services/near-smart-contracts-auditing",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-080",
+      "url": "https://www.quillaudits.com/services/polygon-smart-contract-audit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-081",
+      "url": "https://www.quillaudits.com/services/optimism-smart-contract-security-audit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-082",
+      "url": "https://www.quillaudits.com/services/arbitrum-smart-contracts-auditing",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-083",
+      "url": "https://www.quillaudits.com/services/fantom-smart-contract-audit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-084",
+      "url": "https://www.quillaudits.com/services/zksync-smart-contract-audit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-085",
+      "url": "https://www.quillaudits.com/services/avalanche-smart-contract-security-audit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-086",
+      "url": "https://www.quillaudits.com/services/solana-smart-contract-audit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-087",
+      "url": "https://www.quillaudits.com/services/linea-smart-contract-audit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-088",
+      "url": "https://www.quillaudits.com/blockchains-we-audit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-089",
+      "url": "https://www.quillaudits.com/leaderboard/taiko",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-090",
+      "url": "https://www.quillaudits.com/leaderboard/metis-vesting",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-091",
+      "url": "https://www.quillaudits.com/leaderboard/fly-trade",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-092",
+      "url": "https://www.quillaudits.com/leaderboard/velar-labs",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-093",
+      "url": "https://www.quillaudits.com/blog/web3-security/multi-layered-audit-framework",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-094",
+      "url": "https://www.quillaudits.com/case-studies/how-did-quillaudits-secure-pluto-fi",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-095",
+      "url": "https://www.quillaudits.com/case-studies/magpie-reward-optimization-security",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-096",
+      "url": "https://www.quillaudits.com/case-studies/brahma-fi-security-audit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-097",
+      "url": "https://www.quillaudits.com/case-studies/memeswap-security-audit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-098",
+      "url": "https://www.quillaudits.com/case-studies/taiko-protocol-security-audit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-099",
+      "url": "https://www.quillaudits.com/case-studies/huddle01-security-audit",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-100",
+      "url": "https://www.linkedin.com/top-content?trk=organization_guest_guest_nav_menu_topContent",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-101",
+      "url": "https://www.linkedin.com/pub/dir/+/+?trk=organization_guest_guest_nav_menu_people",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-102",
+      "url": "https://www.linkedin.com/learning/search?trk=organization_guest_guest_nav_menu_learning",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-103",
+      "url": "https://www.linkedin.com/jobs/search?trk=organization_guest_guest_nav_menu_jobs",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-104",
+      "url": "https://www.linkedin.com/games?trk=organization_guest_guest_nav_menu_games",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-105",
+      "url": "https://www.linkedin.com/products/quillaudits-quillcheck/",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-106",
+      "url": "https://www.linkedin.com/products/categories/fraud-protection-software?trk=organization_guest_product_card_category_link",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-107",
+      "url": "https://www.linkedin.com/products/quillaudits-hackerboard/?trk=organization_guest_product_card_related-content-card",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-108",
+      "url": "https://www.linkedin.com/products/quillaudits-quillai/?trk=organization_guest_product_card_related-content-card",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-109",
+      "url": "https://www.linkedin.com/in/bigrkg?trk=org-employees",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-110",
+      "url": "https://www.linkedin.com/posts/activity-7453314290956275712-y4Sn",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-111",
+      "url": "https://www.linkedin.com/company/quillaudits?trk=organization_guest_main-feed-card_feed-reaction-header",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-112",
+      "url": "https://www.linkedin.com/in/raopreetam?trk=organization_guest_main-feed-card_feed-actor-image",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-113",
+      "url": "https://www.linkedin.com/in/raopreetam?trk=organization_guest_main-feed-card_feed-actor-name",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-114",
+      "url": "https://www.linkedin.com/posts/quillaudits_184m-stolen-from-rhea-finance-18m-recovered-activity-7453089726242164737-MP7s",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-115",
+      "url": "https://www.linkedin.com/company/quillaudits?trk=organization_guest_main-feed-card_feed-actor-image",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-116",
+      "url": "https://www.linkedin.com/company/quillaudits?trk=organization_guest_main-feed-card_feed-actor-name",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-117",
+      "url": "https://www.linkedin.com/posts/activity-7452730813005275136-UPjb",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-118",
+      "url": "https://www.linkedin.com/company/quillaudits?trk=organization_guest_main-feed-card-text",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-119",
+      "url": "https://www.linkedin.com/posts/quillaudits_7500000000-thats-how-much-north-korea-activity-7452685994451111936-PLgJ",
+      "source_type": "report",
+      "depth": 2
+    },
+    {
+      "source_id": "src-120",
+      "url": "https://etherscan.io",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-121",
+      "url": "https://sepolia.etherscan.io/txs",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-122",
+      "url": "https://sepolia.etherscan.io/txsPending",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-123",
+      "url": "https://sepolia.etherscan.io/txsInternal",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-124",
+      "url": "https://sepolia.etherscan.io/txsBeaconWithdrawal",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-125",
+      "url": "https://sepolia.etherscan.io/txsBlobs",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-126",
+      "url": "https://sepolia.etherscan.io/txsAA",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-127",
+      "url": "https://sepolia.etherscan.io/txnAuthList",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-128",
+      "url": "https://sepolia.etherscan.io/blocks",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-129",
+      "url": "https://sepolia.etherscan.io/blocks_forked",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-130",
+      "url": "https://sepolia.etherscan.io/uncles",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-131",
+      "url": "https://sepolia.etherscan.io/accounts",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-132",
+      "url": "https://sepolia.etherscan.io/contractsVerified",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-133",
+      "url": "https://sepolia.etherscan.io/tokentxns",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-134",
+      "url": "https://sepolia.etherscan.io/nft-transfers",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-135",
+      "url": "https://sepolia.etherscan.io/nft-latest-mints",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-136",
+      "url": "https://sepolia.etherscan.io/unitconverter",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-137",
+      "url": "https://sepolia.etherscan.io/base64converter",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-138",
+      "url": "https://sepolia.etherscan.io/blockdateconverter",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-139",
+      "url": "https://etherscan.io/nft-top-contracts",
+      "source_type": "explorer",
+      "depth": 2
+    }
+  ],
+  "open_questions": [
+    "Which specific pricing path was abused?",
+    "Is there a direct explorer or postmortem source that confirms the same mechanism?"
+  ]
+}

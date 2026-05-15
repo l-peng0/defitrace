@@ -1,0 +1,32 @@
+{
+  "tx_hash": "0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d",
+  "chain": "BSC",
+  "status": "completed",
+  "files": {
+    "tx": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d/tx.json",
+    "receipt": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d/receipt.json",
+    "trace_callTracer": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d/trace_callTracer.json",
+    "decoded_calls": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d/decoded_calls.json",
+    "funds_flow": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d/funds_flow.json"
+  },
+  "summary": {
+    "contracts_touched": [
+      "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x8408497c18882bfb61be9204cfff530f4ee18320",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0xbe779d420b7d573c08eee226b9958737b6218888"
+    ],
+    "addresses_seen": [
+      "0x3026c464d3bd6ef0ced0d49e80f171b58176ce32",
+      "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x8408497c18882bfb61be9204cfff530f4ee18320",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0xbe779d420b7d573c08eee226b9958737b6218888"
+    ],
+    "native_value_transfers": 0,
+    "token_transfers": 405
+  },
+  "issues": []
+}

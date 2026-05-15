@@ -1,0 +1,44 @@
+{
+  "incident_id": "unknown-2024-10-06-price-manipulation-incident-ethereum",
+  "title": "Unknown 2024-10-06 price-manipulation incident",
+  "protocol_name": "Unknown",
+  "chain": "Ethereum",
+  "incident_date": "",
+  "summary": "An estimated loss of ~249 ETH (~$600K USD) was caused by a price-manipulation attack spanning thin SASHA liquidity on Ethereum",
+  "status": "demo_live_dossier",
+  "completeness_score": 0.62,
+  "source_count": 45,
+  "direct_source_count": 4,
+  "secondary_source_count": 41,
+  "social_count": 0,
+  "poc_count": 2,
+  "explorer_count": 42,
+  "report_count": 1,
+  "missing_fields": [
+    "protocol_name",
+    "victim_contract_urls",
+    "attack_contract_urls",
+    "social_sources",
+    "block_number",
+    "fund_flow_tracing",
+    "sasha_token_contract",
+    "vulnerable_protocol_identity",
+    "post_incident_response"
+  ],
+  "last_updated": "2026-04-27T12:55:54+00:00",
+  "pattern_label": "price_manipulation",
+  "attack_tx_hashes": [
+    "0xd9fdc7d03eec28fc2453c5fa68eff82d4c297f436a6a5470c54ca3aecd2db17e",
+    "0x000000000000290ac02aaa39b223fe8d0a0e5c4f27ead9083c756cc27a250d56",
+    "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+    "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  ],
+  "source_preview": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/SASHAToken_exp.sol",
+    "https://etherscan.io/tx/0xd9fdc7d03eec28fc2453c5fa68eff82d4c297f436a6a5470c54ca3aecd2db17e",
+    "https://etherscan.io/address/0x991493900674b10bdf54bdfe95b4e043257798cf",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-10/SASHAToken_exp.sol",
+    "https://etherscan.io/chart/etherprice"
+  ]
+}

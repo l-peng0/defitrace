@@ -1,0 +1,45 @@
+{
+  "job_id": "unknown-ethereum-2025-01-01-batch",
+  "incident_id": "unknown-2025-01-01-price-manipulation-incident-ethereum",
+  "trigger_type": "batch",
+  "current_stage": "dashboard_projection",
+  "node_status": {
+    "seed_loader": "completed",
+    "source_finder": "completed",
+    "source_expander": "completed",
+    "llm_evidence_extractor": "completed",
+    "evidence_normalizer": "completed",
+    "technical_deterministic_collection": "completed",
+    "technical_reasoning": "completed",
+    "technical_validation": "completed",
+    "llm_timeline_synthesizer": "completed",
+    "llm_narrative_writer": "completed",
+    "llm_quality_assessor": "completed",
+    "dossier_assembler": "completed",
+    "quality_judge": "completed",
+    "dashboard_projection": "completed"
+  },
+  "retry_counts": {},
+  "started_at": "2026-04-27T13:12:50+00:00",
+  "updated_at": "2026-04-27T13:18:18+00:00",
+  "completed_at": "2026-04-27T13:18:18+00:00",
+  "run_notes": [
+    "Loaded and normalized incident seed.",
+    "Built direct source candidates from seed facts.",
+    "Fetched direct sources and discovered second-hop links.",
+    "LLM extracted 0 extra items.",
+    "Turned fetched sources into citation-backed evidence.",
+    "Assembled dossier, quality report, and library entry.",
+    "The dossier provides a functional attack timeline with transaction hash, attacker address, and basic price manipulation flow via Uniswap V2. Evidence links from Etherscan and a DeFiHackLabs PoC support the timeline. However, critical gaps undermine completeness: the loss amount '12' lacks denomination, the protocol is unidentified, the exact vulnerability mechanism is underspecified, and no social sources corroborate the incident. The evidence items are largely inferred mentions with low confidence scores (0.52-0.65). The dossier requires loss quantification, protocol identification, and root cause clarification before it can be considered demo-ready.",
+    "Projected live incident library and dossier views."
+  ],
+  "artifacts": {
+    "incident_seed": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2025-01-01-price-manipulation-incident-ethereum/incident_seed.json",
+    "source_index": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2025-01-01-price-manipulation-incident-ethereum/source_index.json",
+    "source_documents": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2025-01-01-price-manipulation-incident-ethereum/source_documents.json",
+    "raw_evidence": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2025-01-01-price-manipulation-incident-ethereum/raw_evidence.json",
+    "augmented_incident": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2025-01-01-price-manipulation-incident-ethereum/augmented_incident.json",
+    "quality_report": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2025-01-01-price-manipulation-incident-ethereum/quality_report.json",
+    "incident_library_entry": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2025-01-01-price-manipulation-incident-ethereum/incident_library_entry.json"
+  }
+}

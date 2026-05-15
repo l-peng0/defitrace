@@ -1,0 +1,85 @@
+{
+  "incident_id": "bgm-2024-11-10-price-manipulation-incident-bsc",
+  "card": {
+    "title": "Bgm 2024-11-10 price-manipulation incident",
+    "chain": "BSC",
+    "incident_date": "",
+    "protocol_name": "Bgm",
+    "summary": "An estimated loss of about $450K was caused by a price-manipulation attack against BGM on BSC",
+    "source_count": 60,
+    "direct_source_count": 4,
+    "secondary_source_count": 56,
+    "completeness_score": 0.62
+  },
+  "detail": {
+    "timeline_preview": [
+      {
+        "step_number": 1,
+        "description": "Attacker 0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180 deployed a malicious contract on BSC to facilitate the exploit.",
+        "evidence_refs": [
+          "ev-004",
+          "ev-024"
+        ],
+        "entity_refs": [
+          "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180"
+        ],
+        "summary": ""
+      },
+      {
+        "step_number": 2,
+        "description": "Attacker prepared and positioned funds, interacting with the Bgm protocol and associated liquidity pool (tx 0x9a2b3a9b2c7a8ecb8c741c53315a1317609d30861c79bbe0b2307df57943503f).",
+        "evidence_refs": [
+          "ev-021"
+        ],
+        "entity_refs": [
+          "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+          "0x9a2b3a9b2c7a8ecb8c741c53315a1317609d30861c79bbe0b2307df57943503f"
+        ],
+        "summary": ""
+      },
+      {
+        "step_number": 3,
+        "description": "Attacker executed the core price-manipulation attack using batch transactions against the Bgm protocol, artificially inflating the price of a token within the protocol's pricing mechanism (tx 0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1).",
+        "evidence_refs": [
+          "ev-003",
+          "ev-019"
+        ],
+        "entity_refs": [
+          "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+          "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+          "0x42646478B25317160E0Dc8DB413991277e4bb3C2",
+          "0xeFA4bCE444C09a52941bEEf5FE8264D70534049f"
+        ],
+        "summary": ""
+      },
+      {
+        "step_number": 4,
+        "description": "Using the manipulated price, the attacker drained approximately $450K worth of assets from the Bgm protocol.",
+        "evidence_refs": [
+          "ev-005",
+          "ev-019"
+        ],
+        "entity_refs": [
+          "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180"
+        ],
+        "summary": ""
+      }
+    ],
+    "attacker_profile_summary": "The dossier has 1 direct attacker address candidate(s) and 250 additional address mentions from fetched sources.",
+    "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+    "judge_summary": "The dossier provides a coherent but surface-level account of the BGM price manipulation attack. The timeline is logically structured and supported by explorer evidence, and the external Quadriga Initiative report corroborates key facts. However, the dossier lacks technical depth: no vulnerable contract is identified, the $450K loss is unverified on-chain, the attack date field is empty, and fund flow analysis is absent. Evidence quality is mixed - several entries are low-confidence pattern matches from scraped content. The dossier is insufficient for forensic purposes or insurance claims but adequate for general awareness reporting.",
+    "missing_fields": [
+      "attack_contract_urls",
+      "victim_contract_urls",
+      "poc_links",
+      "precise_timestamp",
+      "vulnerable_contract_address",
+      "flash_loan_source",
+      "fund_flow_tracing",
+      "token_addresses_involved"
+    ],
+    "technical_analysis_status": "completed"
+  },
+  "status": "demo_live_dossier",
+  "last_updated": "2026-04-27T13:12:50+00:00"
+}

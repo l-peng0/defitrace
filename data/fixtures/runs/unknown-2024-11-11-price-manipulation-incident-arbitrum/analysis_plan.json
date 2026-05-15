@@ -1,0 +1,168 @@
+{
+  "incident_id": "unknown-2024-11-11-price-manipulation-incident-arbitrum",
+  "chain": "Arbitrum",
+  "generated_at": "2026-04-27T13:09:00+00:00",
+  "tx_hashes": [
+    "0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f"
+  ],
+  "roles": {
+    "attacker_eoa": [
+      "0xb87881637b5c8e6885c51ab7d895e53fa7d7c567"
+    ],
+    "attacker_contracts": [],
+    "victim": [
+      "0x2e2fe9bc7904649b65b6373baf40f9e2e0b883c5"
+    ],
+    "routers": [],
+    "pairs": [],
+    "oracles": [],
+    "flash_loan_providers": [],
+    "tokens": [
+      "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "0x82af49447d8a07e3bd95bd0d56f35241523fbab1"
+    ],
+    "unknown": [
+      "0xe2137168cda486a2555e16c597905854c84f9127",
+      "0x87812e877c6909fe2784015f7c5c1059ba9a769c",
+      "0x7dcf909b1e4b280bee72c6a69b3a7ed8adfb63f0",
+      "0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe",
+      "0xcdd264e26e1aa47e585864655d864b9e29840944",
+      "0x555b0cdafd5869a2ddca6033c88f5eefbe64e372",
+      "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
+      "0x22f6b6d653dfe654f5ab6c714f262100ded25cf9",
+      "0x2b67d14efbce4e3c38713f9e87b503d8f0158324",
+      "0x14c82cfc2c651700a66abdd7dc375c9ceefddd72",
+      "0x8b5c0352dd98be579285da94e51ea9dc749eb22d",
+      "0xce88686553686da562ce7cea497ce749da109f9f",
+      "0xff5e3ddaeff411a1dc6cce00014e4bca39265c20",
+      "0xb86e7d51621d6ddb33ec37e972de2a3f8f4f669f",
+      "0x8b194beae1d3e0788a1a35173978001acdfba668",
+      "0xdef171fe48cf0115b1d80b88dc8eab59176fee57",
+      "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "0xe24e0ae2d17376b4ba650af60c81b28b0e42ed18",
+      "0x216b4b4ba9f3e719726886d34a177484278bfcae",
+      "0x23873dc819554167ce7f133080978c7b0926a329",
+      "0x0000000000000000000000000000000000000000",
+      "0x5f3db5899a7937c9abf0a5fc91718e6f813e4195",
+      "0xebabefdc656ee7c3d5ed7a0924761b68a4533d06",
+      "0x38c83de2e8309a372a6629f941c70a14732ac967",
+      "0x3f770ac673856f105b586bb393d122721265ad46",
+      "0x912ce59144191c1204e64559fe8253a0e49e6548",
+      "0xdb5d94b8ed491b058f3e74d029775a14477cf7fa",
+      "0xe72ba9418b5f2ce0a6a40501fe77c6839aa37333",
+      "0xc4ed0a9ea70d5bcc69f748547650d32cc219d882",
+      "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "0x2fcd23e6104a55132a81710382aa16ddbd3b58f2",
+      "0x0796a95e7f36301caa30be1a99edb4c731aeb0e1",
+      "0x0b4c71fc70b6b65c04fd62b10191ee7999761a5a",
+      "0xc7144ee9b57ff6a84127ed7a57e0919e84538467",
+      "0x52ee5c0ea2e7b38d4b24c09d4d18cba6c293200e",
+      "0xca605ca47be6b791dd21e87d386135b98bdc916c",
+      "0xc89476e5ed868479c0c5599c1d703f2c309a044c",
+      "0x6e1bad32fdc88c75c7e1346f7694c8e00e748f3a",
+      "0x275caecf5542bf4a3cf64aa78a3f57dc9939675c",
+      "0x121b59880b70908ac34062f55fe4a72e8faf97fa",
+      "0x94ab217160f437f1d4a9e4c9bd083dbcb7689ffb",
+      "0x86e721b43d4ecfa71119dd38c0f938a75fdb57b3",
+      "0x9f35b2340b8031a6d96ef6fbfad9c83cdfd3063d",
+      "0x0a0d954d4b0f0b47a5990c0abd179a90ff74e255",
+      "0xd6002c3f5a53107cb11cc0b8de5f76f61f18cb5d",
+      "0x62cf82fb0484af382714cd09296260edc1dc0c6c",
+      "0x0000000000000000000000000000000000000001",
+      "0x6124086b90ab910038e607aa1bdd67b284c31c98",
+      "0x493d936e3aee38a93b4d83512f4a6993f579b81c",
+      "0xca60c5d2ee1f9c79c92a9d5831dc22ccc291b5f5",
+      "0xc2a446ea65d63886177a34a8b9e38ab4e20166cd",
+      "0xf81b4381b70ef520ae635afd4b0e8aeb994131fb",
+      "0xc3d4ca62ffe4dca0a86c8571fc6e1da1c041846b",
+      "0x7eb84ea770ff7532bd18fbb30b690daf0b7a9c93"
+    ]
+  },
+  "newly_deployed": [],
+  "priority_contracts": [
+    {
+      "address": "0x2e2fe9bc7904649b65b6373baf40f9e2e0b883c5",
+      "role": "victim",
+      "why": "largest net-negative token balance change",
+      "priority": "high"
+    }
+  ],
+  "investigation_notes": [],
+  "call_graph": [
+    {
+      "from": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "to": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "category": "transfer"
+    },
+    {
+      "from": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "to": "0x8b194beae1d3e0788a1a35173978001acdfba668",
+      "category": "transfer"
+    },
+    {
+      "from": "0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe",
+      "to": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "category": "burn"
+    },
+    {
+      "from": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "to": "0x8b194beae1d3e0788a1a35173978001acdfba668",
+      "category": "burn"
+    },
+    {
+      "from": "0x2e2fe9bc7904649b65b6373baf40f9e2e0b883c5",
+      "to": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "category": "transfer"
+    },
+    {
+      "from": "0x216b4b4ba9f3e719726886d34a177484278bfcae",
+      "to": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "category": "transfer"
+    },
+    {
+      "from": "0xdef171fe48cf0115b1d80b88dc8eab59176fee57",
+      "to": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "category": "burn"
+    },
+    {
+      "from": "0x5f3db5899a7937c9abf0a5fc91718e6f813e4195",
+      "to": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "category": "transfer"
+    },
+    {
+      "from": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "to": "0x86e721b43d4ecfa71119dd38c0f938a75fdb57b3",
+      "category": "transfer"
+    },
+    {
+      "from": "0xf81b4381b70ef520ae635afd4b0e8aeb994131fb",
+      "to": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "category": "mint"
+    },
+    {
+      "from": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "to": "0x8b194beae1d3e0788a1a35173978001acdfba668",
+      "category": "mint"
+    },
+    {
+      "from": "0xf81b4381b70ef520ae635afd4b0e8aeb994131fb",
+      "to": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "category": "transfer"
+    },
+    {
+      "from": "0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe",
+      "to": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "category": "transfer"
+    },
+    {
+      "from": "0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe",
+      "to": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "category": "mint"
+    },
+    {
+      "from": "0x52ee5c0ea2e7b38d4b24c09d4d18cba6c293200e",
+      "to": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "category": "transfer"
+    }
+  ]
+}

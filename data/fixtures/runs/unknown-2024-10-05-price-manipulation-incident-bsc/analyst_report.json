@@ -1,0 +1,681 @@
+{
+  "incident_id": "unknown-2024-10-05-price-manipulation-incident-bsc",
+  "report_type": "analyst_report",
+  "case_overview": {
+    "headline": "Unknown 2024-10-05 price-manipulation incident",
+    "what_happened": "On October 5, 2024, a price manipulation attack targeted the AIZPT Token on BSC, resulting in an estimated loss of approximately 34 BNB. The attacker exploited a price oracle vulnerability to drain funds from the protocol's liquidity pools.",
+    "why_it_matters": "This incident highlights the critical importance of robust price oracle implementations and resistance to manipulation. Protocols should use TWAP (Time-Weighted Average Price) oracles, multiple data sources, and implement price deviation thresholds to prevent similar attacks. The availability of a public PoC also underscores the need for thorough security audits before deployment.",
+    "primary_sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+        "source_type": "report",
+        "depth": 0,
+        "discovered_from": "incident_seed",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/AIZPTToken_exp.sol",
+        "source_type": "poc",
+        "depth": 0,
+        "discovered_from": "incident_seed",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://bscscan.com/tx/0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d",
+        "source_type": "explorer",
+        "depth": 0,
+        "discovered_from": "attack_tx_hashes",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://bscscan.com/address/0x8408497c18882bfb61be9204cfff530f4ee18320",
+        "source_type": "explorer",
+        "depth": 0,
+        "discovered_from": "attacker_addresses",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      }
+    ]
+  },
+  "attacker_profile": {
+    "summary": "The attacker's primary motive was financial gain through exploitation of price manipulation vulnerabilities in the AIZPT Token's smart contract logic, allowing them to extract value at artificially inflated or deflated token prices.",
+    "attacker_addresses": [
+      "0x8408497c18882bfb61be9204cfff530f4ee18320",
+      "0x3026c464d3bd6ef0ced0d49e80f171b58176ce32",
+      "0xbe779d420b7d573c08eee226b9958737b6218888",
+      "0x5e694707337cca979d18f9e45f40e81d6ca341ed"
+    ],
+    "behavior_signals": [
+      "Leans on addresses confirmed by direct seed fields first.",
+      "Uses source-text mentions as weaker supporting clues rather than direct proof."
+    ]
+  },
+  "fund_flow": {
+    "summary": "The current public view has 4 known transaction(s). A deeper fund-flow pass is still needed.",
+    "key_transactions": [
+      "0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d"
+    ],
+    "key_addresses": [
+      "0x3026c464d3bd6ef0ced0d49e80f171b58176ce32",
+      "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x8408497c18882bfb61be9204cfff530f4ee18320",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0xbe779d420b7d573c08eee226b9958737b6218888"
+    ],
+    "path": []
+  },
+  "exploit_path": {
+    "summary": "The attacker (0x8408497c18882bfb61be9204cfff530f4ee18320) executed a price manipulation attack against the AIZPT Token protocol on BSC. The attack transaction (0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d) leveraged vulnerabilities in the token's pricing mechanism to extract value from liquidity pools. Evidence from the DeFiHackLabs proof-of-concept (AIZPTToken_exp.sol) indicates the attacker interacted with multiple contracts including the AIZPT token contract, WBNB (0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c), and USDT (0x55d398326f99059fF775485246999027B3197955), suggesting a cross-pool manipulation strategy. The attacker successfully extracted approximately 34 BNB before the exploit was identified.",
+    "steps": [
+      {
+        "title": "Exploit transaction linked",
+        "detail": "The current dossier has 1 direct attack transaction candidate(s).",
+        "evidence_refs": [
+          "src-003"
+        ],
+        "tx_hashes": []
+      },
+      {
+        "title": "Impact summary collected",
+        "detail": "An estimated loss of 34",
+        "evidence_refs": [],
+        "tx_hashes": []
+      },
+      {
+        "title": "Source expansion completed",
+        "detail": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+        "evidence_refs": [],
+        "tx_hashes": []
+      }
+    ]
+  },
+  "evidence_chain": {
+    "summary": "The current case file combines public sources with a stored technical-analysis artifact. Technical validation verdict: Deterministic and semantic checks passed..",
+    "claims": [
+      {
+        "claim_id": "claim-overview",
+        "title": "Current public summary",
+        "statement": "On October 5, 2024, a price manipulation attack targeted the AIZPT Token on BSC, resulting in an estimated loss of approximately 34 BNB. The attacker exploited a price oracle vulnerability to drain funds from the protocol's liquidity pools.",
+        "confidence": 0.58,
+        "support": [
+          {
+            "source_id": "src-001",
+            "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+            "source_type": "report",
+            "depth": 0,
+            "discovered_from": "incident_seed",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          },
+          {
+            "source_id": "src-002",
+            "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/AIZPTToken_exp.sol",
+            "source_type": "poc",
+            "depth": 0,
+            "discovered_from": "incident_seed",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          },
+          {
+            "source_id": "src-003",
+            "url": "https://bscscan.com/tx/0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d",
+            "source_type": "explorer",
+            "depth": 0,
+            "discovered_from": "attack_tx_hashes",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          }
+        ]
+      },
+      {
+        "claim_id": "claim-attack-narrative",
+        "title": "LLM-synthesised attack narrative",
+        "statement": "The attacker (0x8408497c18882bfb61be9204cfff530f4ee18320) executed a price manipulation attack against the AIZPT Token protocol on BSC. The attack transaction (0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d) leveraged vulnerabilities in the token's pricing mechanism to extract v\u2026",
+        "confidence": 0.65,
+        "support": []
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+        "source_type": "report",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 99,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/AIZPTToken_exp.sol",
+        "source_type": "poc",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 98,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://bscscan.com/tx/0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d",
+        "source_type": "explorer",
+        "discovered_from": "attack_tx_hashes",
+        "depth": 0,
+        "priority": 79,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://bscscan.com/address/0x8408497c18882bfb61be9204cfff530f4ee18320",
+        "source_type": "explorer",
+        "discovered_from": "attacker_addresses",
+        "depth": 0,
+        "priority": 69,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-005",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-10/AIZPTToken_exp.sol",
+        "source_type": "poc",
+        "discovered_from": "src-002",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-007",
+        "url": "https://opbnb.bscscan.com",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-008",
+        "url": "https://testnet.bscscan.com",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-009",
+        "url": "https://opbnb-testnet.bscscan.com",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-010",
+        "url": "https://bscscan.com/txs",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-011",
+        "url": "https://bscscan.com/txsPending",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-012",
+        "url": "https://bscscan.com/txsInternal",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-013",
+        "url": "https://bscscan.com/txsBlobs",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-014",
+        "url": "https://bscscan.com/txsAA",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-015",
+        "url": "https://bscscan.com/txnAuthList",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-016",
+        "url": "https://bscscan.com/blocks",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-017",
+        "url": "https://bscscan.com/blocks_forked",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-018",
+        "url": "https://bscscan.com/accounts",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-019",
+        "url": "https://bscscan.com/contractsVerified",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-020",
+        "url": "https://bscscan.com/validators",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-021",
+        "url": "https://bscscan.com/validatorset",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-022",
+        "url": "https://bscscan.com/tokens",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-023",
+        "url": "https://bscscan.com/tokentxns",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-024",
+        "url": "https://bscscan.com/nft-top-contracts",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-025",
+        "url": "https://bscscan.com/nft-top-mints",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-026",
+        "url": "https://bscscan.com/nft-trades",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-028",
+        "url": "https://bscscan.com",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-029",
+        "url": "https://opbnb.bscscan.com/txs",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-030",
+        "url": "https://opbnb.bscscan.com/txsEnqueued",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-031",
+        "url": "https://opbnb.bscscan.com/txsExit",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-032",
+        "url": "https://opbnb.bscscan.com/txsInternal",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-033",
+        "url": "https://opbnb.bscscan.com/txsAA",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-034",
+        "url": "https://opbnb.bscscan.com/blocks",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-035",
+        "url": "https://opbnb.bscscan.com/batches",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-036",
+        "url": "https://opbnb.bscscan.com/statebatches",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-037",
+        "url": "https://opbnb.bscscan.com/accounts",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "network_error"
+      },
+      {
+        "source_id": "src-038",
+        "url": "https://opbnb.bscscan.com/contractsVerified",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-039",
+        "url": "https://opbnb.bscscan.com/tokens",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-040",
+        "url": "https://opbnb.bscscan.com/tokentxns",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-041",
+        "url": "https://opbnb.bscscan.com/token/0x4200000000000000000000000000000000000006",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-042",
+        "url": "https://opbnb.bscscan.com/nft-transfers",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-043",
+        "url": "https://opbnb.bscscan.com/nft-latest-mints",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-044",
+        "url": "https://opbnb.bscscan.com/charts",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-045",
+        "url": "https://testnet.bscscan.com/txs",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-046",
+        "url": "https://testnet.bscscan.com/txsPending",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-047",
+        "url": "https://testnet.bscscan.com/txsInternal",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-048",
+        "url": "https://testnet.bscscan.com/txsBlobs",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-049",
+        "url": "https://testnet.bscscan.com/txsAA",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-050",
+        "url": "https://testnet.bscscan.com/txnAuthList",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-051",
+        "url": "https://testnet.bscscan.com/blocks",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-052",
+        "url": "https://testnet.bscscan.com/blocks_forked",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-053",
+        "url": "https://testnet.bscscan.com/accounts",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-054",
+        "url": "https://testnet.bscscan.com/contractsVerified",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-055",
+        "url": "https://testnet.bscscan.com/validators",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-056",
+        "url": "https://testnet.bscscan.com/validatorset",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-057",
+        "url": "https://testnet.bscscan.com/tokentxns",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-058",
+        "url": "https://testnet.bscscan.com/nft-transfers",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-059",
+        "url": "https://testnet.bscscan.com/nft-latest-mints",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-060",
+        "url": "https://testnet.bscscan.com/unitconverter",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-061",
+        "url": "https://testnet.bscscan.com/base64converter",
+        "source_type": "explorer",
+        "discovered_from": "src-008",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      }
+    ]
+  },
+  "open_questions": []
+}

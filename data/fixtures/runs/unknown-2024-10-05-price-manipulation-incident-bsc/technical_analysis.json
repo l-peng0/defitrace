@@ -1,0 +1,385 @@
+{
+  "incident_id": "unknown-2024-10-05-price-manipulation-incident-bsc",
+  "chain": "BSC",
+  "generated_at": "2026-04-27T12:50:41+00:00",
+  "primary_tx_hash": "0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d",
+  "tx_hashes": [
+    "0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d"
+  ],
+  "transactions": [
+    {
+      "tx_hash": "0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d",
+      "status": "completed",
+      "tx_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d/tx.json",
+      "receipt_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d/receipt.json",
+      "trace_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d/trace_callTracer.json",
+      "decoded_calls_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d/decoded_calls.json",
+      "funds_flow_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d/funds_flow.json",
+      "manifest_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d/manifest.json",
+      "summary": {
+        "contracts_touched": [
+          "0x36696169c63e42cd08ce11f5deebbcebae652050",
+          "0x55d398326f99059ff775485246999027b3197955",
+          "0x8408497c18882bfb61be9204cfff530f4ee18320",
+          "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+          "0xbe779d420b7d573c08eee226b9958737b6218888"
+        ],
+        "addresses_seen": [
+          "0x3026c464d3bd6ef0ced0d49e80f171b58176ce32",
+          "0x36696169c63e42cd08ce11f5deebbcebae652050",
+          "0x55d398326f99059ff775485246999027b3197955",
+          "0x8408497c18882bfb61be9204cfff530f4ee18320",
+          "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+          "0xbe779d420b7d573c08eee226b9958737b6218888"
+        ],
+        "native_value_transfers": 0,
+        "token_transfers": 405
+      },
+      "issues": []
+    }
+  ],
+  "analysis_plan": {
+    "incident_id": "unknown-2024-10-05-price-manipulation-incident-bsc",
+    "chain": "BSC",
+    "generated_at": "2026-04-27T12:50:42+00:00",
+    "tx_hashes": [
+      "0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d"
+    ],
+    "roles": {
+      "attacker_eoa": [
+        "0x3026c464d3bd6ef0ced0d49e80f171b58176ce32"
+      ],
+      "attacker_contracts": [],
+      "victim": [
+        "0xbe779d420b7d573c08eee226b9958737b6218888"
+      ],
+      "routers": [],
+      "pairs": [],
+      "oracles": [],
+      "flash_loan_providers": [
+        "0x36696169c63e42cd08ce11f5deebbcebae652050"
+      ],
+      "tokens": [
+        "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+        "0xbe779d420b7d573c08eee226b9958737b6218888"
+      ],
+      "unknown": [
+        "0x8408497c18882bfb61be9204cfff530f4ee18320",
+        "0x93fbf6b2d322c6c3e7576814d6f0689e0a333e96",
+        "0x55d398326f99059ff775485246999027b3197955",
+        "0x0000000000000000000000000000000000000000"
+      ]
+    },
+    "newly_deployed": [],
+    "priority_contracts": [
+      {
+        "address": "0xbe779d420b7d573c08eee226b9958737b6218888",
+        "role": "victim",
+        "why": "largest net-negative token balance change",
+        "priority": "high"
+      },
+      {
+        "address": "0x36696169c63e42cd08ce11f5deebbcebae652050",
+        "role": "flash_loan_provider",
+        "why": "called with flashLoan* selector",
+        "priority": "medium"
+      }
+    ],
+    "investigation_notes": [],
+    "call_graph": [
+      {
+        "from": "0x8408497c18882bfb61be9204cfff530f4ee18320",
+        "to": "0x36696169c63e42cd08ce11f5deebbcebae652050",
+        "category": "flashloan"
+      },
+      {
+        "from": "0x36696169c63e42cd08ce11f5deebbcebae652050",
+        "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+        "category": "transfer"
+      },
+      {
+        "from": "0x8408497c18882bfb61be9204cfff530f4ee18320",
+        "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+        "category": "burn"
+      },
+      {
+        "from": "0x8408497c18882bfb61be9204cfff530f4ee18320",
+        "to": "0xbe779d420b7d573c08eee226b9958737b6218888",
+        "category": "transfer"
+      },
+      {
+        "from": "0x8408497c18882bfb61be9204cfff530f4ee18320",
+        "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+        "category": "mint"
+      },
+      {
+        "from": "0x8408497c18882bfb61be9204cfff530f4ee18320",
+        "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+        "category": "transfer"
+      }
+    ]
+  },
+  "contract_inventory": {
+    "incident_id": "unknown-2024-10-05-price-manipulation-incident-bsc",
+    "chain": "BSC",
+    "generated_at": "2026-04-27T12:50:47+00:00",
+    "contracts": {
+      "0xbe779d420b7d573c08eee226b9958737b6218888": {
+        "address": "0xbe779d420b7d573c08eee226b9958737b6218888",
+        "role": "victim",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "AIZPT314",
+        "compiler_version": "v0.8.18+commit.87f61d96",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/contracts/0xbe779d420b7d573c08eee226b9958737b6218888/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/contracts/0xbe779d420b7d573c08eee226b9958737b6218888/abi.json",
+        "fetched_at": "2026-04-27T12:50:44+00:00",
+        "fetch_errors": []
+      },
+      "0x36696169c63e42cd08ce11f5deebbcebae652050": {
+        "address": "0x36696169c63e42cd08ce11f5deebbcebae652050",
+        "role": "flash_loan_provider",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "PancakeV3Pool",
+        "compiler_version": "v0.7.6+commit.7338295f",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/contracts/0x36696169c63e42cd08ce11f5deebbcebae652050/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/contracts/0x36696169c63e42cd08ce11f5deebbcebae652050/abi.json",
+        "fetched_at": "2026-04-27T12:50:47+00:00",
+        "fetch_errors": []
+      }
+    }
+  },
+  "revision_round": 0,
+  "reasoning": {
+    "attack_flow_summary": "",
+    "exploit_mechanism": "",
+    "tx_role_map": {},
+    "contract_role_map": {},
+    "timeline_steps": [],
+    "funds_flow_path": [],
+    "open_questions": [],
+    "confidence_notes": [
+      "The unknown contract 0x8408497c18882bfb61be9204cfff530f4ee18320 appears to be the attack contract based on call graph showing it initiated the flash loan and executed manipulation operations against victim. Not listed in attacker_contracts by investigation plan but call patterns indicate malicious orchestrator role. AIZPT314 implements ERC-314 style with integrated liquidity mechanics, making it vulnerable to price manipulation through flash loan-induced reserve changes."
+    ]
+  },
+  "validation": {
+    "verdict": "Deterministic and semantic checks passed.",
+    "severity": "pass",
+    "unresolved_gaps": [],
+    "semantic_checks": {
+      "tx_role_consistency": {
+        "status": "pass",
+        "mismatches": []
+      },
+      "funds_flow_consistency": {
+        "status": "pass",
+        "mismatches": []
+      },
+      "mechanism_source_consistency": {
+        "status": "pass",
+        "mismatches": []
+      }
+    },
+    "needs_revision": false,
+    "revision_request": "",
+    "checked_transactions": 1
+  },
+  "merge_back": {
+    "summary": "",
+    "timeline_steps": [],
+    "funds_flow_path": [],
+    "key_addresses": [
+      "0x3026c464d3bd6ef0ced0d49e80f171b58176ce32",
+      "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x8408497c18882bfb61be9204cfff530f4ee18320",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0xbe779d420b7d573c08eee226b9958737b6218888"
+    ],
+    "key_contracts": [
+      "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x8408497c18882bfb61be9204cfff530f4ee18320",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0xbe779d420b7d573c08eee226b9958737b6218888"
+    ],
+    "key_transactions": [
+      "0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d"
+    ],
+    "open_questions": []
+  },
+  "status": "completed",
+  "pipeline_trace": {
+    "revision_triggered": false,
+    "revision_critique": null,
+    "qa_retry_triggered": true,
+    "qa_retry_critique": "First-pass completeness score: 58.00 (threshold: 0.7). Missing/weak dimensions: attack_contract_urls, victim_contract_urls, social_sources, protocol_name_confirmed, loss_amount_unit, fund_flow_tracing, root_cause_detail. Quality assessor notes: The dossier captures a price manipulation attack on BSC with core on-chain artifacts (transaction 0x5e6947..., attacker address 0x8408..., PoC reference from DeFiHackLabs). However, it suffers from incomplete attribution (protocol listed as 'Unknown' despite AIZPT Token naming in PoC), ambiguous loss quantification (34 without unit), and broken evidence cross-references. The timeline is logically structured but relies on evidence items not fully present in the record. Suitable for preliminary incident awareness but requires substantial enrichment for forensic-grade documentation. Identified gaps: Protocol name discrepancy: evidence points to AIZPT Token but listed as 'Unknown'; Loss amount missing unit (34 BNB assumed but not confirmed); Timeline evidence refs ev-032, ev-034, ev-035 not present in evidence items; No fund destination tracking; No social media coverage or community discussion sources; No verified victim contract bytecode analysis; No attacker funding source traced. Recommendations: Update protocol_name to 'AIZPT Token' with supporting evidence from PoC filename (ev-007); Verify loss amount unit via BSCScan transaction value analysis and update ev-005; Add missing evidence items ev-032, ev-034, ev-035 to evidence list or correct timeline references; Include victim contract URL and verification for 0xbe779d420b7d573c08eee226b9958737b6218888; Add social media sources (Twitter/X security accounts, Telegram) discussing the incident; Trace attacker fund flows post-exploit to identify destination addresses; Analyze PoC code to provide detailed root cause mechanism description; Document attacker funding source (initial BNB/capital for attack execution).",
+    "records": [
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:50:38.054Z",
+        "duration_ms": 3509,
+        "input_summary": "61 source docs; 482 heuristic items",
+        "output_summary": "482 total items (+0 LLM-extracted)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "collector",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:50:41.573Z",
+        "duration_ms": 1194,
+        "input_summary": "1 tx(s): 0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d",
+        "output_summary": "1 artifact bundle(s) collected; statuses: completed",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "planner",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:50:42.768Z",
+        "duration_ms": 7,
+        "input_summary": "1 transactions on BSC",
+        "output_summary": "9 role categories; 2 priority contracts",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "contract_intelligence",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:50:42.774Z",
+        "duration_ms": 4521,
+        "input_summary": "2 priority contracts",
+        "output_summary": "2 contracts in inventory",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "technical_reasoner",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:50:47.295Z",
+        "duration_ms": 55986,
+        "input_summary": "1 txs, 2 contracts",
+        "output_summary": "0 timeline steps; mechanism: ",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "semantic_validator",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:51:43.280Z",
+        "duration_ms": 3,
+        "input_summary": "revision_round=0",
+        "output_summary": "severity=pass; needs_revision=False; verdict: Deterministic and semantic checks passed.",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:51:43.286Z",
+        "duration_ms": 44632,
+        "input_summary": "482 evidence items",
+        "output_summary": "executive_summary len=282",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:51:43.286Z",
+        "duration_ms": 44632,
+        "input_summary": "482 evidence items",
+        "output_summary": "4 timeline steps",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:52:27.919Z",
+        "duration_ms": 39929,
+        "input_summary": "4 timeline steps; 4 narrative keys",
+        "output_summary": "completeness_score=58; judge_summary: The dossier captures a price manipulation attack on BSC with core on-chain artif",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:53:07.848Z",
+        "duration_ms": 109668,
+        "input_summary": "RETRY: 61 docs; critique injected",
+        "output_summary": "505 items after retry extraction",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:54:57.688Z",
+        "duration_ms": 25384,
+        "input_summary": "RETRY: 505 evidence items",
+        "output_summary": "executive_summary len=240 (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:54:57.688Z",
+        "duration_ms": 25384,
+        "input_summary": "RETRY: 505 evidence items",
+        "output_summary": "3 timeline steps (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:55:23.073Z",
+        "duration_ms": 42618,
+        "input_summary": "RETRY: 3 steps; 4 narrative keys",
+        "output_summary": "v2 completeness_score=62",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      }
+    ]
+  }
+}

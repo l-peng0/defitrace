@@ -1,0 +1,38 @@
+{
+  "incident_id": "unknown-2024-10-06-price-manipulation-incident-ethereum",
+  "profile_id": "profile-unknown-2024-10-06-price-manipulation-incident-ethereum",
+  "primary_addresses": [
+    "0x493c5655d40b051a64bc88a6af21d73d3a9b72a2",
+    "0x5eac5992e8c7cc6b04bad2c5bbc00d101d4c8264",
+    "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+    "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+    "0x81164c9edab507aa4bac08dceccefaba1340d3b7",
+    "0x95222290dd7278aa3ddd389cc1e1d165cc4bafe5",
+    "0x991493900674b10bdf54bdfe95b4e043257798cf",
+    "0xb23fc1241e1bc1a5542a438775809d38099838fe",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "0xd1456d1b9ceb59abd4423a49d40942a9485ceef6"
+  ],
+  "related_addresses": [
+    "0x493c5655D40B051a64bc88A6af21D73d3A9B72A2",
+    "0x991493900674b10bdf54bdfe95b4e043257798cf",
+    "0xd9fdc7d03eec28fc2453c5fa68eff82d4c297f43",
+    "0xD1456D1b9CEb59abD4423a49D40942a9485CeEF6",
+    "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+    "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
+    "0xB23FC1241e1Bc1a5542a438775809d38099838fe",
+    "0x991493900674B10BDf54BdFe95B4E043257798Cf",
+    "0x000000000000290ac02aaa39b223fe8d0a0e5c4f"
+  ],
+  "recent_activity_summary": "The dossier has 1 direct attacker address candidate(s) and 167 additional address mentions from fetched sources.",
+  "counterparties": [],
+  "repeated_behaviors": [
+    "Leans on addresses confirmed by direct seed fields first.",
+    "Uses source-text mentions as weaker supporting clues rather than direct proof."
+  ],
+  "open_questions": [
+    "Which address funded the exploit wallet before the attack?",
+    "Which transfers right after the exploit are still missing from the dossier?"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "incident_id": "Unknown 2024-10-10 price-manipulation incident",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Attacker address 0x8f921e27e3af106015d1c3a244ec4f48dbfcad14 executed a series of preparatory transactions (including 0xb8c143ac, 0xd76ac62b, 0x7692cc1e, 0xea34fdf2, 0x49145cb1) to fund the wallet and set up the attack on BSC.",
+      "evidence_ids": [
+        "ev-004",
+        "ev-029",
+        "ev-030",
+        "ev-031",
+        "ev-032",
+        "ev-033"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 2,
+      "description": "Attacker executed the main price-manipulation exploit via transaction 0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3, interacting with target contract 0x92b7807bF19b7DDdf89b706143896d05228f3121 and using protocols including WBNB, USDT, and PancakeSwap Router to manipulate oracle/pricing.",
+      "evidence_ids": [
+        "ev-003",
+        "ev-012",
+        "ev-010",
+        "ev-016",
+        "ev-014",
+        "ev-022",
+        "ev-020"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 3,
+      "description": "The exploit yielded a negligible loss of approximately $5, indicating the attack was either largely ineffective, a test run, or the protocol had minimal available liquidity at the targeted price.",
+      "evidence_ids": [
+        "ev-005"
+      ],
+      "summary": ""
+    }
+  ],
+  "synthesis_note": "The POC repository filename (HYDT_exp.sol) suggests the targeted protocol is HYDT on BSC. The attack utilized standard DeFi price manipulation techniques involving WBNB, USDT, and PancakeSwap. The extremely low loss of ~$5 indicates this was likely a failed exploit attempt, a proof-of-concept test, or targeted a depleted contract. Limited protocol identification in the evidence sources prevents full contextualization of the vulnerability."
+}

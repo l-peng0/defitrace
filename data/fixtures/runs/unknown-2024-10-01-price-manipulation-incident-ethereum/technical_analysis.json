@@ -1,0 +1,1177 @@
+{
+  "incident_id": "unknown-2024-10-01-price-manipulation-incident-ethereum",
+  "chain": "Ethereum",
+  "generated_at": "2026-04-27T12:45:24+00:00",
+  "primary_tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+  "tx_hashes": [
+    "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+  ],
+  "transactions": [
+    {
+      "tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "status": "completed",
+      "tx_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/technical_analysis/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b/tx.json",
+      "receipt_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/technical_analysis/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b/receipt.json",
+      "trace_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/technical_analysis/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b/trace_callTracer.json",
+      "decoded_calls_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/technical_analysis/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b/decoded_calls.json",
+      "funds_flow_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/technical_analysis/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b/funds_flow.json",
+      "manifest_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/technical_analysis/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b/manifest.json",
+      "summary": {
+        "contracts_touched": [
+          "0x026a5b6114431d8f3ef2fa0e1b2edddcca9c540e",
+          "0x08669c836f41aead03e3ef81a59f3b8e72ec417a",
+          "0x173c6ae0e2263a1a2a466d23f9bd16eaa2ead154",
+          "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+          "0x18e439be184e9b4a5d92f44722e72087e4133fcf",
+          "0x2e7576042566f8d6990e07a1b61ad1efd86ae70d",
+          "0x32fd502975d5b74686e34df01aa8b8b28e213aad",
+          "0x37b8bb5b520f4a6ae8ce2f6d447dfc9a8f650979",
+          "0x3c6b93d38ffa15ea995d1bc950d5d0fa6b22bd05",
+          "0x5882a6bef7cab6b99019b565060da081e157d454",
+          "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+          "0x5ae329203e00f76891094dcfedd5aca082a50e1b",
+          "0x6175ddec3b9b38c88157c10a01ed4a3fa8639cc6",
+          "0x6fd32465a23aa0dbae0d813b7157d8cb2b08dae4",
+          "0x79a617dedf7a21625ec03fca9ff8482ac11ef100",
+          "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+          "0x805e18b0325eab315d61bd92ae152247af0ea609",
+          "0x81f48a87ec44208c691f870b9d400d9c13111e2e",
+          "0x86c71796ccdb31c3997f8ec5c2e3db3e9e40b985",
+          "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+          "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+          "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1",
+          "0xabc99f366d2be1f4e5b8dfc0f561a751dd836246",
+          "0xc0110ee63cac2196fcc76359fe8a03f20eb36391",
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "0xc13e21b648a5ee794902342038ff3adab66be987",
+          "0xc215faf64374b7f884af55791b810496c4bab405",
+          "0xcc27779013a1cca68d3d93c640aac807891fd029",
+          "0xcc3037f5aef5831730a9acb1739d0562117314c0",
+          "0xd107ef93ba6f3139dd81cd4588c3b9ee84e122ee",
+          "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+          "0xe2e02e8a7952050523635628c1e7b46f0065f96d",
+          "0xe5677443d2b7239ada673cc26398ebbd4894a25c"
+        ],
+        "addresses_seen": [
+          "0x026a5b6114431d8f3ef2fa0e1b2edddcca9c540e",
+          "0x08669c836f41aead03e3ef81a59f3b8e72ec417a",
+          "0x173c6ae0e2263a1a2a466d23f9bd16eaa2ead154",
+          "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+          "0x18e439be184e9b4a5d92f44722e72087e4133fcf",
+          "0x2e7576042566f8d6990e07a1b61ad1efd86ae70d",
+          "0x32fd502975d5b74686e34df01aa8b8b28e213aad",
+          "0x37b8bb5b520f4a6ae8ce2f6d447dfc9a8f650979",
+          "0x3c6b93d38ffa15ea995d1bc950d5d0fa6b22bd05",
+          "0x5882a6bef7cab6b99019b565060da081e157d454",
+          "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+          "0x5ae329203e00f76891094dcfedd5aca082a50e1b",
+          "0x6175ddec3b9b38c88157c10a01ed4a3fa8639cc6",
+          "0x6fd32465a23aa0dbae0d813b7157d8cb2b08dae4",
+          "0x79a617dedf7a21625ec03fca9ff8482ac11ef100",
+          "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+          "0x805e18b0325eab315d61bd92ae152247af0ea609",
+          "0x81f48a87ec44208c691f870b9d400d9c13111e2e",
+          "0x86c71796ccdb31c3997f8ec5c2e3db3e9e40b985",
+          "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+          "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+          "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1",
+          "0xabc99f366d2be1f4e5b8dfc0f561a751dd836246",
+          "0xc0110ee63cac2196fcc76359fe8a03f20eb36391",
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "0xc13e21b648a5ee794902342038ff3adab66be987",
+          "0xc215faf64374b7f884af55791b810496c4bab405",
+          "0xcc27779013a1cca68d3d93c640aac807891fd029",
+          "0xcc3037f5aef5831730a9acb1739d0562117314c0",
+          "0xd107ef93ba6f3139dd81cd4588c3b9ee84e122ee",
+          "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+          "0xe26cf8d891d9f033b47011acfb1f52fd324b2b14",
+          "0xe2e02e8a7952050523635628c1e7b46f0065f96d",
+          "0xe5677443d2b7239ada673cc26398ebbd4894a25c"
+        ],
+        "native_value_transfers": 0,
+        "token_transfers": 122
+      },
+      "issues": []
+    }
+  ],
+  "analysis_plan": {
+    "incident_id": "unknown-2024-10-01-price-manipulation-incident-ethereum",
+    "chain": "Ethereum",
+    "generated_at": "2026-04-27T12:45:25+00:00",
+    "tx_hashes": [
+      "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+    ],
+    "roles": {
+      "attacker_eoa": [
+        "0x81f48a87ec44208c691f870b9d400d9c13111e2e"
+      ],
+      "attacker_contracts": [
+        "0xe2e02e8a7952050523635628c1e7b46f0065f96d",
+        "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+        "0x173c6ae0e2263a1a2a466d23f9bd16eaa2ead154",
+        "0x5882a6bef7cab6b99019b565060da081e157d454",
+        "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+        "0x79a617dedf7a21625ec03fca9ff8482ac11ef100",
+        "0xd107ef93ba6f3139dd81cd4588c3b9ee84e122ee",
+        "0xe5677443d2b7239ada673cc26398ebbd4894a25c",
+        "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1",
+        "0x37b8bb5b520f4a6ae8ce2f6d447dfc9a8f650979",
+        "0xc0110ee63cac2196fcc76359fe8a03f20eb36391",
+        "0x805e18b0325eab315d61bd92ae152247af0ea609",
+        "0xc215faf64374b7f884af55791b810496c4bab405",
+        "0x18e439be184e9b4a5d92f44722e72087e4133fcf",
+        "0x32fd502975d5b74686e34df01aa8b8b28e213aad"
+      ],
+      "victim": [
+        "0xcc27779013a1cca68d3d93c640aac807891fd029"
+      ],
+      "routers": [],
+      "pairs": [
+        "0xcc27779013a1cca68d3d93c640aac807891fd029"
+      ],
+      "oracles": [],
+      "flash_loan_providers": [],
+      "tokens": [
+        "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      ],
+      "unknown": [
+        "0x3c6b93d38ffa15ea995d1bc950d5d0fa6b22bd05",
+        "0xcc3037f5aef5831730a9acb1739d0562117314c0",
+        "0x86c71796ccdb31c3997f8ec5c2e3db3e9e40b985",
+        "0x026a5b6114431d8f3ef2fa0e1b2edddcca9c540e",
+        "0xabc99f366d2be1f4e5b8dfc0f561a751dd836246",
+        "0xe26cf8d891d9f033b47011acfb1f52fd324b2b14",
+        "0x5ae329203e00f76891094dcfedd5aca082a50e1b",
+        "0x000000000000000000000000000000000000dead",
+        "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+        "0xc13e21b648a5ee794902342038ff3adab66be987",
+        "0x2e7576042566f8d6990e07a1b61ad1efd86ae70d",
+        "0x6fd32465a23aa0dbae0d813b7157d8cb2b08dae4",
+        "0x6175ddec3b9b38c88157c10a01ed4a3fa8639cc6",
+        "0x08669c836f41aead03e3ef81a59f3b8e72ec417a",
+        "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+        "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8"
+      ]
+    },
+    "newly_deployed": [
+      {
+        "address": "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+        "deployed_by": "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+        "create_type": "CREATE",
+        "trace_path": "0.0.0.0.1.1",
+        "depth": 5,
+        "tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+      },
+      {
+        "address": "0x32fd502975d5b74686e34df01aa8b8b28e213aad",
+        "deployed_by": "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+        "create_type": "CREATE",
+        "trace_path": "0.0.0.0.1.3",
+        "depth": 5,
+        "tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+      },
+      {
+        "address": "0x805e18b0325eab315d61bd92ae152247af0ea609",
+        "deployed_by": "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+        "create_type": "CREATE",
+        "trace_path": "0.0.0.0.1.5",
+        "depth": 5,
+        "tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+      },
+      {
+        "address": "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+        "deployed_by": "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+        "create_type": "CREATE",
+        "trace_path": "0.0.0.0.1.7",
+        "depth": 5,
+        "tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+      },
+      {
+        "address": "0xe5677443d2b7239ada673cc26398ebbd4894a25c",
+        "deployed_by": "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+        "create_type": "CREATE",
+        "trace_path": "0.0.0.0.1.9",
+        "depth": 5,
+        "tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+      },
+      {
+        "address": "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1",
+        "deployed_by": "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+        "create_type": "CREATE",
+        "trace_path": "0.0.0.0.1.11",
+        "depth": 5,
+        "tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+      },
+      {
+        "address": "0x18e439be184e9b4a5d92f44722e72087e4133fcf",
+        "deployed_by": "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+        "create_type": "CREATE",
+        "trace_path": "0.0.0.0.1.13",
+        "depth": 5,
+        "tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+      },
+      {
+        "address": "0x5882a6bef7cab6b99019b565060da081e157d454",
+        "deployed_by": "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+        "create_type": "CREATE",
+        "trace_path": "0.0.0.0.1.15",
+        "depth": 5,
+        "tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+      },
+      {
+        "address": "0xd107ef93ba6f3139dd81cd4588c3b9ee84e122ee",
+        "deployed_by": "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+        "create_type": "CREATE",
+        "trace_path": "0.0.0.0.1.17",
+        "depth": 5,
+        "tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+      },
+      {
+        "address": "0xc215faf64374b7f884af55791b810496c4bab405",
+        "deployed_by": "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+        "create_type": "CREATE",
+        "trace_path": "0.0.0.0.1.19",
+        "depth": 5,
+        "tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+      },
+      {
+        "address": "0x173c6ae0e2263a1a2a466d23f9bd16eaa2ead154",
+        "deployed_by": "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+        "create_type": "CREATE",
+        "trace_path": "0.0.0.0.1.21",
+        "depth": 5,
+        "tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+      },
+      {
+        "address": "0x37b8bb5b520f4a6ae8ce2f6d447dfc9a8f650979",
+        "deployed_by": "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+        "create_type": "CREATE",
+        "trace_path": "0.0.0.0.1.23",
+        "depth": 5,
+        "tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+      },
+      {
+        "address": "0xc0110ee63cac2196fcc76359fe8a03f20eb36391",
+        "deployed_by": "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+        "create_type": "CREATE",
+        "trace_path": "0.0.0.0.1.25",
+        "depth": 5,
+        "tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+      },
+      {
+        "address": "0x79a617dedf7a21625ec03fca9ff8482ac11ef100",
+        "deployed_by": "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+        "create_type": "CREATE",
+        "trace_path": "0.0.0.0.1.27",
+        "depth": 5,
+        "tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+      },
+      {
+        "address": "0xe2e02e8a7952050523635628c1e7b46f0065f96d",
+        "deployed_by": "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+        "create_type": "CREATE",
+        "trace_path": "0.0.0.0.1.29",
+        "depth": 5,
+        "tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+      }
+    ],
+    "priority_contracts": [
+      {
+        "address": "0xe2e02e8a7952050523635628c1e7b46f0065f96d",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x173c6ae0e2263a1a2a466d23f9bd16eaa2ead154",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x5882a6bef7cab6b99019b565060da081e157d454",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x79a617dedf7a21625ec03fca9ff8482ac11ef100",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0xd107ef93ba6f3139dd81cd4588c3b9ee84e122ee",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0xe5677443d2b7239ada673cc26398ebbd4894a25c",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x37b8bb5b520f4a6ae8ce2f6d447dfc9a8f650979",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0xc0110ee63cac2196fcc76359fe8a03f20eb36391",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x805e18b0325eab315d61bd92ae152247af0ea609",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0xc215faf64374b7f884af55791b810496c4bab405",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x18e439be184e9b4a5d92f44722e72087e4133fcf",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x32fd502975d5b74686e34df01aa8b8b28e213aad",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0xcc27779013a1cca68d3d93c640aac807891fd029",
+        "role": "victim",
+        "why": "largest net-negative token balance change",
+        "priority": "high"
+      },
+      {
+        "address": "0xcc27779013a1cca68d3d93c640aac807891fd029",
+        "role": "pair",
+        "why": "target of direct swap()",
+        "priority": "medium"
+      }
+    ],
+    "investigation_notes": [
+      "Tx 0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b contains 31 swap selector(s); inspect router/pair pricing."
+    ],
+    "call_graph": [
+      {
+        "from": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      },
+      {
+        "from": "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "burn"
+      },
+      {
+        "from": "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "mint"
+      },
+      {
+        "from": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      },
+      {
+        "from": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+        "to": "0xcc27779013a1cca68d3d93c640aac807891fd029",
+        "category": "swap"
+      },
+      {
+        "from": "0xcc27779013a1cca68d3d93c640aac807891fd029",
+        "to": "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+        "category": "transfer"
+      },
+      {
+        "from": "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+        "to": "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+        "category": "transfer"
+      },
+      {
+        "from": "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+        "to": "0xcc27779013a1cca68d3d93c640aac807891fd029",
+        "category": "swap"
+      },
+      {
+        "from": "0xcc27779013a1cca68d3d93c640aac807891fd029",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      },
+      {
+        "from": "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      },
+      {
+        "from": "0x32fd502975d5b74686e34df01aa8b8b28e213aad",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "mint"
+      },
+      {
+        "from": "0x32fd502975d5b74686e34df01aa8b8b28e213aad",
+        "to": "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+        "category": "transfer"
+      },
+      {
+        "from": "0x32fd502975d5b74686e34df01aa8b8b28e213aad",
+        "to": "0xcc27779013a1cca68d3d93c640aac807891fd029",
+        "category": "swap"
+      },
+      {
+        "from": "0x32fd502975d5b74686e34df01aa8b8b28e213aad",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      },
+      {
+        "from": "0x805e18b0325eab315d61bd92ae152247af0ea609",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "mint"
+      },
+      {
+        "from": "0x805e18b0325eab315d61bd92ae152247af0ea609",
+        "to": "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+        "category": "transfer"
+      },
+      {
+        "from": "0x805e18b0325eab315d61bd92ae152247af0ea609",
+        "to": "0xcc27779013a1cca68d3d93c640aac807891fd029",
+        "category": "swap"
+      },
+      {
+        "from": "0x805e18b0325eab315d61bd92ae152247af0ea609",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      },
+      {
+        "from": "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "mint"
+      },
+      {
+        "from": "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+        "to": "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+        "category": "transfer"
+      },
+      {
+        "from": "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+        "to": "0xcc27779013a1cca68d3d93c640aac807891fd029",
+        "category": "swap"
+      },
+      {
+        "from": "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      },
+      {
+        "from": "0xe5677443d2b7239ada673cc26398ebbd4894a25c",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "mint"
+      },
+      {
+        "from": "0xe5677443d2b7239ada673cc26398ebbd4894a25c",
+        "to": "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+        "category": "transfer"
+      },
+      {
+        "from": "0xe5677443d2b7239ada673cc26398ebbd4894a25c",
+        "to": "0xcc27779013a1cca68d3d93c640aac807891fd029",
+        "category": "swap"
+      },
+      {
+        "from": "0xe5677443d2b7239ada673cc26398ebbd4894a25c",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      },
+      {
+        "from": "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "mint"
+      },
+      {
+        "from": "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1",
+        "to": "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+        "category": "transfer"
+      },
+      {
+        "from": "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1",
+        "to": "0xcc27779013a1cca68d3d93c640aac807891fd029",
+        "category": "swap"
+      },
+      {
+        "from": "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      },
+      {
+        "from": "0x18e439be184e9b4a5d92f44722e72087e4133fcf",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "mint"
+      },
+      {
+        "from": "0x18e439be184e9b4a5d92f44722e72087e4133fcf",
+        "to": "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+        "category": "transfer"
+      },
+      {
+        "from": "0x18e439be184e9b4a5d92f44722e72087e4133fcf",
+        "to": "0xcc27779013a1cca68d3d93c640aac807891fd029",
+        "category": "swap"
+      },
+      {
+        "from": "0x18e439be184e9b4a5d92f44722e72087e4133fcf",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      },
+      {
+        "from": "0x5882a6bef7cab6b99019b565060da081e157d454",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "mint"
+      },
+      {
+        "from": "0x5882a6bef7cab6b99019b565060da081e157d454",
+        "to": "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+        "category": "transfer"
+      },
+      {
+        "from": "0x5882a6bef7cab6b99019b565060da081e157d454",
+        "to": "0xcc27779013a1cca68d3d93c640aac807891fd029",
+        "category": "swap"
+      },
+      {
+        "from": "0x5882a6bef7cab6b99019b565060da081e157d454",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      },
+      {
+        "from": "0xd107ef93ba6f3139dd81cd4588c3b9ee84e122ee",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "mint"
+      },
+      {
+        "from": "0xd107ef93ba6f3139dd81cd4588c3b9ee84e122ee",
+        "to": "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+        "category": "transfer"
+      }
+    ]
+  },
+  "contract_inventory": {
+    "incident_id": "unknown-2024-10-01-price-manipulation-incident-ethereum",
+    "chain": "Ethereum",
+    "generated_at": "2026-04-27T12:45:26+00:00",
+    "contracts": {
+      "0xe2e02e8a7952050523635628c1e7b46f0065f96d": {
+        "address": "0xe2e02e8a7952050523635628c1e7b46f0065f96d",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:45:25+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f": {
+        "address": "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:45:25+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x173c6ae0e2263a1a2a466d23f9bd16eaa2ead154": {
+        "address": "0x173c6ae0e2263a1a2a466d23f9bd16eaa2ead154",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:45:25+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x5882a6bef7cab6b99019b565060da081e157d454": {
+        "address": "0x5882a6bef7cab6b99019b565060da081e157d454",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:45:25+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a": {
+        "address": "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:45:25+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x79a617dedf7a21625ec03fca9ff8482ac11ef100": {
+        "address": "0x79a617dedf7a21625ec03fca9ff8482ac11ef100",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:45:25+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0xd107ef93ba6f3139dd81cd4588c3b9ee84e122ee": {
+        "address": "0xd107ef93ba6f3139dd81cd4588c3b9ee84e122ee",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:45:25+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0xe5677443d2b7239ada673cc26398ebbd4894a25c": {
+        "address": "0xe5677443d2b7239ada673cc26398ebbd4894a25c",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:45:25+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1": {
+        "address": "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:45:25+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x37b8bb5b520f4a6ae8ce2f6d447dfc9a8f650979": {
+        "address": "0x37b8bb5b520f4a6ae8ce2f6d447dfc9a8f650979",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:45:25+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0xc0110ee63cac2196fcc76359fe8a03f20eb36391": {
+        "address": "0xc0110ee63cac2196fcc76359fe8a03f20eb36391",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:45:25+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x805e18b0325eab315d61bd92ae152247af0ea609": {
+        "address": "0x805e18b0325eab315d61bd92ae152247af0ea609",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:45:25+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0xc215faf64374b7f884af55791b810496c4bab405": {
+        "address": "0xc215faf64374b7f884af55791b810496c4bab405",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:45:25+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x18e439be184e9b4a5d92f44722e72087e4133fcf": {
+        "address": "0x18e439be184e9b4a5d92f44722e72087e4133fcf",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:45:25+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x32fd502975d5b74686e34df01aa8b8b28e213aad": {
+        "address": "0x32fd502975d5b74686e34df01aa8b8b28e213aad",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:45:25+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0xcc27779013a1cca68d3d93c640aac807891fd029": {
+        "address": "0xcc27779013a1cca68d3d93c640aac807891fd029",
+        "role": "victim",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "UniswapV2Pair",
+        "compiler_version": "v0.5.16+commit.9c3226ce",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/technical_analysis/contracts/0xcc27779013a1cca68d3d93c640aac807891fd029/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/technical_analysis/contracts/0xcc27779013a1cca68d3d93c640aac807891fd029/abi.json",
+        "fetched_at": "2026-04-27T12:45:26+00:00",
+        "fetch_errors": []
+      }
+    }
+  },
+  "revision_round": 0,
+  "reasoning": {
+    "attack_flow_summary": "",
+    "exploit_mechanism": "",
+    "tx_role_map": {},
+    "contract_role_map": {},
+    "timeline_steps": [],
+    "funds_flow_path": [],
+    "open_questions": [],
+    "confidence_notes": [
+      "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8 appears as the attack coordinator (deploys all attacker contracts, burns WETH) but is classified as 'unknown' in plan; attacker_contracts follow consistent swap pattern against victim pair; all 15 deployed contracts are unverified (newly deployed in-tx); victim pair is verified UniswapV2Pair"
+    ]
+  },
+  "validation": {
+    "verdict": "Deterministic and semantic checks passed.",
+    "severity": "pass",
+    "unresolved_gaps": [],
+    "semantic_checks": {
+      "tx_role_consistency": {
+        "status": "pass",
+        "mismatches": []
+      },
+      "funds_flow_consistency": {
+        "status": "pass",
+        "mismatches": []
+      },
+      "mechanism_source_consistency": {
+        "status": "pass",
+        "mismatches": []
+      }
+    },
+    "needs_revision": false,
+    "revision_request": "",
+    "checked_transactions": 1
+  },
+  "merge_back": {
+    "summary": "",
+    "timeline_steps": [],
+    "funds_flow_path": [],
+    "key_addresses": [
+      "0x026a5b6114431d8f3ef2fa0e1b2edddcca9c540e",
+      "0x08669c836f41aead03e3ef81a59f3b8e72ec417a",
+      "0x173c6ae0e2263a1a2a466d23f9bd16eaa2ead154",
+      "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+      "0x18e439be184e9b4a5d92f44722e72087e4133fcf",
+      "0x2e7576042566f8d6990e07a1b61ad1efd86ae70d",
+      "0x32fd502975d5b74686e34df01aa8b8b28e213aad",
+      "0x37b8bb5b520f4a6ae8ce2f6d447dfc9a8f650979",
+      "0x3c6b93d38ffa15ea995d1bc950d5d0fa6b22bd05",
+      "0x5882a6bef7cab6b99019b565060da081e157d454",
+      "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+      "0x5ae329203e00f76891094dcfedd5aca082a50e1b",
+      "0x6175ddec3b9b38c88157c10a01ed4a3fa8639cc6",
+      "0x6fd32465a23aa0dbae0d813b7157d8cb2b08dae4",
+      "0x79a617dedf7a21625ec03fca9ff8482ac11ef100",
+      "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "0x805e18b0325eab315d61bd92ae152247af0ea609",
+      "0x81f48a87ec44208c691f870b9d400d9c13111e2e",
+      "0x86c71796ccdb31c3997f8ec5c2e3db3e9e40b985",
+      "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+      "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+      "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1",
+      "0xabc99f366d2be1f4e5b8dfc0f561a751dd836246",
+      "0xc0110ee63cac2196fcc76359fe8a03f20eb36391",
+      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "0xc13e21b648a5ee794902342038ff3adab66be987",
+      "0xc215faf64374b7f884af55791b810496c4bab405",
+      "0xcc27779013a1cca68d3d93c640aac807891fd029",
+      "0xcc3037f5aef5831730a9acb1739d0562117314c0",
+      "0xd107ef93ba6f3139dd81cd4588c3b9ee84e122ee",
+      "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+      "0xe26cf8d891d9f033b47011acfb1f52fd324b2b14",
+      "0xe2e02e8a7952050523635628c1e7b46f0065f96d",
+      "0xe5677443d2b7239ada673cc26398ebbd4894a25c"
+    ],
+    "key_contracts": [
+      "0x026a5b6114431d8f3ef2fa0e1b2edddcca9c540e",
+      "0x08669c836f41aead03e3ef81a59f3b8e72ec417a",
+      "0x173c6ae0e2263a1a2a466d23f9bd16eaa2ead154",
+      "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+      "0x18e439be184e9b4a5d92f44722e72087e4133fcf",
+      "0x2e7576042566f8d6990e07a1b61ad1efd86ae70d",
+      "0x32fd502975d5b74686e34df01aa8b8b28e213aad",
+      "0x37b8bb5b520f4a6ae8ce2f6d447dfc9a8f650979",
+      "0x3c6b93d38ffa15ea995d1bc950d5d0fa6b22bd05",
+      "0x5882a6bef7cab6b99019b565060da081e157d454",
+      "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+      "0x5ae329203e00f76891094dcfedd5aca082a50e1b",
+      "0x6175ddec3b9b38c88157c10a01ed4a3fa8639cc6",
+      "0x6fd32465a23aa0dbae0d813b7157d8cb2b08dae4",
+      "0x79a617dedf7a21625ec03fca9ff8482ac11ef100",
+      "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "0x805e18b0325eab315d61bd92ae152247af0ea609",
+      "0x81f48a87ec44208c691f870b9d400d9c13111e2e",
+      "0x86c71796ccdb31c3997f8ec5c2e3db3e9e40b985",
+      "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+      "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+      "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1",
+      "0xabc99f366d2be1f4e5b8dfc0f561a751dd836246",
+      "0xc0110ee63cac2196fcc76359fe8a03f20eb36391",
+      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "0xc13e21b648a5ee794902342038ff3adab66be987",
+      "0xc215faf64374b7f884af55791b810496c4bab405",
+      "0xcc27779013a1cca68d3d93c640aac807891fd029",
+      "0xcc3037f5aef5831730a9acb1739d0562117314c0",
+      "0xd107ef93ba6f3139dd81cd4588c3b9ee84e122ee",
+      "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+      "0xe2e02e8a7952050523635628c1e7b46f0065f96d",
+      "0xe5677443d2b7239ada673cc26398ebbd4894a25c"
+    ],
+    "key_transactions": [
+      "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+    ],
+    "open_questions": []
+  },
+  "status": "completed",
+  "pipeline_trace": {
+    "revision_triggered": false,
+    "revision_critique": null,
+    "qa_retry_triggered": true,
+    "qa_retry_critique": "First-pass completeness score: 2.50 (threshold: 0.7). Missing/weak dimensions: protocol_name, loss_amount_with_unit, attack_mechanics_detail, root_cause_analysis, fund_flow_tracing, narrative_section, attack_contract_urls, victim_contract_urls, social_sources, incident_date_confirmation, vulnerability_type. Quality assessor notes: This dossier is critically incomplete and unsuitable for presentation. The protocol is unknown, the loss amount is stated as '8' without a unit making it effectively meaningless, and no attack mechanics can be determined. The timeline consists of only 3 high-level steps with no technical detail. The narrative section is entirely empty. Evidence quality is poor - many items are inferred with low confidence, and several reference Sepolia testnet which appears unrelated to the Ethereum mainnet incident. Without knowing which protocol was attacked, the incident cannot be properly contextualized or verified. Significant on-chain forensic work would be required to identify the protocol, determine actual losses, and reconstruct the attack methodology. Identified gaps: Protocol identity unknown - critical for any meaningful incident report; Loss amount '8' meaningless without unit (USD, ETH, tokens?); No explanation of price manipulation technique (flash loan, oracle manipulation, etc.); Empty narrative section prevents understanding attack flow; No fund flow analysis showing where stolen assets went; Multiple addresses interacted with but their roles unexplained (DEX, lending pool, etc.); Sepolia testnet evidence items appear irrelevant to mainnet incident; No post-incident response or mitigation information; No social media corroboration from security researchers or protocol team. Recommendations: 1. Perform on-chain analysis of the 7 contract addresses in the attack transaction to identify the targeted protocol; 2. Trace token transfers in transaction 0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b to determine actual loss amount and denomination; 3. Analyze transaction calldata and event logs to identify the specific price manipulation technique used; 4. Remove Sepolia testnet evidence items (ev-022 through ev-030) as they appear unrelated; 5. Search social media (Twitter/X) for the attacker address and transaction hash to find security researcher analysis; 6. Construct a detailed narrative explaining the attack vector step-by-step; 7. Identify and label each contract address role (DEX router, lending pool, oracle, etc.); 8. Trace post-attack fund flows to determine if funds were laundered through mixers or exchanges.",
+    "records": [
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:45:21.383Z",
+        "duration_ms": 3089,
+        "input_summary": "44 source docs; 313 heuristic items",
+        "output_summary": "313 total items (+0 LLM-extracted)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "collector",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:45:24.476Z",
+        "duration_ms": 1057,
+        "input_summary": "1 tx(s): 0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "output_summary": "1 artifact bundle(s) collected; statuses: completed",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "planner",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:45:25.533Z",
+        "duration_ms": 7,
+        "input_summary": "1 transactions on Ethereum",
+        "output_summary": "9 role categories; 17 priority contracts",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "contract_intelligence",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:45:25.540Z",
+        "duration_ms": 870,
+        "input_summary": "17 priority contracts",
+        "output_summary": "16 contracts in inventory",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "technical_reasoner",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:45:26.411Z",
+        "duration_ms": 66622,
+        "input_summary": "1 txs, 16 contracts",
+        "output_summary": "0 timeline steps; mechanism: ",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "semantic_validator",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:46:33.031Z",
+        "duration_ms": 1,
+        "input_summary": "revision_round=0",
+        "output_summary": "severity=pass; needs_revision=False; verdict: Deterministic and semantic checks passed.",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:46:33.036Z",
+        "duration_ms": 26245,
+        "input_summary": "313 evidence items",
+        "output_summary": "executive_summary len=0",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:46:33.036Z",
+        "duration_ms": 26245,
+        "input_summary": "313 evidence items",
+        "output_summary": "3 timeline steps",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:46:59.285Z",
+        "duration_ms": 48962,
+        "input_summary": "3 timeline steps; 0 narrative keys",
+        "output_summary": "completeness_score=2.5; judge_summary: This dossier is critically incomplete and unsuitable for presentation. The proto",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:47:48.246Z",
+        "duration_ms": 36367,
+        "input_summary": "RETRY: 44 docs; critique injected",
+        "output_summary": "319 items after retry extraction",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:48:24.612Z",
+        "duration_ms": 29869,
+        "input_summary": "RETRY: 319 evidence items",
+        "output_summary": "executive_summary len=486 (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:48:24.612Z",
+        "duration_ms": 29869,
+        "input_summary": "RETRY: 319 evidence items",
+        "output_summary": "3 timeline steps (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:48:54.480Z",
+        "duration_ms": 47256,
+        "input_summary": "RETRY: 3 steps; 4 narrative keys",
+        "output_summary": "v2 completeness_score=28",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      }
+    ]
+  }
+}

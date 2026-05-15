@@ -1,0 +1,574 @@
+{
+  "incident_id": "unknown-2025-01-01-price-manipulation-incident-ethereum",
+  "report_type": "analyst_report",
+  "case_overview": {
+    "headline": "Unknown 2025-01-01 price-manipulation incident",
+    "what_happened": "An estimated loss of 12",
+    "why_it_matters": "The dossier provides a functional attack timeline with transaction hash, attacker address, and basic price manipulation flow via Uniswap V2. Evidence links from Etherscan and a DeFiHackLabs PoC support the timeline. However, critical gaps undermine completeness: the loss amount '12' lacks denomination, the protocol is unidentified, the exact vulnerability mechanism is underspecified, and no social sources corroborate the incident. The evidence items are largely inferred mentions with low confidence scores (0.52-0.65). The dossier requires loss quantification, protocol identification, and root cause clarification before it can be considered demo-ready.",
+    "primary_sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+        "source_type": "report",
+        "depth": 0,
+        "discovered_from": "incident_seed",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/LAURAToken_exp.sol",
+        "source_type": "poc",
+        "depth": 0,
+        "discovered_from": "incident_seed",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://etherscan.io/tx/0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420",
+        "source_type": "explorer",
+        "depth": 0,
+        "discovered_from": "attack_tx_hashes",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://etherscan.io/address/0x2cad84c3d2e31bc6d630229901f421e6da5557ef",
+        "source_type": "explorer",
+        "depth": 0,
+        "discovered_from": "attacker_addresses",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      }
+    ]
+  },
+  "attacker_profile": {
+    "summary": "The dossier has 1 direct attacker address candidate(s) and 168 additional address mentions from fetched sources.",
+    "attacker_addresses": [
+      "0x2cad84c3d2e31bc6d630229901f421e6da5557ef",
+      "0x25869347f7993c50410a9b9b9c48f37d79e12a36",
+      "0x55877cf2f24286dba2acb64311beca39728fbd10",
+      "0x05641e33fd15baf819729df55500b07b82eb8e89"
+    ],
+    "behavior_signals": [
+      "Leans on addresses confirmed by direct seed fields first.",
+      "Uses source-text mentions as weaker supporting clues rather than direct proof."
+    ]
+  },
+  "fund_flow": {
+    "summary": "The current public view has 4 known transaction(s). A deeper fund-flow pass is still needed.",
+    "key_transactions": [
+      "0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420"
+    ],
+    "key_addresses": [
+      "0x05641e33fd15baf819729df55500b07b82eb8e89",
+      "0x25869347f7993c50410a9b9b9c48f37d79e12a36",
+      "0x2cad84c3d2e31bc6d630229901f421e6da5557ef",
+      "0x539d54074e052ae82de4936ae6bb213ab773559e",
+      "0x55877cf2f24286dba2acb64311beca39728fbd10",
+      "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+      "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "0xb292678438245ec863f9fea64affcea887144240"
+    ],
+    "path": []
+  },
+  "exploit_path": {
+    "summary": "An estimated loss of 12",
+    "steps": [
+      {
+        "title": "Step 1",
+        "detail": "Attacker deploys malicious contract at 0x2cad84c3d2e31bc6d630229901f421e6da5557ef on Ethereum.",
+        "evidence_refs": [
+          "ev-004",
+          "ev-019",
+          "ev-034"
+        ],
+        "tx_hashes": []
+      },
+      {
+        "title": "Step 2",
+        "detail": "Attacker sets max approval (0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff) on the target LAURAToken contract (0x25869347f7993c50410a9b9b9c48f37d79e12a36) and associated pool contract (0x55877cf2f24286dba2acb64311beca39728fbd10).",
+        "evidence_refs": [
+          "ev-009",
+          "ev-011",
+          "ev-020",
+          "ev-021",
+          "ev-024",
+          "ev-026"
+        ],
+        "tx_hashes": []
+      },
+      {
+        "title": "Step 3",
+        "detail": "Attacker uses Uniswap V2 Router (0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D) to swap WETH (0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2) for LAURAToken, manipulating the LAURAToken price in the liquidity pool.",
+        "evidence_refs": [
+          "ev-014",
+          "ev-015",
+          "ev-028"
+        ],
+        "tx_hashes": []
+      },
+      {
+        "title": "Step 4",
+        "detail": "Attacker exploits the price-manipulated state of the LAURAToken contract (0x25869347f7993c50410a9b9b9c48f37d79E12a36) via the malicious contract, interacting with an additional contract (0xb292678438245Ec863F9FEa64AFfcEA887144240) to extract funds.",
+        "evidence_refs": [
+          "ev-009",
+          "ev-012",
+          "ev-016"
+        ],
+        "tx_hashes": []
+      },
+      {
+        "title": "Step 5",
+        "detail": "Attacker drains approximately 12 in value from the protocol, with ERC20 Transfer events (0xddf252ad...) confirming token outflows in the single attack transaction 0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420.",
+        "evidence_refs": [
+          "ev-003",
+          "ev-005",
+          "ev-022"
+        ],
+        "tx_hashes": []
+      }
+    ]
+  },
+  "evidence_chain": {
+    "summary": "The current case file combines public sources with a stored technical-analysis artifact. Technical validation verdict: Deterministic and semantic checks passed..",
+    "claims": [
+      {
+        "claim_id": "claim-overview",
+        "title": "Current public summary",
+        "statement": "An estimated loss of 12",
+        "confidence": 0.58,
+        "support": [
+          {
+            "source_id": "src-001",
+            "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+            "source_type": "report",
+            "depth": 0,
+            "discovered_from": "incident_seed",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          },
+          {
+            "source_id": "src-002",
+            "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/LAURAToken_exp.sol",
+            "source_type": "poc",
+            "depth": 0,
+            "discovered_from": "incident_seed",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          },
+          {
+            "source_id": "src-003",
+            "url": "https://etherscan.io/tx/0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420",
+            "source_type": "explorer",
+            "depth": 0,
+            "discovered_from": "attack_tx_hashes",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+        "source_type": "report",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 99,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/LAURAToken_exp.sol",
+        "source_type": "poc",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 98,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://etherscan.io/tx/0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420",
+        "source_type": "explorer",
+        "discovered_from": "attack_tx_hashes",
+        "depth": 0,
+        "priority": 79,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://etherscan.io/address/0x2cad84c3d2e31bc6d630229901f421e6da5557ef",
+        "source_type": "explorer",
+        "discovered_from": "attacker_addresses",
+        "depth": 0,
+        "priority": 69,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-005",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2025-01/LAURAToken_exp.sol",
+        "source_type": "poc",
+        "discovered_from": "src-002",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-007",
+        "url": "https://sepolia.etherscan.io",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-008",
+        "url": "https://hoodi.etherscan.io",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-009",
+        "url": "https://etherscan.io/txs",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-010",
+        "url": "https://etherscan.io/txsPending",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-011",
+        "url": "https://etherscan.io/txsInternal",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-012",
+        "url": "https://etherscan.io/txCrossChain",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-013",
+        "url": "https://etherscan.io/txsBeaconDeposit",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-014",
+        "url": "https://etherscan.io/txsBeaconWithdrawal",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-015",
+        "url": "https://etherscan.io/txsBlobs",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-016",
+        "url": "https://etherscan.io/txsAA",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-017",
+        "url": "https://etherscan.io/txnAuthList",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-018",
+        "url": "https://etherscan.io/blocks",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-019",
+        "url": "https://etherscan.io/blocks_forked",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-020",
+        "url": "https://etherscan.io/uncles",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-021",
+        "url": "https://etherscan.io/accounts",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-022",
+        "url": "https://etherscan.io/contractsVerified",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-023",
+        "url": "https://etherscan.io/tokens",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-024",
+        "url": "https://etherscan.io/tokentxns",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-025",
+        "url": "https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-026",
+        "url": "https://etherscan.io",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-027",
+        "url": "https://sepolia.etherscan.io/txs",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-028",
+        "url": "https://sepolia.etherscan.io/txsPending",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-029",
+        "url": "https://sepolia.etherscan.io/txsInternal",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-030",
+        "url": "https://sepolia.etherscan.io/txsBeaconWithdrawal",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-031",
+        "url": "https://sepolia.etherscan.io/txsBlobs",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-032",
+        "url": "https://sepolia.etherscan.io/txsAA",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-033",
+        "url": "https://sepolia.etherscan.io/txnAuthList",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-034",
+        "url": "https://sepolia.etherscan.io/blocks",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-035",
+        "url": "https://sepolia.etherscan.io/blocks_forked",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-036",
+        "url": "https://sepolia.etherscan.io/uncles",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-037",
+        "url": "https://sepolia.etherscan.io/accounts",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-038",
+        "url": "https://sepolia.etherscan.io/contractsVerified",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-039",
+        "url": "https://sepolia.etherscan.io/tokentxns",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-040",
+        "url": "https://sepolia.etherscan.io/nft-transfers",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-041",
+        "url": "https://sepolia.etherscan.io/nft-latest-mints",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-042",
+        "url": "https://sepolia.etherscan.io/unitconverter",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-043",
+        "url": "https://sepolia.etherscan.io/base64converter",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-044",
+        "url": "https://sepolia.etherscan.io/blockdateconverter",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-045",
+        "url": "https://etherscan.io/nft-top-contracts",
+        "source_type": "explorer",
+        "discovered_from": "src-009",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      }
+    ]
+  },
+  "open_questions": []
+}

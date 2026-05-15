@@ -1,0 +1,12 @@
+{
+  "attack_flow_summary": "",
+  "exploit_mechanism": "",
+  "tx_role_map": {},
+  "contract_role_map": {},
+  "timeline_steps": [],
+  "funds_flow_path": [],
+  "open_questions": [],
+  "confidence_notes": [
+    "Investigation plan identifies 0x560a77bc... as attacker_eoa, but this EOA is not in contracts_touched. The actual deployment path is: EOA \u2192 0x0917914b \u2192 0xd9ad954b (factory) \u2192 10 attacker contracts. The factory deployer relationship is not fully resolved. Attack pattern strongly indicates flash loan price manipulation given: (1) 10 contracts deployed mid-transaction, (2) 246 token transfers, (3) victim is PancakePair with net-negative balance change, (4) incident is classified as price-manipulation. Contract 0xd9ad954bea4ad65578904cefe6ee2a6eb13879db is listed in unknown role but is critical to attack infrastructure as the factory deploying all attacker contracts."
+  ]
+}

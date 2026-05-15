@@ -1,0 +1,12 @@
+{
+  "attack_flow_summary": "",
+  "exploit_mechanism": "",
+  "tx_role_map": {},
+  "contract_role_map": {},
+  "timeline_steps": [],
+  "funds_flow_path": [],
+  "open_questions": [],
+  "confidence_notes": [
+    "Attack flow inferred from call graph; 0x5eac... likely initiator/intermediary for flash loan. No attacker contracts deployed per investigation plan. Victim identified as UniswapV2Pair (SASHA/WETH) per largest net-negative balance change and swap targets."
+  ]
+}

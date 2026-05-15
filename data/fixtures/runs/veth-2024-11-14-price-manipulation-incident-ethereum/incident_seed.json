@@ -1,0 +1,39 @@
+{
+  "incident_id": "veth-2024-11-14-price-manipulation-incident-ethereum",
+  "job_id": "veth-ethereum-2024-11-14-batch",
+  "trigger_type": "batch",
+  "seed_type": "tx_hash",
+  "chain": "Ethereum",
+  "protocol_name": "Veth",
+  "incident_name": "Veth 2024-11-14 price-manipulation incident",
+  "incident_date": "",
+  "attack_tx_hashes": [
+    "0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b"
+  ],
+  "attacker_addresses": [
+    "0x351d38733de3f1e73468d24401c59f63677000c9"
+  ],
+  "seed_urls": [
+    "https://x.com/SlowMist_Team/status/1856987988632457708",
+    "https://x.com/ExternalExplorer_xyz/status/1857002671124730233",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/vETH_exp.sol",
+    "https://blog.verichains.io/p/veth-incident-with-unknown-mechanism",
+    "https://x.com/TenArmorAlert/status/1856984299905716645",
+    "https://www.quillaudits.com/blog/hack-analysis/veth-token-450k-exploit-analysis"
+  ],
+  "attack_contract_urls": [],
+  "victim_contract_urls": [],
+  "tags": [
+    "price_manipulation",
+    "ethereum",
+    "defi"
+  ],
+  "source_names": [],
+  "attack_type_raws": [],
+  "summary_candidates": [
+    "An estimated loss of about $447K was caused by a price-manipulation attack involving the vETH/BIF market on Ethereum"
+  ],
+  "note_candidates": [],
+  "date_range": {},
+  "created_at": "2026-04-27T13:12:13+00:00"
+}

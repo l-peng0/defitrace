@@ -1,0 +1,1565 @@
+{
+  "incident_id": "hydt-bsc-2024-10-10",
+  "incident_library_entry": {
+    "incident_id": "hydt-bsc-2024-10-10",
+    "title": "HYDT",
+    "protocol_name": "HYDT",
+    "chain": "BSC",
+    "incident_date": "2024-10-10",
+    "summary": "Test a case with direct explorer evidence and a non-English supporting article.",
+    "status": "demo_live_dossier",
+    "completeness_score": 0.71,
+    "source_count": 30,
+    "direct_source_count": 5,
+    "secondary_source_count": 25,
+    "social_count": 1,
+    "poc_count": 6,
+    "explorer_count": 21,
+    "report_count": 2,
+    "missing_fields": [
+      "attack_contract_urls",
+      "victim_contract_urls"
+    ],
+    "last_updated": "2026-04-01T11:32:47+00:00",
+    "pattern_label": "price_manipulation",
+    "attack_tx_hashes": [
+      "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+      "0x3c9c20870000000000b492b7807bf19b7dddf89b706143896d05228f312155d3",
+      "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+      "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    ],
+    "source_preview": [
+      "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+      "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/HYDT_exp.sol",
+      "https://bscscan.com/tx/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+      "https://x.com/TenArmorAlert/status/1844241843518951451",
+      "https://learnblockchain.cn/article/13124",
+      "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main"
+    ]
+  },
+  "dashboard_view": {
+    "incident_id": "hydt-bsc-2024-10-10",
+    "card": {
+      "title": "HYDT",
+      "chain": "BSC",
+      "incident_date": "2024-10-10",
+      "protocol_name": "HYDT",
+      "summary": "Test a case with direct explorer evidence and a non-English supporting article.",
+      "source_count": 30,
+      "direct_source_count": 5,
+      "secondary_source_count": 25,
+      "completeness_score": 0.71
+    },
+    "detail": {
+      "timeline_preview": [
+        {
+          "step_id": "step-001",
+          "order": 1,
+          "label": "Incident enters the corpus",
+          "step_type": "entry",
+          "summary": "HYDT is dated 2024-10-10.",
+          "source_refs": [],
+          "confidence": 0.92
+        },
+        {
+          "step_id": "step-002",
+          "order": 2,
+          "label": "Impact summary collected",
+          "step_type": "impact",
+          "summary": "Test a case with direct explorer evidence and a non-English supporting article.",
+          "source_refs": [],
+          "confidence": 0.72
+        },
+        {
+          "step_id": "step-003",
+          "order": 3,
+          "label": "Source expansion completed",
+          "step_type": "analysis",
+          "summary": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+          "source_refs": [],
+          "confidence": 0.75
+        }
+      ],
+      "attacker_profile_summary": "The dossier has 0 direct attacker address candidate(s) and 14 additional address mentions from fetched sources.",
+      "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+      "judge_summary": "This run is strong enough for demo browsing, but still needs more direct technical evidence before it should be treated as a full analyst-grade dossier.",
+      "missing_fields": [
+        "attack_contract_urls",
+        "victim_contract_urls"
+      ]
+    },
+    "status": "demo_live_dossier",
+    "last_updated": "2026-04-01T11:32:47+00:00"
+  },
+  "augmented_incident": {
+    "incident_id": "hydt-bsc-2024-10-10",
+    "title": "HYDT",
+    "incident_date": "2024-10-10",
+    "chain": "BSC",
+    "protocol_name": "HYDT",
+    "status": "demo_live_dossier",
+    "summary": "Test a case with direct explorer evidence and a non-English supporting article.",
+    "seed_overview": {
+      "seed_type": "sample_source_expansion_target",
+      "trigger_type": "demo_corpus",
+      "source_names": [
+        "sample_target_pack"
+      ],
+      "attack_type_raws": [
+        "Price Manipulation"
+      ]
+    },
+    "key_addresses": [
+      "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548d",
+      "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "0x7109709ECfa91a80626fF3989D68f67F5b1DD12D",
+      "0x92b7807bF19b7DDdf89b706143896d05228f3121"
+    ],
+    "key_contracts": [],
+    "key_transactions": [
+      "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+      "0x3c9c20870000000000b492b7807bf19b7dddf89b706143896d05228f312155d3",
+      "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+      "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    ],
+    "timeline": [
+      {
+        "step_id": "step-001",
+        "order": 1,
+        "label": "Incident enters the corpus",
+        "step_type": "entry",
+        "summary": "HYDT is dated 2024-10-10.",
+        "source_refs": [],
+        "confidence": 0.92
+      },
+      {
+        "step_id": "step-002",
+        "order": 2,
+        "label": "Impact summary collected",
+        "step_type": "impact",
+        "summary": "Test a case with direct explorer evidence and a non-English supporting article.",
+        "source_refs": [],
+        "confidence": 0.72
+      },
+      {
+        "step_id": "step-003",
+        "order": 3,
+        "label": "Source expansion completed",
+        "step_type": "analysis",
+        "summary": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+        "source_refs": [],
+        "confidence": 0.75
+      }
+    ],
+    "attacker_profile": {
+      "incident_id": "hydt-bsc-2024-10-10",
+      "profile_id": "profile-hydt-bsc-2024-10-10",
+      "primary_addresses": [],
+      "related_addresses": [
+        "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548d",
+        "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+        "0x7109709ECfa91a80626fF3989D68f67F5b1DD12D",
+        "0x92b7807bF19b7DDdf89b706143896d05228f3121",
+        "0x5E901164858d75852EF548B3729f44Dd93209c9c",
+        "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+        "0x1b81D678ffb9C0263b24A97847620C99d213eB14",
+        "0x55d398326f99059fF775485246999027B3197955",
+        "0x4645863205b47a0A3344684489e8c446a437D66C",
+        "0x8f921E27e3AF106015D1C3a244eC4F48dBFcAD14"
+      ],
+      "recent_activity_summary": "The dossier has 0 direct attacker address candidate(s) and 14 additional address mentions from fetched sources.",
+      "counterparties": [],
+      "repeated_behaviors": [
+        "Leans on addresses confirmed by direct seed fields first.",
+        "Uses source-text mentions as weaker supporting clues rather than direct proof."
+      ],
+      "open_questions": [
+        "Which address funded the exploit wallet before the attack?",
+        "Which transfers right after the exploit are still missing from the dossier?"
+      ]
+    },
+    "pattern_hypotheses": [
+      {
+        "hypothesis_id": "hyp-001",
+        "label": "price_manipulation",
+        "summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+        "why_suspected": [
+          "Attack-type tags mention price manipulation.",
+          "The supporting sources resemble prior price-manipulation writeups."
+        ],
+        "confidence": 0.76,
+        "open_questions": [
+          "Which specific pricing path was abused?",
+          "Is there a direct explorer or postmortem source that confirms the same mechanism?"
+        ]
+      }
+    ],
+    "source_summary": {
+      "source_count": 30,
+      "source_types": {
+        "report": 2,
+        "poc": 6,
+        "explorer": 21,
+        "social": 1
+      },
+      "direct_source_count": 5,
+      "secondary_source_count": 25,
+      "fetched_source_count": 5
+    },
+    "quality_report": {
+      "incident_id": "hydt-bsc-2024-10-10",
+      "completeness_score": 0.71,
+      "direct_source_count": 5,
+      "secondary_source_count": 25,
+      "fetched_source_count": 5,
+      "citation_coverage_count": 29,
+      "missing_fields": [
+        "attack_contract_urls",
+        "victim_contract_urls"
+      ],
+      "judge_summary": "This run is strong enough for demo browsing, but still needs more direct technical evidence before it should be treated as a full analyst-grade dossier."
+    },
+    "generated_at": "2026-04-01T11:32:47+00:00"
+  },
+  "source_index": {
+    "incident_id": "hydt-bsc-2024-10-10",
+    "sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+        "source_type": "report",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 99,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/HYDT_exp.sol",
+        "source_type": "poc",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 98,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://bscscan.com/tx/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+        "source_type": "explorer",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 97,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://x.com/TenArmorAlert/status/1844241843518951451",
+        "source_type": "social",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 96,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-005",
+        "url": "https://learnblockchain.cn/article/13124",
+        "source_type": "report",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 95,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-006",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main",
+        "source_type": "poc",
+        "discovered_from": "src-002",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-007",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src",
+        "source_type": "poc",
+        "discovered_from": "src-002",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-008",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src/test",
+        "source_type": "poc",
+        "discovered_from": "src-002",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-009",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src/test/2024-10",
+        "source_type": "poc",
+        "discovered_from": "src-002",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-010",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-10/HYDT_exp.sol",
+        "source_type": "poc",
+        "discovered_from": "src-002",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-011",
+        "url": "https://bscscan.com/chart/bnbprice",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-012",
+        "url": "https://bscscan.com/gastracker",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-013",
+        "url": "https://bscscan.com/settings",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-014",
+        "url": "https://opbnb.bscscan.com",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-015",
+        "url": "https://testnet.bscscan.com",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-016",
+        "url": "https://opbnb-testnet.bscscan.com",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-017",
+        "url": "https://bscscan.com/login",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-018",
+        "url": "https://bscscan.com/txs",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-019",
+        "url": "https://bscscan.com/txsPending",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-020",
+        "url": "https://bscscan.com/txsInternal",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-021",
+        "url": "https://bscscan.com/txsBlobs",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-022",
+        "url": "https://bscscan.com/txsAA",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-023",
+        "url": "https://bscscan.com/txnAuthList",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-024",
+        "url": "https://bscscan.com/blocks",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-025",
+        "url": "https://bscscan.com/blocks_forked",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-026",
+        "url": "https://bscscan.com/accounts",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-027",
+        "url": "https://bscscan.com/contractsVerified",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-028",
+        "url": "https://bscscan.com/validators",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-029",
+        "url": "https://bscscan.com/validatorset",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-030",
+        "url": "https://bscscan.com/tokens",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      }
+    ]
+  },
+  "source_documents": {
+    "incident_id": "hydt-bsc-2024-10-10",
+    "documents": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+        "source_type": "report",
+        "fetch_status": "fetched",
+        "fetched_at": "2026-04-01T11:32:37+00:00",
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "title": "Notion",
+        "text_excerpt": "Notion (function(){var e,r=window.navigator.userAgent,t=/Windows.*Edge/i.test(r),i=!t&&/Chrome/i.test(r);if(i){if((e=r.match(/Chrome\\/(\\d+)/i))&&e[1])return parseInt(e[1],10)<=84}else if(t||i||!/Safari/i.test(r))if(/Firefox/i.test(r)){if((e=r.match(/Firefox\\/(\\d+)/i))&&e[1])return parseInt(e[1],10)<=114}else{if(t)return!0;if(/Trident/i.test(r))return!0}else if((e=r.match(/Version\\/(\\d+)/i))&&e[1])return parseInt(e[1],10)<=13;return!1})()&&window.location.replace(\"/unsupported-browser.html\") window.__webStartTime=performance.now(),performance.mark(\"__webStartTime\") try{if(Math.random()<.01){[\"/blank\",\"/login\",\"/meeting-notification\",\"/quick-search\",\"/desktop-nosey\"].includes(window.location.pathname)||(window.CLIENT_LOAD_TAG=Math.random().toString(16).substring(2),fetch(\"/api/v3/recordClientLoadAttempt\",{method:\"POST\",headers:{\"Content-Type\":\"application/json; charset=utf-8\"},body:JSON.stringify({tag:window.CLIENT_LOAD_TAG,pathname:window.location.pathname,hostname:window.location.hostname,version:\"23.13.20260401.0836\",htmlType:\"web\"}),priority:\"low\"}))}}catch(t){console.error(\"Failed to beacon load attempt\",t)} body{background:#fff}body.dark{background:#191919}@keyframes startup-sh",
+        "discovered_links": [],
+        "extracted_addresses": [],
+        "extracted_tx_hashes": [],
+        "error_message": ""
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/HYDT_exp.sol",
+        "source_type": "poc",
+        "fetch_status": "fetched",
+        "fetched_at": "2026-04-01T11:32:39+00:00",
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "title": "DeFiHackLabs/src/test/2024-10/HYDT_exp.sol at main \u00b7 SunWeb3Sec/DeFiHackLabs \u00b7 GitHub",
+        "text_excerpt": ":root { --tab-size-preference: 4; } pre, code { tab-size: var(--tab-size-preference); } {\"locale\":\"en\",\"featureFlags\":[\"actions_custom_images_storage_billing_ui_visibility\",\"actions_image_version_event\",\"actions_scheduled_workflow_timezone_enabled\",\"alternate_user_config_repo\",\"arianotify_comprehensive_migration\",\"batch_suggested_changes\",\"billing_discount_threshold_notification\",\"close_pr_side_panel\",\"code_scanning_all_branch_query\",\"codespaces_prebuild_region_target_update\",\"coding_agent_model_selection\",\"coding_agent_model_selection_all_skus\",\"comment_viewer_copy_raw_markdown\",\"contentful_primer_code_blocks\",\"copilot_agent_image_upload\",\"copilot_agent_snippy\",\"copilot_api_agentic_issue_marshal_yaml\",\"copilot_ask_mode_dropdown\",\"copilot_chat_attach_multiple_images\",\"copilot_chat_clear_model_selection_for_default_change\",\"copilot_chat_enable_tool_call_logs\",\"copilot_chat_explain_error_user_model\",\"copilot_chat_file_redirect\",\"copilot_chat_input_commands\",\"copilot_chat_opening_thread_switch\",\"copilot_chat_reduce_quota_checks\",\"copilot_chat_search_bar_redirect\",\"copilot_chat_selection_attachments\",\"copilot_chat_vision_in_claude\",\"copilot_chat_vision_preview_gate\",\"copilot_code_revie",
+        "discovered_links": [
+          {
+            "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main",
+            "source_type": "poc",
+            "discovered_from": "src-002"
+          },
+          {
+            "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src",
+            "source_type": "poc",
+            "discovered_from": "src-002"
+          },
+          {
+            "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src/test",
+            "source_type": "poc",
+            "discovered_from": "src-002"
+          },
+          {
+            "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src/test/2024-10",
+            "source_type": "poc",
+            "discovered_from": "src-002"
+          },
+          {
+            "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-10/HYDT_exp.sol",
+            "source_type": "poc",
+            "discovered_from": "src-002"
+          }
+        ],
+        "extracted_addresses": [
+          "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548d",
+          "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+          "0x7109709ECfa91a80626fF3989D68f67F5b1DD12D",
+          "0x92b7807bF19b7DDdf89b706143896d05228f3121",
+          "0x5E901164858d75852EF548B3729f44Dd93209c9c",
+          "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+          "0x1b81D678ffb9C0263b24A97847620C99d213eB14",
+          "0x55d398326f99059fF775485246999027B3197955",
+          "0x9810512Be701801954449408966c630595D0cD51",
+          "0xA2268Fcc2FE7A2Bb755FbE5A7B3Ac346ddFeDB9B"
+        ],
+        "extracted_tx_hashes": [
+          "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3"
+        ],
+        "error_message": ""
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://bscscan.com/tx/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+        "source_type": "explorer",
+        "fetch_status": "fetched",
+        "fetched_at": "2026-04-01T11:32:40+00:00",
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "title": "Bsc Transaction Hash: 0xa9df1bd97c... | BscScan",
+        "text_excerpt": "Bsc Transaction Hash: 0xa9df1bd97c... | BscScan window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config','G-PQY6J2Q8EP', { 'anonymize_ip': true }); //Search box text ad var availableAd = []; var gotAd = []; availableAd = [\"<div class='p-2'><a href='https://goto.bscscan.com/rd/RYX43GDE1IC5HRW1X1DHKETDJ' rel='nofollow' target='_blank' data-bs-toggle='tooltip' data-bs-trigger='hover' title='Links to an External Advertiser site' class='search-panel-ads d-flex align-items-center p-2 rounded'><div class='me-2'><img width='22' src='/images/gen/etoro_20.png' alt='eToro'></div><div class='text-truncate'><h6 class='d-flex align-items-center fs-sm text-dark mb-0'><div class='text-truncate me-2'>eToro - 100+ cryptoassets</div><span class='d-none d-sm-inline-block small bg-white text-muted rounded-1 border px-2 py-1 ms-1'>Sponsored</span><span class='d-inline-block d-sm-none small bg-white text-muted rounded-1 border px-2 py-1 ms-1'>Ad</span></h6></div></a></div>\"]; gotAd = [\"ShowAds \"]; // Temporary fallback to prevent runtime error if (typeof window.updatehash !== 'function') { const args = []; // Create a simple fallback ",
+        "discovered_links": [
+          {
+            "url": "https://bscscan.com/chart/bnbprice",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/gastracker",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/settings",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://opbnb.bscscan.com",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://testnet.bscscan.com",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://opbnb-testnet.bscscan.com",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/login",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/txs",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/txsPending",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/txsInternal",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/txsBlobs",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/txsAA",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/txnAuthList",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/blocks",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/blocks_forked",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/accounts",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/contractsVerified",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/validators",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/validatorset",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/tokens",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          }
+        ],
+        "extracted_addresses": [
+          "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548d",
+          "0x4645863205b47a0A3344684489e8c446a437D66C",
+          "0x8f921E27e3AF106015D1C3a244eC4F48dBFcAD14",
+          "0x3c9c20870000000000b492b7807bf19b7dddf89b",
+          "0x9810512be701801954449408966c630595d0cd51",
+          "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0",
+          "0x1b81D678ffb9C0263b24A97847620C99d213eB14",
+          "0xffffffffffffffffffffffffffffffffffffffff"
+        ],
+        "extracted_tx_hashes": [
+          "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+          "0x3c9c20870000000000b492b7807bf19b7dddf89b706143896d05228f312155d3",
+          "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+          "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        ],
+        "error_message": ""
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://x.com/TenArmorAlert/status/1844241843518951451",
+        "source_type": "social",
+        "fetch_status": "fetched",
+        "fetched_at": "2026-04-01T11:32:42+00:00",
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "title": "",
+        "text_excerpt": "html,body{height: 100%;}::cue{white-space:normal} [stylesheet-group=\"0\"]{} body{margin:0;} button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;} html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);} input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-webkit-search-results-button,input::-webkit-search-results-decoration{display:none;} [stylesheet-group=\"1\"]{} .css-146c3p1{background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;color:rgba(0,0,0,1.00);display:inline;font:14px -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;list-style:none;margin:0px;padding:0px;position:relative;text-align:start;text-decoration:none;white-space:pre-wrap;word-wrap:break-word;} .css-175oi2r{align-items:stretch;background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;display:flex;flex-basis:auto;flex-direction:column;flex-shrink:0;list-style:none;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;text-decoration:none;z-index:0;} .css-1jxf684{background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;color:in",
+        "discovered_links": [],
+        "extracted_addresses": [],
+        "extracted_tx_hashes": [],
+        "error_message": ""
+      },
+      {
+        "source_id": "src-005",
+        "url": "https://learnblockchain.cn/article/13124",
+        "source_type": "report",
+        "fetch_status": "fetched",
+        "fetched_at": "2026-04-01T11:32:44+00:00",
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "title": "",
+        "text_excerpt": "body,div,html,p,span{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}body{background:#fff} void 0===window.console&&(console={log:function(){}}),window._waf_is_mobile=!1,function(i){(/(android|bb\\d+|meego).+mobile|avantgo|bada\\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(i)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\\-(n|u)|c55\\/|capi|ccwa|cdm\\-|cell|chtm|cldc|cmd\\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\\-s|devi|dica|dmob|do(c|p)o|ds(12|\\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\\-|_)|g1 u|g560|gene|gf\\-5|g\\-mo|go(\\.w|od)|gr(ad|un)|haie|hcit|hd\\-(m|p|t)|hei\\-|hi(pt|ta)|hp( i|ip)|hs\\-c|ht(c(\\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\\-(20|go|ma)|i230|iac( |\\-|\\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|kej",
+        "discovered_links": [],
+        "extracted_addresses": [],
+        "extracted_tx_hashes": [],
+        "error_message": ""
+      }
+    ]
+  },
+  "quality_report": {
+    "incident_id": "hydt-bsc-2024-10-10",
+    "completeness_score": 0.71,
+    "direct_source_count": 5,
+    "secondary_source_count": 25,
+    "fetched_source_count": 5,
+    "citation_coverage_count": 29,
+    "missing_fields": [
+      "attack_contract_urls",
+      "victim_contract_urls"
+    ],
+    "judge_summary": "This run is strong enough for demo browsing, but still needs more direct technical evidence before it should be treated as a full analyst-grade dossier."
+  },
+  "run_state": {
+    "job_id": "hydt-bsc-2024-10-10-demo-job",
+    "incident_id": "hydt-bsc-2024-10-10",
+    "trigger_type": "demo_corpus",
+    "current_stage": "dashboard_projection",
+    "node_status": {
+      "seed_loader": "completed",
+      "source_finder": "completed",
+      "source_expander": "completed",
+      "evidence_normalizer": "completed",
+      "timeline_builder": "completed",
+      "dossier_assembler": "completed",
+      "quality_judge": "completed",
+      "dashboard_projection": "completed"
+    },
+    "retry_counts": {},
+    "started_at": "2026-04-01T11:32:37+00:00",
+    "updated_at": "2026-04-01T11:32:47+00:00",
+    "completed_at": "2026-04-01T11:32:47+00:00",
+    "run_notes": [
+      "Loaded and normalized incident seed.",
+      "Built direct source candidates from seed facts.",
+      "Fetched direct sources and discovered second-hop links.",
+      "Turned fetched sources into citation-backed evidence.",
+      "Built timeline and behavior profile views.",
+      "Assembled dossier, quality report, and library entry.",
+      "This run is strong enough for demo browsing, but still needs more direct technical evidence before it should be treated as a full analyst-grade dossier.",
+      "Projected live incident library and dossier views."
+    ],
+    "artifacts": {
+      "incident_seed": "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/incident_seed.json",
+      "source_index": "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/source_index.json",
+      "source_documents": "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/source_documents.json",
+      "raw_evidence": "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/raw_evidence.json",
+      "timeline": "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/timeline.json",
+      "augmented_incident": "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/augmented_incident.json",
+      "quality_report": "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/quality_report.json",
+      "incident_library_entry": "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/incident_library_entry.json"
+    }
+  },
+  "run_events": {
+    "incident_id": "hydt-bsc-2024-10-10",
+    "events": [
+      {
+        "event_id": "evt-001",
+        "timestamp": "2026-04-01T11:32:37+00:00",
+        "stage": "seed_loader",
+        "agent": "seed_loader",
+        "status": "completed",
+        "note": "Loaded incident seed.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/incident_seed.json"
+        ],
+        "metrics": {},
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-002",
+        "timestamp": "2026-04-01T11:32:37+00:00",
+        "stage": "source_finder",
+        "agent": "Discovery supervisor",
+        "status": "completed",
+        "note": "Ranked direct source candidates.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/source_index.json"
+        ],
+        "metrics": {
+          "source_count": 5
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-003",
+        "timestamp": "2026-04-01T11:32:47+00:00",
+        "stage": "source_expander",
+        "agent": "Source expansion agent",
+        "status": "completed",
+        "note": "Fetched source pages and extracted discovered links.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/source_index.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/source_documents.json"
+        ],
+        "metrics": {
+          "source_count": 30,
+          "fetched_documents": 5
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-004",
+        "timestamp": "2026-04-01T11:32:47+00:00",
+        "stage": "evidence_normalizer",
+        "agent": "Evidence normalization agent",
+        "status": "completed",
+        "note": "Normalized source text into evidence items and citation edges.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/raw_evidence.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/citation_graph.json"
+        ],
+        "metrics": {
+          "evidence_count": 29,
+          "claim_count": 29
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-005",
+        "timestamp": "2026-04-01T11:32:47+00:00",
+        "stage": "timeline_builder",
+        "agent": "Timeline builder agent",
+        "status": "completed",
+        "note": "Built timeline, attacker profile, and exploit hypothesis outputs.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/timeline.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/attacker_profile.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/pattern_hypotheses.json"
+        ],
+        "metrics": {
+          "timeline_steps": 3,
+          "hypothesis_count": 1
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-006",
+        "timestamp": "2026-04-01T11:32:47+00:00",
+        "stage": "dossier_assembler",
+        "agent": "Dossier composer agent",
+        "status": "completed",
+        "note": "Assembled final dossier outputs and library projection.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/quality_report.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/augmented_incident.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/dashboard_view.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/report_inputs.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/incident_library_entry.json"
+        ],
+        "metrics": {
+          "completeness_score": 0.71
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-007",
+        "timestamp": "2026-04-01T11:32:47+00:00",
+        "stage": "quality_judge",
+        "agent": "QA judge agent",
+        "status": "completed",
+        "note": "This run is strong enough for demo browsing, but still needs more direct technical evidence before it should be treated as a full analyst-grade dossier.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/quality_report.json"
+        ],
+        "metrics": {
+          "missing_field_count": 2
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-008",
+        "timestamp": "2026-04-01T11:32:47+00:00",
+        "stage": "dashboard_projection",
+        "agent": "Projection agent",
+        "status": "completed",
+        "note": "Projected outputs for backend and frontend consumers.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/incident_library_entry.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/dashboard_view.json"
+        ],
+        "metrics": {},
+        "error_message": ""
+      }
+    ]
+  },
+  "agent_trace": {
+    "incident_id": "hydt-bsc-2024-10-10",
+    "agents": [
+      {
+        "agent_id": "source_finder",
+        "agent_name": "Discovery supervisor",
+        "started_at": "2026-04-01T11:32:37+00:00",
+        "completed_at": "2026-04-01T11:32:37+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/source_index.json"
+        ],
+        "metrics": {
+          "source_count": 5
+        },
+        "note": ""
+      },
+      {
+        "agent_id": "source_expander",
+        "agent_name": "Source expansion agent",
+        "started_at": "2026-04-01T11:32:37+00:00",
+        "completed_at": "2026-04-01T11:32:47+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/source_index.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/source_documents.json"
+        ],
+        "metrics": {
+          "source_count": 30,
+          "fetched_documents": 5
+        },
+        "note": ""
+      },
+      {
+        "agent_id": "evidence_normalizer",
+        "agent_name": "Evidence normalization agent",
+        "started_at": "2026-04-01T11:32:47+00:00",
+        "completed_at": "2026-04-01T11:32:47+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/raw_evidence.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/citation_graph.json"
+        ],
+        "metrics": {
+          "evidence_count": 29,
+          "claim_count": 29
+        },
+        "note": ""
+      },
+      {
+        "agent_id": "timeline_builder",
+        "agent_name": "Timeline builder agent",
+        "started_at": "2026-04-01T11:32:47+00:00",
+        "completed_at": "2026-04-01T11:32:47+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/timeline.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/attacker_profile.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/pattern_hypotheses.json"
+        ],
+        "metrics": {
+          "timeline_steps": 3,
+          "hypothesis_count": 1
+        },
+        "note": ""
+      },
+      {
+        "agent_id": "dossier_assembler",
+        "agent_name": "Dossier composer agent",
+        "started_at": "2026-04-01T11:32:47+00:00",
+        "completed_at": "2026-04-01T11:32:47+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/quality_report.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/augmented_incident.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/dashboard_view.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/report_inputs.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/incident_library_entry.json"
+        ],
+        "metrics": {
+          "completeness_score": 0.71
+        },
+        "note": ""
+      },
+      {
+        "agent_id": "quality_judge",
+        "agent_name": "QA judge agent",
+        "started_at": "2026-04-01T11:32:47+00:00",
+        "completed_at": "2026-04-01T11:32:47+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/hydt-bsc-2024-10-10/quality_report.json"
+        ],
+        "metrics": {
+          "missing_field_count": 2
+        },
+        "note": "This run is strong enough for demo browsing, but still needs more direct technical evidence before it should be treated as a full analyst-grade dossier."
+      }
+    ]
+  },
+  "report_inputs": {
+    "incident_id": "hydt-bsc-2024-10-10",
+    "headline": "HYDT",
+    "executive_summary": "Test a case with direct explorer evidence and a non-English supporting article.",
+    "timeline_summary": "HYDT is dated 2024-10-10. Test a case with direct explorer evidence and a non-English supporting article. The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+    "attacker_behavior_summary": "The dossier has 0 direct attacker address candidate(s) and 14 additional address mentions from fetched sources.",
+    "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+        "source_type": "report",
+        "depth": 0
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/HYDT_exp.sol",
+        "source_type": "poc",
+        "depth": 0
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://bscscan.com/tx/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+        "source_type": "explorer",
+        "depth": 0
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://x.com/TenArmorAlert/status/1844241843518951451",
+        "source_type": "social",
+        "depth": 0
+      },
+      {
+        "source_id": "src-005",
+        "url": "https://learnblockchain.cn/article/13124",
+        "source_type": "report",
+        "depth": 0
+      },
+      {
+        "source_id": "src-006",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main",
+        "source_type": "poc",
+        "depth": 1
+      },
+      {
+        "source_id": "src-007",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src",
+        "source_type": "poc",
+        "depth": 1
+      },
+      {
+        "source_id": "src-008",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src/test",
+        "source_type": "poc",
+        "depth": 1
+      },
+      {
+        "source_id": "src-009",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src/test/2024-10",
+        "source_type": "poc",
+        "depth": 1
+      },
+      {
+        "source_id": "src-010",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-10/HYDT_exp.sol",
+        "source_type": "poc",
+        "depth": 1
+      },
+      {
+        "source_id": "src-011",
+        "url": "https://bscscan.com/chart/bnbprice",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-012",
+        "url": "https://bscscan.com/gastracker",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-013",
+        "url": "https://bscscan.com/settings",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-014",
+        "url": "https://opbnb.bscscan.com",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-015",
+        "url": "https://testnet.bscscan.com",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-016",
+        "url": "https://opbnb-testnet.bscscan.com",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-017",
+        "url": "https://bscscan.com/login",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-018",
+        "url": "https://bscscan.com/txs",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-019",
+        "url": "https://bscscan.com/txsPending",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-020",
+        "url": "https://bscscan.com/txsInternal",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-021",
+        "url": "https://bscscan.com/txsBlobs",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-022",
+        "url": "https://bscscan.com/txsAA",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-023",
+        "url": "https://bscscan.com/txnAuthList",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-024",
+        "url": "https://bscscan.com/blocks",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-025",
+        "url": "https://bscscan.com/blocks_forked",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-026",
+        "url": "https://bscscan.com/accounts",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-027",
+        "url": "https://bscscan.com/contractsVerified",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-028",
+        "url": "https://bscscan.com/validators",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-029",
+        "url": "https://bscscan.com/validatorset",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-030",
+        "url": "https://bscscan.com/tokens",
+        "source_type": "explorer",
+        "depth": 1
+      }
+    ],
+    "open_questions": [
+      "Which specific pricing path was abused?",
+      "Is there a direct explorer or postmortem source that confirms the same mechanism?"
+    ]
+  },
+  "analyst_report": {
+    "incident_id": "hydt-bsc-2024-10-10",
+    "report_type": "analyst_report",
+    "case_overview": {
+      "headline": "HYDT",
+      "what_happened": "Test a case with direct explorer evidence and a non-English supporting article.",
+      "why_it_matters": "This run is strong enough for demo browsing, but still needs more direct technical evidence before it should be treated as a full analyst-grade dossier.",
+      "primary_sources": [
+        {
+          "source_id": "src-001",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+          "source_type": "report",
+          "depth": 0,
+          "discovered_from": "incident_seed",
+          "fetch_status": "fetched",
+          "note": "Primary source collected for the public case file."
+        },
+        {
+          "source_id": "src-002",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/HYDT_exp.sol",
+          "source_type": "poc",
+          "depth": 0,
+          "discovered_from": "incident_seed",
+          "fetch_status": "fetched",
+          "note": "Primary source collected for the public case file."
+        },
+        {
+          "source_id": "src-003",
+          "url": "https://bscscan.com/tx/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+          "source_type": "explorer",
+          "depth": 0,
+          "discovered_from": "incident_seed",
+          "fetch_status": "fetched",
+          "note": "Primary source collected for the public case file."
+        },
+        {
+          "source_id": "src-004",
+          "url": "https://x.com/TenArmorAlert/status/1844241843518951451",
+          "source_type": "social",
+          "depth": 0,
+          "discovered_from": "incident_seed",
+          "fetch_status": "fetched",
+          "note": "Primary source collected for the public case file."
+        }
+      ]
+    },
+    "attacker_profile": {
+      "summary": "The dossier has 0 direct attacker address candidate(s) and 14 additional address mentions from fetched sources.",
+      "attacker_addresses": [
+        "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548d",
+        "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+        "0x7109709ECfa91a80626fF3989D68f67F5b1DD12D",
+        "0x92b7807bF19b7DDdf89b706143896d05228f3121"
+      ],
+      "behavior_signals": [
+        "Leans on addresses confirmed by direct seed fields first.",
+        "Uses source-text mentions as weaker supporting clues rather than direct proof."
+      ]
+    },
+    "fund_flow": {
+      "summary": "The current public view only has a lightweight on-chain summary. A deeper fund-flow pass is still needed.",
+      "key_transactions": [
+        "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+        "0x3c9c20870000000000b492b7807bf19b7dddf89b706143896d05228f312155d3",
+        "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+        "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+      ],
+      "key_addresses": [
+        "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548d",
+        "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+        "0x7109709ECfa91a80626fF3989D68f67F5b1DD12D",
+        "0x92b7807bF19b7DDdf89b706143896d05228f3121"
+      ],
+      "path": []
+    },
+    "exploit_path": {
+      "summary": "Test a case with direct explorer evidence and a non-English supporting article.",
+      "steps": [
+        {
+          "title": "Incident enters the corpus",
+          "detail": "HYDT is dated 2024-10-10.",
+          "evidence_refs": [],
+          "tx_hashes": []
+        },
+        {
+          "title": "Impact summary collected",
+          "detail": "Test a case with direct explorer evidence and a non-English supporting article.",
+          "evidence_refs": [],
+          "tx_hashes": []
+        },
+        {
+          "title": "Source expansion completed",
+          "detail": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+          "evidence_refs": [],
+          "tx_hashes": []
+        }
+      ]
+    },
+    "evidence_chain": {
+      "summary": "The current case file keeps 23 public sources across 4 source types.",
+      "claims": [
+        {
+          "claim_id": "claim-overview",
+          "title": "Current public summary",
+          "statement": "Test a case with direct explorer evidence and a non-English supporting article.",
+          "confidence": 0.58,
+          "support": [
+            {
+              "source_id": "src-001",
+              "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+              "source_type": "report",
+              "depth": 0,
+              "discovered_from": "incident_seed",
+              "fetch_status": "fetched",
+              "note": "Supports the current public-facing summary."
+            },
+            {
+              "source_id": "src-002",
+              "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/HYDT_exp.sol",
+              "source_type": "poc",
+              "depth": 0,
+              "discovered_from": "incident_seed",
+              "fetch_status": "fetched",
+              "note": "Supports the current public-facing summary."
+            },
+            {
+              "source_id": "src-003",
+              "url": "https://bscscan.com/tx/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+              "source_type": "explorer",
+              "depth": 0,
+              "discovered_from": "incident_seed",
+              "fetch_status": "fetched",
+              "note": "Supports the current public-facing summary."
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "src-001",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+          "source_type": "report",
+          "discovered_from": "incident_seed",
+          "depth": 0,
+          "priority": 99,
+          "fetch_status": "fetched"
+        },
+        {
+          "source_id": "src-002",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/HYDT_exp.sol",
+          "source_type": "poc",
+          "discovered_from": "incident_seed",
+          "depth": 0,
+          "priority": 98,
+          "fetch_status": "fetched"
+        },
+        {
+          "source_id": "src-003",
+          "url": "https://bscscan.com/tx/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+          "source_type": "explorer",
+          "discovered_from": "incident_seed",
+          "depth": 0,
+          "priority": 97,
+          "fetch_status": "fetched"
+        },
+        {
+          "source_id": "src-004",
+          "url": "https://x.com/TenArmorAlert/status/1844241843518951451",
+          "source_type": "social",
+          "discovered_from": "incident_seed",
+          "depth": 0,
+          "priority": 96,
+          "fetch_status": "fetched"
+        },
+        {
+          "source_id": "src-005",
+          "url": "https://learnblockchain.cn/article/13124",
+          "source_type": "report",
+          "discovered_from": "incident_seed",
+          "depth": 0,
+          "priority": 95,
+          "fetch_status": "fetched"
+        },
+        {
+          "source_id": "src-010",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-10/HYDT_exp.sol",
+          "source_type": "poc",
+          "discovered_from": "src-002",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-014",
+          "url": "https://opbnb.bscscan.com",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-015",
+          "url": "https://testnet.bscscan.com",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-016",
+          "url": "https://opbnb-testnet.bscscan.com",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-017",
+          "url": "https://bscscan.com/login",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-018",
+          "url": "https://bscscan.com/txs",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-019",
+          "url": "https://bscscan.com/txsPending",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-020",
+          "url": "https://bscscan.com/txsInternal",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-021",
+          "url": "https://bscscan.com/txsBlobs",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-022",
+          "url": "https://bscscan.com/txsAA",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-023",
+          "url": "https://bscscan.com/txnAuthList",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-024",
+          "url": "https://bscscan.com/blocks",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-025",
+          "url": "https://bscscan.com/blocks_forked",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-026",
+          "url": "https://bscscan.com/accounts",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-027",
+          "url": "https://bscscan.com/contractsVerified",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-028",
+          "url": "https://bscscan.com/validators",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-029",
+          "url": "https://bscscan.com/validatorset",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-030",
+          "url": "https://bscscan.com/tokens",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        }
+      ]
+    },
+    "open_questions": [
+      "attack_contract_urls",
+      "victim_contract_urls"
+    ]
+  }
+}

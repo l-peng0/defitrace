@@ -1,0 +1,64 @@
+{
+  "incident_id": "unknown-2024-11-11-price-manipulation-incident-arbitrum",
+  "card": {
+    "title": "Unknown 2024-11-11 price-manipulation incident",
+    "chain": "Arbitrum",
+    "incident_date": "",
+    "protocol_name": "Unknown",
+    "summary": "Transaction involved 11 token transfers across 60+ contracts. The victim WethPoolTUP contract (EIP-1967 proxy) transferred WETH outward. Call graph shows transfers from victim to WETH token, plus interactions with Balancer Vault, Camelot pools, and Uniswap V3 Router suggesting multi-venue price manipulation or arbitrage.",
+    "source_count": 46,
+    "direct_source_count": 4,
+    "secondary_source_count": 42,
+    "completeness_score": 0.55
+  },
+  "detail": {
+    "timeline_preview": [
+      {
+        "step_id": "step-001",
+        "order": 1,
+        "label": "Exploit transaction linked",
+        "step_type": "exploit",
+        "summary": "The current dossier has 1 direct attack transaction candidate(s).",
+        "source_refs": [
+          "src-003"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "step_id": "step-002",
+        "order": 2,
+        "label": "Impact summary collected",
+        "step_type": "impact",
+        "summary": "An estimated loss of $4",
+        "source_refs": [],
+        "confidence": 0.72
+      },
+      {
+        "step_id": "step-003",
+        "order": 3,
+        "label": "Source expansion completed",
+        "step_type": "analysis",
+        "summary": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+        "source_refs": [],
+        "confidence": 0.75
+      }
+    ],
+    "attacker_profile_summary": "The dossier has 1 direct attacker address candidate(s) and 172 additional address mentions from fetched sources.",
+    "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+    "judge_summary": "The dossier provides solid blockchain evidence including a verified attack transaction and attacker address, supported by a DeFiHackLabs PoC. However, critical gaps prevent demo readiness: (1) the $4 loss figure is patently erroneous and undermines credibility, (2) the protocol name was not extracted despite clear DeltaPrime references in the PoC filename, (3) the timeline is overly simplistic with only 3 steps for a multi-phase flash loan attack, and (4) victim contract addresses are absent. The evidence-to-timeline linkage is adequate but superficial. The dossier requires additional forensic depth, accurate loss quantification, and proper protocol attribution before it can serve as a reliable incident record.",
+    "missing_fields": [
+      "protocol_name_confirmed",
+      "accurate_loss_amount",
+      "incident_date",
+      "victim_contract_addresses",
+      "attack_contract_url",
+      "flash_loan_amount",
+      "fund_destination_after_exploit",
+      "social_media_sources",
+      "timestamp_of_attack"
+    ],
+    "technical_analysis_status": "completed"
+  },
+  "status": "demo_live_dossier",
+  "last_updated": "2026-04-27T13:12:13+00:00"
+}

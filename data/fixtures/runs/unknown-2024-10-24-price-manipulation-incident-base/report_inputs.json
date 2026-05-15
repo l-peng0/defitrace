@@ -1,0 +1,290 @@
+{
+  "incident_id": "unknown-2024-10-24-price-manipulation-incident-base",
+  "headline": "Unknown 2024-10-24 price-manipulation incident",
+  "executive_summary": "An estimated loss of about $1M was caused by price manipulation against an unverified Compound-like lending deployment on Base",
+  "timeline_summary": "The current dossier has 1 direct attack transaction candidate(s). An estimated loss of about $1M was caused by price manipulation against an unverified Compound-like lending deployment on Base The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+  "attacker_behavior_summary": "The dossier has 1 direct attacker address candidate(s) and 194 additional address mentions from fetched sources.",
+  "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+  "source_refs": [
+    {
+      "source_id": "src-001",
+      "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+      "source_type": "report",
+      "depth": 0
+    },
+    {
+      "source_id": "src-002",
+      "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/CompoundFork_exploit.sol",
+      "source_type": "poc",
+      "depth": 0
+    },
+    {
+      "source_id": "src-003",
+      "url": "https://basescan.org/tx/0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e",
+      "source_type": "explorer",
+      "depth": 0
+    },
+    {
+      "source_id": "src-004",
+      "url": "https://basescan.org/address/0x7562846468089cf0e8f7b38ac53406b895284901",
+      "source_type": "explorer",
+      "depth": 0
+    },
+    {
+      "source_id": "src-005",
+      "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-10/CompoundFork_exploit.sol",
+      "source_type": "poc",
+      "depth": 1
+    },
+    {
+      "source_id": "src-006",
+      "url": "https://basescan.org/chart/price",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-007",
+      "url": "https://sepolia.basescan.org",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-008",
+      "url": "https://basescan.org/txs",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-009",
+      "url": "https://basescan.org/txsEnqueued",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-010",
+      "url": "https://basescan.org/txsExit",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-011",
+      "url": "https://basescan.org/txsInternal",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-012",
+      "url": "https://basescan.org/txsAA",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-013",
+      "url": "https://basescan.org/txnAuthList",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-014",
+      "url": "https://basescan.org/blocks",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-015",
+      "url": "https://basescan.org/batches",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-016",
+      "url": "https://basescan.org/statebatches",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-017",
+      "url": "https://basescan.org/accounts",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-018",
+      "url": "https://basescan.org/contractsVerified",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-019",
+      "url": "https://basescan.org/tokens",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-020",
+      "url": "https://basescan.org/tokentxns",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-021",
+      "url": "https://basescan.org/token/0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-022",
+      "url": "https://basescan.org/nft-transfers",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-023",
+      "url": "https://basescan.org/nft-latest-mints",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-024",
+      "url": "https://basescan.org/charts",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-025",
+      "url": "https://basescan.org/directory",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-026",
+      "url": "https://etherscan.io/apis?id=8453",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-027",
+      "url": "https://basescan.org",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-028",
+      "url": "https://sepolia.basescan.org/txs",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-029",
+      "url": "https://sepolia.basescan.org/txsEnqueued",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-030",
+      "url": "https://sepolia.basescan.org/txsExit",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-031",
+      "url": "https://sepolia.basescan.org/txsInternal",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-032",
+      "url": "https://sepolia.basescan.org/txsAA",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-033",
+      "url": "https://sepolia.basescan.org/txnAuthList",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-034",
+      "url": "https://sepolia.basescan.org/blocks",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-035",
+      "url": "https://sepolia.basescan.org/batches",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-036",
+      "url": "https://sepolia.basescan.org/statebatches",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-037",
+      "url": "https://sepolia.basescan.org/accounts",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-038",
+      "url": "https://sepolia.basescan.org/contractsVerified",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-039",
+      "url": "https://sepolia.basescan.org/tokentxns",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-040",
+      "url": "https://sepolia.basescan.org/nft-transfers",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-041",
+      "url": "https://sepolia.basescan.org/nft-latest-mints",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-042",
+      "url": "https://sepolia.basescan.org/unitconverter",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-043",
+      "url": "https://sepolia.basescan.org/base64converter",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-044",
+      "url": "https://sepolia.basescan.org/blockdateconverter",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-045",
+      "url": "https://sepolia.basescan.org/utf8converter",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-046",
+      "url": "https://sepolia.basescan.org/methodidconverter",
+      "source_type": "explorer",
+      "depth": 2
+    }
+  ],
+  "open_questions": [
+    "Which specific pricing path was abused?",
+    "Is there a direct explorer or postmortem source that confirms the same mechanism?"
+  ]
+}

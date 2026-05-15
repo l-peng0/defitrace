@@ -1,0 +1,138 @@
+{
+  "incident_id": "unknown-2025-01-01-price-manipulation-incident-ethereum",
+  "chain": "Ethereum",
+  "generated_at": "2026-04-27T13:13:03+00:00",
+  "tx_hashes": [
+    "0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420"
+  ],
+  "roles": {
+    "attacker_eoa": [
+      "0x25869347f7993c50410a9b9b9c48f37d79e12a36"
+    ],
+    "attacker_contracts": [
+      "0x2cad84c3d2e31bc6d630229901f421e6da5557ef",
+      "0x55877cf2f24286dba2acb64311beca39728fbd10"
+    ],
+    "victim": [
+      "0xb292678438245ec863f9fea64affcea887144240"
+    ],
+    "routers": [],
+    "pairs": [
+      "0xb292678438245ec863f9fea64affcea887144240"
+    ],
+    "oracles": [],
+    "flash_loan_providers": [],
+    "tokens": [
+      "0xb292678438245ec863f9fea64affcea887144240",
+      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "0x05641e33fd15baf819729df55500b07b82eb8e89"
+    ],
+    "unknown": [
+      "0x539d54074e052ae82de4936ae6bb213ab773559e",
+      "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "0xce88686553686da562ce7cea497ce749da109f9f",
+      "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+      "0x0000000000000000000000000000000000000000",
+      "0xba12222222228d8ba445958a75a0704d566bf2c8"
+    ]
+  },
+  "newly_deployed": [
+    {
+      "address": "0x2cad84c3d2e31bc6d630229901f421e6da5557ef",
+      "deployed_by": "0x25869347f7993c50410a9b9b9c48f37d79e12a36",
+      "create_type": "CREATE",
+      "trace_path": "0",
+      "depth": 0,
+      "tx_hash": "0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420"
+    },
+    {
+      "address": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+      "deployed_by": "0x2cad84c3d2e31bc6d630229901f421e6da5557ef",
+      "create_type": "CREATE",
+      "trace_path": "0.0",
+      "depth": 1,
+      "tx_hash": "0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420"
+    }
+  ],
+  "priority_contracts": [
+    {
+      "address": "0x2cad84c3d2e31bc6d630229901f421e6da5557ef",
+      "role": "attacker_contract",
+      "why": "deployed in-tx via CREATE/CREATE2",
+      "priority": "high"
+    },
+    {
+      "address": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+      "role": "attacker_contract",
+      "why": "deployed in-tx via CREATE/CREATE2",
+      "priority": "high"
+    },
+    {
+      "address": "0xb292678438245ec863f9fea64affcea887144240",
+      "role": "victim",
+      "why": "largest net-negative token balance change",
+      "priority": "high"
+    },
+    {
+      "address": "0xb292678438245ec863f9fea64affcea887144240",
+      "role": "pair",
+      "why": "target of direct swap()",
+      "priority": "medium"
+    }
+  ],
+  "investigation_notes": [
+    "Tx 0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420 contains 2 swap selector(s); inspect router/pair pricing."
+  ],
+  "call_graph": [
+    {
+      "from": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "category": "transfer"
+    },
+    {
+      "from": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "category": "transfer"
+    },
+    {
+      "from": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "to": "0xb292678438245ec863f9fea64affcea887144240",
+      "category": "swap"
+    },
+    {
+      "from": "0xb292678438245ec863f9fea64affcea887144240",
+      "to": "0x05641e33fd15baf819729df55500b07b82eb8e89",
+      "category": "transfer"
+    },
+    {
+      "from": "0x05641e33fd15baf819729df55500b07b82eb8e89",
+      "to": "0x539d54074e052ae82de4936ae6bb213ab773559e",
+      "category": "transfer"
+    },
+    {
+      "from": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "to": "0x05641e33fd15baf819729df55500b07b82eb8e89",
+      "category": "transfer"
+    },
+    {
+      "from": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "to": "0xb292678438245ec863f9fea64affcea887144240",
+      "category": "transfer"
+    },
+    {
+      "from": "0xb292678438245ec863f9fea64affcea887144240",
+      "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "category": "transfer"
+    },
+    {
+      "from": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+      "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "category": "transfer"
+    },
+    {
+      "from": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+      "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "category": "burn"
+    }
+  ]
+}

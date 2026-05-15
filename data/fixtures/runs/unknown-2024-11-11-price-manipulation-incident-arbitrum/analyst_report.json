@@ -1,0 +1,557 @@
+{
+  "incident_id": "unknown-2024-11-11-price-manipulation-incident-arbitrum",
+  "report_type": "analyst_report",
+  "case_overview": {
+    "headline": "Unknown 2024-11-11 price-manipulation incident",
+    "what_happened": "On November 11, 2024, a price manipulation attack targeted a protocol on Arbitrum, with evidence pointing to DeltaPrime as the affected platform. The attacker exploited price oracle vulnerabilities to manipulate asset valuations. The reported loss of $4 appears to be an incomplete or erroneous figure, as the presence of Balancer Vault interactions and the complexity of the attack suggest a more substantial impact requiring further investigation.",
+    "why_it_matters": "This incident underscores the persistent risk of oracle-dependent price manipulation attacks, particularly for protocols integrating with DEX pools like Balancer without adequate price feed protections. The attack pattern\u2014flash loan acquisition, pool manipulation, and value extraction\u2014follows a well-documented exploit archetype. Protocols should implement time-weighted average prices (TWAPs), multiple oracle sources, and circuit breakers to mitigate manipulation vulnerability. The $4 loss figure requires verification, as similar attacks typically result in six-to-seven-figure losses.",
+    "primary_sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+        "source_type": "report",
+        "depth": 0,
+        "discovered_from": "incident_seed",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+        "source_type": "poc",
+        "depth": 0,
+        "discovered_from": "incident_seed",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://arbiscan.io/tx/0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+        "source_type": "explorer",
+        "depth": 0,
+        "discovered_from": "attack_tx_hashes",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://arbiscan.io/address/0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe",
+        "source_type": "explorer",
+        "depth": 0,
+        "discovered_from": "attacker_addresses",
+        "fetch_status": "http_error",
+        "note": "Primary source collected for the public case file."
+      }
+    ]
+  },
+  "attacker_profile": {
+    "summary": "The attacker's primary motive was financial exploitation through oracle manipulation. By distorting price feeds, the attacker sought to extract value from the protocol's positions\u2014likely through undercollateralized borrowing, liquidation exploitation, or arbitrage against mispriced assets. The sophistication of the attack, including flash loan utilization and multi-step execution, indicates a profit-driven, premeditated operation typical of economic attack vectors in DeFi.",
+    "attacker_addresses": [
+      "0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe",
+      "0xb87881637b5c8e6885c51ab7d895e53fa7d7c567",
+      "0x62cf82fb0484af382714cd09296260edc1dc0c6c",
+      "0x6a2f989b5493b52ffc078d0a59a3bf9727d134b4"
+    ],
+    "behavior_signals": [
+      "Leans on addresses confirmed by direct seed fields first.",
+      "Uses source-text mentions as weaker supporting clues rather than direct proof."
+    ]
+  },
+  "fund_flow": {
+    "summary": "The current public view has 4 known transaction(s). A deeper fund-flow pass is still needed.",
+    "key_transactions": [
+      "0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f"
+    ],
+    "key_addresses": [
+      "0x0000000000000000000000000000000000000001",
+      "0x0796a95e7f36301caa30be1a99edb4c731aeb0e1",
+      "0x0a0d954d4b0f0b47a5990c0abd179a90ff74e255",
+      "0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe",
+      "0x0b4c71fc70b6b65c04fd62b10191ee7999761a5a",
+      "0x121b59880b70908ac34062f55fe4a72e8faf97fa",
+      "0x14c82cfc2c651700a66abdd7dc375c9ceefddd72",
+      "0x216b4b4ba9f3e719726886d34a177484278bfcae"
+    ],
+    "path": []
+  },
+  "exploit_path": {
+    "summary": "The attacker, operating from address 0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe, executed a price manipulation exploit on Arbitrum via transaction 0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f. Forensic evidence from the DeFiHackLabs proof-of-concept (DeltaPrime_exp.sol) indicates the attack leveraged Balancer Vault (0xBA12222222228d8Ba445958a75a0704d566BF2C8) for flash loan operations, manipulating prices of WETH (0x82aF49447D8a07e3bd95BD0d56f35241523fBab1) and associated tokens. The attack contract was deployed at 0xb87881637b5c8e6885c51ab7d895e53fa7d7c567. The price manipulation technique allowed the attacker to exploit valuation discrepancies within the protocol's lending or trading mechanisms, draining funds through artificially inflated or deflated asset prices.",
+    "steps": [
+      {
+        "title": "Exploit transaction linked",
+        "detail": "The current dossier has 1 direct attack transaction candidate(s).",
+        "evidence_refs": [
+          "src-003"
+        ],
+        "tx_hashes": []
+      },
+      {
+        "title": "Impact summary collected",
+        "detail": "An estimated loss of $4",
+        "evidence_refs": [],
+        "tx_hashes": []
+      },
+      {
+        "title": "Source expansion completed",
+        "detail": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+        "evidence_refs": [],
+        "tx_hashes": []
+      }
+    ]
+  },
+  "evidence_chain": {
+    "summary": "The current case file combines public sources with a stored technical-analysis artifact. Technical validation verdict: Deterministic and semantic checks passed..",
+    "claims": [
+      {
+        "claim_id": "claim-overview",
+        "title": "Current public summary",
+        "statement": "On November 11, 2024, a price manipulation attack targeted a protocol on Arbitrum, with evidence pointing to DeltaPrime as the affected platform. The attacker exploited price oracle vulnerabilities to manipulate asset valuations. The reported loss of $4 appears to be an incomplete or erroneous figure, as the presence of Balancer Vault interactions and the complexity of the attack suggest a more substantial impact requiring further investigation.",
+        "confidence": 0.58,
+        "support": [
+          {
+            "source_id": "src-001",
+            "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+            "source_type": "report",
+            "depth": 0,
+            "discovered_from": "incident_seed",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          },
+          {
+            "source_id": "src-002",
+            "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+            "source_type": "poc",
+            "depth": 0,
+            "discovered_from": "incident_seed",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          },
+          {
+            "source_id": "src-003",
+            "url": "https://arbiscan.io/tx/0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+            "source_type": "explorer",
+            "depth": 0,
+            "discovered_from": "attack_tx_hashes",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          }
+        ]
+      },
+      {
+        "claim_id": "claim-attack-narrative",
+        "title": "LLM-synthesised attack narrative",
+        "statement": "The attacker, operating from address 0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe, executed a price manipulation exploit on Arbitrum via transaction 0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f. Forensic evidence from the DeFiHackLabs proof-of-concept (DeltaPrime_exp.sol) indica\u2026",
+        "confidence": 0.65,
+        "support": []
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+        "source_type": "report",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 99,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+        "source_type": "poc",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 98,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://arbiscan.io/tx/0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+        "source_type": "explorer",
+        "discovered_from": "attack_tx_hashes",
+        "depth": 0,
+        "priority": 79,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://arbiscan.io/address/0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe",
+        "source_type": "explorer",
+        "discovered_from": "attacker_addresses",
+        "depth": 0,
+        "priority": 69,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-005",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-11/DeltaPrime_exp.sol",
+        "source_type": "poc",
+        "discovered_from": "src-002",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-007",
+        "url": "https://sepolia.arbiscan.io",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-008",
+        "url": "https://arbiscan.io/txs",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-009",
+        "url": "https://arbiscan.io/txsDeposits",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-010",
+        "url": "https://arbiscan.io/txsExit",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-011",
+        "url": "https://arbiscan.io/txsInternal",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-012",
+        "url": "https://arbiscan.io/txsAA",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-013",
+        "url": "https://arbiscan.io/txnAuthList",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-014",
+        "url": "https://arbiscan.io/blocks",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-015",
+        "url": "https://arbiscan.io/batches",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-016",
+        "url": "https://arbiscan.io/blocks_forked",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-017",
+        "url": "https://arbiscan.io/accounts",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-018",
+        "url": "https://arbiscan.io/contractsVerified",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-019",
+        "url": "https://arbiscan.io/tokens",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-020",
+        "url": "https://arbiscan.io/tokentxns",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-021",
+        "url": "https://arbiscan.io/token/0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-022",
+        "url": "https://arbiscan.io/nft-transfers",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-023",
+        "url": "https://arbiscan.io/nft-latest-mints",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-024",
+        "url": "https://arbiscan.io/charts",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-025",
+        "url": "https://arbiscan.io/directory",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-026",
+        "url": "https://etherscan.io/apis?id=42161",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-027",
+        "url": "https://arbiscan.io",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-028",
+        "url": "https://sepolia.arbiscan.io/txs",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-029",
+        "url": "https://sepolia.arbiscan.io/txsDeposits",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-030",
+        "url": "https://sepolia.arbiscan.io/txsExit",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-031",
+        "url": "https://sepolia.arbiscan.io/txsInternal",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-032",
+        "url": "https://sepolia.arbiscan.io/txsAA",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-033",
+        "url": "https://sepolia.arbiscan.io/txnAuthList",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-034",
+        "url": "https://sepolia.arbiscan.io/blocks",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-035",
+        "url": "https://sepolia.arbiscan.io/batches",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-036",
+        "url": "https://sepolia.arbiscan.io/accounts",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-037",
+        "url": "https://sepolia.arbiscan.io/contractsVerified",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-038",
+        "url": "https://sepolia.arbiscan.io/tokentxns",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-039",
+        "url": "https://sepolia.arbiscan.io/nft-transfers",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-040",
+        "url": "https://sepolia.arbiscan.io/nft-latest-mints",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-041",
+        "url": "https://sepolia.arbiscan.io/unitconverter",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-042",
+        "url": "https://sepolia.arbiscan.io/base64converter",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-043",
+        "url": "https://sepolia.arbiscan.io/blockdateconverter",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-044",
+        "url": "https://sepolia.arbiscan.io/utf8converter",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-045",
+        "url": "https://sepolia.arbiscan.io/methodidconverter",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-046",
+        "url": "https://docs.etherscan.io/etherscan-v2",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      }
+    ]
+  },
+  "open_questions": []
+}

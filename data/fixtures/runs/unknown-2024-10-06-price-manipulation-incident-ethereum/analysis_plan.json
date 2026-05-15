@@ -1,0 +1,134 @@
+{
+  "incident_id": "unknown-2024-10-06-price-manipulation-incident-ethereum",
+  "chain": "Ethereum",
+  "generated_at": "2026-04-27T12:52:24+00:00",
+  "tx_hashes": [
+    "0xd9fdc7d03eec28fc2453c5fa68eff82d4c297f436a6a5470c54ca3aecd2db17e"
+  ],
+  "roles": {
+    "attacker_eoa": [
+      "0x493c5655d40b051a64bc88a6af21d73d3a9b72a2"
+    ],
+    "attacker_contracts": [],
+    "victim": [
+      "0xb23fc1241e1bc1a5542a438775809d38099838fe"
+    ],
+    "routers": [
+      "0x7a250d5630b4cf539739df2c5dacb4c659f2488d"
+    ],
+    "pairs": [
+      "0xb23fc1241e1bc1a5542a438775809d38099838fe"
+    ],
+    "oracles": [],
+    "flash_loan_providers": [
+      "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45"
+    ],
+    "tokens": [
+      "0xd1456d1b9ceb59abd4423a49d40942a9485ceef6",
+      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "unknown": [
+      "0x81164c9edab507aa4bac08dceccefaba1340d3b7",
+      "0x991493900674b10bdf54bdfe95b4e043257798cf",
+      "0x5eac5992e8c7cc6b04bad2c5bbc00d101d4c8264",
+      "0x95222290dd7278aa3ddd389cc1e1d165cc4bafe5"
+    ]
+  },
+  "newly_deployed": [],
+  "priority_contracts": [
+    {
+      "address": "0xb23fc1241e1bc1a5542a438775809d38099838fe",
+      "role": "victim",
+      "why": "largest net-negative token balance change",
+      "priority": "high"
+    },
+    {
+      "address": "0xb23fc1241e1bc1a5542a438775809d38099838fe",
+      "role": "pair",
+      "why": "target of direct swap()",
+      "priority": "medium"
+    },
+    {
+      "address": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "role": "router",
+      "why": "called with swap* selector",
+      "priority": "medium"
+    },
+    {
+      "address": "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+      "role": "flash_loan_provider",
+      "why": "called with flashLoan* selector",
+      "priority": "medium"
+    }
+  ],
+  "investigation_notes": [
+    "Tx 0xd9fdc7d03eec28fc2453c5fa68eff82d4c297f436a6a5470c54ca3aecd2db17e contains 3 swap selector(s); inspect router/pair pricing."
+  ],
+  "call_graph": [
+    {
+      "from": "0x991493900674b10bdf54bdfe95b4e043257798cf",
+      "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "category": "mint"
+    },
+    {
+      "from": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "category": "transfer"
+    },
+    {
+      "from": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "to": "0xb23fc1241e1bc1a5542a438775809d38099838fe",
+      "category": "swap"
+    },
+    {
+      "from": "0xb23fc1241e1bc1a5542a438775809d38099838fe",
+      "to": "0xd1456d1b9ceb59abd4423a49d40942a9485ceef6",
+      "category": "transfer"
+    },
+    {
+      "from": "0x991493900674b10bdf54bdfe95b4e043257798cf",
+      "to": "0xd1456d1b9ceb59abd4423a49d40942a9485ceef6",
+      "category": "transfer"
+    },
+    {
+      "from": "0x5eac5992e8c7cc6b04bad2c5bbc00d101d4c8264",
+      "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "category": "transfer"
+    },
+    {
+      "from": "0x5eac5992e8c7cc6b04bad2c5bbc00d101d4c8264",
+      "to": "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+      "category": "flashloan"
+    },
+    {
+      "from": "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+      "to": "0xd1456d1b9ceb59abd4423a49d40942a9485ceef6",
+      "category": "transfer"
+    },
+    {
+      "from": "0xd1456d1b9ceb59abd4423a49d40942a9485ceef6",
+      "to": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "category": "swap"
+    },
+    {
+      "from": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "to": "0xd1456d1b9ceb59abd4423a49d40942a9485ceef6",
+      "category": "transfer"
+    },
+    {
+      "from": "0xb23fc1241e1bc1a5542a438775809d38099838fe",
+      "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "category": "transfer"
+    },
+    {
+      "from": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "category": "burn"
+    },
+    {
+      "from": "0x991493900674b10bdf54bdfe95b4e043257798cf",
+      "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "category": "burn"
+    }
+  ]
+}

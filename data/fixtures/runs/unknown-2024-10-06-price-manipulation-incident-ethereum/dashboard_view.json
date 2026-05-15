@@ -1,0 +1,64 @@
+{
+  "incident_id": "unknown-2024-10-06-price-manipulation-incident-ethereum",
+  "card": {
+    "title": "Unknown 2024-10-06 price-manipulation incident",
+    "chain": "Ethereum",
+    "incident_date": "",
+    "protocol_name": "Unknown",
+    "summary": "An estimated loss of ~249 ETH (~$600K USD) was caused by a price-manipulation attack spanning thin SASHA liquidity on Ethereum",
+    "source_count": 45,
+    "direct_source_count": 4,
+    "secondary_source_count": 41,
+    "completeness_score": 0.62
+  },
+  "detail": {
+    "timeline_preview": [
+      {
+        "step_id": "step-001",
+        "order": 1,
+        "label": "Exploit transaction linked",
+        "step_type": "exploit",
+        "summary": "The current dossier has 1 direct attack transaction candidate(s).",
+        "source_refs": [
+          "src-003"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "step_id": "step-002",
+        "order": 2,
+        "label": "Impact summary collected",
+        "step_type": "impact",
+        "summary": "An estimated loss of ~249 ETH (~$600K USD) was caused by a price-manipulation attack spanning thin SASHA liquidity on Ethereum",
+        "source_refs": [],
+        "confidence": 0.72
+      },
+      {
+        "step_id": "step-003",
+        "order": 3,
+        "label": "Source expansion completed",
+        "step_type": "analysis",
+        "summary": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+        "source_refs": [],
+        "confidence": 0.75
+      }
+    ],
+    "attacker_profile_summary": "The dossier has 1 direct attacker address candidate(s) and 167 additional address mentions from fetched sources.",
+    "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+    "judge_summary": "The dossier provides solid foundational evidence for a SASHA token price manipulation attack on October 6, 2024, with verified transaction hash and attacker address. However, critical gaps prevent full incident comprehension: the victim protocol remains unidentified, the specific vulnerable contract is undocumented, and fund flow tracing is absent. The PoC from DeFiHackLabs adds technical credibility. The timeline is functional but lacks granularity needed for forensic reconstruction. Suitable for internal research but requires significant enrichment before public disclosure or insurance claims.",
+    "missing_fields": [
+      "protocol_name",
+      "victim_contract_urls",
+      "attack_contract_urls",
+      "social_sources",
+      "block_number",
+      "fund_flow_tracing",
+      "sasha_token_contract",
+      "vulnerable_protocol_identity",
+      "post_incident_response"
+    ],
+    "technical_analysis_status": "completed"
+  },
+  "status": "demo_live_dossier",
+  "last_updated": "2026-04-27T12:55:54+00:00"
+}

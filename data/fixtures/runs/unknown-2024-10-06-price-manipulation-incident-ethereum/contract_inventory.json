@@ -1,0 +1,55 @@
+{
+  "incident_id": "unknown-2024-10-06-price-manipulation-incident-ethereum",
+  "chain": "Ethereum",
+  "generated_at": "2026-04-27T12:52:30+00:00",
+  "contracts": {
+    "0xb23fc1241e1bc1a5542a438775809d38099838fe": {
+      "address": "0xb23fc1241e1bc1a5542a438775809d38099838fe",
+      "role": "victim",
+      "classification": "verified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "admin_address": "",
+      "contract_name": "UniswapV2Pair",
+      "compiler_version": "v0.5.16+commit.9c3226ce",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-06-price-manipulation-incident-ethereum/technical_analysis/contracts/0xb23fc1241e1bc1a5542a438775809d38099838fe/source.json",
+      "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-06-price-manipulation-incident-ethereum/technical_analysis/contracts/0xb23fc1241e1bc1a5542a438775809d38099838fe/abi.json",
+      "fetched_at": "2026-04-27T12:52:26+00:00",
+      "fetch_errors": []
+    },
+    "0x7a250d5630b4cf539739df2c5dacb4c659f2488d": {
+      "address": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "role": "router",
+      "classification": "verified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "admin_address": "",
+      "contract_name": "UniswapV2Router02",
+      "compiler_version": "v0.6.6+commit.6c089d02",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-06-price-manipulation-incident-ethereum/technical_analysis/contracts/0x7a250d5630b4cf539739df2c5dacb4c659f2488d/source.json",
+      "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-06-price-manipulation-incident-ethereum/technical_analysis/contracts/0x7a250d5630b4cf539739df2c5dacb4c659f2488d/abi.json",
+      "fetched_at": "2026-04-27T12:52:28+00:00",
+      "fetch_errors": []
+    },
+    "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45": {
+      "address": "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+      "role": "flash_loan_provider",
+      "classification": "verified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "admin_address": "",
+      "contract_name": "SwapRouter02",
+      "compiler_version": "v0.7.6+commit.7338295f",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-06-price-manipulation-incident-ethereum/technical_analysis/contracts/0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45/source.json",
+      "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-06-price-manipulation-incident-ethereum/technical_analysis/contracts/0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45/abi.json",
+      "fetched_at": "2026-04-27T12:52:30+00:00",
+      "fetch_errors": []
+    }
+  }
+}

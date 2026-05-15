@@ -1,0 +1,126 @@
+{
+  "incident_id": "unknown-2024-10-01-price-manipulation-incident-ethereum",
+  "agents": [
+    {
+      "agent_id": "source_finder",
+      "agent_name": "Discovery supervisor",
+      "started_at": "2026-04-27T12:45:06+00:00",
+      "completed_at": "2026-04-27T12:45:06+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/source_index.json"
+      ],
+      "metrics": {
+        "source_count": 4
+      },
+      "note": ""
+    },
+    {
+      "agent_id": "source_expander",
+      "agent_name": "Source expansion agent",
+      "started_at": "2026-04-27T12:45:06+00:00",
+      "completed_at": "2026-04-27T12:45:21+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/source_index.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/source_documents.json"
+      ],
+      "metrics": {
+        "source_count": 44,
+        "fetched_documents": 44
+      },
+      "note": ""
+    },
+    {
+      "agent_id": "evidence_normalizer",
+      "agent_name": "Evidence normalization agent",
+      "started_at": "2026-04-27T12:45:24+00:00",
+      "completed_at": "2026-04-27T12:45:24+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/raw_evidence.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/citation_graph.json"
+      ],
+      "metrics": {
+        "evidence_count": 313,
+        "claim_count": 313
+      },
+      "note": ""
+    },
+    {
+      "agent_id": "technical_validation",
+      "agent_name": "technical_validation",
+      "started_at": "2026-04-27T12:45:24+00:00",
+      "completed_at": "2026-04-27T12:46:33+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/technical_analysis.json"
+      ],
+      "metrics": {
+        "technical_status": "completed",
+        "checked_transactions": 1
+      },
+      "note": "Deterministic and semantic checks passed."
+    },
+    {
+      "agent_id": "llm_timeline_synthesizer",
+      "agent_name": "llm_timeline_synthesizer",
+      "started_at": "2026-04-27T12:46:33+00:00",
+      "completed_at": "2026-04-27T12:46:59+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/timeline.json"
+      ],
+      "metrics": {
+        "timeline_steps": 3
+      },
+      "note": ""
+    },
+    {
+      "agent_id": "llm_narrative_writer",
+      "agent_name": "llm_narrative_writer",
+      "started_at": "2026-04-27T12:46:33+00:00",
+      "completed_at": "2026-04-27T12:46:59+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/narrative.json"
+      ],
+      "metrics": {},
+      "note": ""
+    },
+    {
+      "agent_id": "dossier_assembler",
+      "agent_name": "Dossier composer agent",
+      "started_at": "2026-04-27T12:46:59+00:00",
+      "completed_at": "2026-04-27T12:49:41+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/quality_report.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/technical_analysis.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/augmented_incident.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/dashboard_view.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/report_inputs.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/incident_library_entry.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/analyst_report.json"
+      ],
+      "metrics": {
+        "completeness_score": 0.28
+      },
+      "note": ""
+    },
+    {
+      "agent_id": "quality_judge",
+      "agent_name": "QA judge agent",
+      "started_at": "2026-04-27T12:49:41+00:00",
+      "completed_at": "2026-04-27T12:49:41+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/quality_report.json"
+      ],
+      "metrics": {
+        "missing_field_count": 8
+      },
+      "note": "This incident dossier is critically incomplete and unsuitable for presentation. The protocol remains unidentified, the loss figure of '8' lacks any denomination, and there is no technical analysis explaining the price manipulation mechanism. While the attacker address (0x9776C0ABE8aE3C9Ca958875128F1ae1D5afafCb8) and attack transaction (0xd20b3b31...) are verified on Etherscan, the dossier fails to establish what protocol was attacked, how much was truly lost, or the specific vulnerability exploited. The evidence collection includes significant noise from Sepolia testnet transactions that are irrelevant to the mainnet incident. Substantial additional investigation is required before this can be considered a complete incident report."
+    }
+  ]
+}

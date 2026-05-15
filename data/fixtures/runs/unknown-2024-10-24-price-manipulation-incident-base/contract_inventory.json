@@ -1,0 +1,58 @@
+{
+  "incident_id": "unknown-2024-10-24-price-manipulation-incident-base",
+  "chain": "Base",
+  "generated_at": "2026-04-27T13:02:52+00:00",
+  "contracts": {
+    "0x1e03834f759dac9561d366958b00fe000d9e00e3": {
+      "address": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e",
+      "create_type": "CREATE2",
+      "fetched_at": "2026-04-27T13:02:47+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x0f5cebda36f8779fc357f10b81e6a207a47ca91b": {
+      "address": "0x0f5cebda36f8779fc357f10b81e6a207a47ca91b",
+      "role": "victim",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "admin_address": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/technical_analysis/contracts/0x0f5cebda36f8779fc357f10b81e6a207a47ca91b/source.json",
+      "abi_path": "",
+      "fetched_at": "2026-04-27T13:02:49+00:00",
+      "fetch_errors": []
+    },
+    "0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5": {
+      "address": "0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5",
+      "role": "flash_loan_provider",
+      "classification": "verified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "admin_address": "",
+      "contract_name": "SwapRouter",
+      "compiler_version": "v0.7.6+commit.7338295f",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/technical_analysis/contracts/0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5/source.json",
+      "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/technical_analysis/contracts/0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5/abi.json",
+      "fetched_at": "2026-04-27T13:02:52+00:00",
+      "fetch_errors": []
+    }
+  }
+}

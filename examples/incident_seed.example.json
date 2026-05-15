@@ -1,0 +1,24 @@
+{
+  "incident_id": "radiant-capital-2024-01-sample",
+  "job_id": "radiant-capital-2024-01-sample-job",
+  "trigger_type": "manual",
+  "seed_type": "source_url",
+  "chain": "Arbitrum",
+  "protocol_name": "Radiant Capital",
+  "incident_name": "Radiant Capital January 2024 incident",
+  "attack_tx_hashes": [
+    "0x1111111111111111111111111111111111111111111111111111111111111111"
+  ],
+  "attacker_addresses": [
+    "0x2222222222222222222222222222222222222222"
+  ],
+  "seed_urls": [
+    "https://blog.openzeppelin.com/radiant-capital-incident-analysis"
+  ],
+  "tags": [
+    "price_manipulation",
+    "arbitrum",
+    "defi"
+  ],
+  "created_at": "2026-03-31T08:00:00+00:00"
+}

@@ -1,0 +1,63 @@
+{
+  "incident_id": "unknown-2024-09-10-price-manipulation-incident-bsc",
+  "card": {
+    "title": "Unknown 2024-09-10 price-manipulation incident",
+    "chain": "BSC",
+    "incident_date": "",
+    "protocol_name": "Unknown",
+    "summary": "An estimated loss of ~1",
+    "source_count": 62,
+    "direct_source_count": 5,
+    "secondary_source_count": 57,
+    "completeness_score": 0.42
+  },
+  "detail": {
+    "timeline_preview": [
+      {
+        "step_id": "step-001",
+        "order": 1,
+        "label": "Exploit transaction linked",
+        "step_type": "exploit",
+        "summary": "The current dossier has 1 direct attack transaction candidate(s).",
+        "source_refs": [
+          "src-004"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "step_id": "step-002",
+        "order": 2,
+        "label": "Impact summary collected",
+        "step_type": "impact",
+        "summary": "An estimated loss of ~1",
+        "source_refs": [],
+        "confidence": 0.72
+      },
+      {
+        "step_id": "step-003",
+        "order": 3,
+        "label": "Source expansion completed",
+        "step_type": "analysis",
+        "summary": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+        "source_refs": [],
+        "confidence": 0.75
+      }
+    ],
+    "attacker_profile_summary": "The dossier has 1 direct attacker address candidate(s) and 256 additional address mentions from fetched sources.",
+    "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+    "judge_summary": "This dossier captures the basic attack footprint (transaction hash, attacker address, PoC reference) but suffers from significant completeness issues. The loss amount is incomplete ('~1'), the protocol identification is inconsistent, and the timeline is superficial with only 3 generic steps. While evidence from DeFiHackLabs and BSCScan provides a foundation, the dossier lacks the technical depth, fund flow analysis, and comprehensive source coverage needed for a complete incident report. Not suitable for demo or evidentiary purposes.",
+    "missing_fields": [
+      "precise_loss_amount",
+      "protocol_name",
+      "attack_contract_urls",
+      "victim_contract_urls",
+      "social_sources",
+      "detailed_technical_analysis",
+      "fund_flow_tracing",
+      "incident_date"
+    ],
+    "technical_analysis_status": "completed"
+  },
+  "status": "demo_live_dossier",
+  "last_updated": "2026-04-27T12:45:06+00:00"
+}

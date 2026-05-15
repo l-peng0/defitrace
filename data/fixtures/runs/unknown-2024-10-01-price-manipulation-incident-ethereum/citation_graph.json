@@ -1,0 +1,4390 @@
+{
+  "incident_id": "unknown-2024-10-01-price-manipulation-incident-ethereum",
+  "claims": [
+    {
+      "claim_id": "claim-001",
+      "claim_text": "Incident is named Unknown 2024-10-01 price-manipulation incident.",
+      "fact_type": "incident_name",
+      "source_ref": "src-001",
+      "source_url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+      "confidence": 0.98,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-002",
+      "claim_text": "Protocol appears to be Unknown.",
+      "fact_type": "protocol_name",
+      "source_ref": "src-001",
+      "source_url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+      "confidence": 0.95,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-003",
+      "claim_text": "Attack transaction hash observed: 0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b.",
+      "fact_type": "attack_transaction",
+      "source_ref": "src-003",
+      "source_url": "https://etherscan.io/tx/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "confidence": 0.9,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-004",
+      "claim_text": "Attacker-linked address observed: 0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8.",
+      "fact_type": "attacker_address",
+      "source_ref": "src-004",
+      "source_url": "https://etherscan.io/address/0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+      "confidence": 0.85,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-005",
+      "claim_text": "An estimated loss of 8",
+      "fact_type": "summary_candidate",
+      "source_ref": "src-001",
+      "source_url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+      "confidence": 0.65,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-006",
+      "claim_text": "Fetched source title: Notion.",
+      "fact_type": "source_title",
+      "source_ref": "src-001",
+      "source_url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-007",
+      "claim_text": "Fetched source title: Ethereum Transaction Hash: 0xd20b3b31a6... | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-003",
+      "source_url": "https://etherscan.io/tx/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-008",
+      "claim_text": "Source text mentions transaction 0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-003",
+      "source_url": "https://etherscan.io/tx/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-009",
+      "claim_text": "Source text mentions address 0xd20b3b31a682322eb0698ecd67a6d8a040ccea65.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-003",
+      "source_url": "https://etherscan.io/tx/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-010",
+      "claim_text": "Source text mentions address 0x81F48A87Ec44208c691f870b9d400D9c13111e2E.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-003",
+      "source_url": "https://etherscan.io/tx/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-011",
+      "claim_text": "Source text mentions address 0x9776C0ABE8aE3C9Ca958875128F1ae1D5afafCb8.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-003",
+      "source_url": "https://etherscan.io/tx/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-012",
+      "claim_text": "Source text mentions address 0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-003",
+      "source_url": "https://etherscan.io/tx/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-013",
+      "claim_text": "Source text mentions address 0x32fd502975d5b74686e34df01aa8b8b28e213aad.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-003",
+      "source_url": "https://etherscan.io/tx/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-014",
+      "claim_text": "Source text mentions address 0x805e18b0325eab315d61bd92ae152247af0ea609.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-003",
+      "source_url": "https://etherscan.io/tx/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-015",
+      "claim_text": "Source text mentions address 0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-003",
+      "source_url": "https://etherscan.io/tx/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-016",
+      "claim_text": "Source text mentions address 0xe5677443d2b7239ada673cc26398ebbd4894a25c.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-003",
+      "source_url": "https://etherscan.io/tx/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-017",
+      "claim_text": "Fetched source title: Address: 0x9776c0ab...d5afafcb8 | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-004",
+      "source_url": "https://etherscan.io/address/0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-018",
+      "claim_text": "Source text mentions transaction 0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-004",
+      "source_url": "https://etherscan.io/address/0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-019",
+      "claim_text": "Source text mentions address 0x9776C0ABE8aE3C9Ca958875128F1ae1D5afafCb8.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-004",
+      "source_url": "https://etherscan.io/address/0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-020",
+      "claim_text": "Source text mentions address 0xd20b3b31a682322eb0698ecd67a6d8a040ccea65.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-004",
+      "source_url": "https://etherscan.io/address/0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-021",
+      "claim_text": "Fetched source title: Ether Daily Price (USD) Chart | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-005",
+      "source_url": "https://etherscan.io/chart/etherprice",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-022",
+      "claim_text": "Fetched source title: TESTNET Sepolia (ETH) Blockchain Explorer.",
+      "fact_type": "source_title",
+      "source_ref": "src-006",
+      "source_url": "https://sepolia.etherscan.io",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-023",
+      "claim_text": "Source text mentions transaction 0x258365061e99d3909f89a745c6d595ec2b5b25f778d5231204bd4396c7b54b70.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-006",
+      "source_url": "https://sepolia.etherscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-024",
+      "claim_text": "Source text mentions transaction 0xa9a56fe2c47e87480d3dc0c7d5ce8c3c2cac86a23fb3998c8c2e11d34565d684.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-006",
+      "source_url": "https://sepolia.etherscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-025",
+      "claim_text": "Source text mentions transaction 0x3b72bc7b92362ef29d6b9a9175071734b8c884026ce63be1263135ce8202c3b1.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-006",
+      "source_url": "https://sepolia.etherscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-026",
+      "claim_text": "Source text mentions transaction 0x570605b26b34761bd2b1ed2c807cd5ca3921f70e3baf0ba3de76c7e4c4729bc8.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-006",
+      "source_url": "https://sepolia.etherscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-027",
+      "claim_text": "Source text mentions transaction 0x956654c5370502ad0d8ec6f1410a2bb42cc2d068cdfea98e20d27f8c7edb9fef.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-006",
+      "source_url": "https://sepolia.etherscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-028",
+      "claim_text": "Source text mentions address 0x258365061e99d3909f89a745c6d595ec2b5b25f7.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-006",
+      "source_url": "https://sepolia.etherscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-029",
+      "claim_text": "Source text mentions address 0xa9a56fe2c47e87480d3dc0c7d5ce8c3c2cac86a2.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-006",
+      "source_url": "https://sepolia.etherscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-030",
+      "claim_text": "Source text mentions address 0x3b72bc7b92362ef29d6b9a9175071734b8c88402.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-006",
+      "source_url": "https://sepolia.etherscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-031",
+      "claim_text": "Source text mentions address 0x570605b26b34761bd2b1ed2c807cd5ca3921f70e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-006",
+      "source_url": "https://sepolia.etherscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-032",
+      "claim_text": "Source text mentions address 0x956654c5370502ad0d8ec6f1410a2bb42cc2d068.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-006",
+      "source_url": "https://sepolia.etherscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-033",
+      "claim_text": "Source text mentions address 0x855a47dbd8d290c2c2ef02b0268b2d13501470b9.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-006",
+      "source_url": "https://sepolia.etherscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-034",
+      "claim_text": "Fetched source title: Ethereum Transactions Information | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-008",
+      "source_url": "https://etherscan.io/txs",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-035",
+      "claim_text": "Source text mentions transaction 0xebcc579eae6915729e8e6691dcc171c04a1b364c6289ae1ea8cd3305bc4e5bdd.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-008",
+      "source_url": "https://etherscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-036",
+      "claim_text": "Source text mentions transaction 0x3505eb30fedd46275f05bd3842b10a39afd4e3e0140bbd57a54b5da7d909f990.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-008",
+      "source_url": "https://etherscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-037",
+      "claim_text": "Source text mentions transaction 0x9b0f73ff4a7f3d17b9370defec5586f6189b8a4efcba4c5d7687396419e838db.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-008",
+      "source_url": "https://etherscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-038",
+      "claim_text": "Source text mentions transaction 0xaf272069f71cd23bb7f4e515ab256af6226987c768c5d01e95acfaccc092d192.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-008",
+      "source_url": "https://etherscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-039",
+      "claim_text": "Source text mentions transaction 0x98ba50aff6a65454cd9e2ccc22bb5ce57997bec68d2c6f8bc252df8492a6529b.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-008",
+      "source_url": "https://etherscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-040",
+      "claim_text": "Source text mentions address 0xebcc579eae6915729e8e6691dcc171c04a1b364c.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-008",
+      "source_url": "https://etherscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-041",
+      "claim_text": "Source text mentions address 0x3505eb30fedd46275f05bd3842b10a39afd4e3e0.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-008",
+      "source_url": "https://etherscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-042",
+      "claim_text": "Source text mentions address 0x9b0f73ff4a7f3d17b9370defec5586f6189b8a4e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-008",
+      "source_url": "https://etherscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-043",
+      "claim_text": "Source text mentions address 0xaf272069f71cd23bb7f4e515ab256af6226987c7.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-008",
+      "source_url": "https://etherscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-044",
+      "claim_text": "Source text mentions address 0x98ba50aff6a65454cd9e2ccc22bb5ce57997bec6.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-008",
+      "source_url": "https://etherscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-045",
+      "claim_text": "Source text mentions address 0xea2f37279e049314b103fdce84bde4d52e9b8cb2.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-008",
+      "source_url": "https://etherscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-046",
+      "claim_text": "Source text mentions address 0x0882b332600f04a6c2af9adc1deb58fca2a17a5d.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-008",
+      "source_url": "https://etherscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-047",
+      "claim_text": "Source text mentions address 0xdc20992e97bbf6f4e929d1b05633bc35a3c683cc.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-008",
+      "source_url": "https://etherscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-048",
+      "claim_text": "Fetched source title: Ethereum Pending Transactions | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-009",
+      "source_url": "https://etherscan.io/txsPending",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-049",
+      "claim_text": "Source text mentions transaction 0xf41074179781c9decb6236fa4a7c6949a91e178b103f8042dff875f023f864b0.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-009",
+      "source_url": "https://etherscan.io/txsPending",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-050",
+      "claim_text": "Source text mentions transaction 0xacf282e39cd666285d797732c5c31ad82d67000b59126fe2a60ff5f5588e1352.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-009",
+      "source_url": "https://etherscan.io/txsPending",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-051",
+      "claim_text": "Source text mentions transaction 0x31d834bf7d22079f266f082f9ec0bfeeae444f6c94209afb7409180851bda4b8.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-009",
+      "source_url": "https://etherscan.io/txsPending",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-052",
+      "claim_text": "Source text mentions transaction 0x1b8c775e208abadab47101051baf33a6dc7574823c587e23ef89cf65e7321a69.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-009",
+      "source_url": "https://etherscan.io/txsPending",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-053",
+      "claim_text": "Source text mentions transaction 0x2fcc067d2e95309fff21d4dbdf7e6bb53791976013c346f6cce0bacb87f47871.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-009",
+      "source_url": "https://etherscan.io/txsPending",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-054",
+      "claim_text": "Source text mentions address 0xf41074179781c9decb6236fa4a7c6949a91e178b.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-009",
+      "source_url": "https://etherscan.io/txsPending",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-055",
+      "claim_text": "Source text mentions address 0xacf282e39cd666285d797732c5c31ad82d67000b.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-009",
+      "source_url": "https://etherscan.io/txsPending",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-056",
+      "claim_text": "Source text mentions address 0x31d834bf7d22079f266f082f9ec0bfeeae444f6c.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-009",
+      "source_url": "https://etherscan.io/txsPending",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-057",
+      "claim_text": "Source text mentions address 0x1b8c775e208abadab47101051baf33a6dc757482.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-009",
+      "source_url": "https://etherscan.io/txsPending",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-058",
+      "claim_text": "Source text mentions address 0x2fcc067d2e95309fff21d4dbdf7e6bb537919760.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-009",
+      "source_url": "https://etherscan.io/txsPending",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-059",
+      "claim_text": "Source text mentions address 0xaefca52bad9f9e482969c4f3c75d0e40ae60d4c3.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-009",
+      "source_url": "https://etherscan.io/txsPending",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-060",
+      "claim_text": "Source text mentions address 0x86c41d4b1666281649af428cf0ecc225997b8625.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-009",
+      "source_url": "https://etherscan.io/txsPending",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-061",
+      "claim_text": "Source text mentions address 0x46129dd38b7a91ff41e4730a779c2271d001fd1f.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-009",
+      "source_url": "https://etherscan.io/txsPending",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-062",
+      "claim_text": "Fetched source title: Ethereum Contract Internal Transactions | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-010",
+      "source_url": "https://etherscan.io/txsInternal",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-063",
+      "claim_text": "Source text mentions transaction 0x55cd1a06e53f66f45b7d0bf3937004b2772f85696c80b829b2593020829157c8.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-010",
+      "source_url": "https://etherscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-064",
+      "claim_text": "Source text mentions transaction 0x541990bcce0c0206107b244cb4c531bd1942ac46de5ce00ce0d5938623d050a3.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-010",
+      "source_url": "https://etherscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-065",
+      "claim_text": "Source text mentions transaction 0xd1c0cc347e70e18886a8fb1bf425fb5057161b50ae2dca679a3a5a19f4787548.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-010",
+      "source_url": "https://etherscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-066",
+      "claim_text": "Source text mentions transaction 0x6393c97b4cbb28041e1d6d0972c4081c0f9f7abb810a8e04c5f1d7be97dfebbd.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-010",
+      "source_url": "https://etherscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-067",
+      "claim_text": "Source text mentions transaction 0x35ce455163a90e8f97b3bf1c2b6a90aa01417db98f69d83ba05649ea9ec2173d.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-010",
+      "source_url": "https://etherscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-068",
+      "claim_text": "Source text mentions address 0x55cd1a06e53f66f45b7d0bf3937004b2772f8569.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-010",
+      "source_url": "https://etherscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-069",
+      "claim_text": "Source text mentions address 0x541990bcce0c0206107b244cb4c531bd1942ac46.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-010",
+      "source_url": "https://etherscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-070",
+      "claim_text": "Source text mentions address 0xd1c0cc347e70e18886a8fb1bf425fb5057161b50.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-010",
+      "source_url": "https://etherscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-071",
+      "claim_text": "Source text mentions address 0x6393c97b4cbb28041e1d6d0972c4081c0f9f7abb.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-010",
+      "source_url": "https://etherscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-072",
+      "claim_text": "Source text mentions address 0x35ce455163a90e8f97b3bf1c2b6a90aa01417db9.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-010",
+      "source_url": "https://etherscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-073",
+      "claim_text": "Source text mentions address 0x242b9c0a95bc1f65ef157826f05a56cab23a56b4.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-010",
+      "source_url": "https://etherscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-074",
+      "claim_text": "Source text mentions address 0x404ee8aed58aeaf6db377106d7bc1c5310d3e3c1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-010",
+      "source_url": "https://etherscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-075",
+      "claim_text": "Source text mentions address 0xd10cecb32ec69d5861558d1e20917ddc4b78b599.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-010",
+      "source_url": "https://etherscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-076",
+      "claim_text": "Fetched source title: Cross-Chain Transactions | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-011",
+      "source_url": "https://etherscan.io/txCrossChain",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-077",
+      "claim_text": "Source text mentions transaction 0x21f1a33e62c682d0b339964b9f6e7cb129d8993455c20f34d589c97baafc1c3d.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-011",
+      "source_url": "https://etherscan.io/txCrossChain",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-078",
+      "claim_text": "Source text mentions transaction 0x9462fe02a6ff16728523c7b5e47fe666910319d03b406444e74e8f863a26403c.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-011",
+      "source_url": "https://etherscan.io/txCrossChain",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-079",
+      "claim_text": "Source text mentions transaction 0xfed4848207c3d3f193c46120e2533010e3a8b35375c4a8410268bd9219e23094.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-011",
+      "source_url": "https://etherscan.io/txCrossChain",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-080",
+      "claim_text": "Source text mentions transaction 0x370ad48b17a602b3e8f346c621e2d3666afd9c30932baa716f2dd22b3d6888a2.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-011",
+      "source_url": "https://etherscan.io/txCrossChain",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-081",
+      "claim_text": "Source text mentions transaction 0x4970c7ab4ea40f6528990cf9da71bc66626bcc51852d1df7bf670968af993a8d.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-011",
+      "source_url": "https://etherscan.io/txCrossChain",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-082",
+      "claim_text": "Source text mentions address 0x21f1a33e62c682d0b339964b9f6e7cb129d89934.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-011",
+      "source_url": "https://etherscan.io/txCrossChain",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-083",
+      "claim_text": "Source text mentions address 0x9462fe02a6ff16728523c7b5e47fe666910319d0.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-011",
+      "source_url": "https://etherscan.io/txCrossChain",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-084",
+      "claim_text": "Source text mentions address 0xfed4848207c3d3f193c46120e2533010e3a8b353.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-011",
+      "source_url": "https://etherscan.io/txCrossChain",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-085",
+      "claim_text": "Source text mentions address 0x370ad48b17a602b3e8f346c621e2d3666afd9c30.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-011",
+      "source_url": "https://etherscan.io/txCrossChain",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-086",
+      "claim_text": "Source text mentions address 0x4970c7ab4ea40f6528990cf9da71bc66626bcc51.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-011",
+      "source_url": "https://etherscan.io/txCrossChain",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-087",
+      "claim_text": "Source text mentions address 0xf7cfcb4e31eda08d70224cf31961c8d1e0513d40.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-011",
+      "source_url": "https://etherscan.io/txCrossChain",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-088",
+      "claim_text": "Source text mentions address 0x96c9817a5d95c4e1c51d9bcd94bbb953deb8ea79.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-011",
+      "source_url": "https://etherscan.io/txCrossChain",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-089",
+      "claim_text": "Source text mentions address 0xd2582d66589b8ba8ea27bbf2edfaf310d7191bb8.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-011",
+      "source_url": "https://etherscan.io/txCrossChain",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-090",
+      "claim_text": "Fetched source title: Eth2 Beacon Chain Deposits | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-012",
+      "source_url": "https://etherscan.io/txsBeaconDeposit",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-091",
+      "claim_text": "Source text mentions transaction 0x91bee2234d9875ddcfedcd81a042f6df93f66dbd89f811bda0af25a58cf9f3a9.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-012",
+      "source_url": "https://etherscan.io/txsBeaconDeposit",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-092",
+      "claim_text": "Source text mentions transaction 0x979fe20df028b4965e29a79767c26e77a7654ffd1857a68c5e392ff2f5d3490f.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-012",
+      "source_url": "https://etherscan.io/txsBeaconDeposit",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-093",
+      "claim_text": "Source text mentions transaction 0x87bb9e6844b7f65188b59015c69750fb07fad60216a742cead8b99d20e1da8c1.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-012",
+      "source_url": "https://etherscan.io/txsBeaconDeposit",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-094",
+      "claim_text": "Source text mentions transaction 0x1dab569952fbd0b824231ac92267790b01e00c1b92eb474e98a2128f1bfad7d9.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-012",
+      "source_url": "https://etherscan.io/txsBeaconDeposit",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-095",
+      "claim_text": "Source text mentions transaction 0x89c2faa85c8b4cff8e695d15a076222ea2d55883f8cc3987ae95cec21c1b05a0.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-012",
+      "source_url": "https://etherscan.io/txsBeaconDeposit",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-096",
+      "claim_text": "Source text mentions address 0x91bee2234d9875ddcfedcd81a042f6df93f66dbd.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-012",
+      "source_url": "https://etherscan.io/txsBeaconDeposit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-097",
+      "claim_text": "Source text mentions address 0x979fe20df028b4965e29a79767c26e77a7654ffd.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-012",
+      "source_url": "https://etherscan.io/txsBeaconDeposit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-098",
+      "claim_text": "Source text mentions address 0x87bb9e6844b7f65188b59015c69750fb07fad602.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-012",
+      "source_url": "https://etherscan.io/txsBeaconDeposit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-099",
+      "claim_text": "Source text mentions address 0x1dab569952fbd0b824231ac92267790b01e00c1b.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-012",
+      "source_url": "https://etherscan.io/txsBeaconDeposit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-100",
+      "claim_text": "Source text mentions address 0x89c2faa85c8b4cff8e695d15a076222ea2d55883.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-012",
+      "source_url": "https://etherscan.io/txsBeaconDeposit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-101",
+      "claim_text": "Source text mentions address 0x9767c4977967640d835bfd43e97af5a6ab2f9bdf.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-012",
+      "source_url": "https://etherscan.io/txsBeaconDeposit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-102",
+      "claim_text": "Source text mentions address 0x43df8625611ab03a4bf5804f471fc9ef2dcf3fdf.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-012",
+      "source_url": "https://etherscan.io/txsBeaconDeposit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-103",
+      "claim_text": "Source text mentions address 0x82efd6d49d01370477d3a69e2808c180b9a724f7.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-012",
+      "source_url": "https://etherscan.io/txsBeaconDeposit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-104",
+      "claim_text": "Fetched source title: View Blobs | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-014",
+      "source_url": "https://etherscan.io/txsBlobs",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-105",
+      "claim_text": "Source text mentions transaction 0x014980da9fd47a7917877e25cb53fc5c46c900556eddad0d4eeaabbf83826bf8.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-014",
+      "source_url": "https://etherscan.io/txsBlobs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-106",
+      "claim_text": "Source text mentions transaction 0xf31c0d9d0aa9d5cdd284a921086f4c5aa88f0778953b84dec113989c560381b0.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-014",
+      "source_url": "https://etherscan.io/txsBlobs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-107",
+      "claim_text": "Source text mentions transaction 0x0159e6927c06c5f0a932fef8431f20daed3e9e3d1dee0353ea05afcd94ca4e0b.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-014",
+      "source_url": "https://etherscan.io/txsBlobs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-108",
+      "claim_text": "Source text mentions transaction 0xd1c7e9a325ae72fd892f40a8cf9754c4b82ba2ec26a78bd5fd963836f301f119.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-014",
+      "source_url": "https://etherscan.io/txsBlobs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-109",
+      "claim_text": "Source text mentions transaction 0x01570cb1c0c6fccac6b1b7395b094b8a5d584ae4e432b81044e65aee25c7914b.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-014",
+      "source_url": "https://etherscan.io/txsBlobs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-110",
+      "claim_text": "Source text mentions address 0x014980da9fd47a7917877e25cb53fc5c46c90055.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-014",
+      "source_url": "https://etherscan.io/txsBlobs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-111",
+      "claim_text": "Source text mentions address 0xf31c0d9d0aa9d5cdd284a921086f4c5aa88f0778.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-014",
+      "source_url": "https://etherscan.io/txsBlobs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-112",
+      "claim_text": "Source text mentions address 0x0159e6927c06c5f0a932fef8431f20daed3e9e3d.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-014",
+      "source_url": "https://etherscan.io/txsBlobs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-113",
+      "claim_text": "Source text mentions address 0xd1c7e9a325ae72fd892f40a8cf9754c4b82ba2ec.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-014",
+      "source_url": "https://etherscan.io/txsBlobs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-114",
+      "claim_text": "Source text mentions address 0x01570cb1c0c6fccac6b1b7395b094b8a5d584ae4.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-014",
+      "source_url": "https://etherscan.io/txsBlobs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-115",
+      "claim_text": "Source text mentions address 0x01fe6df5c334859de37b087c9fa189c5daa5b5f7.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-014",
+      "source_url": "https://etherscan.io/txsBlobs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-116",
+      "claim_text": "Source text mentions address 0x013d35e3fb201cde42427c4ce1732219149e01d2.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-014",
+      "source_url": "https://etherscan.io/txsBlobs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-117",
+      "claim_text": "Source text mentions address 0x0190e35d7b59d2909c9fe98086ab8bffe0db5dd7.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-014",
+      "source_url": "https://etherscan.io/txsBlobs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-118",
+      "claim_text": "Fetched source title: Ethereum Account Abstraction Transactions Information | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-015",
+      "source_url": "https://etherscan.io/txsAA",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-119",
+      "claim_text": "Source text mentions transaction 0xdee3107e82f010e7e0e528f20607ebf321d8e40872e791c5731f5e3489533113.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-015",
+      "source_url": "https://etherscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-120",
+      "claim_text": "Source text mentions transaction 0x35df8169147404b2249881bc3ae1ecb3d0f71cb8bfb589c5349fd1d8ad1296db.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-015",
+      "source_url": "https://etherscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-121",
+      "claim_text": "Source text mentions transaction 0x5440a598cee978ec381250fe9861439456b1dc96e7383ea104bd22dca1e8ee68.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-015",
+      "source_url": "https://etherscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-122",
+      "claim_text": "Source text mentions transaction 0x35ce455163a90e8f97b3bf1c2b6a90aa01417db98f69d83ba05649ea9ec2173d.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-015",
+      "source_url": "https://etherscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-123",
+      "claim_text": "Source text mentions transaction 0x4b10395b45a5deec2da43164d7558a32a0e2ed77dd07a48044b9fc873783ff71.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-015",
+      "source_url": "https://etherscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-124",
+      "claim_text": "Source text mentions address 0xdee3107e82f010e7e0e528f20607ebf321d8e408.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-015",
+      "source_url": "https://etherscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-125",
+      "claim_text": "Source text mentions address 0x35df8169147404b2249881bc3ae1ecb3d0f71cb8.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-015",
+      "source_url": "https://etherscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-126",
+      "claim_text": "Source text mentions address 0x5440a598cee978ec381250fe9861439456b1dc96.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-015",
+      "source_url": "https://etherscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-127",
+      "claim_text": "Source text mentions address 0x35ce455163a90e8f97b3bf1c2b6a90aa01417db9.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-015",
+      "source_url": "https://etherscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-128",
+      "claim_text": "Source text mentions address 0x4b10395b45a5deec2da43164d7558a32a0e2ed77.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-015",
+      "source_url": "https://etherscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-129",
+      "claim_text": "Source text mentions address 0x0a8083c062a88961ab76e3b20017b87c6bd1538c.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-015",
+      "source_url": "https://etherscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-130",
+      "claim_text": "Source text mentions address 0x99169ff26e149c8f858fdea47c29f08e3ca43828.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-015",
+      "source_url": "https://etherscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-131",
+      "claim_text": "Source text mentions address 0xf622f430f8bfdd2b1e0fa5fb9a635d3cc1ab96b6.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-015",
+      "source_url": "https://etherscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-132",
+      "claim_text": "Fetched source title: EIP-7702 Authorisation List | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-016",
+      "source_url": "https://etherscan.io/txnAuthList",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-133",
+      "claim_text": "Source text mentions transaction 0x0126a672a920c4cb31f08e1202b3abb381297c972f2176156cc81171ff8df7d9.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-016",
+      "source_url": "https://etherscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-134",
+      "claim_text": "Source text mentions transaction 0x6fad447dd236319e2265053f889f444aa4b81ff626b5aaef750e5ebc1d767902.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-016",
+      "source_url": "https://etherscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-135",
+      "claim_text": "Source text mentions transaction 0x08e9612ef737dc0ac162e12d78f5cf1a330ab04e35997dccce5a8bece2373397.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-016",
+      "source_url": "https://etherscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-136",
+      "claim_text": "Source text mentions transaction 0x541990bcce0c0206107b244cb4c531bd1942ac46de5ce00ce0d5938623d050a3.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-016",
+      "source_url": "https://etherscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-137",
+      "claim_text": "Source text mentions transaction 0x26715c907b65af274e33e3ab8cbb1d2bd2977fb3d3b0db0f096740ea48b14d61.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-016",
+      "source_url": "https://etherscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-138",
+      "claim_text": "Source text mentions address 0x0126a672a920c4cb31f08e1202b3abb381297c97.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-016",
+      "source_url": "https://etherscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-139",
+      "claim_text": "Source text mentions address 0x6fad447dd236319e2265053f889f444aa4b81ff6.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-016",
+      "source_url": "https://etherscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-140",
+      "claim_text": "Source text mentions address 0x08e9612ef737dc0ac162e12d78f5cf1a330ab04e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-016",
+      "source_url": "https://etherscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-141",
+      "claim_text": "Source text mentions address 0x541990bcce0c0206107b244cb4c531bd1942ac46.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-016",
+      "source_url": "https://etherscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-142",
+      "claim_text": "Source text mentions address 0x26715c907b65af274e33e3ab8cbb1d2bd2977fb3.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-016",
+      "source_url": "https://etherscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-143",
+      "claim_text": "Source text mentions address 0x14428dbc2c09bb0099f00e8ebc01dbc6c027d1ec.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-016",
+      "source_url": "https://etherscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-144",
+      "claim_text": "Source text mentions address 0x6d86fcb89a22cf5deb8e10c39d228a69204e74ad.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-016",
+      "source_url": "https://etherscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-145",
+      "claim_text": "Source text mentions address 0xbdec1c44fb5fc5e7f6575c53181e33294f1dac2e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-016",
+      "source_url": "https://etherscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-146",
+      "claim_text": "Fetched source title: Ethereum Blocks | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-017",
+      "source_url": "https://etherscan.io/blocks",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-147",
+      "claim_text": "Source text mentions address 0x396343362be2a4da1ce0c1c210945346fb82aa49.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-017",
+      "source_url": "https://etherscan.io/blocks",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-148",
+      "claim_text": "Source text mentions address 0x4838b106fce9647bdf1e7877bf73ce8b0bad5f97.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-017",
+      "source_url": "https://etherscan.io/blocks",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-149",
+      "claim_text": "Source text mentions address 0xdadb0d80178819f2319190d340ce9a924f783711.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-017",
+      "source_url": "https://etherscan.io/blocks",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-150",
+      "claim_text": "Source text mentions address 0xff09650bb62315a6f7063066002350ee11abb015.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-017",
+      "source_url": "https://etherscan.io/blocks",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-151",
+      "claim_text": "Source text mentions address 0x22eec85ba6a5cd97ead4728ea1c69e1d9c6fa778.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-017",
+      "source_url": "https://etherscan.io/blocks",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-152",
+      "claim_text": "Fetched source title: Ethereum Forked Blocks | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-018",
+      "source_url": "https://etherscan.io/blocks_forked",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-153",
+      "claim_text": "Source text mentions address 0x7e2a2fa2a064f693f0a55c5639476d913ff12d05.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-018",
+      "source_url": "https://etherscan.io/blocks_forked",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-154",
+      "claim_text": "Source text mentions address 0x57396583b1c252963f7e1f3374f52efafab4e764.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-018",
+      "source_url": "https://etherscan.io/blocks_forked",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-155",
+      "claim_text": "Source text mentions address 0x8f2e19ae9a610854bf2cc588639e230e0599683f.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-018",
+      "source_url": "https://etherscan.io/blocks_forked",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-156",
+      "claim_text": "Source text mentions address 0x4838b106fce9647bdf1e7877bf73ce8b0bad5f97.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-018",
+      "source_url": "https://etherscan.io/blocks_forked",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-157",
+      "claim_text": "Source text mentions address 0x6deee8d75720abd4e9edfa9f31cf141d298a1028.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-018",
+      "source_url": "https://etherscan.io/blocks_forked",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-158",
+      "claim_text": "Source text mentions address 0x388c818ca8b9251b393131c08a736a67ccb19297.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-018",
+      "source_url": "https://etherscan.io/blocks_forked",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-159",
+      "claim_text": "Source text mentions address 0x7d16d2c4e96bcfc8f815e15b771ac847ecbdb48b.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-018",
+      "source_url": "https://etherscan.io/blocks_forked",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-160",
+      "claim_text": "Source text mentions address 0xd4e96ef8eee8678dbff4d535e033ed1a4f7605b7.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-018",
+      "source_url": "https://etherscan.io/blocks_forked",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-161",
+      "claim_text": "Fetched source title: Ethereum Uncle Blocks | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-019",
+      "source_url": "https://etherscan.io/uncles",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-162",
+      "claim_text": "Fetched source title: Ethereum Top Accounts by ETH Balance | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-020",
+      "source_url": "https://etherscan.io/accounts",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-163",
+      "claim_text": "Source text mentions address 0x00000000219ab540356cbb839cbe05303d7705fa.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-020",
+      "source_url": "https://etherscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-164",
+      "claim_text": "Source text mentions address 0xbe0eb53f46cd790cd13851d5eff43d12404d33e8.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-020",
+      "source_url": "https://etherscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-165",
+      "claim_text": "Source text mentions address 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-020",
+      "source_url": "https://etherscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-166",
+      "claim_text": "Source text mentions address 0x40b38765696e3d5d8d9d834d8aad4bb6e418e489.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-020",
+      "source_url": "https://etherscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-167",
+      "claim_text": "Source text mentions address 0x0e58e8993100f1cbe45376c410f97f4893d9bfcd.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-020",
+      "source_url": "https://etherscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-168",
+      "claim_text": "Source text mentions address 0x8315177ab297ba92a06054ce80a67ed4dbd7ed3a.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-020",
+      "source_url": "https://etherscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-169",
+      "claim_text": "Source text mentions address 0x49048044d57e1c92a77f79988d21fa8faf74e97e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-020",
+      "source_url": "https://etherscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-170",
+      "claim_text": "Source text mentions address 0xafcd96e580138cfa2332c632e66308eacd45c5da.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-020",
+      "source_url": "https://etherscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-171",
+      "claim_text": "Fetched source title: Token Tracker | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-022",
+      "source_url": "https://etherscan.io/tokens",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-172",
+      "claim_text": "Fetched source title: Token Transfer | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-023",
+      "source_url": "https://etherscan.io/tokentxns",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-173",
+      "claim_text": "Source text mentions transaction 0x9b0f73ff4a7f3d17b9370defec5586f6189b8a4efcba4c5d7687396419e838db.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-023",
+      "source_url": "https://etherscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-174",
+      "claim_text": "Source text mentions transaction 0xc663871203faccc3980d7f4d0315554faf1d704fb1a887bc3b5535a8734421a4.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-023",
+      "source_url": "https://etherscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-175",
+      "claim_text": "Source text mentions transaction 0x445bf7bffe230bf27764fd0fcf0d61631283a75be70e18a5139eddcebe9bace6.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-023",
+      "source_url": "https://etherscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-176",
+      "claim_text": "Source text mentions transaction 0xde5eb793aaba3a9855f28510865736d7a72d4c52d36402d11f115af7e17ea8c2.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-023",
+      "source_url": "https://etherscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-177",
+      "claim_text": "Source text mentions transaction 0x5575adcdeb7f4f8807af800843e5b80973880146c434ed4ad0da84def8a59b9e.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-023",
+      "source_url": "https://etherscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-178",
+      "claim_text": "Source text mentions address 0x9b0f73ff4a7f3d17b9370defec5586f6189b8a4e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-023",
+      "source_url": "https://etherscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-179",
+      "claim_text": "Source text mentions address 0xc663871203faccc3980d7f4d0315554faf1d704f.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-023",
+      "source_url": "https://etherscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-180",
+      "claim_text": "Source text mentions address 0x445bf7bffe230bf27764fd0fcf0d61631283a75b.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-023",
+      "source_url": "https://etherscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-181",
+      "claim_text": "Source text mentions address 0xde5eb793aaba3a9855f28510865736d7a72d4c52.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-023",
+      "source_url": "https://etherscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-182",
+      "claim_text": "Source text mentions address 0x5575adcdeb7f4f8807af800843e5b80973880146.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-023",
+      "source_url": "https://etherscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-183",
+      "claim_text": "Source text mentions address 0x8d46124fa4bb16f9273748725f2c1ebb1af28835.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-023",
+      "source_url": "https://etherscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-184",
+      "claim_text": "Source text mentions address 0xf2aa8950820984bf6d0ac9fa91251e7e65cf3d0f.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-023",
+      "source_url": "https://etherscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-185",
+      "claim_text": "Source text mentions address 0x1d641b2916aa5e3e26f1f063b733e014d702ce17.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-023",
+      "source_url": "https://etherscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-186",
+      "claim_text": "Fetched source title: Tether USD (USDT) | ERC-20 | Address: 0xdac17f95...13d831ec7 | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-024",
+      "source_url": "https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-187",
+      "claim_text": "Source text mentions transaction 0x606060405260043610610196576000357c010000000000000000000000000000.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-024",
+      "source_url": "https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-188",
+      "claim_text": "Source text mentions address 0xdac17f958d2ee523a2206206994597c13d831ec7.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-024",
+      "source_url": "https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-189",
+      "claim_text": "Source text mentions address 0x606060405260043610610196576000357c010000.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-024",
+      "source_url": "https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-190",
+      "claim_text": "Fetched source title: Ethereum (ETH) Blockchain Explorer.",
+      "fact_type": "source_title",
+      "source_ref": "src-025",
+      "source_url": "https://etherscan.io",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-191",
+      "claim_text": "Source text mentions transaction 0xebcc579eae6915729e8e6691dcc171c04a1b364c6289ae1ea8cd3305bc4e5bdd.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-025",
+      "source_url": "https://etherscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-192",
+      "claim_text": "Source text mentions transaction 0x3505eb30fedd46275f05bd3842b10a39afd4e3e0140bbd57a54b5da7d909f990.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-025",
+      "source_url": "https://etherscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-193",
+      "claim_text": "Source text mentions transaction 0x9b0f73ff4a7f3d17b9370defec5586f6189b8a4efcba4c5d7687396419e838db.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-025",
+      "source_url": "https://etherscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-194",
+      "claim_text": "Source text mentions transaction 0xaf272069f71cd23bb7f4e515ab256af6226987c768c5d01e95acfaccc092d192.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-025",
+      "source_url": "https://etherscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-195",
+      "claim_text": "Source text mentions transaction 0x98ba50aff6a65454cd9e2ccc22bb5ce57997bec68d2c6f8bc252df8492a6529b.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-025",
+      "source_url": "https://etherscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-196",
+      "claim_text": "Source text mentions address 0xebcc579eae6915729e8e6691dcc171c04a1b364c.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-025",
+      "source_url": "https://etherscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-197",
+      "claim_text": "Source text mentions address 0x3505eb30fedd46275f05bd3842b10a39afd4e3e0.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-025",
+      "source_url": "https://etherscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-198",
+      "claim_text": "Source text mentions address 0x9b0f73ff4a7f3d17b9370defec5586f6189b8a4e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-025",
+      "source_url": "https://etherscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-199",
+      "claim_text": "Source text mentions address 0xaf272069f71cd23bb7f4e515ab256af6226987c7.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-025",
+      "source_url": "https://etherscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-200",
+      "claim_text": "Source text mentions address 0x98ba50aff6a65454cd9e2ccc22bb5ce57997bec6.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-025",
+      "source_url": "https://etherscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-201",
+      "claim_text": "Source text mentions address 0xea2f37279e049314b103fdce84bde4d52e9b8cb2.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-025",
+      "source_url": "https://etherscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-202",
+      "claim_text": "Fetched source title: Sepolia Transactions Information | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-026",
+      "source_url": "https://sepolia.etherscan.io/txs",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-203",
+      "claim_text": "Source text mentions transaction 0x258365061e99d3909f89a745c6d595ec2b5b25f778d5231204bd4396c7b54b70.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-026",
+      "source_url": "https://sepolia.etherscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-204",
+      "claim_text": "Source text mentions transaction 0xa9a56fe2c47e87480d3dc0c7d5ce8c3c2cac86a23fb3998c8c2e11d34565d684.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-026",
+      "source_url": "https://sepolia.etherscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-205",
+      "claim_text": "Source text mentions transaction 0x3b72bc7b92362ef29d6b9a9175071734b8c884026ce63be1263135ce8202c3b1.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-026",
+      "source_url": "https://sepolia.etherscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-206",
+      "claim_text": "Source text mentions transaction 0x570605b26b34761bd2b1ed2c807cd5ca3921f70e3baf0ba3de76c7e4c4729bc8.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-026",
+      "source_url": "https://sepolia.etherscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-207",
+      "claim_text": "Source text mentions transaction 0x956654c5370502ad0d8ec6f1410a2bb42cc2d068cdfea98e20d27f8c7edb9fef.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-026",
+      "source_url": "https://sepolia.etherscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-208",
+      "claim_text": "Source text mentions address 0x258365061e99d3909f89a745c6d595ec2b5b25f7.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-026",
+      "source_url": "https://sepolia.etherscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-209",
+      "claim_text": "Source text mentions address 0xa9a56fe2c47e87480d3dc0c7d5ce8c3c2cac86a2.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-026",
+      "source_url": "https://sepolia.etherscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-210",
+      "claim_text": "Source text mentions address 0x3b72bc7b92362ef29d6b9a9175071734b8c88402.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-026",
+      "source_url": "https://sepolia.etherscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-211",
+      "claim_text": "Source text mentions address 0x570605b26b34761bd2b1ed2c807cd5ca3921f70e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-026",
+      "source_url": "https://sepolia.etherscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-212",
+      "claim_text": "Source text mentions address 0x956654c5370502ad0d8ec6f1410a2bb42cc2d068.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-026",
+      "source_url": "https://sepolia.etherscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-213",
+      "claim_text": "Source text mentions address 0x855a47dbd8d290c2c2ef02b0268b2d13501470b9.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-026",
+      "source_url": "https://sepolia.etherscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-214",
+      "claim_text": "Source text mentions address 0x5478785188af25d1b642534bf1907b251d2294c5.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-026",
+      "source_url": "https://sepolia.etherscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-215",
+      "claim_text": "Source text mentions address 0x74fa3c464091290f2c2d9cabb7f39c1904d5998f.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-026",
+      "source_url": "https://sepolia.etherscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-216",
+      "claim_text": "Fetched source title: Sepolia Pending Transactions | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-027",
+      "source_url": "https://sepolia.etherscan.io/txsPending",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-217",
+      "claim_text": "Fetched source title: Sepolia Contract Internal Transactions | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.etherscan.io/txsInternal",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-218",
+      "claim_text": "Source text mentions transaction 0xf9ef751cf031564c9cc4f4850c05e7da00956d7dfcd0808ff17d3d6566106faf.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.etherscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-219",
+      "claim_text": "Source text mentions transaction 0xa67be83e16403c9ab27265a09b6f0e23bc7efb1dbe4cea6104c54b2ab0eed67a.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.etherscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-220",
+      "claim_text": "Source text mentions transaction 0x9a5bac0ced4bd483c1085d3d79443d2d2379fd93739f615e40d31e0ce5b8e622.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.etherscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-221",
+      "claim_text": "Source text mentions transaction 0xeaa78e93dd588dd0b68c6c7c0e1b3572045e19e46b7697be7ad99465a1540d8f.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.etherscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-222",
+      "claim_text": "Source text mentions transaction 0x1a6d9a592a78d12aaf05cb515554eab06b77b1d94885d09efe131638e139692d.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.etherscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-223",
+      "claim_text": "Source text mentions address 0xf9ef751cf031564c9cc4f4850c05e7da00956d7d.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.etherscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-224",
+      "claim_text": "Source text mentions address 0xa67be83e16403c9ab27265a09b6f0e23bc7efb1d.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.etherscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-225",
+      "claim_text": "Source text mentions address 0x9a5bac0ced4bd483c1085d3d79443d2d2379fd93.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.etherscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-226",
+      "claim_text": "Source text mentions address 0xeaa78e93dd588dd0b68c6c7c0e1b3572045e19e4.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.etherscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-227",
+      "claim_text": "Source text mentions address 0x1a6d9a592a78d12aaf05cb515554eab06b77b1d9.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.etherscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-228",
+      "claim_text": "Source text mentions address 0x0f71cbe8d944fe6b1631b879c7ba64484a78325a.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.etherscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-229",
+      "claim_text": "Source text mentions address 0xabef93c1a9dd1b9a8191b4cb2ed69e9f1f86086b.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.etherscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-230",
+      "claim_text": "Source text mentions address 0xed2902ba4b6d197a6d375a4d7079bfd4b5a3457f.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.etherscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-231",
+      "claim_text": "Fetched source title: View Blobs | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.etherscan.io/txsBlobs",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-232",
+      "claim_text": "Source text mentions transaction 0x0140d73fe511ae1fbb36dc402fa9cae1ce84aee4e8557a6ffcfb67129fde1fbe.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.etherscan.io/txsBlobs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-233",
+      "claim_text": "Source text mentions transaction 0x6396f5228d76859aa3a76e67ea528dd462c0a3d78ba33b719703086f65136eb5.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.etherscan.io/txsBlobs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-234",
+      "claim_text": "Source text mentions transaction 0x0153c2a357993ee1fce2bbca1400b84d9fd26471cc76bbbee23305b9aeec39e4.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.etherscan.io/txsBlobs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-235",
+      "claim_text": "Source text mentions transaction 0xb8c2c6dcea360d017ae936ccad65df4e119e7a58dad6fe93a9578afd4e69e350.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.etherscan.io/txsBlobs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-236",
+      "claim_text": "Source text mentions transaction 0x0144fd5c67344740aca1f3e437a32a802d2819a583ddf6591d399ddb303f87a3.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.etherscan.io/txsBlobs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-237",
+      "claim_text": "Source text mentions address 0x0140d73fe511ae1fbb36dc402fa9cae1ce84aee4.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.etherscan.io/txsBlobs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-238",
+      "claim_text": "Source text mentions address 0x6396f5228d76859aa3a76e67ea528dd462c0a3d7.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.etherscan.io/txsBlobs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-239",
+      "claim_text": "Source text mentions address 0x0153c2a357993ee1fce2bbca1400b84d9fd26471.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.etherscan.io/txsBlobs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-240",
+      "claim_text": "Source text mentions address 0xb8c2c6dcea360d017ae936ccad65df4e119e7a58.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.etherscan.io/txsBlobs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-241",
+      "claim_text": "Source text mentions address 0x0144fd5c67344740aca1f3e437a32a802d2819a5.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.etherscan.io/txsBlobs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-242",
+      "claim_text": "Source text mentions address 0x52b76e5750eb35293992cda02923f50b1c0b9c61.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.etherscan.io/txsBlobs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-243",
+      "claim_text": "Source text mentions address 0x01cd3c482bb5f0b02c29f7801935d65c74b6f93e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.etherscan.io/txsBlobs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-244",
+      "claim_text": "Source text mentions address 0xfeb03e805b1f808741f9eb239439ca044fe8e258.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.etherscan.io/txsBlobs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-245",
+      "claim_text": "Fetched source title: Sepolia Account Abstraction Transactions Information | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.etherscan.io/txsAA",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-246",
+      "claim_text": "Source text mentions transaction 0x2943f49d994a210f247f6a2ab0c57a405c0e240fb08d1458624df911e49235d2.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.etherscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-247",
+      "claim_text": "Source text mentions transaction 0x9fa98eba8d99b3166277433a791cfef06c613e77cabec1b025c93b475daee05d.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.etherscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-248",
+      "claim_text": "Source text mentions transaction 0xb2dbccd708c6a5b28829d0137192b6c7eb2b586d3476a9c6c0636634d52dbacd.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.etherscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-249",
+      "claim_text": "Source text mentions transaction 0x5769f012a18e833e29e062b96ca8437357bdae444c4c3a78d43b12306f58fc45.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.etherscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-250",
+      "claim_text": "Source text mentions transaction 0x3c958011e0a8c32c1deec56ce9ac85f1ac85c574c9264ada77610aea5fd13398.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.etherscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-251",
+      "claim_text": "Source text mentions address 0x2943f49d994a210f247f6a2ab0c57a405c0e240f.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.etherscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-252",
+      "claim_text": "Source text mentions address 0x9fa98eba8d99b3166277433a791cfef06c613e77.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.etherscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-253",
+      "claim_text": "Source text mentions address 0xb2dbccd708c6a5b28829d0137192b6c7eb2b586d.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.etherscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-254",
+      "claim_text": "Source text mentions address 0x5769f012a18e833e29e062b96ca8437357bdae44.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.etherscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-255",
+      "claim_text": "Source text mentions address 0x3c958011e0a8c32c1deec56ce9ac85f1ac85c574.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.etherscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-256",
+      "claim_text": "Source text mentions address 0xf4f096a25489a3c51d390b1b15c0f8679c62d8a8.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.etherscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-257",
+      "claim_text": "Source text mentions address 0x84d2e619539ac90b818f87bbe9a987f4ef3b0db1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.etherscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-258",
+      "claim_text": "Source text mentions address 0x401486afc89fdec6154084556861cfcc7963983f.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.etherscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-259",
+      "claim_text": "Fetched source title: EIP-7702 Authorisation List | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.etherscan.io/txnAuthList",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-260",
+      "claim_text": "Source text mentions transaction 0xa12a0f39f0cc5207f91e72e08e206a36d54e4e1581978d53c9acce024089ec58.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.etherscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-261",
+      "claim_text": "Source text mentions transaction 0x04f2a6b40d4fab73c92bdc25fa519e30e06d04d597e051315a538b259b4ed3bc.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.etherscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-262",
+      "claim_text": "Source text mentions transaction 0x3e01686c1df8f3010d81d96021c0383d58520939cf9e26a0cfa646400b8c809a.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.etherscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-263",
+      "claim_text": "Source text mentions transaction 0xee7cd6cb47fa6775443c81bb98be4f5a54e1053d94ba65c573a0b539291d6d98.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.etherscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-264",
+      "claim_text": "Source text mentions transaction 0x906d863089dca99fd2b621ec828db5be4a0aa5ba04af84f4630fe0dde4a73351.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.etherscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-265",
+      "claim_text": "Source text mentions address 0xa12a0f39f0cc5207f91e72e08e206a36d54e4e15.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.etherscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-266",
+      "claim_text": "Source text mentions address 0x04f2a6b40d4fab73c92bdc25fa519e30e06d04d5.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.etherscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-267",
+      "claim_text": "Source text mentions address 0x3e01686c1df8f3010d81d96021c0383d58520939.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.etherscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-268",
+      "claim_text": "Source text mentions address 0xee7cd6cb47fa6775443c81bb98be4f5a54e1053d.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.etherscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-269",
+      "claim_text": "Source text mentions address 0x906d863089dca99fd2b621ec828db5be4a0aa5ba.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.etherscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-270",
+      "claim_text": "Source text mentions address 0x107cbe31cf91be2ea75d75efee95b21145041fe6.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.etherscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-271",
+      "claim_text": "Source text mentions address 0x19dee5bf112e70c73b4c6eb71acc97100b1972f2.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.etherscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-272",
+      "claim_text": "Source text mentions address 0xb1c46806298d9a05c721c2517f45425b276dc4da.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.etherscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-273",
+      "claim_text": "Fetched source title: Sepolia Blocks | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.etherscan.io/blocks",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-274",
+      "claim_text": "Source text mentions address 0x3826539cbd8d68dcf119e80b994557b4278cec9f.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.etherscan.io/blocks",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-275",
+      "claim_text": "Source text mentions address 0x13cb6ae34a13a0977f4d7101ebc24b87bb23f0d5.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.etherscan.io/blocks",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-276",
+      "claim_text": "Source text mentions address 0x0000006916a87b82333f4245046623b23794c65c.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.etherscan.io/blocks",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-277",
+      "claim_text": "Source text mentions address 0x4df6eb2ec570b58cc64f540247a8adfa11f1cf63.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.etherscan.io/blocks",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-278",
+      "claim_text": "Source text mentions address 0xc4bfccb1668d6e464f33a76badd8c8d7d341e04a.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.etherscan.io/blocks",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-279",
+      "claim_text": "Source text mentions address 0x25941dc771bb64514fc8abbce970307fb9d477e9.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.etherscan.io/blocks",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-280",
+      "claim_text": "Source text mentions address 0x1268ad189526ac0b386faf06effc46779c340ee6.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.etherscan.io/blocks",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-281",
+      "claim_text": "Source text mentions address 0x0c06b6d4ec451987e8c0b772ffcf7f080c46447a.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.etherscan.io/blocks",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-282",
+      "claim_text": "Fetched source title: Sepolia Forked Blocks | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-034",
+      "source_url": "https://sepolia.etherscan.io/blocks_forked",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-283",
+      "claim_text": "Source text mentions address 0x0c06b6d4ec451987e8c0b772ffcf7f080c46447a.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-034",
+      "source_url": "https://sepolia.etherscan.io/blocks_forked",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-284",
+      "claim_text": "Source text mentions address 0x455e5aa18469bc6ccef49594645666c587a3a71b.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-034",
+      "source_url": "https://sepolia.etherscan.io/blocks_forked",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-285",
+      "claim_text": "Source text mentions address 0x9a6034c84cd431409ac1a35278c7da36ffda53e5.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-034",
+      "source_url": "https://sepolia.etherscan.io/blocks_forked",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-286",
+      "claim_text": "Source text mentions address 0xc4bfccb1668d6e464f33a76badd8c8d7d341e04a.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-034",
+      "source_url": "https://sepolia.etherscan.io/blocks_forked",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-287",
+      "claim_text": "Fetched source title: Sepolia Uncle Blocks | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-035",
+      "source_url": "https://sepolia.etherscan.io/uncles",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-288",
+      "claim_text": "Fetched source title: Sepolia Top Accounts by ETH Balance | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.etherscan.io/accounts",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-289",
+      "claim_text": "Source text mentions address 0x25c4a76e7d118705e7ea2e9b7d8c59930d8acd3b.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.etherscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-290",
+      "claim_text": "Source text mentions address 0x89bb1332db257b983ada216746903be808938da1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.etherscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-291",
+      "claim_text": "Source text mentions address 0xd7d76c58b3a519e9fa6cc4d22dc017259bc49f1e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.etherscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-292",
+      "claim_text": "Source text mentions address 0xb21c33de1fab3fa15499c62b59fe0cc3250020d1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.etherscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-293",
+      "claim_text": "Source text mentions address 0x10f5d45854e038071485ac9e402308cf80d2d2fe.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.etherscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-294",
+      "claim_text": "Source text mentions address 0x7eb4b4fe66120767f10401a75fd470136a7d64d3.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.etherscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-295",
+      "claim_text": "Source text mentions address 0xe276bc378a527a8792b353cdca5b5e53263dfb9e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.etherscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-296",
+      "claim_text": "Source text mentions address 0x14d0908cdf097c8ce8b74407327ba174caf68d53.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.etherscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-297",
+      "claim_text": "Fetched source title: Token Transfer | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.etherscan.io/tokentxns",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-298",
+      "claim_text": "Source text mentions transaction 0x258365061e99d3909f89a745c6d595ec2b5b25f778d5231204bd4396c7b54b70.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.etherscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-299",
+      "claim_text": "Source text mentions transaction 0x3b72bc7b92362ef29d6b9a9175071734b8c884026ce63be1263135ce8202c3b1.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.etherscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-300",
+      "claim_text": "Source text mentions transaction 0x570605b26b34761bd2b1ed2c807cd5ca3921f70e3baf0ba3de76c7e4c4729bc8.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.etherscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-301",
+      "claim_text": "Source text mentions transaction 0x956654c5370502ad0d8ec6f1410a2bb42cc2d068cdfea98e20d27f8c7edb9fef.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.etherscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-302",
+      "claim_text": "Source text mentions transaction 0x74fa3c464091290f2c2d9cabb7f39c1904d5998f2669e2ab0813ecd937c43e27.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.etherscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-303",
+      "claim_text": "Source text mentions address 0x258365061e99d3909f89a745c6d595ec2b5b25f7.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.etherscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-304",
+      "claim_text": "Source text mentions address 0x3b72bc7b92362ef29d6b9a9175071734b8c88402.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.etherscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-305",
+      "claim_text": "Source text mentions address 0x570605b26b34761bd2b1ed2c807cd5ca3921f70e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.etherscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-306",
+      "claim_text": "Source text mentions address 0x956654c5370502ad0d8ec6f1410a2bb42cc2d068.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.etherscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-307",
+      "claim_text": "Source text mentions address 0x74fa3c464091290f2c2d9cabb7f39c1904d5998f.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.etherscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-308",
+      "claim_text": "Source text mentions address 0xc47690144743006286ffdde9eb9fc5a754edd310.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.etherscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-309",
+      "claim_text": "Source text mentions address 0xef31fa9a13f22cd1dd45adce7ad0bf03b4791837.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.etherscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-310",
+      "claim_text": "Source text mentions address 0x3cd0ae195f3d85f32c084494e5b16c51354cedf7.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.etherscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-311",
+      "claim_text": "Fetched source title: Unit Converter | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-041",
+      "source_url": "https://sepolia.etherscan.io/unitconverter",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-312",
+      "claim_text": "Fetched source title: Base64 Converter | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-042",
+      "source_url": "https://sepolia.etherscan.io/base64converter",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-313",
+      "claim_text": "Fetched source title: blockdate Converter | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-043",
+      "source_url": "https://sepolia.etherscan.io/blockdateconverter",
+      "confidence": 0.8,
+      "is_inferred": false
+    }
+  ],
+  "edges": [
+    {
+      "from": "claim-001",
+      "to": "src-001",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-002",
+      "to": "src-001",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-003",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-004",
+      "to": "src-004",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-005",
+      "to": "src-001",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-006",
+      "to": "src-001",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-007",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-008",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-009",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-010",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-011",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-012",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-013",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-014",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-015",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-016",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-017",
+      "to": "src-004",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-018",
+      "to": "src-004",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-019",
+      "to": "src-004",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-020",
+      "to": "src-004",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-021",
+      "to": "src-005",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-022",
+      "to": "src-006",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-023",
+      "to": "src-006",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-024",
+      "to": "src-006",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-025",
+      "to": "src-006",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-026",
+      "to": "src-006",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-027",
+      "to": "src-006",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-028",
+      "to": "src-006",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-029",
+      "to": "src-006",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-030",
+      "to": "src-006",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-031",
+      "to": "src-006",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-032",
+      "to": "src-006",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-033",
+      "to": "src-006",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-034",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-035",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-036",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-037",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-038",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-039",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-040",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-041",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-042",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-043",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-044",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-045",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-046",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-047",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-048",
+      "to": "src-009",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-049",
+      "to": "src-009",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-050",
+      "to": "src-009",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-051",
+      "to": "src-009",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-052",
+      "to": "src-009",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-053",
+      "to": "src-009",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-054",
+      "to": "src-009",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-055",
+      "to": "src-009",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-056",
+      "to": "src-009",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-057",
+      "to": "src-009",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-058",
+      "to": "src-009",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-059",
+      "to": "src-009",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-060",
+      "to": "src-009",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-061",
+      "to": "src-009",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-062",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-063",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-064",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-065",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-066",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-067",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-068",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-069",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-070",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-071",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-072",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-073",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-074",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-075",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-076",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-077",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-078",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-079",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-080",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-081",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-082",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-083",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-084",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-085",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-086",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-087",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-088",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-089",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-090",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-091",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-092",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-093",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-094",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-095",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-096",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-097",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-098",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-099",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-100",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-101",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-102",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-103",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-104",
+      "to": "src-014",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-105",
+      "to": "src-014",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-106",
+      "to": "src-014",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-107",
+      "to": "src-014",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-108",
+      "to": "src-014",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-109",
+      "to": "src-014",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-110",
+      "to": "src-014",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-111",
+      "to": "src-014",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-112",
+      "to": "src-014",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-113",
+      "to": "src-014",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-114",
+      "to": "src-014",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-115",
+      "to": "src-014",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-116",
+      "to": "src-014",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-117",
+      "to": "src-014",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-118",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-119",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-120",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-121",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-122",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-123",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-124",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-125",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-126",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-127",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-128",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-129",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-130",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-131",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-132",
+      "to": "src-016",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-133",
+      "to": "src-016",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-134",
+      "to": "src-016",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-135",
+      "to": "src-016",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-136",
+      "to": "src-016",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-137",
+      "to": "src-016",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-138",
+      "to": "src-016",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-139",
+      "to": "src-016",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-140",
+      "to": "src-016",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-141",
+      "to": "src-016",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-142",
+      "to": "src-016",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-143",
+      "to": "src-016",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-144",
+      "to": "src-016",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-145",
+      "to": "src-016",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-146",
+      "to": "src-017",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-147",
+      "to": "src-017",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-148",
+      "to": "src-017",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-149",
+      "to": "src-017",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-150",
+      "to": "src-017",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-151",
+      "to": "src-017",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-152",
+      "to": "src-018",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-153",
+      "to": "src-018",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-154",
+      "to": "src-018",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-155",
+      "to": "src-018",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-156",
+      "to": "src-018",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-157",
+      "to": "src-018",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-158",
+      "to": "src-018",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-159",
+      "to": "src-018",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-160",
+      "to": "src-018",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-161",
+      "to": "src-019",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-162",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-163",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-164",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-165",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-166",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-167",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-168",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-169",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-170",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-171",
+      "to": "src-022",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-172",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-173",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-174",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-175",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-176",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-177",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-178",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-179",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-180",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-181",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-182",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-183",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-184",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-185",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-186",
+      "to": "src-024",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-187",
+      "to": "src-024",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-188",
+      "to": "src-024",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-189",
+      "to": "src-024",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-190",
+      "to": "src-025",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-191",
+      "to": "src-025",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-192",
+      "to": "src-025",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-193",
+      "to": "src-025",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-194",
+      "to": "src-025",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-195",
+      "to": "src-025",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-196",
+      "to": "src-025",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-197",
+      "to": "src-025",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-198",
+      "to": "src-025",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-199",
+      "to": "src-025",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-200",
+      "to": "src-025",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-201",
+      "to": "src-025",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-202",
+      "to": "src-026",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-203",
+      "to": "src-026",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-204",
+      "to": "src-026",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-205",
+      "to": "src-026",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-206",
+      "to": "src-026",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-207",
+      "to": "src-026",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-208",
+      "to": "src-026",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-209",
+      "to": "src-026",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-210",
+      "to": "src-026",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-211",
+      "to": "src-026",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-212",
+      "to": "src-026",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-213",
+      "to": "src-026",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-214",
+      "to": "src-026",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-215",
+      "to": "src-026",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-216",
+      "to": "src-027",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-217",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-218",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-219",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-220",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-221",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-222",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-223",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-224",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-225",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-226",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-227",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-228",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-229",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-230",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-231",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-232",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-233",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-234",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-235",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-236",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-237",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-238",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-239",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-240",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-241",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-242",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-243",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-244",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-245",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-246",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-247",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-248",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-249",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-250",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-251",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-252",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-253",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-254",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-255",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-256",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-257",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-258",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-259",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-260",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-261",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-262",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-263",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-264",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-265",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-266",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-267",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-268",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-269",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-270",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-271",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-272",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-273",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-274",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-275",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-276",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-277",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-278",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-279",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-280",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-281",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-282",
+      "to": "src-034",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-283",
+      "to": "src-034",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-284",
+      "to": "src-034",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-285",
+      "to": "src-034",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-286",
+      "to": "src-034",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-287",
+      "to": "src-035",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-288",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-289",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-290",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-291",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-292",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-293",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-294",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-295",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-296",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-297",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-298",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-299",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-300",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-301",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-302",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-303",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-304",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-305",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-306",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-307",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-308",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-309",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-310",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-311",
+      "to": "src-041",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-312",
+      "to": "src-042",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-313",
+      "to": "src-043",
+      "edge_type": "supported_by"
+    }
+  ],
+  "conflicts": []
+}

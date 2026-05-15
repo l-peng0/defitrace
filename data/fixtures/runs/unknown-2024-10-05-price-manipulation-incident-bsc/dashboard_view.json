@@ -1,0 +1,64 @@
+{
+  "incident_id": "unknown-2024-10-05-price-manipulation-incident-bsc",
+  "card": {
+    "title": "Unknown 2024-10-05 price-manipulation incident",
+    "chain": "BSC",
+    "incident_date": "",
+    "protocol_name": "Unknown",
+    "summary": "An estimated loss of 34",
+    "source_count": 61,
+    "direct_source_count": 4,
+    "secondary_source_count": 57,
+    "completeness_score": 0.62
+  },
+  "detail": {
+    "timeline_preview": [
+      {
+        "step_id": "step-001",
+        "order": 1,
+        "label": "Exploit transaction linked",
+        "step_type": "exploit",
+        "summary": "The current dossier has 1 direct attack transaction candidate(s).",
+        "source_refs": [
+          "src-003"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "step_id": "step-002",
+        "order": 2,
+        "label": "Impact summary collected",
+        "step_type": "impact",
+        "summary": "An estimated loss of 34",
+        "source_refs": [],
+        "confidence": 0.72
+      },
+      {
+        "step_id": "step-003",
+        "order": 3,
+        "label": "Source expansion completed",
+        "step_type": "analysis",
+        "summary": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+        "source_refs": [],
+        "confidence": 0.75
+      }
+    ],
+    "attacker_profile_summary": "The dossier has 1 direct attacker address candidate(s) and 245 additional address mentions from fetched sources.",
+    "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+    "judge_summary": "The dossier contains sufficient core evidence for a basic incident demonstration: a verified attack transaction (0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d), identified attacker (0x8408497c18882bfb61be9204cfff530f4ee18320), and a public PoC from DeFiHackLabs. However, critical gaps remain: the loss amount is incomplete (shows '34' without specifying BNB), victim contract addresses are not extracted, and the timeline lacks technical depth. The protocol name (AIZPT Token) appears in narrative but not in structured evidence fields. The attack type (price manipulation/oracle vulnerability) is well-articulated. Suitable for demo with caveats about incomplete financial impact data.",
+    "missing_fields": [
+      "attack_contract_urls",
+      "victim_contract_urls",
+      "social_sources",
+      "precise_loss_amount_with_currency_unit",
+      "detailed_technical_root_cause",
+      "post_exploit_fund_tracing",
+      "contract_addresses_for_aizpt_token",
+      "block_timestamps",
+      "preparation_funding_phase"
+    ],
+    "technical_analysis_status": "completed"
+  },
+  "status": "demo_live_dossier",
+  "last_updated": "2026-04-27T12:56:05+00:00"
+}

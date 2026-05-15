@@ -1,0 +1,126 @@
+{
+  "incident_id": "veth-2024-11-14-price-manipulation-incident-ethereum",
+  "agents": [
+    {
+      "agent_id": "source_finder",
+      "agent_name": "Discovery supervisor",
+      "started_at": "2026-04-27T13:12:13+00:00",
+      "completed_at": "2026-04-27T13:12:13+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/source_index.json"
+      ],
+      "metrics": {
+        "source_count": 8
+      },
+      "note": ""
+    },
+    {
+      "agent_id": "source_expander",
+      "agent_name": "Source expansion agent",
+      "started_at": "2026-04-27T13:12:13+00:00",
+      "completed_at": "2026-04-27T13:12:41+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/source_index.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/source_documents.json"
+      ],
+      "metrics": {
+        "source_count": 139,
+        "fetched_documents": 139
+      },
+      "note": ""
+    },
+    {
+      "agent_id": "evidence_normalizer",
+      "agent_name": "Evidence normalization agent",
+      "started_at": "2026-04-27T13:13:58+00:00",
+      "completed_at": "2026-04-27T13:13:58+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/raw_evidence.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/citation_graph.json"
+      ],
+      "metrics": {
+        "evidence_count": 612,
+        "claim_count": 612
+      },
+      "note": ""
+    },
+    {
+      "agent_id": "technical_validation",
+      "agent_name": "technical_validation",
+      "started_at": "2026-04-27T13:13:58+00:00",
+      "completed_at": "2026-04-27T13:15:18+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/technical_analysis.json"
+      ],
+      "metrics": {
+        "technical_status": "completed",
+        "checked_transactions": 1
+      },
+      "note": "Deterministic and semantic checks passed."
+    },
+    {
+      "agent_id": "llm_timeline_synthesizer",
+      "agent_name": "llm_timeline_synthesizer",
+      "started_at": "2026-04-27T13:15:18+00:00",
+      "completed_at": "2026-04-27T13:15:55+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/timeline.json"
+      ],
+      "metrics": {
+        "timeline_steps": 3
+      },
+      "note": ""
+    },
+    {
+      "agent_id": "llm_narrative_writer",
+      "agent_name": "llm_narrative_writer",
+      "started_at": "2026-04-27T13:15:18+00:00",
+      "completed_at": "2026-04-27T13:15:55+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/narrative.json"
+      ],
+      "metrics": {},
+      "note": ""
+    },
+    {
+      "agent_id": "dossier_assembler",
+      "agent_name": "Dossier composer agent",
+      "started_at": "2026-04-27T13:15:55+00:00",
+      "completed_at": "2026-04-27T13:17:54+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/quality_report.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/technical_analysis.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/augmented_incident.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/dashboard_view.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/report_inputs.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/incident_library_entry.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/analyst_report.json"
+      ],
+      "metrics": {
+        "completeness_score": 0.72
+      },
+      "note": ""
+    },
+    {
+      "agent_id": "quality_judge",
+      "agent_name": "QA judge agent",
+      "started_at": "2026-04-27T13:17:54+00:00",
+      "completed_at": "2026-04-27T13:17:54+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/quality_report.json"
+      ],
+      "metrics": {
+        "missing_field_count": 9
+      },
+      "note": "The dossier establishes the core incident facts with medium-high confidence: a ~$447K price manipulation attack on Veth's vETH/BIF market on November 14, 2024. Key attacker and transaction data are well-documented with multiple source corroboration. However, significant gaps remain in technical root cause analysis (Verichains explicitly notes 'unknown mechanism'), vulnerable contract identification, and fund flow tracing. The POC from DeFiHackLabs provides reproducibility but the underlying vulnerability mechanism requires deeper analysis. Suitable for demonstration with appropriate caveats about incomplete technical analysis."
+    }
+  ]
+}

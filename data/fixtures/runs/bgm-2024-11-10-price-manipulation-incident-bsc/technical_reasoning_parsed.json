@@ -1,0 +1,12 @@
+{
+  "attack_flow_summary": "",
+  "exploit_mechanism": "",
+  "tx_role_map": {},
+  "contract_role_map": {},
+  "timeline_steps": [],
+  "funds_flow_path": [],
+  "open_questions": [],
+  "confidence_notes": [
+    "Attacker contract (0x00c0f54d...) listed in unknown addresses but call graph shows it initiated flash loans, confirming its role. Two flash loans from separate PancakeV3Pool instances were taken simultaneously. Victim classified as PancakePair per contract inventory verification. Attack pattern consistent with price manipulation via flash-loan-funded swap operations against an AMM pair with manipulatable price oracle dependencies."
+  ]
+}

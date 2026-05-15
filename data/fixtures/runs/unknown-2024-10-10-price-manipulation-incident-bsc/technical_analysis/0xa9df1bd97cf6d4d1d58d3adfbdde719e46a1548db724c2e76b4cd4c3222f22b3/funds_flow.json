@@ -1,0 +1,112 @@
+{
+  "native_transfers": [
+    {
+      "from": "0x4645863205b47a0a3344684489e8c446a437d66c",
+      "to": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "value": 3050065320913977748,
+      "asset": "native"
+    }
+  ],
+  "token_transfers": [
+    {
+      "token": "0x55d398326f99059ff775485246999027b3197955",
+      "from": "0x92b7807bf19b7dddf89b706143896d05228f3121",
+      "to": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "value": 12000000000000000000000000
+    },
+    {
+      "token": "0x55d398326f99059ff775485246999027b3197955",
+      "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "to": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "value": 12000000000000000000000000
+    },
+    {
+      "token": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "from": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "to": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "value": 6735053427848041558630
+    },
+    {
+      "token": "0x9810512be701801954449408966c630595d0cd51",
+      "from": "0x0000000000000000000000000000000000000000",
+      "to": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "value": 60961921249934820691479
+    },
+    {
+      "token": "0x55d398326f99059ff775485246999027b3197955",
+      "from": "0xd5f07fed6ddca96c6e93f06498dfecf7e1346d7e",
+      "to": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "value": 20801440045608164984189
+    },
+    {
+      "token": "0x9810512be701801954449408966c630595d0cd51",
+      "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "to": "0xd5f07fed6ddca96c6e93f06498dfecf7e1346d7e",
+      "value": 21578592647575947411327
+    },
+    {
+      "token": "0x9810512be701801954449408966c630595d0cd51",
+      "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "to": "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a",
+      "value": 23629997161415323968091
+    },
+    {
+      "token": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "from": "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a",
+      "to": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "value": 12421323513597163913
+    },
+    {
+      "token": "0x9810512be701801954449408966c630595d0cd51",
+      "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "to": "0x03fed6ecf872a827c07eab63106e8f04aef79f0d",
+      "value": 15753331440943549312061
+    },
+    {
+      "token": "0x55d398326f99059ff775485246999027b3197955",
+      "from": "0x03fed6ecf872a827c07eab63106e8f04aef79f0d",
+      "to": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "value": 4719617398612016169843
+    },
+    {
+      "token": "0x55d398326f99059ff775485246999027b3197955",
+      "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "to": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "value": 25521057444220181154032
+    },
+    {
+      "token": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "from": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "to": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "value": 4586909724904617412
+    },
+    {
+      "token": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "to": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "value": 6730893593161537480035
+    },
+    {
+      "token": "0x55d398326f99059ff775485246999027b3197955",
+      "from": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "to": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "value": 12001200000000000000000000
+    },
+    {
+      "token": "0x55d398326f99059ff775485246999027b3197955",
+      "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "to": "0x92b7807bf19b7dddf89b706143896d05228f3121",
+      "value": 12001200000000000000000000
+    },
+    {
+      "token": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "to": "0x4645863205b47a0a3344684489e8c446a437d66c",
+      "value": 10168067925005859920
+    }
+  ],
+  "summary": {
+    "native_value_transfers": 1,
+    "token_transfers": 16
+  }
+}

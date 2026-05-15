@@ -1,0 +1,61 @@
+{
+  "incident_id": "unknown-2025-01-01-price-manipulation-incident-ethereum",
+  "chain": "Ethereum",
+  "generated_at": "2026-04-27T13:13:05+00:00",
+  "contracts": {
+    "0x2cad84c3d2e31bc6d630229901f421e6da5557ef": {
+      "address": "0x2cad84c3d2e31bc6d630229901f421e6da5557ef",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T13:13:03+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x55877cf2f24286dba2acb64311beca39728fbd10": {
+      "address": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T13:13:03+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0xb292678438245ec863f9fea64affcea887144240": {
+      "address": "0xb292678438245ec863f9fea64affcea887144240",
+      "role": "victim",
+      "classification": "verified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "admin_address": "",
+      "contract_name": "UniswapV2Pair",
+      "compiler_version": "v0.5.16+commit.9c3226ce",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2025-01-01-price-manipulation-incident-ethereum/technical_analysis/contracts/0xb292678438245ec863f9fea64affcea887144240/source.json",
+      "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2025-01-01-price-manipulation-incident-ethereum/technical_analysis/contracts/0xb292678438245ec863f9fea64affcea887144240/abi.json",
+      "fetched_at": "2026-04-27T13:13:05+00:00",
+      "fetch_errors": []
+    }
+  }
+}

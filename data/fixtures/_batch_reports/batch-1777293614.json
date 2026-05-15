@@ -1,0 +1,168 @@
+{
+  "summary": {
+    "total": 14,
+    "completed": 14,
+    "failed": 0,
+    "skipped": 0,
+    "dry_run": 0,
+    "qa_retry_triggered": 0,
+    "wall_time_s": 2640.9
+  },
+  "results": [
+    {
+      "incident_id": "unknown-bsc-2024-09-10",
+      "started_at": "2026-04-27T12:40:14+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/unknown-bsc-2024-09-10.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc",
+      "completeness_score": "see qa_retry",
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 291.4
+    },
+    {
+      "incident_id": "unknown-ethereum-2024-09-26",
+      "started_at": "2026-04-27T12:40:15+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/unknown-ethereum-2024-09-26.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum",
+      "completeness_score": "see qa_retry",
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 381.4
+    },
+    {
+      "incident_id": "unknown-ethereum-2024-10-01",
+      "started_at": "2026-04-27T12:45:06+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/unknown-ethereum-2024-10-01.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum",
+      "completeness_score": "see qa_retry",
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 275.3
+    },
+    {
+      "incident_id": "lavalending-arbitrum-2024-10-02",
+      "started_at": "2026-04-27T12:46:36+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/lavalending-arbitrum-2024-10-02.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum",
+      "completeness_score": "see qa_retry",
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 332.4
+    },
+    {
+      "incident_id": "unknown-ethereum-2024-10-06",
+      "started_at": "2026-04-27T12:52:08+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/unknown-ethereum-2024-10-06.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-06-price-manipulation-incident-ethereum",
+      "completeness_score": "see qa_retry",
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 225.3
+    },
+    {
+      "incident_id": "unknown-bsc-2024-10-05",
+      "started_at": "2026-04-27T12:49:41+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/unknown-bsc-2024-10-05.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc",
+      "completeness_score": "see qa_retry",
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 383.8
+    },
+    {
+      "incident_id": "unknown-bsc-2024-10-11",
+      "started_at": "2026-04-27T12:56:05+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/unknown-bsc-2024-10-11.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-11-price-manipulation-incident-bsc",
+      "completeness_score": "see qa_retry",
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 384.3
+    },
+    {
+      "incident_id": "unknown-base-2024-10-24",
+      "started_at": "2026-04-27T13:02:30+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/unknown-base-2024-10-24.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base",
+      "completeness_score": "see qa_retry",
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 234.0
+    },
+    {
+      "incident_id": "unknown-bsc-2024-10-10",
+      "started_at": "2026-04-27T12:55:54+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/unknown-bsc-2024-10-10.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc",
+      "completeness_score": "see qa_retry",
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 697.2
+    },
+    {
+      "incident_id": "unknown-arbitrum-2024-11-11",
+      "started_at": "2026-04-27T13:07:31+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/unknown-arbitrum-2024-11-11.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-11-11-price-manipulation-incident-arbitrum",
+      "completeness_score": "see qa_retry",
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 282.5
+    },
+    {
+      "incident_id": "bgm-bsc-2024-11-10",
+      "started_at": "2026-04-27T13:06:24+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/bgm-bsc-2024-11-10.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc",
+      "completeness_score": "see qa_retry",
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 386.0
+    },
+    {
+      "incident_id": "veth-ethereum-2024-11-14",
+      "started_at": "2026-04-27T13:12:13+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/veth-ethereum-2024-11-14.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum",
+      "completeness_score": "see qa_retry",
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 340.3
+    },
+    {
+      "incident_id": "unknown-ethereum-2025-01-01",
+      "started_at": "2026-04-27T13:12:50+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/unknown-ethereum-2025-01-01.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2025-01-01-price-manipulation-incident-ethereum",
+      "completeness_score": "see qa_retry",
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 328.4
+    },
+    {
+      "incident_id": "paribus-arbitrum-2025-01-18",
+      "started_at": "2026-04-27T13:17:54+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/paribus-arbitrum-2025-01-18.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/paribus-2025-01-18-price-manipulation-incident-arbitrum",
+      "completeness_score": "see qa_retry",
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 381.8
+    }
+  ],
+  "ran_at": "2026-04-27T13:24:16+00:00"
+}

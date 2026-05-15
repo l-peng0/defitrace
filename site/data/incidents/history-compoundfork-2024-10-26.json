@@ -1,0 +1,212 @@
+{
+  "incident_id": "history-compoundfork-2024-10-26",
+  "incident_library_entry": {
+    "incident_id": "history-compoundfork-2024-10-26",
+    "title": "CompoundFork",
+    "protocol_name": "CompoundFork",
+    "chain": "Unknown",
+    "incident_date": "2024-10-26",
+    "summary": "CompoundFork | Price Oracle Manipulation | $1 Million",
+    "status": "auto_collected_lead",
+    "completeness_score": 0.24,
+    "source_count": 1,
+    "direct_source_count": 1,
+    "secondary_source_count": 0,
+    "social_count": 0,
+    "poc_count": 0,
+    "explorer_count": 0,
+    "report_count": 1,
+    "missing_fields": [
+      "full_augmentation",
+      "fund_flow",
+      "evidence_chain"
+    ],
+    "last_updated": "2024-10-26",
+    "pattern_label": "price_manipulation",
+    "attack_tx_hashes": [],
+    "source_preview": [
+      "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f"
+    ],
+    "origin_type": "historical_source_snapshot"
+  },
+  "augmented_incident": {
+    "incident_id": "history-compoundfork-2024-10-26",
+    "title": "CompoundFork",
+    "incident_date": "2024-10-26",
+    "chain": "Unknown",
+    "protocol_name": "CompoundFork",
+    "status": "auto_collected_lead",
+    "summary": "",
+    "key_transactions": [],
+    "key_addresses": [],
+    "key_contracts": [],
+    "timeline": [
+      {
+        "label": "Incident collected from historical attack sources",
+        "summary": "This case was pulled into the library by the automatic discovery layer."
+      },
+      {
+        "label": "Ready for deeper augmentation",
+        "summary": "The system already has source links and basic summaries, but the full analyst pass has not been generated yet."
+      }
+    ],
+    "attacker_profile": {
+      "recent_activity_summary": "Only early source-level evidence is available so far. A fuller attacker profile needs the deeper augmentation pass."
+    },
+    "pattern_hypotheses": [
+      {
+        "label": "price_manipulation"
+      }
+    ],
+    "source_summary": {
+      "source_count": 1,
+      "direct_source_count": 1,
+      "secondary_source_count": 0
+    },
+    "quality_report": {
+      "completeness_score": 0.24,
+      "missing_fields": [
+        "full_augmentation",
+        "fund_flow",
+        "evidence_chain"
+      ]
+    }
+  },
+  "source_index": {
+    "sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f",
+        "source_type": "report",
+        "depth": 0,
+        "discovered_from": "discovery_sync",
+        "fetch_status": "not_fetched"
+      }
+    ]
+  },
+  "source_documents": {
+    "documents": []
+  },
+  "quality_report": {
+    "completeness_score": 0.24,
+    "direct_source_count": 1,
+    "secondary_source_count": 0,
+    "fetched_source_count": 0,
+    "citation_coverage_count": 0,
+    "missing_fields": [
+      "full_augmentation",
+      "fund_flow",
+      "evidence_chain"
+    ],
+    "judge_summary": "This incident is already in the automatic collection layer, but the deeper analyst report still needs a full augmentation pass."
+  },
+  "run_state": {
+    "current_stage": "auto_collected_lead",
+    "node_status": {},
+    "updated_at": "2024-10-26"
+  },
+  "run_events": {
+    "events": [
+      {
+        "stage": "discovery_sync",
+        "agent": "Discovery collectors",
+        "status": "completed",
+        "note": "This incident is visible because the automatic collectors already found it in historical source coverage."
+      }
+    ]
+  },
+  "agent_trace": {
+    "agents": [
+      {
+        "agent_name": "Discovery collectors",
+        "status": "completed",
+        "note": "Historical incident lead captured automatically."
+      }
+    ]
+  },
+  "analyst_report": {
+    "incident_id": "history-compoundfork-2024-10-26",
+    "report_type": "analyst_report",
+    "case_overview": {
+      "headline": "CompoundFork",
+      "what_happened": "The case currently has partial coverage and still needs analyst review.",
+      "why_it_matters": "This incident is already in the automatic collection layer, but the deeper analyst report still needs a full augmentation pass.",
+      "primary_sources": [
+        {
+          "source_id": "src-001",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f",
+          "source_type": "report",
+          "depth": 0,
+          "discovered_from": "discovery_sync",
+          "fetch_status": "not_fetched",
+          "note": "Primary source collected for the public case file."
+        }
+      ]
+    },
+    "attacker_profile": {
+      "summary": "Only early source-level evidence is available so far. A fuller attacker profile needs the deeper augmentation pass.",
+      "attacker_addresses": [],
+      "behavior_signals": []
+    },
+    "fund_flow": {
+      "summary": "The current public view only has a lightweight on-chain summary. A deeper fund-flow pass is still needed.",
+      "key_transactions": [],
+      "key_addresses": [],
+      "path": []
+    },
+    "exploit_path": {
+      "summary": "The exploit path still needs stronger reconstruction.",
+      "steps": [
+        {
+          "title": "Incident collected from historical attack sources",
+          "detail": "This case was pulled into the library by the automatic discovery layer.",
+          "evidence_refs": [],
+          "tx_hashes": []
+        },
+        {
+          "title": "Ready for deeper augmentation",
+          "detail": "The system already has source links and basic summaries, but the full analyst pass has not been generated yet.",
+          "evidence_refs": [],
+          "tx_hashes": []
+        }
+      ]
+    },
+    "evidence_chain": {
+      "summary": "The current case file keeps 1 public sources across 1 source types.",
+      "claims": [
+        {
+          "claim_id": "claim-overview",
+          "title": "Current public summary",
+          "statement": "The case still depends on an incomplete public summary.",
+          "confidence": 0.58,
+          "support": [
+            {
+              "source_id": "src-001",
+              "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f",
+              "source_type": "report",
+              "depth": 0,
+              "discovered_from": "discovery_sync",
+              "fetch_status": "not_fetched",
+              "note": "Supports the current public-facing summary."
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "src-001",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f",
+          "source_type": "report",
+          "depth": 0,
+          "discovered_from": "discovery_sync",
+          "fetch_status": "not_fetched"
+        }
+      ]
+    },
+    "open_questions": [
+      "full_augmentation",
+      "fund_flow",
+      "evidence_chain"
+    ]
+  }
+}

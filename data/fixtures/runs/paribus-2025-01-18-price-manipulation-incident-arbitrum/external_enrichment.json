@@ -1,0 +1,3187 @@
+{
+  "tx_hash": "0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2",
+  "chain": "arbitrum",
+  "fetched_at": "2026-05-01T09:51:26Z",
+  "source": "external_explorer_explorer",
+  "endpoints": {
+    "explorer/v2/onchain/tx/basic-info": {
+      "baseFee": "0.020582",
+      "blockNumber": 296699667,
+      "calldata": "0x8c0d14e8000000000000000000000000000000000000000000000000000002d031abf8ed",
+      "chainId": 42161,
+      "codeAuthorities": [],
+      "eventCount": 63,
+      "featureStatus": {
+        "debug": 0,
+        "simulation": 0,
+        "stateChange": 0,
+        "storageTrace": 0
+      },
+      "formatValue": "0",
+      "gasLimit": 12534878,
+      "gasPrice": "0.061875",
+      "gasUsed": 10432495,
+      "intTxnCount": 1263,
+      "maxFee": "0",
+      "nonce": 15,
+      "priorityFee": "0",
+      "receiver": "0xbd4786f93ceef3dd73600ebe0b0bdccca2f7d37c",
+      "revertMessage": "",
+      "sender": "0x5af00b07007cc1349794df5b2c15528237648035",
+      "sourceTxnHash": "0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2",
+      "status": true,
+      "timestamp": 1737200705000,
+      "transactionFee": "0.000645510628125",
+      "txnHash": "0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2",
+      "txnIndex": 7,
+      "type": 0,
+      "value": "0"
+    },
+    "explorer/v2/onchain/tx/address-label": {
+      "labels": [
+        {
+          "address": "0x0000000000000000000000000000000000000001",
+          "label": "Precompiled"
+        },
+        {
+          "address": "0x0000000000000000000000000000000000000002",
+          "label": "Precompiled"
+        },
+        {
+          "address": "0x0000000000000000000000000000000000000003",
+          "label": "Precompiled"
+        },
+        {
+          "address": "0x0000000000000000000000000000000000000004",
+          "label": "Precompiled"
+        },
+        {
+          "address": "0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15",
+          "label": "ALGB-POS"
+        },
+        {
+          "address": "0x03ae45a78fb44cda83746faa0314741c88a63306",
+          "label": "AlgebraSingleAssetOracle"
+        },
+        {
+          "address": "0x1983e765eff3de9073debe91ff7bdfcb14918662",
+          "label": "ComptrollerNFTPart2"
+        },
+        {
+          "address": "0x1a3c9b1d2f0529d97f2afc5136cc23e58f1fd35b",
+          "label": "Camelot: Factory V3"
+        },
+        {
+          "address": "0x1be1798b70aee431c2986f7ff48d9d1fa350786a",
+          "label": "ATOKEN_IMPL"
+        },
+        {
+          "address": "0x1c762e00f1d9317a4214d22b2576995c427f61c9",
+          "label": "pWBTC"
+        },
+        {
+          "address": "0x1f721e2e82f6676fce4ea07a5958cf098d339e18",
+          "label": "Camelot: Router v3"
+        },
+        {
+          "address": "0x25874cc60cbf7495b7cd1fa724178d251cfad5a8",
+          "label": "Camelot : Algebra Pool"
+        },
+        {
+          "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+          "label": "WBTC"
+        },
+        {
+          "address": "0x3607e46698d218b3a5cae44bf381475c0a5e2ca7",
+          "label": "0x3607_AccessControlledOffchainAggregator"
+        },
+        {
+          "address": "0x3f3f5df88dc9f13eac63df89ec16ef6e7e25dde7",
+          "label": "0x3f3f_EACAggregatorProxy"
+        },
+        {
+          "address": "0x3f770ac673856f105b586bb393d122721265ad46",
+          "label": "StandardArbERC20"
+        },
+        {
+          "address": "0x429f16dba3b9e1900087cbaa7b50d38bc60fb73f",
+          "label": "DefaultReserveInterestRateStrategyV2"
+        },
+        {
+          "address": "0x46de66f10343b59bacc37df9b3f67cd0ccc121a3",
+          "label": "0x46de_AccessControlledOffchainAggregator"
+        },
+        {
+          "address": "0x4e4301df3cdb81e58535aed22218fc74bc0c928a",
+          "label": "0x4e43_JumpRateModelV2"
+        },
+        {
+          "address": "0x5969efdde3cf5c0d9a88ae51e47d721096a97203",
+          "label": "UniswapV3Pool"
+        },
+        {
+          "address": "0x5e76e98e0963ecdc6a065d1435f84065b7523f39",
+          "label": "VARIABLE_DEBT_TOKEN_IMPL"
+        },
+        {
+          "address": "0x639fe6ab55c921f74e7fac1ee960c0b6293ba612",
+          "label": "0x639f_EACAggregatorProxy"
+        },
+        {
+          "address": "0x6ab707aca953edaefbc4fd23ba73294241490620",
+          "label": "aArbUSDT"
+        },
+        {
+          "address": "0x724e4c7a72bc285e0d602222f7e220e5eaf347e5",
+          "label": "PNFPCamelotDelegate"
+        },
+        {
+          "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
+          "label": "Aave: Pool V3"
+        },
+        {
+          "address": "0x7a7ef57479123f26db6a0e3efbf8a3562edd65be",
+          "label": "L2PoolInstance"
+        },
+        {
+          "address": "0x7e4efaa9fdc6317e7b86859844d65df8c6cdad79",
+          "label": "DataStorageOperator"
+        },
+        {
+          "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "label": "WETH"
+        },
+        {
+          "address": "0x8b194beae1d3e0788a1a35173978001acdfba668",
+          "label": "RKA"
+        },
+        {
+          "address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+          "label": "ARB"
+        },
+        {
+          "address": "0xa185a8c0929d473f2d0d2a132c4464fc01380bce",
+          "label": "ArbitrumPriceOracle"
+        },
+        {
+          "address": "0xa26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+          "label": "pCNFP-PBX-USDT"
+        },
+        {
+          "address": "0xa72636cbcaa8f5ff95b2cc47f3cdee83f3294a0b",
+          "label": "Aave: ACL Manager V3"
+        },
+        {
+          "address": "0xa82c5a70f7ebec779ae307017e7cd39b46ac4e99",
+          "label": "0xa82c_JumpRateModelV2"
+        },
+        {
+          "address": "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
+          "label": "Aave: Pool Addresses Provider V3"
+        },
+        {
+          "address": "0xaffd437801434643b734d0b2853654876f66f7d7",
+          "label": "pETH"
+        },
+        {
+          "address": "0xb20bd22d3d2e5a628523d37b3ded569598eb649b",
+          "label": "0xb20b_AccessControlledOffchainAggregator"
+        },
+        {
+          "address": "0xb2a824043730fe05f3da2efafa1cbbe83fa548d6",
+          "label": "0xb2a8_EACAggregatorProxy"
+        },
+        {
+          "address": "0xb32381fefff45ee9f47fd2f2cf83c832637d6ef0",
+          "label": "FlashLoanLogic"
+        },
+        {
+          "address": "0xb8d6b7e2b1e6c84aeddd56909636107ea122d589",
+          "label": "ParibusOracleDelegatePatched"
+        },
+        {
+          "address": "0xbad58ed9b5f26a002ea250d7a60dc6729a4a2403",
+          "label": "PBX"
+        },
+        {
+          "address": "0xc1303bbbaf172c55848d3cb91606d8e27ff38428",
+          "label": "ArbitrumSequencerUptimeFeed"
+        },
+        {
+          "address": "0xc4ed0a9ea70d5bcc69f748547650d32cc219d882",
+          "label": "L2ArbitrumToken"
+        },
+        {
+          "address": "0xc8be723395f6b1f51886947ccae731a36df615ba",
+          "label": "ParibusOracleDelegator"
+        },
+        {
+          "address": "0xcb35fe6e53e71b30301ec4a3948da4ad3c65ace4",
+          "label": "0xcb35_AccessControlledOffchainAggregator"
+        },
+        {
+          "address": "0xce7c7ddfb748a1cfc34fb1ca97871f7086f2e09a",
+          "label": "0xce7c_JumpRateModelV2"
+        },
+        {
+          "address": "0xd0c7101eacbb49f3decccc166d238410d6d46d57",
+          "label": "0xd0c7_EACAggregatorProxy"
+        },
+        {
+          "address": "0xd1035fef2eff629606579ed5ef8c39804ddf9442",
+          "label": "0xd103_JumpRateModelV2"
+        },
+        {
+          "address": "0xdc799ce667171cdaa1382dbf349aead225bcc530",
+          "label": "ComptrollerNFTPart1"
+        },
+        {
+          "address": "0xe592427a0aece92de3edee1f18e0157c05861564",
+          "label": "Uniswap V3: Router"
+        },
+        {
+          "address": "0xe72ba9418b5f2ce0a6a40501fe77c6839aa37333",
+          "label": "UpgradeableBeacon"
+        },
+        {
+          "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "label": "Ether"
+        },
+        {
+          "address": "0xf31e1ae27e7cd057c1d6795a5a083e0453d39b50",
+          "label": "USDC"
+        },
+        {
+          "address": "0xfb00ac187a8eb5afae4eace434f493eb62672df7",
+          "label": "variableDebtArbUSDT"
+        },
+        {
+          "address": "0xfb1dcfc67cc496eb0cc592050af7fdf3bf3b5c13",
+          "label": "pUSDT"
+        },
+        {
+          "address": "0xfc2737a742a741d13fe6326011a78cd881de3eb9",
+          "label": "pARB"
+        },
+        {
+          "address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "label": "USD\u20ae0"
+        },
+        {
+          "address": "0xfdb631f5ee196f0ed6faa767959853a9f217697d",
+          "label": "0xfdb6_EACAggregatorProxy"
+        }
+      ]
+    },
+    "explorer/v2/onchain/tx/fundflow": {
+      "transfers": [
+        {
+          "amount": "3,093,209.807085",
+          "from": "0x6ab707aca953edaefbc4fd23ba73294241490620",
+          "id": 1,
+          "isReverted": false,
+          "to": "0xbd4786f93ceef3dd73600ebe0b0bdccca2f7d37c",
+          "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "tokenType": 1
+        },
+        {
+          "amount": "3,093,209.807085",
+          "from": "0xbd4786f93ceef3dd73600ebe0b0bdccca2f7d37c",
+          "id": 2,
+          "isReverted": false,
+          "to": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "tokenType": 1
+        },
+        {
+          "amount": "31,170,612.93178498905708689",
+          "from": "0x25874cc60cbf7495b7cd1fa724178d251cfad5a8",
+          "id": 3,
+          "isReverted": false,
+          "to": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "token": "0xbad58ed9b5f26a002ea250d7a60dc6729a4a2403",
+          "tokenType": 1
+        },
+        {
+          "amount": "1,500,000",
+          "from": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "id": 4,
+          "isReverted": false,
+          "to": "0x25874cc60cbf7495b7cd1fa724178d251cfad5a8",
+          "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "tokenType": 1
+        },
+        {
+          "amount": "2,109.899868",
+          "from": "0x25874cc60cbf7495b7cd1fa724178d251cfad5a8",
+          "id": 5,
+          "isReverted": false,
+          "to": "0x58095979b412a366687ca05cbe85ff56241be21f",
+          "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "tokenType": 1
+        },
+        {
+          "amount": "31,170,612.93178498905708689",
+          "from": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "id": 6,
+          "isReverted": false,
+          "to": "0x25874cc60cbf7495b7cd1fa724178d251cfad5a8",
+          "token": "0xbad58ed9b5f26a002ea250d7a60dc6729a4a2403",
+          "tokenType": 1
+        },
+        {
+          "amount": "1",
+          "from": "0x0000000000000000000000000000000000000000",
+          "id": 7,
+          "isReverted": false,
+          "to": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "token": "0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15",
+          "tokenId": "224,023",
+          "tokenType": 2
+        },
+        {
+          "amount": "1",
+          "from": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "id": 8,
+          "isReverted": false,
+          "to": "0xa26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+          "token": "0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15",
+          "tokenId": "224,023",
+          "tokenType": 2
+        },
+        {
+          "amount": "1",
+          "from": "0x0000000000000000000000000000000000000000",
+          "id": 9,
+          "isReverted": false,
+          "to": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "token": "0xa26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+          "tokenId": "224,023",
+          "tokenType": 2
+        },
+        {
+          "amount": "12.599960598441767978",
+          "from": "0xaffd437801434643b734d0b2853654876f66f7d7",
+          "id": 10,
+          "isReverted": false,
+          "to": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "token": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "tokenType": 0
+        },
+        {
+          "amount": "6,510.273280264926258675",
+          "from": "0xfc2737a742a741d13fe6326011a78cd881de3eb9",
+          "id": 11,
+          "isReverted": false,
+          "to": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+          "tokenType": 1
+        },
+        {
+          "amount": "0.36729789",
+          "from": "0x1c762e00f1d9317a4214d22b2576995c427f61c9",
+          "id": 12,
+          "isReverted": false,
+          "to": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+          "tokenType": 1
+        },
+        {
+          "amount": "3,924.210566",
+          "from": "0xfb1dcfc67cc496eb0cc592050af7fdf3bf3b5c13",
+          "id": 13,
+          "isReverted": false,
+          "to": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "tokenType": 1
+        },
+        {
+          "amount": "1,469,993.322718",
+          "from": "0x25874cc60cbf7495b7cd1fa724178d251cfad5a8",
+          "id": 14,
+          "isReverted": false,
+          "to": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "tokenType": 1
+        },
+        {
+          "amount": "65,478.313180276745039251",
+          "from": "0x25874cc60cbf7495b7cd1fa724178d251cfad5a8",
+          "id": 15,
+          "isReverted": false,
+          "to": "0x58095979b412a366687ca05cbe85ff56241be21f",
+          "token": "0xbad58ed9b5f26a002ea250d7a60dc6729a4a2403",
+          "tokenType": 1
+        },
+        {
+          "amount": "37,912.265247",
+          "from": "0x5969efdde3cf5c0d9a88ae51e47d721096a97203",
+          "id": 16,
+          "isReverted": false,
+          "to": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "tokenType": 1
+        },
+        {
+          "amount": "0.36729789",
+          "from": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "id": 17,
+          "isReverted": false,
+          "to": "0x5969efdde3cf5c0d9a88ae51e47d721096a97203",
+          "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+          "tokenType": 1
+        },
+        {
+          "amount": "3,105,039.605616",
+          "from": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "id": 18,
+          "isReverted": false,
+          "to": "0xbd4786f93ceef3dd73600ebe0b0bdccca2f7d37c",
+          "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "tokenType": 1
+        },
+        {
+          "amount": "12.599960598441767978",
+          "from": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "id": 19,
+          "isReverted": false,
+          "to": "0x5af00b07007cc1349794df5b2c15528237648035",
+          "token": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "tokenType": 0
+        },
+        {
+          "amount": "3,094,756.411989",
+          "from": "0xbd4786f93ceef3dd73600ebe0b0bdccca2f7d37c",
+          "id": 20,
+          "isReverted": false,
+          "to": "0x6ab707aca953edaefbc4fd23ba73294241490620",
+          "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "tokenType": 1
+        }
+      ]
+    },
+    "explorer/v2/onchain/tx/balance-change": {
+      "balanceChanges": [
+        {
+          "account": "0x5af00b07007cc1349794df5b2c15528237648035",
+          "assets": [
+            {
+              "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+              "amount": "12.599960598441767978",
+              "iconUrl": "https://assets.external_explorer.com/icon/f3d84cc6-af93-4f50-929e-5d7b0446a7e8.svg",
+              "sign": true,
+              "tokenType": 0,
+              "value": "41746.05589517"
+            }
+          ],
+          "extremum": true,
+          "sign": true,
+          "totalValue": "41746.05589517"
+        },
+        {
+          "account": "0xbd4786f93ceef3dd73600ebe0b0bdccca2f7d37c",
+          "assets": [
+            {
+              "address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+              "amount": "10283.193627",
+              "iconUrl": "https://assets.external_explorer.com/icon/fcea71f3193ce895be44bfdf941f7e4c9381dd587f273c2d1a27f1263d84e4ea.png",
+              "sign": true,
+              "tokenType": 1,
+              "value": "10285.66159347"
+            }
+          ],
+          "extremum": false,
+          "sign": true,
+          "totalValue": "10285.66159347"
+        },
+        {
+          "account": "0x0000000000000000000000000000000000000000",
+          "assets": [
+            {
+              "address": "0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15",
+              "amount": "1",
+              "iconUrl": "",
+              "sign": false,
+              "tokenId": "224023",
+              "tokenType": 2,
+              "value": "0"
+            },
+            {
+              "address": "0xa26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+              "amount": "1",
+              "iconUrl": "",
+              "sign": false,
+              "tokenId": "224023",
+              "tokenType": 2,
+              "value": "0"
+            }
+          ],
+          "extremum": false,
+          "sign": true,
+          "totalValue": "0"
+        },
+        {
+          "account": "0x1c762e00f1d9317a4214d22b2576995c427f61c9",
+          "assets": [
+            {
+              "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+              "amount": "0.36729789",
+              "iconUrl": "https://assets.external_explorer.com/icon/c352ec258d2ee5bf546238677871879bb19f5d6d814089396706c81f3984cefc.png",
+              "sign": false,
+              "tokenType": 1,
+              "value": "37918.05317346"
+            }
+          ],
+          "extremum": false,
+          "sign": false,
+          "totalValue": "37918.05317346"
+        },
+        {
+          "account": "0x25874cc60cbf7495b7cd1fa724178d251cfad5a8",
+          "assets": [
+            {
+              "address": "0xbad58ed9b5f26a002ea250d7a60dc6729a4a2403",
+              "amount": "65478.313180276745039251",
+              "iconUrl": "https://assets.coingecko.com/coins/images/18410/thumb/paribus.PNG?1696517900",
+              "sign": false,
+              "tokenType": 1,
+              "value": "41.32217595"
+            },
+            {
+              "address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+              "amount": "27896.777414",
+              "iconUrl": "https://assets.external_explorer.com/icon/fcea71f3193ce895be44bfdf941f7e4c9381dd587f273c2d1a27f1263d84e4ea.png",
+              "sign": true,
+              "tokenType": 1,
+              "value": "27903.47264057"
+            }
+          ],
+          "extremum": false,
+          "sign": true,
+          "totalValue": "27862.15046462"
+        },
+        {
+          "account": "0x58095979b412a366687ca05cbe85ff56241be21f",
+          "assets": [
+            {
+              "address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+              "amount": "2109.899868",
+              "iconUrl": "https://assets.external_explorer.com/icon/fcea71f3193ce895be44bfdf941f7e4c9381dd587f273c2d1a27f1263d84e4ea.png",
+              "sign": true,
+              "tokenType": 1,
+              "value": "2110.40624396"
+            },
+            {
+              "address": "0xbad58ed9b5f26a002ea250d7a60dc6729a4a2403",
+              "amount": "65478.313180276745039251",
+              "iconUrl": "https://assets.coingecko.com/coins/images/18410/thumb/paribus.PNG?1696517900",
+              "sign": true,
+              "tokenType": 1,
+              "value": "75.56011107"
+            }
+          ],
+          "extremum": false,
+          "sign": true,
+          "totalValue": "2185.9663550300000001"
+        },
+        {
+          "account": "0x5969efdde3cf5c0d9a88ae51e47d721096a97203",
+          "assets": [
+            {
+              "address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+              "amount": "37912.265247",
+              "iconUrl": "https://assets.external_explorer.com/icon/fcea71f3193ce895be44bfdf941f7e4c9381dd587f273c2d1a27f1263d84e4ea.png",
+              "sign": false,
+              "tokenType": 1,
+              "value": "37921.36419066"
+            },
+            {
+              "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+              "amount": "0.36729789",
+              "iconUrl": "https://assets.external_explorer.com/icon/c352ec258d2ee5bf546238677871879bb19f5d6d814089396706c81f3984cefc.png",
+              "sign": true,
+              "tokenType": 1,
+              "value": "37918.05317345"
+            }
+          ],
+          "extremum": false,
+          "sign": false,
+          "totalValue": "3.3110172099999992668"
+        },
+        {
+          "account": "0x6ab707aca953edaefbc4fd23ba73294241490620",
+          "assets": [
+            {
+              "address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+              "amount": "1546.604904",
+              "iconUrl": "https://assets.external_explorer.com/icon/fcea71f3193ce895be44bfdf941f7e4c9381dd587f273c2d1a27f1263d84e4ea.png",
+              "sign": true,
+              "tokenType": 1,
+              "value": "1546.97608917"
+            }
+          ],
+          "extremum": false,
+          "sign": true,
+          "totalValue": "1546.97608917"
+        },
+        {
+          "account": "0xa26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+          "assets": [
+            {
+              "address": "0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15",
+              "amount": "1",
+              "iconUrl": "",
+              "sign": true,
+              "tokenId": "224023",
+              "tokenType": 2,
+              "value": "0"
+            }
+          ],
+          "extremum": false,
+          "sign": true,
+          "totalValue": "0"
+        },
+        {
+          "account": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "assets": [
+            {
+              "address": "0xa26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+              "amount": "1",
+              "iconUrl": "",
+              "sign": true,
+              "tokenId": "224023",
+              "tokenType": 2,
+              "value": "0"
+            },
+            {
+              "address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+              "amount": "6510.273280264926258675",
+              "iconUrl": "https://assets.external_explorer.com/icon/7f6a46a5986b40212efe533e9172c6ef94bd7276a97c44613fd1b4041e657b61.png",
+              "sign": true,
+              "tokenType": 1,
+              "value": "5069.51217396"
+            }
+          ],
+          "extremum": false,
+          "sign": true,
+          "totalValue": "5069.51217396"
+        },
+        {
+          "account": "0xaffd437801434643b734d0b2853654876f66f7d7",
+          "assets": [
+            {
+              "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+              "amount": "12.599960598441767978",
+              "iconUrl": "https://assets.external_explorer.com/icon/f3d84cc6-af93-4f50-929e-5d7b0446a7e8.svg",
+              "sign": false,
+              "tokenType": 0,
+              "value": "41746.05589518"
+            }
+          ],
+          "extremum": true,
+          "sign": false,
+          "totalValue": "41746.05589518"
+        },
+        {
+          "account": "0xfb1dcfc67cc496eb0cc592050af7fdf3bf3b5c13",
+          "assets": [
+            {
+              "address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+              "amount": "3924.210566",
+              "iconUrl": "https://assets.external_explorer.com/icon/fcea71f3193ce895be44bfdf941f7e4c9381dd587f273c2d1a27f1263d84e4ea.png",
+              "sign": false,
+              "tokenType": 1,
+              "value": "3925.15237654"
+            }
+          ],
+          "extremum": false,
+          "sign": false,
+          "totalValue": "3925.15237654"
+        },
+        {
+          "account": "0xfc2737a742a741d13fe6326011a78cd881de3eb9",
+          "assets": [
+            {
+              "address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+              "amount": "6510.273280264926258675",
+              "iconUrl": "https://assets.external_explorer.com/icon/7f6a46a5986b40212efe533e9172c6ef94bd7276a97c44613fd1b4041e657b61.png",
+              "sign": false,
+              "tokenType": 1,
+              "value": "5069.51217397"
+            }
+          ],
+          "extremum": false,
+          "sign": false,
+          "totalValue": "5069.51217397"
+        }
+      ]
+    },
+    "explorer/v2/onchain/tx/token-info": {
+      "tokenInfos": [
+        {
+          "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+          "decimals": 8
+        },
+        {
+          "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "decimals": 18
+        },
+        {
+          "address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+          "decimals": 18
+        },
+        {
+          "address": "0xbad58ed9b5f26a002ea250d7a60dc6729a4a2403",
+          "decimals": 18
+        },
+        {
+          "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "decimals": 18
+        },
+        {
+          "address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "decimals": 6
+        }
+      ]
+    },
+    "explorer/v2/onchain/tx/state-change": {
+      "stateChanges": [
+        {
+          "address": "0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15",
+          "slots": [
+            {
+              "current": "0x000000000000000000000000a26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+              "key": "0x405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bc67d1",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000036b17",
+              "key": "0x405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bc67d0",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000003",
+              "key": "0x35a1eb3b1f5c9f70b06530352f4cf9c8d80dca181d3435b0f0d9d9c5f7f73f94",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000002"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000003",
+              "key": "0x6835d48a24e02e366d1e54aa0bdafc0f1cdeeb880436bd5a56c0828f67d0b5ea",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000003a10a5bd8b1534e0d4670f2b99000000000000000000090",
+              "key": "0x8cb0e451e459b099d46c817ed6f16af958c5ed5346e32efab7aea1235f6ec542",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000008682",
+              "key": "0x2de864b1360068676c7092240c7fdf4732fad2c5982e49ca6b5b1de084c97c2f",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000008682",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000002",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000008681"
+            },
+            {
+              "current": "0x0000000000000000037700000000000000000000000000000000000000036b18",
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000d",
+              "prev": "0x0000000000000000037700000000000000000000000000000000000000036b17"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000036b17",
+              "key": "0x84ed2b81cd437f1f60ce1f6948ca24d926b601d40d244e6e043b89fec7a4211f",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            }
+          ],
+          "variables": [
+            {
+              "name": "_tokenOwners",
+              "type": "struct EnumerableMap.UintToAddressMap",
+              "value": {
+                "fields": [
+                  {
+                    "name": "_inner",
+                    "type": "struct EnumerableMap.Map",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "_entries",
+                          "type": "struct EnumerableMap.MapEntry[]",
+                          "value": {
+                            "elemType": "struct EnumerableMap.MapEntry",
+                            "elems": [
+                              {
+                                "index": 34433,
+                                "value": {
+                                  "fields": [
+                                    {
+                                      "name": "_key",
+                                      "type": "bytes32",
+                                      "value": {
+                                        "current": "0x0000000000000000000000000000000000000000000000000000000000036b17",
+                                        "prev": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                                        "typeTag": 1
+                                      }
+                                    },
+                                    {
+                                      "name": "_value",
+                                      "type": "bytes32",
+                                      "value": {
+                                        "current": "0x000000000000000000000000a26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+                                        "prev": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                                        "typeTag": 1
+                                      }
+                                    }
+                                  ],
+                                  "typeTag": 3
+                                }
+                              }
+                            ],
+                            "typeTag": 2
+                          }
+                        },
+                        {
+                          "name": "_indexes",
+                          "type": "mapping(bytes32 => uint256)",
+                          "value": {
+                            "kvs": [
+                              {
+                                "key": "0x0000000000000000000000000000000000000000000000000000000000036b17",
+                                "value": {
+                                  "current": "34434",
+                                  "prev": "0",
+                                  "typeTag": 1
+                                }
+                              }
+                            ],
+                            "typeTag": 4
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  }
+                ],
+                "typeTag": 3
+              }
+            },
+            {
+              "name": "_nextId",
+              "type": "uint176",
+              "value": {
+                "current": "224024",
+                "prev": "224023",
+                "typeTag": 1
+              }
+            },
+            {
+              "name": "_positions",
+              "type": "mapping(uint256 => struct NonfungiblePositionManager.Position)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "224023",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "poolId",
+                          "type": "uint80",
+                          "value": {
+                            "current": "144",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "tickLower",
+                          "type": "int24",
+                          "value": {
+                            "current": "-870000",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "tickUpper",
+                          "type": "int24",
+                          "value": {
+                            "current": "870000",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "liquidity",
+                          "type": "uint128",
+                          "value": {
+                            "current": "261501642958000974",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "_holderTokens",
+              "type": "mapping(address => struct EnumerableSet.UintSet)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0xa26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "_inner",
+                          "type": "struct EnumerableSet.Set",
+                          "value": {
+                            "fields": [
+                              {
+                                "name": "_values",
+                                "type": "bytes32[]",
+                                "value": {
+                                  "elemType": "bytes32",
+                                  "elems": [
+                                    {
+                                      "index": 2,
+                                      "value": {
+                                        "current": "0x0000000000000000000000000000000000000000000000000000000000036b17",
+                                        "prev": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                                        "typeTag": 1
+                                      }
+                                    }
+                                  ],
+                                  "typeTag": 2
+                                }
+                              },
+                              {
+                                "name": "_indexes",
+                                "type": "mapping(bytes32 => uint256)",
+                                "value": {
+                                  "kvs": [
+                                    {
+                                      "key": "0x0000000000000000000000000000000000000000000000000000000000036b17",
+                                      "value": {
+                                        "current": "3",
+                                        "prev": "0",
+                                        "typeTag": 1
+                                      }
+                                    }
+                                  ],
+                                  "typeTag": 4
+                                }
+                              }
+                            ],
+                            "typeTag": 3
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            }
+          ]
+        },
+        {
+          "address": "0x1c762e00f1d9317a4214d22b2576995c427f61c9",
+          "slots": [
+            {
+              "current": "0x00000000000000000000000000000000000000000000000000000000023073bd",
+              "key": "0x9eb54dbc4905b4deea0f5795714f4f0857eba2479785235deb7af8895179d53e",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000000000000000214ae9bbf961d6f1",
+              "key": "0x9eb54dbc4905b4deea0f5795714f4f0857eba2479785235deb7af8895179d53f",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x00000000000000000000000000000000000000000000000000000000004ceba3",
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000c",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000039b16"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000004c3b2ef",
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000b",
+              "prev": "0x000000000000000000000000000000000000000000000000000000000124ac71"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000011af4713",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000009",
+              "prev": "0x00000000000000000000000000000000000000000000000000000000014a3d6d"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000000000000000214ae9bbf961d6f1",
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000a",
+              "prev": "0x0000000000000000000000000000000000000000000000000ec7c274394ec2df"
+            }
+          ],
+          "variables": []
+        },
+        {
+          "address": "0x25874cc60cbf7495b7cd1fa724178d251cfad5a8",
+          "slots": [
+            {
+              "current": "0x000000000000000000000000000000000000000808b5ad5f4bfe4ecfcff51948",
+              "key": "0xb5df17aacb14c9a833fa32c467b08a919251dbad63280d90143d2f632ce73093",
+              "prev": "0x00000000000000000000000000000000000000000261228476dc4b9cc2aca867"
+            },
+            {
+              "current": "0x00000000000000000000000000007cf07ae18e63807fbb7d7d01fad2a56bf298",
+              "key": "0x005e34e40a25c6210b3c62d94bfa447cae8acbb687be1a3623850f1bd3ba7cfc",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x00000000000000000000000000148700de4347187087835a80429d822d62d96c",
+              "key": "0x87047b9757dd49a3c779b0286917e24078174a8f92b1c90bf1bfedfa42d5f7a9",
+              "prev": "0x0000000000000000000000000003361a0dc8dff4385ca22281e18d0c28c18624"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000006141442c0041dfb5b069137c75",
+              "key": "0x25a8fcb9a2bd001da2e9d5b4fb0f080ae2cf230b3e90312dbaff2813d08f2695",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000006a4c89e8fab97e0f46cfef0cb6",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000001",
+              "prev": "0x00000000000000000000000000000000000000080617fc276e56de397178009c"
+            },
+            {
+              "current": "0x0100000000000000000000000000000000000000000000000000000000000000",
+              "key": "0xdd450c159659e4ee77dddd1da4d5fb5783aaa28eff99b6c4520e5b77190d6c72",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000017bd1aec0c270ca8e4257d02242a8e56245f90",
+              "key": "0x49712ff4b4caf661c2a96caeacedd89fda8893aee2ff406deab1fc86fe5a65d7",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x01678b94410000000000000000625ed8f7e0c22570e6322ee4fff2e34ffe59ec",
+              "key": "0x49712ff4b4caf661c2a96caeacedd89fda8893aee2ff406deab1fc86fe5a65d9",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x01678b94410000000000000000625ed8f7e0c22570e6322ee4fff2e34ffe59ec",
+              "key": "0x00687d29198eadc0987c537ff3c402c74a1d9cc9903c052eeec0613b98a7adb9",
+              "prev": "0x0100000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0xfffffffffffffffffc5ef5a4274eacb2000000000000000003a10a5bd8b1534e",
+              "key": "0xdd450c159659e4ee77dddd1da4d5fb5783aaa28eff99b6c4520e5b77190d6c6f",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000017bd1aec0c270ca8e4257d02242a8e56245f90",
+              "key": "0xdf0c6ec59fa5e1c55522378944a26ff3c0d357f96f3c95dc5d0db660e43cb962",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000006a4c89e8fab97e0f46cfef0cb6",
+              "key": "0x49712ff4b4caf661c2a96caeacedd89fda8893aee2ff406deab1fc86fe5a65d8",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x01678b94410000000000000000625ed8f7e0c22570e6322ee4fff2e34ffe59ec",
+              "key": "0xdf0c6ec59fa5e1c55522378944a26ff3c0d357f96f3c95dc5d0db660e43cb964",
+              "prev": "0x0100000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000017bd1aec0c270ca8e4257d02242a8e56245f90",
+              "key": "0x3b1b275caedb5ba0eb6e05bba01e4a77b2efe9a1dbc90f280a9a130133b731aa",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x01675cd12700000000000000005b35401931ea9a74ee3bea37fff3dad67c2ec4",
+              "key": "0x87047b9757dd49a3c779b0286917e24078174a8f92b1c90bf1bfedfa42d5f7ab",
+              "prev": "0x01002ec31a0000000000000000072998deaed78afbf7f644adffff0879822b28"
+            },
+            {
+              "current": "0x0000000000000000000000000001000000000000000000000000000000000000",
+              "key": "0xfd582d324d23241b49d85505055e723a2ad95e7b9d475efc62355780e93d03f4",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000000000000678b9441000000000000000003a10a5bd8b1534e",
+              "key": "0xdc9b2a9c94789d11ea93cd284ac056c2d7a7e66c3b6f86134a57af28c970e93a",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x00000000000000000000000000000000000000084361108c3929803fc7becaa9",
+              "key": "0xdf0c6ec59fa5e1c55522378944a26ff3c0d357f96f3c95dc5d0db660e43cb963",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000012231f7632a4f3475800000000000000000f30f4b41d3ac074",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000003",
+              "prev": "0x0000000000000000042241f059f27507000000000000000006797bd0a53d8087"
+            },
+            {
+              "current": "0x000000000000000003a10a5bd8b1534e000000000000000003a10a5bd8b1534e",
+              "key": "0x49712ff4b4caf661c2a96caeacedd89fda8893aee2ff406deab1fc86fe5a65d6",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000008355977b5a0af02e9a95fe9c7",
+              "key": "0x00687d29198eadc0987c537ff3c402c74a1d9cc9903c052eeec0613b98a7adb8",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000017a4ffe70742601488a0ff1ee22732759ac3de",
+              "key": "0xb5df17aacb14c9a833fa32c467b08a919251dbad63280d90143d2f632ce73092",
+              "prev": "0x0000000000000000000000000000181b0504e4ac945b847de342035be0899bb2"
+            },
+            {
+              "current": "0x000000000000000000000000001d15892c3a8270ea29bfead8dfd157ce7589a3",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "prev": "0x0000000000000000000000000017bd1aec0c270ca8e4257d02242a8e56245f90"
+            },
+            {
+              "current": "0x019696073d36f236f2fac06d000000000000000000000092080f33b455c3e158",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000002",
+              "prev": "0x019696073c36713671faa8e800000000000000000000006c129e43668a44295c"
+            },
+            {
+              "current": "0x00000000000000000000000000000000000000073ef08f03816ed65be573be98",
+              "key": "0x87047b9757dd49a3c779b0286917e24078174a8f92b1c90bf1bfedfa42d5f7aa",
+              "prev": "0x0000000000000000000000000000000000000000d8a14dcef22ae33d6e8af68f"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000010000000000000000000000000000",
+              "key": "0x3d4d0fe1241ddb1bcb2691e9464577865a9b2221d16f5f7a5b5c28600422ec35",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000008135c0a6d14b0f17afe4421f2",
+              "key": "0x3b1b275caedb5ba0eb6e05bba01e4a77b2efe9a1dbc90f280a9a130133b731ab",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x01678b94410000000000000000625ed8f7e0c22570e6322ee4fff2e34ffe59ec",
+              "key": "0x3b1b275caedb5ba0eb6e05bba01e4a77b2efe9a1dbc90f280a9a130133b731ac",
+              "prev": "0x0100000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x01678b3738000000000000000062528bc8a0fab7eeed31a94afff2e54008ee13",
+              "key": "0xb5df17aacb14c9a833fa32c467b08a919251dbad63280d90143d2f632ce73094",
+              "prev": "0x0100005d090000000000000000000c4d2f3fc76d81f900859afffffe0ff56bd9"
+            },
+            {
+              "current": "0x00000000000000000000000000000000000000531b39daae06acea83f8d7ca71",
+              "key": "0x005e34e40a25c6210b3c62d94bfa447cae8acbb687be1a3623850f1bd3ba7cfd",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000000000000000409bf4844e28aaf3f8cdbf5912122799a6101",
+              "key": "0x25a8fcb9a2bd001da2e9d5b4fb0f080ae2cf230b3e90312dbaff2813d08f2694",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000017bd1aec0c270ca8e4257d02242a8e56245f90",
+              "key": "0x00687d29198eadc0987c537ff3c402c74a1d9cc9903c052eeec0613b98a7adb7",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            }
+          ],
+          "variables": [
+            {
+              "name": "ticks",
+              "type": "mapping(int24 => struct TickManager.Tick)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "-346620",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "outerFeeGrowth0Token",
+                          "type": "uint256",
+                          "value": {
+                            "current": "529390522709753547795933778591378927413125008",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerFeeGrowth1Token",
+                          "type": "uint256",
+                          "value": {
+                            "current": "654678139721174299962148571817",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerTickCumulative",
+                          "type": "int56",
+                          "value": {
+                            "current": "-14416863143444",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerSecondsPerLiquidity",
+                          "type": "uint160",
+                          "value": {
+                            "current": "30444194593237226303882669796",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerSecondsSpent",
+                          "type": "uint32",
+                          "value": {
+                            "current": "1737200705",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  },
+                  {
+                    "key": "-338460",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "outerFeeGrowth0Token",
+                          "type": "uint256",
+                          "value": {
+                            "current": "90052081361676929220351600755341186572116225",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerFeeGrowth1Token",
+                          "type": "uint256",
+                          "value": {
+                            "current": "7705330704266633929390696922229",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  },
+                  {
+                    "key": "-349680",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "outerFeeGrowth0Token",
+                          "type": "uint256",
+                          "value": {
+                            "current": "527290633551937207631178206794629814964372446",
+                            "prev": "2099889157816340164755571796749112448752562",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerFeeGrowth1Token",
+                          "type": "uint256",
+                          "value": {
+                            "current": "636520814493353833481184287048",
+                            "prev": "736398828140748192999057511",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerTickCumulative",
+                          "type": "int56",
+                          "value": {
+                            "current": "-14408540951021",
+                            "prev": "-8322192423",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerSecondsPerLiquidity",
+                          "type": "uint160",
+                          "value": {
+                            "current": "30429322989589935977005164874",
+                            "prev": "14871603647290326877504922",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerSecondsSpent",
+                          "type": "uint32",
+                          "value": {
+                            "current": "1737176888",
+                            "prev": "23817",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  },
+                  {
+                    "key": "-870000",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "liquidityTotal",
+                          "type": "uint128",
+                          "value": {
+                            "current": "261501642958000974",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "liquidityDelta",
+                          "type": "int128",
+                          "value": {
+                            "current": "261501642958000974",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerFeeGrowth0Token",
+                          "type": "uint256",
+                          "value": {
+                            "current": "529390522709753547795933778591378927413125008",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerFeeGrowth1Token",
+                          "type": "uint256",
+                          "value": {
+                            "current": "8421872810309805396061647211702",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerTickCumulative",
+                          "type": "int56",
+                          "value": {
+                            "current": "-14416863143444",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerSecondsPerLiquidity",
+                          "type": "uint160",
+                          "value": {
+                            "current": "30444194593237226303882669796",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerSecondsSpent",
+                          "type": "uint32",
+                          "value": {
+                            "current": "1737200705",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "initialized",
+                          "type": "bool",
+                          "value": {
+                            "current": "true",
+                            "prev": "false",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  },
+                  {
+                    "key": "-348960",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "outerFeeGrowth0Token",
+                          "type": "uint256",
+                          "value": {
+                            "current": "457775358009341037285071823683690036591778156",
+                            "prev": "71615164700412510510861954907688890821346852",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerFeeGrowth1Token",
+                          "type": "uint256",
+                          "value": {
+                            "current": "574076025768555178566578585240",
+                            "prev": "67043766618066959847717009039",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerTickCumulative",
+                          "type": "int56",
+                          "value": {
+                            "current": "-13353749827900",
+                            "prev": "-1063113315544",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerSecondsPerLiquidity",
+                          "type": "uint160",
+                          "value": {
+                            "current": "28227511658402339179659520567",
+                            "prev": "2216682934834887124223149229",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerSecondsSpent",
+                          "type": "uint32",
+                          "value": {
+                            "current": "1734136103",
+                            "prev": "3064602",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  },
+                  {
+                    "key": "-349200",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "outerFeeGrowth0Token",
+                          "type": "uint256",
+                          "value": {
+                            "current": "529390522709753547795933778591378927413125008",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerFeeGrowth1Token",
+                          "type": "uint256",
+                          "value": {
+                            "current": "639816785711975692656202490354",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerTickCumulative",
+                          "type": "int56",
+                          "value": {
+                            "current": "-14416863143444",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerSecondsPerLiquidity",
+                          "type": "uint160",
+                          "value": {
+                            "current": "30444194593237226303882669796",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerSecondsSpent",
+                          "type": "uint32",
+                          "value": {
+                            "current": "1737200705",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  },
+                  {
+                    "key": "870000",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "liquidityTotal",
+                          "type": "uint128",
+                          "value": {
+                            "current": "261501642958000974",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "liquidityDelta",
+                          "type": "int128",
+                          "value": {
+                            "current": "-261501642958000974",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "initialized",
+                          "type": "bool",
+                          "value": {
+                            "current": "true",
+                            "prev": "false",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  },
+                  {
+                    "key": "-299340",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "outerFeeGrowth0Token",
+                          "type": "uint256",
+                          "value": {
+                            "current": "10883754560569560265792967103832024937132696",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerFeeGrowth1Token",
+                          "type": "uint256",
+                          "value": {
+                            "current": "6584363525406942122503552092785",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  },
+                  {
+                    "key": "-347340",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "outerFeeGrowth0Token",
+                          "type": "uint256",
+                          "value": {
+                            "current": "529390522709753547795933778591378927413125008",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerFeeGrowth1Token",
+                          "type": "uint256",
+                          "value": {
+                            "current": "650336165344642306586108225991",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerTickCumulative",
+                          "type": "int56",
+                          "value": {
+                            "current": "-14416863143444",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerSecondsPerLiquidity",
+                          "type": "uint160",
+                          "value": {
+                            "current": "30444194593237226303882669796",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "outerSecondsSpent",
+                          "type": "uint32",
+                          "value": {
+                            "current": "1737200705",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "tickTable",
+              "type": "mapping(int16 => uint256)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "-3399",
+                    "value": {
+                      "current": "22300745198530623141535718272648361505980416",
+                      "prev": "0",
+                      "typeTag": 1
+                    }
+                  },
+                  {
+                    "key": "3398",
+                    "value": {
+                      "current": "5192296858534827628530496329220096",
+                      "prev": "0",
+                      "typeTag": 1
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "liquidity",
+              "type": "uint128",
+              "value": {
+                "current": "1094643763872710772",
+                "prev": "466540172465242247",
+                "typeTag": 1
+              }
+            },
+            {
+              "name": "volumePerLiquidityInBlock",
+              "type": "uint128",
+              "value": {
+                "current": "334572264802265286488",
+                "prev": "297873025916892423",
+                "typeTag": 1
+              }
+            },
+            {
+              "name": "totalFeeGrowth1Token",
+              "type": "uint256",
+              "value": {
+                "current": "8421872810309805396061647211702",
+                "prev": "635711206230621396187452276892",
+                "typeTag": 1
+              }
+            },
+            {
+              "name": "totalFeeGrowth0Token",
+              "type": "uint256",
+              "value": {
+                "current": "648597646236053896457568700063503515930429859",
+                "prev": "529390522709753547795933778591378927413125008",
+                "typeTag": 1
+              }
+            },
+            {
+              "name": "globalState",
+              "type": "struct PoolState.GlobalState",
+              "value": {
+                "fields": [
+                  {
+                    "name": "price",
+                    "type": "uint160",
+                    "value": {
+                      "current": "2693805374488174649688",
+                      "prev": "1993589943807320009052",
+                      "typeTag": 1
+                    }
+                  },
+                  {
+                    "name": "tick",
+                    "type": "int24",
+                    "value": {
+                      "current": "-343955",
+                      "prev": "-349976",
+                      "typeTag": 1
+                    }
+                  },
+                  {
+                    "name": "feeZto",
+                    "type": "uint16",
+                    "value": {
+                      "current": "14066",
+                      "prev": "13937",
+                      "typeTag": 1
+                    }
+                  },
+                  {
+                    "name": "feeOtz",
+                    "type": "uint16",
+                    "value": {
+                      "current": "14066",
+                      "prev": "13937",
+                      "typeTag": 1
+                    }
+                  },
+                  {
+                    "name": "timepointIndex",
+                    "type": "uint16",
+                    "value": {
+                      "current": "1853",
+                      "prev": "1852",
+                      "typeTag": 1
+                    }
+                  }
+                ],
+                "typeTag": 3
+              }
+            },
+            {
+              "name": "positions",
+              "type": "mapping(bytes32 => struct AlgebraPool.Position)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0x00000000000000c7f3082833e796a5b3e4bd59f6642ff44dcd15f2b9900d4670",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "liquidity",
+                          "type": "uint128",
+                          "value": {
+                            "current": "261501642958000974",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "lastLiquidityAddTimestamp",
+                          "type": "uint32",
+                          "value": {
+                            "current": "1737200705",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            }
+          ]
+        },
+        {
+          "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+          "slots": [
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "key": "0x736528e0376b71c2d40b431cc27755181b47622a12932b04a219a2c191e17be0",
+              "prev": "0x00000000000000000000000000000000000000000000000000000000023073bd"
+            },
+            {
+              "current": "0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffdcf8c42",
+              "key": "0xd7750997c5c6094efa7196f74b4d4964d4e87129e2d6d11bde8e0c990428bdcc",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000000000000000000000009f059878",
+              "key": "0xbba958cc10c518a96b5f768c506690102b8a3563241d21e41640a6d66d729d10",
+              "prev": "0x000000000000000000000000000000000000000000000000000000009cd524bb"
+            },
+            {
+              "current": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+              "key": "0xc56b23641c86b82c838c83fa1f0dc86c9582ec76385035d167b6334926eb3635",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            }
+          ],
+          "variables": []
+        },
+        {
+          "address": "0x5969efdde3cf5c0d9a88ae51e47d721096a97203",
+          "slots": [
+            {
+              "current": "0x0103cf27481a1900272353062c260e389caf8d1521fff8d9246ba6ec678b9441",
+              "key": "0x00000000000000000000000000000000000000000000000000000000000000cc",
+              "prev": "0x0103cf27481a19000c0f689a596456e85bed930dbcfff8d8f4289edf678b66a6"
+            },
+            {
+              "current": "0x000000000000000000000000000000000040f44ba1e8786ca61ed7ffa35fb0fb",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000001",
+              "prev": "0x000000000000000000000000000000000040f420e41b7898bfe99765ee0dfdbb"
+            },
+            {
+              "current": "0x0001000168016800c4010f14000000000000002020236178a97b57aff77806a1",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "prev": "0x0001000168016800c3010f2100000000000000202565badc3a0adbca5cd2c854"
+            }
+          ],
+          "variables": [
+            {
+              "name": "feeGrowthGlobal0X128",
+              "type": "uint256",
+              "value": {
+                "current": "337261899109834605218411114013896955",
+                "prev": "337258512786513170376262700894125499",
+                "typeTag": 1
+              }
+            },
+            {
+              "name": "slot0",
+              "type": "struct UniswapV3Pool.Slot0",
+              "value": {
+                "fields": [
+                  {
+                    "name": "sqrtPriceX96",
+                    "type": "uint160",
+                    "value": {
+                      "current": "2545247493469798935642274006689",
+                      "prev": "2546875129750261554919133857876",
+                      "typeTag": 1
+                    }
+                  },
+                  {
+                    "name": "tick",
+                    "type": "int24",
+                    "value": {
+                      "current": "69396",
+                      "prev": "69409",
+                      "typeTag": 1
+                    }
+                  },
+                  {
+                    "name": "observationIndex",
+                    "type": "uint16",
+                    "value": {
+                      "current": "196",
+                      "prev": "195",
+                      "typeTag": 1
+                    }
+                  }
+                ],
+                "typeTag": 3
+              }
+            },
+            {
+              "name": "observations",
+              "type": "struct Oracle.Observation[65535]",
+              "value": {
+                "elemType": "struct Oracle.Observation",
+                "elems": [
+                  {
+                    "index": 196,
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "blockTimestamp",
+                          "type": "uint32",
+                          "value": {
+                            "current": "1737200705",
+                            "prev": "1737189030",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "tickCumulative",
+                          "type": "int56",
+                          "value": {
+                            "current": "-7863474084116",
+                            "prev": "-7864283783457",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "secondsPerLiquidityCumulativeX128",
+                          "type": "uint160",
+                          "value": {
+                            "current": "21746648482738852932887779788778818009884857633",
+                            "prev": "21746648482738850787563778894257687111381749180",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  }
+                ],
+                "typeTag": 2
+              }
+            }
+          ]
+        },
+        {
+          "address": "0x712e2b12d75fe092838a3d2ad14b6ff73d3fdbc9",
+          "slots": [
+            {
+              "current": "0x0000000000000000076255533b4ceaf99f9511c74f15ea09c1bbad4bdc2b44c8",
+              "key": "0x2796ea917f25ebfa6cf827b0639ee69ae082cb72770ff1dcc3578c400bb339ab",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000001",
+              "key": "0xa3b9044fffec7d6920332783532a7b393e695a780f7efaa5fa3c426881debb36",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000001",
+              "key": "0x355e9a8ff54b2d0e865966abd17d584a3eff5cbafb892b8210011900eaba096d",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000000000000a26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+              "key": "0x1071dfdd43217c1f053c5942d6877537fde0dafe7a19714ecc4d5b4005ba1ae5",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000c097ce7bc90715b34b9f1000000000",
+              "key": "0x4c1e5c2a92de3d7d9bc634e820e2b84dc0000f788e1a8b8bc81be2936be85bdb",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x11af47130000000000000000000434c71bcd272a0325a11e55d629e330834d48",
+              "key": "0x71ed80c2ab1ce4597ec5728c2a54bf01ad2c871af65f6733d81481c4ac985a61",
+              "prev": "0x01463095000000000000000000000770f26424fd8006907141eb1d065d140aba"
+            },
+            {
+              "current": "0x11af471300000000000000000000000000c097ce7bc90715b34b9f1000000000",
+              "key": "0x75995607e1222ab1db735e841ac323b602c54ee3ebf3e6f9dd75fe7f5758b80d",
+              "prev": "0x014a498300000000000000000000000000c097ce7bc90715b34b9f1000000000"
+            },
+            {
+              "current": "0x11af471300000000000000000000000000c097ce7bc90715b34b9f1000000000",
+              "key": "0xe7ec523ee4658f48ead177dbaa3f8f384d90d98f63fb80429055cbe95416fdac",
+              "prev": "0x0146309500000000000000000000000000c097ce7bc90715b34b9f1000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000c097ce7bc90715b34b9f1000000000",
+              "key": "0xeef094f3f2f94c2ad387efe38fe14ceda8a43a49a763304c7bb2fc7d9ad03948",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000001c762e00f1d9317a4214d22b2576995c427f61c9",
+              "key": "0x76a620c5f90d532a5e6b8697385f568609f651e254dcac87fe3e25dcaa4583dc",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x11af471300000000076255533b4ceaf99f9511c74f15ea09c1bbad4bdc2b44c8",
+              "key": "0xc66c8a928a37052c0e8a911c061a99460ac6a9c9784e8e8374489f82bfaa1a59",
+              "prev": "0x0146309500000000002aff6950d9e46d31288dcbebcb35dde7896b2b3d78c0ad"
+            },
+            {
+              "current": "0x000000000000000000000000fc2737a742a741d13fe6326011a78cd881de3eb9",
+              "key": "0x76a620c5f90d532a5e6b8697385f568609f651e254dcac87fe3e25dcaa4583db",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000001",
+              "key": "0x90b63e349c1583aaf9c846040748184ef0715de57710c6efaa4c9159ea95dbe8",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000000000000fb1dcfc67cc496eb0cc592050af7fdf3bf3b5c13",
+              "key": "0x76a620c5f90d532a5e6b8697385f568609f651e254dcac87fe3e25dcaa4583dd",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000004",
+              "key": "0xecf9887556a51c8dd44eb4f5939de11afc2defc5e5760c9b760df8bb61694c47",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000000000000affd437801434643b734d0b2853654876f66f7d7",
+              "key": "0x76a620c5f90d532a5e6b8697385f568609f651e254dcac87fe3e25dcaa4583da",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000000000000000434c71bcd272a0325a11e55d629e330834d48",
+              "key": "0x12c42ebadb3c173b79e03bcf729b5f1f3e4312f3f4ef23ca4b4b78d41e79f003",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000001",
+              "key": "0x8f341a7f8f0ec0042aeaa9d1cb2bb5b843d84dabb20c525409b1e72979bfece1",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000001",
+              "key": "0xe5824853a323bbd9ee143ce8062c9df2a9c0220f9b410f9e77121b76211476c6",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x11af4713000000000000001c48af01638c339179eb1b2c7908f4ab09ae48cbf9",
+              "key": "0xfae9ad3ddc33dbfcdb1bdd8c0673632093ce1a03f28731d14109d9abc74f2b39",
+              "prev": "0x014a0913000000000000000a69db2da15458c072e363eb365f9aa3d5286584cd"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000001",
+              "key": "0x8b843b00ae077e037c3559c456c425b74cb2dc796f98eacaafe54f8a3e8f58c5",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x00000000000000000000001c48af01638c339179eb1b2c7908f4ab09ae48cbf9",
+              "key": "0x405a44821e47260faf58cbff7a61ab1a4c9d2c1e014b1c5c58f6b2f3b74ae86b",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            }
+          ],
+          "variables": [
+            {
+              "name": "accountAssets",
+              "type": "mapping(address => contract PToken[])",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                    "value": {
+                      "elemType": "contract PToken",
+                      "elems": [
+                        {
+                          "index": 1,
+                          "value": {
+                            "current": "0xfc2737a742a741d13fe6326011a78cd881de3eb9",
+                            "prev": "0x0000000000000000000000000000000000000000",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "index": 2,
+                          "value": {
+                            "current": "0x1c762e00f1d9317a4214d22b2576995c427f61c9",
+                            "prev": "0x0000000000000000000000000000000000000000",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "index": 3,
+                          "value": {
+                            "current": "0xfb1dcfc67cc496eb0cc592050af7fdf3bf3b5c13",
+                            "prev": "0x0000000000000000000000000000000000000000",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 2
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "PBXBorrowState",
+              "type": "mapping(address => struct ComptrollerNoNFTStorage.PBXMarketState)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0xfb1dcfc67cc496eb0cc592050af7fdf3bf3b5c13",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "index",
+                          "type": "uint224",
+                          "value": {
+                            "current": "41336995932160940948589320475908834910133870447609",
+                            "prev": "15219348242394454519126028789858927747722824221901",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "block",
+                          "type": "uint32",
+                          "value": {
+                            "current": "296699667",
+                            "prev": "21629203",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  },
+                  {
+                    "key": "0x1c762e00f1d9317a4214d22b2576995c427f61c9",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "index",
+                          "type": "uint224",
+                          "value": {
+                            "current": "181057959683593121637055584323402933793717426726212682952",
+                            "prev": "4118361540908261471798891401797444405015270184617296045",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "block",
+                          "type": "uint32",
+                          "value": {
+                            "current": "296699667",
+                            "prev": "21377173",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  },
+                  {
+                    "key": "0xaffd437801434643b734d0b2853654876f66f7d7",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "index",
+                          "type": "uint224",
+                          "value": {
+                            "current": "93800572807962376869678919292877216827002184",
+                            "prev": "648219819772383730422761894973850176981690",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "block",
+                          "type": "uint32",
+                          "value": {
+                            "current": "296699667",
+                            "prev": "21377173",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  },
+                  {
+                    "key": "0xfc2737a742a741d13fe6326011a78cd881de3eb9",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "block",
+                          "type": "uint32",
+                          "value": {
+                            "current": "296699667",
+                            "prev": "21377173",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "accountNFTAssets",
+              "type": "mapping(address => contract PNFTToken[])",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                    "value": {
+                      "elemType": "contract PNFTToken",
+                      "elems": [
+                        {
+                          "index": 0,
+                          "value": {
+                            "current": "0xa26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+                            "prev": "0x0000000000000000000000000000000000000000",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 2
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "PBXSupplierIndex",
+              "type": "mapping(address => mapping(address => uint256))",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0xa26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+                    "value": {
+                      "kvs": [
+                        {
+                          "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                          "value": {
+                            "current": "1000000000000000000000000000000000000",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 4
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "PBXBorrowerIndex",
+              "type": "mapping(address => mapping(address => uint256))",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0xfc2737a742a741d13fe6326011a78cd881de3eb9",
+                    "value": {
+                      "kvs": [
+                        {
+                          "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                          "value": {
+                            "current": "1000000000000000000000000000000000000",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 4
+                    }
+                  },
+                  {
+                    "key": "0xfb1dcfc67cc496eb0cc592050af7fdf3bf3b5c13",
+                    "value": {
+                      "kvs": [
+                        {
+                          "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                          "value": {
+                            "current": "41336995932160940948589320475908834910133870447609",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 4
+                    }
+                  },
+                  {
+                    "key": "0x1c762e00f1d9317a4214d22b2576995c427f61c9",
+                    "value": {
+                      "kvs": [
+                        {
+                          "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                          "value": {
+                            "current": "181057959683593121637055584323402933793717426726212682952",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 4
+                    }
+                  },
+                  {
+                    "key": "0xaffd437801434643b734d0b2853654876f66f7d7",
+                    "value": {
+                      "kvs": [
+                        {
+                          "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                          "value": {
+                            "current": "93800572807962376869678919292877216827002184",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 4
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "markets",
+              "type": "mapping(address => struct ComptrollerNoNFTStorage.Market)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0xaffd437801434643b734d0b2853654876f66f7d7",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "accountMembership",
+                          "type": "mapping(address => bool)",
+                          "value": {
+                            "kvs": [
+                              {
+                                "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                                "value": {
+                                  "current": "true",
+                                  "prev": "false",
+                                  "typeTag": 1
+                                }
+                              }
+                            ],
+                            "typeTag": 4
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  },
+                  {
+                    "key": "0xa26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "accountMembership",
+                          "type": "mapping(address => bool)",
+                          "value": {
+                            "kvs": [
+                              {
+                                "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                                "value": {
+                                  "current": "true",
+                                  "prev": "false",
+                                  "typeTag": 1
+                                }
+                              }
+                            ],
+                            "typeTag": 4
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  },
+                  {
+                    "key": "0xfc2737a742a741d13fe6326011a78cd881de3eb9",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "accountMembership",
+                          "type": "mapping(address => bool)",
+                          "value": {
+                            "kvs": [
+                              {
+                                "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                                "value": {
+                                  "current": "true",
+                                  "prev": "false",
+                                  "typeTag": 1
+                                }
+                              }
+                            ],
+                            "typeTag": 4
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  },
+                  {
+                    "key": "0x1c762e00f1d9317a4214d22b2576995c427f61c9",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "accountMembership",
+                          "type": "mapping(address => bool)",
+                          "value": {
+                            "kvs": [
+                              {
+                                "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                                "value": {
+                                  "current": "true",
+                                  "prev": "false",
+                                  "typeTag": 1
+                                }
+                              }
+                            ],
+                            "typeTag": 4
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  },
+                  {
+                    "key": "0xfb1dcfc67cc496eb0cc592050af7fdf3bf3b5c13",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "accountMembership",
+                          "type": "mapping(address => bool)",
+                          "value": {
+                            "kvs": [
+                              {
+                                "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                                "value": {
+                                  "current": "true",
+                                  "prev": "false",
+                                  "typeTag": 1
+                                }
+                              }
+                            ],
+                            "typeTag": 4
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "PBXSupplyState",
+              "type": "mapping(address => struct ComptrollerNoNFTStorage.PBXMarketState)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0xa26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "block",
+                          "type": "uint32",
+                          "value": {
+                            "current": "296699667",
+                            "prev": "21645699",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            }
+          ]
+        },
+        {
+          "address": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
+          "slots": [
+            {
+              "current": "0x000000000053edc4f5446f61e494ebbf0000000003f4a7ad1ae97e906576cd4f",
+              "key": "0x625a1e0785d461c74fd523038876599d0612e2713e0fd72b607e0a293734bc04",
+              "prev": "0x000000000053edffecce7d5c752e83190000000003f4a7a4231594d300cef7e3"
+            },
+            {
+              "current": "0x000000000000000000001f44949524ce00000000000000000000000000000000",
+              "key": "0x625a1e0785d461c74fd523038876599d0612e2713e0fd72b607e0a293734bc0b",
+              "prev": "0x000000000000000000001f443865d36600000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000397b2b7c8801928cb52ece0000000003c3e514c976e5c239d37ce0",
+              "key": "0x625a1e0785d461c74fd523038876599d0612e2713e0fd72b607e0a293734bc03",
+              "prev": "0x0000000000397b7c41e70ee2043637040000000003c3e267f6032e52393fdd46"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000025043d26",
+              "key": "0x625a1e0785d461c74fd523038876599d0612e2713e0fd72b607e0a293734bc0a",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000024e8c51f"
+            },
+            {
+              "current": "0x000000000000000000000500678b944100000000000000000000000000000000",
+              "key": "0x625a1e0785d461c74fd523038876599d0612e2713e0fd72b607e0a293734bc05",
+              "prev": "0x000000000000000000000500678b941700000000000000000000000000000000"
+            }
+          ],
+          "variables": [
+            {
+              "name": "_reserves",
+              "type": "mapping(address => struct DataTypes.ReserveData)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "liquidityIndex",
+                          "type": "uint128",
+                          "value": {
+                            "current": "1165277369665389589418966240",
+                            "prev": "1165264736855719516087246150",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "currentLiquidityRate",
+                          "type": "uint128",
+                          "value": {
+                            "current": "69490424978845985303506638",
+                            "prev": "69491914940472665285474052",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "variableBorrowIndex",
+                          "type": "uint128",
+                          "value": {
+                            "current": "1224224757878588980508151119",
+                            "prev": "1224224592446762443730778083",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "currentVariableBorrowRate",
+                          "type": "uint128",
+                          "value": {
+                            "current": "101463677119666078434519999",
+                            "prev": "101464764867906997561754393",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "lastUpdateTimestamp",
+                          "type": "uint40",
+                          "value": {
+                            "current": "1737200705",
+                            "prev": "1737200663",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "accruedToTreasury",
+                          "type": "uint128",
+                          "value": {
+                            "current": "621034790",
+                            "prev": "619234591",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "virtualUnderlyingBalance",
+                          "type": "uint128",
+                          "value": {
+                            "current": "34379411039438",
+                            "prev": "34377864434534",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            }
+          ]
+        },
+        {
+          "address": "0x7e4efaa9fdc6317e7b86859844d65df8c6cdad79",
+          "slots": [
+            {
+              "current": "0x00000000000000000015ef83c705f18ad04efaa6df000000000006feaefc266f",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000e7b",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000625ed8f7e0c22570e6322ee4fff2e34ffe59ec678b944101",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000e7a",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            }
+          ],
+          "variables": [
+            {
+              "name": "timepoints",
+              "type": "struct DataStorage.Timepoint[65536]",
+              "value": {
+                "elemType": "struct DataStorage.Timepoint",
+                "elems": [
+                  {
+                    "index": 1853,
+                    "value": {
+                      "fields": [
+                        {
+                          "name": "initialized",
+                          "type": "bool",
+                          "value": {
+                            "current": "true",
+                            "prev": "false",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "blockTimestamp",
+                          "type": "uint32",
+                          "value": {
+                            "current": "1737200705",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "tickCumulative",
+                          "type": "int56",
+                          "value": {
+                            "current": "-14416863143444",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "secondsPerLiquidityCumulative",
+                          "type": "uint160",
+                          "value": {
+                            "current": "30444194593237226303882669796",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "volatilityCumulative",
+                          "type": "uint88",
+                          "value": {
+                            "current": "7690927220335",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "averageTick",
+                          "type": "int24",
+                          "value": {
+                            "current": "-350497",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "name": "volumePerLiquidityCumulative",
+                          "type": "uint144",
+                          "value": {
+                            "current": "404640482573255626830",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 3
+                    }
+                  }
+                ],
+                "typeTag": 2
+              }
+            }
+          ]
+        },
+        {
+          "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "slots": [
+            {
+              "current": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+              "key": "0xc56b23641c86b82c838c83fa1f0dc86c9582ec76385035d167b6334926eb3635",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            }
+          ],
+          "variables": [
+            {
+              "name": "_allowances",
+              "type": "mapping(address => mapping(address => uint256))",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                    "value": {
+                      "kvs": [
+                        {
+                          "key": "0x1f721e2e82f6676fce4ea07a5958cf098d339e18",
+                          "value": {
+                            "current": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 4
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            }
+          ]
+        },
+        {
+          "address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+          "slots": [
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "key": "0x9e018c864ac51c64afb6cbac3ce50e748cfd028d8e1b27f8339d65ada6069e54",
+              "prev": "0x000000000000000000000000000000000000000000000160ec30ef7eac05e5f3"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000000000000160ec30ef7eac05e5f3",
+              "key": "0x33ada3dc048e5f0c625f9a5bf40588590028851b1afae411073b763b0c271e69",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            }
+          ],
+          "variables": [
+            {
+              "name": "_balances",
+              "type": "mapping(address => uint256)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                    "value": {
+                      "current": "6510273280264926258675",
+                      "prev": "0",
+                      "typeTag": 1
+                    }
+                  },
+                  {
+                    "key": "0xfc2737a742a741d13fe6326011a78cd881de3eb9",
+                    "value": {
+                      "current": "0",
+                      "prev": "6510273280264926258675",
+                      "typeTag": 1
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            }
+          ]
+        },
+        {
+          "address": "0xa26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+          "slots": [
+            {
+              "current": "0x000000000000000000000000a8906930e951cc657843bd8616baf2555336fdd2",
+              "key": "0xfe4c660937dd5787c4669a105fc3166f330388c9818b1654849431c9e5b38614",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000001",
+              "key": "0xcdd05db6e6c3d1d8651aadd9d51ccdbee8d64d575a467ecf8799d50070466acd",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000002",
+              "key": "0x4cc579c51788d2903c78ae0c6c664c54a4c09034e9d41b4f82bb2ebb567b0712",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000001",
+              "key": "0x82ab9bb478c3c5b68ee78f5d9c09ea5ca7463bf74e1c17604ca406778a7eddae",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000036b17",
+              "key": "0xdf6966c971051c3d54ec59162606531493a51404a002842f56009d7e5cf4a8c9",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000036b17",
+              "key": "0x560cbe60e268664327b62549b314fcf197afa841fb162dc20ca075bd9cae3d11",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000003",
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000c",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000002"
+            }
+          ],
+          "variables": [
+            {
+              "name": "allTokensIndex",
+              "type": "mapping(uint256 => uint256)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "224023",
+                    "value": {
+                      "current": "2",
+                      "prev": "0",
+                      "typeTag": 1
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "ownedTokens",
+              "type": "mapping(address => uint256[])",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                    "value": {
+                      "elemType": "uint256",
+                      "elems": [
+                        {
+                          "index": 0,
+                          "value": {
+                            "current": "224023",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 2
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "tokensOwners",
+              "type": "mapping(uint256 => address)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "224023",
+                    "value": {
+                      "current": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                      "prev": "0x0000000000000000000000000000000000000000",
+                      "typeTag": 1
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "accountTokens",
+              "type": "mapping(address => uint256)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                    "value": {
+                      "current": "1",
+                      "prev": "0",
+                      "typeTag": 1
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            }
+          ]
+        },
+        {
+          "address": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+          "slots": [
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000036b17",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000002",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000001",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000003",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000000000000a26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+              "key": "0xc2575a0e9e593c00f959f8c92f12db2869c3395a3b0502d05e2516446f71f85b",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000005af00b07007cc1349794df5b2c15528237648035",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000000000000bd4786f93ceef3dd73600ebe0b0bdccca2f7d37c",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000001",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            }
+          ],
+          "variables": []
+        },
+        {
+          "address": "0xaffd437801434643b734d0b2853654876f66f7d7",
+          "slots": [
+            {
+              "current": "0x00000000000000000000000000000000000000000000000096648c04da040d79",
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000a",
+              "prev": "0x00000000000000000000000000000000000000000000000010701e86f928f0cc"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000000000000000c419489140a53094",
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000c",
+              "prev": "0x0000000000000000000000000000000000000000000000000ccddf93fcbbd91d"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000000000000004b3cb9d3cfffe0e7b",
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000b",
+              "prev": "0x000000000000000000000000000000000000000000000000707682e2866524fd"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000011af4713",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000009",
+              "prev": "0x00000000000000000000000000000000000000000000000000000000014a2c98"
+            },
+            {
+              "current": "0x00000000000000000000000000000000000000000000000096648c04da040d79",
+              "key": "0x9eb54dbc4905b4deea0f5795714f4f0857eba2479785235deb7af8895179d53f",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000000000000000aedc0d68260a342a",
+              "key": "0x9eb54dbc4905b4deea0f5795714f4f0857eba2479785235deb7af8895179d53e",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            }
+          ],
+          "variables": []
+        },
+        {
+          "address": "0xbad58ed9b5f26a002ea250d7a60dc6729a4a2403",
+          "slots": [
+            {
+              "current": "0x000000000000000000000000000000000000000000002919ef02dff10cc290f5",
+              "key": "0xdaa49e2f9d9f2ee6f957b159a9d64f6fb0e07b0186a57d5645ef282c99bfbf6e",
+              "prev": "0x000000000000000000000000000000000000000000001b3c58dff9738f5ea362"
+            },
+            {
+              "current": "0xffffffffffffffffffffffffffffffffffffffffffe65453cc740dfca821485c",
+              "key": "0xc56b23641c86b82c838c83fa1f0dc86c9582ec76385035d167b6334926eb3635",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0xffffffffffffffffffffffffffffffffffffffffffffe309e37098d817c4c1f8",
+              "key": "0x137fb4f8a5b98dfc5dadb45e170d33cb843094052c7e7d1205a0372209241713",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000001a7760b50f7f17ece62ad2",
+              "key": "0x6d67cc86071a34c5e811efeae15e0a216c6e92f458360458f00267ca4779434e",
+              "prev": "0x0000000000000000000000000000000000000000001a853e4b3265956a4a1865"
+            }
+          ],
+          "variables": []
+        },
+        {
+          "address": "0xfb1dcfc67cc496eb0cc592050af7fdf3bf3b5c13",
+          "slots": [
+            {
+              "current": "0x00000000000000000000000000000000000000000000000000000016d411b0e4",
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000b",
+              "prev": "0x00000000000000000000000000000000000000000000000000000001857bc68d"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000000000000000d650a56587b4f166",
+              "key": "0x9eb54dbc4905b4deea0f5795714f4f0857eba2479785235deb7af8895179d53f",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000000000000000000000018b3603ba",
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000c",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000003a8df9e"
+            },
+            {
+              "current": "0x00000000000000000000000000000000000000000000000000000000e9e6b386",
+              "key": "0x9eb54dbc4905b4deea0f5795714f4f0857eba2479785235deb7af8895179d53e",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000000000000000d650a56587b4f166",
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000a",
+              "prev": "0x0000000000000000000000000000000000000000000000000ee0f459224ebdd1"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000011af4713",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000009",
+              "prev": "0x00000000000000000000000000000000000000000000000000000000014a2ca6"
+            }
+          ],
+          "variables": []
+        },
+        {
+          "address": "0xfc2737a742a741d13fe6326011a78cd881de3eb9",
+          "slots": [
+            {
+              "current": "0x00000000000000000000000000000000000000000000001e0abbccfaffb2306c",
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000c",
+              "prev": "0x00000000000000000000000000000000000000000000000875def9e4b63b92c8"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000000000000160ec30ef7eac05e5f3",
+              "key": "0x9eb54dbc4905b4deea0f5795714f4f0857eba2479785235deb7af8895179d53e",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x00000000000000000000000000000000000000000000000020c3f1ff7c8828f7",
+              "key": "0x9eb54dbc4905b4deea0f5795714f4f0857eba2479785235deb7af8895179d53f",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000011af4713",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000009",
+              "prev": "0x00000000000000000000000000000000000000000000000000000000014a2c7f"
+            },
+            {
+              "current": "0x00000000000000000000000000000000000000000000000020c3f1ff7c8828f7",
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000a",
+              "prev": "0x0000000000000000000000000000000000000000000000000e596559031d195a"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000000000000220e84ee47c59d8c1c0",
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000b",
+              "prev": "0x00000000000000000000000000000000000000000000005413cdd58e3e81c795"
+            }
+          ],
+          "variables": []
+        },
+        {
+          "address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "slots": [
+            {
+              "current": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffff172b5aefff",
+              "key": "0xc56b23641c86b82c838c83fa1f0dc86c9582ec76385035d167b6334926eb3635",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000000000000000000000009237171d",
+              "key": "0xdaa49e2f9d9f2ee6f957b159a9d64f6fb0e07b0186a57d5645ef282c99bfbf6e",
+              "prev": "0x00000000000000000000000000000000000000000000000000000000147492c1"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000000000000000000003af519a7184",
+              "key": "0xbba958cc10c518a96b5f768c506690102b8a3563241d21e41640a6d66d729d10",
+              "prev": "0x000000000000000000000000000000000000000000000000000003b82559b3a3"
+            },
+            {
+              "current": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffff8b95ad77ff",
+              "key": "0x137fb4f8a5b98dfc5dadb45e170d33cb843094052c7e7d1205a0372209241713",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x00000000000000000000000000000000000000000000000000000009669fc31b",
+              "key": "0x6d67cc86071a34c5e811efeae15e0a216c6e92f458360458f00267ca4779434e",
+              "prev": "0x00000000000000000000000000000000000000000000000000000002e7d8b855"
+            },
+            {
+              "current": "0x00000000000000000000000000000000000000000000000000001f449dd976cd",
+              "key": "0x975f053a1504438187446fa830791e8ec25ade04db9e1599a3c6b073bfbefefb",
+              "prev": "0x00000000000000000000000000000000000000000000000000001f4441aa2565"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000264ed151b",
+              "key": "0x7a43707c3741666dabf50a1ab57053e280c616bc0acf7fe8a2053bf95a7b662a",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "key": "0xad50d105946d8c50c90b616d0d3fa9250fc13d314588f75cd317b9b61a3077b7",
+              "prev": "0x00000000000000000000000000000000000000000000000000000000e9e6b386"
+            }
+          ],
+          "variables": [
+            {
+              "name": "_balances",
+              "type": "mapping(address => uint256)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0xfb1dcfc67cc496eb0cc592050af7fdf3bf3b5c13",
+                    "value": {
+                      "current": "0",
+                      "prev": "3924210566",
+                      "typeTag": 1
+                    }
+                  },
+                  {
+                    "key": "0x58095979b412a366687ca05cbe85ff56241be21f",
+                    "value": {
+                      "current": "2453083933",
+                      "prev": "343184065",
+                      "typeTag": 1
+                    }
+                  },
+                  {
+                    "key": "0x5969efdde3cf5c0d9a88ae51e47d721096a97203",
+                    "value": {
+                      "current": "4051523236228",
+                      "prev": "4089435501475",
+                      "typeTag": 1
+                    }
+                  },
+                  {
+                    "key": "0x25874cc60cbf7495b7cd1fa724178d251cfad5a8",
+                    "value": {
+                      "current": "40376451867",
+                      "prev": "12479674453",
+                      "typeTag": 1
+                    }
+                  },
+                  {
+                    "key": "0x6ab707aca953edaefbc4fd23ba73294241490620",
+                    "value": {
+                      "current": "34379566511821",
+                      "prev": "34378019906917",
+                      "typeTag": 1
+                    }
+                  },
+                  {
+                    "key": "0xbd4786f93ceef3dd73600ebe0b0bdccca2f7d37c",
+                    "value": {
+                      "current": "10283193627",
+                      "prev": "0",
+                      "typeTag": 1
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "_allowances",
+              "type": "mapping(address => mapping(address => uint256))",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0xa8906930e951cc657843bd8616baf2555336fdd2",
+                    "value": {
+                      "kvs": [
+                        {
+                          "key": "0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15",
+                          "value": {
+                            "current": "115792089237316195423570985008687907853269984665640564039457584007413129639935",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "key": "0x1f721e2e82f6676fce4ea07a5958cf098d339e18",
+                          "value": {
+                            "current": "115792089237316195423570985008687907853269984665640564039457584006913129639935",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 4
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

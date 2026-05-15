@@ -1,0 +1,64 @@
+{
+  "incident_id": "Paribus 2025-01-18 price-manipulation incident",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Attacker address 0xd368cca925bb3dbadd06ea1b81e96a2174830978 accumulates approximately $60K in initial capital consisting of ETH, USDT, and ARB tokens on Arbitrum.",
+      "evidence_refs": [
+        "ev-004",
+        "ev-005"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 2,
+      "description": "Attacker executes a preparation transaction (0x43aa42d2f11afe42832a9619bc8066dfb83a921798b91eaf9d0345dd27dcfb06) to set up the attack, potentially interacting with liquidity pools and the Paribus protocol contracts.",
+      "evidence_refs": [
+        "ev-008",
+        "ev-033"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 3,
+      "description": "Attacker performs price manipulation by executing swaps through what appears to be a Uniswap V3 router (0xE592427A0AEce92De3Edee1F18E0157C05861564) to artificially inflate the price of a collateral asset used by Paribus.",
+      "evidence_refs": [
+        "ev-016",
+        "ev-010",
+        "ev-015"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 4,
+      "description": "Using the manipulated price, attacker interacts with Paribus protocol contracts (including 0x794a61358D6845594F94dc1DB02A252b5b4814aD and 0x56190CAC88b8D4b5D5Ed668ef81828913932e7Ed) to deposit artificially valued collateral and borrow or withdraw assets at a favorable rate.",
+      "evidence_refs": [
+        "ev-014",
+        "ev-010",
+        "ev-017"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 5,
+      "description": "Attacker executes the main attack transaction (0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2), completing the exploit sequence involving multiple internal calls to Paribus pools and asset transfers.",
+      "evidence_refs": [
+        "ev-003",
+        "ev-009",
+        "ev-020",
+        "ev-026",
+        "ev-027"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 6,
+      "description": "The attack results in an estimated total loss of approximately $86K from the Paribus protocol on Arbitrum, with the attacker extracting value through the price manipulation exploit.",
+      "evidence_refs": [
+        "ev-005"
+      ],
+      "summary": ""
+    }
+  ],
+  "synthesis_note": "The attack follows a classic price-manipulation pattern where the attacker inflates the value of collateral through DEX swaps and then exploits the manipulated oracle/price to extract value from the lending protocol. The Bitfinding article title referencing 'interception' suggests the attack may have been partially mitigated or the attacker's proceeds intercepted by a third-party monitoring service, though the evidence does not specify the outcome. The PoC references multiple protocol contract addresses consistent with Paribus's multi-asset lending pools on Arbitrum."
+}

@@ -1,0 +1,43 @@
+{
+  "incident_id": "unknown-2024-10-10-price-manipulation-incident-bsc",
+  "title": "Unknown 2024-10-10 price-manipulation incident",
+  "protocol_name": "Unknown",
+  "chain": "BSC",
+  "incident_date": "",
+  "summary": "An estimated loss of about $5",
+  "status": "demo_live_dossier",
+  "completeness_score": 0.52,
+  "source_count": 63,
+  "direct_source_count": 6,
+  "secondary_source_count": 57,
+  "social_count": 1,
+  "poc_count": 2,
+  "explorer_count": 58,
+  "report_count": 2,
+  "missing_fields": [
+    "protocol_name_confirmed",
+    "attack_contract_urls",
+    "victim_contract_urls",
+    "root_cause_analysis",
+    "fund_flow_trace",
+    "timestamp_precision",
+    "attacker_profiling",
+    "post_incident_response"
+  ],
+  "last_updated": "2026-04-27T13:07:31+00:00",
+  "pattern_label": "price_manipulation",
+  "attack_tx_hashes": [
+    "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+    "0x3c9c20870000000000b492b7807bf19b7dddf89b706143896d05228f312155d3",
+    "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+    "0xb8c143acba7ebd44aa2a9e67e3fba09671c8439dac53305f15fdf607ec2cf353"
+  ],
+  "source_preview": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/HYDT_exp.sol",
+    "https://bscscan.com/tx/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+    "https://x.com/TenArmorAlert/status/1844241843518951451",
+    "https://learnblockchain.cn/article/13124",
+    "https://bscscan.com/address/0x8f921e27e3af106015d1c3a244ec4f48dbfcad14"
+  ]
+}

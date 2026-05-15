@@ -1,0 +1,36 @@
+{
+  "incident_id": "bgm-2024-11-10-price-manipulation-incident-bsc",
+  "job_id": "bgm-bsc-2024-11-10-batch",
+  "trigger_type": "batch",
+  "seed_type": "tx_hash",
+  "chain": "BSC",
+  "protocol_name": "Bgm",
+  "incident_name": "Bgm 2024-11-10 price-manipulation incident",
+  "incident_date": "",
+  "attack_tx_hashes": [
+    "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1"
+  ],
+  "attacker_addresses": [
+    "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180"
+  ],
+  "seed_urls": [
+    "https://bscscan.com/tx/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+    "https://x.com/ExternalExplorer_xyz/status/1855798237770170415",
+    "https://quadrigainitiative.com/casestudy/bgmonbscbatchtransactionspricemanipulationexploit.php"
+  ],
+  "attack_contract_urls": [],
+  "victim_contract_urls": [],
+  "tags": [
+    "price_manipulation",
+    "bsc",
+    "defi"
+  ],
+  "source_names": [],
+  "attack_type_raws": [],
+  "summary_candidates": [
+    "An estimated loss of about $450K was caused by a price-manipulation attack against BGM on BSC"
+  ],
+  "note_candidates": [],
+  "date_range": {},
+  "created_at": "2026-04-27T13:06:24+00:00"
+}

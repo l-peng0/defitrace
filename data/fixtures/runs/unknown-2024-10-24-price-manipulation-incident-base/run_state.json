@@ -1,0 +1,45 @@
+{
+  "job_id": "unknown-base-2024-10-24-batch",
+  "incident_id": "unknown-2024-10-24-price-manipulation-incident-base",
+  "trigger_type": "batch",
+  "current_stage": "dashboard_projection",
+  "node_status": {
+    "seed_loader": "completed",
+    "source_finder": "completed",
+    "source_expander": "completed",
+    "llm_evidence_extractor": "completed",
+    "evidence_normalizer": "completed",
+    "technical_deterministic_collection": "completed",
+    "technical_reasoning": "completed",
+    "technical_validation": "completed",
+    "llm_timeline_synthesizer": "completed",
+    "llm_narrative_writer": "completed",
+    "llm_quality_assessor": "completed",
+    "dossier_assembler": "completed",
+    "quality_judge": "completed",
+    "dashboard_projection": "completed"
+  },
+  "retry_counts": {},
+  "started_at": "2026-04-27T13:02:30+00:00",
+  "updated_at": "2026-04-27T13:06:24+00:00",
+  "completed_at": "2026-04-27T13:06:24+00:00",
+  "run_notes": [
+    "Loaded and normalized incident seed.",
+    "Built direct source candidates from seed facts.",
+    "Fetched direct sources and discovered second-hop links.",
+    "LLM extracted 0 extra items.",
+    "Turned fetched sources into citation-backed evidence.",
+    "Assembled dossier, quality report, and library entry.",
+    "The dossier establishes a credible baseline with verified attack transaction and attacker address on Base chain, supported by a DeFiHackLabs POC confirming the price manipulation vector. However, the protocol remains unidentified, contract addresses are not explicitly classified, and critical forensic elements including fund flow analysis and social verification are absent. The timeline is minimal with only 3 high-level steps. While sufficient to confirm an exploit occurred, the dossier lacks the technical depth and attribution required for comprehensive incident response or detailed case study presentation.",
+    "Projected live incident library and dossier views."
+  ],
+  "artifacts": {
+    "incident_seed": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/incident_seed.json",
+    "source_index": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/source_index.json",
+    "source_documents": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/source_documents.json",
+    "raw_evidence": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/raw_evidence.json",
+    "augmented_incident": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/augmented_incident.json",
+    "quality_report": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/quality_report.json",
+    "incident_library_entry": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/incident_library_entry.json"
+  }
+}

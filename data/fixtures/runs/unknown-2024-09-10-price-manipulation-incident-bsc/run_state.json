@@ -1,0 +1,45 @@
+{
+  "job_id": "unknown-bsc-2024-09-10-batch",
+  "incident_id": "unknown-2024-09-10-price-manipulation-incident-bsc",
+  "trigger_type": "batch",
+  "current_stage": "dashboard_projection",
+  "node_status": {
+    "seed_loader": "completed",
+    "source_finder": "completed",
+    "source_expander": "completed",
+    "llm_evidence_extractor": "completed",
+    "evidence_normalizer": "completed",
+    "technical_deterministic_collection": "completed",
+    "technical_reasoning": "completed",
+    "technical_validation": "completed",
+    "llm_timeline_synthesizer": "completed",
+    "llm_narrative_writer": "completed",
+    "llm_quality_assessor": "completed",
+    "dossier_assembler": "completed",
+    "quality_judge": "completed",
+    "dashboard_projection": "completed"
+  },
+  "retry_counts": {},
+  "started_at": "2026-04-27T12:40:15+00:00",
+  "updated_at": "2026-04-27T12:45:06+00:00",
+  "completed_at": "2026-04-27T12:45:06+00:00",
+  "run_notes": [
+    "Loaded and normalized incident seed.",
+    "Built direct source candidates from seed facts.",
+    "Fetched direct sources and discovered second-hop links.",
+    "LLM extracted 0 extra items.",
+    "Turned fetched sources into citation-backed evidence.",
+    "Assembled dossier, quality report, and library entry.",
+    "This dossier captures the basic attack footprint (transaction hash, attacker address, PoC reference) but suffers from significant completeness issues. The loss amount is incomplete ('~1'), the protocol identification is inconsistent, and the timeline is superficial with only 3 generic steps. While evidence from DeFiHackLabs and BSCScan provides a foundation, the dossier lacks the technical depth, fund flow analysis, and comprehensive source coverage needed for a complete incident report. Not suitable for demo or evidentiary purposes.",
+    "Projected live incident library and dossier views."
+  ],
+  "artifacts": {
+    "incident_seed": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/incident_seed.json",
+    "source_index": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/source_index.json",
+    "source_documents": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/source_documents.json",
+    "raw_evidence": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/raw_evidence.json",
+    "augmented_incident": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/augmented_incident.json",
+    "quality_report": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/quality_report.json",
+    "incident_library_entry": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/incident_library_entry.json"
+  }
+}

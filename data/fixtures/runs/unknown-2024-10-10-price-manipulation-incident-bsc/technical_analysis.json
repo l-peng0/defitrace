@@ -1,0 +1,600 @@
+{
+  "incident_id": "unknown-2024-10-10-price-manipulation-incident-bsc",
+  "chain": "BSC",
+  "generated_at": "2026-04-27T12:57:11+00:00",
+  "primary_tx_hash": "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+  "tx_hashes": [
+    "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3"
+  ],
+  "transactions": [
+    {
+      "tx_hash": "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+      "status": "completed",
+      "tx_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3/tx.json",
+      "receipt_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3/receipt.json",
+      "trace_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3/trace_callTracer.json",
+      "decoded_calls_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3/decoded_calls.json",
+      "funds_flow_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3/funds_flow.json",
+      "manifest_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3/manifest.json",
+      "summary": {
+        "contracts_touched": [
+          "0x03fed6ecf872a827c07eab63106e8f04aef79f0d",
+          "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+          "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+          "0x1b81d678ffb9c0263b24a97847620c99d213eb14",
+          "0x4848489f0b2bedd788c696e2d79b6b69d7484848",
+          "0x55d398326f99059ff775485246999027b3197955",
+          "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+          "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+          "0x92b7807bf19b7dddf89b706143896d05228f3121",
+          "0x9810512be701801954449408966c630595d0cd51",
+          "0xa2268fcc2fe7a2bb755fbe5a7b3ac346ddfedb9b",
+          "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
+          "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+          "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a",
+          "0xc5161ae3437c08036b98bdb58cfe6bbff876c177",
+          "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
+          "0xd5f07fed6ddca96c6e93f06498dfecf7e1346d7e"
+        ],
+        "addresses_seen": [
+          "0x03fed6ecf872a827c07eab63106e8f04aef79f0d",
+          "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+          "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+          "0x1b81d678ffb9c0263b24a97847620c99d213eb14",
+          "0x4645863205b47a0a3344684489e8c446a437d66c",
+          "0x4848489f0b2bedd788c696e2d79b6b69d7484848",
+          "0x55d398326f99059ff775485246999027b3197955",
+          "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+          "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+          "0x92b7807bf19b7dddf89b706143896d05228f3121",
+          "0x9810512be701801954449408966c630595d0cd51",
+          "0xa2268fcc2fe7a2bb755fbe5a7b3ac346ddfedb9b",
+          "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
+          "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+          "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a",
+          "0xc5161ae3437c08036b98bdb58cfe6bbff876c177",
+          "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
+          "0xd5f07fed6ddca96c6e93f06498dfecf7e1346d7e"
+        ],
+        "native_value_transfers": 1,
+        "token_transfers": 16
+      },
+      "issues": []
+    }
+  ],
+  "analysis_plan": {
+    "incident_id": "unknown-2024-10-10-price-manipulation-incident-bsc",
+    "chain": "BSC",
+    "generated_at": "2026-04-27T12:57:12+00:00",
+    "tx_hashes": [
+      "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3"
+    ],
+    "roles": {
+      "attacker_eoa": [
+        "0x4645863205b47a0a3344684489e8c446a437d66c"
+      ],
+      "attacker_contracts": [],
+      "victim": [
+        "0x0000000000000000000000000000000000000000"
+      ],
+      "routers": [
+        "0x10ed43c718714eb63d5aa57b78b54704e256024e"
+      ],
+      "pairs": [
+        "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+        "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a",
+        "0x03fed6ecf872a827c07eab63106e8f04aef79f0d"
+      ],
+      "oracles": [],
+      "flash_loan_providers": [
+        "0x92b7807bf19b7dddf89b706143896d05228f3121"
+      ],
+      "tokens": [
+        "0x55d398326f99059ff775485246999027b3197955",
+        "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+        "0x9810512be701801954449408966c630595d0cd51"
+      ],
+      "unknown": [
+        "0x1b81d678ffb9c0263b24a97847620c99d213eb14",
+        "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
+        "0xc5161ae3437c08036b98bdb58cfe6bbff876c177",
+        "0xd5f07fed6ddca96c6e93f06498dfecf7e1346d7e",
+        "0xa2268fcc2fe7a2bb755fbe5a7b3ac346ddfedb9b",
+        "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+        "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
+        "0x4848489f0b2bedd788c696e2d79b6b69d7484848",
+        "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"
+      ]
+    },
+    "newly_deployed": [],
+    "priority_contracts": [
+      {
+        "address": "0x0000000000000000000000000000000000000000",
+        "role": "victim",
+        "why": "largest net-negative token balance change",
+        "priority": "high"
+      },
+      {
+        "address": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+        "role": "pair",
+        "why": "target of direct swap()",
+        "priority": "medium"
+      },
+      {
+        "address": "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a",
+        "role": "pair",
+        "why": "target of direct swap()",
+        "priority": "medium"
+      },
+      {
+        "address": "0x03fed6ecf872a827c07eab63106e8f04aef79f0d",
+        "role": "pair",
+        "why": "target of direct swap()",
+        "priority": "medium"
+      },
+      {
+        "address": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "role": "router",
+        "why": "called with swap* selector",
+        "priority": "medium"
+      },
+      {
+        "address": "0x92b7807bf19b7dddf89b706143896d05228f3121",
+        "role": "flash_loan_provider",
+        "why": "called with flashLoan* selector",
+        "priority": "medium"
+      }
+    ],
+    "investigation_notes": [
+      "Tx 0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3 contains 10 swap selector(s); inspect router/pair pricing."
+    ],
+    "call_graph": [
+      {
+        "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+        "to": "0x92b7807bf19b7dddf89b706143896d05228f3121",
+        "category": "flashloan"
+      },
+      {
+        "from": "0x92b7807bf19b7dddf89b706143896d05228f3121",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+        "to": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "category": "swap"
+      },
+      {
+        "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "to": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+        "category": "swap"
+      },
+      {
+        "from": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+        "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+        "category": "transfer"
+      },
+      {
+        "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+        "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+        "category": "burn"
+      },
+      {
+        "from": "0xa2268fcc2fe7a2bb755fbe5a7b3ac346ddfedb9b",
+        "to": "0x9810512be701801954449408966c630595d0cd51",
+        "category": "mint"
+      },
+      {
+        "from": "0xd5f07fed6ddca96c6e93f06498dfecf7e1346d7e",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x1b81d678ffb9c0263b24a97847620c99d213eb14",
+        "to": "0x9810512be701801954449408966c630595d0cd51",
+        "category": "transfer"
+      },
+      {
+        "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "to": "0x9810512be701801954449408966c630595d0cd51",
+        "category": "transfer"
+      },
+      {
+        "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "to": "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a",
+        "category": "swap"
+      },
+      {
+        "from": "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a",
+        "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+        "category": "transfer"
+      },
+      {
+        "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "to": "0x03fed6ecf872a827c07eab63106e8f04aef79f0d",
+        "category": "swap"
+      },
+      {
+        "from": "0x03fed6ecf872a827c07eab63106e8f04aef79f0d",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+        "category": "transfer"
+      },
+      {
+        "from": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+        "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+        "category": "transfer"
+      }
+    ]
+  },
+  "contract_inventory": {
+    "incident_id": "unknown-2024-10-10-price-manipulation-incident-bsc",
+    "chain": "BSC",
+    "generated_at": "2026-04-27T12:57:25+00:00",
+    "contracts": {
+      "0x0000000000000000000000000000000000000000": {
+        "address": "0x0000000000000000000000000000000000000000",
+        "role": "victim",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x0000000000000000000000000000000000000000/source.json",
+        "abi_path": "",
+        "fetched_at": "2026-04-27T12:57:13+00:00",
+        "fetch_errors": []
+      },
+      "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae": {
+        "address": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+        "role": "pair",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "PancakePair",
+        "compiler_version": "v0.5.16+commit.9c3226ce",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae/abi.json",
+        "fetched_at": "2026-04-27T12:57:16+00:00",
+        "fetch_errors": []
+      },
+      "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a": {
+        "address": "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a",
+        "role": "pair",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "PancakePair",
+        "compiler_version": "v0.5.16+commit.9c3226ce",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/contracts/0xbb8ae522f812e9e65239a0e5db87a9d738ce957a/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/contracts/0xbb8ae522f812e9e65239a0e5db87a9d738ce957a/abi.json",
+        "fetched_at": "2026-04-27T12:57:18+00:00",
+        "fetch_errors": []
+      },
+      "0x03fed6ecf872a827c07eab63106e8f04aef79f0d": {
+        "address": "0x03fed6ecf872a827c07eab63106e8f04aef79f0d",
+        "role": "pair",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "PancakePair",
+        "compiler_version": "v0.5.16+commit.9c3226ce",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x03fed6ecf872a827c07eab63106e8f04aef79f0d/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x03fed6ecf872a827c07eab63106e8f04aef79f0d/abi.json",
+        "fetched_at": "2026-04-27T12:57:20+00:00",
+        "fetch_errors": []
+      },
+      "0x10ed43c718714eb63d5aa57b78b54704e256024e": {
+        "address": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "role": "router",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "PancakeRouter",
+        "compiler_version": "v0.6.6+commit.6c089d02",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x10ed43c718714eb63d5aa57b78b54704e256024e/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x10ed43c718714eb63d5aa57b78b54704e256024e/abi.json",
+        "fetched_at": "2026-04-27T12:57:22+00:00",
+        "fetch_errors": []
+      },
+      "0x92b7807bf19b7dddf89b706143896d05228f3121": {
+        "address": "0x92b7807bf19b7dddf89b706143896d05228f3121",
+        "role": "flash_loan_provider",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "PancakeV3Pool",
+        "compiler_version": "v0.7.6+commit.7338295f",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x92b7807bf19b7dddf89b706143896d05228f3121/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x92b7807bf19b7dddf89b706143896d05228f3121/abi.json",
+        "fetched_at": "2026-04-27T12:57:25+00:00",
+        "fetch_errors": []
+      }
+    }
+  },
+  "revision_round": 0,
+  "reasoning": {
+    "attack_flow_summary": "",
+    "exploit_mechanism": "",
+    "tx_role_map": {},
+    "contract_role_map": {},
+    "timeline_steps": [],
+    "funds_flow_path": [],
+    "open_questions": [],
+    "confidence_notes": [
+      "The attack contract (0x8f921e27e3af106015d1c3a244ec4f48dbfcad14) is unverified and not classified in the investigation plan, but artifacts clearly show it initiated the flashloan and swap operations. Victim classification as zero address may indicate loss attribution ambiguity; actual victims are the liquidity pools whose reserves were arbitraged. Token 0x9810512be701801954449408966c630595d0cd51 appears in swaps but role is unclear from transfer data alone."
+    ]
+  },
+  "validation": {
+    "verdict": "Deterministic and semantic checks passed.",
+    "severity": "pass",
+    "unresolved_gaps": [],
+    "semantic_checks": {
+      "tx_role_consistency": {
+        "status": "pass",
+        "mismatches": []
+      },
+      "funds_flow_consistency": {
+        "status": "pass",
+        "mismatches": []
+      },
+      "mechanism_source_consistency": {
+        "status": "pass",
+        "mismatches": []
+      }
+    },
+    "needs_revision": false,
+    "revision_request": "",
+    "checked_transactions": 1
+  },
+  "merge_back": {
+    "summary": "",
+    "timeline_steps": [],
+    "funds_flow_path": [],
+    "key_addresses": [
+      "0x03fed6ecf872a827c07eab63106e8f04aef79f0d",
+      "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "0x1b81d678ffb9c0263b24a97847620c99d213eb14",
+      "0x4645863205b47a0a3344684489e8c446a437d66c",
+      "0x4848489f0b2bedd788c696e2d79b6b69d7484848",
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+      "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "0x92b7807bf19b7dddf89b706143896d05228f3121",
+      "0x9810512be701801954449408966c630595d0cd51",
+      "0xa2268fcc2fe7a2bb755fbe5a7b3ac346ddfedb9b",
+      "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a",
+      "0xc5161ae3437c08036b98bdb58cfe6bbff876c177",
+      "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
+      "0xd5f07fed6ddca96c6e93f06498dfecf7e1346d7e"
+    ],
+    "key_contracts": [
+      "0x03fed6ecf872a827c07eab63106e8f04aef79f0d",
+      "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "0x1b81d678ffb9c0263b24a97847620c99d213eb14",
+      "0x4848489f0b2bedd788c696e2d79b6b69d7484848",
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+      "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "0x92b7807bf19b7dddf89b706143896d05228f3121",
+      "0x9810512be701801954449408966c630595d0cd51",
+      "0xa2268fcc2fe7a2bb755fbe5a7b3ac346ddfedb9b",
+      "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a",
+      "0xc5161ae3437c08036b98bdb58cfe6bbff876c177",
+      "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
+      "0xd5f07fed6ddca96c6e93f06498dfecf7e1346d7e"
+    ],
+    "key_transactions": [
+      "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3"
+    ],
+    "open_questions": []
+  },
+  "status": "completed",
+  "pipeline_trace": {
+    "revision_triggered": false,
+    "revision_critique": null,
+    "qa_retry_triggered": true,
+    "qa_retry_critique": "First-pass completeness score: 4.00 (threshold: 0.7). Missing/weak dimensions: attack_contract_urls, victim_contract_urls, precise_incident_timestamp, confirmed_protocol_name, detailed_loss_breakdown, vulnerability_root_cause_technical_details, fund_flow_post_attack, attack_preparation_steps. Quality assessor notes: The dossier establishes a basic incident skeleton with verified attack transaction and attacker address on BSC. However, critical gaps undermine its utility: the $5 loss figure is highly suspicious and likely erroneous; protocol identity remains unconfirmed; no victim contracts are identified; and technical depth is limited to generic price manipulation narrative without root cause analysis. The PoC reference (HYDT_exp.sol) suggests the actual protocol may be HYDT, but this connection is not formally established in evidence. Identified gaps: Loss amount verification critical - $5 is implausibly low for a documented exploit; Protocol identity unconfirmed between 'Unknown' designation and HYDT reference in PoC; No victim contract addresses identified despite multiple addresses mentioned in evidence; Missing pre-attack preparation timeline (funding source, contract deployment); No post-attack fund flow tracing; Lack of technical vulnerability analysis beyond generic 'price manipulation' description; No oracle or specific mechanism identified as attack vector. Recommendations: Verify actual loss amount through on-chain analysis - the $5 figure requires investigation and correction; Confirm protocol identity by analyzing the DeFiHackLabs PoC code and correlating addresses with known HYDT protocol contracts; Extract and document victim contract addresses from the attack transaction trace; Perform fund flow analysis to trace attacker's post-exploit movements; Analyze PoC code to document the specific price manipulation mechanism and vulnerable contract functions; Add preparation phase timeline including attacker account funding and any deployed helper contracts; Cross-reference with security twitter/accounts for additional context on HYDT exploits around October 2024.",
+    "records": [
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:57:07.924Z",
+        "duration_ms": 3194,
+        "input_summary": "63 source docs; 497 heuristic items",
+        "output_summary": "497 total items (+0 LLM-extracted)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "collector",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:57:11.132Z",
+        "duration_ms": 1080,
+        "input_summary": "1 tx(s): 0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+        "output_summary": "1 artifact bundle(s) collected; statuses: completed",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "planner",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:57:12.212Z",
+        "duration_ms": 3,
+        "input_summary": "1 transactions on BSC",
+        "output_summary": "9 role categories; 6 priority contracts",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "contract_intelligence",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:57:12.215Z",
+        "duration_ms": 13161,
+        "input_summary": "6 priority contracts",
+        "output_summary": "6 contracts in inventory",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "technical_reasoner",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:57:25.376Z",
+        "duration_ms": 188736,
+        "input_summary": "1 txs, 6 contracts",
+        "output_summary": "0 timeline steps; mechanism: ",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "semantic_validator",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:00:34.117Z",
+        "duration_ms": 1,
+        "input_summary": "revision_round=0",
+        "output_summary": "severity=pass; needs_revision=False; verdict: Deterministic and semantic checks passed.",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:00:34.124Z",
+        "duration_ms": 38531,
+        "input_summary": "497 evidence items",
+        "output_summary": "executive_summary len=370",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:00:34.124Z",
+        "duration_ms": 38531,
+        "input_summary": "497 evidence items",
+        "output_summary": "3 timeline steps",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:01:12.659Z",
+        "duration_ms": 47180,
+        "input_summary": "3 timeline steps; 4 narrative keys",
+        "output_summary": "completeness_score=4; judge_summary: The dossier establishes a basic incident skeleton with verified attack transacti",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:01:59.840Z",
+        "duration_ms": 229914,
+        "input_summary": "RETRY: 63 docs; critique injected",
+        "output_summary": "518 items after retry extraction",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:05:49.762Z",
+        "duration_ms": 52283,
+        "input_summary": "RETRY: 518 evidence items",
+        "output_summary": "executive_summary len=417 (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:05:49.762Z",
+        "duration_ms": 52283,
+        "input_summary": "RETRY: 518 evidence items",
+        "output_summary": "3 timeline steps (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:06:42.047Z",
+        "duration_ms": 49375,
+        "input_summary": "RETRY: 3 steps; 4 narrative keys",
+        "output_summary": "v2 completeness_score=52",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      }
+    ]
+  }
+}

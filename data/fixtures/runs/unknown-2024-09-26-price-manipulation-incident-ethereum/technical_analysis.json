@@ -1,0 +1,607 @@
+{
+  "incident_id": "unknown-2024-09-26-price-manipulation-incident-ethereum",
+  "chain": "Ethereum",
+  "generated_at": "2026-04-27T12:41:57+00:00",
+  "primary_tx_hash": "0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940",
+  "tx_hashes": [
+    "0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940"
+  ],
+  "transactions": [
+    {
+      "tx_hash": "0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940",
+      "status": "completed",
+      "tx_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/technical_analysis/0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940/tx.json",
+      "receipt_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/technical_analysis/0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940/receipt.json",
+      "trace_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/technical_analysis/0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940/trace_callTracer.json",
+      "decoded_calls_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/technical_analysis/0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940/decoded_calls.json",
+      "funds_flow_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/technical_analysis/0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940/funds_flow.json",
+      "manifest_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/technical_analysis/0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940/manifest.json",
+      "summary": {
+        "contracts_touched": [
+          "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568",
+          "0x047d41f2544b7f63a8e991af2068a363d210d6da",
+          "0x0c8da4f8b823bee4d5dab73367d45b5135b50fab",
+          "0x102633152313c81cd80419b6ecf66d14ad68949a",
+          "0x12073748b427d2bb7064c3df120ee04448aa29a0",
+          "0x15c5620dffac7c7366eed66c20ad222ddbb1ed57",
+          "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+          "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+          "0x34339f94350ec5274ea44d0c37dae9e968c44081",
+          "0x3a32f5040bc4d8417e78e236eb2c48c90e003fda",
+          "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+          "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+          "0x51a7f889480c57cbeea81614f7d0be2b70db6c5e",
+          "0x702696b2aa47fd1d4feaaf03ce273009dc47d901",
+          "0x7effd7b47bfd17e52fb7559d3f924201b9dbff3d",
+          "0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb",
+          "0x847a3364cc5fe389283bd821cfc8a477288d9e82",
+          "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "0x893411580e590d62ddbca8a703d61cc4a8c7b2b9",
+          "0x9336943ecd91c201d9ed5a21562b34aef710052f",
+          "0x94c7f81e3b0458daa721ca5e29f6ced05ccce2b3",
+          "0xac725cb59d16c81061bdea61041a8a5e73da9ec6",
+          "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "0xce88686553686da562ce7cea497ce749da109f9f",
+          "0xe592427a0aece92de3edee1f18e0157c05861564",
+          "0xe7b67f44ea304dd7f6d215b13686637ff64cd2b2",
+          "0xea51d7853eefb32b6ee06b1c12e6dcca88be0ffe"
+        ],
+        "addresses_seen": [
+          "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568",
+          "0x047d41f2544b7f63a8e991af2068a363d210d6da",
+          "0x0c8da4f8b823bee4d5dab73367d45b5135b50fab",
+          "0x102633152313c81cd80419b6ecf66d14ad68949a",
+          "0x12073748b427d2bb7064c3df120ee04448aa29a0",
+          "0x15c5620dffac7c7366eed66c20ad222ddbb1ed57",
+          "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+          "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+          "0x2bfb373017349820dda2da8230e6b66739be9f96",
+          "0x34339f94350ec5274ea44d0c37dae9e968c44081",
+          "0x3a32f5040bc4d8417e78e236eb2c48c90e003fda",
+          "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+          "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+          "0x51a7f889480c57cbeea81614f7d0be2b70db6c5e",
+          "0x702696b2aa47fd1d4feaaf03ce273009dc47d901",
+          "0x7effd7b47bfd17e52fb7559d3f924201b9dbff3d",
+          "0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb",
+          "0x847a3364cc5fe389283bd821cfc8a477288d9e82",
+          "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "0x893411580e590d62ddbca8a703d61cc4a8c7b2b9",
+          "0x9336943ecd91c201d9ed5a21562b34aef710052f",
+          "0x94c7f81e3b0458daa721ca5e29f6ced05ccce2b3",
+          "0xac725cb59d16c81061bdea61041a8a5e73da9ec6",
+          "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "0xce88686553686da562ce7cea497ce749da109f9f",
+          "0xe592427a0aece92de3edee1f18e0157c05861564",
+          "0xe7b67f44ea304dd7f6d215b13686637ff64cd2b2",
+          "0xea51d7853eefb32b6ee06b1c12e6dcca88be0ffe"
+        ],
+        "native_value_transfers": 0,
+        "token_transfers": 9
+      },
+      "issues": []
+    }
+  ],
+  "analysis_plan": {
+    "incident_id": "unknown-2024-09-26-price-manipulation-incident-ethereum",
+    "chain": "Ethereum",
+    "generated_at": "2026-04-27T12:41:58+00:00",
+    "tx_hashes": [
+      "0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940"
+    ],
+    "roles": {
+      "attacker_eoa": [
+        "0x2bfb373017349820dda2da8230e6b66739be9f96"
+      ],
+      "attacker_contracts": [
+        "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+        "0x0c8da4f8b823bee4d5dab73367d45b5135b50fab"
+      ],
+      "victim": [
+        "0x4585fe77225b41b697c938b018e2ac67ac5a20c0"
+      ],
+      "routers": [],
+      "pairs": [],
+      "oracles": [],
+      "flash_loan_providers": [
+        "0xe592427a0aece92de3edee1f18e0157c05861564"
+      ],
+      "tokens": [
+        "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568",
+        "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+        "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      ],
+      "unknown": [
+        "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+        "0x94c7f81e3b0458daa721ca5e29f6ced05ccce2b3",
+        "0x3a32f5040bc4d8417e78e236eb2c48c90e003fda",
+        "0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb",
+        "0xce88686553686da562ce7cea497ce749da109f9f",
+        "0xea51d7853eefb32b6ee06b1c12e6dcca88be0ffe",
+        "0x847a3364cc5fe389283bd821cfc8a477288d9e82",
+        "0x0000000000000000000000000000000000000000",
+        "0xba12222222228d8ba445958a75a0704d566bf2c8",
+        "0x893411580e590d62ddbca8a703d61cc4a8c7b2b9",
+        "0x15c5620dffac7c7366eed66c20ad222ddbb1ed57",
+        "0x047d41f2544b7f63a8e991af2068a363d210d6da",
+        "0x12073748b427d2bb7064c3df120ee04448aa29a0",
+        "0xee800b1b63893ca1e1b0fa8fefdc10fac9b980f7",
+        "0x102633152313c81cd80419b6ecf66d14ad68949a",
+        "0xac725cb59d16c81061bdea61041a8a5e73da9ec6",
+        "0x51a7f889480c57cbeea81614f7d0be2b70db6c5e",
+        "0x9336943ecd91c201d9ed5a21562b34aef710052f",
+        "0x34339f94350ec5274ea44d0c37dae9e968c44081",
+        "0xe7b67f44ea304dd7f6d215b13686637ff64cd2b2",
+        "0x702696b2aa47fd1d4feaaf03ce273009dc47d901",
+        "0x7effd7b47bfd17e52fb7559d3f924201b9dbff3d"
+      ]
+    },
+    "newly_deployed": [
+      {
+        "address": "0x0c8da4f8b823bee4d5dab73367d45b5135b50fab",
+        "deployed_by": "0x2bfb373017349820dda2da8230e6b66739be9f96",
+        "create_type": "CREATE",
+        "trace_path": "0",
+        "depth": 0,
+        "tx_hash": "0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940"
+      },
+      {
+        "address": "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+        "deployed_by": "0x0c8da4f8b823bee4d5dab73367d45b5135b50fab",
+        "create_type": "CREATE",
+        "trace_path": "0.0",
+        "depth": 1,
+        "tx_hash": "0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940"
+      }
+    ],
+    "priority_contracts": [
+      {
+        "address": "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x0c8da4f8b823bee4d5dab73367d45b5135b50fab",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+        "role": "victim",
+        "why": "largest net-negative token balance change",
+        "priority": "high"
+      },
+      {
+        "address": "0xe592427a0aece92de3edee1f18e0157c05861564",
+        "role": "flash_loan_provider",
+        "why": "called with flashLoan* selector",
+        "priority": "medium"
+      }
+    ],
+    "investigation_notes": [],
+    "call_graph": [
+      {
+        "from": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      },
+      {
+        "from": "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "burn"
+      },
+      {
+        "from": "0x047d41f2544b7f63a8e991af2068a363d210d6da",
+        "to": "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568",
+        "category": "mint"
+      },
+      {
+        "from": "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568",
+        "to": "0x51a7f889480c57cbeea81614f7d0be2b70db6c5e",
+        "category": "mint"
+      },
+      {
+        "from": "0x3a32f5040bc4d8417e78e236eb2c48c90e003fda",
+        "to": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+        "category": "transfer"
+      },
+      {
+        "from": "0x3a32f5040bc4d8417e78e236eb2c48c90e003fda",
+        "to": "0xe592427a0aece92de3edee1f18e0157c05861564",
+        "category": "flashloan"
+      },
+      {
+        "from": "0xe592427a0aece92de3edee1f18e0157c05861564",
+        "to": "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568",
+        "category": "transfer"
+      },
+      {
+        "from": "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568",
+        "to": "0x51a7f889480c57cbeea81614f7d0be2b70db6c5e",
+        "category": "transfer"
+      },
+      {
+        "from": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      },
+      {
+        "from": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+        "to": "0xe592427a0aece92de3edee1f18e0157c05861564",
+        "category": "flashloan"
+      },
+      {
+        "from": "0xe592427a0aece92de3edee1f18e0157c05861564",
+        "to": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+        "category": "transfer"
+      },
+      {
+        "from": "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      },
+      {
+        "from": "0x893411580e590d62ddbca8a703d61cc4a8c7b2b9",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "mint"
+      },
+      {
+        "from": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      }
+    ]
+  },
+  "contract_inventory": {
+    "incident_id": "unknown-2024-09-26-price-manipulation-incident-ethereum",
+    "chain": "Ethereum",
+    "generated_at": "2026-04-27T12:41:59+00:00",
+    "contracts": {
+      "0x1e1d02d663228e5d47f1de64030b39632a3b787d": {
+        "address": "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:41:58+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x0c8da4f8b823bee4d5dab73367d45b5135b50fab": {
+        "address": "0x0c8da4f8b823bee4d5dab73367d45b5135b50fab",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:41:58+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x4585fe77225b41b697c938b018e2ac67ac5a20c0": {
+        "address": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+        "role": "victim",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "UniswapV3Pool",
+        "compiler_version": "v0.7.6+commit.7338295f",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/technical_analysis/contracts/0x4585fe77225b41b697c938b018e2ac67ac5a20c0/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/technical_analysis/contracts/0x4585fe77225b41b697c938b018e2ac67ac5a20c0/abi.json",
+        "fetched_at": "2026-04-27T12:41:58+00:00",
+        "fetch_errors": []
+      },
+      "0xe592427a0aece92de3edee1f18e0157c05861564": {
+        "address": "0xe592427a0aece92de3edee1f18e0157c05861564",
+        "role": "flash_loan_provider",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "SwapRouter",
+        "compiler_version": "v0.7.6+commit.7338295f",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/technical_analysis/contracts/0xe592427a0aece92de3edee1f18e0157c05861564/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/technical_analysis/contracts/0xe592427a0aece92de3edee1f18e0157c05861564/abi.json",
+        "fetched_at": "2026-04-27T12:41:59+00:00",
+        "fetch_errors": []
+      }
+    }
+  },
+  "revision_round": 0,
+  "reasoning": {
+    "attack_flow_summary": "",
+    "exploit_mechanism": "",
+    "tx_role_map": {},
+    "contract_role_map": {},
+    "timeline_steps": [],
+    "funds_flow_path": [],
+    "open_questions": [],
+    "confidence_notes": [
+      "Attack pattern consistent with flash loan price manipulation of Uniswap V3 pool. Two newly deployed unverified attacker contracts orchestrate the attack. SwapRouter facilitates flash loan. Victim UniswapV3Pool shows net-negative token transfer. Additional protocols (Balancer, Aave) involved in multi-hop flow. Exact loss amount and manipulation mechanism require trace-level analysis of the unverified attacker contracts."
+    ]
+  },
+  "validation": {
+    "verdict": "Deterministic and semantic checks passed.",
+    "severity": "pass",
+    "unresolved_gaps": [],
+    "semantic_checks": {
+      "tx_role_consistency": {
+        "status": "pass",
+        "mismatches": []
+      },
+      "funds_flow_consistency": {
+        "status": "pass",
+        "mismatches": []
+      },
+      "mechanism_source_consistency": {
+        "status": "pass",
+        "mismatches": []
+      }
+    },
+    "needs_revision": false,
+    "revision_request": "",
+    "checked_transactions": 1
+  },
+  "merge_back": {
+    "summary": "",
+    "timeline_steps": [],
+    "funds_flow_path": [],
+    "key_addresses": [
+      "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568",
+      "0x047d41f2544b7f63a8e991af2068a363d210d6da",
+      "0x0c8da4f8b823bee4d5dab73367d45b5135b50fab",
+      "0x102633152313c81cd80419b6ecf66d14ad68949a",
+      "0x12073748b427d2bb7064c3df120ee04448aa29a0",
+      "0x15c5620dffac7c7366eed66c20ad222ddbb1ed57",
+      "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+      "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "0x2bfb373017349820dda2da8230e6b66739be9f96",
+      "0x34339f94350ec5274ea44d0c37dae9e968c44081",
+      "0x3a32f5040bc4d8417e78e236eb2c48c90e003fda",
+      "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+      "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "0x51a7f889480c57cbeea81614f7d0be2b70db6c5e",
+      "0x702696b2aa47fd1d4feaaf03ce273009dc47d901",
+      "0x7effd7b47bfd17e52fb7559d3f924201b9dbff3d",
+      "0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb",
+      "0x847a3364cc5fe389283bd821cfc8a477288d9e82",
+      "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+      "0x893411580e590d62ddbca8a703d61cc4a8c7b2b9",
+      "0x9336943ecd91c201d9ed5a21562b34aef710052f",
+      "0x94c7f81e3b0458daa721ca5e29f6ced05ccce2b3",
+      "0xac725cb59d16c81061bdea61041a8a5e73da9ec6",
+      "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "0xce88686553686da562ce7cea497ce749da109f9f",
+      "0xe592427a0aece92de3edee1f18e0157c05861564",
+      "0xe7b67f44ea304dd7f6d215b13686637ff64cd2b2",
+      "0xea51d7853eefb32b6ee06b1c12e6dcca88be0ffe"
+    ],
+    "key_contracts": [
+      "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568",
+      "0x047d41f2544b7f63a8e991af2068a363d210d6da",
+      "0x0c8da4f8b823bee4d5dab73367d45b5135b50fab",
+      "0x102633152313c81cd80419b6ecf66d14ad68949a",
+      "0x12073748b427d2bb7064c3df120ee04448aa29a0",
+      "0x15c5620dffac7c7366eed66c20ad222ddbb1ed57",
+      "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+      "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "0x34339f94350ec5274ea44d0c37dae9e968c44081",
+      "0x3a32f5040bc4d8417e78e236eb2c48c90e003fda",
+      "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+      "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "0x51a7f889480c57cbeea81614f7d0be2b70db6c5e",
+      "0x702696b2aa47fd1d4feaaf03ce273009dc47d901",
+      "0x7effd7b47bfd17e52fb7559d3f924201b9dbff3d",
+      "0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb",
+      "0x847a3364cc5fe389283bd821cfc8a477288d9e82",
+      "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+      "0x893411580e590d62ddbca8a703d61cc4a8c7b2b9",
+      "0x9336943ecd91c201d9ed5a21562b34aef710052f",
+      "0x94c7f81e3b0458daa721ca5e29f6ced05ccce2b3",
+      "0xac725cb59d16c81061bdea61041a8a5e73da9ec6",
+      "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "0xce88686553686da562ce7cea497ce749da109f9f",
+      "0xe592427a0aece92de3edee1f18e0157c05861564",
+      "0xe7b67f44ea304dd7f6d215b13686637ff64cd2b2",
+      "0xea51d7853eefb32b6ee06b1c12e6dcca88be0ffe"
+    ],
+    "key_transactions": [
+      "0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940"
+    ],
+    "open_questions": []
+  },
+  "status": "completed",
+  "pipeline_trace": {
+    "revision_triggered": false,
+    "revision_critique": null,
+    "qa_retry_triggered": true,
+    "qa_retry_critique": "First-pass completeness score: 48.00 (threshold: 0.7). Missing/weak dimensions: precise_loss_amount_with_currency, attack_contract_addresses, victim_contract_addresses, block_number, exact_timestamp, fund_flow_tracing, social_media_sources, protocol_official_response, recovery_status. Quality assessor notes: The dossier contains essential attack artifacts including a confirmed transaction hash (0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940), attacker address (0x0C8da4f8B823bEe4D5dAb73367D45B5135B50faB), and a DeFiHackLabs proof-of-concept, providing a solid foundation for incident verification. However, critical gaps prevent production readiness: the loss amount is truncated and unusable ('~1' without currency), protocol identification conflicts between context ('Unknown') and narrative ('Bedrock DeFi'), and the timeline lacks forensic depth with only 3 generic steps. The absence of victim contract addresses, block numbers, fund flow analysis, and social media corroboration further limits the dossier's utility for comprehensive incident response or claims adjudication. Identified gaps: Loss amount truncated to '~1' without currency denomination or full figure; Protocol name discrepancy: context shows 'Unknown' while narrative identifies 'Bedrock DeFi'; Timeline lacks granular attack phases (preparation, execution, fund movement); No victim contract addresses identified despite multiple mentioned addresses; No block number or precise timestamp for forensic reconstruction; Missing social media confirmation from protocol team or security researchers; No post-exploit fund tracing to exchanges or mixers; DeFiHackLabs PoC exists but technical root cause not detailed in evidence. Recommendations: Resolve protocol name discrepancy by validating against DeFiHackLabs PoC metadata and Etherscan transaction labels; Obtain complete loss amount with currency denomination from blockchain analysis of attacker address outflows; Expand timeline with preparation phase (attacker funding), execution steps (contract calls with calldata), and post-exploit fund movements; Identify and document victim contract addresses from transaction trace analysis; Add block number and Unix timestamp for precise incident positioning; Source official protocol acknowledgment from Twitter/X or Discord announcements; Trace attacker fund flows to identify exchange deposits or mixer interactions for potential recovery; Extract technical root cause from DeFiHackLabs PoC comments and code structure.",
+    "records": [
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:40:24.755Z",
+        "duration_ms": 92326,
+        "input_summary": "45 source docs; 340 heuristic items",
+        "output_summary": "340 total items (+0 LLM-extracted)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "collector",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:41:57.086Z",
+        "duration_ms": 1256,
+        "input_summary": "1 tx(s): 0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940",
+        "output_summary": "1 artifact bundle(s) collected; statuses: completed",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "planner",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:41:58.341Z",
+        "duration_ms": 2,
+        "input_summary": "1 transactions on Ethereum",
+        "output_summary": "9 role categories; 4 priority contracts",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "contract_intelligence",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:41:58.343Z",
+        "duration_ms": 1645,
+        "input_summary": "4 priority contracts",
+        "output_summary": "4 contracts in inventory",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "technical_reasoner",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:41:59.988Z",
+        "duration_ms": 42223,
+        "input_summary": "1 txs, 4 contracts",
+        "output_summary": "0 timeline steps; mechanism: ",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "semantic_validator",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:42:42.210Z",
+        "duration_ms": 1,
+        "input_summary": "revision_round=0",
+        "output_summary": "severity=pass; needs_revision=False; verdict: Deterministic and semantic checks passed.",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:42:42.214Z",
+        "duration_ms": 24866,
+        "input_summary": "340 evidence items",
+        "output_summary": "executive_summary len=376",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:42:42.214Z",
+        "duration_ms": 24866,
+        "input_summary": "340 evidence items",
+        "output_summary": "3 timeline steps",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:43:07.086Z",
+        "duration_ms": 31041,
+        "input_summary": "3 timeline steps; 4 narrative keys",
+        "output_summary": "completeness_score=48; judge_summary: The dossier contains essential attack artifacts including a confirmed transactio",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:43:38.126Z",
+        "duration_ms": 119068,
+        "input_summary": "RETRY: 45 docs; critique injected",
+        "output_summary": "359 items after retry extraction",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:45:37.192Z",
+        "duration_ms": 35399,
+        "input_summary": "RETRY: 359 evidence items",
+        "output_summary": "executive_summary len=455 (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:45:37.192Z",
+        "duration_ms": 35399,
+        "input_summary": "RETRY: 359 evidence items",
+        "output_summary": "4 timeline steps (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:46:12.590Z",
+        "duration_ms": 23741,
+        "input_summary": "RETRY: 4 steps; 4 narrative keys",
+        "output_summary": "v2 completeness_score=42",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      }
+    ]
+  }
+}

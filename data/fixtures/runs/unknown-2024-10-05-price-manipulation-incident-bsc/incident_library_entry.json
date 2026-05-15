@@ -1,0 +1,44 @@
+{
+  "incident_id": "unknown-2024-10-05-price-manipulation-incident-bsc",
+  "title": "Unknown 2024-10-05 price-manipulation incident",
+  "protocol_name": "Unknown",
+  "chain": "BSC",
+  "incident_date": "",
+  "summary": "An estimated loss of 34",
+  "status": "demo_live_dossier",
+  "completeness_score": 0.62,
+  "source_count": 61,
+  "direct_source_count": 4,
+  "secondary_source_count": 57,
+  "social_count": 0,
+  "poc_count": 2,
+  "explorer_count": 58,
+  "report_count": 1,
+  "missing_fields": [
+    "attack_contract_urls",
+    "victim_contract_urls",
+    "social_sources",
+    "precise_loss_amount_with_currency_unit",
+    "detailed_technical_root_cause",
+    "post_exploit_fund_tracing",
+    "contract_addresses_for_aizpt_token",
+    "block_timestamps",
+    "preparation_funding_phase"
+  ],
+  "last_updated": "2026-04-27T12:56:05+00:00",
+  "pattern_label": "price_manipulation",
+  "attack_tx_hashes": [
+    "0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d",
+    "0x6080604052600436106100e15760003560e01c80638874ef571161007f578063",
+    "0x67d0b23d256fc12ed7d86a703ae165ec301145c06bf8c25b4f0a63685b92cc2f",
+    "0xb4672c4b60d6602a711651cda55fcdbcadf9b7b93806b38374f01bf5aae3a120"
+  ],
+  "source_preview": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/AIZPTToken_exp.sol",
+    "https://bscscan.com/tx/0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d",
+    "https://bscscan.com/address/0x8408497c18882bfb61be9204cfff530f4ee18320",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-10/AIZPTToken_exp.sol",
+    "https://bscscan.com/chart/bnbprice"
+  ]
+}

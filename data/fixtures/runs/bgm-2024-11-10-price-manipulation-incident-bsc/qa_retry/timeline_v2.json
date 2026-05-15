@@ -1,0 +1,69 @@
+{
+  "incident_id": "bgm-2024-11-10-price-manipulation",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Attacker 0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180 deployed a malicious contract on BSC to facilitate the exploit.",
+      "evidence_refs": [
+        "ev-004",
+        "ev-024"
+      ],
+      "entity_refs": [
+        "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 2,
+      "description": "Attacker prepared and positioned funds, interacting with the Bgm protocol and associated liquidity pool (tx 0x9a2b3a9b2c7a8ecb8c741c53315a1317609d30861c79bbe0b2307df57943503f).",
+      "evidence_refs": [
+        "ev-021"
+      ],
+      "entity_refs": [
+        "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+        "0x9a2b3a9b2c7a8ecb8c741c53315a1317609d30861c79bbe0b2307df57943503f"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 3,
+      "description": "Attacker executed the core price-manipulation attack using batch transactions against the Bgm protocol, artificially inflating the price of a token within the protocol's pricing mechanism (tx 0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1).",
+      "evidence_refs": [
+        "ev-003",
+        "ev-019"
+      ],
+      "entity_refs": [
+        "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+        "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+        "0x42646478B25317160E0Dc8DB413991277e4bb3C2",
+        "0xeFA4bCE444C09a52941bEEf5FE8264D70534049f"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 4,
+      "description": "Using the manipulated price, the attacker drained approximately $450K worth of assets from the Bgm protocol.",
+      "evidence_refs": [
+        "ev-005",
+        "ev-019"
+      ],
+      "entity_refs": [
+        "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 5,
+      "description": "Attacker moved extracted funds in a subsequent transaction (tx 0x3127d0fc595e9ea4d4b1f2247959427e5befed3ce47a466ca2612d70dba67780), likely to launder or consolidate the stolen assets.",
+      "evidence_refs": [
+        "ev-023"
+      ],
+      "entity_refs": [
+        "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+        "0x3127d0fc595e9ea4d4b1f2247959427e5befed3ce47a466ca2612d70dba67780"
+      ],
+      "summary": ""
+    }
+  ],
+  "synthesis_note": "The attack was a batch-transaction-based price-manipulation exploit against Bgm on BSC. The attacker deployed a custom contract, used batch transactions to artificially manipulate the price oracle or pool pricing within the Bgm protocol, and then used the inflated price to extract roughly $450K in assets. The evidence is consistent with a classic flash-loan-style or self-funded price manipulation pattern, though specific flash-loan evidence is not explicitly confirmed in the available data. The Quadriga Initiative report title confirms the 'batch transactions' mechanism as the core vector."
+}

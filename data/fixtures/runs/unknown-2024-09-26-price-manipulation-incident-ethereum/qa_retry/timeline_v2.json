@@ -1,0 +1,44 @@
+{
+  "incident_id": "unknown-2024-09-26-price-manipulation",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Attacker address 0x0C8da4f8B823bEe4D5dAb73367D45B5135B50faB is prepared and funded on Ethereum.",
+      "evidence_refs": [
+        "ev-004",
+        "ev-024"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 2,
+      "description": "Attacker deploys a malicious contract via transaction 0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940, interacting with multiple target contracts including 0x2bFB373017349820dda2Da8230E6b66739BE9F96 and 0x1E1d02D663228e5D47f1De64030B39632A3B787D.",
+      "evidence_refs": [
+        "ev-003",
+        "ev-019",
+        "ev-023",
+        "ev-025"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 3,
+      "description": "Attacker executes an ERC-20 approve call (signature 0x8c5be1e5...) granting maximum allowance (0xff...ff) to a target contract, likely as part of the exploit setup or execution.",
+      "evidence_refs": [
+        "ev-020",
+        "ev-021"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 4,
+      "description": "Attacker performs price manipulation against the target protocol, exploiting the manipulated oracle or pool price to extract approximately ~1 in value (exact unit unspecified).",
+      "evidence_refs": [
+        "ev-001",
+        "ev-005"
+      ],
+      "summary": ""
+    }
+  ],
+  "synthesis_note": "Evidence is sparse with the protocol listed as 'Unknown' despite the POC filename referencing 'Bedrock_DeFi'. The attack is categorized as price manipulation. Only one on-chain transaction is identified, suggesting either a single-transaction exploit or incomplete evidence collection. The estimated loss of ~1 is unusually low and may be denominated in an unstated unit or represent a failed/test exploit. Multiple auxiliary addresses (0x047D41F2..., 0x004E9C3E..., 0x2260FAC5..., 0x702696b2...) are referenced in the POC but their roles could not be determined from the available evidence."
+}

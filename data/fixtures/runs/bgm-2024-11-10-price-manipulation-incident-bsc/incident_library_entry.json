@@ -1,0 +1,43 @@
+{
+  "incident_id": "bgm-2024-11-10-price-manipulation-incident-bsc",
+  "title": "Bgm 2024-11-10 price-manipulation incident",
+  "protocol_name": "Bgm",
+  "chain": "BSC",
+  "incident_date": "",
+  "summary": "An estimated loss of about $450K was caused by a price-manipulation attack against BGM on BSC",
+  "status": "demo_live_dossier",
+  "completeness_score": 0.62,
+  "source_count": 60,
+  "direct_source_count": 4,
+  "secondary_source_count": 56,
+  "social_count": 1,
+  "poc_count": 0,
+  "explorer_count": 58,
+  "report_count": 1,
+  "missing_fields": [
+    "attack_contract_urls",
+    "victim_contract_urls",
+    "poc_links",
+    "precise_timestamp",
+    "vulnerable_contract_address",
+    "flash_loan_source",
+    "fund_flow_tracing",
+    "token_addresses_involved"
+  ],
+  "last_updated": "2026-04-27T13:12:50+00:00",
+  "pattern_label": "price_manipulation",
+  "attack_tx_hashes": [
+    "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+    "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+    "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "0x000000000000000000000000000000000000000000003192e3c8c8a9e9cd00e0"
+  ],
+  "source_preview": [
+    "https://bscscan.com/tx/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+    "https://x.com/ExternalExplorer_xyz/status/1855798237770170415",
+    "https://quadrigainitiative.com/casestudy/bgmonbscbatchtransactionspricemanipulationexploit.php",
+    "https://bscscan.com/address/0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+    "https://bscscan.com/chart/bnbprice",
+    "https://opbnb.bscscan.com"
+  ]
+}

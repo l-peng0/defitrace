@@ -1,0 +1,474 @@
+{
+  "incident_id": "bgm-2024-11-10-price-manipulation-incident-bsc",
+  "title": "Bgm 2024-11-10 price-manipulation incident",
+  "incident_date": "",
+  "chain": "BSC",
+  "protocol_name": "Bgm",
+  "status": "demo_live_dossier",
+  "summary": "An estimated loss of about $450K was caused by a price-manipulation attack against BGM on BSC",
+  "seed_overview": {
+    "seed_type": "tx_hash",
+    "trigger_type": "batch",
+    "source_names": [],
+    "attack_type_raws": []
+  },
+  "key_addresses": [
+    "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+    "0x8580825008800b9e13266f40b41a838a521e4d0b",
+    "0x7824322B220CDB4d51F73782FbcE95E2E2B0595F",
+    "0x42646478b25317160e0dc8db413991277e4bb3c2"
+  ],
+  "key_contracts": [],
+  "key_transactions": [
+    "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+    "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+    "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "0x000000000000000000000000000000000000000000003192e3c8c8a9e9cd00e0"
+  ],
+  "timeline": [
+    {
+      "step_number": 1,
+      "description": "Attacker 0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180 deployed a malicious contract on BSC to facilitate the exploit.",
+      "evidence_refs": [
+        "ev-004",
+        "ev-024"
+      ],
+      "entity_refs": [
+        "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 2,
+      "description": "Attacker prepared and positioned funds, interacting with the Bgm protocol and associated liquidity pool (tx 0x9a2b3a9b2c7a8ecb8c741c53315a1317609d30861c79bbe0b2307df57943503f).",
+      "evidence_refs": [
+        "ev-021"
+      ],
+      "entity_refs": [
+        "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+        "0x9a2b3a9b2c7a8ecb8c741c53315a1317609d30861c79bbe0b2307df57943503f"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 3,
+      "description": "Attacker executed the core price-manipulation attack using batch transactions against the Bgm protocol, artificially inflating the price of a token within the protocol's pricing mechanism (tx 0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1).",
+      "evidence_refs": [
+        "ev-003",
+        "ev-019"
+      ],
+      "entity_refs": [
+        "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+        "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+        "0x42646478B25317160E0Dc8DB413991277e4bb3C2",
+        "0xeFA4bCE444C09a52941bEEf5FE8264D70534049f"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 4,
+      "description": "Using the manipulated price, the attacker drained approximately $450K worth of assets from the Bgm protocol.",
+      "evidence_refs": [
+        "ev-005",
+        "ev-019"
+      ],
+      "entity_refs": [
+        "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 5,
+      "description": "Attacker moved extracted funds in a subsequent transaction (tx 0x3127d0fc595e9ea4d4b1f2247959427e5befed3ce47a466ca2612d70dba67780), likely to launder or consolidate the stolen assets.",
+      "evidence_refs": [
+        "ev-023"
+      ],
+      "entity_refs": [
+        "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+        "0x3127d0fc595e9ea4d4b1f2247959427e5befed3ce47a466ca2612d70dba67780"
+      ],
+      "summary": ""
+    }
+  ],
+  "attacker_profile": {
+    "incident_id": "bgm-2024-11-10-price-manipulation-incident-bsc",
+    "profile_id": "profile-bgm-2024-11-10-price-manipulation-incident-bsc",
+    "primary_addresses": [
+      "0x000000000000000000636f6e736f6c652e6c6f67",
+      "0x00c0f54d8afc60f3acd06e476cf504a6f7f06180",
+      "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "0x42646478b25317160e0dc8db413991277e4bb3c2",
+      "0x4f31fa980a675570939b737ebdde0471a4be40eb",
+      "0x52a71bf6687800d2d2d1846b074c3616aae921de",
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x7824322b220cdb4d51f73782fbce95e2e2b0595f",
+      "0x851a17b8cb9b7f19cb50e6f72f000a4e83eaadd0",
+      "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+      "0xadc4eca2a3038b478b591bac1a87e428625d6e0a",
+      "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0xd178a2bde88503eee9f5c201fdf497aadd733459",
+      "0xefa4bce444c09a52941beef5fe8264d70534049f",
+      "0xff82e1e36341ee6b63a67b92a9aeedced288f388",
+      "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180"
+    ],
+    "related_addresses": [
+      "0x8580825008800b9e13266f40b41a838a521e4d0b",
+      "0x7824322B220CDB4d51F73782FbcE95E2E2B0595F",
+      "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+      "0x42646478b25317160e0dc8db413991277e4bb3c2",
+      "0xddf252ad1be2c89b69c2b068fc378daa952ba7f1",
+      "0xeFA4bCE444C09a52941bEEf5FE8264D70534049f",
+      "0x0000000000000000000000000000000000000000",
+      "0x42646478B25317160E0Dc8DB413991277e4bb3C2",
+      "0x9a2b3a9b2c7a8ecb8c741c53315a1317609d3086",
+      "0x3127d0fc595e9ea4d4b1f2247959427e5befed3c"
+    ],
+    "recent_activity_summary": "The dossier has 1 direct attacker address candidate(s) and 250 additional address mentions from fetched sources.",
+    "counterparties": [],
+    "repeated_behaviors": [
+      "Leans on addresses confirmed by direct seed fields first.",
+      "Uses source-text mentions as weaker supporting clues rather than direct proof."
+    ],
+    "open_questions": [
+      "Which address funded the exploit wallet before the attack?",
+      "Which transfers right after the exploit are still missing from the dossier?"
+    ]
+  },
+  "pattern_hypotheses": [
+    {
+      "hypothesis_id": "hyp-001",
+      "label": "price_manipulation",
+      "summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+      "why_suspected": [
+        "Attack-type tags mention price manipulation.",
+        "The supporting sources resemble prior price-manipulation writeups."
+      ],
+      "confidence": 0.76,
+      "open_questions": [
+        "Which specific pricing path was abused?",
+        "Is there a direct explorer or postmortem source that confirms the same mechanism?"
+      ]
+    }
+  ],
+  "source_summary": {
+    "source_count": 60,
+    "source_types": {
+      "explorer": 58,
+      "social": 1,
+      "report": 1
+    },
+    "direct_source_count": 4,
+    "secondary_source_count": 56,
+    "fetched_source_count": 53
+  },
+  "quality_report": {
+    "incident_id": "bgm-2024-11-10-price-manipulation-incident-bsc",
+    "completeness_score": 0.62,
+    "direct_source_count": 4,
+    "secondary_source_count": 56,
+    "fetched_source_count": 53,
+    "citation_coverage_count": 476,
+    "missing_fields": [
+      "attack_contract_urls",
+      "victim_contract_urls",
+      "poc_links",
+      "precise_timestamp",
+      "vulnerable_contract_address",
+      "flash_loan_source",
+      "fund_flow_tracing",
+      "token_addresses_involved"
+    ],
+    "judge_summary": "The dossier provides a coherent but surface-level account of the BGM price manipulation attack. The timeline is logically structured and supported by explorer evidence, and the external Quadriga Initiative report corroborates key facts. However, the dossier lacks technical depth: no vulnerable contract is identified, the $450K loss is unverified on-chain, the attack date field is empty, and fund flow analysis is absent. Evidence quality is mixed - several entries are low-confidence pattern matches from scraped content. The dossier is insufficient for forensic purposes or insurance claims but adequate for general awareness reporting.",
+    "evidence_supports_timeline": "partially",
+    "confidence_assessment": {
+      "attacker_address": {
+        "confidence": 0.85,
+        "verdict": "moderately_confident",
+        "note": "Clear identification from explorer data, but no forensic tracing"
+      },
+      "attack_transaction": {
+        "confidence": 0.9,
+        "verdict": "high_confidence",
+        "note": "Primary attack tx well-documented with explorer link"
+      },
+      "loss_amount": {
+        "confidence": 0.65,
+        "verdict": "low_confidence",
+        "note": "Inferred from external report title, no on-chain verification"
+      },
+      "attack_mechanism": {
+        "confidence": 0.7,
+        "verdict": "moderately_confident",
+        "note": "Price manipulation confirmed but technical details are sparse"
+      },
+      "attacker_motivation": {
+        "confidence": 0.85,
+        "verdict": "high_confidence",
+        "note": "Standard profit-driven attack pattern"
+      }
+    },
+    "gaps": [
+      {
+        "gap_id": "G1",
+        "description": "No precise incident timestamp - date field is empty in context",
+        "severity": "high",
+        "suggestion": "Extract block timestamp from primary attack transaction"
+      },
+      {
+        "gap_id": "G2",
+        "description": "Loss amount ($450K) is inferred from report title without on-chain verification",
+        "severity": "high",
+        "suggestion": "Trace actual token transfers to calculate verified loss"
+      },
+      {
+        "gap_id": "G3",
+        "description": "No vulnerable contract address identified - only attacker address and tx hashes",
+        "severity": "high",
+        "suggestion": "Identify the specific Bgm protocol contract with flawed pricing logic"
+      },
+      {
+        "gap_id": "G4",
+        "description": "Flash loan source not confirmed - synthesis note indicates pattern but no evidence",
+        "severity": "medium",
+        "suggestion": "Analyze attack tx input data for flash loan provider signatures"
+      },
+      {
+        "gap_id": "G5",
+        "description": "No fund flow tracing post-exploitation",
+        "severity": "medium",
+        "suggestion": "Trace stolen funds to identify laundering routes or exchange deposits"
+      },
+      {
+        "gap_id": "G6",
+        "description": "ev-024 appears to be bytecode fragment incorrectly classified as transaction",
+        "severity": "low",
+        "suggestion": "Review and correct evidence classification"
+      },
+      {
+        "gap_id": "G7",
+        "description": "No token addresses or amounts involved in the manipulation",
+        "severity": "medium",
+        "suggestion": "Extract transfer events from attack transaction"
+      }
+    ],
+    "demo_ready": false,
+    "recommendations": [
+      {
+        "priority": "critical",
+        "action": "Extract precise block timestamp from attack transaction 0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1 to populate incident date"
+      },
+      {
+        "priority": "critical",
+        "action": "Decode attack transaction input data to identify flash loan source and manipulation mechanics"
+      },
+      {
+        "priority": "critical",
+        "action": "Identify and document the vulnerable Bgm protocol contract address"
+      },
+      {
+        "priority": "high",
+        "action": "Trace token transfers in attack transaction to verify $450K loss claim"
+      },
+      {
+        "priority": "high",
+        "action": "Follow attacker address 0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180 to trace post-exploitation fund movements"
+      },
+      {
+        "priority": "medium",
+        "action": "Clean up evidence items - remove or correctly classify ev-024 which appears to be bytecode"
+      },
+      {
+        "priority": "medium",
+        "action": "Add malicious contract deployment transaction with proper contract address"
+      },
+      {
+        "priority": "low",
+        "action": "Seek additional external reports or social media posts for corroboration"
+      }
+    ]
+  },
+  "generated_at": "2026-04-27T13:12:50+00:00",
+  "technical_analysis": {
+    "status": "completed",
+    "primary_tx_hash": "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+    "tx_hashes": [
+      "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1"
+    ],
+    "exploit_mechanism": "",
+    "validation_verdict": "Deterministic and semantic checks passed."
+  },
+  "narrative": {
+    "executive_summary": "On November 10, 2024, BGM protocol on BNB Smart Chain suffered a price manipulation attack resulting in an estimated $450,000 loss. The attacker exploited vulnerabilities in the protocol's pricing mechanism through batch transaction manipulation, draining funds from the protocol's liquidity pools.",
+    "attack_narrative": "The attack was initiated from address 0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180 via transaction 0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1. The attacker leveraged batch transaction capabilities to manipulate BGM's internal price feeds, likely exploiting insufficient price oracle safeguards or lack of TWAP (Time-Weighted Average Price) implementation. By executing coordinated trades within a single transaction batch, the attacker was able to artificially inflate or deflate asset prices to their advantage, extracting approximately $450,000 worth of value from the protocol. The attack pattern follows classic price manipulation vectors seen in similar DeFi exploits where pricing logic fails to account for within-block price manipulation.",
+    "attacker_motive": "Financial profit through exploitation of pricing mechanism vulnerabilities. The attacker deliberately targeted the protocol's weak price discovery system to extract maximum value with minimal capital investment, characteristic of economically-motivated DeFi exploitation.",
+    "key_takeaway": "This incident underscores the critical importance of robust price oracle implementation in DeFi protocols. Deploying TWAP-based oracles, multi-source price feeds, and manipulation-resistant pricing logic are essential safeguards. Protocols should also implement batch transaction monitoring and circuit breakers to detect and halt suspicious trading patterns before significant value extraction occurs."
+  },
+  "qa_retry_triggered": true,
+  "qa_retry_critique": "First-pass completeness score: 72.00 (threshold: 0.7). Missing/weak dimensions: attack_contract_urls, victim_contract_urls, poc_links, block_number, timestamp, fund_flow_analysis, attacker_funding_source, detailed_transaction_trace. Quality assessor notes: The BGM price manipulation incident dossier captures core elements including the attack transaction hash, attacker EOA, attack contract address, victim contract address, and estimated $450K loss. The narrative provides a clear technical explanation of the batch transaction price manipulation vector. However, the dossier has notable gaps: missing direct explorer URLs for the attack and victim contracts, absent block-level metadata, no fund flow tracing, and the timeline contains only 3 high-level steps without granular attack execution details. The $450K loss figure appears inferred from report title rather than calculated from on-chain data. Evidence chain is adequate but relies heavily on a single external report source with limited independent verification. Identified gaps: No direct BSCScan URLs for attack contract (0x7824322B220CDB4d51F73782FbcE95E2E2B0595F) and victim contract (0x42646478B25317160E0Dc8DB413991277e4bb3C2); Missing block number and precise timestamp for attack transaction; No fund flow analysis showing destination of $450K stolen funds; Timeline lacks granular attack steps (preparation, flash loan acquisition, exploitation phases, fund routing); No proof-of-concept code or exploit reproduction; No analysis of attacker funding source or initial capital; Missing post-incident protocol response documentation; Reliance on single primary report source (Quadriga Initiative) for attack narrative. Recommendations: Add direct BSCScan URLs for attack contract 0x7824322B220CDB4d51F73782FbcE95E2E2B0595F and victim contract 0x42646478B25317160E0Dc8DB413991277e4bb3C2; Extract and include block number and timestamp from the attack transaction for precise temporal anchoring; Perform fund flow analysis to trace the $450K from extraction through any routing/laundering addresses; Expand timeline with detailed attack phases: flash loan acquisition, price manipulation steps, token swaps, and fund exit; Cross-reference loss amount with on-chain token transfers for verification; Search for additional independent sources (security reports, social media analysis) to corroborate attack details; Identify attacker funding source (did they use flash loans or pre-funded capital); Document any protocol response or post-incident mitigation measures.",
+  "pipeline_trace": {
+    "revision_triggered": false,
+    "revision_critique": null,
+    "qa_retry_triggered": true,
+    "qa_retry_critique": "First-pass completeness score: 72.00 (threshold: 0.7). Missing/weak dimensions: attack_contract_urls, victim_contract_urls, poc_links, block_number, timestamp, fund_flow_analysis, attacker_funding_source, detailed_transaction_trace. Quality assessor notes: The BGM price manipulation incident dossier captures core elements including the attack transaction hash, attacker EOA, attack contract address, victim contract address, and estimated $450K loss. The narrative provides a clear technical explanation of the batch transaction price manipulation vector. However, the dossier has notable gaps: missing direct explorer URLs for the attack and victim contracts, absent block-level metadata, no fund flow tracing, and the timeline contains only 3 high-level steps without granular attack execution details. The $450K loss figure appears inferred from report title rather than calculated from on-chain data. Evidence chain is adequate but relies heavily on a single external report source with limited independent verification. Identified gaps: No direct BSCScan URLs for attack contract (0x7824322B220CDB4d51F73782FbcE95E2E2B0595F) and victim contract (0x42646478B25317160E0Dc8DB413991277e4bb3C2); Missing block number and precise timestamp for attack transaction; No fund flow analysis showing destination of $450K stolen funds; Timeline lacks granular attack steps (preparation, flash loan acquisition, exploitation phases, fund routing); No proof-of-concept code or exploit reproduction; No analysis of attacker funding source or initial capital; Missing post-incident protocol response documentation; Reliance on single primary report source (Quadriga Initiative) for attack narrative. Recommendations: Add direct BSCScan URLs for attack contract 0x7824322B220CDB4d51F73782FbcE95E2E2B0595F and victim contract 0x42646478B25317160E0Dc8DB413991277e4bb3C2; Extract and include block number and timestamp from the attack transaction for precise temporal anchoring; Perform fund flow analysis to trace the $450K from extraction through any routing/laundering addresses; Expand timeline with detailed attack phases: flash loan acquisition, price manipulation steps, token swaps, and fund exit; Cross-reference loss amount with on-chain token transfers for verification; Search for additional independent sources (security reports, social media analysis) to corroborate attack details; Identify attacker funding source (did they use flash loans or pre-funded capital); Document any protocol response or post-incident mitigation measures.",
+    "records": [
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:07:33.573Z",
+        "duration_ms": 26779,
+        "input_summary": "60 source docs; 476 heuristic items",
+        "output_summary": "476 total items (+0 LLM-extracted)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "collector",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:08:00.364Z",
+        "duration_ms": 1158,
+        "input_summary": "1 tx(s): 0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+        "output_summary": "1 artifact bundle(s) collected; statuses: completed",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "planner",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:08:01.522Z",
+        "duration_ms": 3,
+        "input_summary": "1 transactions on BSC",
+        "output_summary": "9 role categories; 4 priority contracts",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "contract_intelligence",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:08:01.526Z",
+        "duration_ms": 2341,
+        "input_summary": "4 priority contracts",
+        "output_summary": "3 contracts in inventory",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "technical_reasoner",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:08:03.867Z",
+        "duration_ms": 30023,
+        "input_summary": "1 txs, 3 contracts",
+        "output_summary": "0 timeline steps; mechanism: ",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "semantic_validator",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:08:33.891Z",
+        "duration_ms": 1,
+        "input_summary": "revision_round=0",
+        "output_summary": "severity=pass; needs_revision=False; verdict: Deterministic and semantic checks passed.",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:08:33.895Z",
+        "duration_ms": 26584,
+        "input_summary": "476 evidence items",
+        "output_summary": "executive_summary len=442",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:08:33.895Z",
+        "duration_ms": 26584,
+        "input_summary": "476 evidence items",
+        "output_summary": "3 timeline steps",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:09:00.487Z",
+        "duration_ms": 31459,
+        "input_summary": "3 timeline steps; 4 narrative keys",
+        "output_summary": "completeness_score=72; judge_summary: The BGM price manipulation incident dossier captures core elements including the",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:09:31.946Z",
+        "duration_ms": 67814,
+        "input_summary": "RETRY: 60 docs; critique injected",
+        "output_summary": "494 items after retry extraction",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:10:39.762Z",
+        "duration_ms": 87258,
+        "input_summary": "RETRY: 494 evidence items",
+        "output_summary": "executive_summary len=298 (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:10:39.762Z",
+        "duration_ms": 87258,
+        "input_summary": "RETRY: 494 evidence items",
+        "output_summary": "5 timeline steps (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:12:07.023Z",
+        "duration_ms": 42997,
+        "input_summary": "RETRY: 5 steps; 4 narrative keys",
+        "output_summary": "v2 completeness_score=62",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "native_transfers": [],
+  "token_transfers": [
+    {
+      "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "from": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "to": "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+      "value": 30800000000000000000
+    },
+    {
+      "token": "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568",
+      "from": "0x0000000000000000000000000000000000000000",
+      "to": "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+      "value": 3080000000
+    },
+    {
+      "token": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "from": "0x3a32f5040bc4d8417e78e236eb2c48c90e003fda",
+      "to": "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+      "value": 2783925883
+    },
+    {
+      "token": "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568",
+      "from": "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+      "to": "0x3a32f5040bc4d8417e78e236eb2c48c90e003fda",
+      "value": 2881420431
+    },
+    {
+      "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "from": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+      "to": "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+      "value": 680404054576756594919
+    },
+    {
+      "token": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "from": "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+      "to": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+      "value": 2783925883
+    },
+    {
+      "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "from": "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+      "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "value": 30800000000000000000
+    },
+    {
+      "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "from": "0x893411580e590d62ddbca8a703d61cc4a8c7b2b9",
+      "to": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "value": 649604054576756594919
+    },
+    {
+      "token": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "from": "0x0000000000000000000000000000000000000000",
+      "to": "0xee800b1b63893ca1e1b0fa8fefdc10fac9b980f7",
+      "value": 649604054576756594919
+    }
+  ],
+  "summary": {
+    "native_value_transfers": 0,
+    "token_transfers": 9
+  }
+}

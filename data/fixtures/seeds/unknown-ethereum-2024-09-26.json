@@ -1,0 +1,36 @@
+{
+  "incident_id": "unknown-ethereum-2024-09-26",
+  "job_id": "unknown-ethereum-2024-09-26-batch",
+  "trigger_type": "batch",
+  "seed_type": "tx_hash",
+  "chain": "Ethereum",
+  "protocol_name": "Unknown",
+  "incident_name": "Unknown 2024-09-26 price-manipulation incident",
+  "incident_date": "2024-09-26",
+  "attack_tx_hashes": [
+    "0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940"
+  ],
+  "attacker_addresses": [
+    "0x0C8da4f8B823bEe4D5dAb73367D45B5135B50faB"
+  ],
+  "attack_contract_urls": [
+    "https://etherscan.io/address/0x0C8da4f8B823bEe4D5dAb73367D45B5135B50faB"
+  ],
+  "victim_contract_urls": [
+    "https://etherscan.io/address/0x047D41F2544B7F63A8e991aF2068a363d210d6Da"
+  ],
+  "seed_urls": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Bedrock_DeFi_exp.sol"
+  ],
+  "summary_candidates": [
+    "An estimated loss of ~1"
+  ],
+  "tags": [
+    "strict_price_manipulation",
+    "price_manipulation",
+    "ethereum",
+    "defi"
+  ],
+  "created_at": "2026-05-01T07:38:11+00:00"
+}

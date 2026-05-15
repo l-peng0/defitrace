@@ -1,0 +1,5076 @@
+{
+  "incident_id": "unknown-2024-11-11-price-manipulation-incident-arbitrum",
+  "claims": [
+    {
+      "claim_id": "claim-001",
+      "claim_text": "Incident is named Unknown 2024-11-11 price-manipulation incident.",
+      "fact_type": "incident_name",
+      "source_ref": "src-001",
+      "source_url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+      "confidence": 0.98,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-002",
+      "claim_text": "Protocol appears to be Unknown.",
+      "fact_type": "protocol_name",
+      "source_ref": "src-001",
+      "source_url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+      "confidence": 0.95,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-003",
+      "claim_text": "Attack transaction hash observed: 0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f.",
+      "fact_type": "attack_transaction",
+      "source_ref": "src-003",
+      "source_url": "https://arbiscan.io/tx/0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+      "confidence": 0.9,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-004",
+      "claim_text": "Attacker-linked address observed: 0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe.",
+      "fact_type": "attacker_address",
+      "source_ref": "src-004",
+      "source_url": "https://arbiscan.io/address/0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe",
+      "confidence": 0.85,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-005",
+      "claim_text": "An estimated loss of $4",
+      "fact_type": "summary_candidate",
+      "source_ref": "src-001",
+      "source_url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+      "confidence": 0.65,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-006",
+      "claim_text": "Fetched source title: Notion.",
+      "fact_type": "source_title",
+      "source_ref": "src-001",
+      "source_url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-007",
+      "claim_text": "Fetched source title: DeFiHackLabs/src/test/2024-11/DeltaPrime_exp.sol at main \u00b7 SunWeb3Sec/DeFiHackLabs \u00b7 GitHub.",
+      "fact_type": "source_title",
+      "source_ref": "src-002",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-008",
+      "claim_text": "Source text mentions transaction 0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-002",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-009",
+      "claim_text": "Source text mentions transaction 0x5553444300000000000000000000000000000000000000000000000000000000.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-002",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-010",
+      "claim_text": "Source text mentions transaction 0x4554480000000000000000000000000000000000000000000000000000000000.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-002",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-011",
+      "claim_text": "Source text mentions address 0xb87881637b5c8e6885c51ab7d895e53fa7d7c567.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-002",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-012",
+      "claim_text": "Source text mentions address 0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-002",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-013",
+      "claim_text": "Source text mentions address 0x62cf82fb0484af382714cd09296260edc1dc0c6c.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-002",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-014",
+      "claim_text": "Source text mentions address 0x6a2f989b5493b52ffc078d0a59a3bf9727d134b4.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-002",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-015",
+      "claim_text": "Source text mentions address 0x82aF49447D8a07e3bd95BD0d56f35241523fBab1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-002",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-016",
+      "claim_text": "Source text mentions address 0xBA12222222228d8Ba445958a75a0704d566BF2C8.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-002",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-017",
+      "claim_text": "Source text mentions address 0xFf5e3dDaefF411a1dC6CcE00014e4Bca39265c20.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-002",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-018",
+      "claim_text": "Source text mentions address 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-002",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-019",
+      "claim_text": "Fetched source title: Arbitrum One Transaction Hash: 0x6a2f989b54... | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-003",
+      "source_url": "https://arbiscan.io/tx/0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-020",
+      "claim_text": "Source text mentions transaction 0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-003",
+      "source_url": "https://arbiscan.io/tx/0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-021",
+      "claim_text": "Source text mentions transaction 0xf50e495000000000000000000000000000000000000000000000000000000000.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-003",
+      "source_url": "https://arbiscan.io/tx/0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-022",
+      "claim_text": "Source text mentions transaction 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-003",
+      "source_url": "https://arbiscan.io/tx/0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-023",
+      "claim_text": "Source text mentions address 0x6a2f989b5493b52ffc078d0a59a3bf9727d134b4.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-003",
+      "source_url": "https://arbiscan.io/tx/0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-024",
+      "claim_text": "Source text mentions address 0xb87881637b5c8e6885C51aB7D895e53FA7d7c567.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-003",
+      "source_url": "https://arbiscan.io/tx/0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-025",
+      "claim_text": "Source text mentions address 0x0B2Bcf06F740C322BC7276b6b90dE08812cE9bfE.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-003",
+      "source_url": "https://arbiscan.io/tx/0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-026",
+      "claim_text": "Source text mentions address 0xf50e495000000000000000000000000000000000.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-003",
+      "source_url": "https://arbiscan.io/tx/0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-027",
+      "claim_text": "Source text mentions address 0x82af49447d8a07e3bd95bd0d56f35241523fbab1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-003",
+      "source_url": "https://arbiscan.io/tx/0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-028",
+      "claim_text": "Source text mentions address 0xddf252ad1be2c89b69c2b068fc378daa952ba7f1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-003",
+      "source_url": "https://arbiscan.io/tx/0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-029",
+      "claim_text": "Source text mentions transaction 0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-005",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-030",
+      "claim_text": "Source text mentions transaction 0x5553444300000000000000000000000000000000000000000000000000000000.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-005",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-031",
+      "claim_text": "Source text mentions transaction 0x4554480000000000000000000000000000000000000000000000000000000000.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-005",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-032",
+      "claim_text": "Source text mentions address 0xb87881637b5c8e6885c51ab7d895e53fa7d7c567.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-005",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-033",
+      "claim_text": "Source text mentions address 0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-005",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-034",
+      "claim_text": "Source text mentions address 0x62cf82fb0484af382714cd09296260edc1dc0c6c.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-005",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-035",
+      "claim_text": "Source text mentions address 0x6a2f989b5493b52ffc078d0a59a3bf9727d134b4.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-005",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-036",
+      "claim_text": "Source text mentions address 0x82aF49447D8a07e3bd95BD0d56f35241523fBab1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-005",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-037",
+      "claim_text": "Source text mentions address 0xBA12222222228d8Ba445958a75a0704d566BF2C8.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-005",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-038",
+      "claim_text": "Source text mentions address 0xFf5e3dDaefF411a1dC6CcE00014e4Bca39265c20.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-005",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-039",
+      "claim_text": "Source text mentions address 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-005",
+      "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-040",
+      "claim_text": "Fetched source title: ETH Daily Price (USD) Chart | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-006",
+      "source_url": "https://arbiscan.io/chart/price",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-041",
+      "claim_text": "Fetched source title: TESTNET Arbitrum Sepolia (ETH) Blockchain Explorer.",
+      "fact_type": "source_title",
+      "source_ref": "src-007",
+      "source_url": "https://sepolia.arbiscan.io",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-042",
+      "claim_text": "Source text mentions transaction 0x214ec18afcc81affb39cba1de43465c71110c7c6acb5df0c25d7ce417b7c79b9.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-007",
+      "source_url": "https://sepolia.arbiscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-043",
+      "claim_text": "Source text mentions transaction 0xd9823eea731f06109a0b754166dd6497999ceab14694cc0b342eb020c89d2f2f.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-007",
+      "source_url": "https://sepolia.arbiscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-044",
+      "claim_text": "Source text mentions transaction 0x41eefbe421737459e52f450e606316108de5cbdd9ab008fa4bbf1ee8afee572a.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-007",
+      "source_url": "https://sepolia.arbiscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-045",
+      "claim_text": "Source text mentions transaction 0xfd5b1a8bd55ba13d1b47ee0cb56b5ffaabeb10330c6bab1ba4bc8359ade7c7a9.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-007",
+      "source_url": "https://sepolia.arbiscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-046",
+      "claim_text": "Source text mentions transaction 0x85c9157338f4417f1efd3987dec79549cd62f5ae4ad0605ee0913359f58f2750.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-007",
+      "source_url": "https://sepolia.arbiscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-047",
+      "claim_text": "Source text mentions address 0x214ec18afcc81affb39cba1de43465c71110c7c6.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-007",
+      "source_url": "https://sepolia.arbiscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-048",
+      "claim_text": "Source text mentions address 0xd9823eea731f06109a0b754166dd6497999ceab1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-007",
+      "source_url": "https://sepolia.arbiscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-049",
+      "claim_text": "Source text mentions address 0x41eefbe421737459e52f450e606316108de5cbdd.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-007",
+      "source_url": "https://sepolia.arbiscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-050",
+      "claim_text": "Source text mentions address 0xfd5b1a8bd55ba13d1b47ee0cb56b5ffaabeb1033.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-007",
+      "source_url": "https://sepolia.arbiscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-051",
+      "claim_text": "Source text mentions address 0x85c9157338f4417f1efd3987dec79549cd62f5ae.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-007",
+      "source_url": "https://sepolia.arbiscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-052",
+      "claim_text": "Source text mentions address 0x42aaf7782c887ec03c27db480cd8f06b3d9070e9.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-007",
+      "source_url": "https://sepolia.arbiscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-053",
+      "claim_text": "Source text mentions address 0x74710c17c8047e767d28fe3cccf20e7d5279531c.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-007",
+      "source_url": "https://sepolia.arbiscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-054",
+      "claim_text": "Source text mentions address 0x8a824bd922d1c77af242da24820d5f46d1bccc1d.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-007",
+      "source_url": "https://sepolia.arbiscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-055",
+      "claim_text": "Fetched source title: Arbitrum One Transactions Information | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-008",
+      "source_url": "https://arbiscan.io/txs",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-056",
+      "claim_text": "Source text mentions transaction 0x37daa100cf612cfd994ad08d46d830dfeb641abc8500bb486b26ec8e37f9b904.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-008",
+      "source_url": "https://arbiscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-057",
+      "claim_text": "Source text mentions transaction 0x993ded27c3c69eec4eea709597a042ccc943e33beb464f8d3bb5f7b4acd93909.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-008",
+      "source_url": "https://arbiscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-058",
+      "claim_text": "Source text mentions transaction 0x95a9031e0febc2fcc67f541c25ccecfb12767b89ee9ae467e1d951339f5d40bd.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-008",
+      "source_url": "https://arbiscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-059",
+      "claim_text": "Source text mentions transaction 0x691b04bcd80baf4c46e768d29208394de2fa944cbc90139a3a9df4de375ec1c5.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-008",
+      "source_url": "https://arbiscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-060",
+      "claim_text": "Source text mentions transaction 0x0c168278f4e45267bf3ba801b8250edf59f75d5280d22f547b5f0ebef81d2d87.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-008",
+      "source_url": "https://arbiscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-061",
+      "claim_text": "Source text mentions address 0x37daa100cf612cfd994ad08d46d830dfeb641abc.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-008",
+      "source_url": "https://arbiscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-062",
+      "claim_text": "Source text mentions address 0x993ded27c3c69eec4eea709597a042ccc943e33b.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-008",
+      "source_url": "https://arbiscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-063",
+      "claim_text": "Source text mentions address 0x95a9031e0febc2fcc67f541c25ccecfb12767b89.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-008",
+      "source_url": "https://arbiscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-064",
+      "claim_text": "Source text mentions address 0x691b04bcd80baf4c46e768d29208394de2fa944c.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-008",
+      "source_url": "https://arbiscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-065",
+      "claim_text": "Source text mentions address 0x0c168278f4e45267bf3ba801b8250edf59f75d52.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-008",
+      "source_url": "https://arbiscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-066",
+      "claim_text": "Source text mentions address 0x4d771e0ba66bfe7858e423f269959cf206edaa23.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-008",
+      "source_url": "https://arbiscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-067",
+      "claim_text": "Source text mentions address 0xe9ae273a41df2988381392674a025c6551f4c81f.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-008",
+      "source_url": "https://arbiscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-068",
+      "claim_text": "Source text mentions address 0xcf5993df6f52a8a19beaccf54fe1bae754c98286.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-008",
+      "source_url": "https://arbiscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-069",
+      "claim_text": "Fetched source title: Arbitrum One L1 to L2 Transactions Information | Arbitrum.",
+      "fact_type": "source_title",
+      "source_ref": "src-009",
+      "source_url": "https://arbiscan.io/txsDeposits",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-070",
+      "claim_text": "Fetched source title: Arbitrum One L2 to L1 Transactions | Arbitrum.",
+      "fact_type": "source_title",
+      "source_ref": "src-010",
+      "source_url": "https://arbiscan.io/txsExit",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-071",
+      "claim_text": "Source text mentions transaction 0x53e948ac0a56834fc62c669934b3609f3eaef46cfc1d4123e8f8e892a51a305d.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-010",
+      "source_url": "https://arbiscan.io/txsExit",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-072",
+      "claim_text": "Source text mentions transaction 0x4b89c4a8621a887e1883c3ce772e0292fc5ab57af6d129fc82edd18704af9f62.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-010",
+      "source_url": "https://arbiscan.io/txsExit",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-073",
+      "claim_text": "Source text mentions transaction 0xfa645444a9390642605b583bf6c3d1146f295cc1c86dc5faabf2005d3d1526e4.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-010",
+      "source_url": "https://arbiscan.io/txsExit",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-074",
+      "claim_text": "Source text mentions transaction 0xdd5660f36b693cfcf509440cc808b4f00b6e419e345da8065bca6ab11729fde0.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-010",
+      "source_url": "https://arbiscan.io/txsExit",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-075",
+      "claim_text": "Source text mentions transaction 0xf529a02499f1cb9a05099ddd82679d8f01a84dfe34768b7b0ec3f110b780f92b.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-010",
+      "source_url": "https://arbiscan.io/txsExit",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-076",
+      "claim_text": "Source text mentions address 0x53e948ac0a56834fc62c669934b3609f3eaef46c.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-010",
+      "source_url": "https://arbiscan.io/txsExit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-077",
+      "claim_text": "Source text mentions address 0x4b89c4a8621a887e1883c3ce772e0292fc5ab57a.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-010",
+      "source_url": "https://arbiscan.io/txsExit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-078",
+      "claim_text": "Source text mentions address 0xfa645444a9390642605b583bf6c3d1146f295cc1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-010",
+      "source_url": "https://arbiscan.io/txsExit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-079",
+      "claim_text": "Source text mentions address 0xdd5660f36b693cfcf509440cc808b4f00b6e419e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-010",
+      "source_url": "https://arbiscan.io/txsExit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-080",
+      "claim_text": "Source text mentions address 0xf529a02499f1cb9a05099ddd82679d8f01a84dfe.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-010",
+      "source_url": "https://arbiscan.io/txsExit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-081",
+      "claim_text": "Source text mentions address 0x3d4b876eca95bd4f4a615e139de704346f017f45.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-010",
+      "source_url": "https://arbiscan.io/txsExit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-082",
+      "claim_text": "Source text mentions address 0x156b8fe93d0ea3420cfa32063d85141b27b365f1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-010",
+      "source_url": "https://arbiscan.io/txsExit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-083",
+      "claim_text": "Source text mentions address 0x0df74bc2b80dc3c65a758abdf0f86c03a0ec2ef4.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-010",
+      "source_url": "https://arbiscan.io/txsExit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-084",
+      "claim_text": "Fetched source title: Arbitrum One Contract Internal Transactions | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-011",
+      "source_url": "https://arbiscan.io/txsInternal",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-085",
+      "claim_text": "Source text mentions transaction 0x9d41454891f2e7d1c9eebe95db1c733416e00b01effd794b5340832ba750256f.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-011",
+      "source_url": "https://arbiscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-086",
+      "claim_text": "Source text mentions transaction 0x932c367ab9382f80715996b776cd914b0633609ba0a2771b1b2e32d6404c1b50.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-011",
+      "source_url": "https://arbiscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-087",
+      "claim_text": "Source text mentions transaction 0x85aec099a7ccde6be81836f8c66b62b27e9651ce2f85ce214d059f69ef211c83.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-011",
+      "source_url": "https://arbiscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-088",
+      "claim_text": "Source text mentions transaction 0x246deda28705c6aff305294bd892bf3bb0fd24cc6fe431037635ad1a77176cc0.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-011",
+      "source_url": "https://arbiscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-089",
+      "claim_text": "Source text mentions transaction 0x78fd517055d05cb597b823d77048b157b6fe0ac9216ea58fb24d6de003aed19c.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-011",
+      "source_url": "https://arbiscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-090",
+      "claim_text": "Source text mentions address 0x9d41454891f2e7d1c9eebe95db1c733416e00b01.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-011",
+      "source_url": "https://arbiscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-091",
+      "claim_text": "Source text mentions address 0x932c367ab9382f80715996b776cd914b0633609b.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-011",
+      "source_url": "https://arbiscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-092",
+      "claim_text": "Source text mentions address 0x85aec099a7ccde6be81836f8c66b62b27e9651ce.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-011",
+      "source_url": "https://arbiscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-093",
+      "claim_text": "Source text mentions address 0x246deda28705c6aff305294bd892bf3bb0fd24cc.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-011",
+      "source_url": "https://arbiscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-094",
+      "claim_text": "Source text mentions address 0x78fd517055d05cb597b823d77048b157b6fe0ac9.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-011",
+      "source_url": "https://arbiscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-095",
+      "claim_text": "Source text mentions address 0xc7a4e8424c2d3ce06bcffba8128eed85fb625f1a.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-011",
+      "source_url": "https://arbiscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-096",
+      "claim_text": "Source text mentions address 0xfc29729fafebc7a26a1ca61ac5ed868ed4d81247.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-011",
+      "source_url": "https://arbiscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-097",
+      "claim_text": "Source text mentions address 0x13e3ebc44f0cada42f941bd5f984ba73f16f1669.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-011",
+      "source_url": "https://arbiscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-098",
+      "claim_text": "Fetched source title: Arbitrum One Account Abstraction Transactions Information | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-012",
+      "source_url": "https://arbiscan.io/txsAA",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-099",
+      "claim_text": "Source text mentions transaction 0x467554905056a08ad045ab1c0a0cc768cd9819635977b04b3d6173e5fe52996a.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-012",
+      "source_url": "https://arbiscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-100",
+      "claim_text": "Source text mentions transaction 0x114f27f335eb70f30fff6c97569c665ae4657e563534603e6dc4bd39f14acf93.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-012",
+      "source_url": "https://arbiscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-101",
+      "claim_text": "Source text mentions transaction 0x6249939aa952ac3665b141365952ad5542a5d3a4177000d444c72ed0f363d83f.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-012",
+      "source_url": "https://arbiscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-102",
+      "claim_text": "Source text mentions transaction 0xf009a7c0ba6422be253fe9d9f8d233a5aca3d800eacc98bbf26f120c3e981c57.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-012",
+      "source_url": "https://arbiscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-103",
+      "claim_text": "Source text mentions transaction 0x23bebf3e70646e098e3717bd1c4468fc9cc5c006cf56c39267cf4a718855f962.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-012",
+      "source_url": "https://arbiscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-104",
+      "claim_text": "Source text mentions address 0x467554905056a08ad045ab1c0a0cc768cd981963.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-012",
+      "source_url": "https://arbiscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-105",
+      "claim_text": "Source text mentions address 0x114f27f335eb70f30fff6c97569c665ae4657e56.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-012",
+      "source_url": "https://arbiscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-106",
+      "claim_text": "Source text mentions address 0x6249939aa952ac3665b141365952ad5542a5d3a4.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-012",
+      "source_url": "https://arbiscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-107",
+      "claim_text": "Source text mentions address 0xf009a7c0ba6422be253fe9d9f8d233a5aca3d800.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-012",
+      "source_url": "https://arbiscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-108",
+      "claim_text": "Source text mentions address 0x23bebf3e70646e098e3717bd1c4468fc9cc5c006.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-012",
+      "source_url": "https://arbiscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-109",
+      "claim_text": "Source text mentions address 0x450cd5896a0013149c6fa60b3290984f080941ff.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-012",
+      "source_url": "https://arbiscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-110",
+      "claim_text": "Source text mentions address 0x8baa9b8663d7ca0ec48e2ce24b0a80dbe4216632.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-012",
+      "source_url": "https://arbiscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-111",
+      "claim_text": "Source text mentions address 0x8ea16ff8fa7035481cf2a421fbe7a01782f138a0.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-012",
+      "source_url": "https://arbiscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-112",
+      "claim_text": "Fetched source title: EIP-7702 Authorisation List | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-013",
+      "source_url": "https://arbiscan.io/txnAuthList",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-113",
+      "claim_text": "Source text mentions transaction 0xdc125dfc7df0a0d265197951c5d24772979264010b73d5bae4c86257a4402fb4.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-013",
+      "source_url": "https://arbiscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-114",
+      "claim_text": "Source text mentions transaction 0x069e57e48b6ac2b529f841a8f99ea4bd7445cb0d0ef13b9534436fbdaa00aa60.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-013",
+      "source_url": "https://arbiscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-115",
+      "claim_text": "Source text mentions transaction 0xfb09b44309d6636ed079f227469730f312aff40a6cc27f1d5452b3aa42edba29.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-013",
+      "source_url": "https://arbiscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-116",
+      "claim_text": "Source text mentions transaction 0x8d22f5dfca9c942012984bdc26e382448153a06333db5616e41bc1f547c5cd08.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-013",
+      "source_url": "https://arbiscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-117",
+      "claim_text": "Source text mentions transaction 0xa4595c62d089a98f89a321baf87bf36048e792f2e0ac627b7e396cca0176a129.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-013",
+      "source_url": "https://arbiscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-118",
+      "claim_text": "Source text mentions address 0xdc125dfc7df0a0d265197951c5d2477297926401.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-013",
+      "source_url": "https://arbiscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-119",
+      "claim_text": "Source text mentions address 0x069e57e48b6ac2b529f841a8f99ea4bd7445cb0d.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-013",
+      "source_url": "https://arbiscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-120",
+      "claim_text": "Source text mentions address 0xfb09b44309d6636ed079f227469730f312aff40a.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-013",
+      "source_url": "https://arbiscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-121",
+      "claim_text": "Source text mentions address 0x8d22f5dfca9c942012984bdc26e382448153a063.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-013",
+      "source_url": "https://arbiscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-122",
+      "claim_text": "Source text mentions address 0xa4595c62d089a98f89a321baf87bf36048e792f2.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-013",
+      "source_url": "https://arbiscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-123",
+      "claim_text": "Source text mentions address 0x9cfd3999d564592c30e254e167417aaed5470e59.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-013",
+      "source_url": "https://arbiscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-124",
+      "claim_text": "Source text mentions address 0x4ae4c89360839ea9598e2d9ad7770d40b9705276.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-013",
+      "source_url": "https://arbiscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-125",
+      "claim_text": "Source text mentions address 0xdb764178dbc7ab53af6be96c13d96c8503a883db.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-013",
+      "source_url": "https://arbiscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-126",
+      "claim_text": "Fetched source title: Arbitrum One Blocks | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-014",
+      "source_url": "https://arbiscan.io/blocks",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-127",
+      "claim_text": "Fetched source title: Arbitrum One Batches | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-015",
+      "source_url": "https://arbiscan.io/batches",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-128",
+      "claim_text": "Source text mentions transaction 0x819780b481a63a1bbb5db46c603000f1de3e1872de48adf0d764a4631527a1db.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-015",
+      "source_url": "https://arbiscan.io/batches",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-129",
+      "claim_text": "Source text mentions transaction 0x4d5f27445bbedf20292a2394d2185a2aa16c63c7a6f293e53d80ade1a1b3589e.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-015",
+      "source_url": "https://arbiscan.io/batches",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-130",
+      "claim_text": "Source text mentions transaction 0x383f4a04a5298be2169cd8b4db6b37985eb2a61f819338eac8b98b73cd835bad.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-015",
+      "source_url": "https://arbiscan.io/batches",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-131",
+      "claim_text": "Source text mentions transaction 0xacadf125e30ccc3d03c674071f921deda0d6b3544648857de0e8516551b3aab5.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-015",
+      "source_url": "https://arbiscan.io/batches",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-132",
+      "claim_text": "Source text mentions transaction 0x4fb70016b91d540aabb5c8985b96afe0431875af8301fa9a0bce57d2c0ac6c0c.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-015",
+      "source_url": "https://arbiscan.io/batches",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-133",
+      "claim_text": "Source text mentions address 0x819780b481a63a1bbb5db46c603000f1de3e1872.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-015",
+      "source_url": "https://arbiscan.io/batches",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-134",
+      "claim_text": "Source text mentions address 0x4d5f27445bbedf20292a2394d2185a2aa16c63c7.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-015",
+      "source_url": "https://arbiscan.io/batches",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-135",
+      "claim_text": "Source text mentions address 0x383f4a04a5298be2169cd8b4db6b37985eb2a61f.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-015",
+      "source_url": "https://arbiscan.io/batches",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-136",
+      "claim_text": "Source text mentions address 0xacadf125e30ccc3d03c674071f921deda0d6b354.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-015",
+      "source_url": "https://arbiscan.io/batches",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-137",
+      "claim_text": "Source text mentions address 0x4fb70016b91d540aabb5c8985b96afe0431875af.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-015",
+      "source_url": "https://arbiscan.io/batches",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-138",
+      "claim_text": "Source text mentions address 0x63674c116566374e2a6d7fce0aae89ffe7662a3e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-015",
+      "source_url": "https://arbiscan.io/batches",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-139",
+      "claim_text": "Source text mentions address 0x1a39cb85299135297758816ec3585cc84299402d.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-015",
+      "source_url": "https://arbiscan.io/batches",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-140",
+      "claim_text": "Source text mentions address 0xb56e1683a2c9884a846ec233e45bdf6cc7f21679.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-015",
+      "source_url": "https://arbiscan.io/batches",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-141",
+      "claim_text": "Fetched source title: Arbitrum One Forked Blocks | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-016",
+      "source_url": "https://arbiscan.io/blocks_forked",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-142",
+      "claim_text": "Source text mentions address 0x0000000000000000000000000000000000000000.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-016",
+      "source_url": "https://arbiscan.io/blocks_forked",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-143",
+      "claim_text": "Fetched source title: Arbitrum One Top Accounts by ETH Balance | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-017",
+      "source_url": "https://arbiscan.io/accounts",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-144",
+      "claim_text": "Source text mentions address 0x131f001af400d5f212e1894846469fba70f8bcc9.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-017",
+      "source_url": "https://arbiscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-145",
+      "claim_text": "Source text mentions address 0x82af49447d8a07e3bd95bd0d56f35241523fbab1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-017",
+      "source_url": "https://arbiscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-146",
+      "claim_text": "Source text mentions address 0xf977814e90da44bfa03b6295a0616a897441acec.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-017",
+      "source_url": "https://arbiscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-147",
+      "claim_text": "Source text mentions address 0x350b381e386bdec81cecb9f3c31dc0472cb44e4d.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-017",
+      "source_url": "https://arbiscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-148",
+      "claim_text": "Source text mentions address 0xffa8db7b38579e6a2d14f9b347a9ace4d044cd54.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-017",
+      "source_url": "https://arbiscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-149",
+      "claim_text": "Source text mentions address 0xb38e8c17e38363af6ebdcb3dae12e0243582891d.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-017",
+      "source_url": "https://arbiscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-150",
+      "claim_text": "Source text mentions address 0x0000000000000000000000000000000000000da0.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-017",
+      "source_url": "https://arbiscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-151",
+      "claim_text": "Source text mentions address 0x9223c017a39d4806d1d92c15046ae28c32c6d8e7.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-017",
+      "source_url": "https://arbiscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-152",
+      "claim_text": "Fetched source title: Arbitrum One Verified Contracts | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-018",
+      "source_url": "https://arbiscan.io/contractsVerified",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-153",
+      "claim_text": "Fetched source title: Token Tracker | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-019",
+      "source_url": "https://arbiscan.io/tokens",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-154",
+      "claim_text": "Fetched source title: Token Transfer | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-020",
+      "source_url": "https://arbiscan.io/tokentxns",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-155",
+      "claim_text": "Source text mentions transaction 0x95a9031e0febc2fcc67f541c25ccecfb12767b89ee9ae467e1d951339f5d40bd.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-020",
+      "source_url": "https://arbiscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-156",
+      "claim_text": "Source text mentions transaction 0x4d771e0ba66bfe7858e423f269959cf206edaa23dc7441c3a58cc2b840eb5cc7.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-020",
+      "source_url": "https://arbiscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-157",
+      "claim_text": "Source text mentions transaction 0xaf584ee4dd822c4b0cd9b1279f5a2df57a3c017f980558ebdd0d070327d19a56.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-020",
+      "source_url": "https://arbiscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-158",
+      "claim_text": "Source text mentions transaction 0x7c24f97e7408757f139c4615360a9f71973aeb8b40f9e3c2e9220ba2fa2f2133.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-020",
+      "source_url": "https://arbiscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-159",
+      "claim_text": "Source text mentions address 0x95a9031e0febc2fcc67f541c25ccecfb12767b89.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-020",
+      "source_url": "https://arbiscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-160",
+      "claim_text": "Source text mentions address 0x4d771e0ba66bfe7858e423f269959cf206edaa23.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-020",
+      "source_url": "https://arbiscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-161",
+      "claim_text": "Source text mentions address 0xaf584ee4dd822c4b0cd9b1279f5a2df57a3c017f.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-020",
+      "source_url": "https://arbiscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-162",
+      "claim_text": "Source text mentions address 0x7c24f97e7408757f139c4615360a9f71973aeb8b.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-020",
+      "source_url": "https://arbiscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-163",
+      "claim_text": "Fetched source title: USD Coin (USDC) | ERC-20 | Address: 0xaf88d065...2268e5831 | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-021",
+      "source_url": "https://arbiscan.io/token/0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-164",
+      "claim_text": "Source text mentions transaction 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-021",
+      "source_url": "https://arbiscan.io/token/0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-165",
+      "claim_text": "Source text mentions transaction 0x7050c9e0f4ca769c69bd3a8ef740bc37934f8e2c036e5a723fd8ee048ed3f8c3.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-021",
+      "source_url": "https://arbiscan.io/token/0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-166",
+      "claim_text": "Source text mentions transaction 0x10d6a54a4754c8869d6886b5f5d7fbfa5b4522237ea5c60d11bc4e7a1ff9390b.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-021",
+      "source_url": "https://arbiscan.io/token/0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-167",
+      "claim_text": "Source text mentions transaction 0x60806040526004361061005a5760003560e01c80635c60da1b11610043578063.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-021",
+      "source_url": "https://arbiscan.io/token/0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-168",
+      "claim_text": "Source text mentions transaction 0x3cc9b4d7d8270ac6593bb909fed64cc6f8382b029c3a8ef9e8257d2d8cd86c86.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-021",
+      "source_url": "https://arbiscan.io/token/0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-169",
+      "claim_text": "Source text mentions address 0xaf88d065e77c8cc2239327c5edb3a432268e5831.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-021",
+      "source_url": "https://arbiscan.io/token/0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-170",
+      "claim_text": "Source text mentions address 0xc5d2460186f7233c927e7db2dcc703c0e500b653.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-021",
+      "source_url": "https://arbiscan.io/token/0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-171",
+      "claim_text": "Source text mentions address 0x7050c9e0f4ca769c69bd3a8ef740bc37934f8e2c.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-021",
+      "source_url": "https://arbiscan.io/token/0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-172",
+      "claim_text": "Source text mentions address 0x10d6a54a4754c8869d6886b5f5d7fbfa5b452223.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-021",
+      "source_url": "https://arbiscan.io/token/0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-173",
+      "claim_text": "Source text mentions address 0x60806040526004361061005a5760003560e01c80.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-021",
+      "source_url": "https://arbiscan.io/token/0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-174",
+      "claim_text": "Source text mentions address 0x0f4fb9474303d10905AB86aA8d5A65FE44b6E04A.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-021",
+      "source_url": "https://arbiscan.io/token/0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-175",
+      "claim_text": "Source text mentions address 0x86e721b43d4ecfa71119dd38c0f938a75fdb57b3.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-021",
+      "source_url": "https://arbiscan.io/token/0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-176",
+      "claim_text": "Source text mentions address 0x0f4fb9474303d10905ab86aa8d5a65fe44b6e04a.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-021",
+      "source_url": "https://arbiscan.io/token/0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-177",
+      "claim_text": "Fetched source title: NFT Transfers | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-022",
+      "source_url": "https://arbiscan.io/nft-transfers",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-178",
+      "claim_text": "Source text mentions transaction 0xf42453cc12621d9b7a9caec9bc98c44fd0d2dee23bbe1305351c695bd222c0ba.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-022",
+      "source_url": "https://arbiscan.io/nft-transfers",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-179",
+      "claim_text": "Source text mentions transaction 0xe22d09f5c67f94b0b599e50379cb0943a5b39770dce4c99b74263f15de852bf9.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-022",
+      "source_url": "https://arbiscan.io/nft-transfers",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-180",
+      "claim_text": "Source text mentions transaction 0xdec7dab847a08795180f99b89c664d66afc3d153cb9d681776e879c7f3e80223.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-022",
+      "source_url": "https://arbiscan.io/nft-transfers",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-181",
+      "claim_text": "Source text mentions transaction 0x31024c66ff70e41b05e15c6c1c615fffe6c3d680f38339f9bb9feef0e8a3187d.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-022",
+      "source_url": "https://arbiscan.io/nft-transfers",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-182",
+      "claim_text": "Source text mentions transaction 0x3cbd2394a0934e6b515865255c767418959c495cff30058a372a8bb4173a62e2.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-022",
+      "source_url": "https://arbiscan.io/nft-transfers",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-183",
+      "claim_text": "Source text mentions address 0xf42453cc12621d9b7a9caec9bc98c44fd0d2dee2.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-022",
+      "source_url": "https://arbiscan.io/nft-transfers",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-184",
+      "claim_text": "Source text mentions address 0x0000000000000000000000000000000000000000.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-022",
+      "source_url": "https://arbiscan.io/nft-transfers",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-185",
+      "claim_text": "Source text mentions address 0xc8E82407d8DFDBB6C2e1105925f3404B387877Dd.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-022",
+      "source_url": "https://arbiscan.io/nft-transfers",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-186",
+      "claim_text": "Source text mentions address 0xe22d09f5c67f94b0b599e50379cb0943a5b39770.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-022",
+      "source_url": "https://arbiscan.io/nft-transfers",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-187",
+      "claim_text": "Source text mentions address 0xb609304e64ff68A162b9aa38022657AD289494D0.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-022",
+      "source_url": "https://arbiscan.io/nft-transfers",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-188",
+      "claim_text": "Source text mentions address 0xdec7dab847a08795180f99b89c664d66afc3d153.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-022",
+      "source_url": "https://arbiscan.io/nft-transfers",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-189",
+      "claim_text": "Source text mentions address 0x7E067A654cC29fEc8d17BC4a2e0b4a4EB5FE5e8e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-022",
+      "source_url": "https://arbiscan.io/nft-transfers",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-190",
+      "claim_text": "Source text mentions address 0x31024c66ff70e41b05e15c6c1c615fffe6c3d680.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-022",
+      "source_url": "https://arbiscan.io/nft-transfers",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-191",
+      "claim_text": "Fetched source title: NFT Latest Mints | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-023",
+      "source_url": "https://arbiscan.io/nft-latest-mints",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-192",
+      "claim_text": "Source text mentions transaction 0xf42453cc12621d9b7a9caec9bc98c44fd0d2dee23bbe1305351c695bd222c0ba.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-023",
+      "source_url": "https://arbiscan.io/nft-latest-mints",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-193",
+      "claim_text": "Source text mentions transaction 0xe22d09f5c67f94b0b599e50379cb0943a5b39770dce4c99b74263f15de852bf9.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-023",
+      "source_url": "https://arbiscan.io/nft-latest-mints",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-194",
+      "claim_text": "Source text mentions transaction 0xdec7dab847a08795180f99b89c664d66afc3d153cb9d681776e879c7f3e80223.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-023",
+      "source_url": "https://arbiscan.io/nft-latest-mints",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-195",
+      "claim_text": "Source text mentions transaction 0x31024c66ff70e41b05e15c6c1c615fffe6c3d680f38339f9bb9feef0e8a3187d.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-023",
+      "source_url": "https://arbiscan.io/nft-latest-mints",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-196",
+      "claim_text": "Source text mentions transaction 0x3cbd2394a0934e6b515865255c767418959c495cff30058a372a8bb4173a62e2.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-023",
+      "source_url": "https://arbiscan.io/nft-latest-mints",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-197",
+      "claim_text": "Source text mentions address 0xf42453cc12621d9b7a9caec9bc98c44fd0d2dee2.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-023",
+      "source_url": "https://arbiscan.io/nft-latest-mints",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-198",
+      "claim_text": "Source text mentions address 0xc8E82407d8DFDBB6C2e1105925f3404B387877Dd.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-023",
+      "source_url": "https://arbiscan.io/nft-latest-mints",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-199",
+      "claim_text": "Source text mentions address 0xe22d09f5c67f94b0b599e50379cb0943a5b39770.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-023",
+      "source_url": "https://arbiscan.io/nft-latest-mints",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-200",
+      "claim_text": "Source text mentions address 0xb609304e64ff68A162b9aa38022657AD289494D0.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-023",
+      "source_url": "https://arbiscan.io/nft-latest-mints",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-201",
+      "claim_text": "Source text mentions address 0xdec7dab847a08795180f99b89c664d66afc3d153.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-023",
+      "source_url": "https://arbiscan.io/nft-latest-mints",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-202",
+      "claim_text": "Source text mentions address 0x7E067A654cC29fEc8d17BC4a2e0b4a4EB5FE5e8e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-023",
+      "source_url": "https://arbiscan.io/nft-latest-mints",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-203",
+      "claim_text": "Source text mentions address 0x31024c66ff70e41b05e15c6c1c615fffe6c3d680.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-023",
+      "source_url": "https://arbiscan.io/nft-latest-mints",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-204",
+      "claim_text": "Source text mentions address 0xF7206d3d8dA8671DbBD3f10c0BaeB6A98E6741FA.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-023",
+      "source_url": "https://arbiscan.io/nft-latest-mints",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-205",
+      "claim_text": "Fetched source title: Arbitrum One Charts and Statistics | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-024",
+      "source_url": "https://arbiscan.io/charts",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-206",
+      "claim_text": "Fetched source title: Arbitrum One Directory & Resources | Arbitrum One.",
+      "fact_type": "source_title",
+      "source_ref": "src-025",
+      "source_url": "https://arbiscan.io/directory",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-207",
+      "claim_text": "Fetched source title: Etherscan APIs - Ethereum (ETH) API Provider.",
+      "fact_type": "source_title",
+      "source_ref": "src-026",
+      "source_url": "https://etherscan.io/apis?id=42161",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-208",
+      "claim_text": "Fetched source title: Arbitrum One (ETH) Blockchain Explorer.",
+      "fact_type": "source_title",
+      "source_ref": "src-027",
+      "source_url": "https://arbiscan.io",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-209",
+      "claim_text": "Source text mentions transaction 0x8f51f2dfde02c6a4d726c829ada39b9754e7ff7e86a41479e8eac8aa43c2ccbf.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-027",
+      "source_url": "https://arbiscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-210",
+      "claim_text": "Source text mentions transaction 0x4698c62e7d5d90e1937eb0b4a84699256fdd014573c6baade96455edd510aa86.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-027",
+      "source_url": "https://arbiscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-211",
+      "claim_text": "Source text mentions transaction 0x95bedc83d8da365efc50d49da82f3ef7ba6bd8c1a3a4fe29a19852f69912311b.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-027",
+      "source_url": "https://arbiscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-212",
+      "claim_text": "Source text mentions transaction 0x2fe096a883d4620452e33a906102d8be2f121fc60682f65e1bda343a6c15b2e8.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-027",
+      "source_url": "https://arbiscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-213",
+      "claim_text": "Source text mentions transaction 0x8bad2062a79deffa88f7af12cca5ebc61c31bf06abb9adbd4be83e49aaab2af3.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-027",
+      "source_url": "https://arbiscan.io",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-214",
+      "claim_text": "Source text mentions address 0x8f51f2dfde02c6a4d726c829ada39b9754e7ff7e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-027",
+      "source_url": "https://arbiscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-215",
+      "claim_text": "Source text mentions address 0x4698c62e7d5d90e1937eb0b4a84699256fdd0145.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-027",
+      "source_url": "https://arbiscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-216",
+      "claim_text": "Source text mentions address 0x95bedc83d8da365efc50d49da82f3ef7ba6bd8c1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-027",
+      "source_url": "https://arbiscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-217",
+      "claim_text": "Source text mentions address 0x2fe096a883d4620452e33a906102d8be2f121fc6.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-027",
+      "source_url": "https://arbiscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-218",
+      "claim_text": "Source text mentions address 0x8bad2062a79deffa88f7af12cca5ebc61c31bf06.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-027",
+      "source_url": "https://arbiscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-219",
+      "claim_text": "Source text mentions address 0xbb1f08c9b51662138dceb56e70898b64ce824085.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-027",
+      "source_url": "https://arbiscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-220",
+      "claim_text": "Source text mentions address 0xab5d32a8afbf71fa6b8643f7ed952956ebb69c41.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-027",
+      "source_url": "https://arbiscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-221",
+      "claim_text": "Source text mentions address 0x97a7aef8d719135a42858392447c75c0f7222cf6.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-027",
+      "source_url": "https://arbiscan.io",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-222",
+      "claim_text": "Fetched source title: Arbitrum Sepolia Transactions Information | Arbitrum Sepolia.",
+      "fact_type": "source_title",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.arbiscan.io/txs",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-223",
+      "claim_text": "Source text mentions transaction 0xa6ab64ac7d7dc628dfa670a7769df3445c6f98ec2eb778e3e89af9d4730bb434.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.arbiscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-224",
+      "claim_text": "Source text mentions transaction 0x00f5ac9a0a392c6ee8a35e81c20f366d07e7095a5f7447105efbe6c3452e99b0.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.arbiscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-225",
+      "claim_text": "Source text mentions transaction 0x83791a27409db8be41528854fff20c535415deb6e3e31973d6d509a096df288a.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.arbiscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-226",
+      "claim_text": "Source text mentions transaction 0x89357faca20d8286ef2b1f0f6e65c9d33f2f209c26e4f43c176229f0c422e48e.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.arbiscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-227",
+      "claim_text": "Source text mentions transaction 0xfa35d0254ced620b78dcf9a9159e802ce6f9ea1d065bae7d28abf4a6f73684b9.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.arbiscan.io/txs",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-228",
+      "claim_text": "Source text mentions address 0xa6ab64ac7d7dc628dfa670a7769df3445c6f98ec.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.arbiscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-229",
+      "claim_text": "Source text mentions address 0x00f5ac9a0a392c6ee8a35e81c20f366d07e7095a.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.arbiscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-230",
+      "claim_text": "Source text mentions address 0x83791a27409db8be41528854fff20c535415deb6.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.arbiscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-231",
+      "claim_text": "Source text mentions address 0x89357faca20d8286ef2b1f0f6e65c9d33f2f209c.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.arbiscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-232",
+      "claim_text": "Source text mentions address 0xfa35d0254ced620b78dcf9a9159e802ce6f9ea1d.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.arbiscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-233",
+      "claim_text": "Source text mentions address 0x5244018c45dcf581300331cc719802e9d2afd0d1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.arbiscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-234",
+      "claim_text": "Source text mentions address 0x7b3edcbdebd3f8f4bb8c047ba989380000feeb0c.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.arbiscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-235",
+      "claim_text": "Source text mentions address 0x82d64566750e06afe86076b98b9041420e8b0941.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-028",
+      "source_url": "https://sepolia.arbiscan.io/txs",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-236",
+      "claim_text": "Fetched source title: Arbitrum One L1 to L2 Transactions Information | Arbitrum.",
+      "fact_type": "source_title",
+      "source_ref": "src-029",
+      "source_url": "https://sepolia.arbiscan.io/txsDeposits",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-237",
+      "claim_text": "Fetched source title: Arbitrum One L2 to L1 Transactions | Arbitrum.",
+      "fact_type": "source_title",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.arbiscan.io/txsExit",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-238",
+      "claim_text": "Source text mentions transaction 0xba805cf1d8c411eeeb814d2ce32b8a215f24a7ef0a6aab8a9effe570d0a71f12.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.arbiscan.io/txsExit",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-239",
+      "claim_text": "Source text mentions transaction 0xeca8aaacec5e17784ded7f2d184c6ecb730a3c5e867a90358a80d873a18c502e.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.arbiscan.io/txsExit",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-240",
+      "claim_text": "Source text mentions transaction 0x76ffa9634a443fa315e23ff1032b6e050b2c9e86fdaf091bc120e68c8f98455c.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.arbiscan.io/txsExit",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-241",
+      "claim_text": "Source text mentions transaction 0x8e4fb179d2d354601afeea1fa5563ab0970887bfc7334c2f684e437e7c9c539f.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.arbiscan.io/txsExit",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-242",
+      "claim_text": "Source text mentions transaction 0x357eaa727d49003c5680ff3754e50e4e82976e2605abde09314b4961150b96a4.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.arbiscan.io/txsExit",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-243",
+      "claim_text": "Source text mentions address 0xba805cf1d8c411eeeb814d2ce32b8a215f24a7ef.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.arbiscan.io/txsExit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-244",
+      "claim_text": "Source text mentions address 0xeca8aaacec5e17784ded7f2d184c6ecb730a3c5e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.arbiscan.io/txsExit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-245",
+      "claim_text": "Source text mentions address 0x76ffa9634a443fa315e23ff1032b6e050b2c9e86.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.arbiscan.io/txsExit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-246",
+      "claim_text": "Source text mentions address 0x8e4fb179d2d354601afeea1fa5563ab0970887bf.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.arbiscan.io/txsExit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-247",
+      "claim_text": "Source text mentions address 0x357eaa727d49003c5680ff3754e50e4e82976e26.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.arbiscan.io/txsExit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-248",
+      "claim_text": "Source text mentions address 0xb76e03656bb902de45a48fc48914020f24e56a78.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.arbiscan.io/txsExit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-249",
+      "claim_text": "Source text mentions address 0x813b53273a8248794f06de8fbf23c9351cc2c562.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.arbiscan.io/txsExit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-250",
+      "claim_text": "Source text mentions address 0xeecbdf47fee79c2af3c3d3da3bcd6007a4041b46.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-030",
+      "source_url": "https://sepolia.arbiscan.io/txsExit",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-251",
+      "claim_text": "Fetched source title: Arbitrum Sepolia Contract Internal Transactions | Arbitrum Sepolia.",
+      "fact_type": "source_title",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.arbiscan.io/txsInternal",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-252",
+      "claim_text": "Source text mentions transaction 0xbd7a865ae34b494a6db035a2da4638083fa782c906340002f1f3df5182b4c332.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.arbiscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-253",
+      "claim_text": "Source text mentions transaction 0x496f5a9ddda3bd14b79dd42b1de9a03751c832fa2776a3583074eaef04ed815b.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.arbiscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-254",
+      "claim_text": "Source text mentions transaction 0x96c77dc729f1addd3537396fb39b6aa3a54b5119ff72b2a650384eadb2c60cb1.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.arbiscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-255",
+      "claim_text": "Source text mentions transaction 0x3ba8cb979841f08b85fdfc82321dac2ecc77ed27207dce7cc716d88d0d5d1eea.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.arbiscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-256",
+      "claim_text": "Source text mentions transaction 0xffdcc1c86d19873bea70d33fa5a65c1349f3dc044c88d9889e606dad56a811a2.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.arbiscan.io/txsInternal",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-257",
+      "claim_text": "Source text mentions address 0xbd7a865ae34b494a6db035a2da4638083fa782c9.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.arbiscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-258",
+      "claim_text": "Source text mentions address 0x496f5a9ddda3bd14b79dd42b1de9a03751c832fa.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.arbiscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-259",
+      "claim_text": "Source text mentions address 0x96c77dc729f1addd3537396fb39b6aa3a54b5119.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.arbiscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-260",
+      "claim_text": "Source text mentions address 0x3ba8cb979841f08b85fdfc82321dac2ecc77ed27.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.arbiscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-261",
+      "claim_text": "Source text mentions address 0xffdcc1c86d19873bea70d33fa5a65c1349f3dc04.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.arbiscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-262",
+      "claim_text": "Source text mentions address 0x94d9ac9094125489fefcac13e5368b8c1df349a2.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.arbiscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-263",
+      "claim_text": "Source text mentions address 0x9367a20df69c3702885a4d399b33edd0eb9a4707.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.arbiscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-264",
+      "claim_text": "Source text mentions address 0xa731bcb56e075d9096d245bf806cab43d5f9fc79.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-031",
+      "source_url": "https://sepolia.arbiscan.io/txsInternal",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-265",
+      "claim_text": "Fetched source title: Arbitrum Sepolia Account Abstraction Transactions Information | Arbitrum Sepolia.",
+      "fact_type": "source_title",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.arbiscan.io/txsAA",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-266",
+      "claim_text": "Source text mentions transaction 0x4fc0c7971f9c6a9358e5a5b00d6ef466b42097fe5de1397e147d11d89db4c336.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.arbiscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-267",
+      "claim_text": "Source text mentions transaction 0x496f5a9ddda3bd14b79dd42b1de9a03751c832fa2776a3583074eaef04ed815b.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.arbiscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-268",
+      "claim_text": "Source text mentions transaction 0x9f6fcb9fe23ff773f51b8e4d194afd18d717968172ce965df87ef3b0cccc5a81.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.arbiscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-269",
+      "claim_text": "Source text mentions transaction 0x3ba8cb979841f08b85fdfc82321dac2ecc77ed27207dce7cc716d88d0d5d1eea.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.arbiscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-270",
+      "claim_text": "Source text mentions transaction 0xaa544282d818a349b4d4d25d5460ce8e4065825403ed748ac38a9e6d0fe5e7d1.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.arbiscan.io/txsAA",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-271",
+      "claim_text": "Source text mentions address 0x4fc0c7971f9c6a9358e5a5b00d6ef466b42097fe.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.arbiscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-272",
+      "claim_text": "Source text mentions address 0x496f5a9ddda3bd14b79dd42b1de9a03751c832fa.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.arbiscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-273",
+      "claim_text": "Source text mentions address 0x9f6fcb9fe23ff773f51b8e4d194afd18d7179681.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.arbiscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-274",
+      "claim_text": "Source text mentions address 0x3ba8cb979841f08b85fdfc82321dac2ecc77ed27.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.arbiscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-275",
+      "claim_text": "Source text mentions address 0xaa544282d818a349b4d4d25d5460ce8e40658254.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.arbiscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-276",
+      "claim_text": "Source text mentions address 0x9367a20df69c3702885a4d399b33edd0eb9a4707.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.arbiscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-277",
+      "claim_text": "Source text mentions address 0xcee695856b1ada7115676b5524813db43b413218.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.arbiscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-278",
+      "claim_text": "Source text mentions address 0xa731bcb56e075d9096d245bf806cab43d5f9fc79.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-032",
+      "source_url": "https://sepolia.arbiscan.io/txsAA",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-279",
+      "claim_text": "Fetched source title: EIP-7702 Authorisation List | Arbitrum Sepolia.",
+      "fact_type": "source_title",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.arbiscan.io/txnAuthList",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-280",
+      "claim_text": "Source text mentions transaction 0x887055fbcff36171c22692c82ffe19d0c88a8f26d4025f824de0e00b59062185.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.arbiscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-281",
+      "claim_text": "Source text mentions transaction 0xfb6fdc9a87c2a4df1e51ef8b2fdde1da7b20dd8999b8c94137297d2644cb7364.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.arbiscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-282",
+      "claim_text": "Source text mentions transaction 0x8a2f6992f62d54b5623f8bfc8bcde5510445dcd2477fd09281f9975b545507f1.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.arbiscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-283",
+      "claim_text": "Source text mentions transaction 0xf63cfaf8bb564237ac244b03bbb46abf922ff8ff74a4c1be3105f79813fff25d.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.arbiscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-284",
+      "claim_text": "Source text mentions transaction 0xf00b123f883eaa23927287be71776a17e0a57d40484b165909609164718f8044.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.arbiscan.io/txnAuthList",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-285",
+      "claim_text": "Source text mentions address 0x887055fbcff36171c22692c82ffe19d0c88a8f26.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.arbiscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-286",
+      "claim_text": "Source text mentions address 0xfb6fdc9a87c2a4df1e51ef8b2fdde1da7b20dd89.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.arbiscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-287",
+      "claim_text": "Source text mentions address 0x8a2f6992f62d54b5623f8bfc8bcde5510445dcd2.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.arbiscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-288",
+      "claim_text": "Source text mentions address 0xf63cfaf8bb564237ac244b03bbb46abf922ff8ff.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.arbiscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-289",
+      "claim_text": "Source text mentions address 0xf00b123f883eaa23927287be71776a17e0a57d40.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.arbiscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-290",
+      "claim_text": "Source text mentions address 0x1e20512a93693f6e4ef68ac4133479749e798c14.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.arbiscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-291",
+      "claim_text": "Source text mentions address 0xd7100010a34299bfb2c69366f645580eb416b1b8.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.arbiscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-292",
+      "claim_text": "Source text mentions address 0xa2d81506b50aca0928a784913a08d59e8274d508.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-033",
+      "source_url": "https://sepolia.arbiscan.io/txnAuthList",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-293",
+      "claim_text": "Fetched source title: Arbitrum Sepolia Blocks | Arbitrum Sepolia.",
+      "fact_type": "source_title",
+      "source_ref": "src-034",
+      "source_url": "https://sepolia.arbiscan.io/blocks",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-294",
+      "claim_text": "Fetched source title: Arbitrum Sepolia Batches | Arbitrum Sepolia.",
+      "fact_type": "source_title",
+      "source_ref": "src-035",
+      "source_url": "https://sepolia.arbiscan.io/batches",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-295",
+      "claim_text": "Source text mentions transaction 0x2e6672ee721d675b9a5ee556ea16176e47bced49451a0b886094842e03e60362.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-035",
+      "source_url": "https://sepolia.arbiscan.io/batches",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-296",
+      "claim_text": "Source text mentions transaction 0xc71386c2ebee4c82702cbe68d690cf752c12476ff9f049426d52d4b2d7fd899c.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-035",
+      "source_url": "https://sepolia.arbiscan.io/batches",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-297",
+      "claim_text": "Source text mentions transaction 0x2deff3c735dfcc7c5a47b431930a9ae13a88fceb9b9a2d57cdd2ba9c85b08283.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-035",
+      "source_url": "https://sepolia.arbiscan.io/batches",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-298",
+      "claim_text": "Source text mentions transaction 0x7b3957b460eb7cab2787885bb7ba320ca37809a72618b16f7ba1809715707501.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-035",
+      "source_url": "https://sepolia.arbiscan.io/batches",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-299",
+      "claim_text": "Source text mentions transaction 0x927a995fb587b35235e985c9053a6ffd2020970b3701c80524b05218cbae2100.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-035",
+      "source_url": "https://sepolia.arbiscan.io/batches",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-300",
+      "claim_text": "Source text mentions address 0x2e6672ee721d675b9a5ee556ea16176e47bced49.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-035",
+      "source_url": "https://sepolia.arbiscan.io/batches",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-301",
+      "claim_text": "Source text mentions address 0xc71386c2ebee4c82702cbe68d690cf752c12476f.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-035",
+      "source_url": "https://sepolia.arbiscan.io/batches",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-302",
+      "claim_text": "Source text mentions address 0x2deff3c735dfcc7c5a47b431930a9ae13a88fceb.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-035",
+      "source_url": "https://sepolia.arbiscan.io/batches",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-303",
+      "claim_text": "Source text mentions address 0x7b3957b460eb7cab2787885bb7ba320ca37809a7.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-035",
+      "source_url": "https://sepolia.arbiscan.io/batches",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-304",
+      "claim_text": "Source text mentions address 0x927a995fb587b35235e985c9053a6ffd2020970b.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-035",
+      "source_url": "https://sepolia.arbiscan.io/batches",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-305",
+      "claim_text": "Source text mentions address 0xbfc39e3424306fc7dae93228ce2e182c29493cfe.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-035",
+      "source_url": "https://sepolia.arbiscan.io/batches",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-306",
+      "claim_text": "Source text mentions address 0x166a20999e9fea3da23a71b189e82fe005bdda26.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-035",
+      "source_url": "https://sepolia.arbiscan.io/batches",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-307",
+      "claim_text": "Source text mentions address 0xd22a23345d23f82ff90fe535fb7a44ae98b32ca2.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-035",
+      "source_url": "https://sepolia.arbiscan.io/batches",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-308",
+      "claim_text": "Fetched source title: Arbitrum Sepolia Top Accounts by ETH Balance | Arbitrum Sepolia.",
+      "fact_type": "source_title",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.arbiscan.io/accounts",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-309",
+      "claim_text": "Source text mentions address 0x71b61c2e250afa05dfc36304d6c91501be0965d8.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.arbiscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-310",
+      "claim_text": "Source text mentions address 0x5ff40197c83c3a2705ba912333cf1a37ba249eb7.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.arbiscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-311",
+      "claim_text": "Source text mentions address 0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.arbiscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-312",
+      "claim_text": "Source text mentions address 0x31957b0c184a0870416d2518084ada6e24759193.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.arbiscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-313",
+      "claim_text": "Source text mentions address 0x35aa95ac4747d928e2cd42fe4461f6d9d1826346.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.arbiscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-314",
+      "claim_text": "Source text mentions address 0x92e8a239f92be5d234c228283e112de3743d1c67.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.arbiscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-315",
+      "claim_text": "Source text mentions address 0x8d86c3573928ce125f9b2df59918c383aa2b514d.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.arbiscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-316",
+      "claim_text": "Source text mentions address 0x22b65d0b9b59af4d3ed59f18b9ad53f5f4908b54.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-036",
+      "source_url": "https://sepolia.arbiscan.io/accounts",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-317",
+      "claim_text": "Fetched source title: Arbitrum Sepolia Verified Contracts | Arbitrum Sepolia.",
+      "fact_type": "source_title",
+      "source_ref": "src-037",
+      "source_url": "https://sepolia.arbiscan.io/contractsVerified",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-318",
+      "claim_text": "Fetched source title: Token Transfer | Arbitrum Sepolia.",
+      "fact_type": "source_title",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.arbiscan.io/tokentxns",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-319",
+      "claim_text": "Source text mentions transaction 0x0da9546ed9bf815a4a50074ffaedc52b86309408814be28c1506377735bedc20.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.arbiscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-320",
+      "claim_text": "Source text mentions transaction 0x2157c2da9d87923cd278c1a4d8a03c47e8d6c8b1e6d09f66018bc19c8821724b.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.arbiscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-321",
+      "claim_text": "Source text mentions transaction 0x033cef338d281a9a7cd24f314725f75a47ef639b2d0b00fdbc7d948defea0b53.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.arbiscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-322",
+      "claim_text": "Source text mentions transaction 0xc5957f4745093183e40c9fbd53d554766699eb93dc54d66d1f42ebfb8bf2c45c.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.arbiscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-323",
+      "claim_text": "Source text mentions transaction 0x863d2a6929325ee434732135eb4bfceb3445ed064f5d4116d582b64eeb23a0d7.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.arbiscan.io/tokentxns",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-324",
+      "claim_text": "Source text mentions address 0x0da9546ed9bf815a4a50074ffaedc52b86309408.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.arbiscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-325",
+      "claim_text": "Source text mentions address 0x2157c2da9d87923cd278c1a4d8a03c47e8d6c8b1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.arbiscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-326",
+      "claim_text": "Source text mentions address 0x033cef338d281a9a7cd24f314725f75a47ef639b.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.arbiscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-327",
+      "claim_text": "Source text mentions address 0xc5957f4745093183e40c9fbd53d554766699eb93.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.arbiscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-328",
+      "claim_text": "Source text mentions address 0x863d2a6929325ee434732135eb4bfceb3445ed06.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-038",
+      "source_url": "https://sepolia.arbiscan.io/tokentxns",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-329",
+      "claim_text": "Fetched source title: NFT Transfers | Arbitrum Sepolia.",
+      "fact_type": "source_title",
+      "source_ref": "src-039",
+      "source_url": "https://sepolia.arbiscan.io/nft-transfers",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-330",
+      "claim_text": "Source text mentions transaction 0x410c2ac1f36dea6013977ec5bb46372db83cd34e8e80025f58366c47c2fa4c3c.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-039",
+      "source_url": "https://sepolia.arbiscan.io/nft-transfers",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-331",
+      "claim_text": "Source text mentions transaction 0x57cd603c6d79ee5be6a90698120db5d47a987545d29e84786f6c097c0c98e543.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-039",
+      "source_url": "https://sepolia.arbiscan.io/nft-transfers",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-332",
+      "claim_text": "Source text mentions transaction 0x09bd99c7c1a038cddc4c02f20be2ec919f7c6e532e18575c939520ded7a915f8.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-039",
+      "source_url": "https://sepolia.arbiscan.io/nft-transfers",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-333",
+      "claim_text": "Source text mentions transaction 0xf40cabf2bbb5b06bb06b246dc2f88b2beda136cac5566a84ee1988cbdbd78904.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-039",
+      "source_url": "https://sepolia.arbiscan.io/nft-transfers",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-334",
+      "claim_text": "Source text mentions transaction 0x0da9546ed9bf815a4a50074ffaedc52b86309408814be28c1506377735bedc20.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-039",
+      "source_url": "https://sepolia.arbiscan.io/nft-transfers",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-335",
+      "claim_text": "Source text mentions address 0x410c2ac1f36dea6013977ec5bb46372db83cd34e.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-039",
+      "source_url": "https://sepolia.arbiscan.io/nft-transfers",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-336",
+      "claim_text": "Source text mentions address 0x0000000000000000000000000000000000000000.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-039",
+      "source_url": "https://sepolia.arbiscan.io/nft-transfers",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-337",
+      "claim_text": "Source text mentions address 0xAf27Cd01DC1969f0D0CEeb25939B20b226Fce277.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-039",
+      "source_url": "https://sepolia.arbiscan.io/nft-transfers",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-338",
+      "claim_text": "Source text mentions address 0xdab0068B2d557a64Edf7236d082df9a42904B6E1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-039",
+      "source_url": "https://sepolia.arbiscan.io/nft-transfers",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-339",
+      "claim_text": "Source text mentions address 0x57cd603c6d79ee5be6a90698120db5d47a987545.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-039",
+      "source_url": "https://sepolia.arbiscan.io/nft-transfers",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-340",
+      "claim_text": "Source text mentions address 0xA064C26d0AEDb3822875f25fe8e370187e5E519B.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-039",
+      "source_url": "https://sepolia.arbiscan.io/nft-transfers",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-341",
+      "claim_text": "Source text mentions address 0x09bd99c7c1a038cddc4c02f20be2ec919f7c6e53.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-039",
+      "source_url": "https://sepolia.arbiscan.io/nft-transfers",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-342",
+      "claim_text": "Source text mentions address 0x96289BFd925E9d70ecF4aa92bBafe0f18Ccf1b73.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-039",
+      "source_url": "https://sepolia.arbiscan.io/nft-transfers",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-343",
+      "claim_text": "Fetched source title: NFT Latest Mints | Arbitrum Sepolia.",
+      "fact_type": "source_title",
+      "source_ref": "src-040",
+      "source_url": "https://sepolia.arbiscan.io/nft-latest-mints",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-344",
+      "claim_text": "Source text mentions transaction 0x2157c2da9d87923cd278c1a4d8a03c47e8d6c8b1e6d09f66018bc19c8821724b.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-040",
+      "source_url": "https://sepolia.arbiscan.io/nft-latest-mints",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-345",
+      "claim_text": "Source text mentions transaction 0x74de43f1070813c636d5221c34b69f9e463f3f2b53d293122611902f1f5303d0.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-040",
+      "source_url": "https://sepolia.arbiscan.io/nft-latest-mints",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-346",
+      "claim_text": "Source text mentions transaction 0x6f0ef57062623c9a8ae4b4d174e90052cd05ec571603f70a18d73abf01f3fd72.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-040",
+      "source_url": "https://sepolia.arbiscan.io/nft-latest-mints",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-347",
+      "claim_text": "Source text mentions transaction 0x214ec18afcc81affb39cba1de43465c71110c7c6acb5df0c25d7ce417b7c79b9.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-040",
+      "source_url": "https://sepolia.arbiscan.io/nft-latest-mints",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-348",
+      "claim_text": "Source text mentions transaction 0x2c647990cd0ff6309d0f5b5370c8faf675d12af2f67679d6674e1a30b11347f9.",
+      "fact_type": "mentioned_transaction",
+      "source_ref": "src-040",
+      "source_url": "https://sepolia.arbiscan.io/nft-latest-mints",
+      "confidence": 0.55,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-349",
+      "claim_text": "Source text mentions address 0x2157c2da9d87923cd278c1a4d8a03c47e8d6c8b1.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-040",
+      "source_url": "https://sepolia.arbiscan.io/nft-latest-mints",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-350",
+      "claim_text": "Source text mentions address 0x2463C7f2684822e84277523be403f75805559268.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-040",
+      "source_url": "https://sepolia.arbiscan.io/nft-latest-mints",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-351",
+      "claim_text": "Source text mentions address 0x54d87aFb1415A8534A95997d063B1240678F81c6.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-040",
+      "source_url": "https://sepolia.arbiscan.io/nft-latest-mints",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-352",
+      "claim_text": "Source text mentions address 0xAf27Cd01DC1969f0D0CEeb25939B20b226Fce277.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-040",
+      "source_url": "https://sepolia.arbiscan.io/nft-latest-mints",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-353",
+      "claim_text": "Source text mentions address 0x74de43f1070813c636d5221c34b69f9e463f3f2b.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-040",
+      "source_url": "https://sepolia.arbiscan.io/nft-latest-mints",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-354",
+      "claim_text": "Source text mentions address 0x6f0ef57062623c9a8ae4b4d174e90052cd05ec57.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-040",
+      "source_url": "https://sepolia.arbiscan.io/nft-latest-mints",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-355",
+      "claim_text": "Source text mentions address 0x214ec18afcc81affb39cba1de43465c71110c7c6.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-040",
+      "source_url": "https://sepolia.arbiscan.io/nft-latest-mints",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-356",
+      "claim_text": "Source text mentions address 0xD471941f8D0EB1adeEEb598bacA715298a7D0126.",
+      "fact_type": "mentioned_address",
+      "source_ref": "src-040",
+      "source_url": "https://sepolia.arbiscan.io/nft-latest-mints",
+      "confidence": 0.52,
+      "is_inferred": true
+    },
+    {
+      "claim_id": "claim-357",
+      "claim_text": "Fetched source title: Unit Converter | Arbitrum Sepolia.",
+      "fact_type": "source_title",
+      "source_ref": "src-041",
+      "source_url": "https://sepolia.arbiscan.io/unitconverter",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-358",
+      "claim_text": "Fetched source title: Base64 Converter | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-042",
+      "source_url": "https://sepolia.arbiscan.io/base64converter",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-359",
+      "claim_text": "Fetched source title: blockdate Converter | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-043",
+      "source_url": "https://sepolia.arbiscan.io/blockdateconverter",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-360",
+      "claim_text": "Fetched source title: UTF8 Converter | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-044",
+      "source_url": "https://sepolia.arbiscan.io/utf8converter",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-361",
+      "claim_text": "Fetched source title: MethodID Converter | Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-045",
+      "source_url": "https://sepolia.arbiscan.io/methodidconverter",
+      "confidence": 0.8,
+      "is_inferred": false
+    },
+    {
+      "claim_id": "claim-362",
+      "claim_text": "Fetched source title: Introduction - Etherscan.",
+      "fact_type": "source_title",
+      "source_ref": "src-046",
+      "source_url": "https://docs.etherscan.io/etherscan-v2",
+      "confidence": 0.8,
+      "is_inferred": false
+    }
+  ],
+  "edges": [
+    {
+      "from": "claim-001",
+      "to": "src-001",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-002",
+      "to": "src-001",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-003",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-004",
+      "to": "src-004",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-005",
+      "to": "src-001",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-006",
+      "to": "src-001",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-007",
+      "to": "src-002",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-008",
+      "to": "src-002",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-009",
+      "to": "src-002",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-010",
+      "to": "src-002",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-011",
+      "to": "src-002",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-012",
+      "to": "src-002",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-013",
+      "to": "src-002",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-014",
+      "to": "src-002",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-015",
+      "to": "src-002",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-016",
+      "to": "src-002",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-017",
+      "to": "src-002",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-018",
+      "to": "src-002",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-019",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-020",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-021",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-022",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-023",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-024",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-025",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-026",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-027",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-028",
+      "to": "src-003",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-029",
+      "to": "src-005",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-030",
+      "to": "src-005",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-031",
+      "to": "src-005",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-032",
+      "to": "src-005",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-033",
+      "to": "src-005",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-034",
+      "to": "src-005",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-035",
+      "to": "src-005",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-036",
+      "to": "src-005",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-037",
+      "to": "src-005",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-038",
+      "to": "src-005",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-039",
+      "to": "src-005",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-040",
+      "to": "src-006",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-041",
+      "to": "src-007",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-042",
+      "to": "src-007",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-043",
+      "to": "src-007",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-044",
+      "to": "src-007",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-045",
+      "to": "src-007",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-046",
+      "to": "src-007",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-047",
+      "to": "src-007",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-048",
+      "to": "src-007",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-049",
+      "to": "src-007",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-050",
+      "to": "src-007",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-051",
+      "to": "src-007",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-052",
+      "to": "src-007",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-053",
+      "to": "src-007",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-054",
+      "to": "src-007",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-055",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-056",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-057",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-058",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-059",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-060",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-061",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-062",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-063",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-064",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-065",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-066",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-067",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-068",
+      "to": "src-008",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-069",
+      "to": "src-009",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-070",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-071",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-072",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-073",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-074",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-075",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-076",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-077",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-078",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-079",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-080",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-081",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-082",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-083",
+      "to": "src-010",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-084",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-085",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-086",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-087",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-088",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-089",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-090",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-091",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-092",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-093",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-094",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-095",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-096",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-097",
+      "to": "src-011",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-098",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-099",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-100",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-101",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-102",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-103",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-104",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-105",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-106",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-107",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-108",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-109",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-110",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-111",
+      "to": "src-012",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-112",
+      "to": "src-013",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-113",
+      "to": "src-013",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-114",
+      "to": "src-013",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-115",
+      "to": "src-013",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-116",
+      "to": "src-013",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-117",
+      "to": "src-013",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-118",
+      "to": "src-013",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-119",
+      "to": "src-013",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-120",
+      "to": "src-013",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-121",
+      "to": "src-013",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-122",
+      "to": "src-013",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-123",
+      "to": "src-013",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-124",
+      "to": "src-013",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-125",
+      "to": "src-013",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-126",
+      "to": "src-014",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-127",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-128",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-129",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-130",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-131",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-132",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-133",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-134",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-135",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-136",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-137",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-138",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-139",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-140",
+      "to": "src-015",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-141",
+      "to": "src-016",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-142",
+      "to": "src-016",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-143",
+      "to": "src-017",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-144",
+      "to": "src-017",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-145",
+      "to": "src-017",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-146",
+      "to": "src-017",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-147",
+      "to": "src-017",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-148",
+      "to": "src-017",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-149",
+      "to": "src-017",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-150",
+      "to": "src-017",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-151",
+      "to": "src-017",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-152",
+      "to": "src-018",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-153",
+      "to": "src-019",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-154",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-155",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-156",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-157",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-158",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-159",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-160",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-161",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-162",
+      "to": "src-020",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-163",
+      "to": "src-021",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-164",
+      "to": "src-021",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-165",
+      "to": "src-021",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-166",
+      "to": "src-021",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-167",
+      "to": "src-021",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-168",
+      "to": "src-021",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-169",
+      "to": "src-021",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-170",
+      "to": "src-021",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-171",
+      "to": "src-021",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-172",
+      "to": "src-021",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-173",
+      "to": "src-021",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-174",
+      "to": "src-021",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-175",
+      "to": "src-021",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-176",
+      "to": "src-021",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-177",
+      "to": "src-022",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-178",
+      "to": "src-022",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-179",
+      "to": "src-022",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-180",
+      "to": "src-022",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-181",
+      "to": "src-022",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-182",
+      "to": "src-022",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-183",
+      "to": "src-022",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-184",
+      "to": "src-022",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-185",
+      "to": "src-022",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-186",
+      "to": "src-022",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-187",
+      "to": "src-022",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-188",
+      "to": "src-022",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-189",
+      "to": "src-022",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-190",
+      "to": "src-022",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-191",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-192",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-193",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-194",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-195",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-196",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-197",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-198",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-199",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-200",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-201",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-202",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-203",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-204",
+      "to": "src-023",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-205",
+      "to": "src-024",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-206",
+      "to": "src-025",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-207",
+      "to": "src-026",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-208",
+      "to": "src-027",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-209",
+      "to": "src-027",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-210",
+      "to": "src-027",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-211",
+      "to": "src-027",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-212",
+      "to": "src-027",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-213",
+      "to": "src-027",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-214",
+      "to": "src-027",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-215",
+      "to": "src-027",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-216",
+      "to": "src-027",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-217",
+      "to": "src-027",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-218",
+      "to": "src-027",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-219",
+      "to": "src-027",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-220",
+      "to": "src-027",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-221",
+      "to": "src-027",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-222",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-223",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-224",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-225",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-226",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-227",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-228",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-229",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-230",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-231",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-232",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-233",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-234",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-235",
+      "to": "src-028",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-236",
+      "to": "src-029",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-237",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-238",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-239",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-240",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-241",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-242",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-243",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-244",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-245",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-246",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-247",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-248",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-249",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-250",
+      "to": "src-030",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-251",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-252",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-253",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-254",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-255",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-256",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-257",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-258",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-259",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-260",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-261",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-262",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-263",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-264",
+      "to": "src-031",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-265",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-266",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-267",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-268",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-269",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-270",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-271",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-272",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-273",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-274",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-275",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-276",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-277",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-278",
+      "to": "src-032",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-279",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-280",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-281",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-282",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-283",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-284",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-285",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-286",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-287",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-288",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-289",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-290",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-291",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-292",
+      "to": "src-033",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-293",
+      "to": "src-034",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-294",
+      "to": "src-035",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-295",
+      "to": "src-035",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-296",
+      "to": "src-035",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-297",
+      "to": "src-035",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-298",
+      "to": "src-035",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-299",
+      "to": "src-035",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-300",
+      "to": "src-035",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-301",
+      "to": "src-035",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-302",
+      "to": "src-035",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-303",
+      "to": "src-035",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-304",
+      "to": "src-035",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-305",
+      "to": "src-035",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-306",
+      "to": "src-035",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-307",
+      "to": "src-035",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-308",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-309",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-310",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-311",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-312",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-313",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-314",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-315",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-316",
+      "to": "src-036",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-317",
+      "to": "src-037",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-318",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-319",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-320",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-321",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-322",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-323",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-324",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-325",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-326",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-327",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-328",
+      "to": "src-038",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-329",
+      "to": "src-039",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-330",
+      "to": "src-039",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-331",
+      "to": "src-039",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-332",
+      "to": "src-039",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-333",
+      "to": "src-039",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-334",
+      "to": "src-039",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-335",
+      "to": "src-039",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-336",
+      "to": "src-039",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-337",
+      "to": "src-039",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-338",
+      "to": "src-039",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-339",
+      "to": "src-039",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-340",
+      "to": "src-039",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-341",
+      "to": "src-039",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-342",
+      "to": "src-039",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-343",
+      "to": "src-040",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-344",
+      "to": "src-040",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-345",
+      "to": "src-040",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-346",
+      "to": "src-040",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-347",
+      "to": "src-040",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-348",
+      "to": "src-040",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-349",
+      "to": "src-040",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-350",
+      "to": "src-040",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-351",
+      "to": "src-040",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-352",
+      "to": "src-040",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-353",
+      "to": "src-040",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-354",
+      "to": "src-040",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-355",
+      "to": "src-040",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-356",
+      "to": "src-040",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-357",
+      "to": "src-041",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-358",
+      "to": "src-042",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-359",
+      "to": "src-043",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-360",
+      "to": "src-044",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-361",
+      "to": "src-045",
+      "edge_type": "supported_by"
+    },
+    {
+      "from": "claim-362",
+      "to": "src-046",
+      "edge_type": "supported_by"
+    }
+  ],
+  "conflicts": []
+}

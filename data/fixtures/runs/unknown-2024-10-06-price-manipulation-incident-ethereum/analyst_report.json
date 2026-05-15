@@ -1,0 +1,548 @@
+{
+  "incident_id": "unknown-2024-10-06-price-manipulation-incident-ethereum",
+  "report_type": "analyst_report",
+  "case_overview": {
+    "headline": "Unknown 2024-10-06 price-manipulation incident",
+    "what_happened": "On October 6, 2024, an attacker executed a price-manipulation attack targeting the SASHA token on Ethereum, exploiting thin liquidity conditions to extract approximately 249 ETH (~$600,000 USD). The attack was carried out through a single transaction and leveraged vulnerabilities arising from the token's shallow liquidity pools.",
+    "why_it_matters": "This incident underscores the systemic risk posed by protocols integrating low-liquidity tokens as price sources or collateral. Without robust oracle protections\u2014such as TWAPs, liquidity thresholds, or manipulation-resistant feeds\u2014thinly traded tokens remain vulnerable to price manipulation attacks. DeFi protocols should enforce minimum liquidity requirements and implement circuit breakers when detecting abnormal price movements in dependent assets.",
+    "primary_sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+        "source_type": "report",
+        "depth": 0,
+        "discovered_from": "incident_seed",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/SASHAToken_exp.sol",
+        "source_type": "poc",
+        "depth": 0,
+        "discovered_from": "incident_seed",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://etherscan.io/tx/0xd9fdc7d03eec28fc2453c5fa68eff82d4c297f436a6a5470c54ca3aecd2db17e",
+        "source_type": "explorer",
+        "depth": 0,
+        "discovered_from": "attack_tx_hashes",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://etherscan.io/address/0x991493900674b10bdf54bdfe95b4e043257798cf",
+        "source_type": "explorer",
+        "depth": 0,
+        "discovered_from": "attacker_addresses",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      }
+    ]
+  },
+  "attacker_profile": {
+    "summary": "The attacker's primary motive was financial profit through exploitation of a low-liquidity token whose price could be easily manipulated. By targeting thin SASHA liquidity, the attacker could profit from price discrepancies induced across DeFi integrations that used the manipulated token as a price oracle or collateral asset, ultimately extracting 249 ETH.",
+    "attacker_addresses": [
+      "0x991493900674b10bdf54bdfe95b4e043257798cf",
+      "0x493c5655D40B051a64bc88A6af21D73d3A9B72A2",
+      "0xd9fdc7d03eec28fc2453c5fa68eff82d4c297f43",
+      "0xD1456D1b9CEb59abD4423a49D40942a9485CeEF6"
+    ],
+    "behavior_signals": [
+      "Leans on addresses confirmed by direct seed fields first.",
+      "Uses source-text mentions as weaker supporting clues rather than direct proof."
+    ]
+  },
+  "fund_flow": {
+    "summary": "The current public view has 4 known transaction(s). A deeper fund-flow pass is still needed.",
+    "key_transactions": [
+      "0xd9fdc7d03eec28fc2453c5fa68eff82d4c297f436a6a5470c54ca3aecd2db17e"
+    ],
+    "key_addresses": [
+      "0x493c5655d40b051a64bc88a6af21d73d3a9b72a2",
+      "0x5eac5992e8c7cc6b04bad2c5bbc00d101d4c8264",
+      "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45",
+      "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "0x81164c9edab507aa4bac08dceccefaba1340d3b7",
+      "0x95222290dd7278aa3ddd389cc1e1d165cc4bafe5",
+      "0x991493900674b10bdf54bdfe95b4e043257798cf",
+      "0xb23fc1241e1bc1a5542a438775809d38099838fe"
+    ],
+    "path": []
+  },
+  "exploit_path": {
+    "summary": "The attacker (0x991493900674b10bdf54bdfe95b4e043257798cf) initiated the exploit via transaction 0xd9fdc7d03eec28fc2453c5fa68eff82d4c297f436a6a5470c54ca3aecd2db17e. The attack exploited extremely thin liquidity in SASHA token pools on Ethereum. By manipulating prices across low-liquidity pairs\u2014likely using flash loans or large capital movements through Uniswap V2 (0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D) and possibly Uniswap V3 (0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45)\u2014the attacker was able to artificially inflate or deflate SASHA's price to extract value from protocols relying on its on-chain price feed. The involvement of WETH (0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2) confirms the attacker converted profits to native wrapped Ether. A proof-of-concept has been published by DeFiHackLabs, confirming the attack vector involved SASHA token price manipulation.",
+    "steps": [
+      {
+        "title": "Exploit transaction linked",
+        "detail": "The current dossier has 1 direct attack transaction candidate(s).",
+        "evidence_refs": [
+          "src-003"
+        ],
+        "tx_hashes": []
+      },
+      {
+        "title": "Impact summary collected",
+        "detail": "An estimated loss of ~249 ETH (~$600K USD) was caused by a price-manipulation attack spanning thin SASHA liquidity on Ethereum",
+        "evidence_refs": [],
+        "tx_hashes": []
+      },
+      {
+        "title": "Source expansion completed",
+        "detail": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+        "evidence_refs": [],
+        "tx_hashes": []
+      }
+    ]
+  },
+  "evidence_chain": {
+    "summary": "The current case file combines public sources with a stored technical-analysis artifact. Technical validation verdict: Deterministic and semantic checks passed..",
+    "claims": [
+      {
+        "claim_id": "claim-overview",
+        "title": "Current public summary",
+        "statement": "On October 6, 2024, an attacker executed a price-manipulation attack targeting the SASHA token on Ethereum, exploiting thin liquidity conditions to extract approximately 249 ETH (~$600,000 USD). The attack was carried out through a single transaction and leveraged vulnerabilities arising from the token's shallow liquidity pools.",
+        "confidence": 0.58,
+        "support": [
+          {
+            "source_id": "src-001",
+            "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+            "source_type": "report",
+            "depth": 0,
+            "discovered_from": "incident_seed",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          },
+          {
+            "source_id": "src-002",
+            "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/SASHAToken_exp.sol",
+            "source_type": "poc",
+            "depth": 0,
+            "discovered_from": "incident_seed",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          },
+          {
+            "source_id": "src-003",
+            "url": "https://etherscan.io/tx/0xd9fdc7d03eec28fc2453c5fa68eff82d4c297f436a6a5470c54ca3aecd2db17e",
+            "source_type": "explorer",
+            "depth": 0,
+            "discovered_from": "attack_tx_hashes",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          }
+        ]
+      },
+      {
+        "claim_id": "claim-attack-narrative",
+        "title": "LLM-synthesised attack narrative",
+        "statement": "The attacker (0x991493900674b10bdf54bdfe95b4e043257798cf) initiated the exploit via transaction 0xd9fdc7d03eec28fc2453c5fa68eff82d4c297f436a6a5470c54ca3aecd2db17e. The attack exploited extremely thin liquidity in SASHA token pools on Ethereum. By manipulating prices across low-liquidity pairs\u2014likel\u2026",
+        "confidence": 0.65,
+        "support": []
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+        "source_type": "report",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 99,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/SASHAToken_exp.sol",
+        "source_type": "poc",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 98,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://etherscan.io/tx/0xd9fdc7d03eec28fc2453c5fa68eff82d4c297f436a6a5470c54ca3aecd2db17e",
+        "source_type": "explorer",
+        "discovered_from": "attack_tx_hashes",
+        "depth": 0,
+        "priority": 79,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://etherscan.io/address/0x991493900674b10bdf54bdfe95b4e043257798cf",
+        "source_type": "explorer",
+        "discovered_from": "attacker_addresses",
+        "depth": 0,
+        "priority": 69,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-005",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-10/SASHAToken_exp.sol",
+        "source_type": "poc",
+        "discovered_from": "src-002",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-007",
+        "url": "https://sepolia.etherscan.io",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-008",
+        "url": "https://hoodi.etherscan.io",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-009",
+        "url": "https://etherscan.io/txs",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-010",
+        "url": "https://etherscan.io/txsPending",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-011",
+        "url": "https://etherscan.io/txsInternal",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-012",
+        "url": "https://etherscan.io/txCrossChain",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-013",
+        "url": "https://etherscan.io/txsBeaconDeposit",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-014",
+        "url": "https://etherscan.io/txsBeaconWithdrawal",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-015",
+        "url": "https://etherscan.io/txsBlobs",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-016",
+        "url": "https://etherscan.io/txsAA",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-017",
+        "url": "https://etherscan.io/txnAuthList",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-018",
+        "url": "https://etherscan.io/blocks",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-019",
+        "url": "https://etherscan.io/blocks_forked",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-020",
+        "url": "https://etherscan.io/uncles",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-021",
+        "url": "https://etherscan.io/accounts",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-022",
+        "url": "https://etherscan.io/contractsVerified",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-023",
+        "url": "https://etherscan.io/tokens",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-024",
+        "url": "https://etherscan.io/tokentxns",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-025",
+        "url": "https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-026",
+        "url": "https://etherscan.io",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-027",
+        "url": "https://sepolia.etherscan.io/txs",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-028",
+        "url": "https://sepolia.etherscan.io/txsPending",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-029",
+        "url": "https://sepolia.etherscan.io/txsInternal",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-030",
+        "url": "https://sepolia.etherscan.io/txsBeaconWithdrawal",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-031",
+        "url": "https://sepolia.etherscan.io/txsBlobs",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-032",
+        "url": "https://sepolia.etherscan.io/txsAA",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-033",
+        "url": "https://sepolia.etherscan.io/txnAuthList",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-034",
+        "url": "https://sepolia.etherscan.io/blocks",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-035",
+        "url": "https://sepolia.etherscan.io/blocks_forked",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-036",
+        "url": "https://sepolia.etherscan.io/uncles",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-037",
+        "url": "https://sepolia.etherscan.io/accounts",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-038",
+        "url": "https://sepolia.etherscan.io/contractsVerified",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-039",
+        "url": "https://sepolia.etherscan.io/tokentxns",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-040",
+        "url": "https://sepolia.etherscan.io/nft-transfers",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-041",
+        "url": "https://sepolia.etherscan.io/nft-latest-mints",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-042",
+        "url": "https://sepolia.etherscan.io/unitconverter",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-043",
+        "url": "https://sepolia.etherscan.io/base64converter",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-044",
+        "url": "https://sepolia.etherscan.io/blockdateconverter",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-045",
+        "url": "https://etherscan.io/nft-top-contracts",
+        "source_type": "explorer",
+        "discovered_from": "src-009",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      }
+    ]
+  },
+  "open_questions": []
+}

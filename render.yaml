@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: capstone-backend
+    runtime: docker
+    dockerfilePath: ./Dockerfile.backend
+    dockerContext: .
+    plan: basic-512mb
+    autoDeploy: true
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: "10000"
+      - key: CAPSTONE_BIND_HOST
+        value: 0.0.0.0
+      - key: CAPSTONE_RUNS_DIR
+        value: /opt/render/project/data/runs
+      - key: CAPSTONE_DATABASE_PATH
+        value: /opt/render/project/data/capstone.db
+      - key: CAPSTONE_CORS_ALLOW_ORIGINS
+        sync: false
+      - key: CAPSTONE_API_TOKEN
+        sync: false
+      - key: GLM_API_KEY
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ETHERSCAN_API_KEY
+        sync: false
+      - key: BSCSCAN_API_KEY
+        sync: false
+      - key: EXTERNAL_EXPLORER_ACCESS_KEY
+        sync: false
+    disk:
+      name: capstone-data
+      mountPath: /opt/render/project/data
+      sizeGB: 5

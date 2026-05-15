@@ -1,0 +1,68 @@
+[
+  {
+    "incident_name": "Paribus",
+    "chain": "Arbitrum",
+    "incident_date": "2025-01-18",
+    "attack_type": "Price Manipulation",
+    "goal": "Expand one curated report entry into explorer, PoC, social, and external analysis links.",
+    "seed_urls": [
+      "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+      "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/Paribus_exp.sol",
+      "https://bitfinding.com/blog/paribus-hack-interception",
+      "https://x.com/BitFinding/status/1882880682512527516"
+    ]
+  },
+  {
+    "incident_name": "vETH",
+    "chain": "Ethereum",
+    "incident_date": "2024-11-14",
+    "attack_type": "Price Manipulation",
+    "goal": "Test a case with multiple social sources and multiple external postmortems.",
+    "seed_urls": [
+      "https://x.com/SlowMist_Team/status/1856987988632457708",
+      "https://x.com/ExternalExplorer_xyz/status/1857002671124730233",
+      "https://x.com/TenArmorAlert/status/1856984299905716645",
+      "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/vETH_exp.sol",
+      "https://blog.verichains.io/p/veth-incident-with-unknown-mechanism",
+      "https://www.quillaudits.com/blog/hack-analysis/veth-token-450k-exploit-analysis"
+    ]
+  },
+  {
+    "incident_name": "HYDT",
+    "chain": "BSC",
+    "incident_date": "2024-10-10",
+    "attack_type": "Price Manipulation",
+    "goal": "Test a case with direct explorer evidence and a non-English supporting article.",
+    "seed_urls": [
+      "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+      "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/HYDT_exp.sol",
+      "https://bscscan.com/tx/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+      "https://x.com/TenArmorAlert/status/1844241843518951451",
+      "https://learnblockchain.cn/article/13124"
+    ]
+  },
+  {
+    "incident_name": "BGM",
+    "chain": "BSC",
+    "incident_date": "2024-11-10",
+    "attack_type": "Price Manipulation",
+    "goal": "Test a case with sparse source coverage and one stronger case-study page.",
+    "seed_urls": [
+      "https://bscscan.com/tx/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+      "https://x.com/ExternalExplorer_xyz/status/1855798237770170415",
+      "https://quadrigainitiative.com/casestudy/bgmonbscbatchtransactionspricemanipulationexploit.php"
+    ]
+  },
+  {
+    "incident_name": "Caterpiller Coin",
+    "chain": "BSC",
+    "incident_date": "2024-09-10",
+    "attack_type": "Price Manipulation",
+    "goal": "Test a case with report + PoC + third-party analysis.",
+    "seed_urls": [
+      "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+      "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol",
+      "https://www.certik.com/zh-CN/resources/blog/caterpillar-coin-cut-token-incident-analysis"
+    ]
+  }
+]

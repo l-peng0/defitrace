@@ -1,0 +1,12 @@
+{
+  "attack_flow_summary": "",
+  "exploit_mechanism": "",
+  "tx_role_map": {},
+  "contract_role_map": {},
+  "timeline_steps": [],
+  "funds_flow_path": [],
+  "open_questions": [],
+  "confidence_notes": [
+    "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8 appears as the attack coordinator (deploys all attacker contracts, burns WETH) but is classified as 'unknown' in plan; attacker_contracts follow consistent swap pattern against victim pair; all 15 deployed contracts are unverified (newly deployed in-tx); victim pair is verified UniswapV2Pair"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "total": 1,
+    "completed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "dry_run": 0,
+    "qa_retry_triggered": 0,
+    "wall_time_s": 472.7
+  },
+  "results": [
+    {
+      "incident_id": "bgm-bsc-2024-11-10",
+      "started_at": "2026-04-27T09:14:44+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/bgm-bsc-2024-11-10.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc",
+      "completeness_score": "see qa_retry",
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 472.7
+    }
+  ],
+  "ran_at": "2026-04-27T09:22:37+00:00"
+}

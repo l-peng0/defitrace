@@ -1,0 +1,35 @@
+{
+  "incident_id": "unknown-2025-01-01-price-manipulation-incident-ethereum",
+  "job_id": "unknown-ethereum-2025-01-01-batch",
+  "trigger_type": "batch",
+  "seed_type": "tx_hash",
+  "chain": "Ethereum",
+  "protocol_name": "Unknown",
+  "incident_name": "Unknown 2025-01-01 price-manipulation incident",
+  "incident_date": "",
+  "attack_tx_hashes": [
+    "0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420"
+  ],
+  "attacker_addresses": [
+    "0x2cad84c3d2e31bc6d630229901f421e6da5557ef"
+  ],
+  "seed_urls": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/LAURAToken_exp.sol"
+  ],
+  "attack_contract_urls": [],
+  "victim_contract_urls": [],
+  "tags": [
+    "price_manipulation",
+    "ethereum",
+    "defi"
+  ],
+  "source_names": [],
+  "attack_type_raws": [],
+  "summary_candidates": [
+    "An estimated loss of 12"
+  ],
+  "note_candidates": [],
+  "date_range": {},
+  "created_at": "2026-04-27T13:12:50+00:00"
+}

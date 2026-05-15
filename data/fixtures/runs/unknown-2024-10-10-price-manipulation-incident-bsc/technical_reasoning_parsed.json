@@ -1,0 +1,12 @@
+{
+  "attack_flow_summary": "",
+  "exploit_mechanism": "",
+  "tx_role_map": {},
+  "contract_role_map": {},
+  "timeline_steps": [],
+  "funds_flow_path": [],
+  "open_questions": [],
+  "confidence_notes": [
+    "The attack contract (0x8f921e27e3af106015d1c3a244ec4f48dbfcad14) is unverified and not classified in the investigation plan, but artifacts clearly show it initiated the flashloan and swap operations. Victim classification as zero address may indicate loss attribution ambiguity; actual victims are the liquidity pools whose reserves were arbitraged. Token 0x9810512be701801954449408966c630595d0cd51 appears in swaps but role is unclear from transfer data alone."
+  ]
+}

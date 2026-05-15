@@ -1,0 +1,12 @@
+{
+  "attack_flow_summary": "",
+  "exploit_mechanism": "",
+  "tx_role_map": {},
+  "contract_role_map": {},
+  "timeline_steps": [],
+  "funds_flow_path": [],
+  "open_questions": [],
+  "confidence_notes": [
+    "Attack pattern consistent with flash loan price manipulation of Uniswap V3 pool. Two newly deployed unverified attacker contracts orchestrate the attack. SwapRouter facilitates flash loan. Victim UniswapV3Pool shows net-negative token transfer. Additional protocols (Balancer, Aave) involved in multi-hop flow. Exact loss amount and manipulation mechanism require trace-level analysis of the unverified attacker contracts."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "incident_id": "veth-2024-11-14-price-manipulation-incident-ethereum",
+  "card": {
+    "title": "Veth 2024-11-14 price-manipulation incident",
+    "chain": "Ethereum",
+    "incident_date": "",
+    "protocol_name": "Veth",
+    "summary": "An estimated loss of about $447K was caused by a price-manipulation attack involving the vETH/BIF market on Ethereum",
+    "source_count": 139,
+    "direct_source_count": 8,
+    "secondary_source_count": 131,
+    "completeness_score": 0.72
+  },
+  "detail": {
+    "timeline_preview": [
+      {
+        "step_id": "step-001",
+        "order": 1,
+        "label": "Exploit transaction linked",
+        "step_type": "exploit",
+        "summary": "The current dossier has 1 direct attack transaction candidate(s).",
+        "source_refs": [
+          "src-007"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "step_id": "step-002",
+        "order": 2,
+        "label": "Impact summary collected",
+        "step_type": "impact",
+        "summary": "An estimated loss of about $447K was caused by a price-manipulation attack involving the vETH/BIF market on Ethereum",
+        "source_refs": [],
+        "confidence": 0.72
+      },
+      {
+        "step_id": "step-003",
+        "order": 3,
+        "label": "Source expansion completed",
+        "step_type": "analysis",
+        "summary": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+        "source_refs": [],
+        "confidence": 0.75
+      }
+    ],
+    "attacker_profile_summary": "The dossier has 1 direct attacker address candidate(s) and 260 additional address mentions from fetched sources.",
+    "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+    "judge_summary": "The dossier establishes the core incident facts with medium-high confidence: a ~$447K price manipulation attack on Veth's vETH/BIF market on November 14, 2024. Key attacker and transaction data are well-documented with multiple source corroboration. However, significant gaps remain in technical root cause analysis (Verichains explicitly notes 'unknown mechanism'), vulnerable contract identification, and fund flow tracing. The POC from DeFiHackLabs provides reproducibility but the underlying vulnerability mechanism requires deeper analysis. Suitable for demonstration with appropriate caveats about incomplete technical analysis.",
+    "missing_fields": [
+      "attack_contract_urls",
+      "victim_contract_urls",
+      "precise_attack_timestamp",
+      "block_number",
+      "fund_flow_tracing",
+      "stolen_asset_breakdown",
+      "flash_loan_source_and_amount",
+      "vulnerable_contract_addresses",
+      "root_cause_technical_details"
+    ],
+    "technical_analysis_status": "completed"
+  },
+  "status": "demo_live_dossier",
+  "last_updated": "2026-04-27T13:17:54+00:00"
+}

@@ -1,0 +1,15 @@
+.git
+.gitignore
+.venv
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+backend/capstone.db
+runs/
+output/
+node_modules/
+DeFiScope/
+DeFiHackLabs/

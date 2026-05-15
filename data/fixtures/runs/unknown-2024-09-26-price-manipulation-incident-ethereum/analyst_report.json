@@ -1,0 +1,566 @@
+{
+  "incident_id": "unknown-2024-09-26-price-manipulation-incident-ethereum",
+  "report_type": "analyst_report",
+  "case_overview": {
+    "headline": "Unknown 2024-09-26 price-manipulation incident",
+    "what_happened": "On September 26, 2024, a price manipulation attack targeted the Bedrock DeFi protocol on Ethereum, resulting in an estimated loss. The attacker exploited price oracle vulnerabilities through a coordinated manipulation strategy, executing the attack via transaction 0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940. The incident has been documented in security research repositories with a proof-of-concept exploit available for analysis.",
+    "why_it_matters": "This incident underscores the persistent risk of price manipulation attacks in DeFi protocols that rely on manipulable price oracles or insufficiently protected liquidity pools. Protocols should implement robust price feed mechanisms with TWAPs, multiple oracle sources, and manipulation-resistant designs. The availability of a documented proof-of-concept in DeFiHackLabs provides valuable reference material for security researchers and auditors studying similar attack patterns.",
+    "primary_sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+        "source_type": "report",
+        "depth": 0,
+        "discovered_from": "incident_seed",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Bedrock_DeFi_exp.sol",
+        "source_type": "poc",
+        "depth": 0,
+        "discovered_from": "incident_seed",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://etherscan.io/tx/0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940",
+        "source_type": "explorer",
+        "depth": 0,
+        "discovered_from": "attack_tx_hashes",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://etherscan.io/address/0x0C8da4f8B823bEe4D5dAb73367D45B5135B50faB",
+        "source_type": "explorer",
+        "depth": 0,
+        "discovered_from": "attacker_addresses",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      }
+    ]
+  },
+  "attacker_profile": {
+    "summary": "Financial gain through exploitation of price manipulation vulnerabilities. The attacker leveraged oracle manipulation or similar price distortion techniques to withdraw funds from the Bedrock DeFi protocol at advantageous rates, extracting approximately 1 unit of value (denomination unclear from available data).",
+    "attacker_addresses": [
+      "0x0C8da4f8B823bEe4D5dAb73367D45B5135B50faB",
+      "0x2bFB373017349820dda2Da8230E6b66739BE9F96",
+      "0x1E1d02D663228e5D47f1De64030B39632A3B787D",
+      "0x047D41F2544B7F63A8e991aF2068a363d210d6Da"
+    ],
+    "behavior_signals": [
+      "Leans on addresses confirmed by direct seed fields first.",
+      "Uses source-text mentions as weaker supporting clues rather than direct proof."
+    ]
+  },
+  "fund_flow": {
+    "summary": "The current public view has 4 known transaction(s). A deeper fund-flow pass is still needed.",
+    "key_transactions": [
+      "0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940"
+    ],
+    "key_addresses": [
+      "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568",
+      "0x047d41f2544b7f63a8e991af2068a363d210d6da",
+      "0x0c8da4f8b823bee4d5dab73367d45b5135b50fab",
+      "0x102633152313c81cd80419b6ecf66d14ad68949a",
+      "0x12073748b427d2bb7064c3df120ee04448aa29a0",
+      "0x15c5620dffac7c7366eed66c20ad222ddbb1ed57",
+      "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+      "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+    ],
+    "path": []
+  },
+  "exploit_path": {
+    "summary": "The attack was initiated from address 0x0C8da4f8B823bEe4D5dAb73367D45B5135B50faB, which executed the primary attack transaction on Ethereum mainnet. Based on the incident classification and DeFiHackLabs proof-of-concept (Bedrock_DeFi_exp.sol), this was a price manipulation attack. The attacker likely manipulated the price feeds or liquidity pools that Bedrock DeFi relied upon for asset valuation, enabling them to extract value from the protocol at artificially inflated or deflated prices. The presence of WBTC (0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599) in the referenced addresses suggests Bitcoin-related assets were involved in the exploitation path. Multiple protocol contracts were targeted in the attack sequence.",
+    "steps": [
+      {
+        "title": "Step 1",
+        "detail": "Attacker address 0x0C8da4f8B823bEe4D5dAb73367D45B5135B50faB is prepared and funded on Ethereum.",
+        "evidence_refs": [
+          "ev-004",
+          "ev-024"
+        ],
+        "tx_hashes": []
+      },
+      {
+        "title": "Step 2",
+        "detail": "Attacker deploys a malicious contract via transaction 0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940, interacting with multiple target contracts including 0x2bFB373017349820dda2Da8230E6b66739BE9F96 and 0x1E1d02D663228e5D47f1De64030B39632A3B787D.",
+        "evidence_refs": [
+          "ev-003",
+          "ev-019",
+          "ev-023",
+          "ev-025"
+        ],
+        "tx_hashes": []
+      },
+      {
+        "title": "Step 3",
+        "detail": "Attacker executes an ERC-20 approve call (signature 0x8c5be1e5...) granting maximum allowance (0xff...ff) to a target contract, likely as part of the exploit setup or execution.",
+        "evidence_refs": [
+          "ev-020",
+          "ev-021"
+        ],
+        "tx_hashes": []
+      },
+      {
+        "title": "Step 4",
+        "detail": "Attacker performs price manipulation against the target protocol, exploiting the manipulated oracle or pool price to extract approximately ~1 in value (exact unit unspecified).",
+        "evidence_refs": [
+          "ev-001",
+          "ev-005"
+        ],
+        "tx_hashes": []
+      }
+    ]
+  },
+  "evidence_chain": {
+    "summary": "The current case file combines public sources with a stored technical-analysis artifact. Technical validation verdict: Deterministic and semantic checks passed..",
+    "claims": [
+      {
+        "claim_id": "claim-overview",
+        "title": "Current public summary",
+        "statement": "On September 26, 2024, a price manipulation attack targeted the Bedrock DeFi protocol on Ethereum, resulting in an estimated loss. The attacker exploited price oracle vulnerabilities through a coordinated manipulation strategy, executing the attack via transaction 0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940. The incident has been documented in security research repositories with a proof-of-concept exploit available for analysis.",
+        "confidence": 0.58,
+        "support": [
+          {
+            "source_id": "src-001",
+            "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+            "source_type": "report",
+            "depth": 0,
+            "discovered_from": "incident_seed",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          },
+          {
+            "source_id": "src-002",
+            "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Bedrock_DeFi_exp.sol",
+            "source_type": "poc",
+            "depth": 0,
+            "discovered_from": "incident_seed",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          },
+          {
+            "source_id": "src-003",
+            "url": "https://etherscan.io/tx/0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940",
+            "source_type": "explorer",
+            "depth": 0,
+            "discovered_from": "attack_tx_hashes",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          }
+        ]
+      },
+      {
+        "claim_id": "claim-attack-narrative",
+        "title": "LLM-synthesised attack narrative",
+        "statement": "The attack was initiated from address 0x0C8da4f8B823bEe4D5dAb73367D45B5135B50faB, which executed the primary attack transaction on Ethereum mainnet. Based on the incident classification and DeFiHackLabs proof-of-concept (Bedrock_DeFi_exp.sol), this was a price manipulation attack. The attacker like\u2026",
+        "confidence": 0.65,
+        "support": []
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+        "source_type": "report",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 99,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Bedrock_DeFi_exp.sol",
+        "source_type": "poc",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 98,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://etherscan.io/tx/0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940",
+        "source_type": "explorer",
+        "discovered_from": "attack_tx_hashes",
+        "depth": 0,
+        "priority": 79,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://etherscan.io/address/0x0C8da4f8B823bEe4D5dAb73367D45B5135B50faB",
+        "source_type": "explorer",
+        "discovered_from": "attacker_addresses",
+        "depth": 0,
+        "priority": 69,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-005",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-09/Bedrock_DeFi_exp.sol",
+        "source_type": "poc",
+        "discovered_from": "src-002",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-007",
+        "url": "https://sepolia.etherscan.io",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-008",
+        "url": "https://hoodi.etherscan.io",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-009",
+        "url": "https://etherscan.io/txs",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-010",
+        "url": "https://etherscan.io/txsPending",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-011",
+        "url": "https://etherscan.io/txsInternal",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-012",
+        "url": "https://etherscan.io/txCrossChain",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-013",
+        "url": "https://etherscan.io/txsBeaconDeposit",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-014",
+        "url": "https://etherscan.io/txsBeaconWithdrawal",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-015",
+        "url": "https://etherscan.io/txsBlobs",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-016",
+        "url": "https://etherscan.io/txsAA",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-017",
+        "url": "https://etherscan.io/txnAuthList",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-018",
+        "url": "https://etherscan.io/blocks",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-019",
+        "url": "https://etherscan.io/blocks_forked",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-020",
+        "url": "https://etherscan.io/uncles",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-021",
+        "url": "https://etherscan.io/accounts",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-022",
+        "url": "https://etherscan.io/contractsVerified",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-023",
+        "url": "https://etherscan.io/tokens",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-024",
+        "url": "https://etherscan.io/tokentxns",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-025",
+        "url": "https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-026",
+        "url": "https://etherscan.io",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-027",
+        "url": "https://sepolia.etherscan.io/txs",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-028",
+        "url": "https://sepolia.etherscan.io/txsPending",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-029",
+        "url": "https://sepolia.etherscan.io/txsInternal",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-030",
+        "url": "https://sepolia.etherscan.io/txsBeaconWithdrawal",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-031",
+        "url": "https://sepolia.etherscan.io/txsBlobs",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-032",
+        "url": "https://sepolia.etherscan.io/txsAA",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-033",
+        "url": "https://sepolia.etherscan.io/txnAuthList",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-034",
+        "url": "https://sepolia.etherscan.io/blocks",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-035",
+        "url": "https://sepolia.etherscan.io/blocks_forked",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-036",
+        "url": "https://sepolia.etherscan.io/uncles",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-037",
+        "url": "https://sepolia.etherscan.io/accounts",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-038",
+        "url": "https://sepolia.etherscan.io/contractsVerified",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-039",
+        "url": "https://sepolia.etherscan.io/tokentxns",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-040",
+        "url": "https://sepolia.etherscan.io/nft-transfers",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-041",
+        "url": "https://sepolia.etherscan.io/nft-latest-mints",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-042",
+        "url": "https://sepolia.etherscan.io/unitconverter",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-043",
+        "url": "https://sepolia.etherscan.io/base64converter",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-044",
+        "url": "https://sepolia.etherscan.io/blockdateconverter",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-045",
+        "url": "https://etherscan.io/nft-top-contracts",
+        "source_type": "explorer",
+        "discovered_from": "src-009",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      }
+    ]
+  },
+  "open_questions": []
+}

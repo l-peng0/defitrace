@@ -1,0 +1,516 @@
+{
+  "tx_hash": "0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420",
+  "chain": "eth",
+  "fetched_at": "2026-05-01T11:08:42Z",
+  "source": "external_explorer_explorer",
+  "endpoints": {
+    "explorer/v2/onchain/tx/basic-info": {
+      "baseFee": "6.839238178",
+      "blockNumber": 21529888,
+      "calldata": "0x6080604090808252346100e757611443818101916001600160401b0391828411828510176100d157610127823980600093039083f080156100c7576001600160a01b0316803b156100c357908280926024865180968193631164423d60e11b835273b292678438245ec863f9fea64affcea88714424060048401525af180156100b957610094575b8351603a90816100ed8239f35b82116100a557508152388080610087565b634e487b7160e01b81526041600452602490fd5b84513d84823e3d90fd5b8280fd5b83513d84823e3d90fd5b634e487b7160e01b600052604160045260246000fd5b600080fdfe600080fdfea264697066735822122035846a41d4f8ae8d4c489a4ac436411249ff78794a5431522b03d377fbcd981f64736f6c63430008140033608080604052346100e35763095ea7b360e01b8152737a250d5630b4cf539739df2c5dacb4c659f2488d600482015260001960248201526000906020816044818573c02aaa39b223fe8d0a0e5c4f27ead9083c756cc25af180156100d857610071575b60405161135a90816100e98239f35b60203d81116100d1575b601f8101601f191682016001600160401b038111838210176100bd576020918391604052810103126100b95751801515036100b65780610062565b80fd5b5080fd5b634e487b7160e01b84526041600452602484fd5b503d61007b565b6040513d84823e3d90fd5b600080fdfe608080604052600436101561001d575b50361561001b57600080fd5b005b600090813560e01c90816322c8847a14610c87575063f04f27070361000f5760807ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc360112610c845767ffffffffffffffff9060043582811161092257610088903690600401611143565b5050602435828111610922576100a2903690600401611143565b5050604435828111610922576100bc903690600401611143565b5050606435828111610922573660238201121561092257806004013583811161092657810136602482011161092657816020910312610922576024013573ffffffffffffffffffffffffffffffffffffffff81168103610922576040517f0dfe168100000000000000000000000000000000000000000000000000000000815260208160048173ffffffffffffffffffffffffffffffffffffffff86165afa908115610966578391610c65575b50604051937fd21220a700000000000000000000000000000000000000000000000000000000855260208560048173ffffffffffffffffffffffffffffffffffffffff87165afa94851561099c578495610c34575b5073ffffffffffffffffffffffffffffffffffffffff821673c02aaa39b223fe8d0a0e5c4f27ead9083c756cc203610c2e5784915b604051937f70a0823100000000000000000000000000000000000000000000000000000000855230600486015260208560248173c02aaa39b223fe8d0a0e5c4f27ead9083c756cc25afa9485156109f2578695610bfa575b50604051926060840190811184821017610bcb5760405260028352604036602085013773c02aaa39b223fe8d0a0e5c4f27ead9083c756cc261028c84611229565b5261029683611265565b73ffffffffffffffffffffffffffffffffffffffff85169052604051967f70a0823100000000000000000000000000000000000000000000000000000000885273ffffffffffffffffffffffffffffffffffffffff8216600489015260208860248173c02aaa39b223fe8d0a0e5c4f27ead9083c756cc25afa978815610a1a578798610b97575b506102bc978089810204891481151715610b6a578798737a250d5630b4cf539739df2c5dacb4c659f2488d9897983b15610b66576040517f5c11d79500000000000000000000000000000000000000000000000000000000815288818061038b308b878902600485016112bf565b038183737a250d5630b4cf539739df2c5dacb4c659f2488d5af1908115610b3e578991610b52575b505073ffffffffffffffffffffffffffffffffffffffff871673ffffffffffffffffffffffffffffffffffffffff861614600014610b49576040517f70a0823100000000000000000000000000000000000000000000000000000000815230600482015260208160248173ffffffffffffffffffffffffffffffffffffffff8c165afa908115610b3e578991610b09575b50915b73ffffffffffffffffffffffffffffffffffffffff881673ffffffffffffffffffffffffffffffffffffffff871614600014610a6857025b604051917fe8e3370000000000000000000000000000000000000000000000000000000000835273ffffffffffffffffffffffffffffffffffffffff8616600484015273ffffffffffffffffffffffffffffffffffffffff84166024840152604483015260648201528660848201528660a48201523060c48201527fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff60e4820152606081610104818a737a250d5630b4cf539739df2c5dacb4c659f2488d5af18015610a1a57610a3d575b5073ffffffffffffffffffffffffffffffffffffffff85163b15610a39576040517f05c03bc100000000000000000000000000000000000000000000000000000000815286816004818373ffffffffffffffffffffffffffffffffffffffff8b165af1908115610a1a578791610a25575b5050604051917f095ea7b3000000000000000000000000000000000000000000000000000000008352737a250d5630b4cf539739df2c5dacb4c659f2488d60048401527fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff60248401526020836044818a73ffffffffffffffffffffffffffffffffffffffff86165af1908115610a1a5773ffffffffffffffffffffffffffffffffffffffff936020926109fd575b506024604051809581937f70a08231000000000000000000000000000000000000000000000000000000008352306004840152165afa9182156109f25786926109a7575b5073ffffffffffffffffffffffffffffffffffffffff9081604051947fbaa2abde00000000000000000000000000000000000000000000000000000000865216600485015216602483015260448201528360648201528360848201523060a48201527fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff60c482015260408160e48187737a250d5630b4cf539739df2c5dacb4c659f2488d5af1801561099c57610971575b5060208273ffffffffffffffffffffffffffffffffffffffff80941661078384611229565b5273c02aaa39b223fe8d0a0e5c4f27ead9083c756cc26107a284611265565b526024604051809581937f70a08231000000000000000000000000000000000000000000000000000000008352306004840152165afa91821561096657839261092a575b50737a250d5630b4cf539739df2c5dacb4c659f2488d3b156109265761083e91839160405193849283927f5c11d7950000000000000000000000000000000000000000000000000000000084523091600485016112bf565b038183737a250d5630b4cf539739df2c5dacb4c659f2488d5af180156109035761090e575b5050604051907fa9059cbb00000000000000000000000000000000000000000000000000000000825273ba12222222228d8ba445958a75a0704d566bf2c8600483015260248201526020816044818573c02aaa39b223fe8d0a0e5c4f27ead9083c756cc25af18015610903576108d7575080f35b6108f89060203d6020116108fc575b6108f081836111a4565b810190611211565b5080f35b503d6108e6565b6040513d84823e3d90fd5b61091790611174565b610922578138610863565b5080fd5b8280fd5b925090506020823d60201161095e575b81610947602093836111a4565b810103126109595783915190386107e6565b600080fd5b3d915061093a565b6040513d85823e3d90fd5b604090813d8311610995575b61098781836111a4565b81010312610926573861075e565b503d61097d565b6040513d86823e3d90fd5b955090506020853d6020116109ea575b816109c4602093836111a4565b81010312610959579351869473ffffffffffffffffffffffffffffffffffffffff6106ad565b3d91506109b7565b6040513d88823e3d90fd5b610a1390833d85116108fc576108f081836111a4565b5038610669565b6040513d89823e3d90fd5b610a2e90611174565b610a395785386105bb565b8580fd5b606090813d8111610a61575b610a5381836111a4565b81010312610a39573861054a565b503d610a49565b50506040517f70a0823100000000000000000000000000000000000000000000000000000000815230600482015260208160248173ffffffffffffffffffffffffffffffffffffffff8b165afa908115610afe578891610ac9575b5061047f565b9750506020873d602011610af6575b81610ae5602093836111a4565b810103126109595788965138610ac3565b3d9150610ad8565b6040513d8a823e3d90fd5b9850506020883d602011610b36575b81610b25602093836111a4565b810103126109595789975138610444565b3d9150610b18565b6040513d8b823e3d90fd5b80820291610447565b610b5b90611174565b610b665787386103b3565b8780fd5b6024887f4e487b710000000000000000000000000000000000000000000000000000000081526011600452fd5b9097506020813d602011610bc3575b81610bb3602093836111a4565b810103126109595751963861031d565b3d9150610ba6565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b9094506020813d602011610c26575b81610c16602093836111a4565b810103126109595751933861024b565b3d9150610c09565b816101f3565b610c5791955060203d602011610c5e575b610c4f81836111a4565b8101906111e5565b93386101be565b503d610c45565b610c7e915060203d602011610c5e57610c4f81836111a4565b38610169565b80fd5b826020917ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc928084360112610926576004359373ffffffffffffffffffffffffffffffffffffffff9283861680960361113f577f0dfe1681000000000000000000000000000000000000000000000000000000009081815283816004818a5afa9081156109f257908592918791611122575b5073c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2951685036110dc57506040517fd21220a700000000000000000000000000000000000000000000000000000000815283816004818a5afa9081156109f2579160448592889485916110bf575b505b60405194859384927f095ea7b3000000000000000000000000000000000000000000000000000000008452737a250d5630b4cf539739df2c5dacb4c659f2488d60048501527fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6024850152165af180156110b457611097575b5060405194610e0486611188565b60019081875283368189013760405192610e1d84611188565b828452848401928536853786610e328a611229565b5269065a4da25d3016c00000610e4786611229565b526040519286840152858352610e5c83611188565b73ba12222222228d8ba445958a75a0704d566bf2c894853b1561109357928692899694610ec69b9693856040519d8e997f5c38449e000000000000000000000000000000000000000000000000000000008b523060048c0152608060248c015260848b0190611275565b92848a85030160448b01525192838152019491895b8181106110785750505050858303016064860152805190818352865b82811061105e5750509184827fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0601f868a86869982990101520116010301925af180156109665761104a575b8293506040517f70a082310000000000000000000000000000000000000000000000000000000081523060048201528181602481865afa91821561099c578492611019575b5050813b156110155782916024839260405194859384927f2e1a7d4d00000000000000000000000000000000000000000000000000000000845260048401525af1801561090357611001575b5080808047818115610ff8575b3290f115610fec5780f35b604051903d90823e3d90fd5b506108fc610fe1565b61100a90611174565b610c84578082610fd4565b5050fd5b8194508092503d8311611043575b61103181836111a4565b81010312610959578291518480610f88565b503d611027565b91909261105690611174565b908290610f43565b8181018501518482018601528a97508b9650889401610ef7565b835187528d9a508e99508b9796870196909301928201610edb565b8880fd5b6110ad90833d85116108fc576108f081836111a4565b5085610df6565b6040513d87823e3d90fd5b6110d69150843d8611610c5e57610c4f81836111a4565b8a610d7b565b60405190815283816004818a5afa9081156109f257916044859288948591611105575b50610d7d565b61111c9150843d8611610c5e57610c4f81836111a4565b8a6110ff565b6111399150853d8711610c5e57610c4f81836111a4565b88610d19565b8480fd5b9181601f840112156109595782359167ffffffffffffffff8311610959576020808501948460051b01011161095957565b67ffffffffffffffff8111610bcb57604052565b6040810190811067ffffffffffffffff821117610bcb57604052565b90601f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0910116810190811067ffffffffffffffff821117610bcb57604052565b90816020910312610959575173ffffffffffffffffffffffffffffffffffffffff811681036109595790565b90816020910312610959575180151581036109595790565b8051156112365760200190565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052603260045260246000fd5b8051600110156112365760400190565b90815180825260208080930193019160005b828110611295575050505090565b835173ffffffffffffffffffffffffffffffffffffffff1685529381019392810192600101611287565b73ffffffffffffffffffffffffffffffffffffffff6113197fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff9460809497969784526000602085015260a0604085015260a0840190611275565b95166060820152015256fea26469706673582212202bbe84429dde6ed49c37536cdaeeed932ab505518d4e62bad4bf2656cf9538f664736f6c63430008140033",
+      "chainId": 1,
+      "codeAuthorities": [],
+      "eventCount": 29,
+      "featureStatus": {
+        "debug": 0,
+        "simulation": 0,
+        "stateChange": 0,
+        "storageTrace": 0
+      },
+      "formatValue": "0",
+      "gasLimit": 1621727,
+      "gasPrice": "20",
+      "gasUsed": 1508071,
+      "intTxnCount": 87,
+      "maxFee": "20",
+      "nonce": 6,
+      "priorityFee": "20",
+      "receiver": "0x2cad84c3d2e31bc6d630229901f421e6da5557ef",
+      "revertMessage": "",
+      "sender": "0x25869347f7993c50410a9b9b9c48f37d79e12a36",
+      "sourceTxnHash": "0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420",
+      "status": true,
+      "timestamp": 1735737755000,
+      "transactionFee": "0.03016142",
+      "txnHash": "0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420",
+      "txnIndex": 0,
+      "type": 2,
+      "value": "0"
+    },
+    "explorer/v2/onchain/tx/fundflow": {
+      "transfers": [
+        {
+          "id": 1,
+          "from": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "to": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "tokenType": 1,
+          "amount": "30,000",
+          "isReverted": false
+        },
+        {
+          "id": 2,
+          "from": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+          "to": "0xb292678438245ec863f9fea64affcea887144240",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "tokenType": 1,
+          "amount": "23,052.4984469587855908",
+          "isReverted": false
+        },
+        {
+          "id": 3,
+          "from": "0xb292678438245ec863f9fea64affcea887144240",
+          "to": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+          "token": "0x05641e33fd15baf819729df55500b07b82eb8e89",
+          "tokenType": 1,
+          "amount": "6,093,010.604780796860723746",
+          "isReverted": false
+        },
+        {
+          "id": 4,
+          "from": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+          "to": "0xb292678438245ec863f9fea64affcea887144240",
+          "token": "0x05641e33fd15baf819729df55500b07b82eb8e89",
+          "tokenType": 1,
+          "amount": "6,093,010.604780796860723746",
+          "isReverted": false
+        },
+        {
+          "id": 5,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+          "token": "0xb292678438245ec863f9fea64affcea887144240",
+          "tokenType": 1,
+          "amount": "9,985.734664764621968615",
+          "isReverted": false
+        },
+        {
+          "id": 6,
+          "from": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+          "to": "0xb292678438245ec863f9fea64affcea887144240",
+          "token": "0xb292678438245ec863f9fea64affcea887144240",
+          "tokenType": 1,
+          "amount": "9,985.734664764621968615",
+          "isReverted": false
+        },
+        {
+          "id": 7,
+          "from": "0xb292678438245ec863f9fea64affcea887144240",
+          "to": "0x0000000000000000000000000000000000000000",
+          "token": "0xb292678438245ec863f9fea64affcea887144240",
+          "tokenType": 1,
+          "amount": "9,985.734664764621968615",
+          "isReverted": false
+        },
+        {
+          "id": 8,
+          "from": "0xb292678438245ec863f9fea64affcea887144240",
+          "to": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "tokenType": 1,
+          "amount": "23,064.838804036069896006",
+          "isReverted": false
+        },
+        {
+          "id": 9,
+          "from": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+          "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "tokenType": 1,
+          "amount": "30,000",
+          "isReverted": false
+        },
+        {
+          "id": 10,
+          "from": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "to": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+          "token": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "tokenType": 0,
+          "amount": "12.340357077284305206",
+          "isReverted": false
+        },
+        {
+          "id": 11,
+          "from": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+          "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "tokenType": 1,
+          "amount": "12.340357077284305206",
+          "isReverted": false
+        },
+        {
+          "id": 12,
+          "from": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+          "to": "0x25869347f7993c50410a9b9b9c48f37d79e12a36",
+          "token": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "tokenType": 0,
+          "amount": "12.340357077284305206",
+          "isReverted": false
+        }
+      ]
+    },
+    "explorer/v2/onchain/tx/token-info": {
+      "tokenInfos": [
+        {
+          "address": "0x05641e33fd15baf819729df55500b07b82eb8e89",
+          "decimals": 18
+        },
+        {
+          "address": "0xb292678438245ec863f9fea64affcea887144240",
+          "decimals": 18
+        },
+        {
+          "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "decimals": 18
+        },
+        {
+          "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "decimals": 18
+        }
+      ]
+    },
+    "explorer/v2/onchain/tx/state-change": {
+      "stateChanges": [
+        {
+          "address": "0x05641e33fd15baf819729df55500b07b82eb8e89",
+          "slots": [
+            {
+              "key": "0x3c3f86b3bfb9ebd96b8c1433a21c82b94034bb1e7126d8727767a142b855f6f4",
+              "prev": "0x000000000000000000000000000000000000000000050ba277b111b32b011f49",
+              "current": "0x0000000000000000000000000000000000000000000508dbe897b4b1cd28d0d3"
+            },
+            {
+              "key": "0x9aa1cb0b7dfd275ce361a907ae9ee6feff0ad1d09ffc671c1febb846b67cba43",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "current": "0xfffffffffffffffffffffffffffffffffffffffffffaf5c13bb751999c1b8ddd"
+            }
+          ],
+          "variables": [
+            {
+              "name": "_allowances",
+              "type": "mapping(address => mapping(address => uint256))",
+              "value": {
+                "typeTag": 4,
+                "kvs": [
+                  {
+                    "key": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+                    "value": {
+                      "typeTag": 4,
+                      "kvs": [
+                        {
+                          "key": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+                          "value": {
+                            "typeTag": 1,
+                            "prev": "0",
+                            "current": "115792089237316195423570985008687907853269984665640557946446979227116268916189"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "_balances",
+              "type": "mapping(address => uint256)",
+              "value": {
+                "typeTag": 4,
+                "kvs": [
+                  {
+                    "key": "0xb292678438245ec863f9fea64affcea887144240",
+                    "value": {
+                      "typeTag": 1,
+                      "prev": "6099572126618875527765833",
+                      "current": "6086464626951459453849811"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "address": "0xb292678438245ec863f9fea64affcea887144240",
+          "slots": [
+            {
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000a",
+              "prev": "0x0000000000000000000000000124befb34bcdf2b7c7cd8cb3fe167085c460d1c",
+              "current": "0x0000000000000000000000000124e456fddcad2c905e2ddeb9ade254dc66bc48"
+            },
+            {
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000008",
+              "prev": "0x67753aff000000000000e4833bb6e1df89de000000050ba277b111b32b011f49",
+              "current": "0x6775419b00000000000039417a55a8dd50a80000000508dbe897b4b1cd28d0d3"
+            },
+            {
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000009",
+              "prev": "0x00000000000000000000000000000000000097531e49c7cf060a3b2d7823f77c",
+              "current": "0x000000000000000000000000000000000000987e7668e758034f233c488fa708"
+            },
+            {
+              "key": "0xafe92ac81f1d4de611d7a4f24baa8c90335e53c298b21af79233ce049818e2d3",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "current": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+            }
+          ],
+          "variables": [
+            {
+              "name": "allowance",
+              "type": "mapping(address => mapping(address => uint256))",
+              "value": {
+                "typeTag": 4,
+                "kvs": [
+                  {
+                    "key": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+                    "value": {
+                      "typeTag": 4,
+                      "kvs": [
+                        {
+                          "key": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+                          "value": {
+                            "typeTag": 1,
+                            "prev": "0",
+                            "current": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "price1CumulativeLast",
+              "type": "uint256",
+              "value": {
+                "typeTag": 1,
+                "prev": "6528454413272607572645464804509448268966923548",
+                "current": "6531708800887439124313375180836208030977014856"
+              }
+            },
+            {
+              "name": "reserve0",
+              "type": "uint112",
+              "value": {
+                "typeTag": 1,
+                "prev": "6099572126618875527765833",
+                "current": "6086464626951459453849811"
+              }
+            },
+            {
+              "name": "reserve1",
+              "type": "uint112",
+              "value": {
+                "typeTag": 1,
+                "prev": "16466070319256275422",
+                "current": "4125713241971970216"
+              }
+            },
+            {
+              "name": "blockTimestampLast",
+              "type": "uint32",
+              "value": {
+                "typeTag": 1,
+                "prev": "1735736063",
+                "current": "1735737755"
+              }
+            },
+            {
+              "name": "price0CumulativeLast",
+              "type": "uint256",
+              "value": {
+                "typeTag": 1,
+                "prev": "3069229161385535487595988333623164",
+                "current": "3092945654283785579085734008039176"
+              }
+            }
+          ]
+        },
+        {
+          "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "slots": [
+            {
+              "key": "0x2a4a2b4fb1d2f8d835995006458976f50ee69b6bf33e8e50fc7ac0d45e26d45a",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "current": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+            },
+            {
+              "key": "0xc0809db1e4ce3cd10e251fe0ccd014d4a6c274d92ce61b032235255c192b6a77",
+              "prev": "0x000000000000000000000000000000000000000000000000e4833bb6e1df89de",
+              "current": "0x00000000000000000000000000000000000000000000000039417a55a8dd50a8"
+            }
+          ],
+          "variables": [
+            {
+              "name": "allowance",
+              "type": "mapping(address => mapping(address => uint256))",
+              "value": {
+                "typeTag": 4,
+                "kvs": [
+                  {
+                    "key": "0x55877cf2f24286dba2acb64311beca39728fbd10",
+                    "value": {
+                      "typeTag": 4,
+                      "kvs": [
+                        {
+                          "key": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+                          "value": {
+                            "typeTag": 1,
+                            "prev": "0",
+                            "current": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "balanceOf",
+              "type": "mapping(address => uint256)",
+              "value": {
+                "typeTag": 4,
+                "kvs": [
+                  {
+                    "key": "0xb292678438245ec863f9fea64affcea887144240",
+                    "value": {
+                      "typeTag": 1,
+                      "prev": "16466070319256275422",
+                      "current": "4125713241971970216"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "explorer/v2/onchain/tx/balance-change": {
+      "balanceChanges": [
+        {
+          "account": "0x25869347f7993c50410a9b9b9c48f37d79e12a36",
+          "assets": [
+            {
+              "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+              "tokenType": 0,
+              "amount": "12.340357077284305206",
+              "value": "41273.3413372",
+              "sign": true,
+              "iconUrl": "https://assets.external_explorer.com/image/1747720405732/ethereum.png"
+            }
+          ],
+          "totalValue": "41273.3413372",
+          "sign": true,
+          "extremum": true
+        },
+        {
+          "account": "0xb292678438245ec863f9fea64affcea887144240",
+          "assets": [
+            {
+              "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "tokenType": 1,
+              "amount": "12.340357077284305206",
+              "value": "41273.34133721",
+              "sign": false,
+              "iconUrl": "https://assets.external_explorer.com/icon/f1cb2d02c471d545bbc7722daf3277fd852d98e63d118771af7047bd8256c516.png"
+            }
+          ],
+          "totalValue": "41273.34133721",
+          "sign": false,
+          "extremum": true
+        },
+        {
+          "account": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "assets": [
+            {
+              "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+              "tokenType": 0,
+              "amount": "12.340357077284305206",
+              "value": "41273.34133721",
+              "sign": false,
+              "iconUrl": "https://assets.external_explorer.com/image/1747720405732/ethereum.png"
+            },
+            {
+              "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "tokenType": 1,
+              "amount": "12.340357077284305206",
+              "value": "41273.3413372",
+              "sign": true,
+              "iconUrl": "https://assets.external_explorer.com/icon/f1cb2d02c471d545bbc7722daf3277fd852d98e63d118771af7047bd8256c516.png"
+            }
+          ],
+          "totalValue": "0.00000000999999727469003119",
+          "sign": false,
+          "extremum": false
+        }
+      ]
+    },
+    "explorer/v2/onchain/tx/top-profit-loss": {
+      "topProfitAddress": "0x25869347f7993c50410a9b9b9c48f37d79e12a36",
+      "topLossAddress": "0xb292678438245ec863f9fea64affcea887144240"
+    },
+    "explorer/v2/onchain/tx/address-label": {
+      "labels": [
+        {
+          "address": "0x0000000000000000000000000000000000000001",
+          "label": "Precompiled"
+        },
+        {
+          "address": "0x0000000000000000000000000000000000000002",
+          "label": "Precompiled"
+        },
+        {
+          "address": "0x0000000000000000000000000000000000000003",
+          "label": "Precompiled"
+        },
+        {
+          "address": "0x0000000000000000000000000000000000000004",
+          "label": "Precompiled"
+        },
+        {
+          "address": "0x05641e33fd15baf819729df55500b07b82eb8e89",
+          "label": "LAURA"
+        },
+        {
+          "address": "0x25869347f7993c50410a9b9b9c48f37d79e12a36",
+          "label": "LAURA Exploiter"
+        },
+        {
+          "address": "0x539d54074e052ae82de4936ae6bb213ab773559e",
+          "label": "Mother"
+        },
+        {
+          "address": "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+          "label": "Uniswap: Factory Contract"
+        },
+        {
+          "address": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+          "label": "Uniswap V2: Router 2"
+        },
+        {
+          "address": "0xb292678438245ec863f9fea64affcea887144240",
+          "label": "UNI-V2"
+        },
+        {
+          "address": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "label": "Balancer: Vault"
+        },
+        {
+          "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "label": "WETH"
+        },
+        {
+          "address": "0xce88686553686da562ce7cea497ce749da109f9f",
+          "label": "ProtocolFeesCollector"
+        },
+        {
+          "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "label": "Ether"
+        }
+      ]
+    }
+  }
+}

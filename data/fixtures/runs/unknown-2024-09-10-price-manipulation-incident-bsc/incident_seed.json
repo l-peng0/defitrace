@@ -1,0 +1,36 @@
+{
+  "incident_id": "unknown-2024-09-10-price-manipulation-incident-bsc",
+  "job_id": "unknown-bsc-2024-09-10-batch",
+  "trigger_type": "batch",
+  "seed_type": "tx_hash",
+  "chain": "BSC",
+  "protocol_name": "Unknown",
+  "incident_name": "Unknown 2024-09-10 price-manipulation incident",
+  "incident_date": "",
+  "attack_tx_hashes": [
+    "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827"
+  ],
+  "attacker_addresses": [
+    "0x87EFb39a716860eCd2324A944Cb40EC5128e56Dd"
+  ],
+  "seed_urls": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol",
+    "https://www.certik.com/zh-CN/resources/blog/caterpillar-coin-cut-token-incident-analysis"
+  ],
+  "attack_contract_urls": [],
+  "victim_contract_urls": [],
+  "tags": [
+    "price_manipulation",
+    "bsc",
+    "defi"
+  ],
+  "source_names": [],
+  "attack_type_raws": [],
+  "summary_candidates": [
+    "An estimated loss of ~1"
+  ],
+  "note_candidates": [],
+  "date_range": {},
+  "created_at": "2026-04-27T12:40:15+00:00"
+}

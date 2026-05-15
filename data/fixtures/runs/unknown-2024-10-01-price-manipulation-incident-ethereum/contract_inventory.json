@@ -1,0 +1,308 @@
+{
+  "incident_id": "unknown-2024-10-01-price-manipulation-incident-ethereum",
+  "chain": "Ethereum",
+  "generated_at": "2026-04-27T12:45:26+00:00",
+  "contracts": {
+    "0xe2e02e8a7952050523635628c1e7b46f0065f96d": {
+      "address": "0xe2e02e8a7952050523635628c1e7b46f0065f96d",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:45:25+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f": {
+      "address": "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:45:25+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x173c6ae0e2263a1a2a466d23f9bd16eaa2ead154": {
+      "address": "0x173c6ae0e2263a1a2a466d23f9bd16eaa2ead154",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:45:25+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x5882a6bef7cab6b99019b565060da081e157d454": {
+      "address": "0x5882a6bef7cab6b99019b565060da081e157d454",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:45:25+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a": {
+      "address": "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:45:25+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x79a617dedf7a21625ec03fca9ff8482ac11ef100": {
+      "address": "0x79a617dedf7a21625ec03fca9ff8482ac11ef100",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:45:25+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0xd107ef93ba6f3139dd81cd4588c3b9ee84e122ee": {
+      "address": "0xd107ef93ba6f3139dd81cd4588c3b9ee84e122ee",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:45:25+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0xe5677443d2b7239ada673cc26398ebbd4894a25c": {
+      "address": "0xe5677443d2b7239ada673cc26398ebbd4894a25c",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:45:25+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1": {
+      "address": "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:45:25+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x37b8bb5b520f4a6ae8ce2f6d447dfc9a8f650979": {
+      "address": "0x37b8bb5b520f4a6ae8ce2f6d447dfc9a8f650979",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:45:25+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0xc0110ee63cac2196fcc76359fe8a03f20eb36391": {
+      "address": "0xc0110ee63cac2196fcc76359fe8a03f20eb36391",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:45:25+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x805e18b0325eab315d61bd92ae152247af0ea609": {
+      "address": "0x805e18b0325eab315d61bd92ae152247af0ea609",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:45:25+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0xc215faf64374b7f884af55791b810496c4bab405": {
+      "address": "0xc215faf64374b7f884af55791b810496c4bab405",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:45:25+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x18e439be184e9b4a5d92f44722e72087e4133fcf": {
+      "address": "0x18e439be184e9b4a5d92f44722e72087e4133fcf",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:45:25+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x32fd502975d5b74686e34df01aa8b8b28e213aad": {
+      "address": "0x32fd502975d5b74686e34df01aa8b8b28e213aad",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:45:25+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0xcc27779013a1cca68d3d93c640aac807891fd029": {
+      "address": "0xcc27779013a1cca68d3d93c640aac807891fd029",
+      "role": "victim",
+      "classification": "verified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "admin_address": "",
+      "contract_name": "UniswapV2Pair",
+      "compiler_version": "v0.5.16+commit.9c3226ce",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/technical_analysis/contracts/0xcc27779013a1cca68d3d93c640aac807891fd029/source.json",
+      "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-01-price-manipulation-incident-ethereum/technical_analysis/contracts/0xcc27779013a1cca68d3d93c640aac807891fd029/abi.json",
+      "fetched_at": "2026-04-27T12:45:26+00:00",
+      "fetch_errors": []
+    }
+  }
+}

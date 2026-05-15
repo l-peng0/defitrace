@@ -1,0 +1,1523 @@
+{
+  "incident_id": "caterpiller-coin-bsc-2024-09-10",
+  "incident_library_entry": {
+    "incident_id": "caterpiller-coin-bsc-2024-09-10",
+    "title": "Caterpiller Coin",
+    "protocol_name": "Caterpiller Coin",
+    "chain": "BSC",
+    "incident_date": "2024-09-10",
+    "summary": "Test a case with report + PoC + third-party analysis.",
+    "status": "demo_live_dossier",
+    "completeness_score": 0.71,
+    "source_count": 28,
+    "direct_source_count": 3,
+    "secondary_source_count": 25,
+    "social_count": 2,
+    "poc_count": 6,
+    "explorer_count": 3,
+    "report_count": 17,
+    "missing_fields": [
+      "attack_contract_urls",
+      "victim_contract_urls"
+    ],
+    "last_updated": "2026-04-01T11:32:58+00:00",
+    "pattern_label": "price_manipulation",
+    "attack_tx_hashes": [
+      "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+      "0xce6e474dc9555ef971473fee19f87716f38ba01a0df39e78207b71eda134c420",
+      "0x6262c0f15c88aed6f646ed1996eb6aae9ccc5d5704d5faccd1e1397dd047bc8a",
+      "0x0000000000000000000000000000000000000000000000000000000000000001"
+    ],
+    "source_preview": [
+      "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+      "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol",
+      "https://www.certik.com/zh-CN/resources/blog/caterpillar-coin-cut-token-incident-analysis",
+      "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main",
+      "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src",
+      "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src/test"
+    ]
+  },
+  "dashboard_view": {
+    "incident_id": "caterpiller-coin-bsc-2024-09-10",
+    "card": {
+      "title": "Caterpiller Coin",
+      "chain": "BSC",
+      "incident_date": "2024-09-10",
+      "protocol_name": "Caterpiller Coin",
+      "summary": "Test a case with report + PoC + third-party analysis.",
+      "source_count": 28,
+      "direct_source_count": 3,
+      "secondary_source_count": 25,
+      "completeness_score": 0.71
+    },
+    "detail": {
+      "timeline_preview": [
+        {
+          "step_id": "step-001",
+          "order": 1,
+          "label": "Incident enters the corpus",
+          "step_type": "entry",
+          "summary": "Caterpiller Coin is dated 2024-09-10.",
+          "source_refs": [],
+          "confidence": 0.92
+        },
+        {
+          "step_id": "step-002",
+          "order": 2,
+          "label": "Impact summary collected",
+          "step_type": "impact",
+          "summary": "Test a case with report + PoC + third-party analysis.",
+          "source_refs": [],
+          "confidence": 0.72
+        },
+        {
+          "step_id": "step-003",
+          "order": 3,
+          "label": "Source expansion completed",
+          "step_type": "analysis",
+          "summary": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+          "source_refs": [],
+          "confidence": 0.75
+        }
+      ],
+      "attacker_profile_summary": "The dossier has 0 direct attacker address candidate(s) and 8 additional address mentions from fetched sources.",
+      "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+      "judge_summary": "This run is strong enough for demo browsing, but still needs more direct technical evidence before it should be treated as a full analyst-grade dossier.",
+      "missing_fields": [
+        "attack_contract_urls",
+        "victim_contract_urls"
+      ]
+    },
+    "status": "demo_live_dossier",
+    "last_updated": "2026-04-01T11:32:58+00:00"
+  },
+  "augmented_incident": {
+    "incident_id": "caterpiller-coin-bsc-2024-09-10",
+    "title": "Caterpiller Coin",
+    "incident_date": "2024-09-10",
+    "chain": "BSC",
+    "protocol_name": "Caterpiller Coin",
+    "status": "demo_live_dossier",
+    "summary": "Test a case with report + PoC + third-party analysis.",
+    "seed_overview": {
+      "seed_type": "sample_source_expansion_target",
+      "trigger_type": "demo_corpus",
+      "source_names": [
+        "sample_target_pack"
+      ],
+      "attack_type_raws": [
+        "Price Manipulation"
+      ]
+    },
+    "key_addresses": [
+      "0x5766d1F03378f50c7c981c014Ed5e5A8124f38A4",
+      "0x87EFb39a716860eCd2324A944Cb40EC5128e56Dd",
+      "0xD9ad954Bea4ad65578904CEFE6Ee2A6EB13879dB",
+      "0x7057f3b0f4d0649b428f0d8378a8a0e7d21d36a7"
+    ],
+    "key_contracts": [],
+    "key_transactions": [
+      "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+      "0xce6e474dc9555ef971473fee19f87716f38ba01a0df39e78207b71eda134c420",
+      "0x6262c0f15c88aed6f646ed1996eb6aae9ccc5d5704d5faccd1e1397dd047bc8a",
+      "0x0000000000000000000000000000000000000000000000000000000000000001"
+    ],
+    "timeline": [
+      {
+        "step_id": "step-001",
+        "order": 1,
+        "label": "Incident enters the corpus",
+        "step_type": "entry",
+        "summary": "Caterpiller Coin is dated 2024-09-10.",
+        "source_refs": [],
+        "confidence": 0.92
+      },
+      {
+        "step_id": "step-002",
+        "order": 2,
+        "label": "Impact summary collected",
+        "step_type": "impact",
+        "summary": "Test a case with report + PoC + third-party analysis.",
+        "source_refs": [],
+        "confidence": 0.72
+      },
+      {
+        "step_id": "step-003",
+        "order": 3,
+        "label": "Source expansion completed",
+        "step_type": "analysis",
+        "summary": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+        "source_refs": [],
+        "confidence": 0.75
+      }
+    ],
+    "attacker_profile": {
+      "incident_id": "caterpiller-coin-bsc-2024-09-10",
+      "profile_id": "profile-caterpiller-coin-bsc-2024-09-10",
+      "primary_addresses": [],
+      "related_addresses": [
+        "0x5766d1F03378f50c7c981c014Ed5e5A8124f38A4",
+        "0x87EFb39a716860eCd2324A944Cb40EC5128e56Dd",
+        "0xD9ad954Bea4ad65578904CEFE6Ee2A6EB13879dB",
+        "0x7057f3b0f4d0649b428f0d8378a8a0e7d21d36a7",
+        "0x7b2e7cb89824236cb7096cde7a153af30f3ecbaf",
+        "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979",
+        "0xce6e474dc9555ef971473fee19f87716f38ba01a",
+        "0x6262c0f15c88aed6f646ed1996eb6aae9ccc5d57"
+      ],
+      "recent_activity_summary": "The dossier has 0 direct attacker address candidate(s) and 8 additional address mentions from fetched sources.",
+      "counterparties": [],
+      "repeated_behaviors": [
+        "Leans on addresses confirmed by direct seed fields first.",
+        "Uses source-text mentions as weaker supporting clues rather than direct proof."
+      ],
+      "open_questions": [
+        "Which address funded the exploit wallet before the attack?",
+        "Which transfers right after the exploit are still missing from the dossier?"
+      ]
+    },
+    "pattern_hypotheses": [
+      {
+        "hypothesis_id": "hyp-001",
+        "label": "price_manipulation",
+        "summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+        "why_suspected": [
+          "Attack-type tags mention price manipulation.",
+          "The supporting sources resemble prior price-manipulation writeups."
+        ],
+        "confidence": 0.76,
+        "open_questions": [
+          "Which specific pricing path was abused?",
+          "Is there a direct explorer or postmortem source that confirms the same mechanism?"
+        ]
+      }
+    ],
+    "source_summary": {
+      "source_count": 28,
+      "source_types": {
+        "report": 17,
+        "poc": 6,
+        "social": 2,
+        "explorer": 3
+      },
+      "direct_source_count": 3,
+      "secondary_source_count": 25,
+      "fetched_source_count": 3
+    },
+    "quality_report": {
+      "incident_id": "caterpiller-coin-bsc-2024-09-10",
+      "completeness_score": 0.71,
+      "direct_source_count": 3,
+      "secondary_source_count": 25,
+      "fetched_source_count": 3,
+      "citation_coverage_count": 31,
+      "missing_fields": [
+        "attack_contract_urls",
+        "victim_contract_urls"
+      ],
+      "judge_summary": "This run is strong enough for demo browsing, but still needs more direct technical evidence before it should be treated as a full analyst-grade dossier."
+    },
+    "generated_at": "2026-04-01T11:32:58+00:00"
+  },
+  "source_index": {
+    "incident_id": "caterpiller-coin-bsc-2024-09-10",
+    "sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+        "source_type": "report",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 99,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol",
+        "source_type": "poc",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 98,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://www.certik.com/zh-CN/resources/blog/caterpillar-coin-cut-token-incident-analysis",
+        "source_type": "report",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 97,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main",
+        "source_type": "poc",
+        "discovered_from": "src-002",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-005",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src",
+        "source_type": "poc",
+        "discovered_from": "src-002",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-006",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src/test",
+        "source_type": "poc",
+        "discovered_from": "src-002",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-007",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src/test/2024-09",
+        "source_type": "poc",
+        "discovered_from": "src-002",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-008",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol",
+        "source_type": "poc",
+        "discovered_from": "src-002",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-009",
+        "url": "https://www.certik.com/zh-CN",
+        "source_type": "report",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-010",
+        "url": "https://www.certik.com/zh-CN/blog",
+        "source_type": "report",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-011",
+        "url": "https://www.certik.com/zh-CN/blog/reports",
+        "source_type": "report",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-012",
+        "url": "https://www.certik.com/blog/reports",
+        "source_type": "report",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-013",
+        "url": "https://www.certik.com/blog/reports?tab=incident-analysis",
+        "source_type": "report",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-014",
+        "url": "https://x.com/CUT2024CUT",
+        "source_type": "social",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-015",
+        "url": "https://bscscan.com/tx/0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-016",
+        "url": "https://bscscan.com/tx/0xce6e474dc9555ef971473fee19f87716f38ba01a0df39e78207b71eda134c420",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-017",
+        "url": "https://bscscan.com/tx/0x6262c0f15c88aed6f646ed1996eb6aae9ccc5d5704d5faccd1e1397dd047bc8a",
+        "source_type": "explorer",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-018",
+        "url": "https://x.com/CertiKAlert",
+        "source_type": "social",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-019",
+        "url": "https://www.certik.com/resources/blog",
+        "source_type": "report",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-020",
+        "url": "https://www.certik.com/blog/resolv-protocol-incident-analysis",
+        "source_type": "report",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-021",
+        "url": "https://www.certik.com/blog/movie-token-incident-analysis",
+        "source_type": "report",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-022",
+        "url": "https://www.certik.com/blog/sof-laxo-incident-analysis",
+        "source_type": "report",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-023",
+        "url": "https://www.certik.com/zh-CN/products/smart-contract-audit",
+        "source_type": "report",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-024",
+        "url": "https://www.certik.com/zh-CN/products/proof-of-reserves-audit",
+        "source_type": "report",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-025",
+        "url": "https://www.certik.com/zh-CN/products/skynet",
+        "source_type": "report",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-026",
+        "url": "https://www.certik.com/zh-CN/products/skynet-score",
+        "source_type": "report",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-027",
+        "url": "https://www.certik.com/zh-CN/products/kyc",
+        "source_type": "report",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-028",
+        "url": "https://www.certik.com/zh-CN/products/pentest",
+        "source_type": "report",
+        "discovered_from": "src-003",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      }
+    ]
+  },
+  "source_documents": {
+    "incident_id": "caterpiller-coin-bsc-2024-09-10",
+    "documents": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+        "source_type": "report",
+        "fetch_status": "fetched",
+        "fetched_at": "2026-04-01T11:32:53+00:00",
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "title": "Notion",
+        "text_excerpt": "Notion (function(){var e,r=window.navigator.userAgent,t=/Windows.*Edge/i.test(r),i=!t&&/Chrome/i.test(r);if(i){if((e=r.match(/Chrome\\/(\\d+)/i))&&e[1])return parseInt(e[1],10)<=84}else if(t||i||!/Safari/i.test(r))if(/Firefox/i.test(r)){if((e=r.match(/Firefox\\/(\\d+)/i))&&e[1])return parseInt(e[1],10)<=114}else{if(t)return!0;if(/Trident/i.test(r))return!0}else if((e=r.match(/Version\\/(\\d+)/i))&&e[1])return parseInt(e[1],10)<=13;return!1})()&&window.location.replace(\"/unsupported-browser.html\") window.__webStartTime=performance.now(),performance.mark(\"__webStartTime\") try{if(Math.random()<.01){[\"/blank\",\"/login\",\"/meeting-notification\",\"/quick-search\",\"/desktop-nosey\"].includes(window.location.pathname)||(window.CLIENT_LOAD_TAG=Math.random().toString(16).substring(2),fetch(\"/api/v3/recordClientLoadAttempt\",{method:\"POST\",headers:{\"Content-Type\":\"application/json; charset=utf-8\"},body:JSON.stringify({tag:window.CLIENT_LOAD_TAG,pathname:window.location.pathname,hostname:window.location.hostname,version:\"23.13.20260401.0836\",htmlType:\"web\"}),priority:\"low\"}))}}catch(t){console.error(\"Failed to beacon load attempt\",t)} body{background:#fff}body.dark{background:#191919}@keyframes startup-sh",
+        "discovered_links": [],
+        "extracted_addresses": [],
+        "extracted_tx_hashes": [],
+        "error_message": ""
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol",
+        "source_type": "poc",
+        "fetch_status": "fetched",
+        "fetched_at": "2026-04-01T11:32:54+00:00",
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "title": "DeFiHackLabs/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol at main \u00b7 SunWeb3Sec/DeFiHackLabs \u00b7 GitHub",
+        "text_excerpt": ":root { --tab-size-preference: 4; } pre, code { tab-size: var(--tab-size-preference); } {\"locale\":\"en\",\"featureFlags\":[\"actions_custom_images_storage_billing_ui_visibility\",\"actions_image_version_event\",\"actions_scheduled_workflow_timezone_enabled\",\"alternate_user_config_repo\",\"arianotify_comprehensive_migration\",\"batch_suggested_changes\",\"billing_discount_threshold_notification\",\"close_pr_side_panel\",\"code_scanning_all_branch_query\",\"codespaces_prebuild_region_target_update\",\"coding_agent_model_selection\",\"coding_agent_model_selection_all_skus\",\"comment_viewer_copy_raw_markdown\",\"contentful_primer_code_blocks\",\"copilot_agent_image_upload\",\"copilot_agent_snippy\",\"copilot_api_agentic_issue_marshal_yaml\",\"copilot_ask_mode_dropdown\",\"copilot_chat_attach_multiple_images\",\"copilot_chat_clear_model_selection_for_default_change\",\"copilot_chat_enable_tool_call_logs\",\"copilot_chat_explain_error_user_model\",\"copilot_chat_file_redirect\",\"copilot_chat_input_commands\",\"copilot_chat_opening_thread_switch\",\"copilot_chat_reduce_quota_checks\",\"copilot_chat_search_bar_redirect\",\"copilot_chat_selection_attachments\",\"copilot_chat_vision_in_claude\",\"copilot_chat_vision_preview_gate\",\"copilot_code_revie",
+        "discovered_links": [
+          {
+            "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main",
+            "source_type": "poc",
+            "discovered_from": "src-002"
+          },
+          {
+            "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src",
+            "source_type": "poc",
+            "discovered_from": "src-002"
+          },
+          {
+            "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src/test",
+            "source_type": "poc",
+            "discovered_from": "src-002"
+          },
+          {
+            "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src/test/2024-09",
+            "source_type": "poc",
+            "discovered_from": "src-002"
+          },
+          {
+            "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol",
+            "source_type": "poc",
+            "discovered_from": "src-002"
+          }
+        ],
+        "extracted_addresses": [
+          "0x5766d1F03378f50c7c981c014Ed5e5A8124f38A4",
+          "0x87EFb39a716860eCd2324A944Cb40EC5128e56Dd",
+          "0xD9ad954Bea4ad65578904CEFE6Ee2A6EB13879dB",
+          "0x7057f3b0f4d0649b428f0d8378a8a0e7d21d36a7",
+          "0x7b2e7cb89824236cb7096cde7a153af30f3ecbaf",
+          "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979",
+          "0xce6e474dc9555ef971473fee19f87716f38ba01a",
+          "0x6262c0f15c88aed6f646ed1996eb6aae9ccc5d57",
+          "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+          "0x55d398326f99059fF775485246999027B3197955",
+          "0x7057F3b0F4D0649B428F0D8378A8a0E7D21d36a7",
+          "0x7109709ECfa91a80626fF3989D68f67F5b1DD12D",
+          "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+          "0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73",
+          "0x16b9a82891338f9bA80E2D6970FddA79D1eb0daE",
+          "0x83681F67069A154815a0c6C2C97e2dAca6eD3249",
+          "0x0000000000000000000000000000000000000000"
+        ],
+        "extracted_tx_hashes": [
+          "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+          "0xce6e474dc9555ef971473fee19f87716f38ba01a0df39e78207b71eda134c420",
+          "0x6262c0f15c88aed6f646ed1996eb6aae9ccc5d5704d5faccd1e1397dd047bc8a",
+          "0x0000000000000000000000000000000000000000000000000000000000000001"
+        ],
+        "error_message": ""
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://www.certik.com/zh-CN/resources/blog/caterpillar-coin-cut-token-incident-analysis",
+        "source_type": "report",
+        "fetch_status": "fetched",
+        "fetched_at": "2026-04-01T11:32:56+00:00",
+        "status_code": 200,
+        "content_type": "text/html",
+        "title": "CUT Token Incident Analysis - CertiK",
+        "text_excerpt": "(function () { const CONSENT_STORAGE_KEY = \"cookie-consent-v2\"; const getStoredConsent = () => { try { return window.localStorage.getItem(CONSENT_STORAGE_KEY); } catch (error) { return null; } }; const buildConsentPayload = (status) => ({ ad_storage: status, ad_user_data: status, ad_personalization: status, analytics_storage: status, functionality_storage: status, personalization_storage: status, security_storage: \"granted\", }); const storedConsent = getStoredConsent(); const isGranted = storedConsent === \"true\"; window.dataLayer = window.dataLayer || []; window.gtag = window.gtag || function () { window.dataLayer.push(arguments); }; window.gtag(\"consent\", \"default\", buildConsentPayload(\"denied\")); window.gtag(\"set\", \"ads_data_redaction\", true); if (isGranted) { window.gtag(\"consent\", \"update\", buildConsentPayload(\"granted\")); window.gtag(\"set\", \"ads_data_redaction\", false); } })(); window.dataLayer = window.dataLayer || []; window.gtag = window.gtag || function () { window.dataLayer.push(arguments); }; window.gtag(\"js\", new Date()); window.gtag(\"config\", \"G-3QC6Z8L275\"); window.gtag(\"config\", \"AW-16513746560\"); {\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@i",
+        "discovered_links": [
+          {
+            "url": "https://www.certik.com/zh-CN",
+            "source_type": "report",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://www.certik.com/zh-CN/blog",
+            "source_type": "report",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://www.certik.com/zh-CN/blog/reports",
+            "source_type": "report",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://www.certik.com/blog/reports",
+            "source_type": "report",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://www.certik.com/blog/reports?tab=incident-analysis",
+            "source_type": "report",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://x.com/CUT2024CUT",
+            "source_type": "social",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/tx/0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/tx/0xce6e474dc9555ef971473fee19f87716f38ba01a0df39e78207b71eda134c420",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://bscscan.com/tx/0x6262c0f15c88aed6f646ed1996eb6aae9ccc5d5704d5faccd1e1397dd047bc8a",
+            "source_type": "explorer",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://x.com/CertiKAlert",
+            "source_type": "social",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://www.certik.com/resources/blog",
+            "source_type": "report",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://www.certik.com/blog/resolv-protocol-incident-analysis",
+            "source_type": "report",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://www.certik.com/blog/movie-token-incident-analysis",
+            "source_type": "report",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://www.certik.com/blog/sof-laxo-incident-analysis",
+            "source_type": "report",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://www.certik.com/zh-CN/products/smart-contract-audit",
+            "source_type": "report",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://www.certik.com/zh-CN/products/proof-of-reserves-audit",
+            "source_type": "report",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://www.certik.com/zh-CN/products/skynet",
+            "source_type": "report",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://www.certik.com/zh-CN/products/skynet-score",
+            "source_type": "report",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://www.certik.com/zh-CN/products/kyc",
+            "source_type": "report",
+            "discovered_from": "src-003"
+          },
+          {
+            "url": "https://www.certik.com/zh-CN/products/pentest",
+            "source_type": "report",
+            "discovered_from": "src-003"
+          }
+        ],
+        "extracted_addresses": [
+          "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979",
+          "0xce6e474dc9555ef971473fee19f87716f38ba01a",
+          "0x6262c0f15c88aed6f646ed1996eb6aae9ccc5d57",
+          "0x5766d1F03378f50c7c981c014Ed5e5A8124f38A4",
+          "0x87EFb39a716860eCd2324A944Cb40EC5128e56Dd",
+          "0xD9ad954Bea4ad65578904CEFE6Ee2A6EB13879dB",
+          "0x7057f3b0f4d0649b428f0d8378a8a0e7d21d36a7",
+          "0x7b2e7cb89824236cb7096cde7a153af30f3ecbaf",
+          "0x34bEb8b92a61EB1C3e2fe27eAC16EeC895Ba2e98",
+          "0x0917914b0a70ee7f1f2460fcd487696856e31154"
+        ],
+        "extracted_tx_hashes": [
+          "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+          "0xce6e474dc9555ef971473fee19f87716f38ba01a0df39e78207b71eda134c420",
+          "0x6262c0f15c88aed6f646ed1996eb6aae9ccc5d5704d5faccd1e1397dd047bc8a"
+        ],
+        "error_message": ""
+      }
+    ]
+  },
+  "quality_report": {
+    "incident_id": "caterpiller-coin-bsc-2024-09-10",
+    "completeness_score": 0.71,
+    "direct_source_count": 3,
+    "secondary_source_count": 25,
+    "fetched_source_count": 3,
+    "citation_coverage_count": 31,
+    "missing_fields": [
+      "attack_contract_urls",
+      "victim_contract_urls"
+    ],
+    "judge_summary": "This run is strong enough for demo browsing, but still needs more direct technical evidence before it should be treated as a full analyst-grade dossier."
+  },
+  "run_state": {
+    "job_id": "caterpiller-coin-bsc-2024-09-10-demo-job",
+    "incident_id": "caterpiller-coin-bsc-2024-09-10",
+    "trigger_type": "demo_corpus",
+    "current_stage": "dashboard_projection",
+    "node_status": {
+      "seed_loader": "completed",
+      "source_finder": "completed",
+      "source_expander": "completed",
+      "evidence_normalizer": "completed",
+      "timeline_builder": "completed",
+      "dossier_assembler": "completed",
+      "quality_judge": "completed",
+      "dashboard_projection": "completed"
+    },
+    "retry_counts": {},
+    "started_at": "2026-04-01T11:32:53+00:00",
+    "updated_at": "2026-04-01T11:32:58+00:00",
+    "completed_at": "2026-04-01T11:32:58+00:00",
+    "run_notes": [
+      "Loaded and normalized incident seed.",
+      "Built direct source candidates from seed facts.",
+      "Fetched direct sources and discovered second-hop links.",
+      "Turned fetched sources into citation-backed evidence.",
+      "Built timeline and behavior profile views.",
+      "Assembled dossier, quality report, and library entry.",
+      "This run is strong enough for demo browsing, but still needs more direct technical evidence before it should be treated as a full analyst-grade dossier.",
+      "Projected live incident library and dossier views."
+    ],
+    "artifacts": {
+      "incident_seed": "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/incident_seed.json",
+      "source_index": "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/source_index.json",
+      "source_documents": "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/source_documents.json",
+      "raw_evidence": "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/raw_evidence.json",
+      "timeline": "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/timeline.json",
+      "augmented_incident": "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/augmented_incident.json",
+      "quality_report": "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/quality_report.json",
+      "incident_library_entry": "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/incident_library_entry.json"
+    }
+  },
+  "run_events": {
+    "incident_id": "caterpiller-coin-bsc-2024-09-10",
+    "events": [
+      {
+        "event_id": "evt-001",
+        "timestamp": "2026-04-01T11:32:53+00:00",
+        "stage": "seed_loader",
+        "agent": "seed_loader",
+        "status": "completed",
+        "note": "Loaded incident seed.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/incident_seed.json"
+        ],
+        "metrics": {},
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-002",
+        "timestamp": "2026-04-01T11:32:53+00:00",
+        "stage": "source_finder",
+        "agent": "Discovery supervisor",
+        "status": "completed",
+        "note": "Ranked direct source candidates.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/source_index.json"
+        ],
+        "metrics": {
+          "source_count": 3
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-003",
+        "timestamp": "2026-04-01T11:32:58+00:00",
+        "stage": "source_expander",
+        "agent": "Source expansion agent",
+        "status": "completed",
+        "note": "Fetched source pages and extracted discovered links.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/source_index.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/source_documents.json"
+        ],
+        "metrics": {
+          "source_count": 28,
+          "fetched_documents": 3
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-004",
+        "timestamp": "2026-04-01T11:32:58+00:00",
+        "stage": "evidence_normalizer",
+        "agent": "Evidence normalization agent",
+        "status": "completed",
+        "note": "Normalized source text into evidence items and citation edges.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/raw_evidence.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/citation_graph.json"
+        ],
+        "metrics": {
+          "evidence_count": 31,
+          "claim_count": 31
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-005",
+        "timestamp": "2026-04-01T11:32:58+00:00",
+        "stage": "timeline_builder",
+        "agent": "Timeline builder agent",
+        "status": "completed",
+        "note": "Built timeline, attacker profile, and exploit hypothesis outputs.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/timeline.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/attacker_profile.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/pattern_hypotheses.json"
+        ],
+        "metrics": {
+          "timeline_steps": 3,
+          "hypothesis_count": 1
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-006",
+        "timestamp": "2026-04-01T11:32:58+00:00",
+        "stage": "dossier_assembler",
+        "agent": "Dossier composer agent",
+        "status": "completed",
+        "note": "Assembled final dossier outputs and library projection.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/quality_report.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/augmented_incident.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/dashboard_view.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/report_inputs.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/incident_library_entry.json"
+        ],
+        "metrics": {
+          "completeness_score": 0.71
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-007",
+        "timestamp": "2026-04-01T11:32:58+00:00",
+        "stage": "quality_judge",
+        "agent": "QA judge agent",
+        "status": "completed",
+        "note": "This run is strong enough for demo browsing, but still needs more direct technical evidence before it should be treated as a full analyst-grade dossier.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/quality_report.json"
+        ],
+        "metrics": {
+          "missing_field_count": 2
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-008",
+        "timestamp": "2026-04-01T11:32:58+00:00",
+        "stage": "dashboard_projection",
+        "agent": "Projection agent",
+        "status": "completed",
+        "note": "Projected outputs for backend and frontend consumers.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/incident_library_entry.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/dashboard_view.json"
+        ],
+        "metrics": {},
+        "error_message": ""
+      }
+    ]
+  },
+  "agent_trace": {
+    "incident_id": "caterpiller-coin-bsc-2024-09-10",
+    "agents": [
+      {
+        "agent_id": "source_finder",
+        "agent_name": "Discovery supervisor",
+        "started_at": "2026-04-01T11:32:53+00:00",
+        "completed_at": "2026-04-01T11:32:53+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/source_index.json"
+        ],
+        "metrics": {
+          "source_count": 3
+        },
+        "note": ""
+      },
+      {
+        "agent_id": "source_expander",
+        "agent_name": "Source expansion agent",
+        "started_at": "2026-04-01T11:32:53+00:00",
+        "completed_at": "2026-04-01T11:32:58+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/source_index.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/source_documents.json"
+        ],
+        "metrics": {
+          "source_count": 28,
+          "fetched_documents": 3
+        },
+        "note": ""
+      },
+      {
+        "agent_id": "evidence_normalizer",
+        "agent_name": "Evidence normalization agent",
+        "started_at": "2026-04-01T11:32:58+00:00",
+        "completed_at": "2026-04-01T11:32:58+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/raw_evidence.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/citation_graph.json"
+        ],
+        "metrics": {
+          "evidence_count": 31,
+          "claim_count": 31
+        },
+        "note": ""
+      },
+      {
+        "agent_id": "timeline_builder",
+        "agent_name": "Timeline builder agent",
+        "started_at": "2026-04-01T11:32:58+00:00",
+        "completed_at": "2026-04-01T11:32:58+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/timeline.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/attacker_profile.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/pattern_hypotheses.json"
+        ],
+        "metrics": {
+          "timeline_steps": 3,
+          "hypothesis_count": 1
+        },
+        "note": ""
+      },
+      {
+        "agent_id": "dossier_assembler",
+        "agent_name": "Dossier composer agent",
+        "started_at": "2026-04-01T11:32:58+00:00",
+        "completed_at": "2026-04-01T11:32:58+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/quality_report.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/augmented_incident.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/dashboard_view.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/report_inputs.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/incident_library_entry.json"
+        ],
+        "metrics": {
+          "completeness_score": 0.71
+        },
+        "note": ""
+      },
+      {
+        "agent_id": "quality_judge",
+        "agent_name": "QA judge agent",
+        "started_at": "2026-04-01T11:32:58+00:00",
+        "completed_at": "2026-04-01T11:32:58+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/caterpiller-coin-bsc-2024-09-10/quality_report.json"
+        ],
+        "metrics": {
+          "missing_field_count": 2
+        },
+        "note": "This run is strong enough for demo browsing, but still needs more direct technical evidence before it should be treated as a full analyst-grade dossier."
+      }
+    ]
+  },
+  "report_inputs": {
+    "incident_id": "caterpiller-coin-bsc-2024-09-10",
+    "headline": "Caterpiller Coin",
+    "executive_summary": "Test a case with report + PoC + third-party analysis.",
+    "timeline_summary": "Caterpiller Coin is dated 2024-09-10. Test a case with report + PoC + third-party analysis. The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+    "attacker_behavior_summary": "The dossier has 0 direct attacker address candidate(s) and 8 additional address mentions from fetched sources.",
+    "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+        "source_type": "report",
+        "depth": 0
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol",
+        "source_type": "poc",
+        "depth": 0
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://www.certik.com/zh-CN/resources/blog/caterpillar-coin-cut-token-incident-analysis",
+        "source_type": "report",
+        "depth": 0
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main",
+        "source_type": "poc",
+        "depth": 1
+      },
+      {
+        "source_id": "src-005",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src",
+        "source_type": "poc",
+        "depth": 1
+      },
+      {
+        "source_id": "src-006",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src/test",
+        "source_type": "poc",
+        "depth": 1
+      },
+      {
+        "source_id": "src-007",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main/src/test/2024-09",
+        "source_type": "poc",
+        "depth": 1
+      },
+      {
+        "source_id": "src-008",
+        "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol",
+        "source_type": "poc",
+        "depth": 1
+      },
+      {
+        "source_id": "src-009",
+        "url": "https://www.certik.com/zh-CN",
+        "source_type": "report",
+        "depth": 1
+      },
+      {
+        "source_id": "src-010",
+        "url": "https://www.certik.com/zh-CN/blog",
+        "source_type": "report",
+        "depth": 1
+      },
+      {
+        "source_id": "src-011",
+        "url": "https://www.certik.com/zh-CN/blog/reports",
+        "source_type": "report",
+        "depth": 1
+      },
+      {
+        "source_id": "src-012",
+        "url": "https://www.certik.com/blog/reports",
+        "source_type": "report",
+        "depth": 1
+      },
+      {
+        "source_id": "src-013",
+        "url": "https://www.certik.com/blog/reports?tab=incident-analysis",
+        "source_type": "report",
+        "depth": 1
+      },
+      {
+        "source_id": "src-014",
+        "url": "https://x.com/CUT2024CUT",
+        "source_type": "social",
+        "depth": 1
+      },
+      {
+        "source_id": "src-015",
+        "url": "https://bscscan.com/tx/0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-016",
+        "url": "https://bscscan.com/tx/0xce6e474dc9555ef971473fee19f87716f38ba01a0df39e78207b71eda134c420",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-017",
+        "url": "https://bscscan.com/tx/0x6262c0f15c88aed6f646ed1996eb6aae9ccc5d5704d5faccd1e1397dd047bc8a",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-018",
+        "url": "https://x.com/CertiKAlert",
+        "source_type": "social",
+        "depth": 1
+      },
+      {
+        "source_id": "src-019",
+        "url": "https://www.certik.com/resources/blog",
+        "source_type": "report",
+        "depth": 1
+      },
+      {
+        "source_id": "src-020",
+        "url": "https://www.certik.com/blog/resolv-protocol-incident-analysis",
+        "source_type": "report",
+        "depth": 1
+      },
+      {
+        "source_id": "src-021",
+        "url": "https://www.certik.com/blog/movie-token-incident-analysis",
+        "source_type": "report",
+        "depth": 1
+      },
+      {
+        "source_id": "src-022",
+        "url": "https://www.certik.com/blog/sof-laxo-incident-analysis",
+        "source_type": "report",
+        "depth": 1
+      },
+      {
+        "source_id": "src-023",
+        "url": "https://www.certik.com/zh-CN/products/smart-contract-audit",
+        "source_type": "report",
+        "depth": 1
+      },
+      {
+        "source_id": "src-024",
+        "url": "https://www.certik.com/zh-CN/products/proof-of-reserves-audit",
+        "source_type": "report",
+        "depth": 1
+      },
+      {
+        "source_id": "src-025",
+        "url": "https://www.certik.com/zh-CN/products/skynet",
+        "source_type": "report",
+        "depth": 1
+      },
+      {
+        "source_id": "src-026",
+        "url": "https://www.certik.com/zh-CN/products/skynet-score",
+        "source_type": "report",
+        "depth": 1
+      },
+      {
+        "source_id": "src-027",
+        "url": "https://www.certik.com/zh-CN/products/kyc",
+        "source_type": "report",
+        "depth": 1
+      },
+      {
+        "source_id": "src-028",
+        "url": "https://www.certik.com/zh-CN/products/pentest",
+        "source_type": "report",
+        "depth": 1
+      }
+    ],
+    "open_questions": [
+      "Which specific pricing path was abused?",
+      "Is there a direct explorer or postmortem source that confirms the same mechanism?"
+    ]
+  },
+  "analyst_report": {
+    "incident_id": "caterpiller-coin-bsc-2024-09-10",
+    "report_type": "analyst_report",
+    "case_overview": {
+      "headline": "Caterpiller Coin",
+      "what_happened": "Test a case with report + PoC + third-party analysis.",
+      "why_it_matters": "This run is strong enough for demo browsing, but still needs more direct technical evidence before it should be treated as a full analyst-grade dossier.",
+      "primary_sources": [
+        {
+          "source_id": "src-001",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+          "source_type": "report",
+          "depth": 0,
+          "discovered_from": "incident_seed",
+          "fetch_status": "fetched",
+          "note": "Primary source collected for the public case file."
+        },
+        {
+          "source_id": "src-002",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol",
+          "source_type": "poc",
+          "depth": 0,
+          "discovered_from": "incident_seed",
+          "fetch_status": "fetched",
+          "note": "Primary source collected for the public case file."
+        },
+        {
+          "source_id": "src-003",
+          "url": "https://www.certik.com/zh-CN/resources/blog/caterpillar-coin-cut-token-incident-analysis",
+          "source_type": "report",
+          "depth": 0,
+          "discovered_from": "incident_seed",
+          "fetch_status": "fetched",
+          "note": "Primary source collected for the public case file."
+        },
+        {
+          "source_id": "src-008",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol",
+          "source_type": "poc",
+          "depth": 1,
+          "discovered_from": "src-002",
+          "fetch_status": "discovered",
+          "note": "Primary source collected for the public case file."
+        }
+      ]
+    },
+    "attacker_profile": {
+      "summary": "The dossier has 0 direct attacker address candidate(s) and 8 additional address mentions from fetched sources.",
+      "attacker_addresses": [
+        "0x5766d1F03378f50c7c981c014Ed5e5A8124f38A4",
+        "0x87EFb39a716860eCd2324A944Cb40EC5128e56Dd",
+        "0xD9ad954Bea4ad65578904CEFE6Ee2A6EB13879dB",
+        "0x7057f3b0f4d0649b428f0d8378a8a0e7d21d36a7"
+      ],
+      "behavior_signals": [
+        "Leans on addresses confirmed by direct seed fields first.",
+        "Uses source-text mentions as weaker supporting clues rather than direct proof."
+      ]
+    },
+    "fund_flow": {
+      "summary": "The current public view only has a lightweight on-chain summary. A deeper fund-flow pass is still needed.",
+      "key_transactions": [
+        "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+        "0xce6e474dc9555ef971473fee19f87716f38ba01a0df39e78207b71eda134c420",
+        "0x6262c0f15c88aed6f646ed1996eb6aae9ccc5d5704d5faccd1e1397dd047bc8a",
+        "0x0000000000000000000000000000000000000000000000000000000000000001"
+      ],
+      "key_addresses": [
+        "0x5766d1F03378f50c7c981c014Ed5e5A8124f38A4",
+        "0x87EFb39a716860eCd2324A944Cb40EC5128e56Dd",
+        "0xD9ad954Bea4ad65578904CEFE6Ee2A6EB13879dB",
+        "0x7057f3b0f4d0649b428f0d8378a8a0e7d21d36a7"
+      ],
+      "path": []
+    },
+    "exploit_path": {
+      "summary": "Test a case with report + PoC + third-party analysis.",
+      "steps": [
+        {
+          "title": "Incident enters the corpus",
+          "detail": "Caterpiller Coin is dated 2024-09-10.",
+          "evidence_refs": [],
+          "tx_hashes": []
+        },
+        {
+          "title": "Impact summary collected",
+          "detail": "Test a case with report + PoC + third-party analysis.",
+          "evidence_refs": [],
+          "tx_hashes": []
+        },
+        {
+          "title": "Source expansion completed",
+          "detail": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+          "evidence_refs": [],
+          "tx_hashes": []
+        }
+      ]
+    },
+    "evidence_chain": {
+      "summary": "The current case file keeps 24 public sources across 4 source types.",
+      "claims": [
+        {
+          "claim_id": "claim-overview",
+          "title": "Current public summary",
+          "statement": "Test a case with report + PoC + third-party analysis.",
+          "confidence": 0.58,
+          "support": [
+            {
+              "source_id": "src-001",
+              "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+              "source_type": "report",
+              "depth": 0,
+              "discovered_from": "incident_seed",
+              "fetch_status": "fetched",
+              "note": "Supports the current public-facing summary."
+            },
+            {
+              "source_id": "src-002",
+              "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol",
+              "source_type": "poc",
+              "depth": 0,
+              "discovered_from": "incident_seed",
+              "fetch_status": "fetched",
+              "note": "Supports the current public-facing summary."
+            },
+            {
+              "source_id": "src-003",
+              "url": "https://www.certik.com/zh-CN/resources/blog/caterpillar-coin-cut-token-incident-analysis",
+              "source_type": "report",
+              "depth": 0,
+              "discovered_from": "incident_seed",
+              "fetch_status": "fetched",
+              "note": "Supports the current public-facing summary."
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "src-001",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+          "source_type": "report",
+          "discovered_from": "incident_seed",
+          "depth": 0,
+          "priority": 99,
+          "fetch_status": "fetched"
+        },
+        {
+          "source_id": "src-002",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol",
+          "source_type": "poc",
+          "discovered_from": "incident_seed",
+          "depth": 0,
+          "priority": 98,
+          "fetch_status": "fetched"
+        },
+        {
+          "source_id": "src-003",
+          "url": "https://www.certik.com/zh-CN/resources/blog/caterpillar-coin-cut-token-incident-analysis",
+          "source_type": "report",
+          "discovered_from": "incident_seed",
+          "depth": 0,
+          "priority": 97,
+          "fetch_status": "fetched"
+        },
+        {
+          "source_id": "src-008",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol",
+          "source_type": "poc",
+          "discovered_from": "src-002",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-009",
+          "url": "https://www.certik.com/zh-CN",
+          "source_type": "report",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-010",
+          "url": "https://www.certik.com/zh-CN/blog",
+          "source_type": "report",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-011",
+          "url": "https://www.certik.com/zh-CN/blog/reports",
+          "source_type": "report",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-012",
+          "url": "https://www.certik.com/blog/reports",
+          "source_type": "report",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-013",
+          "url": "https://www.certik.com/blog/reports?tab=incident-analysis",
+          "source_type": "report",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-014",
+          "url": "https://x.com/CUT2024CUT",
+          "source_type": "social",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-015",
+          "url": "https://bscscan.com/tx/0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-016",
+          "url": "https://bscscan.com/tx/0xce6e474dc9555ef971473fee19f87716f38ba01a0df39e78207b71eda134c420",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-017",
+          "url": "https://bscscan.com/tx/0x6262c0f15c88aed6f646ed1996eb6aae9ccc5d5704d5faccd1e1397dd047bc8a",
+          "source_type": "explorer",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-018",
+          "url": "https://x.com/CertiKAlert",
+          "source_type": "social",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-019",
+          "url": "https://www.certik.com/resources/blog",
+          "source_type": "report",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-020",
+          "url": "https://www.certik.com/blog/resolv-protocol-incident-analysis",
+          "source_type": "report",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-021",
+          "url": "https://www.certik.com/blog/movie-token-incident-analysis",
+          "source_type": "report",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-022",
+          "url": "https://www.certik.com/blog/sof-laxo-incident-analysis",
+          "source_type": "report",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-023",
+          "url": "https://www.certik.com/zh-CN/products/smart-contract-audit",
+          "source_type": "report",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-024",
+          "url": "https://www.certik.com/zh-CN/products/proof-of-reserves-audit",
+          "source_type": "report",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-025",
+          "url": "https://www.certik.com/zh-CN/products/skynet",
+          "source_type": "report",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-026",
+          "url": "https://www.certik.com/zh-CN/products/skynet-score",
+          "source_type": "report",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-027",
+          "url": "https://www.certik.com/zh-CN/products/kyc",
+          "source_type": "report",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-028",
+          "url": "https://www.certik.com/zh-CN/products/pentest",
+          "source_type": "report",
+          "discovered_from": "src-003",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        }
+      ]
+    },
+    "open_questions": [
+      "attack_contract_urls",
+      "victim_contract_urls"
+    ]
+  }
+}

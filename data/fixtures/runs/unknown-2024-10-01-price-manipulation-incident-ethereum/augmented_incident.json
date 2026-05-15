@@ -1,0 +1,386 @@
+{
+  "incident_id": "unknown-2024-10-01-price-manipulation-incident-ethereum",
+  "title": "Unknown 2024-10-01 price-manipulation incident",
+  "incident_date": "",
+  "chain": "Ethereum",
+  "protocol_name": "Unknown",
+  "status": "demo_live_dossier",
+  "summary": "An estimated loss of 8",
+  "seed_overview": {
+    "seed_type": "tx_hash",
+    "trigger_type": "batch",
+    "source_names": [],
+    "attack_type_raws": []
+  },
+  "key_addresses": [
+    "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+    "0xd20b3b31a682322eb0698ecd67a6d8a040ccea65",
+    "0x81F48A87Ec44208c691f870b9d400D9c13111e2E",
+    "0x9776C0ABE8aE3C9Ca958875128F1ae1D5afafCb8",
+    "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f"
+  ],
+  "key_contracts": [],
+  "key_transactions": [
+    "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+    "0x258365061e99d3909f89a745c6d595ec2b5b25f778d5231204bd4396c7b54b70",
+    "0xa9a56fe2c47e87480d3dc0c7d5ce8c3c2cac86a23fb3998c8c2e11d34565d684",
+    "0x3b72bc7b92362ef29d6b9a9175071734b8c884026ce63be1263135ce8202c3b1"
+  ],
+  "timeline": [
+    {
+      "step_number": 1,
+      "description": "Attacker address 0x9776C0ABE8aE3C9Ca958875128F1ae1D5afafCb8 prepared for the attack, likely acquiring initial capital and setting up any necessary contracts for the price manipulation scheme.",
+      "evidence_refs": [
+        "ev-004",
+        "ev-011",
+        "ev-019"
+      ],
+      "confidence": 0.85,
+      "summary": ""
+    },
+    {
+      "step_number": 2,
+      "description": "Attacker executed a price manipulation attack via transaction 0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b, interacting with multiple contracts including 0x81F48A87Ec44208c691f870b9d400D9c13111e2E, 0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f, 0x32fd502975d5b74686e34df01aa8b8b28e213aad, 0x805e18b0325eab315d61bd92ae152247af0ea609, 0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a, and 0xe5677443d2b7239ada673cc26398ebbd4894a25c to manipulate asset prices within the target protocol.",
+      "evidence_refs": [
+        "ev-003",
+        "ev-010",
+        "ev-012",
+        "ev-013",
+        "ev-014",
+        "ev-015",
+        "ev-016"
+      ],
+      "confidence": 0.9,
+      "summary": ""
+    },
+    {
+      "step_number": 3,
+      "description": "Attacker exploited the manipulated prices to extract funds from the protocol, resulting in an estimated loss of approximately 8 units (currency or token denomination unspecified in available evidence).",
+      "evidence_refs": [
+        "ev-005"
+      ],
+      "confidence": 0.65,
+      "summary": ""
+    }
+  ],
+  "attacker_profile": {
+    "incident_id": "unknown-2024-10-01-price-manipulation-incident-ethereum",
+    "profile_id": "profile-unknown-2024-10-01-price-manipulation-incident-ethereum",
+    "primary_addresses": [
+      "0x026a5b6114431d8f3ef2fa0e1b2edddcca9c540e",
+      "0x08669c836f41aead03e3ef81a59f3b8e72ec417a",
+      "0x173c6ae0e2263a1a2a466d23f9bd16eaa2ead154",
+      "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+      "0x18e439be184e9b4a5d92f44722e72087e4133fcf",
+      "0x2e7576042566f8d6990e07a1b61ad1efd86ae70d",
+      "0x32fd502975d5b74686e34df01aa8b8b28e213aad",
+      "0x37b8bb5b520f4a6ae8ce2f6d447dfc9a8f650979",
+      "0x3c6b93d38ffa15ea995d1bc950d5d0fa6b22bd05",
+      "0x5882a6bef7cab6b99019b565060da081e157d454",
+      "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+      "0x5ae329203e00f76891094dcfedd5aca082a50e1b",
+      "0x6175ddec3b9b38c88157c10a01ed4a3fa8639cc6",
+      "0x6fd32465a23aa0dbae0d813b7157d8cb2b08dae4",
+      "0x79a617dedf7a21625ec03fca9ff8482ac11ef100",
+      "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "0x805e18b0325eab315d61bd92ae152247af0ea609",
+      "0x81f48a87ec44208c691f870b9d400d9c13111e2e",
+      "0x86c71796ccdb31c3997f8ec5c2e3db3e9e40b985",
+      "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+      "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+      "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1",
+      "0xabc99f366d2be1f4e5b8dfc0f561a751dd836246",
+      "0xc0110ee63cac2196fcc76359fe8a03f20eb36391",
+      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "0xc13e21b648a5ee794902342038ff3adab66be987",
+      "0xc215faf64374b7f884af55791b810496c4bab405",
+      "0xcc27779013a1cca68d3d93c640aac807891fd029",
+      "0xcc3037f5aef5831730a9acb1739d0562117314c0",
+      "0xd107ef93ba6f3139dd81cd4588c3b9ee84e122ee",
+      "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+      "0xe26cf8d891d9f033b47011acfb1f52fd324b2b14",
+      "0xe2e02e8a7952050523635628c1e7b46f0065f96d",
+      "0xe5677443d2b7239ada673cc26398ebbd4894a25c"
+    ],
+    "related_addresses": [
+      "0xd20b3b31a682322eb0698ecd67a6d8a040ccea65",
+      "0x81F48A87Ec44208c691f870b9d400D9c13111e2E",
+      "0x9776C0ABE8aE3C9Ca958875128F1ae1D5afafCb8",
+      "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+      "0x32fd502975d5b74686e34df01aa8b8b28e213aad",
+      "0x805e18b0325eab315d61bd92ae152247af0ea609",
+      "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+      "0xe5677443d2b7239ada673cc26398ebbd4894a25c",
+      "0x258365061e99d3909f89a745c6d595ec2b5b25f7",
+      "0xa9a56fe2c47e87480d3dc0c7d5ce8c3c2cac86a2"
+    ],
+    "recent_activity_summary": "The dossier has 1 direct attacker address candidate(s) and 160 additional address mentions from fetched sources.",
+    "counterparties": [],
+    "repeated_behaviors": [
+      "Leans on addresses confirmed by direct seed fields first.",
+      "Uses source-text mentions as weaker supporting clues rather than direct proof."
+    ],
+    "open_questions": [
+      "Which address funded the exploit wallet before the attack?",
+      "Which transfers right after the exploit are still missing from the dossier?"
+    ]
+  },
+  "pattern_hypotheses": [
+    {
+      "hypothesis_id": "hyp-001",
+      "label": "price_manipulation",
+      "summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+      "why_suspected": [
+        "Attack-type tags mention price manipulation.",
+        "The supporting sources resemble prior price-manipulation writeups."
+      ],
+      "confidence": 0.76,
+      "open_questions": [
+        "Which specific pricing path was abused?",
+        "Is there a direct explorer or postmortem source that confirms the same mechanism?"
+      ]
+    }
+  ],
+  "source_summary": {
+    "source_count": 44,
+    "source_types": {
+      "report": 1,
+      "poc": 1,
+      "explorer": 42
+    },
+    "direct_source_count": 4,
+    "secondary_source_count": 40,
+    "fetched_source_count": 35
+  },
+  "quality_report": {
+    "incident_id": "unknown-2024-10-01-price-manipulation-incident-ethereum",
+    "completeness_score": 0.28,
+    "direct_source_count": 4,
+    "secondary_source_count": 40,
+    "fetched_source_count": 35,
+    "citation_coverage_count": 313,
+    "missing_fields": [
+      "protocol_name",
+      "loss_denomination",
+      "attack_contract_urls",
+      "victim_contract_urls",
+      "social_sources",
+      "fund_destination_analysis",
+      "root_cause_details",
+      "post_mortem_references"
+    ],
+    "judge_summary": "This incident dossier is critically incomplete and unsuitable for presentation. The protocol remains unidentified, the loss figure of '8' lacks any denomination, and there is no technical analysis explaining the price manipulation mechanism. While the attacker address (0x9776C0ABE8aE3C9Ca958875128F1ae1D5afafCb8) and attack transaction (0xd20b3b31...) are verified on Etherscan, the dossier fails to establish what protocol was attacked, how much was truly lost, or the specific vulnerability exploited. The evidence collection includes significant noise from Sepolia testnet transactions that are irrelevant to the mainnet incident. Substantial additional investigation is required before this can be considered a complete incident report.",
+    "evidence_supports_timeline": 0.55,
+    "confidence_assessment": {
+      "overall_confidence": 0.45,
+      "attacker_attribution": 0.85,
+      "loss_quantification": 0.25,
+      "attack_mechanism": 0.4,
+      "protocol_identification": 0.05,
+      "notes": "The attacker address and transaction are verified on-chain with reasonable confidence. However, the loss figure of '8' lacks any denomination making it nearly meaningless. The protocol remains unidentified, and the price manipulation classification appears to be based solely on the incident name rather than technical evidence. No fund flow analysis or technical breakdown of the manipulation mechanism is provided."
+    },
+    "gaps": [
+      "Critical gap: Protocol name is 'Unknown' - cannot determine what was attacked",
+      "Critical gap: Loss figure '8' has no currency/token denomination - could be 8 wei, 8 ETH, 8 USD, or 8 tokens",
+      "No victim contract addresses identified despite listing 6+ interacting addresses",
+      "No analysis of the actual price manipulation technique (oracle exploit, flash loan, reserve manipulation)",
+      "No post-attack fund tracing to determine where stolen assets were sent",
+      "No social media confirmation, protocol announcements, or news coverage cited",
+      "No block number or timestamp for precise temporal analysis",
+      "Sepolia testnet evidence (ev-023 to ev-030) appears to be noise from scraping without proper filtering"
+    ],
+    "demo_ready": false,
+    "recommendations": [
+      "Trace the attack transaction on Etherscan to identify the protocol by analyzing the called contracts and their labels",
+      "Analyze the transaction trace to determine actual token transfers and quantify the precise loss with denomination",
+      "Search for protocol social media announcements or post-mortems around October 1, 2024 referencing the attacker address or transaction",
+      "Investigate the 6+ contract addresses interacted with during the attack to identify which is the victim protocol",
+      "Trace fund flows from the attacker address to identify destination wallets and potential exchange deposits",
+      "Conduct technical analysis of the transaction calldata to determine the specific price manipulation technique used",
+      "Filter out irrelevant testnet evidence to clean up the evidence list",
+      "Cross-reference with DeFi hack databases (Rekt News, SlowMist, etc.) for potential matches"
+    ]
+  },
+  "generated_at": "2026-04-27T12:49:41+00:00",
+  "technical_analysis": {
+    "status": "completed",
+    "primary_tx_hash": "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+    "tx_hashes": [
+      "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b"
+    ],
+    "exploit_mechanism": "",
+    "validation_verdict": "Deterministic and semantic checks passed."
+  },
+  "narrative": {
+    "executive_summary": "On October 1, 2024, a price manipulation attack was executed on an unidentified protocol operating on the Ethereum mainnet. The attacker, using address 0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8, exploited price feed vulnerabilities via transaction 0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b, resulting in an estimated loss of approximately 8 (denomination not confirmed from available evidence). The specific protocol targeted remains unidentified at this time.",
+    "attack_narrative": "The incident began on October 1, 2024, when an attacker operating from address 0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8 executed a price manipulation attack on Ethereum mainnet. The primary attack transaction (0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b) involved multiple address interactions, including 0x81F48A87Ec44208c691f870b9d400D9c13111e2E, 0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f, and 0x32fd502975d5b74686e34df01aa8b8b28e213aad. Based on the incident classification, the attacker likely manipulated oracle price feeds or exploited insufficient price validation mechanisms to extract value from the protocol. The attack succeeded in draining approximately 8 units of value, though the exact asset type and protocol specifics remain under investigation. Multiple intermediary addresses were used in the attack flow, suggesting a coordinated and premeditated exploitation strategy.",
+    "attacker_motive": "The attacker's primary motive was financial profit extraction through exploitation of price manipulation vulnerabilities. By manipulating on-chain price data or exploiting weak oracle implementations, the attacker was able to extract value estimated at approximately 8 units from the targeted protocol. The use of multiple addresses in the attack flow indicates deliberate effort to obscure fund flows and complicate tracing, consistent with profit-motivated threat actors in the DeFi ecosystem.",
+    "key_takeaway": "This incident underscores the persistent risk of price manipulation attacks in DeFi protocols that rely on manipulable price feeds or insufficiently protected oracle implementations. Protocols should implement robust price validation mechanisms, including Time-Weighted Average Price (TWAP) oracles, multiple independent price feed sources, and circuit breakers that detect and halt anomalous price movements. Regular security audits specifically focused on oracle integration and price feed manipulation scenarios are essential for protecting user funds from this class of vulnerability."
+  },
+  "qa_retry_triggered": true,
+  "qa_retry_critique": "First-pass completeness score: 2.50 (threshold: 0.7). Missing/weak dimensions: protocol_name, loss_amount_with_unit, attack_mechanics_detail, root_cause_analysis, fund_flow_tracing, narrative_section, attack_contract_urls, victim_contract_urls, social_sources, incident_date_confirmation, vulnerability_type. Quality assessor notes: This dossier is critically incomplete and unsuitable for presentation. The protocol is unknown, the loss amount is stated as '8' without a unit making it effectively meaningless, and no attack mechanics can be determined. The timeline consists of only 3 high-level steps with no technical detail. The narrative section is entirely empty. Evidence quality is poor - many items are inferred with low confidence, and several reference Sepolia testnet which appears unrelated to the Ethereum mainnet incident. Without knowing which protocol was attacked, the incident cannot be properly contextualized or verified. Significant on-chain forensic work would be required to identify the protocol, determine actual losses, and reconstruct the attack methodology. Identified gaps: Protocol identity unknown - critical for any meaningful incident report; Loss amount '8' meaningless without unit (USD, ETH, tokens?); No explanation of price manipulation technique (flash loan, oracle manipulation, etc.); Empty narrative section prevents understanding attack flow; No fund flow analysis showing where stolen assets went; Multiple addresses interacted with but their roles unexplained (DEX, lending pool, etc.); Sepolia testnet evidence items appear irrelevant to mainnet incident; No post-incident response or mitigation information; No social media corroboration from security researchers or protocol team. Recommendations: 1. Perform on-chain analysis of the 7 contract addresses in the attack transaction to identify the targeted protocol; 2. Trace token transfers in transaction 0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b to determine actual loss amount and denomination; 3. Analyze transaction calldata and event logs to identify the specific price manipulation technique used; 4. Remove Sepolia testnet evidence items (ev-022 through ev-030) as they appear unrelated; 5. Search social media (Twitter/X) for the attacker address and transaction hash to find security researcher analysis; 6. Construct a detailed narrative explaining the attack vector step-by-step; 7. Identify and label each contract address role (DEX router, lending pool, oracle, etc.); 8. Trace post-attack fund flows to determine if funds were laundered through mixers or exchanges.",
+  "pipeline_trace": {
+    "revision_triggered": false,
+    "revision_critique": null,
+    "qa_retry_triggered": true,
+    "qa_retry_critique": "First-pass completeness score: 2.50 (threshold: 0.7). Missing/weak dimensions: protocol_name, loss_amount_with_unit, attack_mechanics_detail, root_cause_analysis, fund_flow_tracing, narrative_section, attack_contract_urls, victim_contract_urls, social_sources, incident_date_confirmation, vulnerability_type. Quality assessor notes: This dossier is critically incomplete and unsuitable for presentation. The protocol is unknown, the loss amount is stated as '8' without a unit making it effectively meaningless, and no attack mechanics can be determined. The timeline consists of only 3 high-level steps with no technical detail. The narrative section is entirely empty. Evidence quality is poor - many items are inferred with low confidence, and several reference Sepolia testnet which appears unrelated to the Ethereum mainnet incident. Without knowing which protocol was attacked, the incident cannot be properly contextualized or verified. Significant on-chain forensic work would be required to identify the protocol, determine actual losses, and reconstruct the attack methodology. Identified gaps: Protocol identity unknown - critical for any meaningful incident report; Loss amount '8' meaningless without unit (USD, ETH, tokens?); No explanation of price manipulation technique (flash loan, oracle manipulation, etc.); Empty narrative section prevents understanding attack flow; No fund flow analysis showing where stolen assets went; Multiple addresses interacted with but their roles unexplained (DEX, lending pool, etc.); Sepolia testnet evidence items appear irrelevant to mainnet incident; No post-incident response or mitigation information; No social media corroboration from security researchers or protocol team. Recommendations: 1. Perform on-chain analysis of the 7 contract addresses in the attack transaction to identify the targeted protocol; 2. Trace token transfers in transaction 0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b to determine actual loss amount and denomination; 3. Analyze transaction calldata and event logs to identify the specific price manipulation technique used; 4. Remove Sepolia testnet evidence items (ev-022 through ev-030) as they appear unrelated; 5. Search social media (Twitter/X) for the attacker address and transaction hash to find security researcher analysis; 6. Construct a detailed narrative explaining the attack vector step-by-step; 7. Identify and label each contract address role (DEX router, lending pool, oracle, etc.); 8. Trace post-attack fund flows to determine if funds were laundered through mixers or exchanges.",
+    "records": [
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:45:21.383Z",
+        "duration_ms": 3089,
+        "input_summary": "44 source docs; 313 heuristic items",
+        "output_summary": "313 total items (+0 LLM-extracted)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "collector",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:45:24.476Z",
+        "duration_ms": 1057,
+        "input_summary": "1 tx(s): 0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+        "output_summary": "1 artifact bundle(s) collected; statuses: completed",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "planner",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:45:25.533Z",
+        "duration_ms": 7,
+        "input_summary": "1 transactions on Ethereum",
+        "output_summary": "9 role categories; 17 priority contracts",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "contract_intelligence",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:45:25.540Z",
+        "duration_ms": 870,
+        "input_summary": "17 priority contracts",
+        "output_summary": "16 contracts in inventory",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "technical_reasoner",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:45:26.411Z",
+        "duration_ms": 66622,
+        "input_summary": "1 txs, 16 contracts",
+        "output_summary": "0 timeline steps; mechanism: ",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "semantic_validator",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:46:33.031Z",
+        "duration_ms": 1,
+        "input_summary": "revision_round=0",
+        "output_summary": "severity=pass; needs_revision=False; verdict: Deterministic and semantic checks passed.",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:46:33.036Z",
+        "duration_ms": 26245,
+        "input_summary": "313 evidence items",
+        "output_summary": "executive_summary len=0",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:46:33.036Z",
+        "duration_ms": 26245,
+        "input_summary": "313 evidence items",
+        "output_summary": "3 timeline steps",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:46:59.285Z",
+        "duration_ms": 48962,
+        "input_summary": "3 timeline steps; 0 narrative keys",
+        "output_summary": "completeness_score=2.5; judge_summary: This dossier is critically incomplete and unsuitable for presentation. The proto",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:47:48.246Z",
+        "duration_ms": 36367,
+        "input_summary": "RETRY: 44 docs; critique injected",
+        "output_summary": "319 items after retry extraction",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:48:24.612Z",
+        "duration_ms": 29869,
+        "input_summary": "RETRY: 319 evidence items",
+        "output_summary": "executive_summary len=486 (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:48:24.612Z",
+        "duration_ms": 29869,
+        "input_summary": "RETRY: 319 evidence items",
+        "output_summary": "3 timeline steps (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:48:54.480Z",
+        "duration_ms": 47256,
+        "input_summary": "RETRY: 3 steps; 4 narrative keys",
+        "output_summary": "v2 completeness_score=28",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      }
+    ]
+  }
+}

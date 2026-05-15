@@ -1,0 +1,45 @@
+{
+  "job_id": "unknown-ethereum-2024-09-26-batch",
+  "incident_id": "unknown-2024-09-26-price-manipulation-incident-ethereum",
+  "trigger_type": "batch",
+  "current_stage": "dashboard_projection",
+  "node_status": {
+    "seed_loader": "completed",
+    "source_finder": "completed",
+    "source_expander": "completed",
+    "llm_evidence_extractor": "completed",
+    "evidence_normalizer": "completed",
+    "technical_deterministic_collection": "completed",
+    "technical_reasoning": "completed",
+    "technical_validation": "completed",
+    "llm_timeline_synthesizer": "completed",
+    "llm_narrative_writer": "completed",
+    "llm_quality_assessor": "completed",
+    "dossier_assembler": "completed",
+    "quality_judge": "completed",
+    "dashboard_projection": "completed"
+  },
+  "retry_counts": {},
+  "started_at": "2026-04-27T12:40:15+00:00",
+  "updated_at": "2026-04-27T12:46:36+00:00",
+  "completed_at": "2026-04-27T12:46:36+00:00",
+  "run_notes": [
+    "Loaded and normalized incident seed.",
+    "Built direct source candidates from seed facts.",
+    "Fetched direct sources and discovered second-hop links.",
+    "LLM extracted 0 extra items.",
+    "Turned fetched sources into citation-backed evidence.",
+    "Assembled dossier, quality report, and library entry.",
+    "The dossier presents a partially documented incident with significant gaps. While the attack transaction and attacker address are well-attested, the protocol identity remains uncertain despite POC evidence suggesting Bedrock DeFi. The reported loss of ~1 is problematic - either misrecorded, denominated in an unstated unit, or representing a failed/test exploit. Evidence quality is mixed with many inferred items at low confidence. Key missing elements include victim contracts, fund flow analysis, and technical exploitation details. The evidence supports the timeline sequence but the timeline itself is sparse and lacks granularity on the manipulation mechanics.",
+    "Projected live incident library and dossier views."
+  ],
+  "artifacts": {
+    "incident_seed": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/incident_seed.json",
+    "source_index": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/source_index.json",
+    "source_documents": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/source_documents.json",
+    "raw_evidence": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/raw_evidence.json",
+    "augmented_incident": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/augmented_incident.json",
+    "quality_report": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/quality_report.json",
+    "incident_library_entry": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/incident_library_entry.json"
+  }
+}

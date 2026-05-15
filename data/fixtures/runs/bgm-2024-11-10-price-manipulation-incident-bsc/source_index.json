@@ -1,0 +1,545 @@
+{
+  "incident_id": "bgm-2024-11-10-price-manipulation-incident-bsc",
+  "sources": [
+    {
+      "source_id": "src-001",
+      "url": "https://bscscan.com/tx/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+      "source_type": "explorer",
+      "discovered_from": "incident_seed",
+      "depth": 0,
+      "priority": 99,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-002",
+      "url": "https://x.com/ExternalExplorer_xyz/status/1855798237770170415",
+      "source_type": "social",
+      "discovered_from": "incident_seed",
+      "depth": 0,
+      "priority": 98,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-003",
+      "url": "https://quadrigainitiative.com/casestudy/bgmonbscbatchtransactionspricemanipulationexploit.php",
+      "source_type": "report",
+      "discovered_from": "incident_seed",
+      "depth": 0,
+      "priority": 97,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-004",
+      "url": "https://bscscan.com/address/0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+      "source_type": "explorer",
+      "discovered_from": "attacker_addresses",
+      "depth": 0,
+      "priority": 69,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-005",
+      "url": "https://bscscan.com/chart/bnbprice",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-006",
+      "url": "https://opbnb.bscscan.com",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-007",
+      "url": "https://testnet.bscscan.com",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-008",
+      "url": "https://opbnb-testnet.bscscan.com",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "http_error"
+    },
+    {
+      "source_id": "src-009",
+      "url": "https://bscscan.com/txs",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-010",
+      "url": "https://bscscan.com/txsPending",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-011",
+      "url": "https://bscscan.com/txsInternal",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-012",
+      "url": "https://bscscan.com/txsBlobs",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-013",
+      "url": "https://bscscan.com/txsAA",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-014",
+      "url": "https://bscscan.com/txnAuthList",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-015",
+      "url": "https://bscscan.com/blocks",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-016",
+      "url": "https://bscscan.com/blocks_forked",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-017",
+      "url": "https://bscscan.com/accounts",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-018",
+      "url": "https://bscscan.com/contractsVerified",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "http_error"
+    },
+    {
+      "source_id": "src-019",
+      "url": "https://bscscan.com/validators",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-020",
+      "url": "https://bscscan.com/validatorset",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-021",
+      "url": "https://bscscan.com/tokens",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-022",
+      "url": "https://bscscan.com/tokentxns",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-023",
+      "url": "https://bscscan.com/nft-top-contracts",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-024",
+      "url": "https://bscscan.com/nft-top-mints",
+      "source_type": "explorer",
+      "discovered_from": "src-001",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-025",
+      "url": "https://bscscan.com/nft-trades",
+      "source_type": "explorer",
+      "discovered_from": "src-005",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-026",
+      "url": "https://opbnb.bscscan.com/chart/price",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-027",
+      "url": "https://bscscan.com",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-028",
+      "url": "https://opbnb.bscscan.com/txs",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-029",
+      "url": "https://opbnb.bscscan.com/txsEnqueued",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-030",
+      "url": "https://opbnb.bscscan.com/txsExit",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-031",
+      "url": "https://opbnb.bscscan.com/txsInternal",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-032",
+      "url": "https://opbnb.bscscan.com/txsAA",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-033",
+      "url": "https://opbnb.bscscan.com/blocks",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-034",
+      "url": "https://opbnb.bscscan.com/batches",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-035",
+      "url": "https://opbnb.bscscan.com/statebatches",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-036",
+      "url": "https://opbnb.bscscan.com/accounts",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "network_error"
+    },
+    {
+      "source_id": "src-037",
+      "url": "https://opbnb.bscscan.com/contractsVerified",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "http_error"
+    },
+    {
+      "source_id": "src-038",
+      "url": "https://opbnb.bscscan.com/tokens",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-039",
+      "url": "https://opbnb.bscscan.com/tokentxns",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-040",
+      "url": "https://opbnb.bscscan.com/token/0x4200000000000000000000000000000000000006",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-041",
+      "url": "https://opbnb.bscscan.com/nft-transfers",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-042",
+      "url": "https://opbnb.bscscan.com/nft-latest-mints",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-043",
+      "url": "https://opbnb.bscscan.com/charts",
+      "source_type": "explorer",
+      "discovered_from": "src-006",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-044",
+      "url": "https://testnet.bscscan.com/txs",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-045",
+      "url": "https://testnet.bscscan.com/txsPending",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-046",
+      "url": "https://testnet.bscscan.com/txsInternal",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-047",
+      "url": "https://testnet.bscscan.com/txsBlobs",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-048",
+      "url": "https://testnet.bscscan.com/txsAA",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-049",
+      "url": "https://testnet.bscscan.com/txnAuthList",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-050",
+      "url": "https://testnet.bscscan.com/blocks",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "http_error"
+    },
+    {
+      "source_id": "src-051",
+      "url": "https://testnet.bscscan.com/blocks_forked",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "http_error"
+    },
+    {
+      "source_id": "src-052",
+      "url": "https://testnet.bscscan.com/accounts",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-053",
+      "url": "https://testnet.bscscan.com/contractsVerified",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "http_error"
+    },
+    {
+      "source_id": "src-054",
+      "url": "https://testnet.bscscan.com/validators",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-055",
+      "url": "https://testnet.bscscan.com/validatorset",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-056",
+      "url": "https://testnet.bscscan.com/tokentxns",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-057",
+      "url": "https://testnet.bscscan.com/nft-transfers",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-058",
+      "url": "https://testnet.bscscan.com/nft-latest-mints",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-059",
+      "url": "https://testnet.bscscan.com/unitconverter",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-060",
+      "url": "https://testnet.bscscan.com/base64converter",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    }
+  ]
+}

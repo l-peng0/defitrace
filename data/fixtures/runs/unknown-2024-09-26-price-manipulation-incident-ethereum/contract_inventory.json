@@ -1,0 +1,77 @@
+{
+  "incident_id": "unknown-2024-09-26-price-manipulation-incident-ethereum",
+  "chain": "Ethereum",
+  "generated_at": "2026-04-27T12:41:59+00:00",
+  "contracts": {
+    "0x1e1d02d663228e5d47f1de64030b39632a3b787d": {
+      "address": "0x1e1d02d663228e5d47f1de64030b39632a3b787d",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:41:58+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x0c8da4f8b823bee4d5dab73367d45b5135b50fab": {
+      "address": "0x0c8da4f8b823bee4d5dab73367d45b5135b50fab",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:41:58+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x4585fe77225b41b697c938b018e2ac67ac5a20c0": {
+      "address": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+      "role": "victim",
+      "classification": "verified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "admin_address": "",
+      "contract_name": "UniswapV3Pool",
+      "compiler_version": "v0.7.6+commit.7338295f",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/technical_analysis/contracts/0x4585fe77225b41b697c938b018e2ac67ac5a20c0/source.json",
+      "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/technical_analysis/contracts/0x4585fe77225b41b697c938b018e2ac67ac5a20c0/abi.json",
+      "fetched_at": "2026-04-27T12:41:58+00:00",
+      "fetch_errors": []
+    },
+    "0xe592427a0aece92de3edee1f18e0157c05861564": {
+      "address": "0xe592427a0aece92de3edee1f18e0157c05861564",
+      "role": "flash_loan_provider",
+      "classification": "verified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "admin_address": "",
+      "contract_name": "SwapRouter",
+      "compiler_version": "v0.7.6+commit.7338295f",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/technical_analysis/contracts/0xe592427a0aece92de3edee1f18e0157c05861564/source.json",
+      "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-26-price-manipulation-incident-ethereum/technical_analysis/contracts/0xe592427a0aece92de3edee1f18e0157c05861564/abi.json",
+      "fetched_at": "2026-04-27T12:41:59+00:00",
+      "fetch_errors": []
+    }
+  }
+}

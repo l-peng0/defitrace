@@ -1,0 +1,34 @@
+{
+  "incident_id": "unknown-2024-10-05-price-manipulation-incident-bsc",
+  "profile_id": "profile-unknown-2024-10-05-price-manipulation-incident-bsc",
+  "primary_addresses": [
+    "0x3026c464d3bd6ef0ced0d49e80f171b58176ce32",
+    "0x36696169c63e42cd08ce11f5deebbcebae652050",
+    "0x55d398326f99059ff775485246999027b3197955",
+    "0x8408497c18882bfb61be9204cfff530f4ee18320",
+    "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+    "0xbe779d420b7d573c08eee226b9958737b6218888"
+  ],
+  "related_addresses": [
+    "0x3026c464d3bd6ef0ced0d49e80f171b58176ce32",
+    "0x8408497c18882bfb61be9204cfff530f4ee18320",
+    "0xbe779d420b7d573c08eee226b9958737b6218888",
+    "0x5e694707337cca979d18f9e45f40e81d6ca341ed",
+    "0x36696169C63e42cd08ce11f5deeBbCeBae652050",
+    "0x55d398326f99059fF775485246999027B3197955",
+    "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    "0xBe779D420b7D573C08EEe226B9958737b6218888",
+    "0x3026C464d3Bd6Ef0CeD0D49e80f171b58176Ce32",
+    "0x8408497c18882bfB61be9204cffF530F4ee18320"
+  ],
+  "recent_activity_summary": "The dossier has 1 direct attacker address candidate(s) and 245 additional address mentions from fetched sources.",
+  "counterparties": [],
+  "repeated_behaviors": [
+    "Leans on addresses confirmed by direct seed fields first.",
+    "Uses source-text mentions as weaker supporting clues rather than direct proof."
+  ],
+  "open_questions": [
+    "Which address funded the exploit wallet before the attack?",
+    "Which transfers right after the exploit are still missing from the dossier?"
+  ]
+}

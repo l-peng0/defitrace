@@ -1,0 +1,12 @@
+{
+  "attack_flow_summary": "",
+  "exploit_mechanism": "",
+  "tx_role_map": {},
+  "contract_role_map": {},
+  "timeline_steps": [],
+  "funds_flow_path": [],
+  "open_questions": [],
+  "confidence_notes": [
+    "Attack pattern is consistent with classic flash loan price manipulation: Balancer flash loan \u2192 Uniswap Router swaps \u2192 victim UniswapV2Pair manipulation \u2192 token extraction. Two-contract deployment pattern suggests complex exploit logic. Victim is confirmed UniswapV2Pair contract (verified source). Exact loss currency and amount require transfer value analysis."
+  ]
+}

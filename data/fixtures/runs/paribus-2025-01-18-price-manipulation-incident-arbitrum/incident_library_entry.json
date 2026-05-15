@@ -1,0 +1,41 @@
+{
+  "incident_id": "paribus-2025-01-18-price-manipulation-incident-arbitrum",
+  "title": "Paribus 2025-01-18 price-manipulation incident",
+  "protocol_name": "Paribus",
+  "chain": "Arbitrum",
+  "incident_date": "",
+  "summary": "An estimated loss of about $86K was associated with a price-manipulation attack against Paribus on Arbitrum, with the initial attack path focusing on roughly $60K in ETH, USDT, and ARB",
+  "status": "demo_live_dossier",
+  "completeness_score": 0.78,
+  "source_count": 50,
+  "direct_source_count": 6,
+  "secondary_source_count": 44,
+  "social_count": 2,
+  "poc_count": 3,
+  "explorer_count": 43,
+  "report_count": 2,
+  "missing_fields": [
+    "attack_contract_urls",
+    "victim_contract_urls",
+    "precise_timestamp",
+    "flash_loan_source",
+    "fund_flow_post_attack",
+    "protocol_response"
+  ],
+  "last_updated": "2026-04-27T13:24:16+00:00",
+  "pattern_label": "price_manipulation",
+  "attack_tx_hashes": [
+    "0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2",
+    "0x43aa42d2f11afe42832a9619bc8066dfb83a921798b91eaf9d0345dd27dcfb06",
+    "0x8c0d14e8000000000000000000000000000000000000000000000000000002d0",
+    "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+  ],
+  "source_preview": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/Paribus_exp.sol",
+    "https://bitfinding.com/blog/paribus-hack-interception",
+    "https://x.com/BitFinding/status/1882880682512527516",
+    "https://arbiscan.io/tx/0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2",
+    "https://arbiscan.io/address/0xd368cca925bb3dbadd06ea1b81e96a2174830978"
+  ]
+}

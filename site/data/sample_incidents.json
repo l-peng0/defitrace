@@ -1,0 +1,454 @@
+{
+  "incidents": [
+    {
+      "incident_id": "ast",
+      "project_name": "Ast",
+      "incident_date": "2025-01-21",
+      "chain": "BSC",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of about $65K was caused by faulty transfer and liquidity logic in the AST token on BSC. The attacker could abuse the proxy and pair interaction so that liquidity removal was effectively accounted for twice.\n\nThe attacker flash-borrowed BUSD, swapped into AST, added tokens into the AST/BUSD pair, used `skim()` and `sync()` to exploit the accounting bug, and then sold the recovered AST back into BUSD.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/bsc/0x80dd9362d211722b578af72d551f0a68e0dc1b1e077805353970b2f65e793927",
+      "attack_contract_url": "https://bscscan.com/address/0xaaE196b6E3f3Ee34405e857e7bfb05D74c5cf775",
+      "victim_contract_url": "https://bscscan.com/address/0xc10E0319337c7F83342424Df72e73a70A29579B2",
+      "poc_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/Ast_exp.sol",
+      "sources": [
+        {
+          "label": "Web3Sec",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1"
+        },
+        {
+          "label": "PoC / GitHub",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/Ast_exp.sol"
+        },
+        {
+          "label": "blog.solidityscan.com",
+          "url": "https://blog.solidityscan.com/ast-token-hack-analysis-7a2f0400436a"
+        },
+        {
+          "label": "medium.com",
+          "url": "https://medium.com/@joichiro.sai/ast-token-hack-how-a-faulty-transfer-logic-led-to-a-65k-exploit-da75aed59a43"
+        }
+      ]
+    },
+    {
+      "incident_id": "paribus",
+      "project_name": "Paribus",
+      "incident_date": "2025-01-18",
+      "chain": "Arbitrum",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of about $86K was associated with a price-manipulation attack against Paribus on Arbitrum, with the initial attack path focusing on roughly $60K in ETH, USDT, and ARB. The exploit combined price manipulation with a bug in the lending flow.\n\nThe attacker deployed an exploit contract, attempted to manipulate the lending platform's valuation path, and borrow or siphon assets from the affected Paribus markets before countermeasures were deployed.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/arbitrum/0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2",
+      "attack_contract_url": "https://arbiscan.io/address/0xd368cca925bb3dbadd06ea1b81e96a2174830978",
+      "victim_contract_url": "https://arbiscan.io/address/0xaffd437801434643b734d0b2853654876f66f7d7",
+      "poc_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/Paribus_exp.sol",
+      "sources": [
+        {
+          "label": "Web3Sec",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1"
+        },
+        {
+          "label": "PoC / GitHub",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/Paribus_exp.sol"
+        },
+        {
+          "label": "BitFinding",
+          "url": "https://bitfinding.com/blog/paribus-hack-interception"
+        },
+        {
+          "label": "X / Twitter",
+          "url": "https://x.com/BitFinding/status/1882880682512527516"
+        }
+      ]
+    },
+    {
+      "incident_id": "fortunewheel",
+      "project_name": "FortuneWheel",
+      "incident_date": "2025-01-10",
+      "chain": "BSC",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of about $21K was caused by missing access control in FortuneWheel's `swapProfitFees()` function on BSC. The function was publicly callable even though it swapped contract-owned assets and should have been restricted.\n\nThe attacker first manipulated the LINK/WBNB pricing environment, then called `swapProfitFees()` so that the FortuneWheel contract sold LINK at the manipulated rate, allowing the attacker to unwind and keep the profit.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/bsc/0xd6ba15ecf3df9aaae37450df8f79233267af41535793ee1f69c565b50e28f7da",
+      "attack_contract_url": "https://bscscan.com/address/0x818cd70be0c9dec3b0bc52efaaceb06469ce587f",
+      "victim_contract_url": "https://bscscan.com/address/0x384b9fb6e42dab87f3023d87ea1575499a69998e",
+      "poc_url": "",
+      "sources": [
+        {
+          "label": "Explorer",
+          "url": "https://bscscan.com/tx/0xd6ba15ecf3df9aaae37450df8f79233267af41535793ee1f69c565b50e28f7da"
+        },
+        {
+          "label": "olympixai.medium.com",
+          "url": "https://olympixai.medium.com/zoth-fortunewheel-and-sorra-finance-exploited-for-347k-via-ltv-mismatch-unprotected-swaps-and-5fd8ea76a914"
+        },
+        {
+          "label": "medium.com",
+          "url": "https://medium.com/%40victorokubule/flash-loan-exploits-in-defi-the-mechanics-and-prime-workings-of-a-sophisticated-attack-and-exploit-16c73499ddbf"
+        }
+      ]
+    },
+    {
+      "incident_id": "lauratoken",
+      "project_name": "LAURAToken",
+      "incident_date": "2025-01-01",
+      "chain": "Ethereum",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of 12.34 ETH (~$41.2K USD) was caused by a flawed liquidity-removal path in the LAURA token system. The PoC comments explain that `removeLiquidityWhenKIncreases()` could be abused after the attacker reshaped the WETH/LAURA pair with flash-loaned capital.\n\nIn this incident, the attacker borrowed 30,000 WETH, bought LAURA, added liquidity, triggered the vulnerable liquidity-removal function, and then removed the manipulated LP position to drain WETH from the pair.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/eth/0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420",
+      "attack_contract_url": "https://etherscan.io/address/0x2cad84c3d2e31bc6d630229901f421e6da5557ef",
+      "victim_contract_url": "https://etherscan.io/address/0x05641e33fd15baf819729df55500b07b82eb8e89",
+      "poc_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/LAURAToken_exp.sol",
+      "sources": [
+        {
+          "label": "Web3Sec",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1"
+        },
+        {
+          "label": "PoC / GitHub",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/LAURAToken_exp.sol"
+        }
+      ]
+    },
+    {
+      "incident_id": "harrypotterobamasonic10inu",
+      "project_name": "HarryPotterObamaSonic10Inu",
+      "incident_date": "2024-12-18",
+      "chain": "Ethereum",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of about $243K was caused by ineffective access control in the operator contract used by HarryPotterObamaSonic10Inu 2.0 on Ethereum. The exploiter abused the `0x433e()` path in the operator contract to add and remove liquidity in large size, causing dramatic price fluctuations in the token's liquidity pool.\n\nThe attacker repeatedly added and removed liquidity around the BITCOIN/WETH market, extracted value from the manipulated pool, and later routed part of the proceeds into Tornado Cash.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/eth/0xb80964b966ec590038b10e1b2c7a4ecb7e75c66f1377c7f0ef78423123dfe0cd",
+      "attack_contract_url": "https://etherscan.io/address/0x8Ca0392D4997C35FA6dDA2c0b6b8314987FAB554",
+      "victim_contract_url": "https://etherscan.io/address/0x553513177faC7142C0F445D721ca7EB22d4215AD",
+      "poc_url": "",
+      "sources": [
+        {
+          "label": "www.odaily.news",
+          "url": "https://www.odaily.news/newsflash/408096"
+        },
+        {
+          "label": "Quadriga Initiative",
+          "url": "https://quadrigainitiative.com/casestudy/harrypotterobamasonic10inuliquidityaccessvulnerability.php"
+        },
+        {
+          "label": "www.gate.com",
+          "url": "https://www.gate.com/tr/learn/articles/gate-research-security-incident-summary-for-december-2024/5506"
+        },
+        {
+          "label": "cryptonews.net",
+          "url": "https://cryptonews.net/news/security/30245396/"
+        }
+      ]
+    },
+    {
+      "incident_id": "veth",
+      "project_name": "vETH",
+      "incident_date": "2024-11-14",
+      "chain": "Ethereum",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of about $447K was caused by a price-manipulation attack involving the vETH/BIF market on Ethereum. The attacker used a very large flash loan to buy BIF, exploited a vulnerable factory path, and then sold back after the state had been distorted.\n\nThe attacker borrowed essentially the vault's full WETH balance, pushed the BIF-side pricing through the vulnerable path, and then unwound into WETH before repaying the flash loan.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/eth/0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b",
+      "attack_contract_url": "https://etherscan.io/address/0x351d38733de3f1e73468d24401c59f63677000c9",
+      "victim_contract_url": "https://etherscan.io/address/0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+      "poc_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/vETH_exp.sol",
+      "sources": [
+        {
+          "label": "X / Twitter",
+          "url": "https://x.com/SlowMist_Team/status/1856987988632457708"
+        },
+        {
+          "label": "X / Twitter",
+          "url": "https://x.com/ExternalExplorer_xyz/status/1857002671124730233"
+        },
+        {
+          "label": "PoC / GitHub",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/vETH_exp.sol"
+        },
+        {
+          "label": "Verichains",
+          "url": "https://blog.verichains.io/p/veth-incident-with-unknown-mechanism"
+        },
+        {
+          "label": "X / Twitter",
+          "url": "https://x.com/TenArmorAlert/status/1856984299905716645"
+        },
+        {
+          "label": "QuillAudits",
+          "url": "https://www.quillaudits.com/blog/hack-analysis/veth-token-450k-exploit-analysis"
+        }
+      ]
+    },
+    {
+      "incident_id": "delta-prime",
+      "project_name": "Delta Prime",
+      "incident_date": "2024-11-11",
+      "chain": "Arbitrum",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of $4.75M was caused by a price-manipulation and reentry-style attack against Delta Prime on Arbitrum. The PoC shows the attacker creating a SmartLoan position, feeding crafted price data into the loan flow, and abusing reward-claim execution to reenter at a favorable moment.\n\nIn this incident, the attacker borrowed against a manipulated state, converted collateral and debt positions through the crafted flow, and exited after the protocol's solvency assumptions had been broken.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/arbitrum/0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+      "attack_contract_url": "https://arbiscan.io/address/0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe",
+      "victim_contract_url": "https://arbiscan.io/address/0x62cf82fb0484af382714cd09296260edc1dc0c6c",
+      "poc_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+      "sources": [
+        {
+          "label": "Web3Sec",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1"
+        },
+        {
+          "label": "PoC / GitHub",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol"
+        }
+      ]
+    },
+    {
+      "incident_id": "bgm",
+      "project_name": "BGM",
+      "incident_date": "2024-11-10",
+      "chain": "BSC",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of about $450K was caused by a price-manipulation attack against BGM on BSC. The token's inviter reward mechanism could be abused when multiple accounts shared the same invitee, artificially inflating inviter rewards and enabling withdrawals from the pair.\n\nThe attacker used a prepared contract, manipulated the reward accounting with large batch transactions, withdrew value from the BGM pair, and profited after the spot price had been distorted.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/bsc/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+      "attack_contract_url": "https://bscscan.com/address/0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+      "victim_contract_url": "https://bscscan.com/address/0x42646478b25317160e0dc8db413991277e4bb3c2",
+      "poc_url": "",
+      "sources": [
+        {
+          "label": "Explorer",
+          "url": "https://bscscan.com/tx/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1"
+        },
+        {
+          "label": "X / Twitter",
+          "url": "https://x.com/ExternalExplorer_xyz/status/1855798237770170415"
+        },
+        {
+          "label": "Quadriga Initiative",
+          "url": "https://quadrigainitiative.com/casestudy/bgmonbscbatchtransactionspricemanipulationexploit.php"
+        }
+      ]
+    },
+    {
+      "incident_id": "compoundfork",
+      "project_name": "CompoundFork",
+      "incident_date": "2024-10-24",
+      "chain": "Base",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of about $1M was caused by price manipulation against an unverified Compound-like lending deployment on Base. The linked sources describe an excessive-borrowing scenario after the attacker distorted the asset valuation used by the lending market.\n\nIn this incident, the attacker manipulated the price dependency in the market, used the inflated collateral state to borrow out assets, and then realized the profit through the mispriced lending contracts.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/base/0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e",
+      "attack_contract_url": "https://basescan.org/address/0x7562846468089cf0e8f7b38ac53406b895284901",
+      "victim_contract_url": "https://basescan.org/address/0x93D619623abc60A22Ee71a15dB62EedE3EF4dD5a",
+      "poc_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/CompoundFork_exploit.sol",
+      "sources": [
+        {
+          "label": "Web3Sec",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1"
+        },
+        {
+          "label": "PoC / GitHub",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/CompoundFork_exploit.sol"
+        },
+        {
+          "label": "Explorer",
+          "url": "https://basescan.org/tx/0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e"
+        }
+      ]
+    },
+    {
+      "incident_id": "p719token",
+      "project_name": "P719Token",
+      "incident_date": "2024-10-11",
+      "chain": "BSC",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of 547.18 BNB (~$312K USD) was caused by a bug in the P719 `transfer()` logic. According to the linked source notes, sending tokens back to P719 was treated like a sell, and the contract's burn-and-fee behavior incorrectly inflated the token price.\n\nIn this incident, the attacker created an auxiliary token and pair, split the operation across many helper contracts, repeatedly bought and sold P719, and then exited after the manipulated price had been amplified.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/bsc/0x9afcac8e82180fa5b2f346ca66cf6eb343cd1da5a2cd1b5117eb7eaaebe953b3",
+      "attack_contract_url": "https://bscscan.com/address/0x3f32c7cfb0a78ddea80a2384ceb4633099cbdc98",
+      "victim_contract_url": "https://bscscan.com/address/0x6beee2b57b064eac5f432fc19009e3e78734eabc",
+      "poc_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/P719Token_exp.sol",
+      "sources": [
+        {
+          "label": "Web3Sec",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1"
+        },
+        {
+          "label": "PoC / GitHub",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/P719Token_exp.sol"
+        },
+        {
+          "label": "PoC / GitHub",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs?tab=readme-ov-file#20241011-p719token---price-manipulation-inflate-attack"
+        },
+        {
+          "label": "X / Twitter",
+          "url": "https://x.com/TenArmorAlert/status/1844929489823989953"
+        }
+      ]
+    },
+    {
+      "incident_id": "hydt",
+      "project_name": "HYDT",
+      "incident_date": "2024-10-10",
+      "chain": "BSC",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of about $5.8K USDT was caused by unsafe oracle usage in the HYDT minting flow on BSC. The InitialMintV2 contract used the WBNB/USDT pair price directly to determine mint ratios, allowing the attacker to manipulate the oracle with a flash loan.\n\nThe attacker flash-borrowed roughly 11 million USDT, pushed the WBNB/USDT spot price to an abnormal level, called `initialMint()` with 11 BNB to mint excess HYDT, and then unwound through multiple DEX routes to realize profit.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/bsc/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3",
+      "attack_contract_url": "https://bscscan.com/address/0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+      "victim_contract_url": "https://bscscan.com/address/0xA2268Fcc2FE7A2Bb755FbE5A7B3Ac346ddFeDB9B",
+      "poc_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/HYDT_exp.sol",
+      "sources": [
+        {
+          "label": "Web3Sec",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1"
+        },
+        {
+          "label": "PoC / GitHub",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/HYDT_exp.sol"
+        },
+        {
+          "label": "Explorer",
+          "url": "https://bscscan.com/tx/0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548db724c2e76b4cd4c3222f22b3"
+        },
+        {
+          "label": "X / Twitter",
+          "url": "https://x.com/TenArmorAlert/status/1844241843518951451"
+        },
+        {
+          "label": "learnblockchain.cn",
+          "url": "https://learnblockchain.cn/article/13124"
+        }
+      ]
+    },
+    {
+      "incident_id": "sashatoken",
+      "project_name": "SASHAToken",
+      "incident_date": "2024-10-06",
+      "chain": "Ethereum",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of ~249 ETH (~$600K USD) was caused by a price-manipulation attack spanning thin SASHA liquidity on Ethereum. The PoC shows the attacker buying SASHA with WETH, transferring SASHA into the Uniswap V2 pair, and then dumping through Uniswap V3 after the price had been distorted.\n\nIn this incident, the attacker used a small initial amount of ETH to push the token into an abnormal pricing state and then extracted WETH from the manipulated market.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/eth/0xd9fdc7d03eec28fc2453c5fa68eff82d4c297f436a6a5470c54ca3aecd2db17e",
+      "attack_contract_url": "https://etherscan.io/address/0x991493900674b10bdf54bdfe95b4e043257798cf",
+      "victim_contract_url": "https://etherscan.io/address/0xB23FC1241e1Bc1a5542a438775809d38099838fe",
+      "poc_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/SASHAToken_exp.sol",
+      "sources": [
+        {
+          "label": "Web3Sec",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1"
+        },
+        {
+          "label": "PoC / GitHub",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/SASHAToken_exp.sol"
+        }
+      ]
+    },
+    {
+      "incident_id": "aizptoken",
+      "project_name": "AIZPToken",
+      "incident_date": "2024-10-05",
+      "chain": "BSC",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of 34.88 BNB (~$20K USD) was caused by a price-manipulation flaw in the AIZPT token flow. The PoC shows the attacker flash-borrowing WBNB, sending value into the token contract, and repeatedly transferring AIZPT back to the token contract to abuse its internal accounting.\n\nIn this incident, the attacker used 8,000 WBNB of temporary liquidity, looped nearly 200 self-transfers, and then converted the manipulated state back into WBNB for profit.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/bsc/0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d",
+      "attack_contract_url": "https://bscscan.com/address/0x8408497c18882bfb61be9204cfff530f4ee18320",
+      "victim_contract_url": "https://bscscan.com/address/0xbe779d420b7d573c08eee226b9958737b6218888",
+      "poc_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/AIZPTToken_exp.sol",
+      "sources": [
+        {
+          "label": "Web3Sec",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1"
+        },
+        {
+          "label": "PoC / GitHub",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/AIZPTToken_exp.sol"
+        }
+      ]
+    },
+    {
+      "incident_id": "lavalending",
+      "project_name": "LavaLending",
+      "incident_date": "2024-10-02",
+      "chain": "Arbitrum",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of about $130K was caused by a price-manipulation attack against LavaLending on Arbitrum. The PoC shows the attacker cycling through withdrawals, pool interactions, and multiple borrow operations after distorting the relevant pricing path used by the lending system.\n\nIn this incident, the attacker manipulated the WETH/USDC pricing environment around the lending markets, inflated the value of the affected position, and then borrowed out USDC, cUSDC, WBTC, and WETH.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/arbitrum/0xb5cfa4ae4d6e459ba285fec7f31caf8885e2285a0b4ff62f66b43e280c947216",
+      "attack_contract_url": "https://arbiscan.io/address/0x69fa61eb4dc4e07263d401b01ed1cfceb599dab8#code",
+      "victim_contract_url": "https://arbiscan.io/address/0x6700b021a8bcfae25a2493d16d7078c928c13151",
+      "poc_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/LavaLending_exp.sol",
+      "sources": [
+        {
+          "label": "Web3Sec",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1"
+        },
+        {
+          "label": "PoC / GitHub",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/LavaLending_exp.sol"
+        }
+      ]
+    },
+    {
+      "incident_id": "fire-token",
+      "project_name": "Fire Token",
+      "incident_date": "2024-10-01",
+      "chain": "Ethereum",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of 8.45 ETH (~$20K USD) was caused by a faulty transfer path in the FIRE token contract. The linked PoC points to the `_transfer()` logic, which allowed the attacker to manipulate the pair balance and compute an inflated amount of WETH out.\n\nIn this incident, the attacker repeatedly bought FIRE with flash-loaned WETH, transferred FIRE directly into the WETH/FIRE pair, and then swapped against the distorted reserves to extract WETH.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/eth/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+      "attack_contract_url": "https://etherscan.io/address/0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+      "victim_contract_url": "https://etherscan.io/address/0x18775475f50557b96C63E8bbf7D75bFeB412082D",
+      "poc_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/FireToken_exp.sol",
+      "sources": [
+        {
+          "label": "Web3Sec",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1"
+        },
+        {
+          "label": "PoC / GitHub",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/FireToken_exp.sol"
+        }
+      ]
+    },
+    {
+      "incident_id": "bedrock-defi",
+      "project_name": "BedRock Defi",
+      "incident_date": "2024-09-26",
+      "chain": "Ethereum",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of ~1.7M USD was caused by a price-manipulation issue in BedRock's mint flow. The PoC shows that the vulnerable vault let the attacker mint uniBTC with ETH under an unsafe pricing assumption, treating the deposited value too favorably.\n\nIn this incident, the attacker first obtained funding, minted uniBTC through the vulnerable vault, and then used the mispriced output to swap back into WETH for profit.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/eth/0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940",
+      "attack_contract_url": "https://etherscan.io/address/0x0C8da4f8B823bEe4D5dAb73367D45B5135B50faB",
+      "victim_contract_url": "https://etherscan.io/address/0x047D41F2544B7F63A8e991aF2068a363d210d6Da",
+      "poc_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Bedrock_DeFi_exp.sol",
+      "sources": [
+        {
+          "label": "Web3Sec",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1"
+        },
+        {
+          "label": "PoC / GitHub",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Bedrock_DeFi_exp.sol"
+        }
+      ]
+    },
+    {
+      "incident_id": "caterpiller-coin",
+      "project_name": "Caterpiller Coin",
+      "incident_date": "2024-09-10",
+      "chain": "BSC",
+      "attack_type": "Price Manipulation",
+      "summary": "An estimated loss of ~1.4M USD was caused by a price-manipulation attack against the CUT token ecosystem on BSC. The root cause was flawed token economics around reserves and burn logic, which allowed the attacker to distort the effective pool state and push the token price to an abnormal level.\n\nThe attacker used borrowed liquidity, interacted with the CUT contracts, triggered the vulnerable burn path, and exited back into BUSD at the manipulated price.",
+      "attack_tx_url": "https://app.external_explorer.com/explorer/tx/bsc/0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+      "attack_contract_url": "https://bscscan.com/address/0x87EFb39a716860eCd2324A944Cb40EC5128e56Dd",
+      "victim_contract_url": "https://bscscan.com/address/0x7057f3b0f4d0649b428f0d8378a8a0e7d21d36a7",
+      "poc_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol",
+      "sources": [
+        {
+          "label": "Web3Sec",
+          "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1"
+        },
+        {
+          "label": "PoC / GitHub",
+          "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol"
+        },
+        {
+          "label": "CertiK",
+          "url": "https://www.certik.com/zh-CN/resources/blog/caterpillar-coin-cut-token-incident-analysis"
+        }
+      ]
+    }
+  ]
+}

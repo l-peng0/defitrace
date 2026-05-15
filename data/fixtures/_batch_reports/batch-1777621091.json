@@ -1,0 +1,30 @@
+{
+  "summary": {
+    "total": 2,
+    "completed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "dry_run": 2,
+    "qa_retry_triggered": 0,
+    "wall_time_s": 0.0
+  },
+  "results": [
+    {
+      "incident_id": "unknown-bsc-2024-09-10",
+      "started_at": "2026-05-01T07:38:11+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/unknown-bsc-2024-09-10.json",
+      "status": "dry_run",
+      "reason": "--run not specified",
+      "duration_s": 0.0
+    },
+    {
+      "incident_id": "unknown-ethereum-2024-09-26",
+      "started_at": "2026-05-01T07:38:11+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/unknown-ethereum-2024-09-26.json",
+      "status": "dry_run",
+      "reason": "--run not specified",
+      "duration_s": 0.0
+    }
+  ],
+  "ran_at": "2026-05-01T07:38:11+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "incident_id": "unknown-2024-11-11-price-manipulation-incident-arbitrum",
+  "chain": "Arbitrum",
+  "generated_at": "2026-04-27T13:09:04+00:00",
+  "contracts": {
+    "0x2e2fe9bc7904649b65b6373baf40f9e2e0b883c5": {
+      "address": "0x2e2fe9bc7904649b65b6373baf40f9e2e0b883c5",
+      "role": "victim",
+      "classification": "verified",
+      "is_proxy": true,
+      "proxy_type": "EIP-1967",
+      "implementation_address": "0x465a38bc61fccc96923a0409f779f79debdf3bcf",
+      "implementation_classification": "verified",
+      "admin_address": "0xa9ca8462ab2949ada86297904e09ab4eb12cdcf0",
+      "contract_name": "WethPoolTUP",
+      "compiler_version": "v0.8.17+commit.8df45f5f",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-11-11-price-manipulation-incident-arbitrum/technical_analysis/contracts/0x2e2fe9bc7904649b65b6373baf40f9e2e0b883c5/source.json",
+      "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-11-11-price-manipulation-incident-arbitrum/technical_analysis/contracts/0x2e2fe9bc7904649b65b6373baf40f9e2e0b883c5/abi.json",
+      "fetched_at": "2026-04-27T13:09:02+00:00",
+      "fetch_errors": []
+    }
+  }
+}

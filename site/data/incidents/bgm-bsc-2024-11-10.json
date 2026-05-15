@@ -1,0 +1,1368 @@
+{
+  "incident_id": "bgm-bsc-2024-11-10",
+  "incident_library_entry": {
+    "incident_id": "bgm-bsc-2024-11-10",
+    "title": "BGM",
+    "protocol_name": "BGM",
+    "chain": "BSC",
+    "incident_date": "2024-11-10",
+    "summary": "Test a case with sparse source coverage and one stronger case-study page.",
+    "status": "demo_live_dossier",
+    "completeness_score": 0.57,
+    "source_count": 23,
+    "direct_source_count": 3,
+    "secondary_source_count": 20,
+    "social_count": 1,
+    "poc_count": 0,
+    "explorer_count": 21,
+    "report_count": 1,
+    "missing_fields": [
+      "attack_contract_urls",
+      "victim_contract_urls",
+      "poc_links"
+    ],
+    "last_updated": "2026-04-01T11:32:53+00:00",
+    "pattern_label": "price_manipulation",
+    "attack_tx_hashes": [
+      "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+      "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+      "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "0x000000000000000000000000000000000000000000003192e3c8c8a9e9cd00e0"
+    ],
+    "source_preview": [
+      "https://bscscan.com/tx/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+      "https://x.com/ExternalExplorer_xyz/status/1855798237770170415",
+      "https://quadrigainitiative.com/casestudy/bgmonbscbatchtransactionspricemanipulationexploit.php",
+      "https://bscscan.com/chart/bnbprice",
+      "https://bscscan.com/gastracker",
+      "https://bscscan.com/settings"
+    ]
+  },
+  "dashboard_view": {
+    "incident_id": "bgm-bsc-2024-11-10",
+    "card": {
+      "title": "BGM",
+      "chain": "BSC",
+      "incident_date": "2024-11-10",
+      "protocol_name": "BGM",
+      "summary": "Test a case with sparse source coverage and one stronger case-study page.",
+      "source_count": 23,
+      "direct_source_count": 3,
+      "secondary_source_count": 20,
+      "completeness_score": 0.57
+    },
+    "detail": {
+      "timeline_preview": [
+        {
+          "step_id": "step-001",
+          "order": 1,
+          "label": "Incident enters the corpus",
+          "step_type": "entry",
+          "summary": "BGM is dated 2024-11-10.",
+          "source_refs": [],
+          "confidence": 0.92
+        },
+        {
+          "step_id": "step-002",
+          "order": 2,
+          "label": "Impact summary collected",
+          "step_type": "impact",
+          "summary": "Test a case with sparse source coverage and one stronger case-study page.",
+          "source_refs": [],
+          "confidence": 0.72
+        },
+        {
+          "step_id": "step-003",
+          "order": 3,
+          "label": "Source expansion completed",
+          "step_type": "analysis",
+          "summary": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+          "source_refs": [],
+          "confidence": 0.75
+        }
+      ],
+      "attacker_profile_summary": "The dossier has 0 direct attacker address candidate(s) and 8 additional address mentions from fetched sources.",
+      "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+      "judge_summary": "This run is still a partial dossier and should be treated as a work-in-progress build.",
+      "missing_fields": [
+        "attack_contract_urls",
+        "victim_contract_urls",
+        "poc_links"
+      ]
+    },
+    "status": "demo_live_dossier",
+    "last_updated": "2026-04-01T11:32:53+00:00"
+  },
+  "augmented_incident": {
+    "incident_id": "bgm-bsc-2024-11-10",
+    "title": "BGM",
+    "incident_date": "2024-11-10",
+    "chain": "BSC",
+    "protocol_name": "BGM",
+    "status": "demo_live_dossier",
+    "summary": "Test a case with sparse source coverage and one stronger case-study page.",
+    "seed_overview": {
+      "seed_type": "sample_source_expansion_target",
+      "trigger_type": "demo_corpus",
+      "source_names": [
+        "sample_target_pack"
+      ],
+      "attack_type_raws": [
+        "Price Manipulation"
+      ]
+    },
+    "key_addresses": [
+      "0x8580825008800b9e13266f40b41a838a521e4d0b",
+      "0x7824322B220CDB4d51F73782FbcE95E2E2B0595F",
+      "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+      "0x42646478b25317160e0dc8db413991277e4bb3c2"
+    ],
+    "key_contracts": [],
+    "key_transactions": [
+      "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+      "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+      "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "0x000000000000000000000000000000000000000000003192e3c8c8a9e9cd00e0"
+    ],
+    "timeline": [
+      {
+        "step_id": "step-001",
+        "order": 1,
+        "label": "Incident enters the corpus",
+        "step_type": "entry",
+        "summary": "BGM is dated 2024-11-10.",
+        "source_refs": [],
+        "confidence": 0.92
+      },
+      {
+        "step_id": "step-002",
+        "order": 2,
+        "label": "Impact summary collected",
+        "step_type": "impact",
+        "summary": "Test a case with sparse source coverage and one stronger case-study page.",
+        "source_refs": [],
+        "confidence": 0.72
+      },
+      {
+        "step_id": "step-003",
+        "order": 3,
+        "label": "Source expansion completed",
+        "step_type": "analysis",
+        "summary": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+        "source_refs": [],
+        "confidence": 0.75
+      }
+    ],
+    "attacker_profile": {
+      "incident_id": "bgm-bsc-2024-11-10",
+      "profile_id": "profile-bgm-bsc-2024-11-10",
+      "primary_addresses": [],
+      "related_addresses": [
+        "0x8580825008800b9e13266f40b41a838a521e4d0b",
+        "0x7824322B220CDB4d51F73782FbcE95E2E2B0595F",
+        "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+        "0x42646478b25317160e0dc8db413991277e4bb3c2",
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f1",
+        "0xeFA4bCE444C09a52941bEEf5FE8264D70534049f",
+        "0x0000000000000000000000000000000000000000",
+        "0x42646478B25317160E0Dc8DB413991277e4bb3C2"
+      ],
+      "recent_activity_summary": "The dossier has 0 direct attacker address candidate(s) and 8 additional address mentions from fetched sources.",
+      "counterparties": [],
+      "repeated_behaviors": [
+        "Leans on addresses confirmed by direct seed fields first.",
+        "Uses source-text mentions as weaker supporting clues rather than direct proof."
+      ],
+      "open_questions": [
+        "Which address funded the exploit wallet before the attack?",
+        "Which transfers right after the exploit are still missing from the dossier?"
+      ]
+    },
+    "pattern_hypotheses": [
+      {
+        "hypothesis_id": "hyp-001",
+        "label": "price_manipulation",
+        "summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+        "why_suspected": [
+          "Attack-type tags mention price manipulation.",
+          "The supporting sources resemble prior price-manipulation writeups."
+        ],
+        "confidence": 0.76,
+        "open_questions": [
+          "Which specific pricing path was abused?",
+          "Is there a direct explorer or postmortem source that confirms the same mechanism?"
+        ]
+      }
+    ],
+    "source_summary": {
+      "source_count": 23,
+      "source_types": {
+        "explorer": 21,
+        "social": 1,
+        "report": 1
+      },
+      "direct_source_count": 3,
+      "secondary_source_count": 20,
+      "fetched_source_count": 3
+    },
+    "quality_report": {
+      "incident_id": "bgm-bsc-2024-11-10",
+      "completeness_score": 0.57,
+      "direct_source_count": 3,
+      "secondary_source_count": 20,
+      "fetched_source_count": 3,
+      "citation_coverage_count": 19,
+      "missing_fields": [
+        "attack_contract_urls",
+        "victim_contract_urls",
+        "poc_links"
+      ],
+      "judge_summary": "This run is still a partial dossier and should be treated as a work-in-progress build."
+    },
+    "generated_at": "2026-04-01T11:32:53+00:00"
+  },
+  "source_index": {
+    "incident_id": "bgm-bsc-2024-11-10",
+    "sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://bscscan.com/tx/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+        "source_type": "explorer",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 99,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://x.com/ExternalExplorer_xyz/status/1855798237770170415",
+        "source_type": "social",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 98,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://quadrigainitiative.com/casestudy/bgmonbscbatchtransactionspricemanipulationexploit.php",
+        "source_type": "report",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 97,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://bscscan.com/chart/bnbprice",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-005",
+        "url": "https://bscscan.com/gastracker",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-006",
+        "url": "https://bscscan.com/settings",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-007",
+        "url": "https://opbnb.bscscan.com",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-008",
+        "url": "https://testnet.bscscan.com",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-009",
+        "url": "https://opbnb-testnet.bscscan.com",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-010",
+        "url": "https://bscscan.com/login",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-011",
+        "url": "https://bscscan.com/txs",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-012",
+        "url": "https://bscscan.com/txsPending",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-013",
+        "url": "https://bscscan.com/txsInternal",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-014",
+        "url": "https://bscscan.com/txsBlobs",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-015",
+        "url": "https://bscscan.com/txsAA",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-016",
+        "url": "https://bscscan.com/txnAuthList",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-017",
+        "url": "https://bscscan.com/blocks",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-018",
+        "url": "https://bscscan.com/blocks_forked",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-019",
+        "url": "https://bscscan.com/accounts",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-020",
+        "url": "https://bscscan.com/contractsVerified",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-021",
+        "url": "https://bscscan.com/validators",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-022",
+        "url": "https://bscscan.com/validatorset",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      },
+      {
+        "source_id": "src-023",
+        "url": "https://bscscan.com/tokens",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "discovered"
+      }
+    ]
+  },
+  "source_documents": {
+    "incident_id": "bgm-bsc-2024-11-10",
+    "documents": [
+      {
+        "source_id": "src-001",
+        "url": "https://bscscan.com/tx/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+        "source_type": "explorer",
+        "fetch_status": "fetched",
+        "fetched_at": "2026-04-01T11:32:47+00:00",
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "title": "BNB Smart Chain Transaction Hash (Txhash) Details | BscScan",
+        "text_excerpt": "BNB Smart Chain Transaction Hash (Txhash) Details | BscScan window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config','G-PQY6J2Q8EP', { 'anonymize_ip': true }); //Search box text ad var availableAd = []; var gotAd = []; availableAd = [\"<div class='p-2'><a href='https://goto.bscscan.com/rd/RYX43GDE1IC5HRW1X1DHKETDJ' rel='nofollow' target='_blank' data-bs-toggle='tooltip' data-bs-trigger='hover' title='Links to an External Advertiser site' class='search-panel-ads d-flex align-items-center p-2 rounded'><div class='me-2'><img width='22' src='/images/gen/etoro_20.png' alt='eToro'></div><div class='text-truncate'><h6 class='d-flex align-items-center fs-sm text-dark mb-0'><div class='text-truncate me-2'>eToro - 100+ cryptoassets</div><span class='d-none d-sm-inline-block small bg-white text-muted rounded-1 border px-2 py-1 ms-1'>Sponsored</span><span class='d-inline-block d-sm-none small bg-white text-muted rounded-1 border px-2 py-1 ms-1'>Ad</span></h6></div></a></div>\"]; gotAd = [\"ShowAds \"]; // Temporary fallback to prevent runtime error if (typeof window.updatehash !== 'function') { const args = []; // Create a simp",
+        "discovered_links": [
+          {
+            "url": "https://bscscan.com/chart/bnbprice",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://bscscan.com/gastracker",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://bscscan.com/settings",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://opbnb.bscscan.com",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://testnet.bscscan.com",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://opbnb-testnet.bscscan.com",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://bscscan.com/login",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://bscscan.com/txs",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://bscscan.com/txsPending",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://bscscan.com/txsInternal",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://bscscan.com/txsBlobs",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://bscscan.com/txsAA",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://bscscan.com/txnAuthList",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://bscscan.com/blocks",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://bscscan.com/blocks_forked",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://bscscan.com/accounts",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://bscscan.com/contractsVerified",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://bscscan.com/validators",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://bscscan.com/validatorset",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          },
+          {
+            "url": "https://bscscan.com/tokens",
+            "source_type": "explorer",
+            "discovered_from": "src-001"
+          }
+        ],
+        "extracted_addresses": [
+          "0x8580825008800b9e13266f40b41a838a521e4d0b",
+          "0x7824322B220CDB4d51F73782FbcE95E2E2B0595F",
+          "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+          "0x42646478b25317160e0dc8db413991277e4bb3c2",
+          "0xddf252ad1be2c89b69c2b068fc378daa952ba7f1",
+          "0xeFA4bCE444C09a52941bEEf5FE8264D70534049f",
+          "0x0000000000000000000000000000000000000000",
+          "0x42646478B25317160E0Dc8DB413991277e4bb3C2",
+          "0xADC4eca2a3038B478b591Bac1a87E428625d6e0a",
+          "0x55d398326f99059ff775485246999027b3197955"
+        ],
+        "extracted_tx_hashes": [
+          "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+          "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+          "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "0x000000000000000000000000000000000000000000003192e3c8c8a9e9cd00e0"
+        ],
+        "error_message": ""
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://x.com/ExternalExplorer_xyz/status/1855798237770170415",
+        "source_type": "social",
+        "fetch_status": "fetched",
+        "fetched_at": "2026-04-01T11:32:49+00:00",
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "title": "",
+        "text_excerpt": "html,body{height: 100%;}::cue{white-space:normal} [stylesheet-group=\"0\"]{} body{margin:0;} button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;} html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);} input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-webkit-search-results-button,input::-webkit-search-results-decoration{display:none;} [stylesheet-group=\"1\"]{} .css-146c3p1{background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;color:rgba(0,0,0,1.00);display:inline;font:14px -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;list-style:none;margin:0px;padding:0px;position:relative;text-align:start;text-decoration:none;white-space:pre-wrap;word-wrap:break-word;} .css-175oi2r{align-items:stretch;background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;display:flex;flex-basis:auto;flex-direction:column;flex-shrink:0;list-style:none;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;text-decoration:none;z-index:0;} .css-1jxf684{background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;color:in",
+        "discovered_links": [],
+        "extracted_addresses": [],
+        "extracted_tx_hashes": [],
+        "error_message": ""
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://quadrigainitiative.com/casestudy/bgmonbscbatchtransactionspricemanipulationexploit.php",
+        "source_type": "report",
+        "fetch_status": "fetched",
+        "fetched_at": "2026-04-01T11:32:50+00:00",
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "title": "Nov 2024 - BGM on BSC Batch Transactions Price Manipulation Exploit - $450k (Global)",
+        "text_excerpt": "window.LogRocket && window.LogRocket.init('nb7fua/quadriga-initiative'); (function () { var now = Date.now() window.initialTimestamps = { initialTimestamp: now, initialRequestTimestamp: Math.round(performance.timeOrigin ? performance.timeOrigin : now - performance.now()) } window.thunderboltTag = \"libs-releases-GA-local\" window.thunderboltVersion = \"1.4746.0\" })(); window.React = { loading: true } window.ReactDOM = { loading: true } window.ReactDomLoaded = new Promise(function(r) { window.ReactDomLoadedResolve = r}) window.ThunderboltElementsLoaded = new Promise(function(r) { window.ThunderboltElementsLoadedResolve = r}) a,abbr,acronym,address,applet,b,big,blockquote,body,button,caption,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,nav,object,ol,p,pre,q,s,samp,section,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,title,tr,tt,u,ul,var{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent}body{font-size:10px;font-family:Arial,Helvetica,sans-serif}input,select,textarea{font-family:Helvetica,Arial,sans-serif;box-sizing:border-box}ol,ul{list-style:none}",
+        "discovered_links": [],
+        "extracted_addresses": [],
+        "extracted_tx_hashes": [],
+        "error_message": ""
+      }
+    ]
+  },
+  "quality_report": {
+    "incident_id": "bgm-bsc-2024-11-10",
+    "completeness_score": 0.57,
+    "direct_source_count": 3,
+    "secondary_source_count": 20,
+    "fetched_source_count": 3,
+    "citation_coverage_count": 19,
+    "missing_fields": [
+      "attack_contract_urls",
+      "victim_contract_urls",
+      "poc_links"
+    ],
+    "judge_summary": "This run is still a partial dossier and should be treated as a work-in-progress build."
+  },
+  "run_state": {
+    "job_id": "bgm-bsc-2024-11-10-demo-job",
+    "incident_id": "bgm-bsc-2024-11-10",
+    "trigger_type": "demo_corpus",
+    "current_stage": "dashboard_projection",
+    "node_status": {
+      "seed_loader": "completed",
+      "source_finder": "completed",
+      "source_expander": "completed",
+      "evidence_normalizer": "completed",
+      "timeline_builder": "completed",
+      "dossier_assembler": "completed",
+      "quality_judge": "completed",
+      "dashboard_projection": "completed"
+    },
+    "retry_counts": {},
+    "started_at": "2026-04-01T11:32:47+00:00",
+    "updated_at": "2026-04-01T11:32:53+00:00",
+    "completed_at": "2026-04-01T11:32:53+00:00",
+    "run_notes": [
+      "Loaded and normalized incident seed.",
+      "Built direct source candidates from seed facts.",
+      "Fetched direct sources and discovered second-hop links.",
+      "Turned fetched sources into citation-backed evidence.",
+      "Built timeline and behavior profile views.",
+      "Assembled dossier, quality report, and library entry.",
+      "This run is still a partial dossier and should be treated as a work-in-progress build.",
+      "Projected live incident library and dossier views."
+    ],
+    "artifacts": {
+      "incident_seed": "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/incident_seed.json",
+      "source_index": "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/source_index.json",
+      "source_documents": "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/source_documents.json",
+      "raw_evidence": "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/raw_evidence.json",
+      "timeline": "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/timeline.json",
+      "augmented_incident": "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/augmented_incident.json",
+      "quality_report": "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/quality_report.json",
+      "incident_library_entry": "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/incident_library_entry.json"
+    }
+  },
+  "run_events": {
+    "incident_id": "bgm-bsc-2024-11-10",
+    "events": [
+      {
+        "event_id": "evt-001",
+        "timestamp": "2026-04-01T11:32:47+00:00",
+        "stage": "seed_loader",
+        "agent": "seed_loader",
+        "status": "completed",
+        "note": "Loaded incident seed.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/incident_seed.json"
+        ],
+        "metrics": {},
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-002",
+        "timestamp": "2026-04-01T11:32:47+00:00",
+        "stage": "source_finder",
+        "agent": "Discovery supervisor",
+        "status": "completed",
+        "note": "Ranked direct source candidates.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/source_index.json"
+        ],
+        "metrics": {
+          "source_count": 3
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-003",
+        "timestamp": "2026-04-01T11:32:53+00:00",
+        "stage": "source_expander",
+        "agent": "Source expansion agent",
+        "status": "completed",
+        "note": "Fetched source pages and extracted discovered links.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/source_index.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/source_documents.json"
+        ],
+        "metrics": {
+          "source_count": 23,
+          "fetched_documents": 3
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-004",
+        "timestamp": "2026-04-01T11:32:53+00:00",
+        "stage": "evidence_normalizer",
+        "agent": "Evidence normalization agent",
+        "status": "completed",
+        "note": "Normalized source text into evidence items and citation edges.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/raw_evidence.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/citation_graph.json"
+        ],
+        "metrics": {
+          "evidence_count": 19,
+          "claim_count": 19
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-005",
+        "timestamp": "2026-04-01T11:32:53+00:00",
+        "stage": "timeline_builder",
+        "agent": "Timeline builder agent",
+        "status": "completed",
+        "note": "Built timeline, attacker profile, and exploit hypothesis outputs.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/timeline.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/attacker_profile.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/pattern_hypotheses.json"
+        ],
+        "metrics": {
+          "timeline_steps": 3,
+          "hypothesis_count": 1
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-006",
+        "timestamp": "2026-04-01T11:32:53+00:00",
+        "stage": "dossier_assembler",
+        "agent": "Dossier composer agent",
+        "status": "completed",
+        "note": "Assembled final dossier outputs and library projection.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/quality_report.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/augmented_incident.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/dashboard_view.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/report_inputs.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/incident_library_entry.json"
+        ],
+        "metrics": {
+          "completeness_score": 0.57
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-007",
+        "timestamp": "2026-04-01T11:32:53+00:00",
+        "stage": "quality_judge",
+        "agent": "QA judge agent",
+        "status": "completed",
+        "note": "This run is still a partial dossier and should be treated as a work-in-progress build.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/quality_report.json"
+        ],
+        "metrics": {
+          "missing_field_count": 3
+        },
+        "error_message": ""
+      },
+      {
+        "event_id": "evt-008",
+        "timestamp": "2026-04-01T11:32:53+00:00",
+        "stage": "dashboard_projection",
+        "agent": "Projection agent",
+        "status": "completed",
+        "note": "Projected outputs for backend and frontend consumers.",
+        "artifact_paths": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/incident_library_entry.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/dashboard_view.json"
+        ],
+        "metrics": {},
+        "error_message": ""
+      }
+    ]
+  },
+  "agent_trace": {
+    "incident_id": "bgm-bsc-2024-11-10",
+    "agents": [
+      {
+        "agent_id": "source_finder",
+        "agent_name": "Discovery supervisor",
+        "started_at": "2026-04-01T11:32:47+00:00",
+        "completed_at": "2026-04-01T11:32:47+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/source_index.json"
+        ],
+        "metrics": {
+          "source_count": 3
+        },
+        "note": ""
+      },
+      {
+        "agent_id": "source_expander",
+        "agent_name": "Source expansion agent",
+        "started_at": "2026-04-01T11:32:47+00:00",
+        "completed_at": "2026-04-01T11:32:53+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/source_index.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/source_documents.json"
+        ],
+        "metrics": {
+          "source_count": 23,
+          "fetched_documents": 3
+        },
+        "note": ""
+      },
+      {
+        "agent_id": "evidence_normalizer",
+        "agent_name": "Evidence normalization agent",
+        "started_at": "2026-04-01T11:32:53+00:00",
+        "completed_at": "2026-04-01T11:32:53+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/raw_evidence.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/citation_graph.json"
+        ],
+        "metrics": {
+          "evidence_count": 19,
+          "claim_count": 19
+        },
+        "note": ""
+      },
+      {
+        "agent_id": "timeline_builder",
+        "agent_name": "Timeline builder agent",
+        "started_at": "2026-04-01T11:32:53+00:00",
+        "completed_at": "2026-04-01T11:32:53+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/timeline.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/attacker_profile.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/pattern_hypotheses.json"
+        ],
+        "metrics": {
+          "timeline_steps": 3,
+          "hypothesis_count": 1
+        },
+        "note": ""
+      },
+      {
+        "agent_id": "dossier_assembler",
+        "agent_name": "Dossier composer agent",
+        "started_at": "2026-04-01T11:32:53+00:00",
+        "completed_at": "2026-04-01T11:32:53+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/quality_report.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/augmented_incident.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/dashboard_view.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/report_inputs.json",
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/incident_library_entry.json"
+        ],
+        "metrics": {
+          "completeness_score": 0.57
+        },
+        "note": ""
+      },
+      {
+        "agent_id": "quality_judge",
+        "agent_name": "QA judge agent",
+        "started_at": "2026-04-01T11:32:53+00:00",
+        "completed_at": "2026-04-01T11:32:53+00:00",
+        "status": "completed",
+        "outputs": [
+          "/Users/lauren/Desktop/2026spring/capstone/runs/bgm-bsc-2024-11-10/quality_report.json"
+        ],
+        "metrics": {
+          "missing_field_count": 3
+        },
+        "note": "This run is still a partial dossier and should be treated as a work-in-progress build."
+      }
+    ]
+  },
+  "report_inputs": {
+    "incident_id": "bgm-bsc-2024-11-10",
+    "headline": "BGM",
+    "executive_summary": "Test a case with sparse source coverage and one stronger case-study page.",
+    "timeline_summary": "BGM is dated 2024-11-10. Test a case with sparse source coverage and one stronger case-study page. The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+    "attacker_behavior_summary": "The dossier has 0 direct attacker address candidate(s) and 8 additional address mentions from fetched sources.",
+    "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "url": "https://bscscan.com/tx/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+        "source_type": "explorer",
+        "depth": 0
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://x.com/ExternalExplorer_xyz/status/1855798237770170415",
+        "source_type": "social",
+        "depth": 0
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://quadrigainitiative.com/casestudy/bgmonbscbatchtransactionspricemanipulationexploit.php",
+        "source_type": "report",
+        "depth": 0
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://bscscan.com/chart/bnbprice",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-005",
+        "url": "https://bscscan.com/gastracker",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-006",
+        "url": "https://bscscan.com/settings",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-007",
+        "url": "https://opbnb.bscscan.com",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-008",
+        "url": "https://testnet.bscscan.com",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-009",
+        "url": "https://opbnb-testnet.bscscan.com",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-010",
+        "url": "https://bscscan.com/login",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-011",
+        "url": "https://bscscan.com/txs",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-012",
+        "url": "https://bscscan.com/txsPending",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-013",
+        "url": "https://bscscan.com/txsInternal",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-014",
+        "url": "https://bscscan.com/txsBlobs",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-015",
+        "url": "https://bscscan.com/txsAA",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-016",
+        "url": "https://bscscan.com/txnAuthList",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-017",
+        "url": "https://bscscan.com/blocks",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-018",
+        "url": "https://bscscan.com/blocks_forked",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-019",
+        "url": "https://bscscan.com/accounts",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-020",
+        "url": "https://bscscan.com/contractsVerified",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-021",
+        "url": "https://bscscan.com/validators",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-022",
+        "url": "https://bscscan.com/validatorset",
+        "source_type": "explorer",
+        "depth": 1
+      },
+      {
+        "source_id": "src-023",
+        "url": "https://bscscan.com/tokens",
+        "source_type": "explorer",
+        "depth": 1
+      }
+    ],
+    "open_questions": [
+      "Which specific pricing path was abused?",
+      "Is there a direct explorer or postmortem source that confirms the same mechanism?"
+    ]
+  },
+  "analyst_report": {
+    "incident_id": "bgm-bsc-2024-11-10",
+    "report_type": "analyst_report",
+    "case_overview": {
+      "headline": "BGM",
+      "what_happened": "Test a case with sparse source coverage and one stronger case-study page.",
+      "why_it_matters": "This run is still a partial dossier and should be treated as a work-in-progress build.",
+      "primary_sources": [
+        {
+          "source_id": "src-001",
+          "url": "https://bscscan.com/tx/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+          "source_type": "explorer",
+          "depth": 0,
+          "discovered_from": "incident_seed",
+          "fetch_status": "fetched",
+          "note": "Primary source collected for the public case file."
+        },
+        {
+          "source_id": "src-002",
+          "url": "https://x.com/ExternalExplorer_xyz/status/1855798237770170415",
+          "source_type": "social",
+          "depth": 0,
+          "discovered_from": "incident_seed",
+          "fetch_status": "fetched",
+          "note": "Primary source collected for the public case file."
+        },
+        {
+          "source_id": "src-003",
+          "url": "https://quadrigainitiative.com/casestudy/bgmonbscbatchtransactionspricemanipulationexploit.php",
+          "source_type": "report",
+          "depth": 0,
+          "discovered_from": "incident_seed",
+          "fetch_status": "fetched",
+          "note": "Primary source collected for the public case file."
+        },
+        {
+          "source_id": "src-007",
+          "url": "https://opbnb.bscscan.com",
+          "source_type": "explorer",
+          "depth": 1,
+          "discovered_from": "src-001",
+          "fetch_status": "discovered",
+          "note": "Primary source collected for the public case file."
+        }
+      ]
+    },
+    "attacker_profile": {
+      "summary": "The dossier has 0 direct attacker address candidate(s) and 8 additional address mentions from fetched sources.",
+      "attacker_addresses": [
+        "0x8580825008800b9e13266f40b41a838a521e4d0b",
+        "0x7824322B220CDB4d51F73782FbcE95E2E2B0595F",
+        "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+        "0x42646478b25317160e0dc8db413991277e4bb3c2"
+      ],
+      "behavior_signals": [
+        "Leans on addresses confirmed by direct seed fields first.",
+        "Uses source-text mentions as weaker supporting clues rather than direct proof."
+      ]
+    },
+    "fund_flow": {
+      "summary": "The current public view only has a lightweight on-chain summary. A deeper fund-flow pass is still needed.",
+      "key_transactions": [
+        "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0x000000000000000000000000000000000000000000003192e3c8c8a9e9cd00e0"
+      ],
+      "key_addresses": [
+        "0x8580825008800b9e13266f40b41a838a521e4d0b",
+        "0x7824322B220CDB4d51F73782FbcE95E2E2B0595F",
+        "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+        "0x42646478b25317160e0dc8db413991277e4bb3c2"
+      ],
+      "path": []
+    },
+    "exploit_path": {
+      "summary": "Test a case with sparse source coverage and one stronger case-study page.",
+      "steps": [
+        {
+          "title": "Incident enters the corpus",
+          "detail": "BGM is dated 2024-11-10.",
+          "evidence_refs": [],
+          "tx_hashes": []
+        },
+        {
+          "title": "Impact summary collected",
+          "detail": "Test a case with sparse source coverage and one stronger case-study page.",
+          "evidence_refs": [],
+          "tx_hashes": []
+        },
+        {
+          "title": "Source expansion completed",
+          "detail": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+          "evidence_refs": [],
+          "tx_hashes": []
+        }
+      ]
+    },
+    "evidence_chain": {
+      "summary": "The current case file keeps 20 public sources across 3 source types.",
+      "claims": [
+        {
+          "claim_id": "claim-overview",
+          "title": "Current public summary",
+          "statement": "Test a case with sparse source coverage and one stronger case-study page.",
+          "confidence": 0.58,
+          "support": [
+            {
+              "source_id": "src-001",
+              "url": "https://bscscan.com/tx/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+              "source_type": "explorer",
+              "depth": 0,
+              "discovered_from": "incident_seed",
+              "fetch_status": "fetched",
+              "note": "Supports the current public-facing summary."
+            },
+            {
+              "source_id": "src-002",
+              "url": "https://x.com/ExternalExplorer_xyz/status/1855798237770170415",
+              "source_type": "social",
+              "depth": 0,
+              "discovered_from": "incident_seed",
+              "fetch_status": "fetched",
+              "note": "Supports the current public-facing summary."
+            },
+            {
+              "source_id": "src-003",
+              "url": "https://quadrigainitiative.com/casestudy/bgmonbscbatchtransactionspricemanipulationexploit.php",
+              "source_type": "report",
+              "depth": 0,
+              "discovered_from": "incident_seed",
+              "fetch_status": "fetched",
+              "note": "Supports the current public-facing summary."
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "src-001",
+          "url": "https://bscscan.com/tx/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+          "source_type": "explorer",
+          "discovered_from": "incident_seed",
+          "depth": 0,
+          "priority": 99,
+          "fetch_status": "fetched"
+        },
+        {
+          "source_id": "src-002",
+          "url": "https://x.com/ExternalExplorer_xyz/status/1855798237770170415",
+          "source_type": "social",
+          "discovered_from": "incident_seed",
+          "depth": 0,
+          "priority": 98,
+          "fetch_status": "fetched"
+        },
+        {
+          "source_id": "src-003",
+          "url": "https://quadrigainitiative.com/casestudy/bgmonbscbatchtransactionspricemanipulationexploit.php",
+          "source_type": "report",
+          "discovered_from": "incident_seed",
+          "depth": 0,
+          "priority": 97,
+          "fetch_status": "fetched"
+        },
+        {
+          "source_id": "src-007",
+          "url": "https://opbnb.bscscan.com",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-008",
+          "url": "https://testnet.bscscan.com",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-009",
+          "url": "https://opbnb-testnet.bscscan.com",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-010",
+          "url": "https://bscscan.com/login",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-011",
+          "url": "https://bscscan.com/txs",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-012",
+          "url": "https://bscscan.com/txsPending",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-013",
+          "url": "https://bscscan.com/txsInternal",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-014",
+          "url": "https://bscscan.com/txsBlobs",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-015",
+          "url": "https://bscscan.com/txsAA",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-016",
+          "url": "https://bscscan.com/txnAuthList",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-017",
+          "url": "https://bscscan.com/blocks",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-018",
+          "url": "https://bscscan.com/blocks_forked",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-019",
+          "url": "https://bscscan.com/accounts",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-020",
+          "url": "https://bscscan.com/contractsVerified",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-021",
+          "url": "https://bscscan.com/validators",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-022",
+          "url": "https://bscscan.com/validatorset",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        },
+        {
+          "source_id": "src-023",
+          "url": "https://bscscan.com/tokens",
+          "source_type": "explorer",
+          "discovered_from": "src-001",
+          "depth": 1,
+          "priority": 30,
+          "fetch_status": "discovered"
+        }
+      ]
+    },
+    "open_questions": [
+      "attack_contract_urls",
+      "victim_contract_urls",
+      "poc_links"
+    ]
+  }
+}

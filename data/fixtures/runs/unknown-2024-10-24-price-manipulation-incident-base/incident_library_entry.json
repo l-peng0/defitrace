@@ -1,0 +1,44 @@
+{
+  "incident_id": "unknown-2024-10-24-price-manipulation-incident-base",
+  "title": "Unknown 2024-10-24 price-manipulation incident",
+  "protocol_name": "Unknown",
+  "chain": "Base",
+  "incident_date": "",
+  "summary": "An estimated loss of about $1M was caused by price manipulation against an unverified Compound-like lending deployment on Base",
+  "status": "demo_live_dossier",
+  "completeness_score": 0.58,
+  "source_count": 46,
+  "direct_source_count": 4,
+  "secondary_source_count": 42,
+  "social_count": 0,
+  "poc_count": 2,
+  "explorer_count": 43,
+  "report_count": 1,
+  "missing_fields": [
+    "protocol_name",
+    "incident_date",
+    "victim_contract_urls",
+    "attack_contract_urls",
+    "social_sources",
+    "precise_loss_amount",
+    "fund_flow_analysis",
+    "attacker_funding_source",
+    "root_cause_technical_analysis"
+  ],
+  "last_updated": "2026-04-27T13:06:23+00:00",
+  "pattern_label": "price_manipulation",
+  "attack_tx_hashes": [
+    "0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e",
+    "0x5fc54101f75e26cd3dfbaf949a5d55450533ff2d2a728476d6860801cfdfd6f1",
+    "0xaa9decc8868f3b01600bc7aa548ada1ea5a4aa623c02b84b96087299401d02ec",
+    "0xaf85c3bd1a237c9decbe14b27e915c5596cdfd82a97df2fe67012d40239c3002"
+  ],
+  "source_preview": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/CompoundFork_exploit.sol",
+    "https://basescan.org/tx/0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e",
+    "https://basescan.org/address/0x7562846468089cf0e8f7b38ac53406b895284901",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-10/CompoundFork_exploit.sol",
+    "https://basescan.org/chart/price"
+  ]
+}

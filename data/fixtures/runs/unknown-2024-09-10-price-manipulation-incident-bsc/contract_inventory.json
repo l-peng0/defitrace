@@ -1,0 +1,229 @@
+{
+  "incident_id": "unknown-2024-09-10-price-manipulation-incident-bsc",
+  "chain": "BSC",
+  "generated_at": "2026-04-27T12:41:15+00:00",
+  "contracts": {
+    "0x091825b142b9f07935e1816c917c90cdfc668634": {
+      "address": "0x091825b142b9f07935e1816c917c90cdfc668634",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:41:14+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0xf43629ef383e10b552a0c1fc6cffaa8605a1533b": {
+      "address": "0xf43629ef383e10b552a0c1fc6cffaa8605a1533b",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:41:14+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x7f2eb21c09aa29d6a676dbd9ecbb677d59d3d420": {
+      "address": "0x7f2eb21c09aa29d6a676dbd9ecbb677d59d3d420",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:41:14+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0xff8775851d88fcee2815d54c9de885761abb04f3": {
+      "address": "0xff8775851d88fcee2815d54c9de885761abb04f3",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:41:14+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0xc3b38558a950dc741a88dc03f7fceb23cd9ff122": {
+      "address": "0xc3b38558a950dc741a88dc03f7fceb23cd9ff122",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:41:14+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x99c13538dd47d57ff272b13fd9a2fa38e68e8458": {
+      "address": "0x99c13538dd47d57ff272b13fd9a2fa38e68e8458",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:41:14+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x8c936ce2dbbc1c4764ee617a8127d2184dc813cc": {
+      "address": "0x8c936ce2dbbc1c4764ee617a8127d2184dc813cc",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:41:14+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0xcf833a98d2b9da8f041b3f5606db1ffd937651b9": {
+      "address": "0xcf833a98d2b9da8f041b3f5606db1ffd937651b9",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:41:14+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x34beb8b92a61eb1c3e2fe27eac16eec895ba2e98": {
+      "address": "0x34beb8b92a61eb1c3e2fe27eac16eec895ba2e98",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:41:14+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x5a6180b744fee7975484266c343b074ca9b893c4": {
+      "address": "0x5a6180b744fee7975484266c343b074ca9b893c4",
+      "role": "attacker_contract",
+      "classification": "unverified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "contract_name": "",
+      "compiler_version": "",
+      "source_path": "",
+      "abi_path": "",
+      "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+      "create_type": "CREATE",
+      "fetched_at": "2026-04-27T12:41:14+00:00",
+      "fetch_errors": [
+        "newly deployed in-tx \u2014 no on-chain source"
+      ]
+    },
+    "0x83681f67069a154815a0c6c2c97e2daca6ed3249": {
+      "address": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+      "role": "victim",
+      "classification": "verified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "admin_address": "",
+      "contract_name": "PancakePair",
+      "compiler_version": "v0.5.16+commit.9c3226ce",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x83681f67069a154815a0c6c2c97e2daca6ed3249/source.json",
+      "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x83681f67069a154815a0c6c2c97e2daca6ed3249/abi.json",
+      "fetched_at": "2026-04-27T12:41:14+00:00",
+      "fetch_errors": []
+    },
+    "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae": {
+      "address": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "role": "pair",
+      "classification": "verified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "admin_address": "",
+      "contract_name": "PancakePair",
+      "compiler_version": "v0.5.16+commit.9c3226ce",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae/source.json",
+      "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae/abi.json",
+      "fetched_at": "2026-04-27T12:41:15+00:00",
+      "fetch_errors": []
+    }
+  }
+}

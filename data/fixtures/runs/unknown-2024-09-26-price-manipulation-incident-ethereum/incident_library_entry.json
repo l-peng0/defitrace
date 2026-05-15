@@ -1,0 +1,45 @@
+{
+  "incident_id": "unknown-2024-09-26-price-manipulation-incident-ethereum",
+  "title": "Unknown 2024-09-26 price-manipulation incident",
+  "protocol_name": "Unknown",
+  "chain": "Ethereum",
+  "incident_date": "",
+  "summary": "An estimated loss of ~1",
+  "status": "demo_live_dossier",
+  "completeness_score": 0.42,
+  "source_count": 45,
+  "direct_source_count": 4,
+  "secondary_source_count": 41,
+  "social_count": 0,
+  "poc_count": 2,
+  "explorer_count": 42,
+  "report_count": 1,
+  "missing_fields": [
+    "protocol_name_confirmation",
+    "exact_loss_amount_and_denomination",
+    "victim_contract_addresses",
+    "attack_contract_deployment_address",
+    "fund_flow_post_exploit",
+    "flash_loan_details_if_applicable",
+    "specific_oracle_mechanism_exploited",
+    "timestamps_for_attack_steps",
+    "social_media_sources",
+    "protocol_official_response"
+  ],
+  "last_updated": "2026-04-27T12:46:36+00:00",
+  "pattern_label": "price_manipulation",
+  "attack_tx_hashes": [
+    "0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940",
+    "0x608060405234801561000f575f5ffd5b505f60405161001d9061016e565b6040",
+    "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+    "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  ],
+  "source_preview": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Bedrock_DeFi_exp.sol",
+    "https://etherscan.io/tx/0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940",
+    "https://etherscan.io/address/0x0C8da4f8B823bEe4D5dAb73367D45B5135B50faB",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-09/Bedrock_DeFi_exp.sol",
+    "https://etherscan.io/chart/etherprice"
+  ]
+}

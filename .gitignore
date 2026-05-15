@@ -1,0 +1,58 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtualenvs
+.venv/
+.venv*/
+venv/
+env/
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.keystore
+
+# Build / generated
+runs/
+output/
+logs/
+*.log
+*.tmp
+.tmp/
+
+# Keep curated fixtures
+!data/fixtures/runs/
+
+# Node / frontend build artifacts
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+# Playwright
+.playwright-cli/
+playwright-report/
+test-results/
+
+# Misc binary / large local assets
+*.pdf
+*.m4a
+*.mov
+*.mp4

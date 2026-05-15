@@ -1,0 +1,314 @@
+{
+  "incident_id": "paribus-2025-01-18-price-manipulation-incident-arbitrum",
+  "headline": "Paribus 2025-01-18 price-manipulation incident",
+  "executive_summary": "An estimated loss of about $86K was associated with a price-manipulation attack against Paribus on Arbitrum, with the initial attack path focusing on roughly $60K in ETH, USDT, and ARB",
+  "timeline_summary": "   ",
+  "attacker_behavior_summary": "The dossier has 1 direct attacker address candidate(s) and 173 additional address mentions from fetched sources.",
+  "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+  "source_refs": [
+    {
+      "source_id": "src-001",
+      "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+      "source_type": "report",
+      "depth": 0
+    },
+    {
+      "source_id": "src-002",
+      "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/Paribus_exp.sol",
+      "source_type": "poc",
+      "depth": 0
+    },
+    {
+      "source_id": "src-003",
+      "url": "https://bitfinding.com/blog/paribus-hack-interception",
+      "source_type": "report",
+      "depth": 0
+    },
+    {
+      "source_id": "src-004",
+      "url": "https://x.com/BitFinding/status/1882880682512527516",
+      "source_type": "social",
+      "depth": 0
+    },
+    {
+      "source_id": "src-005",
+      "url": "https://arbiscan.io/tx/0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2",
+      "source_type": "explorer",
+      "depth": 0
+    },
+    {
+      "source_id": "src-006",
+      "url": "https://arbiscan.io/address/0xd368cca925bb3dbadd06ea1b81e96a2174830978",
+      "source_type": "explorer",
+      "depth": 0
+    },
+    {
+      "source_id": "src-007",
+      "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2025-01/Paribus_exp.sol",
+      "source_type": "poc",
+      "depth": 1
+    },
+    {
+      "source_id": "src-008",
+      "url": "https://x.com/bitfinding",
+      "source_type": "social",
+      "depth": 1
+    },
+    {
+      "source_id": "src-009",
+      "url": "https://github.com/bitfinding",
+      "source_type": "poc",
+      "depth": 1
+    },
+    {
+      "source_id": "src-010",
+      "url": "https://arbiscan.io/chart/price",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-011",
+      "url": "https://sepolia.arbiscan.io",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-012",
+      "url": "https://arbiscan.io/txs",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-013",
+      "url": "https://arbiscan.io/txsDeposits",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-014",
+      "url": "https://arbiscan.io/txsExit",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-015",
+      "url": "https://arbiscan.io/txsInternal",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-016",
+      "url": "https://arbiscan.io/txsAA",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-017",
+      "url": "https://arbiscan.io/txnAuthList",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-018",
+      "url": "https://arbiscan.io/blocks",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-019",
+      "url": "https://arbiscan.io/batches",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-020",
+      "url": "https://arbiscan.io/blocks_forked",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-021",
+      "url": "https://arbiscan.io/accounts",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-022",
+      "url": "https://arbiscan.io/contractsVerified",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-023",
+      "url": "https://arbiscan.io/tokens",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-024",
+      "url": "https://arbiscan.io/tokentxns",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-025",
+      "url": "https://arbiscan.io/token/0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-026",
+      "url": "https://arbiscan.io/nft-transfers",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-027",
+      "url": "https://arbiscan.io/nft-latest-mints",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-028",
+      "url": "https://arbiscan.io/charts",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-029",
+      "url": "https://arbiscan.io/directory",
+      "source_type": "explorer",
+      "depth": 1
+    },
+    {
+      "source_id": "src-030",
+      "url": "https://etherscan.io/apis?id=42161",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-031",
+      "url": "https://arbiscan.io",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-032",
+      "url": "https://sepolia.arbiscan.io/txs",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-033",
+      "url": "https://sepolia.arbiscan.io/txsDeposits",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-034",
+      "url": "https://sepolia.arbiscan.io/txsExit",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-035",
+      "url": "https://sepolia.arbiscan.io/txsInternal",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-036",
+      "url": "https://sepolia.arbiscan.io/txsAA",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-037",
+      "url": "https://sepolia.arbiscan.io/txnAuthList",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-038",
+      "url": "https://sepolia.arbiscan.io/blocks",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-039",
+      "url": "https://sepolia.arbiscan.io/batches",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-040",
+      "url": "https://sepolia.arbiscan.io/accounts",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-041",
+      "url": "https://sepolia.arbiscan.io/contractsVerified",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-042",
+      "url": "https://sepolia.arbiscan.io/tokentxns",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-043",
+      "url": "https://sepolia.arbiscan.io/nft-transfers",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-044",
+      "url": "https://sepolia.arbiscan.io/nft-latest-mints",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-045",
+      "url": "https://sepolia.arbiscan.io/unitconverter",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-046",
+      "url": "https://sepolia.arbiscan.io/base64converter",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-047",
+      "url": "https://sepolia.arbiscan.io/blockdateconverter",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-048",
+      "url": "https://sepolia.arbiscan.io/utf8converter",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-049",
+      "url": "https://sepolia.arbiscan.io/methodidconverter",
+      "source_type": "explorer",
+      "depth": 2
+    },
+    {
+      "source_id": "src-050",
+      "url": "https://docs.etherscan.io/etherscan-v2",
+      "source_type": "explorer",
+      "depth": 2
+    }
+  ],
+  "open_questions": [
+    "Which specific pricing path was abused?",
+    "Is there a direct explorer or postmortem source that confirms the same mechanism?"
+  ]
+}

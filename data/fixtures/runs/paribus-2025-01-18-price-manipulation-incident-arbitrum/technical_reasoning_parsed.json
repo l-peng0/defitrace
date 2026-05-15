@@ -1,0 +1,12 @@
+{
+  "attack_flow_summary": "",
+  "exploit_mechanism": "",
+  "tx_role_map": {},
+  "contract_role_map": {},
+  "timeline_steps": [],
+  "funds_flow_path": [],
+  "open_questions": [],
+  "confidence_notes": [
+    "Attack pattern consistent with flash loan price manipulation. Attacker contract deployed in-transaction via CREATE2. Multiple flash loan providers (Aave V3, Uniswap V3) used to accumulate capital. Victim AlgebraPool showed net-negative balance changes. Unverified contract at 0xbd4786f93ceef3dd73600ebe0b0bdccca2f7d37c appears to be flash loan aggregator or callback initiator."
+  ]
+}

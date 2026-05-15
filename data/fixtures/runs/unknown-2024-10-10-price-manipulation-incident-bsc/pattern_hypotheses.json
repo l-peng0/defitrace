@@ -1,0 +1,19 @@
+{
+  "incident_id": "unknown-2024-10-10-price-manipulation-incident-bsc",
+  "hypotheses": [
+    {
+      "hypothesis_id": "hyp-001",
+      "label": "price_manipulation",
+      "summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+      "why_suspected": [
+        "Attack-type tags mention price manipulation.",
+        "The supporting sources resemble prior price-manipulation writeups."
+      ],
+      "confidence": 0.76,
+      "open_questions": [
+        "Which specific pricing path was abused?",
+        "Is there a direct explorer or postmortem source that confirms the same mechanism?"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "incident_id": "lavalending-2024-10-02-price-manipulation-incident-arbitrum",
+  "card": {
+    "title": "Lavalending 2024-10-02 price-manipulation incident",
+    "chain": "Arbitrum",
+    "incident_date": "",
+    "protocol_name": "Lavalending",
+    "summary": "An estimated loss of about $130K was caused by a price-manipulation attack against LavaLending on Arbitrum",
+    "source_count": 45,
+    "direct_source_count": 4,
+    "secondary_source_count": 41,
+    "completeness_score": 0.05
+  },
+  "detail": {
+    "timeline_preview": [
+      {
+        "step_number": 1,
+        "description": "Attacker address 0x69fa61eb4dc4e07263d401b01ed1cfceb599dab8 prepares funds to execute a price manipulation attack against LavaLending on Arbitrum.",
+        "evidence_refs": [
+          "ev-004",
+          "ev-002"
+        ],
+        "summary": ""
+      },
+      {
+        "step_number": 2,
+        "description": "Attacker manipulates the price oracle of a targeted asset utilized by the LavaLending protocol, interacting with associated contracts such as 0x8a0Dfb61CAd29168E1067F6b23553035d83FcFB2.",
+        "evidence_refs": [
+          "ev-005",
+          "ev-010"
+        ],
+        "summary": ""
+      },
+      {
+        "step_number": 3,
+        "description": "Attacker executes the exploit transaction 0xb5cfa4ae4d6e459ba285fec7f31caf8885e2285a0b4ff62f66b43e280c947216, leveraging the manipulated price to drain approximately $130K from the protocol.",
+        "evidence_refs": [
+          "ev-003",
+          "ev-005",
+          "ev-012"
+        ],
+        "summary": ""
+      }
+    ],
+    "attacker_profile_summary": "The dossier has 1 direct attacker address candidate(s) and 157 additional address mentions from fetched sources.",
+    "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+    "judge_summary": "The dossier establishes that a price-manipulation attack against LavaLending occurred on Arbitrum with approximately $130K in losses, supported by a primary transaction hash and attacker address. However, the technical depth is insufficient: the specific oracle exploited, the token whose price was manipulated, flashloan mechanics, and transaction traces are absent or inferred. The evidence corpus is polluted with irrelevant testnet data, and critical fields including contract URLs, social sources, and post-exploit fund tracking are missing. The timeline is logically structured but rests on weak evidentiary foundations for the manipulation mechanics.",
+    "missing_fields": [
+      "attack_contract_urls",
+      "victim_contract_urls",
+      "social_sources",
+      "exact_attack_timestamp",
+      "manipulated_token_address",
+      "oracle_contract_address",
+      "flashloan_source_and_amount",
+      "fund_destination_after_exploit",
+      "transaction_trace_analysis",
+      "protocol_response_statement"
+    ],
+    "technical_analysis_status": "completed"
+  },
+  "status": "demo_live_dossier",
+  "last_updated": "2026-04-27T12:52:08+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "incident_id": "unknown-2024-09-10-price-manipulation-incident-bsc",
+  "steps": [
+    {
+      "step_id": "step-001",
+      "order": 1,
+      "label": "Exploit transaction linked",
+      "step_type": "exploit",
+      "summary": "The current dossier has 1 direct attack transaction candidate(s).",
+      "source_refs": [
+        "src-004"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "step_id": "step-002",
+      "order": 2,
+      "label": "Impact summary collected",
+      "step_type": "impact",
+      "summary": "An estimated loss of ~1",
+      "source_refs": [],
+      "confidence": 0.72
+    },
+    {
+      "step_id": "step-003",
+      "order": 3,
+      "label": "Source expansion completed",
+      "step_type": "analysis",
+      "summary": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+      "source_refs": [],
+      "confidence": 0.75
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "incident_id": "radiant-capital-2024-01-sample",
+  "dashboard_view": {
+    "incident_id": "radiant-capital-2024-01-sample",
+    "card": {
+      "title": "Radiant Capital January 2024 incident",
+      "chain": "Arbitrum",
+      "protocol_name": "Radiant Capital",
+      "summary": "This MVP dossier was assembled from seed-level facts for Radiant Capital January 2024 incident. It already preserves key seed inputs and checkpoint files, but it still needs live source fetching for a fuller dossier.",
+      "source_count": 3,
+      "completeness_score": 1.0
+    },
+    "detail": {
+      "timeline_preview": [
+        {
+          "step_id": "step-001",
+          "order": 1,
+          "label": "Incident seed created",
+          "step_type": "seed",
+          "summary": "The run began from a manually supplied incident seed.",
+          "tx_hashes": [],
+          "addresses": [],
+          "source_refs": [],
+          "confidence": 1.0
+        },
+        {
+          "step_id": "step-002",
+          "order": 2,
+          "label": "Exploit transaction observed",
+          "step_type": "exploit",
+          "summary": "Seed data points to 1 likely attack transaction(s).",
+          "tx_hashes": [
+            "0x1111111111111111111111111111111111111111111111111111111111111111"
+          ],
+          "addresses": [],
+          "source_refs": [
+            "src-002"
+          ],
+          "confidence": 0.9
+        },
+        {
+          "step_id": "step-003",
+          "order": 3,
+          "label": "Attacker footprint surfaced",
+          "step_type": "actor",
+          "summary": "Seed data includes 1 attacker-linked address(es).",
+          "tx_hashes": [],
+          "addresses": [
+            "0x2222222222222222222222222222222222222222"
+          ],
+          "source_refs": [
+            "src-003"
+          ],
+          "confidence": 0.85
+        }
+      ],
+      "attacker_profile_summary": "The seed already names 1 attacker-linked address(es), but this MVP has not yet pulled historical transfers or counterparties.",
+      "pattern_summary": "Seed tags suggest the case may be a price manipulation incident.",
+      "missing_fields": []
+    },
+    "status": "partial_mvp_output",
+    "last_updated": "2026-04-01T04:15:27+00:00"
+  },
+  "augmented_incident": {
+    "incident_id": "radiant-capital-2024-01-sample",
+    "title": "Radiant Capital January 2024 incident",
+    "chain": "Arbitrum",
+    "protocol_name": "Radiant Capital",
+    "status": "partial_mvp_output",
+    "summary": "This MVP dossier was assembled from seed-level facts for Radiant Capital January 2024 incident. It already preserves key seed inputs and checkpoint files, but it still needs live source fetching for a fuller dossier.",
+    "key_addresses": [
+      "0x2222222222222222222222222222222222222222"
+    ],
+    "key_contracts": [],
+    "key_transactions": [
+      "0x1111111111111111111111111111111111111111111111111111111111111111"
+    ],
+    "timeline": [
+      {
+        "step_id": "step-001",
+        "order": 1,
+        "label": "Incident seed created",
+        "step_type": "seed",
+        "summary": "The run began from a manually supplied incident seed.",
+        "tx_hashes": [],
+        "addresses": [],
+        "source_refs": [],
+        "confidence": 1.0
+      },
+      {
+        "step_id": "step-002",
+        "order": 2,
+        "label": "Exploit transaction observed",
+        "step_type": "exploit",
+        "summary": "Seed data points to 1 likely attack transaction(s).",
+        "tx_hashes": [
+          "0x1111111111111111111111111111111111111111111111111111111111111111"
+        ],
+        "addresses": [],
+        "source_refs": [
+          "src-002"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "step_id": "step-003",
+        "order": 3,
+        "label": "Attacker footprint surfaced",
+        "step_type": "actor",
+        "summary": "Seed data includes 1 attacker-linked address(es).",
+        "tx_hashes": [],
+        "addresses": [
+          "0x2222222222222222222222222222222222222222"
+        ],
+        "source_refs": [
+          "src-003"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "step_id": "step-004",
+        "order": 4,
+        "label": "Follow-up evidence still needed",
+        "step_type": "gap",
+        "summary": "This MVP has not fetched remote pages yet, so chronology beyond the seed remains open.",
+        "tx_hashes": [],
+        "addresses": [],
+        "source_refs": [],
+        "confidence": 0.45
+      }
+    ],
+    "attacker_profile": {
+      "incident_id": "radiant-capital-2024-01-sample",
+      "profile_id": "profile-radiant-capital-2024-01-sample",
+      "primary_addresses": [
+        "0x2222222222222222222222222222222222222222"
+      ],
+      "related_addresses": [],
+      "first_seen_estimate": "unknown",
+      "recent_activity_summary": "The seed already names 1 attacker-linked address(es), but this MVP has not yet pulled historical transfers or counterparties.",
+      "funding_patterns": [],
+      "outbound_patterns": [],
+      "counterparties": [],
+      "repeated_behaviors": [
+        "Uses addresses supplied by the seed as the first working hypothesis."
+      ],
+      "source_refs": [],
+      "open_questions": [
+        "Which address funded the exploit wallet before the attack?",
+        "Where did funds move immediately after the exploit?"
+      ]
+    },
+    "pattern_hypotheses": [
+      {
+        "hypothesis_id": "hyp-001",
+        "label": "price_manipulation",
+        "summary": "Seed tags suggest the case may be a price manipulation incident.",
+        "why_suspected": [
+          "The seed tags include a price-manipulation label."
+        ],
+        "evidence_refs": [
+          "ev-005",
+          "ev-006",
+          "ev-007"
+        ],
+        "confidence": 0.7,
+        "open_questions": [
+          "Which pricing or liquidity mechanism was actually abused?",
+          "Do later sources confirm the same root cause?"
+        ]
+      }
+    ],
+    "source_summary": {
+      "source_count": 3,
+      "source_types": {
+        "seed_url": 1,
+        "tx_explorer": 1,
+        "address_explorer": 1
+      }
+    },
+    "completeness_score": 1.0,
+    "missing_fields": [],
+    "conflicts": [],
+    "generated_at": "2026-04-01T04:15:27+00:00"
+  },
+  "source_index": {
+    "incident_id": "radiant-capital-2024-01-sample",
+    "sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://blog.openzeppelin.com/radiant-capital-incident-analysis",
+        "source_type": "seed_url",
+        "discovered_from": "incident_seed",
+        "priority": 99,
+        "fetch_status": "not_fetched",
+        "notes": "Seed source supplied directly by the user or upstream module."
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://arbiscan.io/tx/0x1111111111111111111111111111111111111111111111111111111111111111",
+        "source_type": "tx_explorer",
+        "discovered_from": "attack_tx_hashes",
+        "priority": 79,
+        "fetch_status": "not_fetched",
+        "notes": "Explorer page inferred from attack transaction hash."
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://arbiscan.io/address/0x2222222222222222222222222222222222222222",
+        "source_type": "address_explorer",
+        "discovered_from": "attacker_addresses",
+        "priority": 59,
+        "fetch_status": "not_fetched",
+        "notes": "Explorer page inferred from attacker address."
+      }
+    ]
+  },
+  "run_state": {
+    "job_id": "radiant-capital-2024-01-sample-job",
+    "incident_id": "radiant-capital-2024-01-sample",
+    "trigger_type": "manual",
+    "current_stage": "dashboard_projection",
+    "node_status": {
+      "seed_loader": "completed",
+      "source_finder": "completed",
+      "evidence_collector": "completed",
+      "citation_resolver": "completed",
+      "timeline_builder": "completed",
+      "attacker_profiler": "completed",
+      "pattern_reasoner": "completed",
+      "dossier_assembler": "completed",
+      "dashboard_projection": "completed"
+    },
+    "retry_counts": {},
+    "started_at": "2026-04-01T04:15:27+00:00",
+    "updated_at": "2026-04-01T04:15:27+00:00",
+    "completed_at": "2026-04-01T04:15:27+00:00",
+    "run_notes": [
+      "Created ranked source candidates from the seed.",
+      "Converted seed facts into structured evidence items.",
+      "Wrote dashboard and report handoff JSON outputs."
+    ]
+  },
+  "report_inputs": {
+    "incident_id": "radiant-capital-2024-01-sample",
+    "headline": "Radiant Capital January 2024 incident",
+    "executive_summary": "This MVP dossier was assembled from seed-level facts for Radiant Capital January 2024 incident. It already preserves key seed inputs and checkpoint files, but it still needs live source fetching for a fuller dossier.",
+    "timeline_summary": "The run began from a manually supplied incident seed. Seed data points to 1 likely attack transaction(s). Seed data includes 1 attacker-linked address(es).",
+    "attacker_behavior_summary": "The seed already names 1 attacker-linked address(es), but this MVP has not yet pulled historical transfers or counterparties.",
+    "pattern_summary": "Seed tags suggest the case may be a price manipulation incident.",
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "url": "https://blog.openzeppelin.com/radiant-capital-incident-analysis",
+        "source_type": "seed_url"
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://arbiscan.io/tx/0x1111111111111111111111111111111111111111111111111111111111111111",
+        "source_type": "tx_explorer"
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://arbiscan.io/address/0x2222222222222222222222222222222222222222",
+        "source_type": "address_explorer"
+      }
+    ],
+    "open_questions": [
+      "Which sources should be fetched first in the next run?",
+      "Can we confirm the exploit root cause from direct technical evidence?"
+    ]
+  }
+}

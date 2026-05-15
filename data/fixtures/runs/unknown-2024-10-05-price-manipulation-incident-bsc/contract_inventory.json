@@ -1,0 +1,39 @@
+{
+  "incident_id": "unknown-2024-10-05-price-manipulation-incident-bsc",
+  "chain": "BSC",
+  "generated_at": "2026-04-27T12:50:47+00:00",
+  "contracts": {
+    "0xbe779d420b7d573c08eee226b9958737b6218888": {
+      "address": "0xbe779d420b7d573c08eee226b9958737b6218888",
+      "role": "victim",
+      "classification": "verified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "admin_address": "",
+      "contract_name": "AIZPT314",
+      "compiler_version": "v0.8.18+commit.87f61d96",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/contracts/0xbe779d420b7d573c08eee226b9958737b6218888/source.json",
+      "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/contracts/0xbe779d420b7d573c08eee226b9958737b6218888/abi.json",
+      "fetched_at": "2026-04-27T12:50:44+00:00",
+      "fetch_errors": []
+    },
+    "0x36696169c63e42cd08ce11f5deebbcebae652050": {
+      "address": "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "role": "flash_loan_provider",
+      "classification": "verified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "admin_address": "",
+      "contract_name": "PancakeV3Pool",
+      "compiler_version": "v0.7.6+commit.7338295f",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/contracts/0x36696169c63e42cd08ce11f5deebbcebae652050/source.json",
+      "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-05-price-manipulation-incident-bsc/technical_analysis/contracts/0x36696169c63e42cd08ce11f5deebbcebae652050/abi.json",
+      "fetched_at": "2026-04-27T12:50:47+00:00",
+      "fetch_errors": []
+    }
+  }
+}

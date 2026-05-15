@@ -1,0 +1,62 @@
+{
+  "incident_id": "unknown-2024-10-01-price-manipulation-incident-ethereum",
+  "profile_id": "profile-unknown-2024-10-01-price-manipulation-incident-ethereum",
+  "primary_addresses": [
+    "0x026a5b6114431d8f3ef2fa0e1b2edddcca9c540e",
+    "0x08669c836f41aead03e3ef81a59f3b8e72ec417a",
+    "0x173c6ae0e2263a1a2a466d23f9bd16eaa2ead154",
+    "0x18775475f50557b96c63e8bbf7d75bfeb412082d",
+    "0x18e439be184e9b4a5d92f44722e72087e4133fcf",
+    "0x2e7576042566f8d6990e07a1b61ad1efd86ae70d",
+    "0x32fd502975d5b74686e34df01aa8b8b28e213aad",
+    "0x37b8bb5b520f4a6ae8ce2f6d447dfc9a8f650979",
+    "0x3c6b93d38ffa15ea995d1bc950d5d0fa6b22bd05",
+    "0x5882a6bef7cab6b99019b565060da081e157d454",
+    "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+    "0x5ae329203e00f76891094dcfedd5aca082a50e1b",
+    "0x6175ddec3b9b38c88157c10a01ed4a3fa8639cc6",
+    "0x6fd32465a23aa0dbae0d813b7157d8cb2b08dae4",
+    "0x79a617dedf7a21625ec03fca9ff8482ac11ef100",
+    "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+    "0x805e18b0325eab315d61bd92ae152247af0ea609",
+    "0x81f48a87ec44208c691f870b9d400d9c13111e2e",
+    "0x86c71796ccdb31c3997f8ec5c2e3db3e9e40b985",
+    "0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+    "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+    "0x9c7f0a0400690ef2252ba8f45725d3bd2d886ab1",
+    "0xabc99f366d2be1f4e5b8dfc0f561a751dd836246",
+    "0xc0110ee63cac2196fcc76359fe8a03f20eb36391",
+    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "0xc13e21b648a5ee794902342038ff3adab66be987",
+    "0xc215faf64374b7f884af55791b810496c4bab405",
+    "0xcc27779013a1cca68d3d93c640aac807891fd029",
+    "0xcc3037f5aef5831730a9acb1739d0562117314c0",
+    "0xd107ef93ba6f3139dd81cd4588c3b9ee84e122ee",
+    "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+    "0xe26cf8d891d9f033b47011acfb1f52fd324b2b14",
+    "0xe2e02e8a7952050523635628c1e7b46f0065f96d",
+    "0xe5677443d2b7239ada673cc26398ebbd4894a25c"
+  ],
+  "related_addresses": [
+    "0xd20b3b31a682322eb0698ecd67a6d8a040ccea65",
+    "0x81F48A87Ec44208c691f870b9d400D9c13111e2E",
+    "0x9776C0ABE8aE3C9Ca958875128F1ae1D5afafCb8",
+    "0x9793d1082ecad9d813bbf7e044162fb0d8d29c9f",
+    "0x32fd502975d5b74686e34df01aa8b8b28e213aad",
+    "0x805e18b0325eab315d61bd92ae152247af0ea609",
+    "0xdefdfc48d8cba958db5cc8b69b5d59be05c37b4a",
+    "0xe5677443d2b7239ada673cc26398ebbd4894a25c",
+    "0x258365061e99d3909f89a745c6d595ec2b5b25f7",
+    "0xa9a56fe2c47e87480d3dc0c7d5ce8c3c2cac86a2"
+  ],
+  "recent_activity_summary": "The dossier has 1 direct attacker address candidate(s) and 160 additional address mentions from fetched sources.",
+  "counterparties": [],
+  "repeated_behaviors": [
+    "Leans on addresses confirmed by direct seed fields first.",
+    "Uses source-text mentions as weaker supporting clues rather than direct proof."
+  ],
+  "open_questions": [
+    "Which address funded the exploit wallet before the attack?",
+    "Which transfers right after the exploit are still missing from the dossier?"
+  ]
+}

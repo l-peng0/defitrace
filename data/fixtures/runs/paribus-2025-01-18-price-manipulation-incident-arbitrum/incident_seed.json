@@ -1,0 +1,37 @@
+{
+  "incident_id": "paribus-2025-01-18-price-manipulation-incident-arbitrum",
+  "job_id": "paribus-arbitrum-2025-01-18-batch",
+  "trigger_type": "batch",
+  "seed_type": "tx_hash",
+  "chain": "Arbitrum",
+  "protocol_name": "Paribus",
+  "incident_name": "Paribus 2025-01-18 price-manipulation incident",
+  "incident_date": "",
+  "attack_tx_hashes": [
+    "0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2"
+  ],
+  "attacker_addresses": [
+    "0xd368cca925bb3dbadd06ea1b81e96a2174830978"
+  ],
+  "seed_urls": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/Paribus_exp.sol",
+    "https://bitfinding.com/blog/paribus-hack-interception",
+    "https://x.com/BitFinding/status/1882880682512527516"
+  ],
+  "attack_contract_urls": [],
+  "victim_contract_urls": [],
+  "tags": [
+    "price_manipulation",
+    "arbitrum",
+    "defi"
+  ],
+  "source_names": [],
+  "attack_type_raws": [],
+  "summary_candidates": [
+    "An estimated loss of about $86K was associated with a price-manipulation attack against Paribus on Arbitrum, with the initial attack path focusing on roughly $60K in ETH, USDT, and ARB"
+  ],
+  "note_candidates": [],
+  "date_range": {},
+  "created_at": "2026-04-27T13:17:54+00:00"
+}

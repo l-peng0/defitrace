@@ -1,0 +1,58 @@
+{
+  "native_transfers": [
+    {
+      "from": "0x493c5655d40b051a64bc88a6af21d73d3a9b72a2",
+      "to": "0x991493900674b10bdf54bdfe95b4e043257798cf",
+      "value": 70000000000000000,
+      "asset": "native"
+    }
+  ],
+  "token_transfers": [
+    {
+      "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "from": "0x991493900674b10bdf54bdfe95b4e043257798cf",
+      "to": "0xb23fc1241e1bc1a5542a438775809d38099838fe",
+      "value": 70000000000000000
+    },
+    {
+      "token": "0xd1456d1b9ceb59abd4423a49d40942a9485ceef6",
+      "from": "0xb23fc1241e1bc1a5542a438775809d38099838fe",
+      "to": "0x991493900674b10bdf54bdfe95b4e043257798cf",
+      "value": 142298849366578503610012
+    },
+    {
+      "token": "0xd1456d1b9ceb59abd4423a49d40942a9485ceef6",
+      "from": "0x991493900674b10bdf54bdfe95b4e043257798cf",
+      "to": "0xb23fc1241e1bc1a5542a438775809d38099838fe",
+      "value": 1000000000000000000
+    },
+    {
+      "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "from": "0x5eac5992e8c7cc6b04bad2c5bbc00d101d4c8264",
+      "to": "0x991493900674b10bdf54bdfe95b4e043257798cf",
+      "value": 249276511929373786924
+    },
+    {
+      "token": "0xd1456d1b9ceb59abd4423a49d40942a9485ceef6",
+      "from": "0xd1456d1b9ceb59abd4423a49d40942a9485ceef6",
+      "to": "0xb23fc1241e1bc1a5542a438775809d38099838fe",
+      "value": 0
+    },
+    {
+      "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "from": "0xb23fc1241e1bc1a5542a438775809d38099838fe",
+      "to": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+      "value": 489519303415
+    },
+    {
+      "token": "0xd1456d1b9ceb59abd4423a49d40942a9485ceef6",
+      "from": "0x991493900674b10bdf54bdfe95b4e043257798cf",
+      "to": "0x5eac5992e8c7cc6b04bad2c5bbc00d101d4c8264",
+      "value": 99000000000000000000000
+    }
+  ],
+  "summary": {
+    "native_value_transfers": 1,
+    "token_transfers": 7
+  }
+}

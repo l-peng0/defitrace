@@ -1,0 +1,45 @@
+{
+  "job_id": "lavalending-arbitrum-2024-10-02-batch",
+  "incident_id": "lavalending-2024-10-02-price-manipulation-incident-arbitrum",
+  "trigger_type": "batch",
+  "current_stage": "dashboard_projection",
+  "node_status": {
+    "seed_loader": "completed",
+    "source_finder": "completed",
+    "source_expander": "completed",
+    "llm_evidence_extractor": "completed",
+    "evidence_normalizer": "completed",
+    "technical_deterministic_collection": "completed",
+    "technical_reasoning": "completed",
+    "technical_validation": "completed",
+    "llm_timeline_synthesizer": "completed",
+    "llm_narrative_writer": "completed",
+    "llm_quality_assessor": "completed",
+    "dossier_assembler": "completed",
+    "quality_judge": "completed",
+    "dashboard_projection": "completed"
+  },
+  "retry_counts": {},
+  "started_at": "2026-04-27T12:46:36+00:00",
+  "updated_at": "2026-04-27T12:52:08+00:00",
+  "completed_at": "2026-04-27T12:52:08+00:00",
+  "run_notes": [
+    "Loaded and normalized incident seed.",
+    "Built direct source candidates from seed facts.",
+    "Fetched direct sources and discovered second-hop links.",
+    "LLM extracted 0 extra items.",
+    "Turned fetched sources into citation-backed evidence.",
+    "Assembled dossier, quality report, and library entry.",
+    "The dossier establishes that a price-manipulation attack against LavaLending occurred on Arbitrum with approximately $130K in losses, supported by a primary transaction hash and attacker address. However, the technical depth is insufficient: the specific oracle exploited, the token whose price was manipulated, flashloan mechanics, and transaction traces are absent or inferred. The evidence corpus is polluted with irrelevant testnet data, and critical fields including contract URLs, social sources, and post-exploit fund tracking are missing. The timeline is logically structured but rests on weak evidentiary foundations for the manipulation mechanics.",
+    "Projected live incident library and dossier views."
+  ],
+  "artifacts": {
+    "incident_seed": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/incident_seed.json",
+    "source_index": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/source_index.json",
+    "source_documents": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/source_documents.json",
+    "raw_evidence": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/raw_evidence.json",
+    "augmented_incident": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/augmented_incident.json",
+    "quality_report": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/quality_report.json",
+    "incident_library_entry": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/lavalending-2024-10-02-price-manipulation-incident-arbitrum/incident_library_entry.json"
+  }
+}

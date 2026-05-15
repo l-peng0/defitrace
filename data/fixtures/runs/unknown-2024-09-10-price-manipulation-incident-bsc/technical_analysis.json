@@ -1,0 +1,953 @@
+{
+  "incident_id": "unknown-2024-09-10-price-manipulation-incident-bsc",
+  "chain": "BSC",
+  "generated_at": "2026-04-27T12:41:12+00:00",
+  "primary_tx_hash": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+  "tx_hashes": [
+    "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827"
+  ],
+  "transactions": [
+    {
+      "tx_hash": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+      "status": "completed",
+      "tx_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/technical_analysis/0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827/tx.json",
+      "receipt_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/technical_analysis/0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827/receipt.json",
+      "trace_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/technical_analysis/0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827/trace_callTracer.json",
+      "decoded_calls_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/technical_analysis/0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827/decoded_calls.json",
+      "funds_flow_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/technical_analysis/0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827/funds_flow.json",
+      "manifest_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/technical_analysis/0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827/manifest.json",
+      "summary": {
+        "contracts_touched": [
+          "0x0917914b0a70ee7f1f2460fcd487696856e31154",
+          "0x091825b142b9f07935e1816c917c90cdfc668634",
+          "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+          "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+          "0x185d5f4d854703e2222972c56cddecc111199716",
+          "0x1a95ba9492d33016010338cd33a0c8a9e15a1fc0",
+          "0x34beb8b92a61eb1c3e2fe27eac16eec895ba2e98",
+          "0x55d398326f99059ff775485246999027b3197955",
+          "0x5a6180b744fee7975484266c343b074ca9b893c4",
+          "0x7057f3b0f4d0649b428f0d8378a8a0e7d21d36a7",
+          "0x7b2e7cb89824236cb7096cde7a153af30f3ecbaf",
+          "0x7f2eb21c09aa29d6a676dbd9ecbb677d59d3d420",
+          "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+          "0x87efb39a716860ecd2324a944cb40ec5128e56dd",
+          "0x8c936ce2dbbc1c4764ee617a8127d2184dc813cc",
+          "0x99c13538dd47d57ff272b13fd9a2fa38e68e8458",
+          "0xac799bd91ef15cd580e9da97b0e7dfcfd19bbb1a",
+          "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+          "0xc3b38558a950dc741a88dc03f7fceb23cd9ff122",
+          "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
+          "0xcf833a98d2b9da8f041b3f5606db1ffd937651b9",
+          "0xd9ad954bea4ad65578904cefe6ee2a6eb13879db",
+          "0xe462d83bdd2b08c374d33213ee12f9afd5febd8a",
+          "0xed64502e8bcb7806a5b9d724a33b21e6812a28c0",
+          "0xf43629ef383e10b552a0c1fc6cffaa8605a1533b",
+          "0xff8775851d88fcee2815d54c9de885761abb04f3"
+        ],
+        "addresses_seen": [
+          "0x0917914b0a70ee7f1f2460fcd487696856e31154",
+          "0x091825b142b9f07935e1816c917c90cdfc668634",
+          "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+          "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+          "0x185d5f4d854703e2222972c56cddecc111199716",
+          "0x1a95ba9492d33016010338cd33a0c8a9e15a1fc0",
+          "0x34beb8b92a61eb1c3e2fe27eac16eec895ba2e98",
+          "0x55d398326f99059ff775485246999027b3197955",
+          "0x560a77bc06dcc77eee687acb65d46b580a63eb45",
+          "0x5a6180b744fee7975484266c343b074ca9b893c4",
+          "0x7057f3b0f4d0649b428f0d8378a8a0e7d21d36a7",
+          "0x7b2e7cb89824236cb7096cde7a153af30f3ecbaf",
+          "0x7f2eb21c09aa29d6a676dbd9ecbb677d59d3d420",
+          "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+          "0x87efb39a716860ecd2324a944cb40ec5128e56dd",
+          "0x8c936ce2dbbc1c4764ee617a8127d2184dc813cc",
+          "0x99c13538dd47d57ff272b13fd9a2fa38e68e8458",
+          "0xac799bd91ef15cd580e9da97b0e7dfcfd19bbb1a",
+          "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+          "0xc3b38558a950dc741a88dc03f7fceb23cd9ff122",
+          "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
+          "0xcf833a98d2b9da8f041b3f5606db1ffd937651b9",
+          "0xd9ad954bea4ad65578904cefe6ee2a6eb13879db",
+          "0xe462d83bdd2b08c374d33213ee12f9afd5febd8a",
+          "0xed64502e8bcb7806a5b9d724a33b21e6812a28c0",
+          "0xf43629ef383e10b552a0c1fc6cffaa8605a1533b",
+          "0xff8775851d88fcee2815d54c9de885761abb04f3"
+        ],
+        "native_value_transfers": 0,
+        "token_transfers": 246
+      },
+      "issues": []
+    }
+  ],
+  "analysis_plan": {
+    "incident_id": "unknown-2024-09-10-price-manipulation-incident-bsc",
+    "chain": "BSC",
+    "generated_at": "2026-04-27T12:41:14+00:00",
+    "tx_hashes": [
+      "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827"
+    ],
+    "roles": {
+      "attacker_eoa": [
+        "0x560a77bc06dcc77eee687acb65d46b580a63eb45"
+      ],
+      "attacker_contracts": [
+        "0x091825b142b9f07935e1816c917c90cdfc668634",
+        "0xf43629ef383e10b552a0c1fc6cffaa8605a1533b",
+        "0x7f2eb21c09aa29d6a676dbd9ecbb677d59d3d420",
+        "0xff8775851d88fcee2815d54c9de885761abb04f3",
+        "0xc3b38558a950dc741a88dc03f7fceb23cd9ff122",
+        "0x99c13538dd47d57ff272b13fd9a2fa38e68e8458",
+        "0x8c936ce2dbbc1c4764ee617a8127d2184dc813cc",
+        "0xcf833a98d2b9da8f041b3f5606db1ffd937651b9",
+        "0x34beb8b92a61eb1c3e2fe27eac16eec895ba2e98",
+        "0x5a6180b744fee7975484266c343b074ca9b893c4"
+      ],
+      "victim": [
+        "0x83681f67069a154815a0c6c2c97e2daca6ed3249"
+      ],
+      "routers": [],
+      "pairs": [
+        "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+        "0x83681f67069a154815a0c6c2c97e2daca6ed3249"
+      ],
+      "oracles": [],
+      "flash_loan_providers": [],
+      "tokens": [
+        "0x55d398326f99059ff775485246999027b3197955",
+        "0x7057f3b0f4d0649b428f0d8378a8a0e7d21d36a7",
+        "0x83681f67069a154815a0c6c2c97e2daca6ed3249"
+      ],
+      "unknown": [
+        "0xed64502e8bcb7806a5b9d724a33b21e6812a28c0",
+        "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "0x185d5f4d854703e2222972c56cddecc111199716",
+        "0x1a95ba9492d33016010338cd33a0c8a9e15a1fc0",
+        "0x5766d1f03378f50c7c981c014ed5e5a8124f38a4",
+        "0x0000000000000000000000000000000000000000",
+        "0x7b2e7cb89824236cb7096cde7a153af30f3ecbaf",
+        "0x87efb39a716860ecd2324a944cb40ec5128e56dd",
+        "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+        "0x000000000000000000000000000000000000dead",
+        "0x0917914b0a70ee7f1f2460fcd487696856e31154",
+        "0xe462d83bdd2b08c374d33213ee12f9afd5febd8a",
+        "0xac799bd91ef15cd580e9da97b0e7dfcfd19bbb1a",
+        "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
+        "0xd9ad954bea4ad65578904cefe6ee2a6eb13879db",
+        "0x0ed943ce24baebf257488771759f9bf482c39706"
+      ]
+    },
+    "newly_deployed": [
+      {
+        "address": "0x34beb8b92a61eb1c3e2fe27eac16eec895ba2e98",
+        "deployed_by": "0xd9ad954bea4ad65578904cefe6ee2a6eb13879db",
+        "create_type": "CREATE",
+        "trace_path": "0.3.1.2.5",
+        "depth": 4,
+        "tx_hash": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827"
+      },
+      {
+        "address": "0xcf833a98d2b9da8f041b3f5606db1ffd937651b9",
+        "deployed_by": "0xd9ad954bea4ad65578904cefe6ee2a6eb13879db",
+        "create_type": "CREATE",
+        "trace_path": "0.3.1.2.9",
+        "depth": 4,
+        "tx_hash": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827"
+      },
+      {
+        "address": "0x5a6180b744fee7975484266c343b074ca9b893c4",
+        "deployed_by": "0xd9ad954bea4ad65578904cefe6ee2a6eb13879db",
+        "create_type": "CREATE",
+        "trace_path": "0.3.1.2.13",
+        "depth": 4,
+        "tx_hash": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827"
+      },
+      {
+        "address": "0x7f2eb21c09aa29d6a676dbd9ecbb677d59d3d420",
+        "deployed_by": "0xd9ad954bea4ad65578904cefe6ee2a6eb13879db",
+        "create_type": "CREATE",
+        "trace_path": "0.3.1.2.17",
+        "depth": 4,
+        "tx_hash": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827"
+      },
+      {
+        "address": "0x8c936ce2dbbc1c4764ee617a8127d2184dc813cc",
+        "deployed_by": "0xd9ad954bea4ad65578904cefe6ee2a6eb13879db",
+        "create_type": "CREATE",
+        "trace_path": "0.3.1.2.21",
+        "depth": 4,
+        "tx_hash": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827"
+      },
+      {
+        "address": "0x99c13538dd47d57ff272b13fd9a2fa38e68e8458",
+        "deployed_by": "0xd9ad954bea4ad65578904cefe6ee2a6eb13879db",
+        "create_type": "CREATE",
+        "trace_path": "0.3.1.2.25",
+        "depth": 4,
+        "tx_hash": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827"
+      },
+      {
+        "address": "0xc3b38558a950dc741a88dc03f7fceb23cd9ff122",
+        "deployed_by": "0xd9ad954bea4ad65578904cefe6ee2a6eb13879db",
+        "create_type": "CREATE",
+        "trace_path": "0.3.1.2.29",
+        "depth": 4,
+        "tx_hash": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827"
+      },
+      {
+        "address": "0xff8775851d88fcee2815d54c9de885761abb04f3",
+        "deployed_by": "0xd9ad954bea4ad65578904cefe6ee2a6eb13879db",
+        "create_type": "CREATE",
+        "trace_path": "0.3.1.2.33",
+        "depth": 4,
+        "tx_hash": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827"
+      },
+      {
+        "address": "0xf43629ef383e10b552a0c1fc6cffaa8605a1533b",
+        "deployed_by": "0xd9ad954bea4ad65578904cefe6ee2a6eb13879db",
+        "create_type": "CREATE",
+        "trace_path": "0.3.1.2.37",
+        "depth": 4,
+        "tx_hash": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827"
+      },
+      {
+        "address": "0x091825b142b9f07935e1816c917c90cdfc668634",
+        "deployed_by": "0xd9ad954bea4ad65578904cefe6ee2a6eb13879db",
+        "create_type": "CREATE",
+        "trace_path": "0.3.1.2.41",
+        "depth": 4,
+        "tx_hash": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827"
+      }
+    ],
+    "priority_contracts": [
+      {
+        "address": "0x091825b142b9f07935e1816c917c90cdfc668634",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0xf43629ef383e10b552a0c1fc6cffaa8605a1533b",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x7f2eb21c09aa29d6a676dbd9ecbb677d59d3d420",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0xff8775851d88fcee2815d54c9de885761abb04f3",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0xc3b38558a950dc741a88dc03f7fceb23cd9ff122",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x99c13538dd47d57ff272b13fd9a2fa38e68e8458",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x8c936ce2dbbc1c4764ee617a8127d2184dc813cc",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0xcf833a98d2b9da8f041b3f5606db1ffd937651b9",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x34beb8b92a61eb1c3e2fe27eac16eec895ba2e98",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x5a6180b744fee7975484266c343b074ca9b893c4",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+        "role": "victim",
+        "why": "largest net-negative token balance change",
+        "priority": "high"
+      },
+      {
+        "address": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+        "role": "pair",
+        "why": "target of direct swap()",
+        "priority": "medium"
+      },
+      {
+        "address": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+        "role": "pair",
+        "why": "target of direct swap()",
+        "priority": "medium"
+      }
+    ],
+    "investigation_notes": [
+      "Tx 0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827 contains 31 swap selector(s); inspect router/pair pricing."
+    ],
+    "call_graph": [
+      {
+        "from": "0x87efb39a716860ecd2324a944cb40ec5128e56dd",
+        "to": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+        "category": "swap"
+      },
+      {
+        "from": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x87efb39a716860ecd2324a944cb40ec5128e56dd",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0xd9ad954bea4ad65578904cefe6ee2a6eb13879db",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "to": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+        "category": "swap"
+      },
+      {
+        "from": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+        "to": "0x7057f3b0f4d0649b428f0d8378a8a0e7d21d36a7",
+        "category": "transfer"
+      },
+      {
+        "from": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "to": "0x7057f3b0f4d0649b428f0d8378a8a0e7d21d36a7",
+        "category": "transfer"
+      },
+      {
+        "from": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x34beb8b92a61eb1c3e2fe27eac16eec895ba2e98",
+        "to": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+        "category": "transfer"
+      },
+      {
+        "from": "0x34beb8b92a61eb1c3e2fe27eac16eec895ba2e98",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0xcf833a98d2b9da8f041b3f5606db1ffd937651b9",
+        "to": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+        "category": "transfer"
+      },
+      {
+        "from": "0xcf833a98d2b9da8f041b3f5606db1ffd937651b9",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x5a6180b744fee7975484266c343b074ca9b893c4",
+        "to": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+        "category": "transfer"
+      },
+      {
+        "from": "0x5a6180b744fee7975484266c343b074ca9b893c4",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x7f2eb21c09aa29d6a676dbd9ecbb677d59d3d420",
+        "to": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+        "category": "transfer"
+      },
+      {
+        "from": "0x7f2eb21c09aa29d6a676dbd9ecbb677d59d3d420",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x8c936ce2dbbc1c4764ee617a8127d2184dc813cc",
+        "to": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+        "category": "transfer"
+      },
+      {
+        "from": "0x8c936ce2dbbc1c4764ee617a8127d2184dc813cc",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x99c13538dd47d57ff272b13fd9a2fa38e68e8458",
+        "to": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+        "category": "transfer"
+      },
+      {
+        "from": "0x99c13538dd47d57ff272b13fd9a2fa38e68e8458",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0xc3b38558a950dc741a88dc03f7fceb23cd9ff122",
+        "to": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+        "category": "transfer"
+      },
+      {
+        "from": "0xc3b38558a950dc741a88dc03f7fceb23cd9ff122",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0xff8775851d88fcee2815d54c9de885761abb04f3",
+        "to": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+        "category": "transfer"
+      },
+      {
+        "from": "0xff8775851d88fcee2815d54c9de885761abb04f3",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0xf43629ef383e10b552a0c1fc6cffaa8605a1533b",
+        "to": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+        "category": "transfer"
+      },
+      {
+        "from": "0xf43629ef383e10b552a0c1fc6cffaa8605a1533b",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0x091825b142b9f07935e1816c917c90cdfc668634",
+        "to": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+        "category": "transfer"
+      },
+      {
+        "from": "0x091825b142b9f07935e1816c917c90cdfc668634",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      },
+      {
+        "from": "0xe462d83bdd2b08c374d33213ee12f9afd5febd8a",
+        "to": "0x55d398326f99059ff775485246999027b3197955",
+        "category": "transfer"
+      }
+    ]
+  },
+  "contract_inventory": {
+    "incident_id": "unknown-2024-09-10-price-manipulation-incident-bsc",
+    "chain": "BSC",
+    "generated_at": "2026-04-27T12:41:15+00:00",
+    "contracts": {
+      "0x091825b142b9f07935e1816c917c90cdfc668634": {
+        "address": "0x091825b142b9f07935e1816c917c90cdfc668634",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:41:14+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0xf43629ef383e10b552a0c1fc6cffaa8605a1533b": {
+        "address": "0xf43629ef383e10b552a0c1fc6cffaa8605a1533b",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:41:14+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x7f2eb21c09aa29d6a676dbd9ecbb677d59d3d420": {
+        "address": "0x7f2eb21c09aa29d6a676dbd9ecbb677d59d3d420",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:41:14+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0xff8775851d88fcee2815d54c9de885761abb04f3": {
+        "address": "0xff8775851d88fcee2815d54c9de885761abb04f3",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:41:14+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0xc3b38558a950dc741a88dc03f7fceb23cd9ff122": {
+        "address": "0xc3b38558a950dc741a88dc03f7fceb23cd9ff122",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:41:14+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x99c13538dd47d57ff272b13fd9a2fa38e68e8458": {
+        "address": "0x99c13538dd47d57ff272b13fd9a2fa38e68e8458",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:41:14+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x8c936ce2dbbc1c4764ee617a8127d2184dc813cc": {
+        "address": "0x8c936ce2dbbc1c4764ee617a8127d2184dc813cc",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:41:14+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0xcf833a98d2b9da8f041b3f5606db1ffd937651b9": {
+        "address": "0xcf833a98d2b9da8f041b3f5606db1ffd937651b9",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:41:14+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x34beb8b92a61eb1c3e2fe27eac16eec895ba2e98": {
+        "address": "0x34beb8b92a61eb1c3e2fe27eac16eec895ba2e98",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:41:14+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x5a6180b744fee7975484266c343b074ca9b893c4": {
+        "address": "0x5a6180b744fee7975484266c343b074ca9b893c4",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+        "create_type": "CREATE",
+        "fetched_at": "2026-04-27T12:41:14+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x83681f67069a154815a0c6c2c97e2daca6ed3249": {
+        "address": "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+        "role": "victim",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "PancakePair",
+        "compiler_version": "v0.5.16+commit.9c3226ce",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x83681f67069a154815a0c6c2c97e2daca6ed3249/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x83681f67069a154815a0c6c2c97e2daca6ed3249/abi.json",
+        "fetched_at": "2026-04-27T12:41:14+00:00",
+        "fetch_errors": []
+      },
+      "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae": {
+        "address": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+        "role": "pair",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "PancakePair",
+        "compiler_version": "v0.5.16+commit.9c3226ce",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-09-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae/abi.json",
+        "fetched_at": "2026-04-27T12:41:15+00:00",
+        "fetch_errors": []
+      }
+    }
+  },
+  "revision_round": 0,
+  "reasoning": {
+    "attack_flow_summary": "",
+    "exploit_mechanism": "",
+    "tx_role_map": {},
+    "contract_role_map": {},
+    "timeline_steps": [],
+    "funds_flow_path": [],
+    "open_questions": [],
+    "confidence_notes": [
+      "Investigation plan identifies 0x560a77bc... as attacker_eoa, but this EOA is not in contracts_touched. The actual deployment path is: EOA \u2192 0x0917914b \u2192 0xd9ad954b (factory) \u2192 10 attacker contracts. The factory deployer relationship is not fully resolved. Attack pattern strongly indicates flash loan price manipulation given: (1) 10 contracts deployed mid-transaction, (2) 246 token transfers, (3) victim is PancakePair with net-negative balance change, (4) incident is classified as price-manipulation. Contract 0xd9ad954bea4ad65578904cefe6ee2a6eb13879db is listed in unknown role but is critical to attack infrastructure as the factory deploying all attacker contracts."
+    ]
+  },
+  "validation": {
+    "verdict": "Deterministic and semantic checks passed.",
+    "severity": "pass",
+    "unresolved_gaps": [],
+    "semantic_checks": {
+      "tx_role_consistency": {
+        "status": "pass",
+        "mismatches": []
+      },
+      "funds_flow_consistency": {
+        "status": "pass",
+        "mismatches": []
+      },
+      "mechanism_source_consistency": {
+        "status": "pass",
+        "mismatches": []
+      }
+    },
+    "needs_revision": false,
+    "revision_request": "",
+    "checked_transactions": 1
+  },
+  "merge_back": {
+    "summary": "",
+    "timeline_steps": [],
+    "funds_flow_path": [],
+    "key_addresses": [
+      "0x0917914b0a70ee7f1f2460fcd487696856e31154",
+      "0x091825b142b9f07935e1816c917c90cdfc668634",
+      "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "0x185d5f4d854703e2222972c56cddecc111199716",
+      "0x1a95ba9492d33016010338cd33a0c8a9e15a1fc0",
+      "0x34beb8b92a61eb1c3e2fe27eac16eec895ba2e98",
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x560a77bc06dcc77eee687acb65d46b580a63eb45",
+      "0x5a6180b744fee7975484266c343b074ca9b893c4",
+      "0x7057f3b0f4d0649b428f0d8378a8a0e7d21d36a7",
+      "0x7b2e7cb89824236cb7096cde7a153af30f3ecbaf",
+      "0x7f2eb21c09aa29d6a676dbd9ecbb677d59d3d420",
+      "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+      "0x87efb39a716860ecd2324a944cb40ec5128e56dd",
+      "0x8c936ce2dbbc1c4764ee617a8127d2184dc813cc",
+      "0x99c13538dd47d57ff272b13fd9a2fa38e68e8458",
+      "0xac799bd91ef15cd580e9da97b0e7dfcfd19bbb1a",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0xc3b38558a950dc741a88dc03f7fceb23cd9ff122",
+      "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
+      "0xcf833a98d2b9da8f041b3f5606db1ffd937651b9",
+      "0xd9ad954bea4ad65578904cefe6ee2a6eb13879db",
+      "0xe462d83bdd2b08c374d33213ee12f9afd5febd8a",
+      "0xed64502e8bcb7806a5b9d724a33b21e6812a28c0",
+      "0xf43629ef383e10b552a0c1fc6cffaa8605a1533b",
+      "0xff8775851d88fcee2815d54c9de885761abb04f3"
+    ],
+    "key_contracts": [
+      "0x0917914b0a70ee7f1f2460fcd487696856e31154",
+      "0x091825b142b9f07935e1816c917c90cdfc668634",
+      "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "0x185d5f4d854703e2222972c56cddecc111199716",
+      "0x1a95ba9492d33016010338cd33a0c8a9e15a1fc0",
+      "0x34beb8b92a61eb1c3e2fe27eac16eec895ba2e98",
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x5a6180b744fee7975484266c343b074ca9b893c4",
+      "0x7057f3b0f4d0649b428f0d8378a8a0e7d21d36a7",
+      "0x7b2e7cb89824236cb7096cde7a153af30f3ecbaf",
+      "0x7f2eb21c09aa29d6a676dbd9ecbb677d59d3d420",
+      "0x83681f67069a154815a0c6c2c97e2daca6ed3249",
+      "0x87efb39a716860ecd2324a944cb40ec5128e56dd",
+      "0x8c936ce2dbbc1c4764ee617a8127d2184dc813cc",
+      "0x99c13538dd47d57ff272b13fd9a2fa38e68e8458",
+      "0xac799bd91ef15cd580e9da97b0e7dfcfd19bbb1a",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0xc3b38558a950dc741a88dc03f7fceb23cd9ff122",
+      "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
+      "0xcf833a98d2b9da8f041b3f5606db1ffd937651b9",
+      "0xd9ad954bea4ad65578904cefe6ee2a6eb13879db",
+      "0xe462d83bdd2b08c374d33213ee12f9afd5febd8a",
+      "0xed64502e8bcb7806a5b9d724a33b21e6812a28c0",
+      "0xf43629ef383e10b552a0c1fc6cffaa8605a1533b",
+      "0xff8775851d88fcee2815d54c9de885761abb04f3"
+    ],
+    "key_transactions": [
+      "0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827"
+    ],
+    "open_questions": []
+  },
+  "status": "completed",
+  "pipeline_trace": {
+    "revision_triggered": false,
+    "revision_critique": null,
+    "qa_retry_triggered": true,
+    "qa_retry_critique": "First-pass completeness score: 6.00 (threshold: 0.7). Missing/weak dimensions: exact_loss_amount_currency, cut_token_contract_address, flash_loan_details, precise_timestamps_block_numbers, technical_root_cause_analysis, attacker_funding_source, victim_contract_addresses, post_exploit_fund_destination, independent_social_confirmation. Quality assessor notes: This dossier captures the skeletal structure of a price manipulation attack targeting Caterpillar Coin (CUT) on BSC but suffers from critical data voids that preclude confident conclusions. The protocol identity remains 'Unknown,' the loss is ambiguously quantified as '~1' without denomination, and the technical mechanics of the price manipulation are unexplained. The DeFiHackLabs PoC and BscScan transaction links provide verifiable anchors, but the attack narrative relies heavily on inference. Timeline steps lack timestamps, and several referenced transactions in Step 5 are truncated. The minimal reported loss (~1) suggests either an unsuccessful attack, incomplete reporting, or possibly a test exploitation. Without technical root cause analysis, verified fund flows, and independent corroboration, this dossier serves as a preliminary incident flag rather than a comprehensive forensic record. Identified gaps: Loss amount currency and precise value not specified - critical for impact assessment; CUT token contract address missing despite being identified as the target; Price manipulation mechanism not technically explained - oracle exploit vs reserve manipulation unclear; Flash loan usage mentioned as possibility but not confirmed with source/amount; Timeline lacks timestamps and block numbers for temporal verification; Attacker funding source (initial capital) not traced; Fund movement step references truncated transaction hashes that cannot be verified; No victim protocol contracts identified for technical analysis; Missing social media sources or community discussion to corroborate incident; PoC file referenced but its contents not parsed for technical details. Recommendations: Extract and verify the CUT token contract address from the PoC file and BscScan to definitively identify the target; Analyze the attack transaction trace on BscScan to quantify exact losses and identify affected tokens/amounts; Parse the DeFiHackLabs PoC code to extract technical details of the manipulation mechanism; Retrieve block numbers and timestamps for all referenced transactions to establish a precise timeline; Trace the attacker address 0x87EFb39a716860eCd2324A944Cb40EC5128e56Dd on BscScan for funding source identification; Verify and complete the truncated transaction hashes in Step 5 for fund movement analysis; Search Twitter/X and Telegram for discussions of CUT token exploit to find additional sources; Identify the victim contracts (liquidity pools, staking contracts, or price oracles) involved; Determine if flash loans were used by analyzing transaction input data and internal transfers; Cross-reference with other DeFi incident databases for potential related attacks or same attacker pattern.",
+    "records": [
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:41:09.751Z",
+        "duration_ms": 3120,
+        "input_summary": "62 source docs; 506 heuristic items",
+        "output_summary": "506 total items (+0 LLM-extracted)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "collector",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:41:12.876Z",
+        "duration_ms": 1200,
+        "input_summary": "1 tx(s): 0x2c123d08ca3d50c4b875c0b5de1b5c85d0bf9979dffbf87c48526e3a67396827",
+        "output_summary": "1 artifact bundle(s) collected; statuses: completed",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "planner",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:41:14.076Z",
+        "duration_ms": 14,
+        "input_summary": "1 transactions on BSC",
+        "output_summary": "9 role categories; 13 priority contracts",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "contract_intelligence",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:41:14.090Z",
+        "duration_ms": 1596,
+        "input_summary": "13 priority contracts",
+        "output_summary": "12 contracts in inventory",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "technical_reasoner",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:41:15.686Z",
+        "duration_ms": 65299,
+        "input_summary": "1 txs, 12 contracts",
+        "output_summary": "0 timeline steps; mechanism: ",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "semantic_validator",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:42:20.983Z",
+        "duration_ms": 4,
+        "input_summary": "revision_round=0",
+        "output_summary": "severity=pass; needs_revision=False; verdict: Deterministic and semantic checks passed.",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:42:20.990Z",
+        "duration_ms": 35813,
+        "input_summary": "506 evidence items",
+        "output_summary": "executive_summary len=326",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:42:20.990Z",
+        "duration_ms": 35813,
+        "input_summary": "506 evidence items",
+        "output_summary": "5 timeline steps",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:42:56.810Z",
+        "duration_ms": 47406,
+        "input_summary": "5 timeline steps; 4 narrative keys",
+        "output_summary": "completeness_score=6.0; judge_summary: This dossier captures the skeletal structure of a price manipulation attack targ",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:43:44.215Z",
+        "duration_ms": 3400,
+        "input_summary": "RETRY: 62 docs; critique injected",
+        "output_summary": "506 items after retry extraction",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:43:47.615Z",
+        "duration_ms": 37705,
+        "input_summary": "RETRY: 506 evidence items",
+        "output_summary": "executive_summary len=270 (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:43:47.615Z",
+        "duration_ms": 37705,
+        "input_summary": "RETRY: 506 evidence items",
+        "output_summary": "3 timeline steps (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:44:25.320Z",
+        "duration_ms": 41064,
+        "input_summary": "RETRY: 3 steps; 4 narrative keys",
+        "output_summary": "v2 completeness_score=0.42",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      }
+    ]
+  }
+}

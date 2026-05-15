@@ -1,0 +1,50 @@
+{
+  "incident_id": "unknown-2024-10-11-price-manipulation",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Attacker address 0x3f32c7cfb0a78ddea80a2384ceb4633099cbdc98 deploys an attack contract at 0x9afcac8e82180fa5b2f346ca66cf6eb343cd1da5 on BSC.",
+      "evidence_refs": [
+        "ev-004",
+        "ev-012",
+        "ev-031",
+        "ev-035"
+      ],
+      "key_entities": [
+        "0x3f32c7cfb0a78ddea80a2384ceb4633099cbdc98",
+        "0x9afcac8e82180fa5b2f346ca66cf6eb343cd1da5"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 2,
+      "description": "Attacker's contract performs price manipulation on the target token (P719Token at 0xfeb19ae8c0448f25de43a3afcb7b29c9cef6eff6) by executing swaps through PancakeSwap Router (0x10ED43C718714eb63d5aA57B78B54704E256024E) to inflate the token's price, likely interacting with a pool at 0x6beee2b57b064eac5f432fc19009e3e78734eabc.",
+      "evidence_refs": [
+        "ev-009",
+        "ev-011",
+        "ev-013",
+        "ev-016"
+      ],
+      "key_entities": [
+        "0xfeb19ae8c0448f25de43a3afcb7b29c9cef6eff6",
+        "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+        "0x6beee2b57b064eac5f432fc19009e3e78734eabc"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 3,
+      "description": "Attacker exploits the artificially inflated price to extract approximately 547 in value from the protocol in a single transaction (0x9afcac8e82180fa5b2f346ca66cf6eb343cd1da5a2cd1b5117eb7eaaebe953b3).",
+      "evidence_refs": [
+        "ev-003",
+        "ev-005",
+        "ev-018"
+      ],
+      "key_entities": [
+        "0x9afcac8e82180fa5b2f346ca66cf6eb343cd1da5a2cd1b5117eb7eaaebe953b3"
+      ],
+      "summary": ""
+    }
+  ],
+  "synthesis_note": "Limited evidence provides a high-level overview of a price-manipulation inflate attack on BSC targeting P719Token. The attacker deployed a contract, manipulated the token price via PancakeSwap swaps, and extracted ~547 in value. The specific currency/unit of the loss and detailed intermediate steps are not specified in the available evidence."
+}

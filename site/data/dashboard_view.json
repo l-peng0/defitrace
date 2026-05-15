@@ -1,0 +1,69 @@
+{
+  "incident_id": "paribus-arbitrum-2025-01-18",
+  "card": {
+    "title": "Paribus",
+    "chain": "Arbitrum",
+    "incident_date": "2025-01-18",
+    "protocol_name": "Paribus",
+    "summary": "Two transactions analyzed. The primary transaction (0xf5e753d3...) exhibits complex multi-protocol interaction pattern, touching 68 unique contracts with 20 token transfers and zero native value. The secondary transaction (0x43aa42d2...) touches 9 contracts with no token transfers. Both transactions completed successfully.",
+    "source_count": 50,
+    "direct_source_count": 6,
+    "secondary_source_count": 44,
+    "completeness_score": 0.72
+  },
+  "detail": {
+    "timeline_preview": [
+      {
+        "step": 1,
+        "tx_hash": "0x43aa42d2f11afe42832a9619bc8066dfb83a921798b91eaf9d0345dd27dcfb06",
+        "action": "Initial transaction touching 9 contracts with no token transfers",
+        "summary": ""
+      },
+      {
+        "step": 2,
+        "tx_hash": "0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2",
+        "action": "Primary attack transaction touching 68 contracts with 20 token transfers",
+        "summary": ""
+      },
+      {
+        "step_number": 1,
+        "description": "Attacker prepares exploit by setting up approvals on Paribus lending pool at 0x56190CAC88b8D4b5D5Ed668ef81828913932e7Ed, including ERC20 approve operations for asset interactions.",
+        "evidence_refs": [
+          "ev-024",
+          "ev-028",
+          "ev-032"
+        ],
+        "timestamp": "2025-01-18",
+        "summary": ""
+      },
+      {
+        "step_number": 2,
+        "description": "Attacker executes first attack transaction 0x43aa42d2... interacting with Paribus pool contract and collateral asset at 0xD368Cca925Bb3dbADD06EA1b81E96a2174830978, initiating price manipulation on the lending protocol.",
+        "evidence_refs": [
+          "ev-004",
+          "ev-029",
+          "ev-033"
+        ],
+        "timestamp": "2025-01-18",
+        "summary": ""
+      }
+    ],
+    "attacker_profile_summary": "The dossier has 0 direct attacker address candidate(s) and 185 additional address mentions from fetched sources.",
+    "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+    "judge_summary": "The Paribus incident dossier achieves functional completeness for understanding the attack vector but falls short of investigation-grade documentation. The core attack mechanism (price manipulation via DEX interaction) is well-supported by transaction traces and an available PoC. The Bitfinding report adds credibility and suggests potential mitigation activity. However, the dossier lacks critical attribution and impact quantification. The evidence collection process appears to have misclassified some data (truncated hashes as addresses), indicating automated extraction errors. For a curated report expansion, this represents a reasonable first pass but requires human review to correct extraction artifacts and fill the financial impact gap.",
+    "missing_fields": [
+      "loss_amount_usd",
+      "attacker_eoa_address",
+      "attacker_funding_source",
+      "fund_destination_traces",
+      "block_numbers",
+      "precise_timestamps",
+      "protocol_official_response",
+      "attack_contract_urls",
+      "victim_contract_urls"
+    ],
+    "technical_analysis_status": "completed"
+  },
+  "status": "demo_live_dossier",
+  "last_updated": "2026-04-20T02:01:32+00:00"
+}

@@ -1,0 +1,35 @@
+{
+  "incident_id": "unknown-2024-11-11-price-manipulation-incident-arbitrum",
+  "job_id": "unknown-arbitrum-2024-11-11-batch",
+  "trigger_type": "batch",
+  "seed_type": "tx_hash",
+  "chain": "Arbitrum",
+  "protocol_name": "Unknown",
+  "incident_name": "Unknown 2024-11-11 price-manipulation incident",
+  "incident_date": "",
+  "attack_tx_hashes": [
+    "0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f"
+  ],
+  "attacker_addresses": [
+    "0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe"
+  ],
+  "seed_urls": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol"
+  ],
+  "attack_contract_urls": [],
+  "victim_contract_urls": [],
+  "tags": [
+    "price_manipulation",
+    "arbitrum",
+    "defi"
+  ],
+  "source_names": [],
+  "attack_type_raws": [],
+  "summary_candidates": [
+    "An estimated loss of $4"
+  ],
+  "note_candidates": [],
+  "date_range": {},
+  "created_at": "2026-04-27T13:07:31+00:00"
+}

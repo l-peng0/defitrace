@@ -1,0 +1,79 @@
+{
+  "incident_id": "unknown-2024-10-11-price-manipulation-incident-bsc",
+  "card": {
+    "title": "Unknown 2024-10-11 price-manipulation incident",
+    "chain": "BSC",
+    "incident_date": "",
+    "protocol_name": "Unknown",
+    "summary": "Attacker EOA (0xfeb19ae8c0448f25de43a3afcb7b29c9cef6eff6) triggered orchestrator contract (0x3f32c7cfb0a78ddea80a2384ceb4633099cbdc98) which initiated a flash loan from PancakeV3Pool. During the flash loan callback, 15 helper contracts were deployed via CREATE opcodes. Approximately 40 unique addresses executed token transfers to the victim contract (0x6beee2b57b064eac5f432fc19009e3e78734eabc). The victim contract is unverified, preventing direct vulnerability classification. PancakePair (0x08e18735e5a2bf96715f9c9647b451cf213bec25) was touched, consistent with DEX interaction for price manipulation.",
+    "source_count": 63,
+    "direct_source_count": 6,
+    "secondary_source_count": 57,
+    "completeness_score": 0.04
+  },
+  "detail": {
+    "timeline_preview": [
+      {
+        "step_number": 1,
+        "description": "Attacker address 0x3f32c7cfb0a78ddea80a2384ceb4633099cbdc98 deploys an attack contract at 0x9afcac8e82180fa5b2f346ca66cf6eb343cd1da5 on BSC.",
+        "evidence_refs": [
+          "ev-004",
+          "ev-012",
+          "ev-031",
+          "ev-035"
+        ],
+        "key_entities": [
+          "0x3f32c7cfb0a78ddea80a2384ceb4633099cbdc98",
+          "0x9afcac8e82180fa5b2f346ca66cf6eb343cd1da5"
+        ],
+        "summary": ""
+      },
+      {
+        "step_number": 2,
+        "description": "Attacker's contract performs price manipulation on the target token (P719Token at 0xfeb19ae8c0448f25de43a3afcb7b29c9cef6eff6) by executing swaps through PancakeSwap Router (0x10ED43C718714eb63d5aA57B78B54704E256024E) to inflate the token's price, likely interacting with a pool at 0x6beee2b57b064eac5f432fc19009e3e78734eabc.",
+        "evidence_refs": [
+          "ev-009",
+          "ev-011",
+          "ev-013",
+          "ev-016"
+        ],
+        "key_entities": [
+          "0xfeb19ae8c0448f25de43a3afcb7b29c9cef6eff6",
+          "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+          "0x6beee2b57b064eac5f432fc19009e3e78734eabc"
+        ],
+        "summary": ""
+      },
+      {
+        "step_number": 3,
+        "description": "Attacker exploits the artificially inflated price to extract approximately 547 in value from the protocol in a single transaction (0x9afcac8e82180fa5b2f346ca66cf6eb343cd1da5a2cd1b5117eb7eaaebe953b3).",
+        "evidence_refs": [
+          "ev-003",
+          "ev-005",
+          "ev-018"
+        ],
+        "key_entities": [
+          "0x9afcac8e82180fa5b2f346ca66cf6eb343cd1da5a2cd1b5117eb7eaaebe953b3"
+        ],
+        "summary": ""
+      }
+    ],
+    "attacker_profile_summary": "The dossier has 1 direct attacker address candidate(s) and 254 additional address mentions from fetched sources.",
+    "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+    "judge_summary": "This is a preliminary dossier with fundamental attribution (attacker address, transaction hash, target token) but lacks critical completeness. The core attack elements are identified via BscScan and DeFiHackLabs POC, but the loss quantification is ambiguous (unit not specified), the protocol is unidentified, timestamps are missing, and post-exploitation analysis is absent. The evidence relies heavily on inferred facts (ev-005 showing loss has is_inferred=true with only 0.65 confidence). Not suitable for judicial or presentation purposes in current state.",
+    "missing_fields": [
+      "exact_incident_date",
+      "loss_amount_currency_unit",
+      "victim_contract_urls",
+      "attack_contract_urls",
+      "block_timestamps",
+      "fund_flow_post_attack",
+      "flash_loan_usage_details",
+      "protocol_type_identification",
+      "root_cause_technical_details"
+    ],
+    "technical_analysis_status": "completed"
+  },
+  "status": "demo_live_dossier",
+  "last_updated": "2026-04-27T13:02:30+00:00"
+}

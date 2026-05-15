@@ -1,0 +1,44 @@
+{
+  "incident_id": "unknown-2024-10-11-price-manipulation-incident-bsc",
+  "title": "Unknown 2024-10-11 price-manipulation incident",
+  "protocol_name": "Unknown",
+  "chain": "BSC",
+  "incident_date": "",
+  "summary": "Attacker EOA (0xfeb19ae8c0448f25de43a3afcb7b29c9cef6eff6) triggered orchestrator contract (0x3f32c7cfb0a78ddea80a2384ceb4633099cbdc98) which initiated a flash loan from PancakeV3Pool. During the flash loan callback, 15 helper contracts were deployed via CREATE opcodes. Approximately 40 unique addresses executed token transfers to the victim contract (0x6beee2b57b064eac5f432fc19009e3e78734eabc). The victim contract is unverified, preventing direct vulnerability classification. PancakePair (0x08e18735e5a2bf96715f9c9647b451cf213bec25) was touched, consistent with DEX interaction for price manipulation.",
+  "status": "demo_live_dossier",
+  "completeness_score": 0.04,
+  "source_count": 63,
+  "direct_source_count": 6,
+  "secondary_source_count": 57,
+  "social_count": 1,
+  "poc_count": 3,
+  "explorer_count": 58,
+  "report_count": 1,
+  "missing_fields": [
+    "exact_incident_date",
+    "loss_amount_currency_unit",
+    "victim_contract_urls",
+    "attack_contract_urls",
+    "block_timestamps",
+    "fund_flow_post_attack",
+    "flash_loan_usage_details",
+    "protocol_type_identification",
+    "root_cause_technical_details"
+  ],
+  "last_updated": "2026-04-27T13:02:30+00:00",
+  "pattern_label": "price_manipulation",
+  "attack_tx_hashes": [
+    "0x9afcac8e82180fa5b2f346ca66cf6eb343cd1da5a2cd1b5117eb7eaaebe953b3",
+    "0x5acef1ae1bbd0c4e26cfb622e435503b2e6dc6ba37c671391329c56746b1795b",
+    "0x608060405260043610620000f75760003560e01c806383197ef0116200008b57",
+    "0x8ea77fa0810c8b34e5b371db503d46ee8ea3cf936207866b4d407fc529778b61"
+  ],
+  "source_preview": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/P719Token_exp.sol",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs?tab=readme-ov-file#20241011-p719token---price-manipulation-inflate-attack",
+    "https://x.com/TenArmorAlert/status/1844929489823989953",
+    "https://bscscan.com/tx/0x9afcac8e82180fa5b2f346ca66cf6eb343cd1da5a2cd1b5117eb7eaaebe953b3",
+    "https://bscscan.com/address/0x3f32c7cfb0a78ddea80a2384ceb4633099cbdc98"
+  ]
+}

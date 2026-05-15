@@ -1,0 +1,126 @@
+{
+  "incident_id": "bgm-2024-11-10-price-manipulation-incident-bsc",
+  "agents": [
+    {
+      "agent_id": "source_finder",
+      "agent_name": "Discovery supervisor",
+      "started_at": "2026-04-27T13:06:24+00:00",
+      "completed_at": "2026-04-27T13:06:24+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/source_index.json"
+      ],
+      "metrics": {
+        "source_count": 4
+      },
+      "note": ""
+    },
+    {
+      "agent_id": "source_expander",
+      "agent_name": "Source expansion agent",
+      "started_at": "2026-04-27T13:06:24+00:00",
+      "completed_at": "2026-04-27T13:07:33+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/source_index.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/source_documents.json"
+      ],
+      "metrics": {
+        "source_count": 60,
+        "fetched_documents": 60
+      },
+      "note": ""
+    },
+    {
+      "agent_id": "evidence_normalizer",
+      "agent_name": "Evidence normalization agent",
+      "started_at": "2026-04-27T13:08:00+00:00",
+      "completed_at": "2026-04-27T13:08:00+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/raw_evidence.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/citation_graph.json"
+      ],
+      "metrics": {
+        "evidence_count": 476,
+        "claim_count": 476
+      },
+      "note": ""
+    },
+    {
+      "agent_id": "technical_validation",
+      "agent_name": "technical_validation",
+      "started_at": "2026-04-27T13:08:00+00:00",
+      "completed_at": "2026-04-27T13:08:33+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis.json"
+      ],
+      "metrics": {
+        "technical_status": "completed",
+        "checked_transactions": 1
+      },
+      "note": "Deterministic and semantic checks passed."
+    },
+    {
+      "agent_id": "llm_timeline_synthesizer",
+      "agent_name": "llm_timeline_synthesizer",
+      "started_at": "2026-04-27T13:08:33+00:00",
+      "completed_at": "2026-04-27T13:09:00+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/timeline.json"
+      ],
+      "metrics": {
+        "timeline_steps": 3
+      },
+      "note": ""
+    },
+    {
+      "agent_id": "llm_narrative_writer",
+      "agent_name": "llm_narrative_writer",
+      "started_at": "2026-04-27T13:08:33+00:00",
+      "completed_at": "2026-04-27T13:09:00+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/narrative.json"
+      ],
+      "metrics": {},
+      "note": ""
+    },
+    {
+      "agent_id": "dossier_assembler",
+      "agent_name": "Dossier composer agent",
+      "started_at": "2026-04-27T13:09:00+00:00",
+      "completed_at": "2026-04-27T13:12:50+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/quality_report.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/augmented_incident.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/dashboard_view.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/report_inputs.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/incident_library_entry.json",
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/analyst_report.json"
+      ],
+      "metrics": {
+        "completeness_score": 0.62
+      },
+      "note": ""
+    },
+    {
+      "agent_id": "quality_judge",
+      "agent_name": "QA judge agent",
+      "started_at": "2026-04-27T13:12:50+00:00",
+      "completed_at": "2026-04-27T13:12:50+00:00",
+      "status": "completed",
+      "outputs": [
+        "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/quality_report.json"
+      ],
+      "metrics": {
+        "missing_field_count": 8
+      },
+      "note": "The dossier provides a coherent but surface-level account of the BGM price manipulation attack. The timeline is logically structured and supported by explorer evidence, and the external Quadriga Initiative report corroborates key facts. However, the dossier lacks technical depth: no vulnerable contract is identified, the $450K loss is unverified on-chain, the attack date field is empty, and fund flow analysis is absent. Evidence quality is mixed - several entries are low-confidence pattern matches from scraped content. The dossier is insufficient for forensic purposes or insurance claims but adequate for general awareness reporting."
+    }
+  ]
+}

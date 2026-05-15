@@ -1,0 +1,386 @@
+{
+  "incident_id": "unknown-2024-10-05-price-manipulation-incident-bsc",
+  "title": "Unknown 2024-10-05 price-manipulation incident",
+  "incident_date": "",
+  "chain": "BSC",
+  "protocol_name": "Unknown",
+  "status": "demo_live_dossier",
+  "summary": "An estimated loss of 34",
+  "seed_overview": {
+    "seed_type": "tx_hash",
+    "trigger_type": "batch",
+    "source_names": [],
+    "attack_type_raws": []
+  },
+  "key_addresses": [
+    "0x8408497c18882bfb61be9204cfff530f4ee18320",
+    "0x3026c464d3bd6ef0ced0d49e80f171b58176ce32",
+    "0xbe779d420b7d573c08eee226b9958737b6218888",
+    "0x5e694707337cca979d18f9e45f40e81d6ca341ed"
+  ],
+  "key_contracts": [],
+  "key_transactions": [
+    "0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d",
+    "0x6080604052600436106100e15760003560e01c80638874ef571161007f578063",
+    "0x67d0b23d256fc12ed7d86a703ae165ec301145c06bf8c25b4f0a63685b92cc2f",
+    "0xb4672c4b60d6602a711651cda55fcdbcadf9b7b93806b38374f01bf5aae3a120"
+  ],
+  "timeline": [
+    {
+      "step_id": "step-001",
+      "order": 1,
+      "label": "Exploit transaction linked",
+      "step_type": "exploit",
+      "summary": "The current dossier has 1 direct attack transaction candidate(s).",
+      "source_refs": [
+        "src-003"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "step_id": "step-002",
+      "order": 2,
+      "label": "Impact summary collected",
+      "step_type": "impact",
+      "summary": "An estimated loss of 34",
+      "source_refs": [],
+      "confidence": 0.72
+    },
+    {
+      "step_id": "step-003",
+      "order": 3,
+      "label": "Source expansion completed",
+      "step_type": "analysis",
+      "summary": "The pipeline fetched seed sources, extracted direct clues, and discovered second-hop links for later runs.",
+      "source_refs": [],
+      "confidence": 0.75
+    }
+  ],
+  "attacker_profile": {
+    "incident_id": "unknown-2024-10-05-price-manipulation-incident-bsc",
+    "profile_id": "profile-unknown-2024-10-05-price-manipulation-incident-bsc",
+    "primary_addresses": [
+      "0x3026c464d3bd6ef0ced0d49e80f171b58176ce32",
+      "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x8408497c18882bfb61be9204cfff530f4ee18320",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0xbe779d420b7d573c08eee226b9958737b6218888"
+    ],
+    "related_addresses": [
+      "0x3026c464d3bd6ef0ced0d49e80f171b58176ce32",
+      "0x8408497c18882bfb61be9204cfff530f4ee18320",
+      "0xbe779d420b7d573c08eee226b9958737b6218888",
+      "0x5e694707337cca979d18f9e45f40e81d6ca341ed",
+      "0x36696169C63e42cd08ce11f5deeBbCeBae652050",
+      "0x55d398326f99059fF775485246999027B3197955",
+      "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "0xBe779D420b7D573C08EEe226B9958737b6218888",
+      "0x3026C464d3Bd6Ef0CeD0D49e80f171b58176Ce32",
+      "0x8408497c18882bfB61be9204cffF530F4ee18320"
+    ],
+    "recent_activity_summary": "The dossier has 1 direct attacker address candidate(s) and 245 additional address mentions from fetched sources.",
+    "counterparties": [],
+    "repeated_behaviors": [
+      "Leans on addresses confirmed by direct seed fields first.",
+      "Uses source-text mentions as weaker supporting clues rather than direct proof."
+    ],
+    "open_questions": [
+      "Which address funded the exploit wallet before the attack?",
+      "Which transfers right after the exploit are still missing from the dossier?"
+    ]
+  },
+  "pattern_hypotheses": [
+    {
+      "hypothesis_id": "hyp-001",
+      "label": "price_manipulation",
+      "summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+      "why_suspected": [
+        "Attack-type tags mention price manipulation.",
+        "The supporting sources resemble prior price-manipulation writeups."
+      ],
+      "confidence": 0.76,
+      "open_questions": [
+        "Which specific pricing path was abused?",
+        "Is there a direct explorer or postmortem source that confirms the same mechanism?"
+      ]
+    }
+  ],
+  "source_summary": {
+    "source_count": 61,
+    "source_types": {
+      "report": 1,
+      "poc": 2,
+      "explorer": 58
+    },
+    "direct_source_count": 4,
+    "secondary_source_count": 57,
+    "fetched_source_count": 54
+  },
+  "quality_report": {
+    "incident_id": "unknown-2024-10-05-price-manipulation-incident-bsc",
+    "completeness_score": 0.62,
+    "direct_source_count": 4,
+    "secondary_source_count": 57,
+    "fetched_source_count": 54,
+    "citation_coverage_count": 482,
+    "missing_fields": [
+      "attack_contract_urls",
+      "victim_contract_urls",
+      "social_sources",
+      "precise_loss_amount_with_currency_unit",
+      "detailed_technical_root_cause",
+      "post_exploit_fund_tracing",
+      "contract_addresses_for_aizpt_token",
+      "block_timestamps",
+      "preparation_funding_phase"
+    ],
+    "judge_summary": "The dossier contains sufficient core evidence for a basic incident demonstration: a verified attack transaction (0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d), identified attacker (0x8408497c18882bfb61be9204cfff530f4ee18320), and a public PoC from DeFiHackLabs. However, critical gaps remain: the loss amount is incomplete (shows '34' without specifying BNB), victim contract addresses are not extracted, and the timeline lacks technical depth. The protocol name (AIZPT Token) appears in narrative but not in structured evidence fields. The attack type (price manipulation/oracle vulnerability) is well-articulated. Suitable for demo with caveats about incomplete financial impact data.",
+    "evidence_supports_timeline": true,
+    "confidence_assessment": {
+      "overall": "medium",
+      "attack_transaction": "high",
+      "attacker_address": "high",
+      "loss_amount": "low",
+      "root_cause": "medium",
+      "fund_flow": "low",
+      "notes": "Strong evidence from DeFiHackLabs PoC and on-chain transaction data. Loss amount incomplete (shows '34' without unit - narrative clarifies 34 BNB). Protocol name inconsistency between context (Unknown) and narrative (AIZPT Token)."
+    },
+    "gaps": [
+      {
+        "gap_id": "gap-001",
+        "description": "Protocol name missing from structured fields - identified as AIZPT Token in narrative but not captured in evidence",
+        "severity": "medium"
+      },
+      {
+        "gap_id": "gap-002",
+        "description": "Loss amount truncated - '34' lacks currency unit and USD equivalent",
+        "severity": "high"
+      },
+      {
+        "gap_id": "gap-003",
+        "description": "No victim contract addresses identified despite multiple contract interactions mentioned in PoC",
+        "severity": "high"
+      },
+      {
+        "gap_id": "gap-004",
+        "description": "Timeline lacks preparation phase and post-exploit fund movements",
+        "severity": "medium"
+      },
+      {
+        "gap_id": "gap-005",
+        "description": "No social media or community sources corroborating the incident",
+        "severity": "low"
+      }
+    ],
+    "demo_ready": true,
+    "recommendations": [
+      {
+        "priority": "high",
+        "action": "Extract and document victim contract addresses from the DeFiHackLabs PoC (AIZPT token contract and any exploited pool contracts)"
+      },
+      {
+        "priority": "high",
+        "action": "Clarify and validate the loss amount - confirm 34 BNB and add USD equivalent"
+      },
+      {
+        "priority": "medium",
+        "action": "Add protocol name 'AIZPT Token' to structured evidence fields"
+      },
+      {
+        "priority": "medium",
+        "action": "Trace post-exploit fund movements from attacker address to identify if funds were moved to mixer or CEX"
+      },
+      {
+        "priority": "medium",
+        "action": "Expand timeline to include preparation phase (attacker funding) and detailed attack execution steps"
+      },
+      {
+        "priority": "low",
+        "action": "Search for social media posts or project announcements about this incident"
+      }
+    ]
+  },
+  "generated_at": "2026-04-27T12:56:05+00:00",
+  "technical_analysis": {
+    "status": "completed",
+    "primary_tx_hash": "0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d",
+    "tx_hashes": [
+      "0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d"
+    ],
+    "exploit_mechanism": "",
+    "validation_verdict": "Deterministic and semantic checks passed."
+  },
+  "narrative": {
+    "executive_summary": "On October 5, 2024, a price manipulation attack targeted the AIZPT Token on BSC, resulting in an estimated loss of approximately 34 BNB. The attacker exploited a price oracle vulnerability to drain funds from the protocol's liquidity pools.",
+    "attack_narrative": "The attacker (0x8408497c18882bfb61be9204cfff530f4ee18320) executed a price manipulation attack against the AIZPT Token protocol on BSC. The attack transaction (0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d) leveraged vulnerabilities in the token's pricing mechanism to extract value from liquidity pools. Evidence from the DeFiHackLabs proof-of-concept (AIZPTToken_exp.sol) indicates the attacker interacted with multiple contracts including the AIZPT token contract, WBNB (0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c), and USDT (0x55d398326f99059fF775485246999027B3197955), suggesting a cross-pool manipulation strategy. The attacker successfully extracted approximately 34 BNB before the exploit was identified.",
+    "attacker_motive": "The attacker's primary motive was financial gain through exploitation of price manipulation vulnerabilities in the AIZPT Token's smart contract logic, allowing them to extract value at artificially inflated or deflated token prices.",
+    "key_takeaway": "This incident highlights the critical importance of robust price oracle implementations and resistance to manipulation. Protocols should use TWAP (Time-Weighted Average Price) oracles, multiple data sources, and implement price deviation thresholds to prevent similar attacks. The availability of a public PoC also underscores the need for thorough security audits before deployment."
+  },
+  "qa_retry_triggered": true,
+  "qa_retry_critique": "First-pass completeness score: 58.00 (threshold: 0.7). Missing/weak dimensions: attack_contract_urls, victim_contract_urls, social_sources, protocol_name_confirmed, loss_amount_unit, fund_flow_tracing, root_cause_detail. Quality assessor notes: The dossier captures a price manipulation attack on BSC with core on-chain artifacts (transaction 0x5e6947..., attacker address 0x8408..., PoC reference from DeFiHackLabs). However, it suffers from incomplete attribution (protocol listed as 'Unknown' despite AIZPT Token naming in PoC), ambiguous loss quantification (34 without unit), and broken evidence cross-references. The timeline is logically structured but relies on evidence items not fully present in the record. Suitable for preliminary incident awareness but requires substantial enrichment for forensic-grade documentation. Identified gaps: Protocol name discrepancy: evidence points to AIZPT Token but listed as 'Unknown'; Loss amount missing unit (34 BNB assumed but not confirmed); Timeline evidence refs ev-032, ev-034, ev-035 not present in evidence items; No fund destination tracking; No social media coverage or community discussion sources; No verified victim contract bytecode analysis; No attacker funding source traced. Recommendations: Update protocol_name to 'AIZPT Token' with supporting evidence from PoC filename (ev-007); Verify loss amount unit via BSCScan transaction value analysis and update ev-005; Add missing evidence items ev-032, ev-034, ev-035 to evidence list or correct timeline references; Include victim contract URL and verification for 0xbe779d420b7d573c08eee226b9958737b6218888; Add social media sources (Twitter/X security accounts, Telegram) discussing the incident; Trace attacker fund flows post-exploit to identify destination addresses; Analyze PoC code to provide detailed root cause mechanism description; Document attacker funding source (initial BNB/capital for attack execution).",
+  "pipeline_trace": {
+    "revision_triggered": false,
+    "revision_critique": null,
+    "qa_retry_triggered": true,
+    "qa_retry_critique": "First-pass completeness score: 58.00 (threshold: 0.7). Missing/weak dimensions: attack_contract_urls, victim_contract_urls, social_sources, protocol_name_confirmed, loss_amount_unit, fund_flow_tracing, root_cause_detail. Quality assessor notes: The dossier captures a price manipulation attack on BSC with core on-chain artifacts (transaction 0x5e6947..., attacker address 0x8408..., PoC reference from DeFiHackLabs). However, it suffers from incomplete attribution (protocol listed as 'Unknown' despite AIZPT Token naming in PoC), ambiguous loss quantification (34 without unit), and broken evidence cross-references. The timeline is logically structured but relies on evidence items not fully present in the record. Suitable for preliminary incident awareness but requires substantial enrichment for forensic-grade documentation. Identified gaps: Protocol name discrepancy: evidence points to AIZPT Token but listed as 'Unknown'; Loss amount missing unit (34 BNB assumed but not confirmed); Timeline evidence refs ev-032, ev-034, ev-035 not present in evidence items; No fund destination tracking; No social media coverage or community discussion sources; No verified victim contract bytecode analysis; No attacker funding source traced. Recommendations: Update protocol_name to 'AIZPT Token' with supporting evidence from PoC filename (ev-007); Verify loss amount unit via BSCScan transaction value analysis and update ev-005; Add missing evidence items ev-032, ev-034, ev-035 to evidence list or correct timeline references; Include victim contract URL and verification for 0xbe779d420b7d573c08eee226b9958737b6218888; Add social media sources (Twitter/X security accounts, Telegram) discussing the incident; Trace attacker fund flows post-exploit to identify destination addresses; Analyze PoC code to provide detailed root cause mechanism description; Document attacker funding source (initial BNB/capital for attack execution).",
+    "records": [
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:50:38.054Z",
+        "duration_ms": 3509,
+        "input_summary": "61 source docs; 482 heuristic items",
+        "output_summary": "482 total items (+0 LLM-extracted)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "collector",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:50:41.573Z",
+        "duration_ms": 1194,
+        "input_summary": "1 tx(s): 0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d",
+        "output_summary": "1 artifact bundle(s) collected; statuses: completed",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "planner",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:50:42.768Z",
+        "duration_ms": 7,
+        "input_summary": "1 transactions on BSC",
+        "output_summary": "9 role categories; 2 priority contracts",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "contract_intelligence",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:50:42.774Z",
+        "duration_ms": 4521,
+        "input_summary": "2 priority contracts",
+        "output_summary": "2 contracts in inventory",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "technical_reasoner",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:50:47.295Z",
+        "duration_ms": 55986,
+        "input_summary": "1 txs, 2 contracts",
+        "output_summary": "0 timeline steps; mechanism: ",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "semantic_validator",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T12:51:43.280Z",
+        "duration_ms": 3,
+        "input_summary": "revision_round=0",
+        "output_summary": "severity=pass; needs_revision=False; verdict: Deterministic and semantic checks passed.",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:51:43.286Z",
+        "duration_ms": 44632,
+        "input_summary": "482 evidence items",
+        "output_summary": "executive_summary len=282",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:51:43.286Z",
+        "duration_ms": 44632,
+        "input_summary": "482 evidence items",
+        "output_summary": "4 timeline steps",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:52:27.919Z",
+        "duration_ms": 39929,
+        "input_summary": "4 timeline steps; 4 narrative keys",
+        "output_summary": "completeness_score=58; judge_summary: The dossier captures a price manipulation attack on BSC with core on-chain artif",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:53:07.848Z",
+        "duration_ms": 109668,
+        "input_summary": "RETRY: 61 docs; critique injected",
+        "output_summary": "505 items after retry extraction",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:54:57.688Z",
+        "duration_ms": 25384,
+        "input_summary": "RETRY: 505 evidence items",
+        "output_summary": "executive_summary len=240 (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:54:57.688Z",
+        "duration_ms": 25384,
+        "input_summary": "RETRY: 505 evidence items",
+        "output_summary": "3 timeline steps (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T12:55:23.073Z",
+        "duration_ms": 42618,
+        "input_summary": "RETRY: 3 steps; 4 narrative keys",
+        "output_summary": "v2 completeness_score=62",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      }
+    ]
+  }
+}

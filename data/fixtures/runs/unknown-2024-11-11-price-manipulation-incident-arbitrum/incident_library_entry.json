@@ -1,0 +1,44 @@
+{
+  "incident_id": "unknown-2024-11-11-price-manipulation-incident-arbitrum",
+  "title": "Unknown 2024-11-11 price-manipulation incident",
+  "protocol_name": "Unknown",
+  "chain": "Arbitrum",
+  "incident_date": "",
+  "summary": "Transaction involved 11 token transfers across 60+ contracts. The victim WethPoolTUP contract (EIP-1967 proxy) transferred WETH outward. Call graph shows transfers from victim to WETH token, plus interactions with Balancer Vault, Camelot pools, and Uniswap V3 Router suggesting multi-venue price manipulation or arbitrage.",
+  "status": "demo_live_dossier",
+  "completeness_score": 0.55,
+  "source_count": 46,
+  "direct_source_count": 4,
+  "secondary_source_count": 42,
+  "social_count": 0,
+  "poc_count": 2,
+  "explorer_count": 43,
+  "report_count": 1,
+  "missing_fields": [
+    "protocol_name_confirmed",
+    "accurate_loss_amount",
+    "incident_date",
+    "victim_contract_addresses",
+    "attack_contract_url",
+    "flash_loan_amount",
+    "fund_destination_after_exploit",
+    "social_media_sources",
+    "timestamp_of_attack"
+  ],
+  "last_updated": "2026-04-27T13:12:13+00:00",
+  "pattern_label": "price_manipulation",
+  "attack_tx_hashes": [
+    "0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+    "0x5553444300000000000000000000000000000000000000000000000000000000",
+    "0x4554480000000000000000000000000000000000000000000000000000000000",
+    "0xf50e495000000000000000000000000000000000000000000000000000000000"
+  ],
+  "source_preview": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",
+    "https://arbiscan.io/tx/0x6a2f989b5493b52ffc078d0a59a3bf9727d134b403aa6e0bf309fd513a728f7f",
+    "https://arbiscan.io/address/0x0b2bcf06f740c322bc7276b6b90de08812ce9bfe",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-11/DeltaPrime_exp.sol",
+    "https://arbiscan.io/chart/price"
+  ]
+}

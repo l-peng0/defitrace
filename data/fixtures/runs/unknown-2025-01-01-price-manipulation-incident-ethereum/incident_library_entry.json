@@ -1,0 +1,46 @@
+{
+  "incident_id": "unknown-2025-01-01-price-manipulation-incident-ethereum",
+  "title": "Unknown 2025-01-01 price-manipulation incident",
+  "protocol_name": "Unknown",
+  "chain": "Ethereum",
+  "incident_date": "",
+  "summary": "An estimated loss of 12",
+  "status": "demo_live_dossier",
+  "completeness_score": 0.58,
+  "source_count": 45,
+  "direct_source_count": 4,
+  "secondary_source_count": 41,
+  "social_count": 0,
+  "poc_count": 2,
+  "explorer_count": 42,
+  "report_count": 1,
+  "missing_fields": [
+    "protocol_name_and_identity",
+    "loss_amount_denomination",
+    "incident_date_with_timestamp",
+    "attacker_funding_source",
+    "post_attack_fund_movements",
+    "root_cause_vulnerability_detail",
+    "protocol_response_or_postmortem",
+    "social_media_validation_sources",
+    "verified_contract_source_codes",
+    "victim_contract_urls",
+    "attack_contract_urls"
+  ],
+  "last_updated": "2026-04-27T13:18:18+00:00",
+  "pattern_label": "price_manipulation",
+  "attack_tx_hashes": [
+    "0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420",
+    "0x6080604090808252346100e757611443818101916001600160401b0391828411",
+    "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+    "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  ],
+  "source_preview": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/LAURAToken_exp.sol",
+    "https://etherscan.io/tx/0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420",
+    "https://etherscan.io/address/0x2cad84c3d2e31bc6d630229901f421e6da5557ef",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2025-01/LAURAToken_exp.sol",
+    "https://etherscan.io/chart/etherprice"
+  ]
+}

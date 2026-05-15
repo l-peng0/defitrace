@@ -1,0 +1,80 @@
+{
+  "incident_id": "unknown-2025-01-01-price-manipulation-incident-ethereum",
+  "card": {
+    "title": "Unknown 2025-01-01 price-manipulation incident",
+    "chain": "Ethereum",
+    "incident_date": "",
+    "protocol_name": "Unknown",
+    "summary": "An estimated loss of 12",
+    "source_count": 45,
+    "direct_source_count": 4,
+    "secondary_source_count": 41,
+    "completeness_score": 0.58
+  },
+  "detail": {
+    "timeline_preview": [
+      {
+        "step_number": 1,
+        "description": "Attacker deploys malicious contract at 0x2cad84c3d2e31bc6d630229901f421e6da5557ef on Ethereum.",
+        "evidence_refs": [
+          "ev-004",
+          "ev-019",
+          "ev-034"
+        ],
+        "summary": ""
+      },
+      {
+        "step_number": 2,
+        "description": "Attacker sets max approval (0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff) on the target LAURAToken contract (0x25869347f7993c50410a9b9b9c48f37d79e12a36) and associated pool contract (0x55877cf2f24286dba2acb64311beca39728fbd10).",
+        "evidence_refs": [
+          "ev-009",
+          "ev-011",
+          "ev-020",
+          "ev-021",
+          "ev-024",
+          "ev-026"
+        ],
+        "summary": ""
+      },
+      {
+        "step_number": 3,
+        "description": "Attacker uses Uniswap V2 Router (0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D) to swap WETH (0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2) for LAURAToken, manipulating the LAURAToken price in the liquidity pool.",
+        "evidence_refs": [
+          "ev-014",
+          "ev-015",
+          "ev-028"
+        ],
+        "summary": ""
+      },
+      {
+        "step_number": 4,
+        "description": "Attacker exploits the price-manipulated state of the LAURAToken contract (0x25869347f7993c50410a9b9b9c48f37d79E12a36) via the malicious contract, interacting with an additional contract (0xb292678438245Ec863F9FEa64AFfcEA887144240) to extract funds.",
+        "evidence_refs": [
+          "ev-009",
+          "ev-012",
+          "ev-016"
+        ],
+        "summary": ""
+      }
+    ],
+    "attacker_profile_summary": "The dossier has 1 direct attacker address candidate(s) and 168 additional address mentions from fetched sources.",
+    "pattern_summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+    "judge_summary": "The dossier provides a functional attack timeline with transaction hash, attacker address, and basic price manipulation flow via Uniswap V2. Evidence links from Etherscan and a DeFiHackLabs PoC support the timeline. However, critical gaps undermine completeness: the loss amount '12' lacks denomination, the protocol is unidentified, the exact vulnerability mechanism is underspecified, and no social sources corroborate the incident. The evidence items are largely inferred mentions with low confidence scores (0.52-0.65). The dossier requires loss quantification, protocol identification, and root cause clarification before it can be considered demo-ready.",
+    "missing_fields": [
+      "protocol_name_and_identity",
+      "loss_amount_denomination",
+      "incident_date_with_timestamp",
+      "attacker_funding_source",
+      "post_attack_fund_movements",
+      "root_cause_vulnerability_detail",
+      "protocol_response_or_postmortem",
+      "social_media_validation_sources",
+      "verified_contract_source_codes",
+      "victim_contract_urls",
+      "attack_contract_urls"
+    ],
+    "technical_analysis_status": "completed"
+  },
+  "status": "demo_live_dossier",
+  "last_updated": "2026-04-27T13:18:18+00:00"
+}

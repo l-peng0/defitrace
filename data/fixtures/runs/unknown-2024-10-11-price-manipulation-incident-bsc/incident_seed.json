@@ -1,0 +1,37 @@
+{
+  "incident_id": "unknown-2024-10-11-price-manipulation-incident-bsc",
+  "job_id": "unknown-bsc-2024-10-11-batch",
+  "trigger_type": "batch",
+  "seed_type": "tx_hash",
+  "chain": "BSC",
+  "protocol_name": "Unknown",
+  "incident_name": "Unknown 2024-10-11 price-manipulation incident",
+  "incident_date": "",
+  "attack_tx_hashes": [
+    "0x9afcac8e82180fa5b2f346ca66cf6eb343cd1da5a2cd1b5117eb7eaaebe953b3"
+  ],
+  "attacker_addresses": [
+    "0x3f32c7cfb0a78ddea80a2384ceb4633099cbdc98"
+  ],
+  "seed_urls": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/P719Token_exp.sol",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs?tab=readme-ov-file#20241011-p719token---price-manipulation-inflate-attack",
+    "https://x.com/TenArmorAlert/status/1844929489823989953"
+  ],
+  "attack_contract_urls": [],
+  "victim_contract_urls": [],
+  "tags": [
+    "price_manipulation",
+    "bsc",
+    "defi"
+  ],
+  "source_names": [],
+  "attack_type_raws": [],
+  "summary_candidates": [
+    "An estimated loss of 547"
+  ],
+  "note_candidates": [],
+  "date_range": {},
+  "created_at": "2026-04-27T12:56:05+00:00"
+}

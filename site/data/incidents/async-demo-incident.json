@@ -1,0 +1,190 @@
+{
+  "incident_id": "async-demo-incident",
+  "dashboard_view": {
+    "incident_id": "async-demo-incident",
+    "card": {
+      "title": "Async Demo Incident",
+      "chain": "Base",
+      "protocol_name": "Async Demo",
+      "summary": "This MVP dossier was assembled from seed-level facts for Async Demo Incident. It already preserves key seed inputs and checkpoint files, but it still needs live source fetching for a fuller dossier.",
+      "source_count": 1,
+      "completeness_score": 0.6
+    },
+    "detail": {
+      "timeline_preview": [
+        {
+          "step_id": "step-001",
+          "order": 1,
+          "label": "Incident seed created",
+          "step_type": "seed",
+          "summary": "The run began from a manually supplied incident seed.",
+          "tx_hashes": [],
+          "addresses": [],
+          "source_refs": [],
+          "confidence": 1.0
+        },
+        {
+          "step_id": "step-002",
+          "order": 2,
+          "label": "Follow-up evidence still needed",
+          "step_type": "gap",
+          "summary": "This MVP has not fetched remote pages yet, so chronology beyond the seed remains open.",
+          "tx_hashes": [],
+          "addresses": [],
+          "source_refs": [],
+          "confidence": 0.45
+        }
+      ],
+      "attacker_profile_summary": "No attacker address was supplied in the seed, so the attacker profile is mostly open.",
+      "pattern_summary": "Seed tags suggest oracle manipulation may be involved.",
+      "missing_fields": [
+        "attack_tx_hashes",
+        "attacker_addresses"
+      ]
+    },
+    "status": "partial_mvp_output",
+    "last_updated": "2026-04-01T04:19:40+00:00"
+  },
+  "augmented_incident": {
+    "incident_id": "async-demo-incident",
+    "title": "Async Demo Incident",
+    "chain": "Base",
+    "protocol_name": "Async Demo",
+    "status": "partial_mvp_output",
+    "summary": "This MVP dossier was assembled from seed-level facts for Async Demo Incident. It already preserves key seed inputs and checkpoint files, but it still needs live source fetching for a fuller dossier.",
+    "key_addresses": [],
+    "key_contracts": [],
+    "key_transactions": [],
+    "timeline": [
+      {
+        "step_id": "step-001",
+        "order": 1,
+        "label": "Incident seed created",
+        "step_type": "seed",
+        "summary": "The run began from a manually supplied incident seed.",
+        "tx_hashes": [],
+        "addresses": [],
+        "source_refs": [],
+        "confidence": 1.0
+      },
+      {
+        "step_id": "step-002",
+        "order": 2,
+        "label": "Follow-up evidence still needed",
+        "step_type": "gap",
+        "summary": "This MVP has not fetched remote pages yet, so chronology beyond the seed remains open.",
+        "tx_hashes": [],
+        "addresses": [],
+        "source_refs": [],
+        "confidence": 0.45
+      }
+    ],
+    "attacker_profile": {
+      "incident_id": "async-demo-incident",
+      "profile_id": "profile-async-demo-incident",
+      "primary_addresses": [],
+      "related_addresses": [],
+      "first_seen_estimate": "unknown",
+      "recent_activity_summary": "No attacker address was supplied in the seed, so the attacker profile is mostly open.",
+      "funding_patterns": [],
+      "outbound_patterns": [],
+      "counterparties": [],
+      "repeated_behaviors": [],
+      "source_refs": [],
+      "open_questions": [
+        "Which address funded the exploit wallet before the attack?",
+        "Where did funds move immediately after the exploit?"
+      ]
+    },
+    "pattern_hypotheses": [
+      {
+        "hypothesis_id": "hyp-001",
+        "label": "oracle_manipulation",
+        "summary": "Seed tags suggest oracle manipulation may be involved.",
+        "why_suspected": [
+          "The seed tags mention oracle-related behavior."
+        ],
+        "evidence_refs": [
+          "ev-003"
+        ],
+        "confidence": 0.65,
+        "open_questions": [
+          "Which pricing or liquidity mechanism was actually abused?",
+          "Do later sources confirm the same root cause?"
+        ]
+      }
+    ],
+    "source_summary": {
+      "source_count": 1,
+      "source_types": {
+        "seed_url": 1
+      }
+    },
+    "completeness_score": 0.6,
+    "missing_fields": [
+      "attack_tx_hashes",
+      "attacker_addresses"
+    ],
+    "conflicts": [],
+    "generated_at": "2026-04-01T04:19:40+00:00"
+  },
+  "source_index": {
+    "incident_id": "async-demo-incident",
+    "sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://example.com/demo",
+        "source_type": "seed_url",
+        "discovered_from": "incident_seed",
+        "priority": 99,
+        "fetch_status": "not_fetched",
+        "notes": "Seed source supplied directly by the user or upstream module."
+      }
+    ]
+  },
+  "run_state": {
+    "job_id": "async-demo-incident-job",
+    "incident_id": "async-demo-incident",
+    "trigger_type": "api",
+    "current_stage": "dashboard_projection",
+    "node_status": {
+      "seed_loader": "completed",
+      "source_finder": "completed",
+      "evidence_collector": "completed",
+      "citation_resolver": "completed",
+      "timeline_builder": "completed",
+      "attacker_profiler": "completed",
+      "pattern_reasoner": "completed",
+      "dossier_assembler": "completed",
+      "dashboard_projection": "completed"
+    },
+    "retry_counts": {},
+    "started_at": "2026-04-01T04:19:40+00:00",
+    "updated_at": "2026-04-01T04:19:40+00:00",
+    "completed_at": "2026-04-01T04:19:40+00:00",
+    "run_notes": [
+      "Created ranked source candidates from the seed.",
+      "Converted seed facts into structured evidence items.",
+      "Wrote dashboard and report handoff JSON outputs."
+    ]
+  },
+  "report_inputs": {
+    "incident_id": "async-demo-incident",
+    "headline": "Async Demo Incident",
+    "executive_summary": "This MVP dossier was assembled from seed-level facts for Async Demo Incident. It already preserves key seed inputs and checkpoint files, but it still needs live source fetching for a fuller dossier.",
+    "timeline_summary": "The run began from a manually supplied incident seed. This MVP has not fetched remote pages yet, so chronology beyond the seed remains open.",
+    "attacker_behavior_summary": "No attacker address was supplied in the seed, so the attacker profile is mostly open.",
+    "pattern_summary": "Seed tags suggest oracle manipulation may be involved.",
+    "source_refs": [
+      {
+        "source_id": "src-001",
+        "url": "https://example.com/demo",
+        "source_type": "seed_url"
+      }
+    ],
+    "open_questions": [
+      "Which sources should be fetched first in the next run?",
+      "Can we confirm the exploit root cause from direct technical evidence?"
+    ]
+  }
+}

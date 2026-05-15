@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent Trace — Demo</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <style>
+    body { padding: 32px; max-width: 1200px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    h1   { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
+    .sub { font-size: 13px; color: #6e6e73; margin-bottom: 24px; }
+    /* Minimal section-head shim so the section title renders */
+    .content-section { padding: 0; border: none; background: none; box-shadow: none; }
+    .section-head h3 { font-size: 17px; font-weight: 700; margin: 0 0 4px; }
+    .section-head p  { font-size: 13px; color: #6e6e73; margin: 0 0 20px; }
+    .is-hidden { display: none !important; }
+  </style>
+</head>
+<body>
+  <h1>Agent Trace — Standalone Demo</h1>
+  <p class="sub">
+    Calls <code>renderAgentTrace(MOCK_DOSSIER, container)</code> directly against a hardcoded mock fixture.
+    No backend needed.
+  </p>
+
+  <!-- The section wrapper that renderAgentTrace controls -->
+  <section id="agent-trace-section" class="content-section is-hidden">
+    <div class="section-head">
+      <h3>Agent Trace</h3>
+      <p>Step-by-step timeline of all 9 pipeline agents — rule-based (blue) and LLM (orange) — with token costs, durations, and feedback loops.</p>
+    </div>
+    <div id="agent-trace-root"></div>
+  </section>
+
+  <!-- Fallback message for missing trace (second demo) -->
+  <hr style="margin: 40px 0; border: none; border-top: 1px solid #eee;" />
+  <h2 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Empty-trace fallback demo</h2>
+  <div id="agent-trace-empty-root"></div>
+
+  <script type="module">
+    // ── Inline stub of the pieces app.js needs in this standalone context ──────
+    // (In the real app these are already present; we only need the helpers used
+    //  inside renderAgentTrace / showAgentTraceDetail.)
+    window.__atStandalone = true;
+
+    // Minimal getTechnicalAnalysis shim
+    function getTechnicalAnalysis(bundle) {
+      return bundle?.technical_analysis || bundle?.augmented_incident?.technical_analysis || null;
+    }
+
+    // ── Paste the two Agent-Trace functions verbatim from app.js ──────────────
+    // (They are self-contained; the only external call is getTechnicalAnalysis.)
+
+    function renderAgentTrace(bundle, containerOverride) {
+      const section = document.getElementById("agent-trace-section");
+      const container = containerOverride || document.getElementById("agent-trace-root");
+      if (!container) return;
+
+      const tech = getTechnicalAnalysis(bundle);
+      const trace = tech?.pipeline_trace || bundle?.pipeline_trace || null;
+
+      container.replaceChildren();
+
+      if (!trace || !Array.isArray(trace.records) || trace.records.length === 0) {
+        if (section && !containerOverride) section.classList.add("is-hidden");
+        const msg = document.createElement("p");
+        msg.className = "at-empty";
+        msg.textContent = "Pipeline trace not available for this incident (older fixture).";
+        container.appendChild(msg);
+        return;
+      }
+
+      if (section && !containerOverride) section.classList.remove("is-hidden");
+
+      const records = trace.records;
+      const revisionOn = !!trace.revision_triggered;
+      const retryOn = !!trace.qa_retry_triggered;
+
+      // Banner badges
+      const bannerEl = document.createElement("div");
+      bannerEl.className = "at-banner";
+
+      function makeBadge(label, on, critique) {
+        const badge = document.createElement("div");
+        badge.className = `at-badge ${on ? "at-badge-on" : "at-badge-off"}`;
+        const icon = document.createElement("span");
+        icon.className = "at-badge-icon";
+        icon.textContent = on ? "●" : "○";
+        const text = document.createElement("span");
+        text.textContent = `${label}: ${on ? "ON" : "OFF"}`;
+        badge.appendChild(icon);
+        badge.appendChild(text);
+        if (on && critique) {
+          const details = document.createElement("details");
+          details.className = "at-critique";
+          const summary = document.createElement("summary");
+          summary.textContent = "View critique";
+          const body = document.createElement("p");
+          body.textContent = critique;
+          details.appendChild(summary);
+          details.appendChild(body);
+          badge.appendChild(details);
+        }
+        return badge;
+      }
+
+      bannerEl.appendChild(makeBadge("Revision", revisionOn, trace.revision_critique));
+      bannerEl.appendChild(makeBadge("QA Retry", retryOn, trace.qa_retry_critique));
+      container.appendChild(bannerEl);
+
+      const PILL_W = 124, PILL_H = 40, PILL_R = 8;
+      const GAP = 18;
+      const ROW_Y = 80;
+      const ARROW_Y = ROW_Y;
+      const ARC_ABOVE_Y = 28;
+
+      const totalW = records.length * PILL_W + (records.length - 1) * GAP + 24;
+      const svgH = 160;
+
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("viewBox", `0 0 ${totalW} ${svgH}`);
+      svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
+      svg.setAttribute("class", "at-svg");
+      svg.setAttribute("aria-label", "Agent pipeline timeline");
+      svg.setAttribute("role", "img");
+
+      const defs = document.createElementNS("http://www.w3.org/2000/svg", "defs");
+
+      function makeMarker(id, color) {
+        const marker = document.createElementNS("http://www.w3.org/2000/svg", "marker");
+        marker.setAttribute("id", id);
+        marker.setAttribute("viewBox", "0 0 6 6");
+        marker.setAttribute("refX", "5");
+        marker.setAttribute("refY", "3");
+        marker.setAttribute("markerWidth", "5");
+        marker.setAttribute("markerHeight", "5");
+        marker.setAttribute("orient", "auto-start-reverse");
+        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        path.setAttribute("d", "M 0 0 L 6 3 L 0 6 Z");
+        path.setAttribute("fill", color);
+        marker.appendChild(path);
+        return marker;
+      }
+      defs.appendChild(makeMarker("at-arrow-gray", "#8e8e93"));
+      defs.appendChild(makeMarker("at-arrow-red",  "#ff3b30"));
+      svg.appendChild(defs);
+
+      function pillX(idx) { return 12 + idx * (PILL_W + GAP); }
+      function pillCX(idx) { return pillX(idx) + PILL_W / 2; }
+
+      for (let i = 0; i < records.length - 1; i++) {
+        const x1 = pillX(i) + PILL_W + 2;
+        const x2 = pillX(i + 1) - 2;
+        const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        line.setAttribute("x1", x1); line.setAttribute("y1", ARROW_Y);
+        line.setAttribute("x2", x2); line.setAttribute("y2", ARROW_Y);
+        line.setAttribute("class", "at-arrow");
+        line.setAttribute("marker-end", "url(#at-arrow-gray)");
+        svg.appendChild(line);
+      }
+
+      function findLastIndex(name) {
+        for (let i = records.length - 1; i >= 0; i--) {
+          if (records[i].agent_name === name) return i;
+        }
+        return -1;
+      }
+      function findFirstIndex(name) {
+        return records.findIndex(r => r.agent_name === name);
+      }
+
+      function drawLoopArc(fromIdx, toIdx) {
+        if (fromIdx < 0 || toIdx < 0) return;
+        const x1 = pillCX(fromIdx);
+        const x2 = pillCX(toIdx);
+        const y  = ROW_Y - PILL_H / 2;
+        const arcPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        arcPath.setAttribute("d", `M ${x1} ${y} C ${x1} ${ARC_ABOVE_Y}, ${x2} ${ARC_ABOVE_Y}, ${x2} ${y}`);
+        arcPath.setAttribute("class", "at-loop-arc");
+        arcPath.setAttribute("marker-end", "url(#at-arrow-red)");
+        svg.appendChild(arcPath);
+      }
+
+      if (revisionOn) {
+        const fromIdx = findLastIndex("semantic_validator");
+        const toIdx   = findFirstIndex("technical_reasoner");
+        drawLoopArc(fromIdx, toIdx);
+      }
+      if (retryOn) {
+        const fromIdx = findLastIndex("quality_assessor");
+        const toIdx   = records.findIndex((r, i) => r.agent_name === "evidence_extractor" && (r.notes || "").toLowerCase().includes("retry"));
+        drawLoopArc(fromIdx, toIdx < 0 ? findFirstIndex("evidence_extractor") : toIdx);
+      }
+
+      const nameCount = {};
+
+      records.forEach((rec, idx) => {
+        nameCount[rec.agent_name] = (nameCount[rec.agent_name] || 0) + 1;
+        const isRetry = nameCount[rec.agent_name] > 1;
+        const isLLM   = rec.agent_type === "llm";
+
+        const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+        g.setAttribute("class", `at-pill-group ${isLLM ? "at-pill-llm" : "at-pill-rule"} ${isRetry ? "at-pill-retry" : ""}`);
+        g.setAttribute("tabindex", "0");
+        g.setAttribute("role", "button");
+        g.setAttribute("aria-label", `${rec.agent_name}${isRetry ? " retry" : ""}: ${rec.duration_ms}ms`);
+
+        const rx = pillX(idx);
+        const ry = ROW_Y - PILL_H / 2;
+
+        const shadow = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        shadow.setAttribute("x", rx + 2); shadow.setAttribute("y", ry + 3);
+        shadow.setAttribute("width", PILL_W); shadow.setAttribute("height", PILL_H);
+        shadow.setAttribute("rx", PILL_R); shadow.setAttribute("class", "at-pill-shadow");
+        g.appendChild(shadow);
+
+        const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        rect.setAttribute("x", rx); rect.setAttribute("y", ry);
+        rect.setAttribute("width", PILL_W); rect.setAttribute("height", PILL_H);
+        rect.setAttribute("rx", PILL_R); rect.setAttribute("class", "at-pill-rect");
+        g.appendChild(rect);
+
+        const nameLabel = rec.agent_name.replace(/_/g, " ");
+        const textName = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        textName.setAttribute("x", pillCX(idx));
+        textName.setAttribute("y", ry + (isRetry ? 14 : 16));
+        textName.setAttribute("class", "at-pill-name");
+        textName.setAttribute("text-anchor", "middle");
+        textName.textContent = nameLabel;
+        g.appendChild(textName);
+
+        const dur = rec.duration_ms != null ? `${rec.duration_ms >= 1000 ? (rec.duration_ms / 1000).toFixed(1) + "s" : rec.duration_ms + "ms"}` : "—";
+        const textDur = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        textDur.setAttribute("x", pillCX(idx));
+        textDur.setAttribute("y", ry + (isRetry ? 27 : 30));
+        textDur.setAttribute("class", "at-pill-dur");
+        textDur.setAttribute("text-anchor", "middle");
+        textDur.textContent = dur;
+        g.appendChild(textDur);
+
+        if (isRetry) {
+          const retryText = document.createElementNS("http://www.w3.org/2000/svg", "text");
+          retryText.setAttribute("x", rx + PILL_W - 6);
+          retryText.setAttribute("y", ry + 12);
+          retryText.setAttribute("class", "at-pill-retry-mark");
+          retryText.setAttribute("text-anchor", "end");
+          retryText.textContent = "↻";
+          g.appendChild(retryText);
+        }
+
+        const triggerDetail = () => showAgentTraceDetail(rec, idx, container);
+        g.addEventListener("click", triggerDetail);
+        g.addEventListener("keydown", (ev) => {
+          if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); triggerDetail(); }
+        });
+
+        svg.appendChild(g);
+      });
+
+      const frame = document.createElement("div");
+      frame.className = "at-svg-frame";
+      frame.appendChild(svg);
+      container.appendChild(frame);
+
+      const detail = document.createElement("div");
+      detail.id = "at-detail-" + (containerOverride ? "alt" : "main");
+      detail.className = "at-detail is-hidden";
+      detail.setAttribute("aria-live", "polite");
+      container.appendChild(detail);
+    }
+
+    function showAgentTraceDetail(rec, idx, container) {
+      const detail = container?.querySelector(".at-detail");
+      if (!detail) return;
+
+      if (detail.dataset.activeIdx === String(idx) && !detail.classList.contains("is-hidden")) {
+        detail.classList.add("is-hidden");
+        detail.dataset.activeIdx = "";
+        container.querySelectorAll(".at-pill-group.is-active").forEach(g => g.classList.remove("is-active"));
+        return;
+      }
+
+      container.querySelectorAll(".at-pill-group.is-active").forEach(g => g.classList.remove("is-active"));
+      const groups = container.querySelectorAll(".at-pill-group");
+      if (groups[idx]) groups[idx].classList.add("is-active");
+      detail.dataset.activeIdx = String(idx);
+
+      const tokens = (rec.prompt_tokens ?? 0) + (rec.completion_tokens ?? 0);
+      const isLLM  = rec.agent_type === "llm";
+      const started = rec.started_at ? new Date(rec.started_at).toLocaleString() : "—";
+
+      detail.innerHTML = `
+        <button class="at-detail-close" type="button" aria-label="Close detail">×</button>
+        <div class="at-detail-grid">
+          <div class="at-detail-col">
+            <div class="at-detail-row"><span>Agent</span><strong>${rec.agent_name.replace(/_/g, " ")}</strong></div>
+            <div class="at-detail-row"><span>Type</span><span class="at-type-badge at-type-${rec.agent_type}">${rec.agent_type?.toUpperCase()}</span></div>
+            <div class="at-detail-row"><span>Started</span><strong>${started}</strong></div>
+            <div class="at-detail-row"><span>Duration</span><strong>${rec.duration_ms != null ? rec.duration_ms + " ms" : "—"}</strong></div>
+            ${isLLM ? `<div class="at-detail-row"><span>LLM</span><strong>${rec.llm_provider || "—"}</strong></div>` : ""}
+            ${isLLM ? `<div class="at-detail-row"><span>Tokens</span><strong>${rec.prompt_tokens ?? "—"} prompt / ${rec.completion_tokens ?? "—"} completion${tokens ? " = " + tokens + " total" : ""}</strong></div>` : ""}
+            ${rec.notes ? `<div class="at-detail-row"><span>Notes</span><em>${rec.notes}</em></div>` : ""}
+          </div>
+          <div class="at-detail-col">
+            <div class="at-detail-block"><span class="at-detail-label">Input</span><p>${rec.input_summary || "—"}</p></div>
+            <div class="at-detail-block"><span class="at-detail-label">Output</span><p>${rec.output_summary || "—"}</p></div>
+          </div>
+        </div>`;
+
+      detail.querySelector(".at-detail-close")?.addEventListener("click", () => {
+        detail.classList.add("is-hidden");
+        detail.dataset.activeIdx = "";
+        container.querySelectorAll(".at-pill-group.is-active").forEach(g => g.classList.remove("is-active"));
+      });
+
+      detail.classList.remove("is-hidden");
+      detail.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+
+    // ── Mock dossier matching the Agent B schema ───────────────────────────────
+    const MOCK_DOSSIER = {
+      pipeline_trace: {
+        revision_triggered: false,
+        revision_critique: null,
+        qa_retry_triggered: true,
+        qa_retry_critique: "missing oracle attribution; weak funds_flow evidence",
+        records: [
+          {
+            agent_name: "collector",
+            agent_type: "rule",
+            started_at: "2026-04-27T10:00:00Z",
+            duration_ms: 1240,
+            input_summary: "tx 0x9c0f2e3d… (Ethereum, block 19841200)",
+            output_summary: "12 receipts, 47 traces, 3 internal calls",
+            llm_provider: null,
+            prompt_tokens: null,
+            completion_tokens: null,
+            notes: ""
+          },
+          {
+            agent_name: "planner",
+            agent_type: "rule",
+            started_at: "2026-04-27T10:00:01Z",
+            duration_ms: 320,
+            input_summary: "47 traces with decoded ABIs",
+            output_summary: "6 roles classified: attacker_eoa, attacker_contract, victim×2, pair, flash_loan_provider",
+            llm_provider: null,
+            prompt_tokens: null,
+            completion_tokens: null,
+            notes: ""
+          },
+          {
+            agent_name: "contract_intelligence",
+            agent_type: "rule",
+            started_at: "2026-04-27T10:00:02Z",
+            duration_ms: 870,
+            input_summary: "6 role-labeled addresses",
+            output_summary: "4 contracts verified on Etherscan; 1 proxy resolved; storage slot diff extracted",
+            llm_provider: null,
+            prompt_tokens: null,
+            completion_tokens: null,
+            notes: ""
+          },
+          {
+            agent_name: "technical_reasoner",
+            agent_type: "llm",
+            started_at: "2026-04-27T10:00:03Z",
+            duration_ms: 8200,
+            input_summary: "role plan + contract diffs + 47 decoded traces",
+            output_summary: "exploit_mechanism=price_manipulation; 5-step attack path; oracle dependency confirmed",
+            llm_provider: "glm-4-plus",
+            prompt_tokens: 4200,
+            completion_tokens: 1100,
+            notes: ""
+          },
+          {
+            agent_name: "semantic_validator",
+            agent_type: "llm",
+            started_at: "2026-04-27T10:00:11Z",
+            duration_ms: 3400,
+            input_summary: "technical_reasoner output + deterministic artifacts",
+            output_summary: "4/5 checks pass; oracle_price_deviation confirmed; flash_loan_repaid confirmed",
+            llm_provider: "glm-4-plus",
+            prompt_tokens: 2800,
+            completion_tokens: 620,
+            notes: ""
+          },
+          {
+            agent_name: "evidence_extractor",
+            agent_type: "llm",
+            started_at: "2026-04-27T10:00:15Z",
+            duration_ms: 5100,
+            input_summary: "validated reasoning + on-chain trace",
+            output_summary: "8 evidence items; funds_flow: $2.1M drained; oracle: Chainlink spot price",
+            llm_provider: "glm-4-plus",
+            prompt_tokens: 3600,
+            completion_tokens: 890,
+            notes: "first pass"
+          },
+          {
+            agent_name: "timeline_synthesizer",
+            agent_type: "llm",
+            started_at: "2026-04-27T10:00:20Z",
+            duration_ms: 2900,
+            input_summary: "evidence items + attack steps",
+            output_summary: "7-step chronological timeline with timestamps and tx hashes",
+            llm_provider: "glm-4-plus",
+            prompt_tokens: 2100,
+            completion_tokens: 480,
+            notes: ""
+          },
+          {
+            agent_name: "narrative_writer",
+            agent_type: "llm",
+            started_at: "2026-04-27T10:00:23Z",
+            duration_ms: 6700,
+            input_summary: "timeline + evidence + validation report",
+            output_summary: "analyst report: case_overview, attacker_profile, exploit_path, funds_flow, evidence_chain",
+            llm_provider: "glm-4-plus",
+            prompt_tokens: 5100,
+            completion_tokens: 1640,
+            notes: ""
+          },
+          {
+            agent_name: "quality_assessor",
+            agent_type: "llm",
+            started_at: "2026-04-27T10:00:30Z",
+            duration_ms: 1800,
+            input_summary: "full analyst report + checklist",
+            output_summary: "completeness=0.42; oracle_attribution=missing; funds_flow_evidence=weak",
+            llm_provider: "glm-4-plus",
+            prompt_tokens: 4400,
+            completion_tokens: 310,
+            notes: "completeness=0.42 → retry triggered"
+          },
+          {
+            agent_name: "evidence_extractor",
+            agent_type: "llm",
+            started_at: "2026-04-27T10:00:32Z",
+            duration_ms: 4800,
+            input_summary: "retry: QA critique + prior evidence set",
+            output_summary: "11 evidence items; oracle_attribution added; funds_flow expanded to 5 hops",
+            llm_provider: "glm-4-plus",
+            prompt_tokens: 3900,
+            completion_tokens: 1020,
+            notes: "retry pass"
+          },
+          {
+            agent_name: "timeline_synthesizer",
+            agent_type: "llm",
+            started_at: "2026-04-27T10:00:37Z",
+            duration_ms: 2700,
+            input_summary: "retry: expanded evidence items",
+            output_summary: "8-step timeline with oracle price impact annotated",
+            llm_provider: "glm-4-plus",
+            prompt_tokens: 2300,
+            completion_tokens: 530,
+            notes: "retry pass"
+          },
+          {
+            agent_name: "narrative_writer",
+            agent_type: "llm",
+            started_at: "2026-04-27T10:00:40Z",
+            duration_ms: 6200,
+            input_summary: "retry: revised timeline + expanded evidence",
+            output_summary: "updated analyst report with oracle section and full funds_flow table",
+            llm_provider: "glm-4-plus",
+            prompt_tokens: 5400,
+            completion_tokens: 1710,
+            notes: "retry pass"
+          },
+          {
+            agent_name: "quality_assessor",
+            agent_type: "llm",
+            started_at: "2026-04-27T10:00:46Z",
+            duration_ms: 1600,
+            input_summary: "retry: updated analyst report",
+            output_summary: "completeness=0.81; all critical checks pass",
+            llm_provider: "glm-4-plus",
+            prompt_tokens: 4500,
+            completion_tokens: 290,
+            notes: "completeness=0.81"
+          }
+        ]
+      }
+    };
+
+    const MOCK_EMPTY_DOSSIER = {};
+
+    // ── Render ─────────────────────────────────────────────────────────────────
+    renderAgentTrace(MOCK_DOSSIER, null); // uses #agent-trace-root in the section
+
+    renderAgentTrace(MOCK_EMPTY_DOSSIER, document.getElementById("agent-trace-empty-root"));
+  </script>
+</body>
+</html>

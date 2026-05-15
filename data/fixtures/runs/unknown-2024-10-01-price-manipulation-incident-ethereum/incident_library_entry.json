@@ -1,0 +1,43 @@
+{
+  "incident_id": "unknown-2024-10-01-price-manipulation-incident-ethereum",
+  "title": "Unknown 2024-10-01 price-manipulation incident",
+  "protocol_name": "Unknown",
+  "chain": "Ethereum",
+  "incident_date": "",
+  "summary": "An estimated loss of 8",
+  "status": "demo_live_dossier",
+  "completeness_score": 0.28,
+  "source_count": 44,
+  "direct_source_count": 4,
+  "secondary_source_count": 40,
+  "social_count": 0,
+  "poc_count": 1,
+  "explorer_count": 42,
+  "report_count": 1,
+  "missing_fields": [
+    "protocol_name",
+    "loss_denomination",
+    "attack_contract_urls",
+    "victim_contract_urls",
+    "social_sources",
+    "fund_destination_analysis",
+    "root_cause_details",
+    "post_mortem_references"
+  ],
+  "last_updated": "2026-04-27T12:49:41+00:00",
+  "pattern_label": "price_manipulation",
+  "attack_tx_hashes": [
+    "0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+    "0x258365061e99d3909f89a745c6d595ec2b5b25f778d5231204bd4396c7b54b70",
+    "0xa9a56fe2c47e87480d3dc0c7d5ce8c3c2cac86a23fb3998c8c2e11d34565d684",
+    "0x3b72bc7b92362ef29d6b9a9175071734b8c884026ce63be1263135ce8202c3b1"
+  ],
+  "source_preview": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/FireToken_exp.sol",
+    "https://etherscan.io/tx/0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b",
+    "https://etherscan.io/address/0x9776c0abe8ae3c9ca958875128f1ae1d5afafcb8",
+    "https://etherscan.io/chart/etherprice",
+    "https://sepolia.etherscan.io"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "tx_hash": "0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b",
+  "chain": "Ethereum",
+  "status": "completed",
+  "files": {
+    "tx": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/technical_analysis/0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b/tx.json",
+    "receipt": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/technical_analysis/0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b/receipt.json",
+    "trace_callTracer": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/technical_analysis/0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b/trace_callTracer.json",
+    "decoded_calls": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/technical_analysis/0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b/decoded_calls.json",
+    "funds_flow": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/technical_analysis/0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b/funds_flow.json"
+  },
+  "summary": {
+    "contracts_touched": [
+      "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+      "0x19c5538df65075d53d6299904636bae68b6df441",
+      "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+      "0x351d38733de3f1e73468d24401c59f63677000c9",
+      "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+      "0x62f250cf7021e1cf76c765dec8ec623fe173a1b5",
+      "0x6b7e633fbdaf237bcfb8176be04b0dd72dda3b3a",
+      "0x713d2b652e5f2a86233c57af5341db42a5559dd1",
+      "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+      "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "0xce88686553686da562ce7cea497ce749da109f9f"
+    ],
+    "addresses_seen": [
+      "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+      "0x19c5538df65075d53d6299904636bae68b6df441",
+      "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+      "0x351d38733de3f1e73468d24401c59f63677000c9",
+      "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+      "0x62f250cf7021e1cf76c765dec8ec623fe173a1b5",
+      "0x6b7e633fbdaf237bcfb8176be04b0dd72dda3b3a",
+      "0x713d2b652e5f2a86233c57af5341db42a5559dd1",
+      "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+      "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "0xce88686553686da562ce7cea497ce749da109f9f"
+    ],
+    "native_value_transfers": 0,
+    "token_transfers": 12
+  },
+  "issues": []
+}

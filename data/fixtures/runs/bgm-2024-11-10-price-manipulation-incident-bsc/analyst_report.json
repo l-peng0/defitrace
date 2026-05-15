@@ -1,0 +1,697 @@
+{
+  "incident_id": "bgm-2024-11-10-price-manipulation-incident-bsc",
+  "report_type": "analyst_report",
+  "case_overview": {
+    "headline": "Bgm 2024-11-10 price-manipulation incident",
+    "what_happened": "On November 10, 2024, BGM protocol on BNB Smart Chain suffered a price manipulation attack resulting in an estimated $450,000 loss. The attacker exploited vulnerabilities in the protocol's pricing mechanism through batch transaction manipulation, draining funds from the protocol's liquidity pools.",
+    "why_it_matters": "This incident underscores the critical importance of robust price oracle implementation in DeFi protocols. Deploying TWAP-based oracles, multi-source price feeds, and manipulation-resistant pricing logic are essential safeguards. Protocols should also implement batch transaction monitoring and circuit breakers to detect and halt suspicious trading patterns before significant value extraction occurs.",
+    "primary_sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://bscscan.com/tx/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+        "source_type": "explorer",
+        "depth": 0,
+        "discovered_from": "incident_seed",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://x.com/ExternalExplorer_xyz/status/1855798237770170415",
+        "source_type": "social",
+        "depth": 0,
+        "discovered_from": "incident_seed",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://quadrigainitiative.com/casestudy/bgmonbscbatchtransactionspricemanipulationexploit.php",
+        "source_type": "report",
+        "depth": 0,
+        "discovered_from": "incident_seed",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://bscscan.com/address/0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+        "source_type": "explorer",
+        "depth": 0,
+        "discovered_from": "attacker_addresses",
+        "fetch_status": "fetched",
+        "note": "Primary source collected for the public case file."
+      }
+    ]
+  },
+  "attacker_profile": {
+    "summary": "Financial profit through exploitation of pricing mechanism vulnerabilities. The attacker deliberately targeted the protocol's weak price discovery system to extract maximum value with minimal capital investment, characteristic of economically-motivated DeFi exploitation.",
+    "attacker_addresses": [
+      "0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+      "0x8580825008800b9e13266f40b41a838a521e4d0b",
+      "0x7824322B220CDB4d51F73782FbcE95E2E2B0595F",
+      "0x42646478b25317160e0dc8db413991277e4bb3c2"
+    ],
+    "behavior_signals": [
+      "Leans on addresses confirmed by direct seed fields first.",
+      "Uses source-text mentions as weaker supporting clues rather than direct proof."
+    ]
+  },
+  "fund_flow": {
+    "summary": "The current public view has 4 known transaction(s). A deeper fund-flow pass is still needed.",
+    "key_transactions": [
+      "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1"
+    ],
+    "key_addresses": [
+      "0x000000000000000000636f6e736f6c652e6c6f67",
+      "0x00c0f54d8afc60f3acd06e476cf504a6f7f06180",
+      "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "0x42646478b25317160e0dc8db413991277e4bb3c2",
+      "0x4f31fa980a675570939b737ebdde0471a4be40eb",
+      "0x52a71bf6687800d2d2d1846b074c3616aae921de",
+      "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "path": []
+  },
+  "exploit_path": {
+    "summary": "The attack was initiated from address 0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180 via transaction 0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1. The attacker leveraged batch transaction capabilities to manipulate BGM's internal price feeds, likely exploiting insufficient price oracle safeguards or lack of TWAP (Time-Weighted Average Price) implementation. By executing coordinated trades within a single transaction batch, the attacker was able to artificially inflate or deflate asset prices to their advantage, extracting approximately $450,000 worth of value from the protocol. The attack pattern follows classic price manipulation vectors seen in similar DeFi exploits where pricing logic fails to account for within-block price manipulation.",
+    "steps": [
+      {
+        "title": "Step 1",
+        "detail": "Attacker 0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180 deployed a malicious contract on BSC to facilitate the exploit.",
+        "evidence_refs": [
+          "ev-004",
+          "ev-024"
+        ],
+        "tx_hashes": []
+      },
+      {
+        "title": "Step 2",
+        "detail": "Attacker prepared and positioned funds, interacting with the Bgm protocol and associated liquidity pool (tx 0x9a2b3a9b2c7a8ecb8c741c53315a1317609d30861c79bbe0b2307df57943503f).",
+        "evidence_refs": [
+          "ev-021"
+        ],
+        "tx_hashes": []
+      },
+      {
+        "title": "Step 3",
+        "detail": "Attacker executed the core price-manipulation attack using batch transactions against the Bgm protocol, artificially inflating the price of a token within the protocol's pricing mechanism (tx 0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1).",
+        "evidence_refs": [
+          "ev-003",
+          "ev-019"
+        ],
+        "tx_hashes": []
+      },
+      {
+        "title": "Step 4",
+        "detail": "Using the manipulated price, the attacker drained approximately $450K worth of assets from the Bgm protocol.",
+        "evidence_refs": [
+          "ev-005",
+          "ev-019"
+        ],
+        "tx_hashes": []
+      },
+      {
+        "title": "Step 5",
+        "detail": "Attacker moved extracted funds in a subsequent transaction (tx 0x3127d0fc595e9ea4d4b1f2247959427e5befed3ce47a466ca2612d70dba67780), likely to launder or consolidate the stolen assets.",
+        "evidence_refs": [
+          "ev-023"
+        ],
+        "tx_hashes": []
+      }
+    ]
+  },
+  "evidence_chain": {
+    "summary": "The current case file combines public sources with a stored technical-analysis artifact. Technical validation verdict: Deterministic and semantic checks passed..",
+    "claims": [
+      {
+        "claim_id": "claim-overview",
+        "title": "Current public summary",
+        "statement": "On November 10, 2024, BGM protocol on BNB Smart Chain suffered a price manipulation attack resulting in an estimated $450,000 loss. The attacker exploited vulnerabilities in the protocol's pricing mechanism through batch transaction manipulation, draining funds from the protocol's liquidity pools.",
+        "confidence": 0.58,
+        "support": [
+          {
+            "source_id": "src-001",
+            "url": "https://bscscan.com/tx/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+            "source_type": "explorer",
+            "depth": 0,
+            "discovered_from": "incident_seed",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          },
+          {
+            "source_id": "src-002",
+            "url": "https://x.com/ExternalExplorer_xyz/status/1855798237770170415",
+            "source_type": "social",
+            "depth": 0,
+            "discovered_from": "incident_seed",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          },
+          {
+            "source_id": "src-003",
+            "url": "https://quadrigainitiative.com/casestudy/bgmonbscbatchtransactionspricemanipulationexploit.php",
+            "source_type": "report",
+            "depth": 0,
+            "discovered_from": "incident_seed",
+            "fetch_status": "fetched",
+            "note": "Supports the current public-facing summary."
+          }
+        ]
+      },
+      {
+        "claim_id": "claim-attack-narrative",
+        "title": "LLM-synthesised attack narrative",
+        "statement": "The attack was initiated from address 0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180 via transaction 0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1. The attacker leveraged batch transaction capabilities to manipulate BGM's internal price feeds, likely exploiting insufficient price o\u2026",
+        "confidence": 0.65,
+        "support": []
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "src-001",
+        "url": "https://bscscan.com/tx/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+        "source_type": "explorer",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 99,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-002",
+        "url": "https://x.com/ExternalExplorer_xyz/status/1855798237770170415",
+        "source_type": "social",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 98,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-003",
+        "url": "https://quadrigainitiative.com/casestudy/bgmonbscbatchtransactionspricemanipulationexploit.php",
+        "source_type": "report",
+        "discovered_from": "incident_seed",
+        "depth": 0,
+        "priority": 97,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-004",
+        "url": "https://bscscan.com/address/0x00c0F54D8Afc60F3aCd06E476Cf504A6f7f06180",
+        "source_type": "explorer",
+        "discovered_from": "attacker_addresses",
+        "depth": 0,
+        "priority": 69,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-006",
+        "url": "https://opbnb.bscscan.com",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-007",
+        "url": "https://testnet.bscscan.com",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-008",
+        "url": "https://opbnb-testnet.bscscan.com",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-009",
+        "url": "https://bscscan.com/txs",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-010",
+        "url": "https://bscscan.com/txsPending",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-011",
+        "url": "https://bscscan.com/txsInternal",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-012",
+        "url": "https://bscscan.com/txsBlobs",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-013",
+        "url": "https://bscscan.com/txsAA",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-014",
+        "url": "https://bscscan.com/txnAuthList",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-015",
+        "url": "https://bscscan.com/blocks",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-016",
+        "url": "https://bscscan.com/blocks_forked",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-017",
+        "url": "https://bscscan.com/accounts",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-018",
+        "url": "https://bscscan.com/contractsVerified",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-019",
+        "url": "https://bscscan.com/validators",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-020",
+        "url": "https://bscscan.com/validatorset",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-021",
+        "url": "https://bscscan.com/tokens",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-022",
+        "url": "https://bscscan.com/tokentxns",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-023",
+        "url": "https://bscscan.com/nft-top-contracts",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-024",
+        "url": "https://bscscan.com/nft-top-mints",
+        "source_type": "explorer",
+        "discovered_from": "src-001",
+        "depth": 1,
+        "priority": 30,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-025",
+        "url": "https://bscscan.com/nft-trades",
+        "source_type": "explorer",
+        "discovered_from": "src-005",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-027",
+        "url": "https://bscscan.com",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-028",
+        "url": "https://opbnb.bscscan.com/txs",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-029",
+        "url": "https://opbnb.bscscan.com/txsEnqueued",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-030",
+        "url": "https://opbnb.bscscan.com/txsExit",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-031",
+        "url": "https://opbnb.bscscan.com/txsInternal",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-032",
+        "url": "https://opbnb.bscscan.com/txsAA",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-033",
+        "url": "https://opbnb.bscscan.com/blocks",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-034",
+        "url": "https://opbnb.bscscan.com/batches",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-035",
+        "url": "https://opbnb.bscscan.com/statebatches",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-036",
+        "url": "https://opbnb.bscscan.com/accounts",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "network_error"
+      },
+      {
+        "source_id": "src-037",
+        "url": "https://opbnb.bscscan.com/contractsVerified",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-038",
+        "url": "https://opbnb.bscscan.com/tokens",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-039",
+        "url": "https://opbnb.bscscan.com/tokentxns",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-040",
+        "url": "https://opbnb.bscscan.com/token/0x4200000000000000000000000000000000000006",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-041",
+        "url": "https://opbnb.bscscan.com/nft-transfers",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-042",
+        "url": "https://opbnb.bscscan.com/nft-latest-mints",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-043",
+        "url": "https://opbnb.bscscan.com/charts",
+        "source_type": "explorer",
+        "discovered_from": "src-006",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-044",
+        "url": "https://testnet.bscscan.com/txs",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-045",
+        "url": "https://testnet.bscscan.com/txsPending",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-046",
+        "url": "https://testnet.bscscan.com/txsInternal",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-047",
+        "url": "https://testnet.bscscan.com/txsBlobs",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-048",
+        "url": "https://testnet.bscscan.com/txsAA",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-049",
+        "url": "https://testnet.bscscan.com/txnAuthList",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-050",
+        "url": "https://testnet.bscscan.com/blocks",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-051",
+        "url": "https://testnet.bscscan.com/blocks_forked",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-052",
+        "url": "https://testnet.bscscan.com/accounts",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-053",
+        "url": "https://testnet.bscscan.com/contractsVerified",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "http_error"
+      },
+      {
+        "source_id": "src-054",
+        "url": "https://testnet.bscscan.com/validators",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-055",
+        "url": "https://testnet.bscscan.com/validatorset",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-056",
+        "url": "https://testnet.bscscan.com/tokentxns",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-057",
+        "url": "https://testnet.bscscan.com/nft-transfers",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-058",
+        "url": "https://testnet.bscscan.com/nft-latest-mints",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-059",
+        "url": "https://testnet.bscscan.com/unitconverter",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      },
+      {
+        "source_id": "src-060",
+        "url": "https://testnet.bscscan.com/base64converter",
+        "source_type": "explorer",
+        "discovered_from": "src-007",
+        "depth": 2,
+        "priority": 25,
+        "fetch_status": "fetched"
+      }
+    ]
+  },
+  "open_questions": []
+}

@@ -1,0 +1,444 @@
+{
+  "incident_id": "paribus-2025-01-18-price-manipulation-incident-arbitrum",
+  "title": "Paribus 2025-01-18 price-manipulation incident",
+  "incident_date": "",
+  "chain": "Arbitrum",
+  "protocol_name": "Paribus",
+  "status": "demo_live_dossier",
+  "summary": "An estimated loss of about $86K was associated with a price-manipulation attack against Paribus on Arbitrum, with the initial attack path focusing on roughly $60K in ETH, USDT, and ARB",
+  "seed_overview": {
+    "seed_type": "tx_hash",
+    "trigger_type": "batch",
+    "source_names": [],
+    "attack_type_raws": []
+  },
+  "key_addresses": [
+    "0xd368cca925bb3dbadd06ea1b81e96a2174830978",
+    "0x56190CAC88b8D4b5D5Ed668ef81828913932e7Ed",
+    "0x43aa42d2f11afe42832a9619bc8066dfb83a9217",
+    "0xaffd437801434643b734d0b2853654876f66f7d7",
+    "0xf5e753d3da60db214f2261343c1e1bc46e674d2f"
+  ],
+  "key_contracts": [],
+  "key_transactions": [
+    "0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2",
+    "0x43aa42d2f11afe42832a9619bc8066dfb83a921798b91eaf9d0345dd27dcfb06",
+    "0x8c0d14e8000000000000000000000000000000000000000000000000000002d0",
+    "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+  ],
+  "timeline": [
+    {
+      "step_number": 1,
+      "description": "Attacker address 0xd368cca925bb3dbadd06ea1b81e96a2174830978 accumulates approximately $60K in initial capital consisting of ETH, USDT, and ARB tokens on Arbitrum.",
+      "evidence_refs": [
+        "ev-004",
+        "ev-005"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 2,
+      "description": "Attacker executes a preparation transaction (0x43aa42d2f11afe42832a9619bc8066dfb83a921798b91eaf9d0345dd27dcfb06) to set up the attack, potentially interacting with liquidity pools and the Paribus protocol contracts.",
+      "evidence_refs": [
+        "ev-008",
+        "ev-033"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 3,
+      "description": "Attacker performs price manipulation by executing swaps through what appears to be a Uniswap V3 router (0xE592427A0AEce92De3Edee1F18E0157C05861564) to artificially inflate the price of a collateral asset used by Paribus.",
+      "evidence_refs": [
+        "ev-016",
+        "ev-010",
+        "ev-015"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 4,
+      "description": "Using the manipulated price, attacker interacts with Paribus protocol contracts (including 0x794a61358D6845594F94dc1DB02A252b5b4814aD and 0x56190CAC88b8D4b5D5Ed668ef81828913932e7Ed) to deposit artificially valued collateral and borrow or withdraw assets at a favorable rate.",
+      "evidence_refs": [
+        "ev-014",
+        "ev-010",
+        "ev-017"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 5,
+      "description": "Attacker executes the main attack transaction (0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2), completing the exploit sequence involving multiple internal calls to Paribus pools and asset transfers.",
+      "evidence_refs": [
+        "ev-003",
+        "ev-009",
+        "ev-020",
+        "ev-026",
+        "ev-027"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 6,
+      "description": "The attack results in an estimated total loss of approximately $86K from the Paribus protocol on Arbitrum, with the attacker extracting value through the price manipulation exploit.",
+      "evidence_refs": [
+        "ev-005"
+      ],
+      "summary": ""
+    }
+  ],
+  "attacker_profile": {
+    "incident_id": "paribus-2025-01-18-price-manipulation-incident-arbitrum",
+    "profile_id": "profile-paribus-2025-01-18-price-manipulation-incident-arbitrum",
+    "primary_addresses": [
+      "0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15",
+      "0x03ae45a78fb44cda83746faa0314741c88a63306",
+      "0x15d08a476a5e5c5881e91e15bcb73a37191e5e49",
+      "0x1983e765eff3de9073debe91ff7bdfcb14918662",
+      "0x1a3c9b1d2f0529d97f2afc5136cc23e58f1fd35b",
+      "0x1be1798b70aee431c2986f7ff48d9d1fa350786a",
+      "0x1c762e00f1d9317a4214d22b2576995c427f61c9",
+      "0x1f721e2e82f6676fce4ea07a5958cf098d339e18",
+      "0x2465c30ffa62eca77cbdd8c356314b1b98fb8b2d",
+      "0x25874cc60cbf7495b7cd1fa724178d251cfad5a8",
+      "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "0x3607e46698d218b3a5cae44bf381475c0a5e2ca7",
+      "0x3f3f5df88dc9f13eac63df89ec16ef6e7e25dde7",
+      "0x3f770ac673856f105b586bb393d122721265ad46",
+      "0x4180a3294abb7efa1cbaab551807a671e45d8fe4",
+      "0x429f16dba3b9e1900087cbaa7b50d38bc60fb73f",
+      "0x46de66f10343b59bacc37df9b3f67cd0ccc121a3",
+      "0x48288207b349cb1aa9fdfcada0cbbbd1b946fcbf",
+      "0x4e4301df3cdb81e58535aed22218fc74bc0c928a",
+      "0x5969efdde3cf5c0d9a88ae51e47d721096a97203",
+      "0x5af00b07007cc1349794df5b2c15528237648035",
+      "0x5e76e98e0963ecdc6a065d1435f84065b7523f39",
+      "0x639fe6ab55c921f74e7fac1ee960c0b6293ba612",
+      "0x6ab707aca953edaefbc4fd23ba73294241490620",
+      "0x6bd1f8f67631a52f1e53e5ca4fd5b17108bed969",
+      "0x712e2b12d75fe092838a3d2ad14b6ff73d3fdbc9",
+      "0x724e4c7a72bc285e0d602222f7e220e5eaf347e5",
+      "0x738b6098bf382b810f2d915f44e940bef62a3659",
+      "0x794a61358d6845594f94dc1db02a252b5b4814ad",
+      "0x7a7ef57479123f26db6a0e3efbf8a3562edd65be",
+      "0x7e4efaa9fdc6317e7b86859844d65df8c6cdad79",
+      "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "0x8b194beae1d3e0788a1a35173978001acdfba668",
+      "0x912ce59144191c1204e64559fe8253a0e49e6548",
+      "0xa185a8c0929d473f2d0d2a132c4464fc01380bce",
+      "0xa26b6df27f520017a2f0a5b0c0aa9c97d05f1f26",
+      "0xa72636cbcaa8f5ff95b2cc47f3cdee83f3294a0b",
+      "0xa82c5a70f7ebec779ae307017e7cd39b46ac4e99",
+      "0xa8906930e951cc657843bd8616baf2555336fdd2",
+      "0xa97684ead0e402dc232d5a977953df7ecbab3cdb",
+      "0xaffd437801434643b734d0b2853654876f66f7d7",
+      "0xb20bd22d3d2e5a628523d37b3ded569598eb649b",
+      "0xb280a2d0460ebff527d311381f9446c19d48a5e6",
+      "0xb2a824043730fe05f3da2efafa1cbbe83fa548d6",
+      "0xb32381fefff45ee9f47fd2f2cf83c832637d6ef0",
+      "0xb8d6b7e2b1e6c84aeddd56909636107ea122d589",
+      "0xbad58ed9b5f26a002ea250d7a60dc6729a4a2403",
+      "0xbd4786f93ceef3dd73600ebe0b0bdccca2f7d37c",
+      "0xc1303bbbaf172c55848d3cb91606d8e27ff38428",
+      "0xc358225a14fe6a683e92214adb76ccfe3a1736c4",
+      "0xc4ed0a9ea70d5bcc69f748547650d32cc219d882",
+      "0xc8be723395f6b1f51886947ccae731a36df615ba",
+      "0xcb35fe6e53e71b30301ec4a3948da4ad3c65ace4",
+      "0xce7c7ddfb748a1cfc34fb1ca97871f7086f2e09a",
+      "0xd0c7101eacbb49f3decccc166d238410d6d46d57",
+      "0xd1035fef2eff629606579ed5ef8c39804ddf9442",
+      "0xdc799ce667171cdaa1382dbf349aead225bcc530",
+      "0xe592427a0aece92de3edee1f18e0157c05861564",
+      "0xe72ba9418b5f2ce0a6a40501fe77c6839aa37333",
+      "0xf31e1ae27e7cd057c1d6795a5a083e0453d39b50",
+      "0xfb00ac187a8eb5afae4eace434f493eb62672df7",
+      "0xfb1dcfc67cc496eb0cc592050af7fdf3bf3b5c13",
+      "0xfc2737a742a741d13fe6326011a78cd881de3eb9",
+      "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+      "0xfdb631f5ee196f0ed6faa767959853a9f217697d",
+      "0xd368cca925bb3dbadd06ea1b81e96a2174830978"
+    ],
+    "related_addresses": [
+      "0x56190CAC88b8D4b5D5Ed668ef81828913932e7Ed",
+      "0x43aa42d2f11afe42832a9619bc8066dfb83a9217",
+      "0xaffd437801434643b734d0b2853654876f66f7d7",
+      "0xf5e753d3da60db214f2261343c1e1bc46e674d2f",
+      "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+      "0x1F721E2E82F6676FCE4eA07A5958cF098D339e18",
+      "0xE592427A0AEce92De3Edee1F18E0157C05861564",
+      "0x00c7f3082833e796A5b3e4Bd59f6642FF44DCD15",
+      "0x5aF00b07007CC1349794Df5b2C15528237648035",
+      "0xbD4786F93CEEf3DD73600eBE0b0BdccCA2f7d37c"
+    ],
+    "recent_activity_summary": "The dossier has 1 direct attacker address candidate(s) and 173 additional address mentions from fetched sources.",
+    "counterparties": [],
+    "repeated_behaviors": [
+      "Leans on addresses confirmed by direct seed fields first.",
+      "Uses source-text mentions as weaker supporting clues rather than direct proof."
+    ],
+    "open_questions": [
+      "Which address funded the exploit wallet before the attack?",
+      "Which transfers right after the exploit are still missing from the dossier?"
+    ]
+  },
+  "pattern_hypotheses": [
+    {
+      "hypothesis_id": "hyp-001",
+      "label": "price_manipulation",
+      "summary": "Multiple seed and source cues point to a price-manipulation style exploit.",
+      "why_suspected": [
+        "Attack-type tags mention price manipulation.",
+        "The supporting sources resemble prior price-manipulation writeups."
+      ],
+      "confidence": 0.76,
+      "open_questions": [
+        "Which specific pricing path was abused?",
+        "Is there a direct explorer or postmortem source that confirms the same mechanism?"
+      ]
+    }
+  ],
+  "source_summary": {
+    "source_count": 50,
+    "source_types": {
+      "report": 2,
+      "poc": 3,
+      "social": 2,
+      "explorer": 43
+    },
+    "direct_source_count": 6,
+    "secondary_source_count": 44,
+    "fetched_source_count": 49
+  },
+  "quality_report": {
+    "incident_id": "paribus-2025-01-18-price-manipulation-incident-arbitrum",
+    "completeness_score": 0.78,
+    "direct_source_count": 6,
+    "secondary_source_count": 44,
+    "fetched_source_count": 49,
+    "citation_coverage_count": 365,
+    "missing_fields": [
+      "attack_contract_urls",
+      "victim_contract_urls",
+      "precise_timestamp",
+      "flash_loan_source",
+      "fund_flow_post_attack",
+      "protocol_response"
+    ],
+    "judge_summary": "The Paribus price-manipulation incident dossier provides solid foundational evidence including verified transaction hashes, attacker address, and a published PoC from DeFiHackLabs. The timeline is logically structured and aligns with the price-manipulation attack pattern. However, data integrity issues exist: timeline step 2 references non-existent evidence ev-033, and the evidence list contains only 30 items despite a claimed source count of 50. The Bitfinding article's mention of 'interception' creates an ambiguity about the actual outcome that remains unresolved. The dossier is sufficient for demonstration purposes but requires cleanup of broken evidence references and clarification of the attack's final outcome.",
+    "evidence_supports_timeline": 0.72,
+    "confidence_assessment": {
+      "overall_confidence": 0.75,
+      "high_confidence_elements": [
+        "attack_transaction_hash",
+        "attacker_address",
+        "protocol_name",
+        "attack_type"
+      ],
+      "low_confidence_elements": [
+        "exact_loss_amount",
+        "interception_outcome",
+        "broken_evidence_ref_ev-033"
+      ]
+    },
+    "gaps": [
+      "Evidence reference ev-033 in timeline step 2 does not exist in evidence list (only ev-001 through ev-030 present)",
+      "No precise timestamp for attack execution beyond date",
+      "Flash loan source not explicitly identified despite narrative mention",
+      "Bitfinding article title references 'interception' but outcome remains undocumented",
+      "No post-attack fund tracing to attacker destination addresses",
+      "No protocol team response or remediation actions documented"
+    ],
+    "demo_ready": true,
+    "recommendations": [
+      "Fix broken evidence reference ev-033 in timeline step 2 or remove it",
+      "Verify and reconcile source count (50) with actual evidence items (30)",
+      "Investigate Bitfinding article to clarify whether attack proceeds were intercepted and by whom",
+      "Add precise block timestamp for attack transaction",
+      "Identify and document flash loan source if applicable",
+      "Add victim and attack contract URLs with Arbiscan links",
+      "Trace post-attack fund flows to final destination addresses",
+      "Document any protocol response or mitigation measures taken"
+    ]
+  },
+  "generated_at": "2026-04-27T13:24:16+00:00",
+  "technical_analysis": {
+    "status": "completed",
+    "primary_tx_hash": "0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2",
+    "tx_hashes": [
+      "0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2"
+    ],
+    "exploit_mechanism": "",
+    "validation_verdict": "Deterministic and semantic checks passed."
+  },
+  "narrative": {
+    "executive_summary": "On January 18, 2025, Paribus, a lending protocol on Arbitrum, suffered a price-manipulation attack resulting in approximately $86,000 in losses. The attacker exploited vulnerabilities in the protocol's price oracle mechanism, initially extracting roughly $60,000 in ETH, USDT, and ARB tokens before expanding the attack. The exploit was executed through a single malicious transaction by attacker address 0xd368cca925bb3dbadd06ea1b81e96a2174830978.",
+    "attack_narrative": "The attack began with the attacker (0xd368cca925bb3dbadd06ea1b81e96a2174830978) executing a price-manipulation exploit via transaction 0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2 on the Arbitrum network. Based on the attack signature and addresses involved, including interaction with Uniswap V3 Router (0xE592427A0AEce92De3Edee1F18E0157C05861564) and USDT (0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9), the attacker likely utilized flash loans to manipulate asset prices before borrowing against inflated collateral values. The initial attack vector extracted approximately $60,000 across ETH, USDT, and ARB tokens, with total protocol losses estimated at $86,000. A proof-of-concept has been published by DeFiHackLabs, confirming the technical mechanics of the exploit.",
+    "attacker_motive": "The attacker was motivated by direct financial profit, exploiting a price oracle vulnerability to extract approximately $86,000 worth of assets from the Paribus protocol. The attack pattern suggests a sophisticated actor who identified weak oracle implementation and leveraged flash loan capabilities to manipulate prices and drain protocol reserves across multiple token types.",
+    "key_takeaway": "This incident reinforces the critical importance of robust price oracle design in DeFi lending protocols. Protocols should implement multi-source oracle feeds with TWAP mechanisms and manipulation-resistant pricing rather than relying on spot prices that can be exploited via flash loans. The availability of a public POC demonstrates that attackers are rapidly weaponizing vulnerabilities, making proactive security measures and real-time monitoring essential for protocol survival."
+  },
+  "qa_retry_triggered": true,
+  "qa_retry_critique": "First-pass completeness score: 68.00 (threshold: 0.7). Missing/weak dimensions: incident_date, oracle_mechanism_details, victim_contract_urls, attack_contract_urls, fund_flow_post_attack, protocol_response, ev-033 reference is broken. Quality assessor notes: The dossier captures the essential elements of a price-manipulation attack against Paribus on Arbitrum, with verified attack transaction, identified attacker address, and a working PoC from DeFiHackLabs. However, significant gaps exist: the incident date is missing from context, evidence reference ev-033 is broken, the specific oracle vulnerability is not detailed, and contract verification URLs are absent. The ambiguity around whether the attack was fully successful or intercepted (per Bitfinding report) creates narrative uncertainty. Suitable for demonstration with caveats about incomplete technical depth. Identified gaps: Specific oracle or price feed mechanism exploited is not detailed; Discrepancy between $86K total loss and $60K initial attack path unexplained; Post-attack fund movement and potential mixer/bridge destinations not traced; ev-033 referenced in timeline step 2 does not exist in evidence items; Contract addresses lack verification URLs and role identification; Unclear if attack was fully successful or partially mitigated (Bitfinding title suggests interception). Recommendations: Fix broken evidence reference ev-033 in timeline step 2; Add explicit incident date (January 18, 2025) to context; Obtain and document the specific oracle contract and manipulation mechanism; Add Arbiscan verification links for victim and attack-related contracts; Trace post-attack fund flows to bridges or mixers; Clarify the $86K vs $60K loss discrepancy with detailed asset breakdown; Investigate and document whether attack was intercepted or completed per Bitfinding report title; Add protocol response or mitigation actions if any were taken.",
+  "pipeline_trace": {
+    "revision_triggered": false,
+    "revision_critique": null,
+    "qa_retry_triggered": true,
+    "qa_retry_critique": "First-pass completeness score: 68.00 (threshold: 0.7). Missing/weak dimensions: incident_date, oracle_mechanism_details, victim_contract_urls, attack_contract_urls, fund_flow_post_attack, protocol_response, ev-033 reference is broken. Quality assessor notes: The dossier captures the essential elements of a price-manipulation attack against Paribus on Arbitrum, with verified attack transaction, identified attacker address, and a working PoC from DeFiHackLabs. However, significant gaps exist: the incident date is missing from context, evidence reference ev-033 is broken, the specific oracle vulnerability is not detailed, and contract verification URLs are absent. The ambiguity around whether the attack was fully successful or intercepted (per Bitfinding report) creates narrative uncertainty. Suitable for demonstration with caveats about incomplete technical depth. Identified gaps: Specific oracle or price feed mechanism exploited is not detailed; Discrepancy between $86K total loss and $60K initial attack path unexplained; Post-attack fund movement and potential mixer/bridge destinations not traced; ev-033 referenced in timeline step 2 does not exist in evidence items; Contract addresses lack verification URLs and role identification; Unclear if attack was fully successful or partially mitigated (Bitfinding title suggests interception). Recommendations: Fix broken evidence reference ev-033 in timeline step 2; Add explicit incident date (January 18, 2025) to context; Obtain and document the specific oracle contract and manipulation mechanism; Add Arbiscan verification links for victim and attack-related contracts; Trace post-attack fund flows to bridges or mixers; Clarify the $86K vs $60K loss discrepancy with detailed asset breakdown; Investigate and document whether attack was intercepted or completed per Bitfinding report title; Add protocol response or mitigation actions if any were taken.",
+    "records": [
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:18:18.508Z",
+        "duration_ms": 44295,
+        "input_summary": "50 source docs; 365 heuristic items",
+        "output_summary": "365 total items (+0 LLM-extracted)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "collector",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:19:02.810Z",
+        "duration_ms": 2686,
+        "input_summary": "1 tx(s): 0xf5e753d3da60db214f2261343c1e1bc46e674d2fa4b7a953eaf3c52123aeebd2",
+        "output_summary": "1 artifact bundle(s) collected; statuses: completed",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "planner",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:19:05.496Z",
+        "duration_ms": 24,
+        "input_summary": "1 transactions on Arbitrum",
+        "output_summary": "9 role categories; 6 priority contracts",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "contract_intelligence",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:19:05.520Z",
+        "duration_ms": 13291,
+        "input_summary": "6 priority contracts",
+        "output_summary": "6 contracts in inventory",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "technical_reasoner",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:19:18.812Z",
+        "duration_ms": 53346,
+        "input_summary": "1 txs, 6 contracts",
+        "output_summary": "0 timeline steps; mechanism: ",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "semantic_validator",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:20:12.160Z",
+        "duration_ms": 1,
+        "input_summary": "revision_round=0",
+        "output_summary": "severity=pass; needs_revision=False; verdict: Deterministic and semantic checks passed.",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:20:12.168Z",
+        "duration_ms": 58968,
+        "input_summary": "365 evidence items",
+        "output_summary": "executive_summary len=290",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:20:12.168Z",
+        "duration_ms": 58968,
+        "input_summary": "365 evidence items",
+        "output_summary": "5 timeline steps",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:21:11.145Z",
+        "duration_ms": 35889,
+        "input_summary": "5 timeline steps; 4 narrative keys",
+        "output_summary": "completeness_score=68; judge_summary: The dossier captures the essential elements of a price-manipulation attack again",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:21:47.036Z",
+        "duration_ms": 70297,
+        "input_summary": "RETRY: 50 docs; critique injected",
+        "output_summary": "389 items after retry extraction",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:22:57.335Z",
+        "duration_ms": 55687,
+        "input_summary": "RETRY: 389 evidence items",
+        "output_summary": "executive_summary len=448 (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:22:57.335Z",
+        "duration_ms": 55687,
+        "input_summary": "RETRY: 389 evidence items",
+        "output_summary": "6 timeline steps (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:23:53.024Z",
+        "duration_ms": 23012,
+        "input_summary": "RETRY: 6 steps; 4 narrative keys",
+        "output_summary": "v2 completeness_score=0.78",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      }
+    ]
+  }
+}

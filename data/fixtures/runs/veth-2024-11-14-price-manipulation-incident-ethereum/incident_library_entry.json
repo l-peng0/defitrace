@@ -1,0 +1,44 @@
+{
+  "incident_id": "veth-2024-11-14-price-manipulation-incident-ethereum",
+  "title": "Veth 2024-11-14 price-manipulation incident",
+  "protocol_name": "Veth",
+  "chain": "Ethereum",
+  "incident_date": "",
+  "summary": "An estimated loss of about $447K was caused by a price-manipulation attack involving the vETH/BIF market on Ethereum",
+  "status": "demo_live_dossier",
+  "completeness_score": 0.72,
+  "source_count": 139,
+  "direct_source_count": 8,
+  "secondary_source_count": 131,
+  "social_count": 6,
+  "poc_count": 3,
+  "explorer_count": 48,
+  "report_count": 82,
+  "missing_fields": [
+    "attack_contract_urls",
+    "victim_contract_urls",
+    "precise_attack_timestamp",
+    "block_number",
+    "fund_flow_tracing",
+    "stolen_asset_breakdown",
+    "flash_loan_source_and_amount",
+    "vulnerable_contract_addresses",
+    "root_cause_technical_details"
+  ],
+  "last_updated": "2026-04-27T13:17:54+00:00",
+  "pattern_label": "price_manipulation",
+  "attack_tx_hashes": [
+    "0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b",
+    "0x1ae40f26819da4f10bc7c894a2cc507cdb31c29635d31fa90c8f3f240f0327c0",
+    "0x90db330d9e46609c9d3712b60e64e32e3a4a2f31075674a58dd81181122352f8",
+    "0x305e0d11000000000000000000000000280a8955a11fcd81d72ba1f99d265a48"
+  ],
+  "source_preview": [
+    "https://x.com/SlowMist_Team/status/1856987988632457708",
+    "https://x.com/ExternalExplorer_xyz/status/1857002671124730233",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/vETH_exp.sol",
+    "https://blog.verichains.io/p/veth-incident-with-unknown-mechanism",
+    "https://x.com/TenArmorAlert/status/1856984299905716645",
+    "https://www.quillaudits.com/blog/hack-analysis/veth-token-450k-exploit-analysis"
+  ]
+}

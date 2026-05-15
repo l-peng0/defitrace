@@ -1,0 +1,81 @@
+{
+  "incident_id": "unknown-2024-10-05-price-manipulation-incident-bsc",
+  "chain": "BSC",
+  "generated_at": "2026-04-27T12:50:42+00:00",
+  "tx_hashes": [
+    "0x5e694707337cca979d18f9e45f40e81d6ca341ed342f1377f563e779a746460d"
+  ],
+  "roles": {
+    "attacker_eoa": [
+      "0x3026c464d3bd6ef0ced0d49e80f171b58176ce32"
+    ],
+    "attacker_contracts": [],
+    "victim": [
+      "0xbe779d420b7d573c08eee226b9958737b6218888"
+    ],
+    "routers": [],
+    "pairs": [],
+    "oracles": [],
+    "flash_loan_providers": [
+      "0x36696169c63e42cd08ce11f5deebbcebae652050"
+    ],
+    "tokens": [
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0xbe779d420b7d573c08eee226b9958737b6218888"
+    ],
+    "unknown": [
+      "0x8408497c18882bfb61be9204cfff530f4ee18320",
+      "0x93fbf6b2d322c6c3e7576814d6f0689e0a333e96",
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x0000000000000000000000000000000000000000"
+    ]
+  },
+  "newly_deployed": [],
+  "priority_contracts": [
+    {
+      "address": "0xbe779d420b7d573c08eee226b9958737b6218888",
+      "role": "victim",
+      "why": "largest net-negative token balance change",
+      "priority": "high"
+    },
+    {
+      "address": "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "role": "flash_loan_provider",
+      "why": "called with flashLoan* selector",
+      "priority": "medium"
+    }
+  ],
+  "investigation_notes": [],
+  "call_graph": [
+    {
+      "from": "0x8408497c18882bfb61be9204cfff530f4ee18320",
+      "to": "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "category": "flashloan"
+    },
+    {
+      "from": "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "category": "transfer"
+    },
+    {
+      "from": "0x8408497c18882bfb61be9204cfff530f4ee18320",
+      "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "category": "burn"
+    },
+    {
+      "from": "0x8408497c18882bfb61be9204cfff530f4ee18320",
+      "to": "0xbe779d420b7d573c08eee226b9958737b6218888",
+      "category": "transfer"
+    },
+    {
+      "from": "0x8408497c18882bfb61be9204cfff530f4ee18320",
+      "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "category": "mint"
+    },
+    {
+      "from": "0x8408497c18882bfb61be9204cfff530f4ee18320",
+      "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "category": "transfer"
+    }
+  ]
+}

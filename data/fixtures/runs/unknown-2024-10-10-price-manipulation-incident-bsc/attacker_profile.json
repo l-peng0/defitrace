@@ -1,0 +1,46 @@
+{
+  "incident_id": "unknown-2024-10-10-price-manipulation-incident-bsc",
+  "profile_id": "profile-unknown-2024-10-10-price-manipulation-incident-bsc",
+  "primary_addresses": [
+    "0x03fed6ecf872a827c07eab63106e8f04aef79f0d",
+    "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+    "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+    "0x1b81d678ffb9c0263b24a97847620c99d213eb14",
+    "0x4645863205b47a0a3344684489e8c446a437d66c",
+    "0x4848489f0b2bedd788c696e2d79b6b69d7484848",
+    "0x55d398326f99059ff775485246999027b3197955",
+    "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+    "0x8f921e27e3af106015d1c3a244ec4f48dbfcad14",
+    "0x92b7807bf19b7dddf89b706143896d05228f3121",
+    "0x9810512be701801954449408966c630595d0cd51",
+    "0xa2268fcc2fe7a2bb755fbe5a7b3ac346ddfedb9b",
+    "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
+    "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+    "0xbb8ae522f812e9e65239a0e5db87a9d738ce957a",
+    "0xc5161ae3437c08036b98bdb58cfe6bbff876c177",
+    "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
+    "0xd5f07fed6ddca96c6e93f06498dfecf7e1346d7e"
+  ],
+  "related_addresses": [
+    "0xa9df1bd97cf6d4d1d58d3adfbdde719e46a1548d",
+    "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    "0x7109709ECfa91a80626fF3989D68f67F5b1DD12D",
+    "0x92b7807bF19b7DDdf89b706143896d05228f3121",
+    "0x5E901164858d75852EF548B3729f44Dd93209c9c",
+    "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+    "0x1b81D678ffb9C0263b24A97847620C99d213eB14",
+    "0x55d398326f99059fF775485246999027B3197955",
+    "0x4645863205b47a0A3344684489e8c446a437D66C",
+    "0x8f921E27e3AF106015D1C3a244eC4F48dBFcAD14"
+  ],
+  "recent_activity_summary": "The dossier has 1 direct attacker address candidate(s) and 257 additional address mentions from fetched sources.",
+  "counterparties": [],
+  "repeated_behaviors": [
+    "Leans on addresses confirmed by direct seed fields first.",
+    "Uses source-text mentions as weaker supporting clues rather than direct proof."
+  ],
+  "open_questions": [
+    "Which address funded the exploit wallet before the attack?",
+    "Which transfers right after the exploit are still missing from the dossier?"
+  ]
+}

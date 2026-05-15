@@ -1,0 +1,12 @@
+{
+  "attack_flow_summary": "",
+  "exploit_mechanism": "",
+  "tx_role_map": {},
+  "contract_role_map": {},
+  "timeline_steps": [],
+  "funds_flow_path": [],
+  "open_questions": [],
+  "confidence_notes": [
+    "The unknown contract 0x8408497c18882bfb61be9204cfff530f4ee18320 appears to be the attack contract based on call graph showing it initiated the flash loan and executed manipulation operations against victim. Not listed in attacker_contracts by investigation plan but call patterns indicate malicious orchestrator role. AIZPT314 implements ERC-314 style with integrated liquidity mechanics, making it vulnerable to price manipulation through flash loan-induced reserve changes."
+  ]
+}

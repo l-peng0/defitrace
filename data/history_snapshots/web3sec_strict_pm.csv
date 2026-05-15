@@ -1,0 +1,27 @@
+incident_date,source_name,source_url,project_name,chain,attack_type_raw,attack_type_normalized,attack_tx_url,attack_contract_url,victim_contract_url,loss_text,summary,notes,tags
+2024-09-10,Web3Sec Notion,https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f,Caterpiller Coin,,Price Manipulation,price_manipulation,,,,$1.4M,Caterpiller Coin | Price Manipulation | $1.4M,"Root cause: Price Manipulation
+POC: https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Caterpillar_Coin_CUT_exp.sol",price_manipulation
+2024-09-26,Web3Sec Notion,https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f,BedRock Defi,,Price Manipulation,price_manipulation,,,,$1.7M,BedRock Defi | Price Manipulation | $1.7M,"Root cause: Price Manipulation
+POC: https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Bedrock_DeFi_exp.sol",price_manipulation
+2024-10-01,Web3Sec Notion,https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f,Fire Token,,Price Manipulation,price_manipulation,,,,$20k,Fire Token | Price Manipulation | $20k,"Root cause: Price Manipulation
+POC: https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/FireToken_exp.sol",price_manipulation
+2024-10-02,Web3Sec Notion,https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f,LavaLending,,Price Manipulation,price_manipulation,,,,$130k,LavaLending | Price Manipulation | $130k,"Root cause: Price Manipulation
+POC: https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/LavaLending_exp.sol",price_manipulation
+2024-10-05,Web3Sec Notion,https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f,AIZPToken,,Price Manipulation,price_manipulation,,,,$20k,AIZPToken | Price Manipulation | $20k,"Root cause: Price Manipulation
+POC: https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/AIZPTToken_exp.sol",price_manipulation
+2024-10-06,Web3Sec Notion,https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f,HYDT,,Price Manipulation,price_manipulation,,,,$5k,HYDT | Price Manipulation | $5k,"Root cause: Price Manipulation
+POC: https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/HYDT_exp.sol",price_manipulation
+2024-10-06,Web3Sec Notion,https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f,SASHAToken,,Price Manipulation,price_manipulation,,,,"$600,000","SASHAToken | Price Manipulation | $600,000","Root cause: Price Manipulation
+POC: https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/SASHAToken_exp.sol",price_manipulation
+2024-10-11,Web3Sec Notion,https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f,P719Token,,Price Manipulation,price_manipulation,,,,547 BNB,P719Token | Price Manipulation | 547 BNB,"Root cause: Price Manipulation
+POC: https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/P719Token_exp.sol",price_manipulation
+2024-10-26,Web3Sec Notion,https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f,CompoundFork,,Price Manipulation,price_manipulation,,,,$1 Million,CompoundFork | Price Oracle Manipulation | $1 Million,"Root cause: Price Oracle Manipulation
+POC: https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/CompoundFork_exploit.sol",price_manipulation
+2024-11-11,Web3Sec Notion,https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f,Delta Prime,,Price Manipulation,price_manipulation,,,,$4.75M,Delta Prime | Price Manipulation | $4.75M,"Root cause: Price Manipulation
+POC: https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-11/DeltaPrime_exp.sol",price_manipulation
+2025-01-01,Web3Sec Notion,https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f,LAURAToken,,Price Manipulation,price_manipulation,,,,$41.2k,LAURAToken | Price Manipulation | $41.2k,"Root cause: Price Manipulation
+POC: https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/LAURAToken_exp.sol",price_manipulation
+2025-01-17,Web3Sec Notion,https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f,Paribus,,Price Manipulation,price_manipulation,,,,$86k,Paribus | Price Manipulation | $86k,"Root cause: Price Manipulation
+POC: https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/Paribus_exp.sol",price_manipulation
+2025-01-21,Web3Sec Notion,https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f,Ast,,Price Manipulation,price_manipulation,,,,$65k,Ast | Incorrect Logic | $65k,"Root cause: Incorrect Logic
+POC: https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2025-01/Ast_exp.sol",price_manipulation

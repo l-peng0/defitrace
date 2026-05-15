@@ -1,0 +1,36 @@
+{
+  "summary": {
+    "total": 2,
+    "completed": 2,
+    "failed": 0,
+    "skipped": 0,
+    "dry_run": 0,
+    "qa_retry_triggered": 0,
+    "wall_time_s": 876.7
+  },
+  "results": [
+    {
+      "incident_id": "bgm-bsc-2024-11-10",
+      "started_at": "2026-04-27T08:18:10+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/bgm-bsc-2024-11-10.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc",
+      "completeness_score": false,
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 393.2
+    },
+    {
+      "incident_id": "paribus-arbitrum-2025-01-18",
+      "started_at": "2026-04-27T08:24:43+00:00",
+      "seed_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/seeds/paribus-arbitrum-2025-01-18.json",
+      "status": "completed",
+      "run_dir": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/paribus-2025-01-18-price-manipulation-incident-arbitrum",
+      "completeness_score": false,
+      "qa_retry_triggered": false,
+      "revision_round": 0,
+      "duration_s": 483.5
+    }
+  ],
+  "ran_at": "2026-04-27T08:32:46+00:00"
+}

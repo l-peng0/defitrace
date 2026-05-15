@@ -1,0 +1,54 @@
+{
+  "tx_hash": "0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1",
+  "chain": "BSC",
+  "status": "completed",
+  "files": {
+    "tx": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1/tx.json",
+    "receipt": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1/receipt.json",
+    "trace_callTracer": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1/trace_callTracer.json",
+    "decoded_calls": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1/decoded_calls.json",
+    "funds_flow": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/0x8580825008800b9e13266f40b41a838a521e4d0bb4abc1cb78684253b7bc9fd1/funds_flow.json"
+  },
+  "summary": {
+    "contracts_touched": [
+      "0x000000000000000000636f6e736f6c652e6c6f67",
+      "0x00c0f54d8afc60f3acd06e476cf504a6f7f06180",
+      "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "0x42646478b25317160e0dc8db413991277e4bb3c2",
+      "0x4f31fa980a675570939b737ebdde0471a4be40eb",
+      "0x52a71bf6687800d2d2d1846b074c3616aae921de",
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x851a17b8cb9b7f19cb50e6f72f000a4e83eaadd0",
+      "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+      "0xadc4eca2a3038b478b591bac1a87e428625d6e0a",
+      "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0xd178a2bde88503eee9f5c201fdf497aadd733459",
+      "0xefa4bce444c09a52941beef5fe8264d70534049f",
+      "0xff82e1e36341ee6b63a67b92a9aeedced288f388"
+    ],
+    "addresses_seen": [
+      "0x000000000000000000636f6e736f6c652e6c6f67",
+      "0x00c0f54d8afc60f3acd06e476cf504a6f7f06180",
+      "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "0x42646478b25317160e0dc8db413991277e4bb3c2",
+      "0x4f31fa980a675570939b737ebdde0471a4be40eb",
+      "0x52a71bf6687800d2d2d1846b074c3616aae921de",
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x7824322b220cdb4d51f73782fbce95e2e2b0595f",
+      "0x851a17b8cb9b7f19cb50e6f72f000a4e83eaadd0",
+      "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+      "0xadc4eca2a3038b478b591bac1a87e428625d6e0a",
+      "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "0xd178a2bde88503eee9f5c201fdf497aadd733459",
+      "0xefa4bce444c09a52941beef5fe8264d70534049f",
+      "0xff82e1e36341ee6b63a67b92a9aeedced288f388"
+    ],
+    "native_value_transfers": 0,
+    "token_transfers": 26
+  },
+  "issues": []
+}

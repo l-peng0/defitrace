@@ -1,0 +1,699 @@
+{
+  "tx_hash": "0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b",
+  "chain": "eth",
+  "fetched_at": "2026-05-01T10:01:24Z",
+  "source": "external_explorer_explorer",
+  "endpoints": {
+    "explorer/v2/onchain/tx/basic-info": {
+      "baseFee": "30.404805754",
+      "blockNumber": 21184778,
+      "calldata": "0x305e0d11000000000000000000000000280a8955a11fcd81d72ba1f99d265a48ce39ac2e00000000000000000000000019c5538df65075d53d6299904636bae68b6df44100000000000000000000000062f250cf7021e1cf76c765dec8ec623fe173a1b5000000000000000000000000aefef41f5a0bb29fe3d1330607b48fbba55904ce00000000000000000000000000000000000000000000000000000000000012fb",
+      "chainId": 1,
+      "codeAuthorities": [],
+      "eventCount": 29,
+      "featureStatus": {
+        "debug": 0,
+        "simulation": 0,
+        "stateChange": 0,
+        "storageTrace": 0
+      },
+      "formatValue": "0",
+      "gasLimit": 1733222,
+      "gasPrice": "33.289171701",
+      "gasUsed": 414818,
+      "intTxnCount": 57,
+      "maxFee": "74.520375937",
+      "nonce": 1,
+      "priorityFee": "2.884365947",
+      "receiver": "0x351d38733de3f1e73468d24401c59f63677000c9",
+      "revertMessage": "",
+      "sender": "0x713d2b652e5f2a86233c57af5341db42a5559dd1",
+      "sourceTxnHash": "0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b",
+      "status": true,
+      "timestamp": 1731573347000,
+      "transactionFee": "0.013808947626665418",
+      "txnHash": "0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b",
+      "txnIndex": 50,
+      "type": 2,
+      "value": "0"
+    },
+    "explorer/v2/onchain/tx/balance-change": {
+      "balanceChanges": [
+        {
+          "account": "0x713d2b652e5f2a86233c57af5341db42a5559dd1",
+          "assets": [
+            {
+              "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+              "amount": "132.513467878004258374",
+              "iconUrl": "https://assets.external_explorer.com/image/1747720405732/ethereum.png",
+              "sign": true,
+              "tokenType": 0,
+              "value": "426511.33944202"
+            }
+          ],
+          "extremum": false,
+          "sign": true,
+          "totalValue": "426511.33944202"
+        },
+        {
+          "account": "0x351d38733de3f1e73468d24401c59f63677000c9",
+          "assets": [
+            {
+              "address": "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+              "amount": "6749153.341821447559220422",
+              "iconUrl": "",
+              "sign": true,
+              "tokenType": 1,
+              "value": "0"
+            }
+          ],
+          "extremum": false,
+          "sign": true,
+          "totalValue": "0"
+        },
+        {
+          "account": "0x0000000000000000000000000000000000000000",
+          "assets": [
+            {
+              "address": "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+              "amount": "167.486532121995741626",
+              "iconUrl": "",
+              "sign": false,
+              "tokenType": 1,
+              "value": "534888.63463986"
+            }
+          ],
+          "extremum": true,
+          "sign": false,
+          "totalValue": "534888.63463986"
+        },
+        {
+          "account": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+          "assets": [
+            {
+              "address": "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+              "amount": "6749153.341821447559220422",
+              "iconUrl": "",
+              "sign": false,
+              "tokenType": 1,
+              "value": "0"
+            },
+            {
+              "address": "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+              "amount": "167.486532121995741626",
+              "iconUrl": "",
+              "sign": true,
+              "tokenType": 1,
+              "value": "534888.63463985"
+            }
+          ],
+          "extremum": true,
+          "sign": true,
+          "totalValue": "534888.63463985"
+        },
+        {
+          "account": "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+          "assets": [
+            {
+              "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+              "amount": "132.513467878004258374",
+              "iconUrl": "https://assets.external_explorer.com/image/1747720405732/ethereum.png",
+              "sign": false,
+              "tokenType": 0,
+              "value": "426511.33944203"
+            }
+          ],
+          "extremum": false,
+          "sign": false,
+          "totalValue": "426511.33944203"
+        }
+      ]
+    },
+    "explorer/v2/onchain/tx/token-info": {
+      "tokenInfos": [
+        {
+          "address": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+          "decimals": 18
+        },
+        {
+          "address": "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+          "decimals": 18
+        },
+        {
+          "address": "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+          "decimals": 18
+        },
+        {
+          "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "decimals": 18
+        },
+        {
+          "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "decimals": 18
+        }
+      ]
+    },
+    "explorer/v2/onchain/tx/state-change": {
+      "stateChanges": [
+        {
+          "address": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+          "slots": [
+            {
+              "current": "0x6735b6630000000553f9eb2e5139f533b3310000000000115930049e681a8ce3",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000008",
+              "prev": "0x6731f4530000000ae92a412420e2c6783ff700000000000844d85309167f0329"
+            },
+            {
+              "current": "0x0000000000000000000000000007ffbb9d5bee2b9c856df369c31128e0036a70",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000009",
+              "prev": "0x00000000000000000000000000030a4bfcff39676cc325157178045dbed39550"
+            },
+            {
+              "current": "0x000000000000000000000000000000000002e1a994915832b43ad1dc40190874",
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000a",
+              "prev": "0x000000000000000000000000000000000000088c4327f890e79272c75d768c74"
+            },
+            {
+              "current": "0x00000000000000000000000000000000000000000000098e9534f01df8d5d70c",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "prev": "0x0000000000000000000000000000000000000000000009785989cecda66e4ff7"
+            },
+            {
+              "current": "0x00000000000000000000000000000000000000000000098e9534f01df8d5d70c",
+              "key": "0xa6eef7e35abe7026729641147f7915573c7e97b47efa546f5f6e3230263bcb49",
+              "prev": "0x0000000000000000000000000000000000000000000009785989cecda66e4ff7"
+            }
+          ],
+          "variables": [
+            {
+              "name": "price0CumulativeLast",
+              "type": "uint256",
+              "value": {
+                "current": "178382691271052461474393238619646663957113456",
+                "prev": "67799215923083470509457997032022436991964496",
+                "typeTag": 1
+              }
+            },
+            {
+              "name": "price1CumulativeLast",
+              "type": "uint256",
+              "value": {
+                "current": "14961571416848392753313268356417652",
+                "prev": "173372003398795271168872678853748",
+                "typeTag": 1
+              }
+            },
+            {
+              "name": "totalSupply",
+              "type": "uint256",
+              "value": {
+                "current": "45131487486515522950924",
+                "prev": "44721359549995793928183",
+                "typeTag": 1
+              }
+            },
+            {
+              "name": "balanceOf",
+              "type": "mapping(address => uint256)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0x0000000000000000000000000000000000000000",
+                    "value": {
+                      "current": "45131487486515522950924",
+                      "prev": "44721359549995793928183",
+                      "typeTag": 1
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "reserve0",
+              "type": "uint112",
+              "value": {
+                "current": "320021290999717989603",
+                "prev": "152534758877722247977",
+                "typeTag": 1
+              }
+            },
+            {
+              "name": "reserve1",
+              "type": "uint112",
+              "value": {
+                "current": "6441195701997437315167025",
+                "prev": "13190349043818884874387447",
+                "typeTag": 1
+              }
+            },
+            {
+              "name": "blockTimestampLast",
+              "type": "uint32",
+              "value": {
+                "current": "1731573347",
+                "prev": "1731327059",
+                "typeTag": 1
+              }
+            }
+          ]
+        },
+        {
+          "address": "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+          "slots": [
+            {
+              "current": "0x0000000000000000000000000000000000000000000000115930049e681a8ce3",
+              "key": "0x7c32423d848546b939dfdb6c0742c1c42b26615ef7107ce41c220ea6fc1d15f0",
+              "prev": "0x00000000000000000000000000000000000000000000000844d85309167f0329"
+            },
+            {
+              "current": "0x00000000000000000000000000000000000000000000001158e460913d000000",
+              "key": "0x2857b7bd1bd0b9a6d963ffa0111f3b7aa2ca9090a553ed00737795c56076fc79",
+              "prev": "0x000000000000000000000000000000000000000000000001158e460913d00000"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000000000000000000000000143410a",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000009",
+              "prev": "0x000000000000000000000000000000000000000000000000000000000142ee44"
+            },
+            {
+              "current": "0x00000000000000000000000000000000000000000000001043561a8829300000",
+              "key": "0x000000000000000000000000000000000000000000000000000000000000000a",
+              "prev": "0x000000000000000000000000000000000000000000000001158e460913d00000"
+            },
+            {
+              "current": "0x000000000000000000000000000000000000000000000036a64d233cb3ebfed0",
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000002",
+              "prev": "0x00000000000000000000000000000000000000000000002d91f571a762507516"
+            }
+          ],
+          "variables": [
+            {
+              "name": "loanedAmountThisBlock",
+              "type": "uint256",
+              "value": {
+                "current": "300000000000000000000",
+                "prev": "20000000000000000000",
+                "typeTag": 1
+              }
+            },
+            {
+              "name": "_totalSupply",
+              "type": "uint256",
+              "value": {
+                "current": "1008107452907442142928",
+                "prev": "840620920785446401302",
+                "typeTag": 1
+              }
+            },
+            {
+              "name": "_balances",
+              "type": "mapping(address => uint256)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+                    "value": {
+                      "current": "320021290999717989603",
+                      "prev": "152534758877722247977",
+                      "typeTag": 1
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "_debt",
+              "type": "mapping(address => uint256)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+                    "value": {
+                      "current": "320000000000000000000",
+                      "prev": "20000000000000000000",
+                      "typeTag": 1
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "lastLoanBlock",
+              "type": "uint256",
+              "value": {
+                "current": "21184778",
+                "prev": "21163588",
+                "typeTag": 1
+              }
+            }
+          ]
+        },
+        {
+          "address": "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+          "slots": [
+            {
+              "current": "0x0000000000000000000000000000000000000000000553f9eb2e5139f533b331",
+              "key": "0x4d184a29f652d0b6f847bdf16a6004ffe420d2a7c9454786356942a776b72ad4",
+              "prev": "0x0000000000000000000000000000000000000000000ae92a412420e2c6783ff7"
+            },
+            {
+              "current": "0x00000000000000000000000000000000000000000005953055f5cfa8d1448cc6",
+              "key": "0xe2af911305205ed72a89c0e069d2513c3b59dbfe5daa5835af6ea27b874012f3",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x0000000000000000000000000000000000000000000adbfb6cb1f850fd4968bf",
+              "key": "0x56abdb376c83717de050225c53dc453498fd7d1ffc09ca03d574ceb7a453f960",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "current": "0x00000000000000000000000000000000000000000005953055f5cfa8d1448cc6",
+              "key": "0xbe6c23feda06a8d2122f2dd327b2462f5b7da0e6fd66c662fa43f98601aa43fc",
+              "prev": "0x0000000000000000000000000000000000000000000000000000000000000000"
+            }
+          ],
+          "variables": [
+            {
+              "name": "_balances",
+              "type": "mapping(address => uint256)",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0x351d38733de3f1e73468d24401c59f63677000c9",
+                    "value": {
+                      "current": "6749153341821447559220422",
+                      "prev": "0",
+                      "typeTag": 1
+                    }
+                  },
+                  {
+                    "key": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+                    "value": {
+                      "current": "6441195701997437315167025",
+                      "prev": "13190349043818884874387447",
+                      "typeTag": 1
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            },
+            {
+              "name": "_allowances",
+              "type": "mapping(address => mapping(address => uint256))",
+              "value": {
+                "kvs": [
+                  {
+                    "key": "0x351d38733de3f1e73468d24401c59f63677000c9",
+                    "value": {
+                      "kvs": [
+                        {
+                          "key": "0x62f250cf7021e1cf76c765dec8ec623fe173a1b5",
+                          "value": {
+                            "current": "13128094420971498850838719",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        },
+                        {
+                          "key": "0x19c5538df65075d53d6299904636bae68b6df441",
+                          "value": {
+                            "current": "6749153341821447559220422",
+                            "prev": "0",
+                            "typeTag": 1
+                          }
+                        }
+                      ],
+                      "typeTag": 4
+                    }
+                  }
+                ],
+                "typeTag": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "explorer/v2/onchain/tx/fundflow": {
+      "transfers": [
+        {
+          "amount": "32,560.203560896180352774",
+          "from": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "id": 1,
+          "isReverted": false,
+          "to": "0x351d38733de3f1e73468d24401c59f63677000c9",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "tokenType": 1
+        },
+        {
+          "amount": "32,560.203560896180352774",
+          "from": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "id": 2,
+          "isReverted": false,
+          "to": "0x351d38733de3f1e73468d24401c59f63677000c9",
+          "token": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "tokenType": 0
+        },
+        {
+          "amount": "32,560.203560896180352774",
+          "from": "0x351d38733de3f1e73468d24401c59f63677000c9",
+          "id": 3,
+          "isReverted": false,
+          "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "tokenType": 1
+        },
+        {
+          "amount": "32,560.203560896180352774",
+          "from": "0x351d38733de3f1e73468d24401c59f63677000c9",
+          "id": 4,
+          "isReverted": false,
+          "to": "0x19c5538df65075d53d6299904636bae68b6df441",
+          "token": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "tokenType": 0
+        },
+        {
+          "amount": "32,560.203560896180352774",
+          "from": "0x19c5538df65075d53d6299904636bae68b6df441",
+          "id": 5,
+          "isReverted": false,
+          "to": "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+          "token": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "tokenType": 0
+        },
+        {
+          "amount": "32,560.203560896180352774",
+          "from": "0x0000000000000000000000000000000000000000",
+          "id": 6,
+          "isReverted": false,
+          "to": "0x19c5538df65075d53d6299904636bae68b6df441",
+          "token": "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+          "tokenType": 1
+        },
+        {
+          "amount": "32,560.203560896180352774",
+          "from": "0x19c5538df65075d53d6299904636bae68b6df441",
+          "id": 7,
+          "isReverted": false,
+          "to": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+          "token": "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+          "tokenType": 1
+        },
+        {
+          "amount": "13,128,660.153709974200609869",
+          "from": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+          "id": 8,
+          "isReverted": false,
+          "to": "0x351d38733de3f1e73468d24401c59f63677000c9",
+          "token": "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+          "tokenType": 1
+        },
+        {
+          "amount": "300",
+          "from": "0x0000000000000000000000000000000000000000",
+          "id": 9,
+          "isReverted": false,
+          "to": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+          "token": "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+          "tokenType": 1
+        },
+        {
+          "amount": "565.73273847534977115",
+          "from": "0x351d38733de3f1e73468d24401c59f63677000c9",
+          "id": 10,
+          "isReverted": false,
+          "to": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+          "token": "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+          "tokenType": 1
+        },
+        {
+          "amount": "410.127936519729022741",
+          "from": "0x0000000000000000000000000000000000000000",
+          "id": 11,
+          "isReverted": false,
+          "to": "0x0000000000000000000000000000000000000000",
+          "token": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+          "tokenType": 1
+        },
+        {
+          "amount": "6,378,941.079150051291618297",
+          "from": "0x351d38733de3f1e73468d24401c59f63677000c9",
+          "id": 12,
+          "isReverted": false,
+          "to": "0x19c5538df65075d53d6299904636bae68b6df441",
+          "token": "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+          "tokenType": 1
+        },
+        {
+          "amount": "6,378,941.079150051291618297",
+          "from": "0x19c5538df65075d53d6299904636bae68b6df441",
+          "id": 13,
+          "isReverted": false,
+          "to": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+          "token": "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+          "tokenType": 1
+        },
+        {
+          "amount": "32,692.717028774184611148",
+          "from": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+          "id": 14,
+          "isReverted": false,
+          "to": "0x19c5538df65075d53d6299904636bae68b6df441",
+          "token": "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+          "tokenType": 1
+        },
+        {
+          "amount": "32,692.717028774184611148",
+          "from": "0x19c5538df65075d53d6299904636bae68b6df441",
+          "id": 15,
+          "isReverted": false,
+          "to": "0x0000000000000000000000000000000000000000",
+          "token": "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+          "tokenType": 1
+        },
+        {
+          "amount": "32,692.717028774184611148",
+          "from": "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+          "id": 16,
+          "isReverted": false,
+          "to": "0x19c5538df65075d53d6299904636bae68b6df441",
+          "token": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "tokenType": 0
+        },
+        {
+          "amount": "32,692.717028774184611148",
+          "from": "0x19c5538df65075d53d6299904636bae68b6df441",
+          "id": 17,
+          "isReverted": false,
+          "to": "0x351d38733de3f1e73468d24401c59f63677000c9",
+          "token": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "tokenType": 0
+        },
+        {
+          "amount": "32,560.203560896180352774",
+          "from": "0x351d38733de3f1e73468d24401c59f63677000c9",
+          "id": 18,
+          "isReverted": false,
+          "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "token": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "tokenType": 0
+        },
+        {
+          "amount": "32,560.203560896180352774",
+          "from": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "id": 19,
+          "isReverted": false,
+          "to": "0x351d38733de3f1e73468d24401c59f63677000c9",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "tokenType": 1
+        },
+        {
+          "amount": "32,560.203560896180352774",
+          "from": "0x351d38733de3f1e73468d24401c59f63677000c9",
+          "id": 20,
+          "isReverted": false,
+          "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "tokenType": 1
+        },
+        {
+          "amount": "132.513467878004258374",
+          "from": "0x351d38733de3f1e73468d24401c59f63677000c9",
+          "id": 21,
+          "isReverted": false,
+          "to": "0x713d2b652e5f2a86233c57af5341db42a5559dd1",
+          "token": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "tokenType": 0
+        }
+      ]
+    },
+    "explorer/v2/onchain/tx/top-profit-loss": {
+      "topLossAddress": "0x0000000000000000000000000000000000000000",
+      "topProfitAddress": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c"
+    },
+    "explorer/v2/onchain/tx/address-label": {
+      "labels": [
+        {
+          "address": "0x0000000000000000000000000000000000000001",
+          "label": "Precompiled"
+        },
+        {
+          "address": "0x0000000000000000000000000000000000000002",
+          "label": "Precompiled"
+        },
+        {
+          "address": "0x0000000000000000000000000000000000000003",
+          "label": "Precompiled"
+        },
+        {
+          "address": "0x0000000000000000000000000000000000000004",
+          "label": "Precompiled"
+        },
+        {
+          "address": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+          "label": "UNI-V2"
+        },
+        {
+          "address": "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+          "label": "vETH"
+        },
+        {
+          "address": "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+          "label": "Uniswap: Factory Contract"
+        },
+        {
+          "address": "0x6b7e633fbdaf237bcfb8176be04b0dd72dda3b3a",
+          "label": "LamboToken"
+        },
+        {
+          "address": "0x713d2b652e5f2a86233c57af5341db42a5559dd1",
+          "label": "Exploiter"
+        },
+        {
+          "address": "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+          "label": "BIF"
+        },
+        {
+          "address": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "label": "Balancer: Vault"
+        },
+        {
+          "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "label": "WETH"
+        },
+        {
+          "address": "0xce88686553686da562ce7cea497ce749da109f9f",
+          "label": "ProtocolFeesCollector"
+        },
+        {
+          "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "label": "Ether"
+        }
+      ]
+    }
+  }
+}

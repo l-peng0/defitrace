@@ -1,0 +1,952 @@
+{
+  "incident_id": "unknown-2024-10-24-price-manipulation-incident-base",
+  "chain": "Base",
+  "generated_at": "2026-04-27T13:02:46+00:00",
+  "primary_tx_hash": "0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e",
+  "tx_hashes": [
+    "0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e"
+  ],
+  "transactions": [
+    {
+      "tx_hash": "0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e",
+      "status": "completed",
+      "tx_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/technical_analysis/0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e/tx.json",
+      "receipt_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/technical_analysis/0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e/receipt.json",
+      "trace_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/technical_analysis/0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e/trace_callTracer.json",
+      "decoded_calls_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/technical_analysis/0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e/decoded_calls.json",
+      "funds_flow_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/technical_analysis/0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e/funds_flow.json",
+      "manifest_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/technical_analysis/0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e/manifest.json",
+      "summary": {
+        "contracts_touched": [
+          "0x04030d2f38bc799af9b0aab5757adc98000d7ded",
+          "0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938",
+          "0x04e5741380951cbd891506f96089e8f27c15fe2f",
+          "0x097ca51e80b4e4a82a98d5f220bf5a7a0991f404",
+          "0x0ad08370c76ff426f534bb2affd9b5555338ee68",
+          "0x0f5cebda36f8779fc357f10b81e6a207a47ca91b",
+          "0x16613524e02ad97edfef371bc883f2f5d6c480a5",
+          "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+          "0x1f7e713b77dce6b2df41bb2bb0d44ca35d795ed8",
+          "0x1fba65de0a9cbd2d1df82d141897042d36bb6c86",
+          "0x2da56acb9ea78330f947bd57c54119debda7af71",
+          "0x326841efd63340767e02ec88e583f18a82af4a48",
+          "0x37b64f37106b63ffd8827d6fdf1ebdb3b54f9e4f",
+          "0x3d0149abd30ee101d3a9ba5efb63f653841ef149",
+          "0x4200000000000000000000000000000000000006",
+          "0x4aeb6d15769ead32d0c5be2940f40c7cff53801d",
+          "0x4c2a994ef90873e16437b19eaf29171cb19e3453",
+          "0x4c721a6c5a12b3f6c8a57ce2fffb2a673ef2482d",
+          "0x4e829f8a5213c42535ab84aa40bd4adcce9cba02",
+          "0x4ed4e862860bed51a9570b96d89af5e1b0efefed",
+          "0x532f27101965dd16442e59d40670faf5ebb142e4",
+          "0x575c882237001296cac42b0896d74eb104d936b0",
+          "0x57d2d46fc7ff2a7142d479f2f59e1e3f95447077",
+          "0x5c45b0f48c326f79b56709d8f63ce2bee7697106",
+          "0x5c52649d3c1e1d0ddf6a46e1c25a25d9fb148af8",
+          "0x5de5449ee9369ddaaa84580025b867f9b435096d",
+          "0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a",
+          "0x5ebffe29f0241cf2792f9a52cad41c402061f925",
+          "0x64c911996d3c6ac71f9b455b1e8e7266bcbd848f",
+          "0x674940e1dbf7fd841b33156da9a88afbd95aafba",
+          "0x69ce2505ce515c0203160450157366f927243309",
+          "0x6ade13eeacdd21e96fe2a6f4e2a5c6cf4fd30c00",
+          "0x71041dddad3595f9ced3dccfbe3d1f4b0a16bb70",
+          "0x730f8f58ed33ed6369b030acc25998204f24829f",
+          "0x7458bfdc30034eb860b265e6068121d18fa5aa72",
+          "0x7562846468089cf0e8f7b38ac53406b895284901",
+          "0x7fdc62d7696b868f98f3a9a6b7e1bed4e34dc18d",
+          "0x814d854de623ba3f846e97895ebc3b9acfaaebbc",
+          "0x852ae0b1af1aaedb0fc4428b4b24420780976ca8",
+          "0x8c8dc6d6bd89afe91b4bee3403448af2a7f149c5",
+          "0x92954a19791b39e345bee621d81360467f1f9f57",
+          "0x93d619623abc60a22ee71a15db62eede3ef4dd5a",
+          "0x945fd405773973d286de54e44649cc0d9e264f78",
+          "0x9465cf4b4032080434e397f42fb99a8446c35376",
+          "0x94a9a7cffcbdbc6898002fa2dfa92c09ee99e943",
+          "0x975043adbb80fc32276cbf9bbcfd4a601a12462d",
+          "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+          "0x9db2965287906ba97c61500195cd84140d4ceea5",
+          "0x9e331ca8988fddf5dd19dc06c2430922140f3c18",
+          "0xa0b59b5a943551d703f611c1c1ac7c924975d2aa",
+          "0xa2092f9a2a5dd84d6df7d175673ec8a7357c551b",
+          "0xa51486f0d852689372b4d665f0fa7c7be3257b4f",
+          "0xae4602716079c0be7948c0b84553dee0e6564a3d",
+          "0xb0505e5a99abd03d94a1169e638b78edfed26ea4",
+          "0xb1a03eda10342529bbf8eb700a06c60441fef25d",
+          "0xb48ac6409c0c3718b956089b0ffe295a10acddad",
+          "0xb4fde59a779991bfb6a52253b51947828b982be3",
+          "0xb79dd08ea68a908a97220c76d19a6aa9cbde4376",
+          "0xb88bac61a4ca37c43a3725912b1f472c9a5bc061",
+          "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5",
+          "0xc112e41c1094ff7fbf9e5dc0d1026103542e7e0c",
+          "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452",
+          "0xc8ec09d64c7d21f0a04f3d4f1047c20abdf3cd88",
+          "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+          "0xd27766c20df630a7d7e1e5885ae581fb0e61828a",
+          "0xd5ec94430ef4170d819e0996bc53ed40d31638d8",
+          "0xdc2d2fa8e7b824a2c16128446e288280dcb12844",
+          "0xe25969e2fa633a0c027fab8f30fc9c6a90d60b48",
+          "0xe62bce5d7cb9d16ab8b4d622538bc0a50a5799c2",
+          "0xea990bccb5b4da5023b6dc88480297405fd222c3",
+          "0xec8e5342b19977b4ef8892e02d8daecfa1315831",
+          "0xeca1ebfb5ca472c76328f5dde011c6cccf2a66f4",
+          "0xf19d560eb8d2adf07bd6d13ed03e1d11215721f9",
+          "0xf4171b0953b52fa55462e4d76eca1845db69af00",
+          "0xf5606e742fa2403bfd0385cc23124b84cba1037d",
+          "0xf91d26405fb5e489b7c4bbc11b9a5402ae9243d3",
+          "0xfde4c96c8593536e31f229ea8f37b2ada2699bb2"
+        ],
+        "addresses_seen": [
+          "0x04030d2f38bc799af9b0aab5757adc98000d7ded",
+          "0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938",
+          "0x04e5741380951cbd891506f96089e8f27c15fe2f",
+          "0x097ca51e80b4e4a82a98d5f220bf5a7a0991f404",
+          "0x0ad08370c76ff426f534bb2affd9b5555338ee68",
+          "0x0f5cebda36f8779fc357f10b81e6a207a47ca91b",
+          "0x16613524e02ad97edfef371bc883f2f5d6c480a5",
+          "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+          "0x1f7e713b77dce6b2df41bb2bb0d44ca35d795ed8",
+          "0x1fba65de0a9cbd2d1df82d141897042d36bb6c86",
+          "0x2da56acb9ea78330f947bd57c54119debda7af71",
+          "0x326841efd63340767e02ec88e583f18a82af4a48",
+          "0x37b64f37106b63ffd8827d6fdf1ebdb3b54f9e4f",
+          "0x3d0149abd30ee101d3a9ba5efb63f653841ef149",
+          "0x4200000000000000000000000000000000000006",
+          "0x4aeb6d15769ead32d0c5be2940f40c7cff53801d",
+          "0x4c2a994ef90873e16437b19eaf29171cb19e3453",
+          "0x4c721a6c5a12b3f6c8a57ce2fffb2a673ef2482d",
+          "0x4e829f8a5213c42535ab84aa40bd4adcce9cba02",
+          "0x4ed4e862860bed51a9570b96d89af5e1b0efefed",
+          "0x532f27101965dd16442e59d40670faf5ebb142e4",
+          "0x575c882237001296cac42b0896d74eb104d936b0",
+          "0x57d2d46fc7ff2a7142d479f2f59e1e3f95447077",
+          "0x5c45b0f48c326f79b56709d8f63ce2bee7697106",
+          "0x5c52649d3c1e1d0ddf6a46e1c25a25d9fb148af8",
+          "0x5de5449ee9369ddaaa84580025b867f9b435096d",
+          "0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a",
+          "0x5ebffe29f0241cf2792f9a52cad41c402061f925",
+          "0x64c911996d3c6ac71f9b455b1e8e7266bcbd848f",
+          "0x674940e1dbf7fd841b33156da9a88afbd95aafba",
+          "0x69ce2505ce515c0203160450157366f927243309",
+          "0x6ade13eeacdd21e96fe2a6f4e2a5c6cf4fd30c00",
+          "0x71041dddad3595f9ced3dccfbe3d1f4b0a16bb70",
+          "0x730f8f58ed33ed6369b030acc25998204f24829f",
+          "0x7458bfdc30034eb860b265e6068121d18fa5aa72",
+          "0x7562846468089cf0e8f7b38ac53406b895284901",
+          "0x7fdc62d7696b868f98f3a9a6b7e1bed4e34dc18d",
+          "0x814d854de623ba3f846e97895ebc3b9acfaaebbc",
+          "0x81d5187c8346073b648f2d44b9e269509513aae2",
+          "0x852ae0b1af1aaedb0fc4428b4b24420780976ca8",
+          "0x8c8dc6d6bd89afe91b4bee3403448af2a7f149c5",
+          "0x92954a19791b39e345bee621d81360467f1f9f57",
+          "0x93d619623abc60a22ee71a15db62eede3ef4dd5a",
+          "0x945fd405773973d286de54e44649cc0d9e264f78",
+          "0x9465cf4b4032080434e397f42fb99a8446c35376",
+          "0x94a9a7cffcbdbc6898002fa2dfa92c09ee99e943",
+          "0x975043adbb80fc32276cbf9bbcfd4a601a12462d",
+          "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+          "0x9db2965287906ba97c61500195cd84140d4ceea5",
+          "0x9e331ca8988fddf5dd19dc06c2430922140f3c18",
+          "0xa0b59b5a943551d703f611c1c1ac7c924975d2aa",
+          "0xa2092f9a2a5dd84d6df7d175673ec8a7357c551b",
+          "0xa51486f0d852689372b4d665f0fa7c7be3257b4f",
+          "0xae4602716079c0be7948c0b84553dee0e6564a3d",
+          "0xb0505e5a99abd03d94a1169e638b78edfed26ea4",
+          "0xb1a03eda10342529bbf8eb700a06c60441fef25d",
+          "0xb48ac6409c0c3718b956089b0ffe295a10acddad",
+          "0xb4fde59a779991bfb6a52253b51947828b982be3",
+          "0xb79dd08ea68a908a97220c76d19a6aa9cbde4376",
+          "0xb88bac61a4ca37c43a3725912b1f472c9a5bc061",
+          "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5",
+          "0xc112e41c1094ff7fbf9e5dc0d1026103542e7e0c",
+          "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452",
+          "0xc8ec09d64c7d21f0a04f3d4f1047c20abdf3cd88",
+          "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+          "0xd27766c20df630a7d7e1e5885ae581fb0e61828a",
+          "0xd5ec94430ef4170d819e0996bc53ed40d31638d8",
+          "0xdc2d2fa8e7b824a2c16128446e288280dcb12844",
+          "0xe25969e2fa633a0c027fab8f30fc9c6a90d60b48",
+          "0xe62bce5d7cb9d16ab8b4d622538bc0a50a5799c2",
+          "0xea990bccb5b4da5023b6dc88480297405fd222c3",
+          "0xec8e5342b19977b4ef8892e02d8daecfa1315831",
+          "0xeca1ebfb5ca472c76328f5dde011c6cccf2a66f4",
+          "0xf19d560eb8d2adf07bd6d13ed03e1d11215721f9",
+          "0xf4171b0953b52fa55462e4d76eca1845db69af00",
+          "0xf5606e742fa2403bfd0385cc23124b84cba1037d",
+          "0xf91d26405fb5e489b7c4bbc11b9a5402ae9243d3",
+          "0xfde4c96c8593536e31f229ea8f37b2ada2699bb2"
+        ],
+        "native_value_transfers": 0,
+        "token_transfers": 39
+      },
+      "issues": []
+    }
+  ],
+  "analysis_plan": {
+    "incident_id": "unknown-2024-10-24-price-manipulation-incident-base",
+    "chain": "Base",
+    "generated_at": "2026-04-27T13:02:47+00:00",
+    "tx_hashes": [
+      "0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e"
+    ],
+    "roles": {
+      "attacker_eoa": [
+        "0x81d5187c8346073b648f2d44b9e269509513aae2"
+      ],
+      "attacker_contracts": [
+        "0x1e03834f759dac9561d366958b00fe000d9e00e3"
+      ],
+      "victim": [
+        "0x0f5cebda36f8779fc357f10b81e6a207a47ca91b"
+      ],
+      "routers": [],
+      "pairs": [],
+      "oracles": [],
+      "flash_loan_providers": [
+        "0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5"
+      ],
+      "tokens": [
+        "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452",
+        "0x5c52649d3c1e1d0ddf6a46e1c25a25d9fb148af8",
+        "0x1fba65de0a9cbd2d1df82d141897042d36bb6c86",
+        "0xb4fde59a779991bfb6a52253b51947828b982be3",
+        "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+        "0xb0505e5a99abd03d94a1169e638b78edfed26ea4",
+        "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+        "0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938",
+        "0x4200000000000000000000000000000000000006",
+        "0x2da56acb9ea78330f947bd57c54119debda7af71",
+        "0x4ed4e862860bed51a9570b96d89af5e1b0efefed",
+        "0x532f27101965dd16442e59d40670faf5ebb142e4",
+        "0xb1a03eda10342529bbf8eb700a06c60441fef25d",
+        "0xfde4c96c8593536e31f229ea8f37b2ada2699bb2",
+        "0xa2092f9a2a5dd84d6df7d175673ec8a7357c551b",
+        "0xb79dd08ea68a908a97220c76d19a6aa9cbde4376"
+      ],
+      "unknown": [
+        "0xae4602716079c0be7948c0b84553dee0e6564a3d",
+        "0x730f8f58ed33ed6369b030acc25998204f24829f",
+        "0x5de5449ee9369ddaaa84580025b867f9b435096d",
+        "0x69ce2505ce515c0203160450157366f927243309",
+        "0x04e5741380951cbd891506f96089e8f27c15fe2f",
+        "0x7458bfdc30034eb860b265e6068121d18fa5aa72",
+        "0xa0b59b5a943551d703f611c1c1ac7c924975d2aa",
+        "0x6ade13eeacdd21e96fe2a6f4e2a5c6cf4fd30c00",
+        "0xb48ac6409c0c3718b956089b0ffe295a10acddad",
+        "0xec8e5342b19977b4ef8892e02d8daecfa1315831",
+        "0x92954a19791b39e345bee621d81360467f1f9f57",
+        "0x9e331ca8988fddf5dd19dc06c2430922140f3c18",
+        "0xdc2d2fa8e7b824a2c16128446e288280dcb12844",
+        "0x5ebffe29f0241cf2792f9a52cad41c402061f925",
+        "0x16613524e02ad97edfef371bc883f2f5d6c480a5",
+        "0x852ae0b1af1aaedb0fc4428b4b24420780976ca8",
+        "0x4aeb6d15769ead32d0c5be2940f40c7cff53801d",
+        "0x975043adbb80fc32276cbf9bbcfd4a601a12462d",
+        "0xf19d560eb8d2adf07bd6d13ed03e1d11215721f9",
+        "0xb88bac61a4ca37c43a3725912b1f472c9a5bc061",
+        "0x0ad08370c76ff426f534bb2affd9b5555338ee68",
+        "0x94a9a7cffcbdbc6898002fa2dfa92c09ee99e943",
+        "0x93d619623abc60a22ee71a15db62eede3ef4dd5a",
+        "0x097ca51e80b4e4a82a98d5f220bf5a7a0991f404",
+        "0x9465cf4b4032080434e397f42fb99a8446c35376",
+        "0x4c721a6c5a12b3f6c8a57ce2fffb2a673ef2482d",
+        "0x4e829f8a5213c42535ab84aa40bd4adcce9cba02",
+        "0xf4171b0953b52fa55462e4d76eca1845db69af00",
+        "0x814d854de623ba3f846e97895ebc3b9acfaaebbc",
+        "0x57d2d46fc7ff2a7142d479f2f59e1e3f95447077",
+        "0x1f7e713b77dce6b2df41bb2bb0d44ca35d795ed8",
+        "0xea990bccb5b4da5023b6dc88480297405fd222c3",
+        "0x326841efd63340767e02ec88e583f18a82af4a48",
+        "0x674940e1dbf7fd841b33156da9a88afbd95aafba",
+        "0xf5606e742fa2403bfd0385cc23124b84cba1037d",
+        "0x4c2a994ef90873e16437b19eaf29171cb19e3453",
+        "0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a",
+        "0xc112e41c1094ff7fbf9e5dc0d1026103542e7e0c",
+        "0xa51486f0d852689372b4d665f0fa7c7be3257b4f",
+        "0xeca1ebfb5ca472c76328f5dde011c6cccf2a66f4",
+        "0xe25969e2fa633a0c027fab8f30fc9c6a90d60b48",
+        "0x7562846468089cf0e8f7b38ac53406b895284901",
+        "0x5c45b0f48c326f79b56709d8f63ce2bee7697106",
+        "0x7fdc62d7696b868f98f3a9a6b7e1bed4e34dc18d",
+        "0xc8ec09d64c7d21f0a04f3d4f1047c20abdf3cd88",
+        "0x37b64f37106b63ffd8827d6fdf1ebdb3b54f9e4f",
+        "0x71041dddad3595f9ced3dccfbe3d1f4b0a16bb70",
+        "0x9db2965287906ba97c61500195cd84140d4ceea5",
+        "0xe62bce5d7cb9d16ab8b4d622538bc0a50a5799c2",
+        "0x04030d2f38bc799af9b0aab5757adc98000d7ded",
+        "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "0xd27766c20df630a7d7e1e5885ae581fb0e61828a",
+        "0x8c8dc6d6bd89afe91b4bee3403448af2a7f149c5",
+        "0xd5ec94430ef4170d819e0996bc53ed40d31638d8",
+        "0xf91d26405fb5e489b7c4bbc11b9a5402ae9243d3",
+        "0x575c882237001296cac42b0896d74eb104d936b0",
+        "0x945fd405773973d286de54e44649cc0d9e264f78",
+        "0x64c911996d3c6ac71f9b455b1e8e7266bcbd848f",
+        "0x3d0149abd30ee101d3a9ba5efb63f653841ef149"
+      ]
+    },
+    "newly_deployed": [
+      {
+        "address": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+        "deployed_by": "0x7562846468089cf0e8f7b38ac53406b895284901",
+        "create_type": "CREATE2",
+        "trace_path": "0.0.1.1",
+        "depth": 3,
+        "tx_hash": "0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e"
+      }
+    ],
+    "priority_contracts": [
+      {
+        "address": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+        "role": "attacker_contract",
+        "why": "deployed in-tx via CREATE/CREATE2",
+        "priority": "high"
+      },
+      {
+        "address": "0x0f5cebda36f8779fc357f10b81e6a207a47ca91b",
+        "role": "victim",
+        "why": "largest net-negative token balance change",
+        "priority": "high"
+      },
+      {
+        "address": "0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5",
+        "role": "flash_loan_provider",
+        "why": "called with flashLoan* selector",
+        "priority": "medium"
+      }
+    ],
+    "investigation_notes": [],
+    "call_graph": [
+      {
+        "from": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "to": "0x4200000000000000000000000000000000000006",
+        "category": "transfer"
+      },
+      {
+        "from": "0x5c52649d3c1e1d0ddf6a46e1c25a25d9fb148af8",
+        "to": "0x4200000000000000000000000000000000000006",
+        "category": "transfer"
+      },
+      {
+        "from": "0xa2092f9a2a5dd84d6df7d175673ec8a7357c551b",
+        "to": "0xb0505e5a99abd03d94a1169e638b78edfed26ea4",
+        "category": "transfer"
+      },
+      {
+        "from": "0xb0505e5a99abd03d94a1169e638b78edfed26ea4",
+        "to": "0x04e5741380951cbd891506f96089e8f27c15fe2f",
+        "category": "transfer"
+      },
+      {
+        "from": "0x7562846468089cf0e8f7b38ac53406b895284901",
+        "to": "0x4200000000000000000000000000000000000006",
+        "category": "transfer"
+      },
+      {
+        "from": "0x7562846468089cf0e8f7b38ac53406b895284901",
+        "to": "0xb0505e5a99abd03d94a1169e638b78edfed26ea4",
+        "category": "transfer"
+      },
+      {
+        "from": "0x5c45b0f48c326f79b56709d8f63ce2bee7697106",
+        "to": "0xb0505e5a99abd03d94a1169e638b78edfed26ea4",
+        "category": "transfer"
+      },
+      {
+        "from": "0x5c45b0f48c326f79b56709d8f63ce2bee7697106",
+        "to": "0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5",
+        "category": "flashloan"
+      },
+      {
+        "from": "0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5",
+        "to": "0x4200000000000000000000000000000000000006",
+        "category": "transfer"
+      },
+      {
+        "from": "0x9db2965287906ba97c61500195cd84140d4ceea5",
+        "to": "0xb79dd08ea68a908a97220c76d19a6aa9cbde4376",
+        "category": "transfer"
+      },
+      {
+        "from": "0xb79dd08ea68a908a97220c76d19a6aa9cbde4376",
+        "to": "0x1f7e713b77dce6b2df41bb2bb0d44ca35d795ed8",
+        "category": "transfer"
+      },
+      {
+        "from": "0x7fdc62d7696b868f98f3a9a6b7e1bed4e34dc18d",
+        "to": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+        "category": "transfer"
+      },
+      {
+        "from": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+        "to": "0x7458bfdc30034eb860b265e6068121d18fa5aa72",
+        "category": "transfer"
+      },
+      {
+        "from": "0xf5606e742fa2403bfd0385cc23124b84cba1037d",
+        "to": "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452",
+        "category": "transfer"
+      },
+      {
+        "from": "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452",
+        "to": "0x69ce2505ce515c0203160450157366f927243309",
+        "category": "transfer"
+      },
+      {
+        "from": "0x5ebffe29f0241cf2792f9a52cad41c402061f925",
+        "to": "0xfde4c96c8593536e31f229ea8f37b2ada2699bb2",
+        "category": "transfer"
+      },
+      {
+        "from": "0xa51486f0d852689372b4d665f0fa7c7be3257b4f",
+        "to": "0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938",
+        "category": "transfer"
+      },
+      {
+        "from": "0x3d0149abd30ee101d3a9ba5efb63f653841ef149",
+        "to": "0xb4fde59a779991bfb6a52253b51947828b982be3",
+        "category": "transfer"
+      },
+      {
+        "from": "0x8c8dc6d6bd89afe91b4bee3403448af2a7f149c5",
+        "to": "0x1fba65de0a9cbd2d1df82d141897042d36bb6c86",
+        "category": "transfer"
+      },
+      {
+        "from": "0x4c721a6c5a12b3f6c8a57ce2fffb2a673ef2482d",
+        "to": "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+        "category": "transfer"
+      },
+      {
+        "from": "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+        "to": "0x04e5741380951cbd891506f96089e8f27c15fe2f",
+        "category": "transfer"
+      },
+      {
+        "from": "0x0f5cebda36f8779fc357f10b81e6a207a47ca91b",
+        "to": "0x2da56acb9ea78330f947bd57c54119debda7af71",
+        "category": "transfer"
+      },
+      {
+        "from": "0xc8ec09d64c7d21f0a04f3d4f1047c20abdf3cd88",
+        "to": "0x532f27101965dd16442e59d40670faf5ebb142e4",
+        "category": "transfer"
+      },
+      {
+        "from": "0x92954a19791b39e345bee621d81360467f1f9f57",
+        "to": "0x4ed4e862860bed51a9570b96d89af5e1b0efefed",
+        "category": "transfer"
+      },
+      {
+        "from": "0x4c2a994ef90873e16437b19eaf29171cb19e3453",
+        "to": "0xb1a03eda10342529bbf8eb700a06c60441fef25d",
+        "category": "transfer"
+      },
+      {
+        "from": "0x5c45b0f48c326f79b56709d8f63ce2bee7697106",
+        "to": "0x4200000000000000000000000000000000000006",
+        "category": "transfer"
+      },
+      {
+        "from": "0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5",
+        "to": "0xb0505e5a99abd03d94a1169e638b78edfed26ea4",
+        "category": "transfer"
+      },
+      {
+        "from": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+        "to": "0x4200000000000000000000000000000000000006",
+        "category": "transfer"
+      },
+      {
+        "from": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+        "to": "0xb79dd08ea68a908a97220c76d19a6aa9cbde4376",
+        "category": "transfer"
+      },
+      {
+        "from": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+        "to": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+        "category": "transfer"
+      },
+      {
+        "from": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+        "to": "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452",
+        "category": "transfer"
+      },
+      {
+        "from": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+        "to": "0xfde4c96c8593536e31f229ea8f37b2ada2699bb2",
+        "category": "transfer"
+      },
+      {
+        "from": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+        "to": "0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938",
+        "category": "transfer"
+      },
+      {
+        "from": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+        "to": "0xb4fde59a779991bfb6a52253b51947828b982be3",
+        "category": "transfer"
+      },
+      {
+        "from": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+        "to": "0x1fba65de0a9cbd2d1df82d141897042d36bb6c86",
+        "category": "transfer"
+      },
+      {
+        "from": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+        "to": "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+        "category": "transfer"
+      },
+      {
+        "from": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+        "to": "0x2da56acb9ea78330f947bd57c54119debda7af71",
+        "category": "transfer"
+      },
+      {
+        "from": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+        "to": "0x532f27101965dd16442e59d40670faf5ebb142e4",
+        "category": "transfer"
+      },
+      {
+        "from": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+        "to": "0x4ed4e862860bed51a9570b96d89af5e1b0efefed",
+        "category": "transfer"
+      },
+      {
+        "from": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+        "to": "0xb1a03eda10342529bbf8eb700a06c60441fef25d",
+        "category": "transfer"
+      }
+    ]
+  },
+  "contract_inventory": {
+    "incident_id": "unknown-2024-10-24-price-manipulation-incident-base",
+    "chain": "Base",
+    "generated_at": "2026-04-27T13:02:52+00:00",
+    "contracts": {
+      "0x1e03834f759dac9561d366958b00fe000d9e00e3": {
+        "address": "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+        "role": "attacker_contract",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "",
+        "abi_path": "",
+        "newly_deployed_in_tx": "0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e",
+        "create_type": "CREATE2",
+        "fetched_at": "2026-04-27T13:02:47+00:00",
+        "fetch_errors": [
+          "newly deployed in-tx \u2014 no on-chain source"
+        ]
+      },
+      "0x0f5cebda36f8779fc357f10b81e6a207a47ca91b": {
+        "address": "0x0f5cebda36f8779fc357f10b81e6a207a47ca91b",
+        "role": "victim",
+        "classification": "unverified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "",
+        "compiler_version": "",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/technical_analysis/contracts/0x0f5cebda36f8779fc357f10b81e6a207a47ca91b/source.json",
+        "abi_path": "",
+        "fetched_at": "2026-04-27T13:02:49+00:00",
+        "fetch_errors": []
+      },
+      "0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5": {
+        "address": "0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5",
+        "role": "flash_loan_provider",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "SwapRouter",
+        "compiler_version": "v0.7.6+commit.7338295f",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/technical_analysis/contracts/0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/unknown-2024-10-24-price-manipulation-incident-base/technical_analysis/contracts/0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5/abi.json",
+        "fetched_at": "2026-04-27T13:02:52+00:00",
+        "fetch_errors": []
+      }
+    }
+  },
+  "revision_round": 0,
+  "reasoning": {
+    "attack_flow_summary": "",
+    "exploit_mechanism": "",
+    "tx_role_map": {},
+    "contract_role_map": {},
+    "timeline_steps": [],
+    "funds_flow_path": [],
+    "open_questions": [],
+    "confidence_notes": [
+      "Attack pattern consistent with flash loan price manipulation against unverified lending protocol. SwapRouter (Uniswap V3 style) provides flash swap capability. The CREATE2 deployment suggests premeditated attack with computed address. Victim contract lacks verification, consistent with incident description of 'unverified Compound-like lending deployment'. Note: CREATE2 deployer (0x7562846468089cf0e8f7b38ac53406b895284901) differs from designated attacker EOA (0x81d5187c8346073b648f2d44b9e269509513aae2) \u2014 may indicate intermediary contract or funding relationship per plan roles."
+    ]
+  },
+  "validation": {
+    "verdict": "Deterministic and semantic checks passed.",
+    "severity": "pass",
+    "unresolved_gaps": [],
+    "semantic_checks": {
+      "tx_role_consistency": {
+        "status": "pass",
+        "mismatches": []
+      },
+      "funds_flow_consistency": {
+        "status": "pass",
+        "mismatches": []
+      },
+      "mechanism_source_consistency": {
+        "status": "pass",
+        "mismatches": []
+      }
+    },
+    "needs_revision": false,
+    "revision_request": "",
+    "checked_transactions": 1
+  },
+  "merge_back": {
+    "summary": "",
+    "timeline_steps": [],
+    "funds_flow_path": [],
+    "key_addresses": [
+      "0x04030d2f38bc799af9b0aab5757adc98000d7ded",
+      "0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938",
+      "0x04e5741380951cbd891506f96089e8f27c15fe2f",
+      "0x097ca51e80b4e4a82a98d5f220bf5a7a0991f404",
+      "0x0ad08370c76ff426f534bb2affd9b5555338ee68",
+      "0x0f5cebda36f8779fc357f10b81e6a207a47ca91b",
+      "0x16613524e02ad97edfef371bc883f2f5d6c480a5",
+      "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+      "0x1f7e713b77dce6b2df41bb2bb0d44ca35d795ed8",
+      "0x1fba65de0a9cbd2d1df82d141897042d36bb6c86",
+      "0x2da56acb9ea78330f947bd57c54119debda7af71",
+      "0x326841efd63340767e02ec88e583f18a82af4a48",
+      "0x37b64f37106b63ffd8827d6fdf1ebdb3b54f9e4f",
+      "0x3d0149abd30ee101d3a9ba5efb63f653841ef149",
+      "0x4200000000000000000000000000000000000006",
+      "0x4aeb6d15769ead32d0c5be2940f40c7cff53801d",
+      "0x4c2a994ef90873e16437b19eaf29171cb19e3453",
+      "0x4c721a6c5a12b3f6c8a57ce2fffb2a673ef2482d",
+      "0x4e829f8a5213c42535ab84aa40bd4adcce9cba02",
+      "0x4ed4e862860bed51a9570b96d89af5e1b0efefed",
+      "0x532f27101965dd16442e59d40670faf5ebb142e4",
+      "0x575c882237001296cac42b0896d74eb104d936b0",
+      "0x57d2d46fc7ff2a7142d479f2f59e1e3f95447077",
+      "0x5c45b0f48c326f79b56709d8f63ce2bee7697106",
+      "0x5c52649d3c1e1d0ddf6a46e1c25a25d9fb148af8",
+      "0x5de5449ee9369ddaaa84580025b867f9b435096d",
+      "0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a",
+      "0x5ebffe29f0241cf2792f9a52cad41c402061f925",
+      "0x64c911996d3c6ac71f9b455b1e8e7266bcbd848f",
+      "0x674940e1dbf7fd841b33156da9a88afbd95aafba",
+      "0x69ce2505ce515c0203160450157366f927243309",
+      "0x6ade13eeacdd21e96fe2a6f4e2a5c6cf4fd30c00",
+      "0x71041dddad3595f9ced3dccfbe3d1f4b0a16bb70",
+      "0x730f8f58ed33ed6369b030acc25998204f24829f",
+      "0x7458bfdc30034eb860b265e6068121d18fa5aa72",
+      "0x7562846468089cf0e8f7b38ac53406b895284901",
+      "0x7fdc62d7696b868f98f3a9a6b7e1bed4e34dc18d",
+      "0x814d854de623ba3f846e97895ebc3b9acfaaebbc",
+      "0x81d5187c8346073b648f2d44b9e269509513aae2",
+      "0x852ae0b1af1aaedb0fc4428b4b24420780976ca8",
+      "0x8c8dc6d6bd89afe91b4bee3403448af2a7f149c5",
+      "0x92954a19791b39e345bee621d81360467f1f9f57",
+      "0x93d619623abc60a22ee71a15db62eede3ef4dd5a",
+      "0x945fd405773973d286de54e44649cc0d9e264f78",
+      "0x9465cf4b4032080434e397f42fb99a8446c35376",
+      "0x94a9a7cffcbdbc6898002fa2dfa92c09ee99e943",
+      "0x975043adbb80fc32276cbf9bbcfd4a601a12462d",
+      "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+      "0x9db2965287906ba97c61500195cd84140d4ceea5",
+      "0x9e331ca8988fddf5dd19dc06c2430922140f3c18",
+      "0xa0b59b5a943551d703f611c1c1ac7c924975d2aa",
+      "0xa2092f9a2a5dd84d6df7d175673ec8a7357c551b",
+      "0xa51486f0d852689372b4d665f0fa7c7be3257b4f",
+      "0xae4602716079c0be7948c0b84553dee0e6564a3d",
+      "0xb0505e5a99abd03d94a1169e638b78edfed26ea4",
+      "0xb1a03eda10342529bbf8eb700a06c60441fef25d",
+      "0xb48ac6409c0c3718b956089b0ffe295a10acddad",
+      "0xb4fde59a779991bfb6a52253b51947828b982be3",
+      "0xb79dd08ea68a908a97220c76d19a6aa9cbde4376",
+      "0xb88bac61a4ca37c43a3725912b1f472c9a5bc061",
+      "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5",
+      "0xc112e41c1094ff7fbf9e5dc0d1026103542e7e0c",
+      "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452",
+      "0xc8ec09d64c7d21f0a04f3d4f1047c20abdf3cd88",
+      "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+      "0xd27766c20df630a7d7e1e5885ae581fb0e61828a",
+      "0xd5ec94430ef4170d819e0996bc53ed40d31638d8",
+      "0xdc2d2fa8e7b824a2c16128446e288280dcb12844",
+      "0xe25969e2fa633a0c027fab8f30fc9c6a90d60b48",
+      "0xe62bce5d7cb9d16ab8b4d622538bc0a50a5799c2",
+      "0xea990bccb5b4da5023b6dc88480297405fd222c3",
+      "0xec8e5342b19977b4ef8892e02d8daecfa1315831",
+      "0xeca1ebfb5ca472c76328f5dde011c6cccf2a66f4",
+      "0xf19d560eb8d2adf07bd6d13ed03e1d11215721f9",
+      "0xf4171b0953b52fa55462e4d76eca1845db69af00",
+      "0xf5606e742fa2403bfd0385cc23124b84cba1037d",
+      "0xf91d26405fb5e489b7c4bbc11b9a5402ae9243d3",
+      "0xfde4c96c8593536e31f229ea8f37b2ada2699bb2"
+    ],
+    "key_contracts": [
+      "0x04030d2f38bc799af9b0aab5757adc98000d7ded",
+      "0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938",
+      "0x04e5741380951cbd891506f96089e8f27c15fe2f",
+      "0x097ca51e80b4e4a82a98d5f220bf5a7a0991f404",
+      "0x0ad08370c76ff426f534bb2affd9b5555338ee68",
+      "0x0f5cebda36f8779fc357f10b81e6a207a47ca91b",
+      "0x16613524e02ad97edfef371bc883f2f5d6c480a5",
+      "0x1e03834f759dac9561d366958b00fe000d9e00e3",
+      "0x1f7e713b77dce6b2df41bb2bb0d44ca35d795ed8",
+      "0x1fba65de0a9cbd2d1df82d141897042d36bb6c86",
+      "0x2da56acb9ea78330f947bd57c54119debda7af71",
+      "0x326841efd63340767e02ec88e583f18a82af4a48",
+      "0x37b64f37106b63ffd8827d6fdf1ebdb3b54f9e4f",
+      "0x3d0149abd30ee101d3a9ba5efb63f653841ef149",
+      "0x4200000000000000000000000000000000000006",
+      "0x4aeb6d15769ead32d0c5be2940f40c7cff53801d",
+      "0x4c2a994ef90873e16437b19eaf29171cb19e3453",
+      "0x4c721a6c5a12b3f6c8a57ce2fffb2a673ef2482d",
+      "0x4e829f8a5213c42535ab84aa40bd4adcce9cba02",
+      "0x4ed4e862860bed51a9570b96d89af5e1b0efefed",
+      "0x532f27101965dd16442e59d40670faf5ebb142e4",
+      "0x575c882237001296cac42b0896d74eb104d936b0",
+      "0x57d2d46fc7ff2a7142d479f2f59e1e3f95447077",
+      "0x5c45b0f48c326f79b56709d8f63ce2bee7697106",
+      "0x5c52649d3c1e1d0ddf6a46e1c25a25d9fb148af8",
+      "0x5de5449ee9369ddaaa84580025b867f9b435096d",
+      "0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a",
+      "0x5ebffe29f0241cf2792f9a52cad41c402061f925",
+      "0x64c911996d3c6ac71f9b455b1e8e7266bcbd848f",
+      "0x674940e1dbf7fd841b33156da9a88afbd95aafba",
+      "0x69ce2505ce515c0203160450157366f927243309",
+      "0x6ade13eeacdd21e96fe2a6f4e2a5c6cf4fd30c00",
+      "0x71041dddad3595f9ced3dccfbe3d1f4b0a16bb70",
+      "0x730f8f58ed33ed6369b030acc25998204f24829f",
+      "0x7458bfdc30034eb860b265e6068121d18fa5aa72",
+      "0x7562846468089cf0e8f7b38ac53406b895284901",
+      "0x7fdc62d7696b868f98f3a9a6b7e1bed4e34dc18d",
+      "0x814d854de623ba3f846e97895ebc3b9acfaaebbc",
+      "0x852ae0b1af1aaedb0fc4428b4b24420780976ca8",
+      "0x8c8dc6d6bd89afe91b4bee3403448af2a7f149c5",
+      "0x92954a19791b39e345bee621d81360467f1f9f57",
+      "0x93d619623abc60a22ee71a15db62eede3ef4dd5a",
+      "0x945fd405773973d286de54e44649cc0d9e264f78",
+      "0x9465cf4b4032080434e397f42fb99a8446c35376",
+      "0x94a9a7cffcbdbc6898002fa2dfa92c09ee99e943",
+      "0x975043adbb80fc32276cbf9bbcfd4a601a12462d",
+      "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+      "0x9db2965287906ba97c61500195cd84140d4ceea5",
+      "0x9e331ca8988fddf5dd19dc06c2430922140f3c18",
+      "0xa0b59b5a943551d703f611c1c1ac7c924975d2aa",
+      "0xa2092f9a2a5dd84d6df7d175673ec8a7357c551b",
+      "0xa51486f0d852689372b4d665f0fa7c7be3257b4f",
+      "0xae4602716079c0be7948c0b84553dee0e6564a3d",
+      "0xb0505e5a99abd03d94a1169e638b78edfed26ea4",
+      "0xb1a03eda10342529bbf8eb700a06c60441fef25d",
+      "0xb48ac6409c0c3718b956089b0ffe295a10acddad",
+      "0xb4fde59a779991bfb6a52253b51947828b982be3",
+      "0xb79dd08ea68a908a97220c76d19a6aa9cbde4376",
+      "0xb88bac61a4ca37c43a3725912b1f472c9a5bc061",
+      "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5",
+      "0xc112e41c1094ff7fbf9e5dc0d1026103542e7e0c",
+      "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452",
+      "0xc8ec09d64c7d21f0a04f3d4f1047c20abdf3cd88",
+      "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+      "0xd27766c20df630a7d7e1e5885ae581fb0e61828a",
+      "0xd5ec94430ef4170d819e0996bc53ed40d31638d8",
+      "0xdc2d2fa8e7b824a2c16128446e288280dcb12844",
+      "0xe25969e2fa633a0c027fab8f30fc9c6a90d60b48",
+      "0xe62bce5d7cb9d16ab8b4d622538bc0a50a5799c2",
+      "0xea990bccb5b4da5023b6dc88480297405fd222c3",
+      "0xec8e5342b19977b4ef8892e02d8daecfa1315831",
+      "0xeca1ebfb5ca472c76328f5dde011c6cccf2a66f4",
+      "0xf19d560eb8d2adf07bd6d13ed03e1d11215721f9",
+      "0xf4171b0953b52fa55462e4d76eca1845db69af00",
+      "0xf5606e742fa2403bfd0385cc23124b84cba1037d",
+      "0xf91d26405fb5e489b7c4bbc11b9a5402ae9243d3",
+      "0xfde4c96c8593536e31f229ea8f37b2ada2699bb2"
+    ],
+    "key_transactions": [
+      "0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e"
+    ],
+    "open_questions": []
+  },
+  "status": "completed",
+  "pipeline_trace": {
+    "revision_triggered": false,
+    "revision_critique": null,
+    "qa_retry_triggered": true,
+    "qa_retry_critique": "First-pass completeness score: 0.58 (threshold: 0.7). Missing/weak dimensions: protocol_name_actual, attack_contract_urls, victim_contract_urls, social_sources, block_number, fund_tracing, oracle_contract_address, precise_loss_breakdown. Quality assessor notes: The dossier captures essential on-chain evidence for a price manipulation attack on an unverified Compound fork on Base, including verified attack transaction and attacker address. A PoC from DeFiHackLabs adds credibility. However, the protocol remains unidentified, the timeline is sparse with only 3 steps, fund tracing is absent, and technical root cause lacks specificity. The missing victim_contract_urls and social_sources create usability gaps. While suitable for preliminary triage, the dossier requires substantial enrichment before being complete enough for incident response coordination or public disclosure. Identified gaps: Protocol name unidentified - only known as unverified Compound-like deployment; Timeline contains only 3 high-level steps without detailed attack execution flow; No fund destination or money laundering path documented; Victim contract 0x81d5187c8346073b648f2d44b9e269509513aae2 mentioned but not formally documented as victim_contract_urls; No technical root cause analysis specifying which oracle mechanism was exploited; Missing block number and precise timestamp for attack; No social media coverage or community discussion links; Loss amount is estimate without token-by-token breakdown. Recommendations: Research and identify the actual protocol name through Dune Analytics or protocol list cross-referencing; Add victim contract URL for target address 0x81d5187c8346073b648f2d44b9e269509513aae2; Expand timeline with preparation, execution, and exfiltration phases including specific function calls; Trace stolen funds to destination wallets or mixers using blockchain analytics; Document the specific oracle contract and manipulation mechanism with technical details; Calculate precise loss by token with on-chain balance changes; Source social media discussion from Twitter/X and security community channels; Add block number 21257450 and timestamp for the attack transaction; Include any malicious contract deployed by attacker in attack_contract_urls; Verify and document additional transactions in the attack sequence from the attacker address.",
+    "records": [
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:02:42.923Z",
+        "duration_ms": 3280,
+        "input_summary": "46 source docs; 401 heuristic items",
+        "output_summary": "401 total items (+0 LLM-extracted)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "collector",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:02:46.210Z",
+        "duration_ms": 1724,
+        "input_summary": "1 tx(s): 0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e",
+        "output_summary": "1 artifact bundle(s) collected; statuses: completed",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "planner",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:02:47.934Z",
+        "duration_ms": 14,
+        "input_summary": "1 transactions on Base",
+        "output_summary": "9 role categories; 3 priority contracts",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "contract_intelligence",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:02:47.948Z",
+        "duration_ms": 4515,
+        "input_summary": "3 priority contracts",
+        "output_summary": "3 contracts in inventory",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "technical_reasoner",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:02:52.463Z",
+        "duration_ms": 57202,
+        "input_summary": "1 txs, 3 contracts",
+        "output_summary": "0 timeline steps; mechanism: ",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "semantic_validator",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:03:49.667Z",
+        "duration_ms": 1,
+        "input_summary": "revision_round=0",
+        "output_summary": "severity=pass; needs_revision=False; verdict: Deterministic and semantic checks passed.",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:03:49.673Z",
+        "duration_ms": 23321,
+        "input_summary": "401 evidence items",
+        "output_summary": "executive_summary len=291",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:03:49.673Z",
+        "duration_ms": 23321,
+        "input_summary": "401 evidence items",
+        "output_summary": "3 timeline steps",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:04:13.001Z",
+        "duration_ms": 64821,
+        "input_summary": "3 timeline steps; 4 narrative keys",
+        "output_summary": "completeness_score=0.58; judge_summary: The dossier captures essential on-chain evidence for a price manipulation attack",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:05:17.823Z",
+        "duration_ms": 3852,
+        "input_summary": "RETRY: 46 docs; critique injected",
+        "output_summary": "401 items after retry extraction",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:05:21.676Z",
+        "duration_ms": 16028,
+        "input_summary": "RETRY: 401 evidence items",
+        "output_summary": "executive_summary len=333 (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:05:21.676Z",
+        "duration_ms": 16028,
+        "input_summary": "RETRY: 401 evidence items",
+        "output_summary": "3 timeline steps (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:05:37.704Z",
+        "duration_ms": 46275,
+        "input_summary": "RETRY: 3 steps; 4 narrative keys",
+        "output_summary": "v2 completeness_score=58",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      }
+    ]
+  }
+}

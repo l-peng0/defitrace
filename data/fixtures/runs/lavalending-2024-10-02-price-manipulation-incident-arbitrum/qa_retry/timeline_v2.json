@@ -1,0 +1,34 @@
+{
+  "incident_id": "Lavalending 2024-10-02 price-manipulation incident",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Attacker address 0x69fa61eb4dc4e07263d401b01ed1cfceb599dab8 prepares funds to execute a price manipulation attack against LavaLending on Arbitrum.",
+      "evidence_refs": [
+        "ev-004",
+        "ev-002"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 2,
+      "description": "Attacker manipulates the price oracle of a targeted asset utilized by the LavaLending protocol, interacting with associated contracts such as 0x8a0Dfb61CAd29168E1067F6b23553035d83FcFB2.",
+      "evidence_refs": [
+        "ev-005",
+        "ev-010"
+      ],
+      "summary": ""
+    },
+    {
+      "step_number": 3,
+      "description": "Attacker executes the exploit transaction 0xb5cfa4ae4d6e459ba285fec7f31caf8885e2285a0b4ff62f66b43e280c947216, leveraging the manipulated price to drain approximately $130K from the protocol.",
+      "evidence_refs": [
+        "ev-003",
+        "ev-005",
+        "ev-012"
+      ],
+      "summary": ""
+    }
+  ],
+  "synthesis_note": "The timeline is synthesized from limited high-confidence evidence centering on the primary attack transaction. The specific manipulated token and precise manipulation mechanics (e.g., flashloan usage) are inferred from the 'price-manipulation' classification as detailed internal trace logs were not provided in the evidence."
+}

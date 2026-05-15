@@ -1,0 +1,31 @@
+{
+  "incident_id": "lavalending-arbitrum-2024-10-02",
+  "job_id": "lavalending-arbitrum-2024-10-02-batch",
+  "trigger_type": "batch",
+  "seed_type": "tx_hash",
+  "chain": "Arbitrum",
+  "protocol_name": "Lavalending",
+  "incident_name": "Lavalending 2024-10-02 price-manipulation incident",
+  "attack_tx_hashes": [
+    "0xb5cfa4ae4d6e459ba285fec7f31caf8885e2285a0b4ff62f66b43e280c947216"
+  ],
+  "attacker_addresses": [
+    "0x69fa61eb4dc4e07263d401b01ed1cfceb599dab8"
+  ],
+  "victim_addresses": [
+    "0x6700b021a8bcfae25a2493d16d7078c928c13151"
+  ],
+  "seed_urls": [
+    "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+    "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-10/LavaLending_exp.sol"
+  ],
+  "summary_candidates": [
+    "An estimated loss of about $130K was caused by a price-manipulation attack against LavaLending on Arbitrum"
+  ],
+  "tags": [
+    "price_manipulation",
+    "arbitrum",
+    "defi"
+  ],
+  "created_at": "2026-04-27T12:46:36+00:00"
+}

@@ -1,0 +1,55 @@
+{
+  "incident_id": "bgm-2024-11-10-price-manipulation-incident-bsc",
+  "chain": "BSC",
+  "generated_at": "2026-04-27T13:08:03+00:00",
+  "contracts": {
+    "0xadc4eca2a3038b478b591bac1a87e428625d6e0a": {
+      "address": "0xadc4eca2a3038b478b591bac1a87e428625d6e0a",
+      "role": "victim",
+      "classification": "verified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "admin_address": "",
+      "contract_name": "PancakePair",
+      "compiler_version": "v0.5.16+commit.9c3226ce",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/contracts/0xadc4eca2a3038b478b591bac1a87e428625d6e0a/source.json",
+      "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/contracts/0xadc4eca2a3038b478b591bac1a87e428625d6e0a/abi.json",
+      "fetched_at": "2026-04-27T13:08:02+00:00",
+      "fetch_errors": []
+    },
+    "0x36696169c63e42cd08ce11f5deebbcebae652050": {
+      "address": "0x36696169c63e42cd08ce11f5deebbcebae652050",
+      "role": "flash_loan_provider",
+      "classification": "verified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "admin_address": "",
+      "contract_name": "PancakeV3Pool",
+      "compiler_version": "v0.7.6+commit.7338295f",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x36696169c63e42cd08ce11f5deebbcebae652050/source.json",
+      "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x36696169c63e42cd08ce11f5deebbcebae652050/abi.json",
+      "fetched_at": "2026-04-27T13:08:02+00:00",
+      "fetch_errors": []
+    },
+    "0x4f31fa980a675570939b737ebdde0471a4be40eb": {
+      "address": "0x4f31fa980a675570939b737ebdde0471a4be40eb",
+      "role": "flash_loan_provider",
+      "classification": "verified",
+      "is_proxy": false,
+      "proxy_type": "",
+      "implementation_address": "",
+      "implementation_classification": "",
+      "admin_address": "",
+      "contract_name": "PancakeV3Pool",
+      "compiler_version": "v0.7.6+commit.7338295f",
+      "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x4f31fa980a675570939b737ebdde0471a4be40eb/source.json",
+      "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/bgm-2024-11-10-price-manipulation-incident-bsc/technical_analysis/contracts/0x4f31fa980a675570939b737ebdde0471a4be40eb/abi.json",
+      "fetched_at": "2026-04-27T13:08:03+00:00",
+      "fetch_errors": []
+    }
+  }
+}

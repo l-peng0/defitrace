@@ -1,0 +1,428 @@
+{
+  "incident_id": "veth-2024-11-14-price-manipulation-incident-ethereum",
+  "chain": "Ethereum",
+  "generated_at": "2026-04-27T13:13:58+00:00",
+  "primary_tx_hash": "0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b",
+  "tx_hashes": [
+    "0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b"
+  ],
+  "transactions": [
+    {
+      "tx_hash": "0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b",
+      "status": "completed",
+      "tx_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/technical_analysis/0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b/tx.json",
+      "receipt_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/technical_analysis/0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b/receipt.json",
+      "trace_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/technical_analysis/0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b/trace_callTracer.json",
+      "decoded_calls_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/technical_analysis/0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b/decoded_calls.json",
+      "funds_flow_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/technical_analysis/0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b/funds_flow.json",
+      "manifest_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/technical_analysis/0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b/manifest.json",
+      "summary": {
+        "contracts_touched": [
+          "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+          "0x19c5538df65075d53d6299904636bae68b6df441",
+          "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+          "0x351d38733de3f1e73468d24401c59f63677000c9",
+          "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+          "0x62f250cf7021e1cf76c765dec8ec623fe173a1b5",
+          "0x6b7e633fbdaf237bcfb8176be04b0dd72dda3b3a",
+          "0x713d2b652e5f2a86233c57af5341db42a5559dd1",
+          "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+          "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "0xce88686553686da562ce7cea497ce749da109f9f"
+        ],
+        "addresses_seen": [
+          "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+          "0x19c5538df65075d53d6299904636bae68b6df441",
+          "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+          "0x351d38733de3f1e73468d24401c59f63677000c9",
+          "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+          "0x62f250cf7021e1cf76c765dec8ec623fe173a1b5",
+          "0x6b7e633fbdaf237bcfb8176be04b0dd72dda3b3a",
+          "0x713d2b652e5f2a86233c57af5341db42a5559dd1",
+          "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+          "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "0xce88686553686da562ce7cea497ce749da109f9f"
+        ],
+        "native_value_transfers": 0,
+        "token_transfers": 12
+      },
+      "issues": []
+    }
+  ],
+  "analysis_plan": {
+    "incident_id": "veth-2024-11-14-price-manipulation-incident-ethereum",
+    "chain": "Ethereum",
+    "generated_at": "2026-04-27T13:13:59+00:00",
+    "tx_hashes": [
+      "0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b"
+    ],
+    "roles": {
+      "attacker_eoa": [
+        "0x713d2b652e5f2a86233c57af5341db42a5559dd1"
+      ],
+      "attacker_contracts": [],
+      "victim": [
+        "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c"
+      ],
+      "routers": [],
+      "pairs": [
+        "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c"
+      ],
+      "oracles": [],
+      "flash_loan_providers": [],
+      "tokens": [
+        "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+        "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+        "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      ],
+      "unknown": [
+        "0x62f250cf7021e1cf76c765dec8ec623fe173a1b5",
+        "0x6b7e633fbdaf237bcfb8176be04b0dd72dda3b3a",
+        "0x19c5538df65075d53d6299904636bae68b6df441",
+        "0x351d38733de3f1e73468d24401c59f63677000c9",
+        "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+        "0xce88686553686da562ce7cea497ce749da109f9f",
+        "0x0000000000000000000000000000000000000000",
+        "0xba12222222228d8ba445958a75a0704d566bf2c8"
+      ]
+    },
+    "newly_deployed": [],
+    "priority_contracts": [
+      {
+        "address": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+        "role": "victim",
+        "why": "largest net-negative token balance change",
+        "priority": "high"
+      },
+      {
+        "address": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+        "role": "pair",
+        "why": "target of direct swap()",
+        "priority": "medium"
+      }
+    ],
+    "investigation_notes": [
+      "Tx 0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b contains 2 swap selector(s); inspect router/pair pricing."
+    ],
+    "call_graph": [
+      {
+        "from": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      },
+      {
+        "from": "0x351d38733de3f1e73468d24401c59f63677000c9",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "burn"
+      },
+      {
+        "from": "0x19c5538df65075d53d6299904636bae68b6df441",
+        "to": "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+        "category": "transfer"
+      },
+      {
+        "from": "0x19c5538df65075d53d6299904636bae68b6df441",
+        "to": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+        "category": "swap"
+      },
+      {
+        "from": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+        "to": "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+        "category": "transfer"
+      },
+      {
+        "from": "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+        "to": "0x6b7e633fbdaf237bcfb8176be04b0dd72dda3b3a",
+        "category": "transfer"
+      },
+      {
+        "from": "0x62f250cf7021e1cf76c765dec8ec623fe173a1b5",
+        "to": "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+        "category": "transfer"
+      },
+      {
+        "from": "0x19c5538df65075d53d6299904636bae68b6df441",
+        "to": "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+        "category": "transfer"
+      },
+      {
+        "from": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+        "to": "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+        "category": "transfer"
+      },
+      {
+        "from": "0x351d38733de3f1e73468d24401c59f63677000c9",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "mint"
+      },
+      {
+        "from": "0x351d38733de3f1e73468d24401c59f63677000c9",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "category": "transfer"
+      }
+    ]
+  },
+  "contract_inventory": {
+    "incident_id": "veth-2024-11-14-price-manipulation-incident-ethereum",
+    "chain": "Ethereum",
+    "generated_at": "2026-04-27T13:14:01+00:00",
+    "contracts": {
+      "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c": {
+        "address": "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+        "role": "victim",
+        "classification": "verified",
+        "is_proxy": false,
+        "proxy_type": "",
+        "implementation_address": "",
+        "implementation_classification": "",
+        "admin_address": "",
+        "contract_name": "UniswapV2Pair",
+        "compiler_version": "v0.5.16+commit.9c3226ce",
+        "source_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/technical_analysis/contracts/0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c/source.json",
+        "abi_path": "/Users/lauren/Desktop/2026spring/capstone/data/fixtures/runs/veth-2024-11-14-price-manipulation-incident-ethereum/technical_analysis/contracts/0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c/abi.json",
+        "fetched_at": "2026-04-27T13:14:01+00:00",
+        "fetch_errors": []
+      }
+    }
+  },
+  "revision_round": 0,
+  "reasoning": {
+    "attack_flow_summary": "",
+    "exploit_mechanism": "",
+    "tx_role_map": {},
+    "contract_role_map": {},
+    "timeline_steps": [],
+    "funds_flow_path": [],
+    "open_questions": [],
+    "confidence_notes": [
+      "Victim contract 0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c is confirmed as UniswapV2Pair with verified source. Call graph shows swap interaction exploited pool pricing. Flash loan indicators: Balancer vault transfer + mint/burn pattern on 0x351d38733de3f1e73468d24401c59f63677000c9. Multiple unknown contracts (0x19c5538df65075d53d6299904636bae68b6df441, 0x62f250cf7021e1cf76c765dec8ec623fe173a1b5, 0x6b7e633fbdaf237bcfb8176be04b0dd72dda3b3a) lack inventory classification but appear central to attack flow. Exact flash loan amount and token amounts require decoded trace data."
+    ]
+  },
+  "validation": {
+    "verdict": "Deterministic and semantic checks passed.",
+    "severity": "pass",
+    "unresolved_gaps": [],
+    "semantic_checks": {
+      "tx_role_consistency": {
+        "status": "pass",
+        "mismatches": []
+      },
+      "funds_flow_consistency": {
+        "status": "pass",
+        "mismatches": []
+      },
+      "mechanism_source_consistency": {
+        "status": "pass",
+        "mismatches": []
+      }
+    },
+    "needs_revision": false,
+    "revision_request": "",
+    "checked_transactions": 1
+  },
+  "merge_back": {
+    "summary": "",
+    "timeline_steps": [],
+    "funds_flow_path": [],
+    "key_addresses": [
+      "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+      "0x19c5538df65075d53d6299904636bae68b6df441",
+      "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+      "0x351d38733de3f1e73468d24401c59f63677000c9",
+      "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+      "0x62f250cf7021e1cf76c765dec8ec623fe173a1b5",
+      "0x6b7e633fbdaf237bcfb8176be04b0dd72dda3b3a",
+      "0x713d2b652e5f2a86233c57af5341db42a5559dd1",
+      "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+      "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "0xce88686553686da562ce7cea497ce749da109f9f"
+    ],
+    "key_contracts": [
+      "0x0634866dfd8f05019c2a6e1773dc64cb5a5d3e6c",
+      "0x19c5538df65075d53d6299904636bae68b6df441",
+      "0x280a8955a11fcd81d72ba1f99d265a48ce39ac2e",
+      "0x351d38733de3f1e73468d24401c59f63677000c9",
+      "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+      "0x62f250cf7021e1cf76c765dec8ec623fe173a1b5",
+      "0x6b7e633fbdaf237bcfb8176be04b0dd72dda3b3a",
+      "0x713d2b652e5f2a86233c57af5341db42a5559dd1",
+      "0xaefef41f5a0bb29fe3d1330607b48fbba55904ce",
+      "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "0xce88686553686da562ce7cea497ce749da109f9f"
+    ],
+    "key_transactions": [
+      "0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b"
+    ],
+    "open_questions": []
+  },
+  "status": "completed",
+  "pipeline_trace": {
+    "revision_triggered": false,
+    "revision_critique": null,
+    "qa_retry_triggered": true,
+    "qa_retry_critique": "First-pass completeness score: 78.00 (threshold: 0.7). Missing/weak dimensions: attack_contract_urls, victim_contract_urls, fund_flow_tracing, detailed_technical_root_cause, vulnerable_contract_identification. Quality assessor notes: The Veth incident dossier provides adequate foundational coverage with verified attack transactions (3 hashes), identified attacker address, and multiple corroborating sources including SlowMist, Verichains, and DeFiHackLabs POC. However, critical gaps exist: the attack mechanism is acknowledged as 'unknown' by Verichains, no specific vulnerable contracts are formally documented, fund flow analysis is absent, and the timeline lacks technical granularity. While sufficient for incident awareness, the dossier lacks the technical depth required for comprehensive understanding or demonstration purposes. Identified gaps: {'gap_type': 'technical_depth', 'severity': 'high', 'description': \"Attack mechanism remains unclear - Verichains admits 'unknown mechanism' and no detailed vulnerability explanation provided\"}; {'gap_type': 'contract_identification', 'severity': 'medium', 'description': 'No specific vulnerable/victim contracts formally cataloged despite Balancer vault interaction mentioned'}; {'gap_type': 'fund_flow', 'severity': 'medium', 'description': 'No post-exploit fund tracing showing where stolen assets were moved or laundered'}; {'gap_type': 'timeline_granularity', 'severity': 'low', 'description': 'Timeline has only 3 high-level steps without detailed attack flow sequence'}. Recommendations: Analyze DeFiHackLabs POC code to extract exact exploit mechanism and vulnerable function calls; Formally identify and catalog the victim contract(s) and attacker-invoked contracts with Etherscan URLs; Add on-chain fund flow tracing showing asset movements post-exploit; Expand timeline with granular attack flow steps including preparation, manipulation, and extraction phases; Verify exact loss amount through on-chain analysis with asset type breakdown; Document specific oracle/pricing vulnerability that enabled manipulation.",
+    "records": [
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:12:41.634Z",
+        "duration_ms": 76721,
+        "input_summary": "139 source docs; 612 heuristic items",
+        "output_summary": "612 total items (+0 LLM-extracted)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "collector",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:13:58.371Z",
+        "duration_ms": 907,
+        "input_summary": "1 tx(s): 0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b",
+        "output_summary": "1 artifact bundle(s) collected; statuses: completed",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "planner",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:13:59.278Z",
+        "duration_ms": 2,
+        "input_summary": "1 transactions on Ethereum",
+        "output_summary": "9 role categories; 2 priority contracts",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "contract_intelligence",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:13:59.279Z",
+        "duration_ms": 1984,
+        "input_summary": "2 priority contracts",
+        "output_summary": "1 contracts in inventory",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "technical_reasoner",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:14:01.263Z",
+        "duration_ms": 77638,
+        "input_summary": "1 txs, 1 contracts",
+        "output_summary": "0 timeline steps; mechanism: ",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "semantic_validator",
+        "agent_type": "rule",
+        "started_at": "2026-04-27T13:15:18.904Z",
+        "duration_ms": 1,
+        "input_summary": "revision_round=0",
+        "output_summary": "severity=pass; needs_revision=False; verdict: Deterministic and semantic checks passed.",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": ""
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:15:18.908Z",
+        "duration_ms": 37052,
+        "input_summary": "612 evidence items",
+        "output_summary": "executive_summary len=299",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:15:18.908Z",
+        "duration_ms": 37052,
+        "input_summary": "612 evidence items",
+        "output_summary": "3 timeline steps",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:15:55.964Z",
+        "duration_ms": 49550,
+        "input_summary": "3 timeline steps; 4 narrative keys",
+        "output_summary": "completeness_score=78; judge_summary: The Veth incident dossier provides adequate foundational coverage with verified ",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "evidence_extractor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:16:45.516Z",
+        "duration_ms": 3604,
+        "input_summary": "RETRY: 139 docs; critique injected",
+        "output_summary": "612 items after retry extraction",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "narrative_writer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:16:49.120Z",
+        "duration_ms": 14714,
+        "input_summary": "RETRY: 612 evidence items",
+        "output_summary": "executive_summary len=279 (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "timeline_synthesizer",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:16:49.120Z",
+        "duration_ms": 14714,
+        "input_summary": "RETRY: 612 evidence items",
+        "output_summary": "3 timeline steps (v2)",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      },
+      {
+        "agent_name": "quality_assessor",
+        "agent_type": "llm",
+        "started_at": "2026-04-27T13:17:03.835Z",
+        "duration_ms": 50353,
+        "input_summary": "RETRY: 3 steps; 4 narrative keys",
+        "output_summary": "v2 completeness_score=72",
+        "llm_provider": null,
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "notes": "QA retry pass; tokens: not captured (response parsed internally)"
+      }
+    ]
+  }
+}

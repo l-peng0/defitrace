@@ -1,0 +1,410 @@
+{
+  "incident_id": "unknown-2024-09-26-price-manipulation-incident-ethereum",
+  "sources": [
+    {
+      "source_id": "src-001",
+      "url": "https://web3sec.notion.site/c582b99cd7a84be48d972ca2126a2a1f?v=4671590619bd4b2ab16a15256e4fbba1",
+      "source_type": "report",
+      "discovered_from": "incident_seed",
+      "depth": 0,
+      "priority": 99,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-002",
+      "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2024-09/Bedrock_DeFi_exp.sol",
+      "source_type": "poc",
+      "discovered_from": "incident_seed",
+      "depth": 0,
+      "priority": 98,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-003",
+      "url": "https://etherscan.io/tx/0x725f0d65340c859e0f64e72ca8260220c526c3e0ccde530004160809f6177940",
+      "source_type": "explorer",
+      "discovered_from": "attack_tx_hashes",
+      "depth": 0,
+      "priority": 79,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-004",
+      "url": "https://etherscan.io/address/0x0C8da4f8B823bEe4D5dAb73367D45B5135B50faB",
+      "source_type": "explorer",
+      "discovered_from": "attacker_addresses",
+      "depth": 0,
+      "priority": 69,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-005",
+      "url": "https://github.com/SunWeb3Sec/DeFiHackLabs/raw/refs/heads/main/src/test/2024-09/Bedrock_DeFi_exp.sol",
+      "source_type": "poc",
+      "discovered_from": "src-002",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-006",
+      "url": "https://etherscan.io/chart/etherprice",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-007",
+      "url": "https://sepolia.etherscan.io",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-008",
+      "url": "https://hoodi.etherscan.io",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "http_error"
+    },
+    {
+      "source_id": "src-009",
+      "url": "https://etherscan.io/txs",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-010",
+      "url": "https://etherscan.io/txsPending",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-011",
+      "url": "https://etherscan.io/txsInternal",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-012",
+      "url": "https://etherscan.io/txCrossChain",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-013",
+      "url": "https://etherscan.io/txsBeaconDeposit",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-014",
+      "url": "https://etherscan.io/txsBeaconWithdrawal",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "http_error"
+    },
+    {
+      "source_id": "src-015",
+      "url": "https://etherscan.io/txsBlobs",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-016",
+      "url": "https://etherscan.io/txsAA",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-017",
+      "url": "https://etherscan.io/txnAuthList",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-018",
+      "url": "https://etherscan.io/blocks",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-019",
+      "url": "https://etherscan.io/blocks_forked",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-020",
+      "url": "https://etherscan.io/uncles",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-021",
+      "url": "https://etherscan.io/accounts",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-022",
+      "url": "https://etherscan.io/contractsVerified",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "http_error"
+    },
+    {
+      "source_id": "src-023",
+      "url": "https://etherscan.io/tokens",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-024",
+      "url": "https://etherscan.io/tokentxns",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-025",
+      "url": "https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "source_type": "explorer",
+      "discovered_from": "src-003",
+      "depth": 1,
+      "priority": 30,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-026",
+      "url": "https://etherscan.io",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-027",
+      "url": "https://sepolia.etherscan.io/txs",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-028",
+      "url": "https://sepolia.etherscan.io/txsPending",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-029",
+      "url": "https://sepolia.etherscan.io/txsInternal",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-030",
+      "url": "https://sepolia.etherscan.io/txsBeaconWithdrawal",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "http_error"
+    },
+    {
+      "source_id": "src-031",
+      "url": "https://sepolia.etherscan.io/txsBlobs",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-032",
+      "url": "https://sepolia.etherscan.io/txsAA",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-033",
+      "url": "https://sepolia.etherscan.io/txnAuthList",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-034",
+      "url": "https://sepolia.etherscan.io/blocks",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-035",
+      "url": "https://sepolia.etherscan.io/blocks_forked",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-036",
+      "url": "https://sepolia.etherscan.io/uncles",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-037",
+      "url": "https://sepolia.etherscan.io/accounts",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-038",
+      "url": "https://sepolia.etherscan.io/contractsVerified",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "http_error"
+    },
+    {
+      "source_id": "src-039",
+      "url": "https://sepolia.etherscan.io/tokentxns",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-040",
+      "url": "https://sepolia.etherscan.io/nft-transfers",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "http_error"
+    },
+    {
+      "source_id": "src-041",
+      "url": "https://sepolia.etherscan.io/nft-latest-mints",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "http_error"
+    },
+    {
+      "source_id": "src-042",
+      "url": "https://sepolia.etherscan.io/unitconverter",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-043",
+      "url": "https://sepolia.etherscan.io/base64converter",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-044",
+      "url": "https://sepolia.etherscan.io/blockdateconverter",
+      "source_type": "explorer",
+      "discovered_from": "src-007",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "fetched"
+    },
+    {
+      "source_id": "src-045",
+      "url": "https://etherscan.io/nft-top-contracts",
+      "source_type": "explorer",
+      "discovered_from": "src-009",
+      "depth": 2,
+      "priority": 25,
+      "fetch_status": "http_error"
+    }
+  ]
+}
